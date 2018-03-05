@@ -35,8 +35,21 @@
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
+      "uhfHeaderId": "MSDocsHeader-TeamServices",
+      "ms.topic": "conceptual",
       "breadcrumb_path": "/tfs/breadcrumb/toc.json",
-      "extendBreadcrumb": true
+      "extendBreadcrumb": true,
+      "searchScope": ["VSTS", "Visual Studio Team Services", "TFS", "Team Foundation Server"],
+      "author": "erickson-doug",
+      "ms.author": "douge",
+      "ms.date": "03/01/2018",
+      "ms.prod": "vs-devops-alm",
+      "ms.version": "ALM",
+      "MSHAttr.msprod": "ms.prod:ALM",
+      "ms.prodfamily": "ALM",
+      "feedback_system": "GitHub",
+      "feedback_github_repo": "MicrosoftDocs/vsts-docs",
+      "feedback_product_url": "https://developercommunity.visualstudio.com/spaces/21/index.html" 
     },
     "fileMetadata": {},
     "template": [],
