@@ -19,7 +19,7 @@ the team, the team project, and the team project collection.
 
 In TFS, there are also server-level administrators.
 
-See adding administrators to [project collections](../security/set-project-collection-level-permissions.md) and 
+See adding administrators to [project collections](/vsts/security/set-project-collection-level-permissions.md) and 
 [projects](../accounts/add-administrator-team-project.md).
 
 
@@ -49,7 +49,7 @@ group in Team Foundation Server (TFS).
 	And if you have SharePoint or reporting on other servers,
 	you might need to manually add administrative users to those products separately. 
 
-	See [Set SharePoint site permissions](../security/set-sharepoint-permissions.md) or [Grant permissions to view or create SQL Server reports in TFS](../report/admin/grant-permissions-to-reports.md). 
+	See [Set SharePoint site permissions](/vsts/security/set-sharepoint-permissions.md) or [Grant permissions to view or create SQL Server reports in TFS](../report/admin/grant-permissions-to-reports.md). 
 
 
 

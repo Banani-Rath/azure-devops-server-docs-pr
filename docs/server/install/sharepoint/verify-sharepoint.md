@@ -11,7 +11,7 @@ ms.date: 09/09/2017
 
 # Verify SharePoint products for Team Foundation Server
 
-[!INCLUDE [temp](/vsts/_shared/about-sharepoint-deprecation.md)]
+[!INCLUDE [temp](../../about-sharepoint-deprecation.md)]
 
 If you choose to use an installation of SharePoint Products other than the one that was installed during Team Foundation Server installation, you should verify that your installation of SharePoint Products meets the following guidelines:
 

@@ -26,7 +26,7 @@ Use SQL Server documentation for guidance about configuring AlwaysOn Availabilit
 This a high level walkthrough of the steps required to implement AlwaysOn Availability Groups during TFS installation.
 
 > [!TIP]
-> To set the MultisubnetFailover option to true in the connection string for an already running deployment of TFS, use the RegisterDB command of TFSConfig with the /usesqlalwayson argument. You will need to use the TFSService Control Command to stop and start TFS before you can set the MultisubnetFailover option. See [RegisterDB Command](/vsts/command-line/tfsconfig-cmd.md#registerdb) and [TFSServiceControl Command](/vsts/command-line/tfsservicecontrol-cmd.md).
+> To set the MultisubnetFailover option to true in the connection string for an already running deployment of TFS, use the RegisterDB command of TFSConfig with the /usesqlalwayson argument. You will need to use the TFSService Control Command to stop and start TFS before you can set the MultisubnetFailover option. See [RegisterDB Command](../../tfsconfig-cmd.md#registerdb) and [TFSServiceControl Command](../../tfsservicecontrol-cmd.md).
 
 ###One: set up AlwaysOn Availability Groups
 

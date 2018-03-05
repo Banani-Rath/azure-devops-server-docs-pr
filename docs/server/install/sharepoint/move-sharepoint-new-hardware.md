@@ -11,7 +11,7 @@ ms.date: 09/09/2017
 
 # Move SharePoint to new hardware for TFS
 
-[!INCLUDE [temp](/vsts/_shared/about-sharepoint-deprecation.md)]
+[!INCLUDE [temp](../../about-sharepoint-deprecation.md)]
 
 ## Set up a new SharePoint site 
 
@@ -52,7 +52,7 @@ Run the TFS installation program from the product DVD and then use the **Configu
 
     3.  Type a user account and password for the service account for SharePoint and then choose **Next**.
 
-        For more information, see [Accounts required for installation of Team Foundation Server](/vsts/requirements.md#accounts)
+        For more information, see [Accounts required for installation of Team Foundation Server](/tfs/requirements#accounts)
 
 4.  On the **Review** page, review the settings and choose ** Next**.
 

@@ -27,18 +27,18 @@ Once you've installed TFS, you're ready to create a team project, add users, and
 
 - [Install TFS on a single server](install/single-server.md)
 - [Create a team project](../accounts/create-team-project.md?toc=/vsts/tfs-server/toc.json&bc=/vsts/tfs-server/breadcrumb/toc.json)  
-- [Add users to a team project or team](../security/add-users-team-project.md?toc=/vsts/tfs-server/toc.json&bc=/vsts/tfs-server/breadcrumb/toc.json)  
+- [Add users to a team project or team](/vsts/security/add-users-team-project.md?toc=/vsts/tfs-server/toc.json&bc=/vsts/tfs-server/breadcrumb/toc.json)  
 - [Configure a backup server](admin/backup/config-backup-sched-plan.md)  
-- [Add administrators or set permissions at the project or collection level](../security/set-project-collection-level-permissions.md?toc=/vsts/tfs-server/toc.json)
+- [Add administrators or set permissions at the project or collection level](/vsts/security/set-project-collection-level-permissions.md?toc=/vsts/tfs-server/toc.json)
 
 
 ## Step-by-step tutorials
 
 - [Add administrators](add-administrator-tfs.md)
-- [Change permission levels for a user](../security/change-individual-permissions.md?toc=/vsts/tfs-server/toc.json&bc=/vsts/tfs-server/breadcrumb/toc.json)
+- [Change permission levels for a user](/vsts/security/change-individual-permissions.md?toc=/vsts/tfs-server/toc.json&bc=/vsts/tfs-server/breadcrumb/toc.json)
 - [Configure an SMTP server](admin/setup-customize-alerts.md)
 - [Manage team project collections](./admin/manage-team-project-collections.md)
-- [Grant or restrict permissions to select tasks](../security/restrict-access.md?toc=/vsts/tfs-server/toc.json&bc=/vsts/tfs-server/breadcrumb/toc.json) 
+- [Grant or restrict permissions to select tasks](/vsts/security/restrict-access.md?toc=/vsts/tfs-server/toc.json&bc=/vsts/tfs-server/breadcrumb/toc.json) 
 
 
 ## Concepts 
@@ -52,19 +52,19 @@ Once you've installed TFS, you're ready to create a team project, add users, and
 ## How-to guides
 
 - [Open the admin console](./command-line/open-admin-console.md)
-- [Change access levels (TFS)](../security/change-access-levels.md?toc=/vsts/tfs-server/toc.json&bc=/vsts/tfs-server/breadcrumb/toc.json)
+- [Change access levels (TFS)](/vsts/security/change-access-levels.md?toc=/vsts/tfs-server/toc.json&bc=/vsts/tfs-server/breadcrumb/toc.json)
 
 
 
 ## Reference 
 - [Requirements](requirements.md) 
-- [Permissions lookup guide](../security/permissions-lookup-guide.md?toc=/vsts/tfs-server/toc.json&bc=/vsts/tfs-server/breadcrumb/toc.json)
-- [Permissions and groups reference](../security/permissions.md?toc=/vsts/tfs-server/toc.json&bc=/vsts/tfs-server/breadcrumb/toc.json)   
+- [Permissions lookup guide](/vsts/security/permissions-lookup-guide.md?toc=/vsts/tfs-server/toc.json&bc=/vsts/tfs-server/breadcrumb/toc.json)
+- [Permissions and groups reference](/vsts/security/permissions.md?toc=/vsts/tfs-server/toc.json&bc=/vsts/tfs-server/breadcrumb/toc.json)   
 
 
 ## Resources 
  
-- [Security](../security/index.md)
+- [Security](/vsts/security/index.md)
 - [Billing](../billing/index.md)
 - [Authentication guidance for REST APIs](/vsts/integrate/get-started/authentication/authentication-guidance)
 - [Technical Articles](../articles/index.md)

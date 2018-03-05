@@ -61,7 +61,7 @@ The following table lists the server on which each service, application pool, an
 
 **Q: Are there additional services that TFS supports?**
 
-**A:** Yes, TFS includes a set of Web services and application-level services See [Team Foundation Server architecture](../architecture/architecture.md).
+**A:** Yes, TFS includes a set of Web services and application-level services See [Team Foundation Server architecture](../../architecture/architecture.md).
 
 **Q: What services depend on service accounts?**
 

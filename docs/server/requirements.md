@@ -166,7 +166,8 @@ TFS 2010    | Office SharePoint Server 2007 (Standard, Enterprise)<br/>Windows S
 
 You can configure the TFS extension for SharePoint Products on your SharePoint server from the [TFS administration console](../tfs-server/command-line/open-admin-console.md).
 
->**Tip:**
+**Tip:**
+
 If you plan to install SharePoint, make sure that the version of SharePoint you want to use is compatible with the server operating system you’re using. Support for server operating systems in TFS is more amenable than in SharePoint.
 
 Here are your main options:
@@ -324,12 +325,12 @@ placeholder names for any accounts that you might create.
 
 **TFS 2017 discontinues support for Project Server.**
 
-Team Foundation Server doesn't require Project Server, but if you use Project Server, you must use a supported version.  TFS-Project Server integration [enables data to flow from work items in Team Foundation Server to tasks in enterprise project plans in Project Server](../work/tfs-ps-sync/synchronize-tfs-project-server.md). 
+Team Foundation Server doesn't require Project Server, but if you use Project Server, you must use a supported version.  TFS-Project Server integration [enables data to flow from work items in Team Foundation Server to tasks in enterprise project plans in Project Server](/vsts/work/tfs-ps-sync/synchronize-tfs-project-server.md). 
 
 TFS version | Supported Project Server versions | Supported Project versions
 ------------|---------------------------------- | ---------------------------
-TFS 2018    | Not supported. See [Synchronize TFS with Project Server](../work/tfs-ps-sync/sync-ps-tfs.md) for details. | Not supported. 
-TFS 2017    | Not supported. See [Synchronize TFS with Project Server](../work/tfs-ps-sync/sync-ps-tfs.md) for details. | Not supported. 
+TFS 2018    | Not supported. See [Synchronize TFS with Project Server](/vsts/work/tfs-ps-sync/sync-ps-tfs.md) for details. | Not supported. 
+TFS 2017    | Not supported. See [Synchronize TFS with Project Server](/vsts/work/tfs-ps-sync/sync-ps-tfs.md) for details. | Not supported. 
 TFS 2015    | Project Server 2010 with SP1<br/>Project Server 2013 | Project Professional 2007 with SP2 and [update](http://go.microsoft.com/fwlink/?LinkId=211633)<br/>Project Professional 2007 with SP3<br/>Project Professional 2010<br/>Project Professional 2013
 TFS 2013    | Project Server 2010 with SP1<br/>Project Server 2013 | Project Professional 2007 with SP2 and [update](http://go.microsoft.com/fwlink/?LinkId=211633)<br/>Project Professional 2007 with SP3<br/>Project Professional 2010<br/>Project Professional 2013
 TFS 2012    | Project Server 2007 with SP2<br/>Project Server 2007 with SP3<br/>Project Server 2010 with SP1<br/>Project Server 2013 | Project Professional 2007 with SP2 and [update](http://go.microsoft.com/fwlink/?LinkId=211633)<br/>Project Professional 2007 with SP3<br/>Project Professional 2010<br/>Project Professional 2013
@@ -341,7 +342,7 @@ To use Project Server with TFS, you must install Team Foundation Server Extensio
 
 NTLM is the recommended authentication. In SharePoint Server 2013, Microsoft deprecated Windows classic-authentication in favor of claims-based authentication. TFS 2012 supports both, but for claims-based authentication, the authentication provider must be NTLM. TFS 2012 supports only NTLM-based claims.
 
-If you upgrade to Project Server 2013 from a Project Server 2010 installation that has been added to TFS, you have to perform a few extra steps to maintain the connection between TFS and Project Server. For more information, see this topic: [Upgrade Microsoft Project Server 2010 to Microsoft Project Server 2013](../work/tfs-ps-sync/upgrade-ps-2010-to-ps-2013.md).
+If you upgrade to Project Server 2013 from a Project Server 2010 installation that has been added to TFS, you have to perform a few extra steps to maintain the connection between TFS and Project Server. For more information, see this topic: [Upgrade Microsoft Project Server 2010 to Microsoft Project Server 2013](/vsts/work/tfs-ps-sync/upgrade-ps-2010-to-ps-2013.md).
 
 ### Should you add Project Server to your current team project portal site?
 
@@ -581,12 +582,12 @@ Multiple versions of Team Explorer Everywhere can also be installed side-by-side
 
 Team Explorer Everywhere           | Eclipse version | VSTS, TFS 2012 - TFS 2018   | TFS 2010                    | TFS 2008                    | TFS 2005
 -----------------------------------|-----------------|-----------------------------|-----------------------------|-----------------------------|-----------------------------
-Team Explorer Everywhere 14.114.0+ | Eclipse 4.2-4.7 | ![Check](../_img/check.png) | ![x](../_img/x.png)         | ![x](../_img/x.png)         | ![x](../_img/x.png)
-Team Explorer Everywhere 2015      | Eclipse 3.5-4.3 | ![Check](../_img/check.png) | ![Check](../_img/check.png) | ![x](../_img/x.png)         | ![x](../_img/x.png)
-Team Explorer Everywhere 2013      | Eclipse 3.5-4.3 | ![Check](../_img/check.png) | ![Check](../_img/check.png) | ![x](../_img/x.png)         | ![x](../_img/x.png)
-Team Explorer Everywhere 2012      | Eclipse 3.4-4.3 | ![Check](../_img/check.png) | ![Check](../_img/check.png) | ![Check](../_img/check.png) | ![Check](../_img/check.png)
-Team Explorer Everywhere 2010 SP1  | Eclipse 3.2-3.6 | ![Check](../_img/check.png) | ![Check](../_img/check.png) | ![Check](../_img/check.png) | ![Check](../_img/check.png)
-Team Explorer Everywhere 2010      | Eclipse 3.0-3.5 | ![Check](../_img/check.png) | ![Check](../_img/check.png) | ![Check](../_img/check.png) | ![Check](../_img/check.png)
+Team Explorer Everywhere 14.114.0+ | Eclipse 4.2-4.7 | ![Check](_img/check.png) | ![x](_img/x.png)         | ![x](_img/x.png)         | ![x](_img/x.png)
+Team Explorer Everywhere 2015      | Eclipse 3.5-4.3 | ![Check](_img/check.png) | ![Check](_img/check.png) | ![x](_img/x.png)         | ![x](_img/x.png)
+Team Explorer Everywhere 2013      | Eclipse 3.5-4.3 | ![Check](_img/check.png) | ![Check](_img/check.png) | ![x](_img/x.png)         | ![x](_img/x.png)
+Team Explorer Everywhere 2012      | Eclipse 3.4-4.3 | ![Check](_img/check.png) | ![Check](_img/check.png) | ![Check](_img/check.png) | ![Check](_img/check.png)
+Team Explorer Everywhere 2010 SP1  | Eclipse 3.2-3.6 | ![Check](_img/check.png) | ![Check](_img/check.png) | ![Check](_img/check.png) | ![Check](_img/check.png)
+Team Explorer Everywhere 2010      | Eclipse 3.0-3.5 | ![Check](_img/check.png) | ![Check](_img/check.png) | ![Check](_img/check.png) | ![Check](_img/check.png)
 
 <a name="supported-browsers"></a>
 ### Browsers
@@ -605,7 +606,7 @@ so VSTS and TFS support the most recent version.
 
 ### Office
 
-Office integration supports the following clients: [Excel](../work/backlogs/office/bulk-add-modify-work-items-excel.md), [Project](../work/backlogs/office/create-your-backlog-tasks-using-project.md), and [PowerPoint with Storyboarding](../work/backlogs/office/storyboard-your-ideas-using-powerpoint.md). 
+Office integration supports the following clients: [Excel](/vsts/work/backlogs/office/bulk-add-modify-work-items-excel.md), [Project](/vsts/work/backlogs/office/create-your-backlog-tasks-using-project.md), and [PowerPoint with Storyboarding](/vsts/work/backlogs/office/storyboard-your-ideas-using-powerpoint.md). 
 
 TFS version | Supported Office versions
 ------------|--------------------------
@@ -623,7 +624,7 @@ TFS 2010    | Office 2010<br/>Office 2007
 
 **TFS 2018 discontinues support for the Xaml build system.**
 
-We've built a brand new [scriptable build system](../build-release/overview.md) that's web based and cross-platform.
+We've built a brand new [scriptable build system](/vsts/build-release/overview.md) that's web based and cross-platform.
 
 You may want to use an older version of Build if you plan to continue using the Xaml build system, 
 if you are using Build servers against multiple versions of TFS, or if you need to leverage servers 

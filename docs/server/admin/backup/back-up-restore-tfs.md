@@ -47,13 +47,13 @@ If your topology does not exactly match this example, you might have to adjust t
 
 -    [Understand TFS databases, deployment topologies, and backup](backup-db-architecture.md) 
 
--    [Team Foundation Server architecture](/vsts/architecture/architecture.md) 
+-    [Team Foundation Server architecture](../../architecture/architecture.md) 
 
--    [Examples of Simple Topology](/vsts/architecture/examples-simple-topo.md) 
+-    [Examples of Simple Topology](../../architecture/examples-simple-topo.md) 
 
--    [Examples of Moderate Topology](/vsts/architecture/examples-moderate-topo.md) 
+-    [Examples of Moderate Topology](../../architecture/examples-moderate-topo.md) 
 
--    [Examples of Complex Topology](/vsts/architecture/examples-complex-topo.md) 
+-    [Examples of Complex Topology](../../architecture/examples-complex-topo.md) 
 
 <a name="diff-server" />
 
@@ -112,13 +112,13 @@ the following topics:
 
 -   [Understanding Backing Up Team Foundation Server](backup-db-architecture.md)
 
--   [Team Foundation Server Architecture](/vsts/architecture/architecture.md)
+-   [Team Foundation Server Architecture](../../architecture/architecture.md)
 
--   [Examples of Simple Topology](/vsts/architecture/examples-simple-topo.md)
+-   [Examples of Simple Topology](../../architecture/examples-simple-topo.md)
 
--   [Examples of Moderate Topology](/vsts/architecture/examples-moderate-topo.md)
+-   [Examples of Moderate Topology](../../architecture/examples-moderate-topo.md)
 
--   [Examples of Complex Topology](/vsts/architecture/examples-complex-topo.md)
+-   [Examples of Complex Topology](../../architecture/examples-complex-topo.md)
 
 ## Q & A
 
@@ -140,7 +140,7 @@ the following topics:
 
 **Q: Data-tier? Application-tier? What are those? Where can I learn more about TFS architecture?**
 
-**A:** Learn more about how TFS works in [Team Foundation Server architecture](/vsts/architecture/architecture.md).
+**A:** Learn more about how TFS works in [Team Foundation Server architecture](../../architecture/architecture.md).
 
 **Q: Can't I just tweak the databases manually?**
 
