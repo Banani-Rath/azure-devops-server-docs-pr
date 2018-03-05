@@ -65,7 +65,7 @@ You must be a member of the **Windows Administrators** security group on the ser
     > [!TIP]
     > A Windows Firewall warning might appear, but you can safely ignore this warning if you’re planning to also install TFS on this server. TFS automatically adds an exception to Windows Firewall for SQL Server, if both servers (TFS and SQL Server) are installed on the same machine. If you’re installing TFS on some other server, you’ll want to [open a port for SQL Server in Windows Firewall on this server](http://elhajj.wordpress.com/2013/02/25/workaround-error-tf255049-punching-a-hole-through-windows-firewall/) (blog post).
 	>
-	>For more information about SQL Server ports required for Team Foundation Server, see [Ports required for installation of Team Foundation Server](../../architecture/required-ports.md).
+	>For more information about SQL Server ports required for Team Foundation Server, see [Ports required for installation of Team Foundation Server](/vsts/architecture/required-ports.md).
 
 7.  On the **Setup Role** page, choose **SQL Server Feature Installation**.
 
@@ -309,6 +309,6 @@ To verify a connection to an instance of SQL Server by using SQL Server Manageme
 
 [Install Team Foundation Server](../install-2013/install-tfs.md)  
 
-[TFS upgrade requirements](../../upgrade/upgrade-2013/upgrade-2013-requirements.md)  
+[TFS upgrade requirements](/vsts/upgrade/upgrade-2013/upgrade-2013-requirements.md)  
 
 [SQL Server Collation Requirements for Team Foundation Server](collation-requirements.md)

@@ -11,7 +11,7 @@ ms.date: 09/09/2017
 
 # Verify SharePoint products for Team Foundation Server
 
-[!INCLUDE [temp](../../_shared/about-sharepoint-deprecation.md)]
+[!INCLUDE [temp](/vsts/_shared/about-sharepoint-deprecation.md)]
 
 If you choose to use an installation of SharePoint Products other than the one that was installed during Team Foundation Server installation, you should verify that your installation of SharePoint Products meets the following guidelines:
 
@@ -70,6 +70,6 @@ To perform this procedure, you must be a member of the **Administrators** securi
 
 [Install Team Foundation Server](../install-2013/install-tfs.md) 
 
-[TFS upgrade requirements](../../upgrade/upgrade-2013/upgrade-2013-requirements.md) 
+[TFS upgrade requirements](/vsts/upgrade/upgrade-2013/upgrade-2013-requirements.md) 
 
 [How to: Set up remote SharePoint Products for Team Foundation Server](setup-remote-sharepoint.md) 

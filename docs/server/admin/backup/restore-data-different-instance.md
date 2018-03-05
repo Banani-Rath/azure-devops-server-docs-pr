@@ -109,7 +109,7 @@ Install SQL Server in the new environment, prepare SQL Server for restoration of
 is operational. As an alternative, create an instance of SQL Server
 on a server that already has a matching version installed.
 
-For more information, see [Installing Team Foundation Components](../../install/get-started.md).
+For more information, see [Installing Team Foundation Components](/vsts/install/get-started.md).
 
 <a name="StopServices"></a>
 ## Step 3: Stop Services that Team Foundation Server Uses
@@ -127,7 +127,7 @@ To stop services that Team Foundation Server uses:
 
 2.  Type the following command: ```TFSServiceControl quiesce```
 
-    For more information, see [TFSServiceControl Command](../../command-line/tfsservicecontrol-cmd.md).
+    For more information, see [TFSServiceControl Command](/vsts/command-line/tfsservicecontrol-cmd.md).
 
 <a name="RestoreDB"></a>
 
@@ -491,7 +491,7 @@ To redirect Team Foundation Server to remote databases:
     > **Note:**
     > In **/SQLInstances**, you must specify all instances, separated by
     > commas, of SQL Server that host databases for Team Foundation Server.
-    > For more information, see [RemapDBs Command](../../command-line/tfsconfig-cmd.md#remapdbs).
+    > For more information, see [RemapDBs Command](/vsts/command-line/tfsconfig-cmd.md#remapdbs).
 
 <a name="UpdateNetworkService"></a>
 ## Step 10: Update All Service Accounts
@@ -529,7 +529,7 @@ To update service accounts:
     /account:** *AccountName* **/SQLInstance:** *ServerName* **/DatabaseName:** *DatabaseName*
 
     For more information about how to use this command, see
-    [Accounts Command](../../command-line/tfsconfig-cmd.md#accounts).
+    [Accounts Command](/vsts/command-line/tfsconfig-cmd.md#accounts).
 
 4.  Use the **Accounts** command to add the data sources account for the
     report server and the proxy account for Team Foundation Server
@@ -562,7 +562,7 @@ To register the location of the databases:
     **TfsConfig registerDB /SQLInstance:** *ServerName* **/DatabaseName:** *DatabaseName*
 
     For more information about how to use this command, see
-    [RegisterDB Command](../../command-line/tfsconfig-cmd.md#registerdb).
+    [RegisterDB Command](/vsts/command-line/tfsconfig-cmd.md#registerdb).
 
 <a name="RestoreWarehouse"></a>
 ## Step 12: Configure Reporting and Analysis Services
@@ -692,7 +692,7 @@ To reconfigure reporting and Analysis Services:
     **GetProcessingStatus** service returns a value of
     **Idle** for all jobs.
 
-    For more information, see [Manually Process the Data Warehouse and Analysis Services Cube](../../../report/admin/manually-process-data-warehouse-and-cube.md) for Team Foundation Server.
+    For more information, see [Manually Process the Data Warehouse and Analysis Services Cube](/vsts/../report/admin/manually-process-data-warehouse-and-cube.md) for Team Foundation Server.
 
 26. On the application-tier server, open Computer Management, and start
     the Visual Studio Team Foundation Background Job Agent.
@@ -744,7 +744,7 @@ To restart services that Team Foundation Server uses:
 
     ```TFSServiceControl unquiesce```
 
-    For more information, see [TFSServiceControl Command](../../command-line/tfsservicecontrol-cmd.md).
+    For more information, see [TFSServiceControl Command](/vsts/command-line/tfsservicecontrol-cmd.md).
 
 
 <a name="RefreshDataCache"></a>

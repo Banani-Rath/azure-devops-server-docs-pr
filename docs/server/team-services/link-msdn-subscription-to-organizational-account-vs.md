@@ -1,3 +1,3 @@
 ---
-redirect_url: ../../billing/faq-link-msdn-subscription-org-account
+redirect_url: /vsts/billing/faq-link-msdn-subscription-org-account
 ---

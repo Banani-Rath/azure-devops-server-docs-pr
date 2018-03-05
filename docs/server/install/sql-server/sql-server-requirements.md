@@ -13,7 +13,7 @@ ms.technology: vs-devops-admin
 
 **TFS 2013**
 
-The most recent requirements information, which also covers TFS 2015, is [Requirements and Compatibility](../../requirements.md).
+The most recent requirements information, which also covers TFS 2015, is [Requirements and Compatibility](/vsts/requirements.md).
 
 Team Foundation Server 2013 requires SQL Server 2012 with Service Pack 1 or SQL Server 2014.
 
@@ -38,7 +38,7 @@ Required for reporting | Reporting Services – Native </br> Analysis Services |
 
 
 > [!TIP]
-> For TFS installations that require running SQL Server on dedicated hardware, hardware recommendations are available. For more information, see [System requirements for Team Foundation Server](../../requirements.md)
+> For TFS installations that require running SQL Server on dedicated hardware, hardware recommendations are available. For more information, see [System requirements for Team Foundation Server](/vsts/requirements.md)
 
 **Your limits on database read operations**  
 Microsoft does not support any read operations against the TFS databases that originate from queries, scripts, .dll files, and so on, not provided by Microsoft or its support teams. If Microsoft Support determines that those read operations prevent them from solving your problem, the entire database will be unsupported. To return the database to a supported state, all unsupported read operations must stop.
@@ -196,10 +196,10 @@ To verify a connection to an instance of SQL Server by using SQL Server Manageme
 
 ### Conceptual Information about SQL Server and Team Foundation Server
 
-   [Understanding SQL Server and SQL Server Reporting Services](../../architecture/sql-server-databases.md)     
+   [Understanding SQL Server and SQL Server Reporting Services](/vsts/architecture/sql-server-databases.md)     
 Pulling it all together: Interactions between Team Foundation Server and SQL Server.
 
-   [Team Foundation Server Databases](../../architecture/sql-server-databases.md)     
+   [Team Foundation Server Databases](/vsts/architecture/sql-server-databases.md)     
 A comprehensive list of the databases used to store Team Foundation Server data.
 
    [SQL Server Reporting Services Roles](reporting-services-roles.md)     
@@ -212,4 +212,4 @@ Explains the Team Foundation Server requirements for SQL Server collation settin
 
 [Install Team Foundation Server](../install-2013/install-tfs.md)  
 
-[TFS upgrade requirements](../../upgrade/upgrade-2013/upgrade-2013-requirements.md)
+[TFS upgrade requirements](/vsts/upgrade/upgrade-2013/upgrade-2013-requirements.md)

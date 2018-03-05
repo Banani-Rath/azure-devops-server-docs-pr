@@ -28,12 +28,12 @@ Review the requirements listed here and then choose a server upgrade path. You c
 
 ## New prerequisite requirements
 
-**SQL Server**: Before you start your upgrade, you might have to upgrade SQL Server to meet new Team Foundation Server requirements. SQL Server 2008 R2 is no longer supported. SQL Server 2012 with SP1 is supported. For more information, see [SQL Server requirements for Team Foundation Server](../../requirements.md#sql-server).
+**SQL Server**: Before you start your upgrade, you might have to upgrade SQL Server to meet new Team Foundation Server requirements. SQL Server 2008 R2 is no longer supported. SQL Server 2012 with SP1 is supported. For more information, see [SQL Server requirements for Team Foundation Server](/vsts/requirements.md#sql-server).
 
 > [!TIP]
 > If you’re using SQL Server 2012 with SP1, we recommend you also apply [cumulative update 2 on top of SP1](http://support.microsoft.com/kb/2790947) to address a critical SQL Server bug around resource consumption. This isn’t a hard requirement because the bug only affects a small number of instances, but we wanted you to be aware of it. If you don’t apply CU2, you should apply a SQL Server hotfix ([KB2793634](http://support.microsoft.com/kb/2793634)) to addresses another (different) issue where SQL Server 2012 with SP1 might request an excessive amount of restarts.
 
-**SharePoint Products**: If you have a portal server, you might have to upgrade it to continue using SharePoint integration. We no longer support Windows SharePoint Services 3.0 or Microsoft Office SharePoint Server 2007. See [SharePoint Products requirements for Team Foundation Server](../../requirements.md#sharepoint).
+**SharePoint Products**: If you have a portal server, you might have to upgrade it to continue using SharePoint integration. We no longer support Windows SharePoint Services 3.0 or Microsoft Office SharePoint Server 2007. See [SharePoint Products requirements for Team Foundation Server](/vsts/requirements.md#sharepoint).
 
 > [!TIP]
 > Do you need to upgrade SharePoint to a supported version? See [Upgrade from Office SharePoint Server 2007 or Windows SharePoint Services 3.0 to SharePoint Server 2013 or SharePoint Foundation 2013](https://technet.microsoft.com/library/ee947141.aspx)
@@ -43,7 +43,7 @@ Review the requirements listed here and then choose a server upgrade path. You c
 If you don’t install reporting or SharePoint, your deployment is simpler, but we don’t recommend it. Keep these two features during upgrade because the upgrade configuration will automatically link upgraded projects to the portal and reporting features. If you add a portal or reporting after you upgrade, you cannot easily create these links between all your upgraded projects and the portal.
 
 > [!TIP]
-> Team Foundation Server doesn’t support changing languages during an upgrade. You should maintain the locale of your operating system and Team Foundation Server during the upgrade. For more information, see: [Language requirements for Team Foundation Server](../../requirements.md#languages)
+> Team Foundation Server doesn’t support changing languages during an upgrade. You should maintain the locale of your operating system and Team Foundation Server during the upgrade. For more information, see: [Language requirements for Team Foundation Server](/vsts/requirements.md#languages)
 
 ## Next step: choose a server upgrade path
 
@@ -55,7 +55,7 @@ The steps are different based on whether you’re using a basic installation, or
 
 -    [TFS Application Tier will use different hardware than it’s using right now](new-app-tier-hardware.md)  (advanced upgrade)
 
-![TFS server upgrade choices](../../install/_img/ic612461.png)
+![TFS server upgrade choices](/vsts/install/_img/ic612461.png)
 
 ## Less common upgrade tasks
 
@@ -77,9 +77,9 @@ If you have a scaled-out deployment of TFS application tiers that you want to up
 
 -   **Your TFS farm is TFS 2010**: Uninstall Team Foundation Server 2010 from each application tier. After all previous versions have been uninstalled, install TFS 2012 on one of the application tiers and run the upgrade as you would for a standalone deployment. Select any application tier in the farm that you like; it doesn’t matter. After the upgrade completes, use the Add an Application Tier wizard to install Team Foundation Server 2012 on the remaining application tiers. This reassembles the farm and completes the farm upgrade.
 
--   **Your TFS farm is TFS 2012 or TFS 2013**: [Quiesce](../../command-line/tfsservicecontrol-cmd.md) every application tier in the farm. After all previous versions have been quiesced, install TFS 2013 on one of the application tiers (without uninstalling the previous version of TFS) and run the upgrade as you would for a standalone deployment. Select any application tier in the farm that you like; it doesn’t matter. After the upgrade completes, use the Add an Application Tier wizard to install Team Foundation Server 2013 (without uninstalling the previous version of TFS) on the remaining application tiers. This reassembles the farm and completes the farm upgrade.
+-   **Your TFS farm is TFS 2012 or TFS 2013**: [Quiesce](/vsts/command-line/tfsservicecontrol-cmd.md) every application tier in the farm. After all previous versions have been quiesced, install TFS 2013 on one of the application tiers (without uninstalling the previous version of TFS) and run the upgrade as you would for a standalone deployment. Select any application tier in the farm that you like; it doesn’t matter. After the upgrade completes, use the Add an Application Tier wizard to install Team Foundation Server 2013 (without uninstalling the previous version of TFS) on the remaining application tiers. This reassembles the farm and completes the farm upgrade.
 
-For more information, see this topic: [How to: Create a Team Foundation server farm (high availability)](../../install/create-tfs-farm.md)
+For more information, see this topic: [How to: Create a Team Foundation server farm (high availability)](/vsts/install/create-tfs-farm.md)
 
 ### Upgrading the TFS Extensions for Project Server
 

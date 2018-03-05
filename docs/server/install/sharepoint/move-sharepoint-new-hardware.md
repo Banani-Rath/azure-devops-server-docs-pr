@@ -11,7 +11,7 @@ ms.date: 09/09/2017
 
 # Move SharePoint to new hardware for TFS
 
-[!INCLUDE [temp](../../_shared/about-sharepoint-deprecation.md)]
+[!INCLUDE [temp](/vsts/_shared/about-sharepoint-deprecation.md)]
 
 ## Set up a new SharePoint site 
 
@@ -38,7 +38,7 @@ Run the TFS installation program from the product DVD and then use the **Configu
 
 1.  In the Team Foundation Server Configuration tool, choose **Configure Extensions for SharePoint Products** and then choose **Start Wizard**.
 
-	![](../../upgrade/_img/ic666063.png)
+	![](/vsts/upgrade/_img/ic666063.png)
 
     The Team Foundation Server SharePoint Extensions Configuration wizard appears.
 
@@ -52,7 +52,7 @@ Run the TFS installation program from the product DVD and then use the **Configu
 
     3.  Type a user account and password for the service account for SharePoint and then choose **Next**.
 
-        For more information, see [Accounts required for installation of Team Foundation Server](../../requirements.md#accounts)
+        For more information, see [Accounts required for installation of Team Foundation Server](/vsts/requirements.md#accounts)
 
 4.  On the **Review** page, review the settings and choose ** Next**.
 
@@ -121,6 +121,6 @@ When you installed SharePoint, a brand new content database was created for Shar
 
 You can use TFS custom backup and restore tools to manage your data. First you’re going to back up your data, including the encryption key on the report server. Next, you’re going to restore your data to the SQL Server instance you set up in step 2. With the restore complete, you’ll use the SQL Server Reporting tool to restart the database, restore the encryption key, and then verify access to the report server. If you installed SharePoint, you’ll use a SharePoint command line tool to attach and upgrade your content database
 
-For more information, see [Back up and restore data for TFS](../../upgrade/upgrade-2013/backup-and-restore-data.md)
+For more information, see [Back up and restore data for TFS](/vsts/upgrade/upgrade-2013/backup-and-restore-data.md)
 
 ![](../_img/ic612476.png)

@@ -56,4 +56,4 @@ In addition to configuring role membership and permissions in Reporting Services
 ## See also
 
 -  [SQL Server Reporting Services Roles](../install/sql-server/reporting-services-roles.md)
--  [Grant permissions to view or create reports in TFS](../../report/admin/grant-permissions-to-reports.md)
+-  [Grant permissions to view or create reports in TFS](/vsts/report/admin/grant-permissions-to-reports.md)
