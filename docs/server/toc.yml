@@ -231,7 +231,7 @@
     - name: Examples of moderate topology
       href: architecture/examples-moderate-topo.md
     - name: Examples of complex topology
-      href:architecture/examples-complex-topo.md
+      href: architecture/examples-complex-topo.md
   - name: Command-line tools
     items:
     - name: TFSConfig
