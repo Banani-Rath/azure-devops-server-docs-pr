@@ -1,0 +1,95 @@
+- name: "Team Foundation Server"
+  href: index.md
+- name: Overview
+  items:
+  - name: What's new?
+    href: whats-new.md
+  - name: Requirements, setup, configuration
+    href:
+- name: Quickstarts
+  items:
+  - name: Install on a single server
+    href: quickstarts/single-server.md
+  - name: Upgrade an existing deployment
+    href: quickstarts/upgrade-tfs.md
+  - name: Reconfigure an existing deployment
+    href: 
+- name: Tutorials
+  items:
+  - name: Site settings and SSL certificates
+    href: https://docs.microsoft.com/en-us/vsts/security/websitesettings?toc=/tfs/toc.json
+  - name: Back up your database
+    href: tutorials/manually-backup-tfs.md
+  - name: Add users to groups
+    href: https://docs.microsoft.com/en-us/vsts/security/add-users-team-project?toc=/tfs/toc.json
+  - name: Change permissions
+    href: https://docs.microsoft.com/en-us/vsts/security/change-individual-permissions?toc=/tfs/toc.json
+- name: Concepts
+  items:
+  - name: Databases
+    href: 
+  - name: Components, terms, and key concepts
+    href: 
+  - name: Active Directory integration
+    href: concepts/setup-ad-groups.md
+  - name: Background job agent
+    href:
+  - name: Administration console
+    href: concepts/open-admin-console.md
+  - name: Service accounts
+    href:
+- name: How-to Guides
+  items:
+  - name: Install guide
+    href:
+  - name: Upgrade guide
+    href:
+  - name: High availability and disaster recovery
+    href:
+  - name: Manage team project collections
+    href: how-to/manage-team-project-collections.md
+- name: Reference
+  items:
+  - name: Requirements
+    href: reference/tfs-requirements.md
+  - name: What's changed in supported compatability
+    href: 
+  - name: Permissions and groups
+    items:
+    - name: About permissions and groups
+      href: https://docs.microsoft.com/en-us/vsts/security/about-permissions?toc=/tfs/toc.json
+    - name: About security roles
+      href: https://docs.microsoft.com/en-us/vsts/security/about-security-roles?toc=/tfs/toc.json
+    - name: About access levels
+      href: https://docs.microsoft.com/en-us/vsts/security/access-levels?toc=/tfs/toc.json
+    - name: Security glossary
+      href: https://docs.microsoft.com/en-us/vsts/security/security-glossary?toc=/tfs/toc.json
+  - name: Required ports
+    href:
+  - name: Command-line tools
+    items:
+    - name: TFSConfig
+      href: reference/command-line/tfsconfig-cmd.md
+    - name: TFSSecurity
+      href: reference/command-line/tfssecurity-cmd.md
+    - name: TFSDeleteProject
+      href: reference/command-line/tfsdeleteproject-cmd.md
+    - name: TFSLabConfig
+      href: reference/command-line/tfslabconfig-cmd.md
+    - name: TFSServiceControl
+      href: reference/command-line/tfsservicecontrol-cmd.md
+  - name: REST APIs and permissions
+    href: https://docs.microsoft.com/en-us/rest/api/vsts/security/permissions?toc=/tfs/toc.json
+- name: Troubleshooting
+  - name: Upgrade failures
+    href:
+  - name: Collection upgrade failures
+    href: troubleshooting/collection-upgrade-failure.md
+  - name: Collection attach failures
+    href:
+- name: Resources
+  items:
+  - name: Security and Identity
+    href: https://docs.microsoft.com/en-us/vsts/security/
+  - name: Notifications
+    href: https://docs.microsoft.com/en-us/vsts/notifications/
