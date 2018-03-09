@@ -81,6 +81,7 @@
   - name: REST APIs and permissions
     href: https://docs.microsoft.com/en-us/rest/api/vsts/security/permissions?toc=/tfs/toc.json
 - name: Troubleshooting
+  items:
   - name: Upgrade failures
     href:
   - name: Collection upgrade failures
