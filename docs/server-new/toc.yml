@@ -5,7 +5,7 @@
   - name: What's new?
     href: whats-new.md
   - name: Requirements, setup, configuration
-    href:
+    href: requirements.md
 - name: Quickstarts
   items:
   - name: Install on a single server
