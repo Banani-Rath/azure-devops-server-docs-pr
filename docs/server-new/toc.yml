@@ -48,8 +48,6 @@
     href: https://docs.microsoft.com/en-us/vsts/security/change-individual-permissions?toc=/tfs/toc.json
 - name: Reference
   items:
-  - name: What's changed with TFS versions
-    href: reference/versions-and-changes.md
   - name: Site settings and SSL certificates
     href: https://docs.microsoft.com/en-us/vsts/security/websitesettings?toc=/tfs/toc.json
   - name: Permissions and groups
