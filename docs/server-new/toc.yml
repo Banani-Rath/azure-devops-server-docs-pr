@@ -21,7 +21,7 @@
 - name: Concepts
   items:
   - name: Databases
-    href: 
+    href: concepts/sql-server-databases.md
   - name: Components, terms, and key concepts
     href: 
   - name: Active Directory integration
