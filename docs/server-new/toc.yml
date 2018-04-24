@@ -6,6 +6,8 @@
     href: whats-new.md
   - name: Requirements, setup, configuration
     href: requirements.md
+  - name: Compatibility
+    href: compatibility.md
 - name: Quickstarts
   items:
   - name: Install on a single server
@@ -14,16 +16,8 @@
     href: quickstarts/upgrade-tfs.md
   - name: Reconfigure an existing deployment
     href: 
-- name: Tutorials
-  items:
-  - name: Site settings and SSL certificates
-    href: https://docs.microsoft.com/en-us/vsts/security/websitesettings?toc=/tfs/toc.json
   - name: Back up your database
     href: tutorials/manually-backup-tfs.md
-  - name: Add users to groups
-    href: https://docs.microsoft.com/en-us/vsts/security/add-users-team-project?toc=/tfs/toc.json
-  - name: Change permissions
-    href: https://docs.microsoft.com/en-us/vsts/security/change-individual-permissions?toc=/tfs/toc.json
 - name: Concepts
   items:
   - name: Databases
@@ -48,12 +42,16 @@
     href:
   - name: Manage team project collections
     href: how-to/manage-team-project-collections.md
+  - name: Add users to groups
+    href: https://docs.microsoft.com/en-us/vsts/security/add-users-team-project?toc=/tfs/toc.json
+  - name: Change permissions
+    href: https://docs.microsoft.com/en-us/vsts/security/change-individual-permissions?toc=/tfs/toc.json
 - name: Reference
   items:
-  - name: Requirements
-    href: reference/tfs-requirements.md
-  - name: What's changed in supported compatability
-    href: reference/versions-and-compatibility.md
+  - name: What's changed with TFS versions
+    href: reference/versions-and-changes.md
+  - name: Site settings and SSL certificates
+    href: https://docs.microsoft.com/en-us/vsts/security/websitesettings?toc=/tfs/toc.json
   - name: Permissions and groups
     items:
     - name: About permissions and groups
