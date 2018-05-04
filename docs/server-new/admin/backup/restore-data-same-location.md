@@ -237,7 +237,7 @@ After you restore the data, you must restart the services to return the server t
 
  [Permission reference for Team Foundation Server](/vsts/security/permissions.md) 
 
- [Team Foundation Server architecture](../architecture/architecture.md) 
+ [Team Foundation Server architecture](../../architecture/architecture.md) 
 
  [Restore the databases](tut-single-svr-restore-dbs.md) 
 
