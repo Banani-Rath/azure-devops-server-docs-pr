@@ -22,9 +22,8 @@ If you manually configured your backups, you cannot use the Restore wizard in Sc
 
 Use this topic to:
 
-> [!div class="checklist"]   
-> * Restore Team Foundation Server databases
-> * Restore the SharePoint farm
+* Restore Team Foundation Server databases
+* Restore the SharePoint farm
 
 **Required permissions**  
 To perform these procedures, you must be a member of the following groups or have the following permissions:  

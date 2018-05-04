@@ -22,11 +22,10 @@ will learn how to configure SharePoint Foundation, reporting, and
 analysis services to work with the new server.
 
 Use this topic to:
-
-> [!div class="checklist"]   
-> * Install Team Foundation Server and the Extensions for SharePoint Products
-> * Configure SharePoint Foundation 
-> * Configure reporting and Analysis Services  
+ 
+* Install Team Foundation Server and the Extensions for SharePoint Products
+* Configure SharePoint Foundation 
+* Configure reporting and Analysis Services  
 
 
 **Required permissions**: you must be a member of the following groups or have the following

@@ -31,22 +31,21 @@ manage and monitor your server configuration. Tasks you can accomplish
 through the administration console are indicated with this image: ![Team Foundation Server Administration Console](_img/admin-console-button.png).
 
 
-> [!div class="mx-tdBreakAll"]  
-> |Application tier  |Data tier  | 
-> |-------------|----------|
-> |- [Add administration console users](../add-administrator-tfs.md) ![Team Foundation Server Administration Console](_img/admin-console-button.png)<br/>- [Configure an SMTP server to support alerts and feedback requests](setup-customize-alerts.md) ![Team Foundation Server Administration Console](_img/admin-console-button.png)<br/>- [Change cache settings for an application-tier server](change-caching-app-tier.md) ![Team Foundation Server Administration Console](_img/admin-console-button.png)<br/>- [Manage access to features in Team Web Access](/vsts/security/change-access-levels.md)|- [Configure a backup schedule and plan](backup/config-backup-sched-plan.md) ![Team Foundation Server Administration Console](_img/admin-console-button.png)<br/>- [Back up and restore TFS](backup/back-up-restore-tfs.md)<br/>- [Manage TFS reports, data warehouse, and analysis services cube](/vsts/report/admin/manage-reports-data-warehouse-cube.md)<br/>- [Understand backing up Team Foundation Server](backup/backup-db-architecture.md) |
+
+|Application tier  |Data tier  | 
+|-------------|----------|
+|- [Add administration console users](add-administrator-tfs.md) ![Team Foundation Server Administration Console](_img/admin-console-button.png)<br/>- [Configure an SMTP server to support alerts and feedback requests](setup-customize-alerts.md) ![Team Foundation Server Administration Console](_img/admin-console-button.png)<br/>- [Change cache settings for an application-tier server](change-caching-app-tier.md) ![Team Foundation Server Administration Console](_img/admin-console-button.png)<br/>- [Manage access to features in Team Web Access](/vsts/security/change-access-levels.md)|- [Configure a backup schedule and plan](backup/config-backup-sched-plan.md) ![Team Foundation Server Administration Console](_img/admin-console-button.png)<br/>- [Back up and restore TFS](backup/back-up-restore-tfs.md)<br/>- [Manage TFS reports, data warehouse, and analysis services cube](/vsts/report/admin/manage-reports-data-warehouse-cube.md)<br/>- [Understand backing up Team Foundation Server](backup/backup-db-architecture.md) |
 
 
-> [!div class="mx-tdBreakAll"]  
-> |Team project collections  |Team projects  | 
-> |-------------|----------|
-> |- [Manage team project collections](manage-team-project-collections.md) ![Team Foundation Server Administration Console](_img/admin-console-button.png)<br/>- [Move a team project collection](move-project-collection.md)<br/>- [Split a team project collection](split-team-project-collection.md) |- [Create a team project](/vsts/accounts/create-team-project.md)<br/>- [Delete a team project](/vsts/accounts/delete-team-project.md#delete-team-proj) ![Team Foundation Server Administration Console](_img/admin-console-button.png)<br/>- [Add reports to a team project](/vsts/report/admin/add-reports-to-a-team-project.md)<br/>- [Configure or add a project portal](https://msdn.microsoft.com/library/ms242865.aspx)<br/>- [Support rollup of work and other fields](https://msdn.microsoft.com/en-us/library/dn217871(v=vs.120).aspx) |
+
+|Team project collections  |Team projects  | 
+|-------------|----------|
+|- [Manage team project collections](manage-team-project-collections.md) ![Team Foundation Server Administration Console](_img/admin-console-button.png)<br/>- [Move a team project collection](move-project-collection.md)<br/>- [Split a team project collection](split-team-project-collection.md) |- [Create a team project](/vsts/accounts/create-team-project.md)<br/>- [Delete a team project](/vsts/accounts/delete-team-project.md#delete-team-proj) ![Team Foundation Server Administration Console](_img/admin-console-button.png)<br/>- [Add reports to a team project](/vsts/report/admin/add-reports-to-a-team-project.md)<br/>- [Configure or add a project portal](https://msdn.microsoft.com/library/ms242865.aspx)<br/>- [Support rollup of work and other fields](https://msdn.microsoft.com/en-us/library/dn217871(v=vs.120).aspx) |
 
 
-> [!div class="mx-tdBreakAll"]  
-> |Reports, documents, and dashboards  |Service accounts, application pools, and websites  | 
-> |-------------|----------|
-> |- [Add reports to a team project](/vsts/report/admin/add-reports-to-a-team-project.md) ![Team Foundation Server Administration Console](_img/admin-console-button.png)<br/>- [Manage the data warehouse and analysis services cube](/vsts/report/admin/manage-reports-data-warehouse-cube.md)<br/>- [Add SharePoint products to your deployment](add-sharepoint-to-tfs.md)|- [Stop and start services, application pools, and websites](stop-start-stuff.md)<br/>- [Service accounts and dependencies in TFS](service-accounts-dependencies-tfs.md)<br/>- [Change the service account or password for TFS](change-service-account-password.md) ![Team Foundation Server Administration Console](_img/admin-console-button.png)<br/>- [Change the service account or password for SQL Server Reporting Services](change-service-account-or-password-sql-reporting.md) | 
+|Reports, documents, and dashboards  |Service accounts, application pools, and websites  | 
+|-------------|----------|
+|- [Add reports to a team project](/vsts/report/admin/add-reports-to-a-team-project.md) ![Team Foundation Server Administration Console](_img/admin-console-button.png)<br/>- [Manage the data warehouse and analysis services cube](/vsts/report/admin/manage-reports-data-warehouse-cube.md)<br/>- [Add SharePoint products to your deployment](add-sharepoint-to-tfs.md)|- [Stop and start services, application pools, and websites](stop-start-stuff.md)<br/>- [Service accounts and dependencies in TFS](service-accounts-dependencies-tfs.md)<br/>- [Change the service account or password for TFS](change-service-account-password.md) ![Team Foundation Server Administration Console](_img/admin-console-button.png)<br/>- [Change the service account or password for SQL Server Reporting Services](change-service-account-or-password-sql-reporting.md) | 
 
 ## Use the Team Foundation Administration Console to configure and manage your deployment
 
@@ -63,7 +62,7 @@ you want to manage.
 
 1.  If you're not a local administrator on the server where the
     console is running and an administrator in TFS, [get those
-    permissions](../add-administrator-tfs.md).
+    permissions](add-administrator-tfs.md).
 
 2.  To open the console:
 
@@ -194,7 +193,7 @@ To learn more, see <span>[Service accounts and dependencies in Team Foundation S
 **Q: How do I scale my deployment?**
 
 **A:** You can [move TFS to a new server](move-clone-hardware.md)
-or add [additional application-tier servers](backup\restore-application-tier-server.md). You can 
+or add [additional application-tier servers](backup/restore-application-tier-server.md). You can 
 also [Move Team Foundation Server from one environment to another](move-across-domains.md).
 
 **Q: How do I monitor my deployment?**
@@ -261,11 +260,11 @@ like?](http://blogs.msdn.com/b/granth/archive/2013/10/08/what-does-a-well-mainta
 
     -   [language requirements](../requirements.md#languages)
 
-    -   [port requirements](../../architecture/required-ports.md).
+    -   [port requirements](../architecture/required-ports.md).
 
 -   You can also learn about requirements and infrastructure in these reference topics:
 
-    -   [Team Foundation Server architecture](../../architecture/architecture.md)
+    -   [Team Foundation Server architecture](../architecture.md)
 
     -   [Naming restrictions in Team Foundation](/vsts/collaborate/naming-restrictions.md)
 

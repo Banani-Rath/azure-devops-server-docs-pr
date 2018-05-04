@@ -52,7 +52,7 @@ Stopping the services helps protect against data loss or corruption during the r
 
         TFSServiceControl quiesce
 
-    For more information, see [TFSServiceControl Command](../../tfsservicecontrol-cmd.md).
+    For more information, see [TFSServiceControl Command](../../ref/command-line/tfsservicecontrol-cmd.md).
 
 <a name="rename-dbs-to-restore"></a>
 ## Step 2: Rename Databases that You Want to Restore
@@ -119,7 +119,7 @@ You must update the service account for Team Foundation Server (TFSService) and 
 
     **TfsConfig Accounts /add /AccountType:ApplicationTier /account:** *AccountName*
 
-    For more information about how to use this command, see [Accounts Command](../../tfsconfig-cmd.md#accounts).
+    For more information about how to use this command, see [Accounts Command](../../ref/command-line/tfsconfig-cmd.md#accounts).
 
 4.  Use the **Accounts** command to add the data sources account for the report server and the proxy account for Team Foundation Server Proxy, if your deployment uses these resources.
 
@@ -198,7 +198,7 @@ After you restore the data, you must restart the services to return the server t
 
      **TFSServiceControl unquiesce** 
 
-    For more information, see [TFSServiceControl Command](../../tfsservicecontrol-cmd.md).
+    For more information, see [TFSServiceControl Command](../../ref/command-line/tfsservicecontrol-cmd.md).
 
 <a name="refresh-caches-clients"></a>
 ## Step 8: Refresh the Caches on Client Computers

@@ -127,7 +127,7 @@ To stop services that Team Foundation Server uses:
 
 2.  Type the following command: ```TFSServiceControl quiesce```
 
-    For more information, see [TFSServiceControl Command](../../tfsservicecontrol-cmd.md).
+    For more information, see [TFSServiceControl Command](../../ref/command-line/tfsservicecontrol-cmd.md).
 
 <a name="RestoreDB"></a>
 
@@ -491,7 +491,7 @@ To redirect Team Foundation Server to remote databases:
     > **Note:**
     > In **/SQLInstances**, you must specify all instances, separated by
     > commas, of SQL Server that host databases for Team Foundation Server.
-    > For more information, see [RemapDBs Command](../../tfsconfig-cmd.md#remapdbs).
+    > For more information, see [RemapDBs Command](../../ref/command-line/tfsconfig-cmd.md#remapdbs).
 
 <a name="UpdateNetworkService"></a>
 ## Step 10: Update All Service Accounts
@@ -529,7 +529,7 @@ To update service accounts:
     /account:** *AccountName* **/SQLInstance:** *ServerName* **/DatabaseName:** *DatabaseName*
 
     For more information about how to use this command, see
-    [Accounts Command](../../tfsconfig-cmd.md#accounts).
+    [Accounts Command](../../ref/command-line/tfsconfig-cmd.md#accounts).
 
 4.  Use the **Accounts** command to add the data sources account for the
     report server and the proxy account for Team Foundation Server
@@ -562,7 +562,7 @@ To register the location of the databases:
     **TfsConfig registerDB /SQLInstance:** *ServerName* **/DatabaseName:** *DatabaseName*
 
     For more information about how to use this command, see
-    [RegisterDB Command](../../tfsconfig-cmd.md#registerdb).
+    [RegisterDB Command](../../ref/command-line/tfsconfig-cmd.md#registerdb).
 
 <a name="RestoreWarehouse"></a>
 ## Step 12: Configure Reporting and Analysis Services
@@ -744,7 +744,7 @@ To restart services that Team Foundation Server uses:
 
     ```TFSServiceControl unquiesce```
 
-    For more information, see [TFSServiceControl Command](../../tfsservicecontrol-cmd.md).
+    For more information, see [TFSServiceControl Command](../../ref/command-line/tfsservicecontrol-cmd.md).
 
 
 <a name="RefreshDataCache"></a>

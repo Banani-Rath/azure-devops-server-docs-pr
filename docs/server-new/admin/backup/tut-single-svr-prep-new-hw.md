@@ -19,11 +19,10 @@ This topic, the first part of the Restore a Single-Server tutorial, teaches you 
 
 Use this topic to:
 
-> [!div class="checklist"]   
-> * Choose hardware and name the server 
-> * Install SQL Server on the new server 
-> * Install SharePoint Foundation on the new server  
-> * Install Team Foundation Server
+* Choose hardware and name the server 
+* Install SQL Server on the new server 
+* Install SharePoint Foundation on the new server  
+* Install Team Foundation Server
 
 **Required permissions**  
 To perform the procedures in this topic, you must be a member of the **Administrators** security group on the server where you want to install the software.

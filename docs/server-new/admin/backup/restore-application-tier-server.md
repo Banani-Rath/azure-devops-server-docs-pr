@@ -24,14 +24,14 @@ You can also add more than one application-tier server to a deployment of Team F
 
 1.  Stop the application pools and services that Team Foundation Server uses.
 
-    For more information, see [TFSServiceControl Command](../../tfsservicecontrol-cmd.md).
+    For more information, see [TFSServiceControl Command](../../ref/command-line/tfsservicecontrol-cmd.md).
 
 2.  If you are using Network Service as the service account for Team Foundation (TFSService), on the application-tier server, open a Command Prompt window, and change directories to *Drive:%Program Files%*\\ TFS 12.0\\Tools. At the command prompt, enter the following command:
 
     **TfsConfig Accounts /add /account:"NT Authority\\Network Service" /accountType:ApplicationTier /SQLInstance:** *ServerName* **/DatabaseName:** *DatabaseName*
 
     >**Note:**
-    >  For more information, see [Accounts Command](../../tfsconfig-cmd.md#accounts).
+    >  For more information, see [Accounts Command](../../ref/command-line/tfsconfig-cmd.md#accounts).
 
 3.  Install Team Foundation Server on the new server, and start the Application-Tier Only wizard.
 

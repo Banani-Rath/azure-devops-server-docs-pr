@@ -25,7 +25,7 @@ For more information about service accounts in TFS, see [Service accounts and de
 
 **Required Permissions**:
 
- * To perform these procedures, you must be a member of the **Administrators** group on the Team Foundation application-tier server and a member of the **sysadmin** group on the server and instance of SQL Server that hosts the configuration database for Team Foundation. For more information, see [Team Foundation Server architecture](../../architecture/architecture.md) and [Permission reference for Team Foundation Server](/vsts/security/permissions.md).
+ * To perform these procedures, you must be a member of the **Administrators** group on the Team Foundation application-tier server and a member of the **sysadmin** group on the server and instance of SQL Server that hosts the configuration database for Team Foundation. For more information, see [Team Foundation Server architecture](../architecture/architecture.md) and [Permission reference for Team Foundation Server](/vsts/security/permissions.md).
 
 To follow a command-line procedure, you might need to open an elevated Command Prompt window. To perform this task, open the context menu for **Command Prompt**, and choose **Run as Administrator**. For more information, see this page on the Microsoft Web site: [User Account Control](http://go.microsoft.com/fwlink/?LinkId=111235).
 
@@ -40,7 +40,7 @@ To change the password of *TFSService*, you must log on to the application-tier 
 
 1.  Open the administration console for Team Foundation on the server that hosts the application tier.
 
-    For more information, see [Open the Team Foundation Administration Console](../command-line/open-admin-console.md).
+    For more information, see [Open the Team Foundation Administration Console](../ref/command-line/open-admin-console.md).
 
 2.  In the console, expand the server name and choose **Application Tier**.
 
@@ -118,17 +118,17 @@ To configure TFS to use a different account as the service account for Team Foun
 
 2.  At the command line, type **TFSConfig Accounts /change /accountType:ApplicationTier /account:***AccountName* **/password:***NewPassword*, and then choose ENTER.
 
-    For more information, see [Accounts Command](../command-line/tfsconfig-cmd.md#accounts).
+    For more information, see [Accounts Command](../ref/command-line/tfsconfig-cmd.md#accounts).
 
 ## See Also
 
  [Change the service account or password for SQL Server Reporting Services](change-service-account-or-password-sql-reporting.md)  
 
- [Accounts Command](../command-line/tfsconfig-cmd.md#accounts)  
+ [Accounts Command](../ref/command-line/tfsconfig-cmd.md#accounts)  
 
  [Service accounts and dependencies in Team Foundation Server](service-accounts-dependencies-tfs.md)  
 
- [Managing server configuration with TFSConfig](../command-line/tfsconfig-cmd.md)  
+ [Managing server configuration with TFSConfig](../ref/command-line/tfsconfig-cmd.md)  
 
  [How to: Change the Password for Visual Studio Team Foundation Build Service](https://msdn.microsoft.com/library/bb778405)
  
