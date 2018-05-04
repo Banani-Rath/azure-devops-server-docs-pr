@@ -55,7 +55,7 @@ Here's how to move an entire team project collection. If you want to move part o
 
 **Before you begin**
 
-Before you start your move, make sure that you're an administrator on the servers and in the software used by both the deployment you're moving from, and the one you're moving to. If you're not an administrator, [get added as one](../add-administrator-tfs.md).
+Before you start your move, make sure that you're an administrator on the servers and in the software used by both the deployment you're moving from, and the one you're moving to. If you're not an administrator, [get added as one](add-administrator-tfs.md).
 
 <a name="detach-coll"></a>
 ## 1. Detach the collection
@@ -177,7 +177,7 @@ After you have moved a collection, you must update the Web application and permi
 
 -   Open each tab for the team project collection and, if necessary, modify the settings to reflect the services and locations to match the locations of the resources on the current TFS. This is particularly important to do for SharePoint and reporting resources. If you see errors, make sure that your account has the permissions required for administrators of team project collections, and that any other team project collection administrators have been added appropriately.
 
-    For information about this task, see [Modify a Team Project Collection](manage-team-project-collections.md) and [Set administrator permissions for team project collections](../add-administrator-tfs.md).
+    For information about this task, see [Modify a Team Project Collection](manage-team-project-collections.md) and [Set administrator permissions for team project collections](add-administrator-tfs.md).
 
 <a name="config-projs"></a>
 ## Configure projects
@@ -250,7 +250,7 @@ You'll also need to rebuild the warehouse and analysis services cube on the orig
 
 ### To delete the Lab Management resources before moving the collection
 
--   For information about how to remove all group hosts, library shares, and environments from a specified team project collection, see [TFSConfig Lab /Delete Command](../command-line/tfsconfig-cmd.md#lab-delete) with the **/External** option.
+-   For information about how to remove all group hosts, library shares, and environments from a specified team project collection, see [TFSConfig Lab /Delete Command](../ref/command-line/tfsconfig-cmd.md#lab-delete) with the **/External** option.
 
 ### To configure Lab Management resources after moving the collection
 

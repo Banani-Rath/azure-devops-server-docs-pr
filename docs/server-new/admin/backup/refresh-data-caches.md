@@ -69,7 +69,7 @@ To refresh the version control cache on client computers:
 
 ## See Also
 
- [Open the Team Foundation Administration Console](../../open-admin-console.md) 
+ [Open the Team Foundation Administration Console](../../ref/command-line/open-admin-console.md) 
 
  [Workspaces Command](/vsts/tfvc/workspaces-command.md) 
 

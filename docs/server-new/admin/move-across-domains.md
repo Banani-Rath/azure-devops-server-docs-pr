@@ -18,7 +18,7 @@ The most common environment-based move scenario is changing the domain of the TF
 > [!IMPORTANT]
 > In some situations you might want to change the domain of a TFS deployment as well as its hardware. Changing the hardware is a restoration-based move, and you should never combine the two move types. First complete the [hardware move](move-clone-hardware.md), and then change the environment.
 > 
-> Additionally, changing identities in TFS as part of an environmental move is the aspect that most often causes conflicts or problems. The [Identities Command](../command-line/tfsconfig-cmd.md#identities) is a powerful tool, but it has certain limitations. Read up about it as part of planning your move. To help ensure a successful move, make sure that you understand the following requirements:
+> Additionally, changing identities in TFS as part of an environmental move is the aspect that most often causes conflicts or problems. The [Identities Command](../ref/command-line/tfsconfig-cmd.md#identities) is a powerful tool, but it has certain limitations. Read up about it as part of planning your move. To help ensure a successful move, make sure that you understand the following requirements:
 > * Once a user account is present in TFS, it cannot be removed or have another account mapped to it. For example, if you are moving DomainA/UserA to DomainB/UserB, the Identities command would only work to migrate the user if DomainB/UserB is not already present in TFS.
 > * Because the members of the local Administrators group are automatically added to TFS, make sure to remove any accounts that you want migrated from that group before you change the domain or environment.
 >
@@ -49,7 +49,7 @@ In order to successfully change the environment for TFS, you'll need to be an ad
     -   SQL Server: sysadmin  
     -   SharePoint Products: Farm Administrators (if your TFS deployment integrates with SharePoint Products)
 
-If you aren't a member of one or more of these groups, [get permissions now](../add-administrator-tfs.md).
+If you aren't a member of one or more of these groups, [get permissions now](add-administrator-tfs.md).
 
 Now that you're sure you're using an account that has all the permissions needed, it's time to start checking accounts to see if there might be any conflicts with names or groups in the environment to which you'll be moving. We already know that accounts that are members of the local Administrators group can't be migrated, so let's remove those first.
 
@@ -77,7 +77,7 @@ Stopping the services helps ensure that users cannot make changes to work items 
 
 1.  On the TFS application-tier computer, open a Command Prompt window, and change directories to *Drive*:\\%programfiles%\\TFS 12.0\\Tools.
 
-2.  Type the following [TFSServiceControl](../command-line/tfsservicecontrol-cmd.md) command:
+2.  Type the following [TFSServiceControl](../ref/command-line/tfsservicecontrol-cmd.md) command:
 
      **TFSServiceControl quiesce** 
 
@@ -144,7 +144,7 @@ If account names are the same in both domains, and the only difference is the do
         TFSConfig identities /change /fromdomain:OldComputerorDomainName /todomain:NewDomainName /account:OldTFSServiceAccount /toaccount:NewTFSServiceAccount
 
     > [!WARNING]
-    > If your service account was a system account such as Network Service, you cannot directly migrate the service account, because a system account with the same name exists in the new environment. You'll have to perform a two-stage process change. See the example in [Identities Command](../command-line/tfsconfig-cmd.md#identities).
+    > If your service account was a system account such as Network Service, you cannot directly migrate the service account, because a system account with the same name exists in the new environment. You'll have to perform a two-stage process change. See the example in [Identities Command](../ref/command-line/tfsconfig-cmd.md#identities).
 
 2.  To migrate all accounts that have the same name in the new environment, type the following command:
 
@@ -169,7 +169,7 @@ If account names are the same in both domains, and the only difference is the do
         TFSConfig Accounts /change /AccountType:Proxy /account:AccountName /password:Password
 
     > [!NOTE]
-    > If you are moving to a non-trusted domain, you might also need to manually add users and groups to teams, projects, collections, and Team Foundation Server itself. For more information, see [Add users to team projects](/vsts/security/add-users-team-project.md), [Set administrator permissions for team project collections](../add-administrator-tfs.md), and [Set administrator permissions for Team Foundation Server](../add-administrator-tfs.md).
+    > If you are moving to a non-trusted domain, you might also need to manually add users and groups to teams, projects, collections, and Team Foundation Server itself. For more information, see [Add users to team projects](/vsts/security/add-users-team-project.md), [Set administrator permissions for team project collections](add-administrator-tfs.md), and [Set administrator permissions for Team Foundation Server](add-administrator-tfs.md).
 
 7.  If your deployment is integrated with Project Server, you might need to perform additional steps to configure the service accounts with the permissions required for operation. For more information, see [Assign permissions to support TFS-Project Server integration](https://msdn.microsoft.com/library/gg412653) and [ConfigureTFS-Project Server integration](https://msdn.microsoft.com/library/gg412647).
 
@@ -205,7 +205,7 @@ Now that you've updated TFS with all the information for the new environment, re
 
 1.  On the TFS application-tier computer, open a Command Prompt window with administrative permissions and change directories to *Drive*:\\%programfiles%\\TFS 12.0\\Tools.
 
-2.  Type the following [TFSServiceControl](../command-line/tfsservicecontrol-cmd.md) command:
+2.  Type the following [TFSServiceControl](../ref/command-line/tfsservicecontrol-cmd.md) command:
 
      **TFSServiceControl unquiesce** 
 

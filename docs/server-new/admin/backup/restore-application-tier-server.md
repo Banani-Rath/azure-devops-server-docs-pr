@@ -58,4 +58,4 @@ You can also add more than one application-tier server to a deployment of Team F
 
  [Restore a deployment to new hardware](tut-single-svr-home.md) 
 
- [Open the Team Foundation Administration Console](../../open-admin-console.md) 
+ [Open the Team Foundation Administration Console](../../ref/command-line/open-admin-console.md) 

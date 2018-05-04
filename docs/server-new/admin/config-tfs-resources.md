@@ -19,7 +19,7 @@ resources to support your teams. These resources include the
 application-tier and data-tier server(s), team project collections which
 host team projects, and optional resources such as report servers,
 SharePoint products, build servers, lab management, and more. For
-information on TFS components and architecture, see <span>[Team Foundation Server architecture](../../architecture/architecture.md).
+information on TFS components and architecture, see <span>[Team Foundation Server architecture](../architecture/architecture.md).
 
 > Important:
 > You should not manually modify any of the TFS databases unless you're
@@ -264,7 +264,7 @@ like?](http://blogs.msdn.com/b/granth/archive/2013/10/08/what-does-a-well-mainta
 
 -   You can also learn about requirements and infrastructure in these reference topics:
 
-    -   [Team Foundation Server architecture](../architecture.md)
+    -   [Team Foundation Server architecture](../architecture/architecture.md)
 
     -   [Naming restrictions in Team Foundation](/vsts/collaborate/naming-restrictions.md)
 

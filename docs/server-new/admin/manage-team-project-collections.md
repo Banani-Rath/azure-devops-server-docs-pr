@@ -39,7 +39,7 @@ will be stored.
 
 ## View information or configure existing team project
 
-1.  If you haven't been added as a TFS administrator, [get added now](../add-administrator-tfs.md).
+1.  If you haven't been added as a TFS administrator, [get added now](add-administrator-tfs.md).
 
     You must be a member of the local Administrators group on the server
     where you want to open the console, and either a member of the Team
@@ -75,7 +75,7 @@ will be stored.
 
 Before creating a team project collection, jump to this [section to learn more about the pros and cons of creating multiple team project collections](#pros_cons).
 
-1.  If you haven't been added as an administrator to TFS, [get added now](../add-administrator-tfs.md).
+1.  If you haven't been added as an administrator to TFS, [get added now](add-administrator-tfs.md).
 
     You must be a member of the local Administrators group on the server
     where you want to open the console, and either a member of the Team
@@ -394,4 +394,4 @@ or [Split a team project collection](split-team-project-collection.md).
 
 **A:** You can use the **TFSConfig Collection**
 command to attach, detach, delete, or clone a team project collection.
-See [Collection command \[TFSConfig\]](../command-line/tfsconfig-cmd.md#collection).
+See [Collection command \[TFSConfig\]](../ref/command-line/tfsconfig-cmd.md#collection).

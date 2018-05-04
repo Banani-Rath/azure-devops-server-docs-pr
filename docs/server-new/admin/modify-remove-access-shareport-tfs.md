@@ -44,7 +44,7 @@ To modify or delete access from a SharePoint web application to Team Foundation 
     for SharePoint Products, open the administration console for Team
     Foundation, and expand the tree.
 
-    For more information, see [Open the Team Foundation Administration Console](../command-line/open-admin-console.md).
+    For more information, see [Open the Team Foundation Administration Console](../ref/command-line/open-admin-console.md).
 
 2.  Under **Team Foundation**, choose 
     **Extensions for SharePoint Products**.
@@ -66,7 +66,7 @@ To modify or delete access from Team Foundation Server to a SharePoint web appli
     Foundation Server, open the administration console for Team
     Foundation, and expand the tree.
 
-    For more information, see [Open the Team Foundation Administration Console](../command-line/open-admin-console.md).
+    For more information, see [Open the Team Foundation Administration Console](../ref/command-line/open-admin-console.md).
 
 2.  Under **Team Foundation**, choose 
     **SharePoint Web Applications**.
@@ -122,7 +122,7 @@ Services** group in Team Foundation Server.
     Foundation Server, open the administration console for Team
     Foundation, and expand the tree.
 
-    For more information, see [Open the Team Foundation Administration Console](../command-line/open-admin-console.md).
+    For more information, see [Open the Team Foundation Administration Console](../ref/command-line/open-admin-console.md).
 
 2.  Under **Team Foundation**, choose 
     **SharePoint Web Applications**.

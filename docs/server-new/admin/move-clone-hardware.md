@@ -75,7 +75,7 @@ In order to successfully move TFS, you'll need to be an administrator on both se
 
     -   SharePoint Products: Farm Administrators (if your TFS deployment integrates with SharePoint Products)
 
-If you aren't a member of one or more of these groups, [get permissions now](../add-administrator-tfs.md).
+If you aren't a member of one or more of these groups, [get permissions now](add-administrator-tfs.md).
 
 
 
@@ -178,15 +178,15 @@ Perform the next set of steps on the new application-tier server if you intend t
 
 1. Open a Command Prompt window as an administrator and change directories to Drive:\%programfiles%\TFS 12.0\Tools. Open a Command Prompt window and enter:
 
-2. Run the [TFSConfig PrepareClone](../command-line/tfsconfig-cmd.md#prepareclone) command to remove information about scheduled backups, SharePoint, and reporting resources. 
+2. Run the [TFSConfig PrepareClone](../ref/command-line/tfsconfig-cmd.md#prepareclone) command to remove information about scheduled backups, SharePoint, and reporting resources. 
 
         TFSConfig PrepareClone /SQLInstance:ServerName /DatabaseName:DatabaseName /notificationURL: ApplicationTierURL
 
-3. Run the [TFSConfig ChangeServerID](../command-line/tfsconfig-cmd.md#changeserverid) command to change the server GUIDs that are associated with the databases. GUIDs must be unique within TFS deployment. 
+3. Run the [TFSConfig ChangeServerID](../ref/command-line/tfsconfig-cmd.md#changeserverid) command to change the server GUIDs that are associated with the databases. GUIDs must be unique within TFS deployment. 
 
         TFSConfig ChangeServerID /SQLInstance:ServerName] /DatabaseName:ConfigurationDatabaseName [/ProjectCollectionsOnly] [/ConfigDBOnly] [/usesqlalwayson]
 
-4.Run the [TFSConfig RemapDBs](../command-line/tfsconfig-cmd.md#remapdbs) command to redirect the cloned TFS to its databases. 
+4.Run the [TFSConfig RemapDBs](../ref/command-line/tfsconfig-cmd.md#remapdbs) command to redirect the cloned TFS to its databases. 
 
         TFSConfig RemapDBs /DatabaseName:ServerName;DatabaseName /SQLInstances:ServerName1,ServerName2 [/AnalysisInstance:ServerName] [/AnalysisDatabaseName:DatabaseName] [/preview] [/continue] [/usesqlalwayson]
 
@@ -233,7 +233,7 @@ You must update the service account for Team Foundation Server (TFSService) and 
 
     **TfsConfig Accounts /add /AccountType:ReportingDataSource /account:** *AccountName* **/SQLInstance:***ServerName* **/DatabaseName:***DatabaseName*
 
-    For more information, see [Accounts Command](../command-line/tfsconfig-cmd.md#accounts).
+    For more information, see [Accounts Command](../ref/command-line/tfsconfig-cmd.md#accounts).
 
 
 
@@ -291,7 +291,7 @@ After you move to new hardware, make sure that all users, groups, and service ac
 
 -   Open Team Web Access and verify that team sites and teams appear as expected.
 
-Not sure what groups and permissions to expect? For more information, see [Add users to team projects](/vsts/security/add-users-team-project.md), [Set administrator permissions for team project collections](../add-administrator-tfs.md), [Set administrator permissions for Team Foundation Server](../add-administrator-tfs.md), and [Service accounts and dependencies in Team Foundation Server](service-accounts-dependencies-tfs.md).
+Not sure what groups and permissions to expect? For more information, see [Add users to team projects](/vsts/security/add-users-team-project.md), [Set administrator permissions for team project collections](add-administrator-tfs.md), [Set administrator permissions for Team Foundation Server](add-administrator-tfs.md), and [Service accounts and dependencies in Team Foundation Server](service-accounts-dependencies-tfs.md).
 
 <a name="refresh-caches-clients"></a>
 ## Refresh the data cache on client computers
@@ -351,11 +351,11 @@ Although you had backups scheduled for your old deployment, those scheduled back
 
 To fix this problem:
 
-1.  Run the [TFSConfig PrepareClone](../command-line/tfsconfig-cmd.md#prepareclone) command on the new server
+1.  Run the [TFSConfig PrepareClone](../ref/command-line/tfsconfig-cmd.md#prepareclone) command on the new server
 
-2.  Run the TFSConfig [ChangeServerID Command](../command-line/tfsconfig-cmd.md#changeserverid) on the new server
+2.  Run the TFSConfig [ChangeServerID Command](../ref/command-line/tfsconfig-cmd.md#changeserverid) on the new server
 
-3.  Run the TFSConfig [RemapDBs Command](../command-line/tfsconfig-cmd.md#remapdbs) on the new server
+3.  Run the TFSConfig [RemapDBs Command](../ref/command-line/tfsconfig-cmd.md#remapdbs) on the new server
 
 **Q: I have a deployment that integrates with Project Server. Do I have to perform any extra steps to get it to work with my moved TFS?**
 
