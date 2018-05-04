@@ -197,7 +197,7 @@
   - name: Move SharePoint to new hardware
     href: install/sharepoint/move-sharepoint-new-hardware.md
   - name: Share information using the project portal
-      href: /vsts/report/sharepoint-dashboards/share-information-using-the-project-portal?toc=/tfs/server/toc.json&bc=/tfs/server/breadcrumb/toc.json 
+    href: /vsts/report/sharepoint-dashboards/share-information-using-the-project-portal?toc=/tfs/server/toc.json&bc=/tfs/server/breadcrumb/toc.json 
 - name: Modify the deployment
   items:
   - name: Move team project collection
