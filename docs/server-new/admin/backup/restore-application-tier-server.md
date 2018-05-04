@@ -54,7 +54,7 @@ You can also add more than one application-tier server to a deployment of Team F
 
  [Restore Lab Management components](restore-lab-management-components.md) 
 
- [Team Foundation Server architecture](../rchitecture/architecture.md) 
+ [Team Foundation Server architecture](../architecture/architecture.md) 
 
  [Restore a deployment to new hardware](tut-single-svr-home.md) 
 
