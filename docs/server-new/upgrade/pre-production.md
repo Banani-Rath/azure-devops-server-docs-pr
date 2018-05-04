@@ -75,7 +75,7 @@ server databases.
 ## Doing the upgrade
 
 Install the new version of TFS on your application tier machines. Prior to running the upgrade wizard, 
-run the [ChangeServerId command](../command-line/tfsconfig-cmd.md#changeserverid). This will ensure that you
+run the [ChangeServerId command](../ref/command-line/tfsconfig-cmd.md#changeserverid). This will ensure that you
 don't run into problems if you access both your production and pre-production environments from the same clients,
 and should be done any time you are cloning either a collection or a complete deployment. 
 

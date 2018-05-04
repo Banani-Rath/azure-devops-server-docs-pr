@@ -16,7 +16,7 @@ ms.date: 11/28/2017
 
 You can enable your Team Foundation Server (TFS) deployment to handle more load than a single server configuration by deploying the application and data tiers on separate servers. Make sure to review our [hardware recommendations](../requirements.md#hardware-recommendations) to confirm that this configuration seems appropriate for your team. If not, consider a [single server](single-server.md) or [multiple server](multiple-server.md) configuration instead.
 
-> If you're upgrading to TFS 2018 from another version, you may want to look at the [requirement changes](../requirement-changes-tfs16.md) and [release notes](../whats-new.md#tfs-2018-rc1).
+> If you're upgrading to TFS 2018 from another version, you may want to look at the [compatibility](../compatibility.md) and [release notes](../whats-new.md#tfs-2018-rc1).
 
 ## Preparation
 

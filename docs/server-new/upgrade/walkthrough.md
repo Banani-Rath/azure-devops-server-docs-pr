@@ -42,7 +42,7 @@ See *Protecting production* in the [dry run in pre-production](pre-production.md
 
 Assuming that all goes smoothly, the production upgrade steps will be quite similar. There the steps will be:
 
-1. Take the production server offline using [TFSServiceControl's quiesce command](../command-line/tfsservicecontrol-cmd.md). The goal here is to ensure that the backups we use to move to our new hardware are complete and we don't lose any user data. 
+1. Take the production server offline using [TFSServiceControl's quiesce command](../ref/command-line/tfsservicecontrol-cmd.md). The goal here is to ensure that the backups we use to move to our new hardware are complete and we don't lose any user data. 
 2. Take new backups of each database. 
 3. Copy the backups to our new SQL instance.
 4. Install TFS 2015 on our new application tier.

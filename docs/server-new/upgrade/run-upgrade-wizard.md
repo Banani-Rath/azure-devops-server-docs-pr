@@ -48,7 +48,7 @@ You must be a member of the Windows Administrators security group. If you’re u
 
     1.  In Select databases to back up, choose the databases to back up.
 
-        Need help? [List of TFS 2010 databases on MSDN](http://go.microsoft.com/fwlink/?LinkId=258325); [List of TFS 2012 databases on MSDN](../../architecture/sql-server-databases.md)
+        Need help? [List of TFS 2010 databases on MSDN](http://go.microsoft.com/fwlink/?LinkId=258325); [List of TFS 2012 databases on MSDN](../architecture/sql-server-databases.md)
 
     2.  In **Backup Databases to**, accept the default location or enter another location.
 
