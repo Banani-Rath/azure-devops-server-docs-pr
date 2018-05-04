@@ -11,7 +11,7 @@ ms.date: 09/09/2017
 
 # Move SharePoint to new hardware for TFS
 
-[!INCLUDE [temp](../../about-sharepoint-deprecation.md)]
+[!INCLUDE [temp](../../_shared/about-sharepoint-deprecation.md)]
 
 ## Set up a new SharePoint site 
 

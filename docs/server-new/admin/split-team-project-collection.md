@@ -56,7 +56,7 @@ To split a team project collection, follow these steps:
 
 **Before you begin**
 
-Make sure that you're an administrator on the servers and in SQL Server and TFS. If you're not an administrator, [get added as one](../add-administrator-tfs.md).
+Make sure that you're an administrator on the servers and in SQL Server and TFS. If you're not an administrator, [get added as one](add-administrator-tfs.md).
 
 <a name="detach-the-coll"></a>
 ## 1-a. Detach the collection
@@ -221,7 +221,7 @@ After you attach the original collection database, you must attach the renamed c
 
     ![](_img/ic740323.png)
 
-    In the unlikely event that the CollectionProperties GUIDs do match, you must change the ID to a unique ID before continuing by running the TFSConfig [Collection Command](../command-line/tfsconfig-cmd.md#collection) on the second collection with the /clone parameter..
+    In the unlikely event that the CollectionProperties GUIDs do match, you must change the ID to a unique ID before continuing by running the TFSConfig [Collection Command](../ref/command-line/tfsconfig-cmd.md#collection) on the second collection with the /clone parameter..
 
 <a name="delete-projs-split-colls"></a>
 ## 2-d. Delete projects on the split collections
@@ -280,7 +280,7 @@ After you have split a collection, you must update the permission groups for bot
 
 ### To configure administrators for both collections
 
--   For more information, see [Set administrator permissions for team project collections](../add-administrator-tfs.md).
+-   For more information, see [Set administrator permissions for team project collections](add-administrator-tfs.md).
 
 <a name="config-users-projs"></a>
 ## 3-b. Configure users and groups for projects
@@ -384,7 +384,7 @@ Before you start the split, delete the resources that Lab Management uses from t
 
 ### To delete the Lab Management resources
 
--   For information about how to remove all group hosts, library shares, and environments from a specified team project collection, see [TFSConfig Lab /Delete Command](../command-line/tfsconfig-cmd.md#lab-delete) with the **/External** option.
+-   For information about how to remove all group hosts, library shares, and environments from a specified team project collection, see [TFSConfig Lab /Delete Command](../ref/command-line/tfsconfig-cmd.md#lab-delete) with the **/External** option.
 
 Once you've completed the split, you must recreate team project host groups. You must also recreate team project library shares in TFS and the virtual machines, templates, and environments in Microsoft Test Manager.
 

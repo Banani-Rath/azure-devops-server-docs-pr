@@ -16,11 +16,11 @@ ms.topic: get-started-article
 
 For Visual Studio Team Foundation Server (TFS) to operate correctly, all required services, application pools, and Web sites must be running on the appropriate server. In single-server deployments, each component must run on the server that runs TFS. In multiple-server deployments, each component must run on the appropriate server. In addition, you might need to stop an element to perform a particular task, such as moving your deployment to a different set of hardware.
 
-For operations such as backing up or restoring databases, you can run the [TFSServiceControl Command](../command-line/tfsservicecontrol-cmd.md) to start or stop all TFS services and application pools.
+For operations such as backing up or restoring databases, you can run the [TFSServiceControl Command](../ref/command-line/tfsservicecontrol-cmd.md) to start or stop all TFS services and application pools.
 
 ## To stop or start a service, application pool, or Web site
 
-1.  If you’re not a member of the **Administrators** group on the server that hosts the service, application pool, or Web site that you want to manage, get added now. See [Set administrator permissions for Team Foundation Server](../add-administrator-tfs.md).
+1.  If you’re not a member of the **Administrators** group on the server that hosts the service, application pool, or Web site that you want to manage, get added now. See [Set administrator permissions for Team Foundation Server](add-administrator-tfs.md).
 
 2.  Log on to the server that hosts the service, application pool, or Web site.
 
@@ -61,7 +61,7 @@ The following table lists the server on which each service, application pool, an
 
 **Q: Are there additional services that TFS supports?**
 
-**A:** Yes, TFS includes a set of Web services and application-level services See [Team Foundation Server architecture](../../architecture/architecture.md).
+**A:** Yes, TFS includes a set of Web services and application-level services See [Team Foundation Server architecture](../rchitecture/architecture.md).
 
 **Q: What services depend on service accounts?**
 

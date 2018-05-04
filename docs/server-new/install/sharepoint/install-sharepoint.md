@@ -11,7 +11,7 @@ ms.date: 09/09/2017
 
 # Manually Install SharePoint products for Team Foundation Server
 
-[!INCLUDE [temp](../../about-sharepoint-deprecation.md)]
+[!INCLUDE [temp](../../_shared/about-sharepoint-deprecation.md)]
 
 This procedure is for installing and configuring SharePoint Server 2013 on the same server as TFS and SQL Server.
 
