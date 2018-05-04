@@ -61,6 +61,7 @@
     - name: Create high-availability farm
       href: install/create-tfs-farm.md
 - name: Upgrade
+  items:
   - name: Upgrade guide
     href: quickstarts/upgrade-tfs.md
   - name: Upgrade TFS
