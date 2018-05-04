@@ -37,7 +37,7 @@
   - name: Install guide
     href:
   - name: Upgrade guide
-    href:
+    href: how-to/upgrade-tfs.md
   - name: High availability and disaster recovery
     href:
   - name: Manage team project collections
