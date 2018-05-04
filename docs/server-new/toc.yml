@@ -245,7 +245,7 @@
     - name: Security glossary
       href: https://docs.microsoft.com/en-us/vsts/security/security-glossary?toc=/tfs/toc.json
   - name: Required ports
-    href:
+    href: architecture/required-ports.md
   - name: REST APIs and permissions
     href: https://docs.microsoft.com/en-us/rest/api/vsts/security/permissions?toc=/tfs/toc.json
   - name: Command-line tools
