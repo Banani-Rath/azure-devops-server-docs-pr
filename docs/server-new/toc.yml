@@ -63,7 +63,7 @@
 - name: Upgrade
   items:
   - name: Upgrade guide
-    href: quickstarts/upgrade-tfs.md
+    href: upgrade/upgrade-tfs.md
   - name: Upgrade TFS
     href: upgrade/get-started.md
     items:
@@ -140,26 +140,30 @@
       href: admin/backup/tut-single-svr-reconn-svcs-users.md
 - name: Admin and security
   items:
-  - name: About permissions and groups (Security)
+  - name: Admin
+    items:
+    - name: Manage team project collections
+      href: admin/manage-team-project-collections.md
+    - name: Stop and start services, app pools, and websites
+      href: admin/stop-start-stuff.md
+    - name: Change service account password
+      href: admin/change-service-account-password.md
+    - name: Change service account or password for SQL reporting
+      href: admin/change-service-account-or-password-sql-reporting.md
+    - name: Add users to groups
+      href: https://docs.microsoft.com/en-us/vsts/security/add-users-team-project?toc=/tfs/toc.json
+  - name: About permissions and groups
     href: /vsts/security/about-permissions?toc=/tfs/server/toc.json&bc=/tfs/server/breadcrumb/toc.json
   - name: About access levels
     href: /vsts/security/access-levels?toc=/tfs/server/toc.json&bc=/tfs/server/breadcrumb/toc.json  
   - name: Add TFS server administrators
-    href: add-administrator-tfs.md
+    href: admin/add-administrator-tfs.md
   - name: Change individual permissions
     href: /vsts/security/change-individual-permissions?toc=/tfs/server/toc.json&bc=/tfs/server/breadcrumb/toc.json
   - name: Change access levels
     href: /vsts/security/change-access-levels?toc=/tfs/server/toc.json&bc=/tfs/server/breadcrumb/toc.json
   - name: Grant or restrict permissions to select tasks (Security)
     href: /vsts/security/restrict-access?toc=/tfs/server/toc.json&bc=/tfs/server/breadcrumb/toc.json 
-  - name: Manage team project collections
-    href: admin/manage-team-project-collections.md
-  - name: Stop and start services, app pools, and websites
-    href: admin/stop-start-stuff.md
-  - name: Change service account password
-    href: admin/change-service-account-password.md
-  - name: Change service account or password for SQL reporting
-    href: admin/change-service-account-or-password-sql-reporting.md
   - name: Security reference
     items:
     - name: Default permission and access assignments
@@ -168,37 +172,39 @@
       href: /vsts/security/permissions-lookup-guide?toc=/tfs/server/toc.json&bc=/tfs/server/breadcrumb/toc.json  
     - name: Permissions and groups reference
       href: /vsts/security/permissions?toc=/tfs/server/toc.json&bc=/tfs/server/breadcrumb/toc.json  
-- name: Install SQL Server
+- name: Install SQL Server or SharePoint
   items:
-  - name: Install SQL Server
-    href: install/sql-server/install-sql-server.md
-  - name: Collation requirements
-    href: install/sql-server/collation-requirements.md
-  - name: Reporting services roles
-    href: install/sql-server/reporting-services-roles.md
-  - name: Use always-on availability groups
-    href: install/sql-server/use-always-on-groups.md
-  - name: Use always-on availability groups
-    href: install/sql-server/use-always-on-groups.md
-  - name: SQL Server Reporting Services reports
-    href: /vsts/report/sql-server/reporting-services-reports?toc=/tfs/server/toc.json&bc=/tfs/server/breadcrumb/toc.json 
-  - name: Add TFS service account to Report Server
-    href: install/install-2013/add-tfs-svc-acct-report-svr.md
-- name: Install SharePoint
-  items:
-  - name: Configure enterprise app definition
-    href: install/sharepoint/config-enterprise-app-def.md
-  - name: Install on same server
-    href: install/sharepoint/install-sharepoint.md
-  - name: Install on different server
-    href: install/sharepoint/setup-remote-sharepoint.md
-  - name: Verify SharePoint
-    href: install/sharepoint/verify-sharepoint.md
-  - name: Move SharePoint to new hardware
-    href: install/sharepoint/move-sharepoint-new-hardware.md
-  - name: Share information using the project portal
-    href: /vsts/report/sharepoint-dashboards/share-information-using-the-project-portal?toc=/tfs/server/toc.json&bc=/tfs/server/breadcrumb/toc.json 
-- name: Modify the deployment
+  - name: SQL Server
+    items:
+    - name: Install SQL Server
+      href: install/sql-server/install-sql-server.md
+    - name: Collation requirements
+      href: install/sql-server/collation-requirements.md
+    - name: Reporting services roles
+      href: install/sql-server/reporting-services-roles.md
+    - name: Use always-on availability groups
+      href: install/sql-server/use-always-on-groups.md
+    - name: Use always-on availability groups
+      href: install/sql-server/use-always-on-groups.md
+    - name: SQL Server Reporting Services reports
+      href: /vsts/report/sql-server/reporting-services-reports?toc=/tfs/server/toc.json&bc=/tfs/server/breadcrumb/toc.json 
+    - name: Add TFS service account to Report Server
+      href: install/install-2013/add-tfs-svc-acct-report-svr.md
+  - name: SharePoint (Pre TFS 2017 only)
+    items:
+    - name: Configure enterprise app definition
+      href: install/sharepoint/config-enterprise-app-def.md
+    - name: Install on same server
+      href: install/sharepoint/install-sharepoint.md
+    - name: Install on different server
+      href: install/sharepoint/setup-remote-sharepoint.md
+    - name: Verify SharePoint
+      href: install/sharepoint/verify-sharepoint.md
+    - name: Move SharePoint to new hardware
+      href: install/sharepoint/move-sharepoint-new-hardware.md
+    - name: Share information using the project portal
+      href: /vsts/report/sharepoint-dashboards/share-information-using-the-project-portal?toc=/tfs/server/toc.json&bc=/tfs/server/breadcrumb/toc.json 
+- name: Modify TFS deployment
   items:
   - name: Move team project collection
     href: admin/move-project-collection.md
@@ -224,16 +230,6 @@
       href: admin/modify-remove-access-shareport-tfs.md
     - name: Configure SharePoint Server 2010 or 2007 for Dashboards
       href: admin/config-ent-sharepoint0710-dashboards.md
-- name: How-to Guides
-  items:
-  - name: High availability and disaster recovery
-    href:
-  - name: Manage team project collections
-    href: how-to/manage-team-project-collections.md
-  - name: Add users to groups
-    href: https://docs.microsoft.com/en-us/vsts/security/add-users-team-project?toc=/tfs/toc.json
-  - name: Change permissions
-    href: https://docs.microsoft.com/en-us/vsts/security/change-individual-permissions?toc=/tfs/toc.json
 - name: Reference
   items:
   - name: Site settings and SSL certificates
@@ -252,18 +248,18 @@
     href:
   - name: REST APIs and permissions
     href: https://docs.microsoft.com/en-us/rest/api/vsts/security/permissions?toc=/tfs/toc.json
-- name: Command-line tools
-  items:
-  - name: TFSConfig
-    href: reference/command-line/tfsconfig-cmd.md
-  - name: TFSSecurity
-    href: reference/command-line/tfssecurity-cmd.md
-  - name: TFSDeleteProject
-    href: reference/command-line/tfsdeleteproject-cmd.md
-  - name: TFSLabConfig
-    href: reference/command-line/tfslabconfig-cmd.md
-  - name: TFSServiceControl
-    href: reference/command-line/tfsservicecontrol-cmd.md
+  - name: Command-line tools
+    items:
+    - name: TFSConfig
+      href: ref/command-line/tfsconfig-cmd.md
+    - name: TFSSecurity
+      href: ref/command-line/tfssecurity-cmd.md
+    - name: TFSDeleteProject
+      href: ref/command-line/tfsdeleteproject-cmd.md
+    - name: TFSLabConfig
+      href: ref/command-line/tfslabconfig-cmd.md
+    - name: TFSServiceControl
+      href: ref/command-line/tfsservicecontrol-cmd.md
 - name: Troubleshooting
   items:
   - name: Upgrade failures
@@ -271,6 +267,8 @@
   - name: Collection upgrade failures
     href: troubleshooting/collection-upgrade-failure.md
   - name: Collection attach failures
+    href:
+  - name: High availability and disaster recovery
     href:
 - name: Resources
   items:
