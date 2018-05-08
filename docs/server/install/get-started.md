@@ -1,13 +1,14 @@
 ---
 title: Install and configure TFS
-ms.topic: get-started-article
 description: Use the new install guide for Team Foundation Server to set up TFS on your server or servers
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-admin
+ms.prod: devops
+ms.technology: tfs-admin
 ms.assetid: 0a44920a-fcdc-4545-b150-8246dcc47f42
 toc: show
 ms.manager: douge
-ms.author: aaronha
+ms.author: elbatk
+author: elbatk
+ms.topic: conceptual
 ms.date: 08/04/2016
 ---
 

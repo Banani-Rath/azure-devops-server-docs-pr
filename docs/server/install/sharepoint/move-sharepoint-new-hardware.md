@@ -2,10 +2,12 @@
 title: Move SharePoint to new hardware for TFS
 description: Move SharePoint to new hardware for TFS
 ms.assetid: b5cdc973-6538-4a54-812f-e58bb001a398
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-admin
+ms.prod: devops
+ms.technology: tfs-admin
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
+ms.topic: conceptual
 ms.date: 09/09/2017
 ---
 

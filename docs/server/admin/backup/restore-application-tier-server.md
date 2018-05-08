@@ -2,11 +2,13 @@
 title: Restore an application-tier server
 description: Restore an application-tier server
 ms.assetid: d5886fe9-c92a-49b7-87db-bbe47c808929
+ms.topic: conceptual
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
 ms.date: 09/01/2016
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-admin
+ms.prod: devops
+ms.technology: tfs-admin
 ---
 
 # Restore an application-tier server

@@ -2,11 +2,13 @@
 title: Move Team Foundation Server from one environment to another
 description: Move Team Foundation Server from one environment to another
 ms.assetid: ff582394-a3d6-4a1d-86d2-ff4a0c9f7e30
+ms.topic: conceptual
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
 ms.date: 08/31/2016
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-admin
+ms.prod: devops
+ms.technology: tfs-admin
 ---
 
 # Move Team Foundation Server from one environment to another

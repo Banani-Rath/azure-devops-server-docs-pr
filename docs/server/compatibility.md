@@ -1,12 +1,13 @@
 ---
 title: Compatibility and TFS versions
 description: Describes compatibility for VSTS and TFS -- operating systems, SQL Server, SharePoint, client versions, server versions, browsers
-ms.prod: devops-server
+ms.prod: devops
 ms.technology: tfs-admin
 toc: show
 ms.manager: douge
 ms.author: elbatk
 author: elbatk
+ms.topic: conceptual
 ms.date: 10/02/2017
 ---
 

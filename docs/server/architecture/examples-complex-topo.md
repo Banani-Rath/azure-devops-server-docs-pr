@@ -4,9 +4,11 @@ description: Examples of Complex Topology for Team Foundation Server
 ms.assetid: 91421828-00d3-44e2-8ebb-520622fa9b61
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
+ms.topic: conceptual
 ms.date: 08/16/2016
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-admin
+ms.prod: devops
+ms.technology: tfs-admin
 ---
 
 # Examples of Complex Topology for Team Foundation Server

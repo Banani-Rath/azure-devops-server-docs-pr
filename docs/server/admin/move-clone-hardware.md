@@ -2,11 +2,13 @@
 title: Move Team Foundation Server from one hardware configuration to another
 description: Move Team Foundation Server from one hardware configuration to another
 ms.assetid: b9af3864-d28a-42df-aa43-6b1f48b5adf0
+ms.topic: conceptual
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
 ms.date: 08/31/2016
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-admin
+ms.prod: devops
+ms.technology: tfs-admin
 ---
 
 # Move or Clone Team Foundation Server from one hardware to another

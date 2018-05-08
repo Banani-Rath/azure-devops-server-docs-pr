@@ -2,10 +2,12 @@
 title: Manage TFS server configuration with TFSConfig
 description: Use TFSConfig to manage the configuration of your TFS server from the command-line.
 ms.assetid: 94424190-3b6b-4f33-a6b6-5807f4225b62
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-admin
+ms.prod: devops
+ms.technology: tfs-admin
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
+ms.topic: conceptual
 ms.date: 08/04/2016
 ---
 

@@ -2,11 +2,13 @@
 title: Restore data to the same location
 description: Restore data to the same location
 ms.assetid: 57881758-8f6e-4d36-afa7-75d6b50e3e48
+ms.topic: conceptual
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
 ms.date: 08/31/2016
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-admin
+ms.prod: devops
+ms.technology: tfs-admin
 ---
 
 # Restore data to the same location

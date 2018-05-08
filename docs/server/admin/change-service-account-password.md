@@ -2,12 +2,13 @@
 title: Change the service account or password for Team Foundation Server
 description: Change the service account or password for Team Foundation Server
 ms.assetid: 644edcbc-983e-4f86-a832-4461e635bec6
+ms.topic: conceptual
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
 ms.date: 09/01/2016
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-admin
-ms.topic: get-started-article
+ms.prod: devops
+ms.technology: tfs-admin
 ---
 
 # Change the service account or password for Team Foundation Server

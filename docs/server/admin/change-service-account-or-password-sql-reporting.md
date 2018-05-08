@@ -2,12 +2,13 @@
 title: Change the service account or password for SQL Server Reporting Services for TFS
 description: Change the service account or password for SQL Server Reporting Services  for Team Foundation Server
 ms.assetid: 658da0e5-0390-4016-bacf-4ad9003777a6
+ms.topic: conceptual
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
 ms.date: 08/18/2016
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-admin
-ms.topic: get-started-article
+ms.prod: devops
+ms.technology: tfs-admin
 ---
 
 # Change the service account or password for SQL Server Reporting Services for Team Foundation Server

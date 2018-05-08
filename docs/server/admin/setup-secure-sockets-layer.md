@@ -2,11 +2,13 @@
 title: Setting up HTTPS with Secure Sockets Layer (SSL) for Team Foundation Server
 description: Setting up HTTPS with Secure Sockets Layer (SSL) for Team Foundation Server
 ms.assetid: 27540d50-ac8a-46e1-a98e-baee43ed98a3
+ms.topic: conceptual
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
 ms.date: 08/31/2016
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-admin
+ms.prod: devops
+ms.technology: tfs-admin
 ---
 
 # Setting up HTTPS with Secure Sockets Layer (SSL) for Team Foundation Server

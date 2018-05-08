@@ -2,11 +2,13 @@
 title: Move a team project collection
 description: Move a team project collection
 ms.assetid: b5d79dcb-826e-4eb4-ab8e-de222d9b9974
+ms.topic: conceptual
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
 ms.date: 08/31/2016
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-admin
+ms.prod: devops
+ms.technology: tfs-admin
 ---
 
 # Move a team project collection

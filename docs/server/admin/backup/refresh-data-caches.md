@@ -2,11 +2,13 @@
 title: Refresh the data caches on client computers
 description: Refresh the data caches on client computers
 ms.assetid: b3b31e5e-d431-475a-b6ca-a1ccb63795d3
+ms.topic: conceptual
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
 ms.date: 09/01/2016
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-admin
+ms.prod: devops
+ms.technology: tfs-admin
 ---
 
 # Refresh the data caches on client computers

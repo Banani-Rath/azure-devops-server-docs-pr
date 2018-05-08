@@ -2,12 +2,13 @@
 title: Restore the databases
 description: Restore the databases
 ms.assetid: c00bb8f7-bdb9-49c2-a291-79aab20d2701
+ms.topic: conceptual
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
 ms.date: 08/31/2016
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-admin
-ms.topic: get-started-article
+ms.prod: devops
+ms.technology: tfs-admin
 ---
 
 # Restore the databases

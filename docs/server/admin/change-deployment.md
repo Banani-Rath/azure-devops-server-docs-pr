@@ -2,11 +2,13 @@
 title: Change your deployment configuration for Team Foundation Server
 description: Change your deployment configuration for Team Foundation Server
 ms.assetid: 9dfd7be8-b40e-401f-82fc-e3c3d8fdbd87
+ms.topic: conceptual
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
 ms.date: 08/18/2016
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-admin
+ms.prod: devops
+ms.technology: tfs-admin
 ---
 
 # Change your deployment configuration for Team Foundation Server

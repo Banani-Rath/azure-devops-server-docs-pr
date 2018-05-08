@@ -4,9 +4,11 @@ description: Team Foundation Background Job Agent
 ms.assetid: 0755031e-29d6-4dfa-83fb-fcd823470932
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
+ms.topic: conceptual
 ms.date: 09/01/2016
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-admin
+ms.prod: devops
+ms.technology: tfs-admin
 ---
 
 # Team Foundation Background Job Agent

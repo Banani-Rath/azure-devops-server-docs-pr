@@ -2,12 +2,13 @@
 title: Stop and start services, application pools, and websites
 description: Stop and start services, application pools, and websites
 ms.assetid: 1c3471fc-6ecc-4e9f-b25b-748f70672134
+ms.topic: conceptual
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
 ms.date: 09/01/2016
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-admin
-ms.topic: get-started-article
+ms.prod: devops
+ms.technology: tfs-admin
 ---
 
 # Stop and start services, application pools, and websites

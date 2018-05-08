@@ -2,11 +2,13 @@
 title: Restore Lab Management components
 description: Restore Lab Management components
 ms.assetid: c99b3b8c-d025-4e2f-b6ef-533c5c2f3f92
+ms.topic: conceptual
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
 ms.date: 08/31/2016
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-admin
+ms.prod: devops
+ms.technology: tfs-admin
 ---
 
 # Restore Lab Management components for TFS

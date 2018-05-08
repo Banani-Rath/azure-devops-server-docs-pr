@@ -4,9 +4,11 @@ description: Ports required for installation of Team Foundation Server
 ms.assetid: d91e25a9-94d0-4767-a972-3755dea790a6
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
+ms.topic: conceptual
 ms.date: 09/01/2016
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-admin
+ms.prod: devops
+ms.technology: tfs-admin
 ---
 
 # Ports required for installation of Team Foundation Server

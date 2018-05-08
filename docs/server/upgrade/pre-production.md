@@ -1,11 +1,13 @@
 ---
 title: Pre-production upgrade On-premises
 description: Do a dry run of your upgrade in pre-production to avoid surprises in production.
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-admin
+ms.prod: devops
+ms.technology: tfs-admin
 ms.assetid: 28B2A39E-71BB-49A0-A5EA-3F094446CE32
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
+ms.topic: conceptual
 ms.date: 08/04/2016
 ---
 

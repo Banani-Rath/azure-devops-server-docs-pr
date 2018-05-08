@@ -2,11 +2,13 @@
 title: Configure Lab Management for SCVMM environments and Team Foundation Server
 description: Configure Lab Management for SCVMM environments and Team Foundation Server
 ms.assetid: dc8906e0-cced-4728-9060-e38ea14bd4be
+ms.topic: conceptual
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
 ms.date: 08/18/2016
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-admin
+ms.prod: devops
+ms.technology: tfs-admin
 ---
 
 # Configure Lab Management for SCVMM environments and Team Foundation Server

@@ -4,9 +4,11 @@ description: Examples of Moderate Topology for Team Foundation Server
 ms.assetid: dcd13be0-5234-4398-be64-a8453a1764d3
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
+ms.topic: conceptual
 ms.date: 08/16/2016
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-admin
+ms.prod: devops
+ms.technology: tfs-admin
 ---
 
 # Examples of Moderate Topology for Team Foundation Server

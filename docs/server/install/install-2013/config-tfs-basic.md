@@ -4,9 +4,11 @@ description: Configure Team Foundation Server using the basic configuration
 ms.assetid: c76177bf-0530-4a49-ac13-8d5153036046
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
+ms.topic: conceptual
 ms.date: 09/01/2016
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-admin
+ms.prod: devops
+ms.technology: tfs-admin
 ---
 
 # Configure Team Foundation Server using the basic configuration

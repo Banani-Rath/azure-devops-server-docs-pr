@@ -2,11 +2,13 @@
 title: Back up and restore TFS
 description: Back up and restore TFS
 ms.assetid: cf9b5ab7-f4da-4519-991c-cc1722cb5d3c
+ms.topic: conceptual
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
 ms.date: 09/01/2016
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-admin
+ms.prod: devops
+ms.technology: tfs-admin
 ---
 
 # Back up and restore TFS

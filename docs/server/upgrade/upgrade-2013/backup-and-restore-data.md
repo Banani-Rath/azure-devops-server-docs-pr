@@ -4,9 +4,11 @@ description: Back up and restore data for Team Foundation Server
 ms.assetid: da379f2e-79fc-440d-bc62-a5bf654c52e3
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
+ms.topic: conceptual
 ms.date: 09/01/2016
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-admin
+ms.prod: devops
+ms.technology: tfs-admin
 ---
 
 # Back up and restore data for TFS

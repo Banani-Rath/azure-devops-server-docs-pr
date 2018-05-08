@@ -4,8 +4,9 @@ description: Team Foundation Server Databases
 ms.manager: douge
 ms.author: elbatk
 author: elbatk
+ms.topic: conceptual
 ms.date: 01/13/2017
-ms.prod: devops-server
+ms.prod: devops
 ms.technology: tfs-admin
 ---
 

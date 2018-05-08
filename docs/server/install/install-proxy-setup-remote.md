@@ -4,9 +4,11 @@ description: How to Install Team Foundation Proxy and set up a remote site
 ms.assetid: 21880717-de0c-4ded-8e07-92312d7f5216
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
+ms.topic: conceptual
 ms.date: 08/31/2016
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-admin
+ms.prod: devops
+ms.technology: tfs-admin
 ---
 
 # How to: Install Team Foundation Proxy and set up a remote site
