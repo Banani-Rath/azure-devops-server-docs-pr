@@ -32,16 +32,47 @@
     href:
 - name: Install
   items:
-  - name: General overview
+  - name: Install TFS
     href: install/get-started.md
-  - name: Install on a single server
-    href: install/single-server.md
-  - name: Install on two servers
-    href: install/dual-server.md
-  - name: Install on multiple servers
-    href: install/multiple-server.md
+    items:
+    - name: Install on a single server
+      href: install/single-server.md
+    - name: Install on two servers
+      href: install/dual-server.md
+    - name: Install on multiple servers
+      href: install/multiple-server.md
   - name: Install proxy server and set up remote site
     href: install/install-proxy-setup-remote.md
+  - name: Install SQL Server
+    items:
+    - name: Install SQL Server
+      href: install/sql-server/install-sql-server.md
+    - name: Collation requirements
+      href: install/sql-server/collation-requirements.md
+    - name: Reporting services roles
+      href: install/sql-server/reporting-services-roles.md
+    - name: Use always-on availability groups
+      href: install/sql-server/use-always-on-groups.md
+    - name: Use always-on availability groups
+      href: install/sql-server/use-always-on-groups.md
+    - name: SQL Server Reporting Services reports
+      href: /vsts/report/sql-server/reporting-services-reports?toc=/tfs/server/toc.json&bc=/tfs/server/breadcrumb/toc.json 
+    - name: Add TFS service account to Report Server
+      href: install/install-2013/add-tfs-svc-acct-report-svr.md
+  - name: Install SharePoint (Pre TFS 2017 only)
+    items:
+    - name: Configure enterprise app definition
+      href: install/sharepoint/config-enterprise-app-def.md
+    - name: Install on same server
+      href: install/sharepoint/install-sharepoint.md
+    - name: Install on different server
+      href: install/sharepoint/setup-remote-sharepoint.md
+    - name: Verify SharePoint
+      href: install/sharepoint/verify-sharepoint.md
+    - name: Move SharePoint to new hardware
+      href: install/sharepoint/move-sharepoint-new-hardware.md
+    - name: Share information using the project portal
+      href: /vsts/report/sharepoint-dashboards/share-information-using-the-project-portal?toc=/tfs/server/toc.json&bc=/tfs/server/breadcrumb/toc.json 
 - name: Upgrade
   items:
   - name: Get started
@@ -141,38 +172,6 @@
         href: /vsts/security/permissions?toc=/tfs/server/toc.json&bc=/tfs/server/breadcrumb/toc.json  
       - name: Required ports
         href: architecture/required-ports.md
-- name: Install SQL Server or SharePoint
-  items:
-  - name: SQL Server
-    items:
-    - name: Install SQL Server
-      href: install/sql-server/install-sql-server.md
-    - name: Collation requirements
-      href: install/sql-server/collation-requirements.md
-    - name: Reporting services roles
-      href: install/sql-server/reporting-services-roles.md
-    - name: Use always-on availability groups
-      href: install/sql-server/use-always-on-groups.md
-    - name: Use always-on availability groups
-      href: install/sql-server/use-always-on-groups.md
-    - name: SQL Server Reporting Services reports
-      href: /vsts/report/sql-server/reporting-services-reports?toc=/tfs/server/toc.json&bc=/tfs/server/breadcrumb/toc.json 
-    - name: Add TFS service account to Report Server
-      href: install/install-2013/add-tfs-svc-acct-report-svr.md
-  - name: SharePoint (Pre TFS 2017 only)
-    items:
-    - name: Configure enterprise app definition
-      href: install/sharepoint/config-enterprise-app-def.md
-    - name: Install on same server
-      href: install/sharepoint/install-sharepoint.md
-    - name: Install on different server
-      href: install/sharepoint/setup-remote-sharepoint.md
-    - name: Verify SharePoint
-      href: install/sharepoint/verify-sharepoint.md
-    - name: Move SharePoint to new hardware
-      href: install/sharepoint/move-sharepoint-new-hardware.md
-    - name: Share information using the project portal
-      href: /vsts/report/sharepoint-dashboards/share-information-using-the-project-portal?toc=/tfs/server/toc.json&bc=/tfs/server/breadcrumb/toc.json 
 - name: Modify TFS deployment
   items:
   - name: Move team project collection
