@@ -134,26 +134,34 @@
     items:
     - name: Administration console
       href: concepts/open-admin-console.md
-    - name: Manage team project collections
-      href: admin/manage-team-project-collections.md
+    - name: Manage collections
+      items:
+      - name: Manage team project collections
+        href: admin/manage-team-project-collections.md
+      - name: Move team project collection
+        href: admin/move-project-collection.md
+      - name: Split team project collection
+        href: admin/split-team-project-collection.md
+    - name: Manage groups
+      items:
+      - name: Set up AD groups for TFS users
+        href: admin/setup-ad-groups.md
+      - name: Add TFS server administrators
+        href: admin/add-administrator-tfs.md
+      - name: Add users to team projects
+        href: /vsts/security/add-users-team-project?toc=/tfs/toc.json
     - name: Stop and start services, app pools, and websites
       href: admin/stop-start-stuff.md
-    - name: Add TFS server administrators
-      href: admin/add-administrator-tfs.md
     - name: Change service account password
       href: admin/change-service-account-password.md
     - name: Change service account or password for SQL reporting
       href: admin/change-service-account-or-password-sql-reporting.md
-    - name: Add users to groups
-      href: https://docs.microsoft.com/en-us/vsts/security/add-users-team-project?toc=/tfs/toc.json
-    - name: Active Directory integration
-      href: concepts/setup-ad-groups.md
-    - name: Set up AD groups for TFS users
-      href: admin/setup-ad-groups.md
     - name: Configure Lab Management for SCVMM environments
       href: admin/config-lab-scvmm-envs.md
     - name: Manage TFVC file types
       href: admin/manage-file-types.md
+    - name: Change app tier caching
+      href: admin/change-caching-app-tier.md
   - name: Security
     items:
     - name: About permissions and groups
@@ -184,16 +192,6 @@
         href: architecture/required-ports.md
       - name: Security glossary
         href: https://docs.microsoft.com/en-us/vsts/security/security-glossary?toc=/tfs/toc.json
-- name: Modify TFS deployment
-  items:
-  - name: Move team project collection
-    href: admin/move-project-collection.md
-  - name: Split team project collection
-    href: admin/split-team-project-collection.md
-  - name: Change app tier caching
-    href: admin/change-caching-app-tier.md
-  - name: Change the deployment configuration
-    href: admin/change-deployment.md
 - name: Reference
   items:
   - name: REST APIs and permissions
@@ -218,6 +216,8 @@
       href: admin/modify-remove-access-shareport-tfs.md
     - name: Configure SharePoint Server 2010 or 2007 for Dashboards
       href: admin/config-ent-sharepoint0710-dashboards.md
+  - name: Change the deployment configuration
+    href: admin/change-deployment.md
   - name: TFS 2013 reference
     items:
     - name: Install TFS 2013
