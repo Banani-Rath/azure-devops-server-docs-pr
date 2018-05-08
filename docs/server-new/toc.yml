@@ -258,8 +258,6 @@
     href: troubleshooting/collection-upgrade-failure.md
   - name: Collection attach failures
     href:
-  - name: High availability and disaster recovery
-    href:
 - name: Resources
   items:
   - name: Security and Identity
