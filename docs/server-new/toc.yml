@@ -41,7 +41,7 @@
 - name: Install
   items:
   - name: Install guide
-    href: 
+    href: install/get-started.md
   - name: Install on a single server
     href: install/single-server.md
   - name: Install on two servers
@@ -146,32 +146,34 @@
       href: admin/manage-team-project-collections.md
     - name: Stop and start services, app pools, and websites
       href: admin/stop-start-stuff.md
+    - name: Add TFS server administrators
+      href: admin/add-administrator-tfs.md
     - name: Change service account password
       href: admin/change-service-account-password.md
     - name: Change service account or password for SQL reporting
       href: admin/change-service-account-or-password-sql-reporting.md
     - name: Add users to groups
       href: https://docs.microsoft.com/en-us/vsts/security/add-users-team-project?toc=/tfs/toc.json
-  - name: About permissions and groups
-    href: /vsts/security/about-permissions?toc=/tfs/server/toc.json&bc=/tfs/server/breadcrumb/toc.json
-  - name: About access levels
-    href: /vsts/security/access-levels?toc=/tfs/server/toc.json&bc=/tfs/server/breadcrumb/toc.json  
-  - name: Add TFS server administrators
-    href: admin/add-administrator-tfs.md
-  - name: Change individual permissions
-    href: /vsts/security/change-individual-permissions?toc=/tfs/server/toc.json&bc=/tfs/server/breadcrumb/toc.json
-  - name: Change access levels
-    href: /vsts/security/change-access-levels?toc=/tfs/server/toc.json&bc=/tfs/server/breadcrumb/toc.json
-  - name: Grant or restrict permissions to select tasks (Security)
-    href: /vsts/security/restrict-access?toc=/tfs/server/toc.json&bc=/tfs/server/breadcrumb/toc.json 
-  - name: Security reference
+  - name: Security
     items:
-    - name: Default permission and access assignments
-      href: /vsts/security/permissions-access?toc=/tfs/server/toc.json&bc=/tfs/server/breadcrumb/toc.json 
-    - name: Permission lookup guide 
-      href: /vsts/security/permissions-lookup-guide?toc=/tfs/server/toc.json&bc=/tfs/server/breadcrumb/toc.json  
-    - name: Permissions and groups reference
-      href: /vsts/security/permissions?toc=/tfs/server/toc.json&bc=/tfs/server/breadcrumb/toc.json  
+    - name: About permissions and groups
+      href: /vsts/security/about-permissions?toc=/tfs/server/toc.json&bc=/tfs/server/breadcrumb/toc.json
+    - name: About access levels
+      href: /vsts/security/access-levels?toc=/tfs/server/toc.json&bc=/tfs/server/breadcrumb/toc.json  
+    - name: Change individual permissions
+      href: /vsts/security/change-individual-permissions?toc=/tfs/server/toc.json&bc=/tfs/server/breadcrumb/toc.json
+    - name: Change access levels
+      href: /vsts/security/change-access-levels?toc=/tfs/server/toc.json&bc=/tfs/server/breadcrumb/toc.json
+    - name: Grant or restrict permissions to select tasks (Security)
+      href: /vsts/security/restrict-access?toc=/tfs/server/toc.json&bc=/tfs/server/breadcrumb/toc.json 
+    - name: Security reference
+      items:
+      - name: Default permission and access assignments
+        href: /vsts/security/permissions-access?toc=/tfs/server/toc.json&bc=/tfs/server/breadcrumb/toc.json 
+      - name: Permission lookup guide 
+        href: /vsts/security/permissions-lookup-guide?toc=/tfs/server/toc.json&bc=/tfs/server/breadcrumb/toc.json  
+      - name: Permissions and groups reference
+        href: /vsts/security/permissions?toc=/tfs/server/toc.json&bc=/tfs/server/breadcrumb/toc.json  
 - name: Install SQL Server or SharePoint
   items:
   - name: SQL Server
