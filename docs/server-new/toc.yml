@@ -26,8 +26,6 @@
     href: architecture/sql-server-databases.md
   - name: Background job agent
     href: architecture/background-job-agent.md
-  - name: Databases
-    href: concepts/sql-server-databases.md
   - name: Service accounts
     href:
 - name: Install
