@@ -142,7 +142,7 @@
         href: admin/move-project-collection.md
       - name: Split team project collection
         href: admin/split-team-project-collection.md
-    - name: Manage groups
+    - name: Manage groups and users
       items:
       - name: Set up AD groups for TFS users
         href: admin/setup-ad-groups.md
@@ -150,12 +150,12 @@
         href: admin/add-administrator-tfs.md
       - name: Add users to team projects
         href: /vsts/security/add-users-team-project?toc=/tfs/toc.json
-    - name: Stop and start services, app pools, and websites
-      href: admin/stop-start-stuff.md
-    - name: Change service account password
-      href: admin/change-service-account-password.md
-    - name: Change service account or password for SQL reporting
-      href: admin/change-service-account-or-password-sql-reporting.md
+      - name: Change service account password
+        href: admin/change-service-account-password.md
+      - name: Change service account or password for SQL reporting
+        href: admin/change-service-account-or-password-sql-reporting.md
+      - name: Stop and start services, app pools, and websites
+        href: admin/stop-start-stuff.md
     - name: Configure Lab Management for SCVMM environments
       href: admin/config-lab-scvmm-envs.md
     - name: Manage TFVC file types
