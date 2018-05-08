@@ -56,21 +56,7 @@
     - name: SQL Server Reporting Services reports
       href: /vsts/report/sql-server/reporting-services-reports?toc=/tfs/server/toc.json&bc=/tfs/server/breadcrumb/toc.json 
     - name: Add TFS service account to Report Server
-      href: install/install-2013/add-tfs-svc-acct-report-svr.md
-  - name: Install SharePoint (Pre TFS 2017 only)
-    items:
-    - name: Configure enterprise app definition
-      href: install/sharepoint/config-enterprise-app-def.md
-    - name: Install on same server
-      href: install/sharepoint/install-sharepoint.md
-    - name: Install on different server
-      href: install/sharepoint/setup-remote-sharepoint.md
-    - name: Verify SharePoint
-      href: install/sharepoint/verify-sharepoint.md
-    - name: Move SharePoint to new hardware
-      href: install/sharepoint/move-sharepoint-new-hardware.md
-    - name: Share information using the project portal
-      href: /vsts/report/sharepoint-dashboards/share-information-using-the-project-portal?toc=/tfs/server/toc.json&bc=/tfs/server/breadcrumb/toc.json 
+      href: install/install-2013/add-tfs-svc-acct-report-svr.md 
 - name: Upgrade
   items:
   - name: Get started
@@ -208,6 +194,20 @@
       href: ref/command-line/tfsservicecontrol-cmd.md
   - name: SharePoint reference
     items:
+    - name: Install SharePoint (Pre TFS 2017 only)
+      items:
+      - name: Configure enterprise app definition
+        href: install/sharepoint/config-enterprise-app-def.md
+      - name: Install on same server
+        href: install/sharepoint/install-sharepoint.md
+      - name: Install on different server
+        href: install/sharepoint/setup-remote-sharepoint.md
+      - name: Verify SharePoint
+        href: install/sharepoint/verify-sharepoint.md
+      - name: Move SharePoint to new hardware
+        href: install/sharepoint/move-sharepoint-new-hardware.md
+      - name: Share information using the project portal
+        href: /vsts/report/sharepoint-dashboards/share-information-using-the-project-portal?toc=/tfs/server/toc.json&bc=/tfs/server/breadcrumb/toc.json
     - name: Add SharePoint products to TFS
       href: admin/add-sharepoint-to-tfs.md
     - name: Modify or remove access between sharePoint web app and TFS
