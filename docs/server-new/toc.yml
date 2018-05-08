@@ -32,7 +32,7 @@
     href:
 - name: Install
   items:
-  - name: Install guide
+  - name: General overview
     href: install/get-started.md
   - name: Install on a single server
     href: install/single-server.md
@@ -40,33 +40,24 @@
     href: install/dual-server.md
   - name: Install on multiple servers
     href: install/multiple-server.md
-- name: Upgrade
-  items:
-  - name: Upgrade guide
-    href: upgrade/upgrade-tfs.md
-  - name: Upgrade TFS
-    href: upgrade/get-started.md
-    items:
-    - name: Clean up data
-      href: upgrade/clean-up-data.md
-    - name: Pre-upgrade
-      href: upgrade/pre-upgrade.md
-    - name: Pre-production
-      href: upgrade/pre-production.md
-    - name: Locate or change TFS product key
-      href: upgrade/change-product-key.md
-    - name: TFS Express
-      href: upgrade/express.md
-    - name: Walkthrough
-      href: upgrade/walkthrough.md
-  - name: Configure Lab Management for SCVMM environments
-    href: admin/config-lab-scvmm-envs.md
-  - name: Manage TFVC file types
-    href: admin/manage-file-types.md
   - name: Install proxy server and set up remote site
     href: install/install-proxy-setup-remote.md
-  - name: Change site and certificate settings
-    href: /vsts/security/websitesettings?toc=/tfs/server/toc.json
+- name: Upgrade
+  items:
+  - name: Get started
+    href: upgrade/get-started.md
+  - name: Clean up data
+    href: upgrade/clean-up-data.md
+  - name: Pre-upgrade
+    href: upgrade/pre-upgrade.md
+  - name: Pre-production
+    href: upgrade/pre-production.md
+  - name: Locate or change TFS product key
+    href: upgrade/change-product-key.md
+  - name: TFS Express
+    href: upgrade/express.md
+  - name: Walkthrough
+    href: upgrade/walkthrough.md
 - name: Backup and restore
   items:
   - name: Back up and restore
@@ -120,6 +111,10 @@
       href: concepts/setup-ad-groups.md
     - name: Set up AD groups for TFS users
       href: admin/setup-ad-groups.md
+    - name: Configure Lab Management for SCVMM environments
+      href: admin/config-lab-scvmm-envs.md
+    - name: Manage TFVC file types
+      href: admin/manage-file-types.md
   - name: Security
     items:
     - name: About permissions and groups
@@ -134,6 +129,8 @@
       href: /vsts/security/restrict-access?toc=/tfs/server/toc.json&bc=/tfs/server/breadcrumb/toc.json 
     - name: Set up secure sockets layer
       href: admin/setup-secure-sockets-layer.md
+    - name: Change site and certificate settings
+      href: /vsts/security/websitesettings?toc=/tfs/server/toc.json
     - name: Security reference
       items:
       - name: Default permission and access assignments
