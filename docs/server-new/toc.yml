@@ -41,7 +41,7 @@
       href: install/dual-server.md
     - name: Install on multiple servers
       href: install/multiple-server.md
-  - name: Install proxy server and set up remote site
+  - name: Install TFS proxy for a remote site
     href: install/install-proxy-setup-remote.md
   - name: Install SQL Server
     items:
@@ -109,7 +109,15 @@
     href: admin/backup/restore-lab-management-components.md
   - name: Configure a backup schedule
     href: admin/backup/config-backup-sched-plan.md
-  - name: Restore a TFS deployment to new hardware
+  - name: Restore a single server to new hardware (basic)
+    items:
+    - name: Move or clone to new hardware
+      href: admin/move-clone-hardware.md
+    - name: Rebuild the client cache
+      href: admin/rebuild-client-cache.md
+    - name: Move TFS between network domains
+      href: admin/move-across-domains.md
+  - name: Restore a TFS deployment to new hardware (advanced)
     href: admin/backup/tut-single-svr-home.md
     items:
     - name: 1-Prepare new hardware
@@ -182,22 +190,6 @@
     href: admin/change-caching-app-tier.md
   - name: Change the deployment configuration
     href: admin/change-deployment.md
-  - name: Restore a single server to new hardware 
-    items:
-    - name: Move or clone to new hardware
-      href: admin/move-clone-hardware.md
-    - name: Rebuild the client cache
-      href: admin/rebuild-client-cache.md
-    - name: Move TFS between network domains
-      href: admin/move-across-domains.md
-  - name: Manage SharePoint integration
-    items:
-    - name: Add SharePoint products to TFS
-      href: admin/add-sharepoint-to-tfs.md
-    - name: Modify or remove access between sharePoint web app and TFS
-      href: admin/modify-remove-access-shareport-tfs.md
-    - name: Configure SharePoint Server 2010 or 2007 for Dashboards
-      href: admin/config-ent-sharepoint0710-dashboards.md
 - name: Reference
   items:
   - name: Site settings and SSL certificates
@@ -228,6 +220,14 @@
       href: ref/command-line/tfslabconfig-cmd.md
     - name: TFSServiceControl
       href: ref/command-line/tfsservicecontrol-cmd.md
+  - name: SharePoint reference
+    items:
+    - name: Add SharePoint products to TFS
+      href: admin/add-sharepoint-to-tfs.md
+    - name: Modify or remove access between sharePoint web app and TFS
+      href: admin/modify-remove-access-shareport-tfs.md
+    - name: Configure SharePoint Server 2010 or 2007 for Dashboards
+      href: admin/config-ent-sharepoint0710-dashboards.md
   - name: TFS 2013 reference
     items:
     - name: Install TFS 2013
