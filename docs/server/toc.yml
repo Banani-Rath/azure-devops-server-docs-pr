@@ -51,8 +51,6 @@
       href: install/sql-server/reporting-services-roles.md
     - name: Use always-on availability groups
       href: install/sql-server/use-always-on-groups.md
-    - name: Use always-on availability groups
-      href: install/sql-server/use-always-on-groups.md
     - name: SQL Server Reporting Services reports
       href: /vsts/report/sql-server/reporting-services-reports?toc=/tfs/server/toc.json&bc=/tfs/server/breadcrumb/toc.json 
     - name: Add TFS service account to Report Server
