@@ -177,9 +177,13 @@
       - name: Permission lookup guide 
         href: /vsts/security/permissions-lookup-guide?toc=/tfs/server/toc.json&bc=/tfs/server/breadcrumb/toc.json  
       - name: Permissions and groups reference
-        href: /vsts/security/permissions?toc=/tfs/server/toc.json&bc=/tfs/server/breadcrumb/toc.json  
+        href: /vsts/security/permissions?toc=/tfs/server/toc.json&bc=/tfs/server/breadcrumb/toc.json
+      - name: About security roles
+        href: https://docs.microsoft.com/en-us/vsts/security/about-security-roles?toc=/tfs/toc.json
       - name: Required ports
         href: architecture/required-ports.md
+      - name: Security glossary
+        href: https://docs.microsoft.com/en-us/vsts/security/security-glossary?toc=/tfs/toc.json
 - name: Modify TFS deployment
   items:
   - name: Move team project collection
@@ -192,20 +196,6 @@
     href: admin/change-deployment.md
 - name: Reference
   items:
-  - name: Site settings and SSL certificates
-    href: https://docs.microsoft.com/en-us/vsts/security/websitesettings?toc=/tfs/toc.json
-  - name: Permissions and groups
-    items:
-    - name: About permissions and groups
-      href: https://docs.microsoft.com/en-us/vsts/security/about-permissions?toc=/tfs/toc.json
-    - name: About security roles
-      href: https://docs.microsoft.com/en-us/vsts/security/about-security-roles?toc=/tfs/toc.json
-    - name: About access levels
-      href: https://docs.microsoft.com/en-us/vsts/security/access-levels?toc=/tfs/toc.json
-    - name: Security glossary
-      href: https://docs.microsoft.com/en-us/vsts/security/security-glossary?toc=/tfs/toc.json
-  - name: Required ports
-    href: architecture/required-ports.md
   - name: REST APIs and permissions
     href: https://docs.microsoft.com/en-us/rest/api/vsts/security/permissions?toc=/tfs/toc.json
   - name: Command-line tools
