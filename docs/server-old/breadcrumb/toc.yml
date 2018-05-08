@@ -1,7 +1,0 @@
-- name: Team Foundation Server
-  tocHref: /tfs
-  topicHref: /tfs/index
-  items: 
-  - name: "TFS Administration"
-    tocHref: /tfs/
-    topicHref: /tfs/server/index
