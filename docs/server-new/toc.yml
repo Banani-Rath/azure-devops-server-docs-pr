@@ -8,6 +8,8 @@
     href: requirements.md
   - name: Compatibility
     href: compatibility.md
+  - name: Components, terms, and key concepts
+    href: architecture/tfs-concepts.md
 - name: Architecture and concepts
   items:
   - name: Architecture overview
@@ -20,22 +22,12 @@
       href: architecture/examples-moderate-topo.md
     - name: Examples of complex topology
       href: architecture/examples-complex-topo.md
-  - name: Components, terms, and key concepts
-    href: architecture/tfs-concepts.md
-  - name: Set up AD groups for TFS users
-    href: admin/setup-ad-groups.md
-  - name: Required ports
-    href: architecture/required-ports.md
   - name: SQL Server databases
     href: architecture/sql-server-databases.md
   - name: Background job agent
     href: architecture/background-job-agent.md
   - name: Databases
     href: concepts/sql-server-databases.md
-  - name: Active Directory integration
-    href: concepts/setup-ad-groups.md
-  - name: Administration console
-    href: concepts/open-admin-console.md
   - name: Service accounts
     href:
 - name: Install
@@ -48,18 +40,6 @@
     href: install/dual-server.md
   - name: Install on multiple servers
     href: install/multiple-server.md
-  - name: Install TFS 2013
-    items:
-    - name: Get started
-      href: install/install-2013/install-tfs.md
-    - name: Basic configuration
-      href: install/install-2013/config-tfs-basic.md
-    - name: Standard configuration
-      href: install/install-2013/config-tfs-standard.md
-    - name: Advanced configuration
-      href: install/install-2013/config-tfs-advanced.md
-    - name: Create high-availability farm
-      href: install/create-tfs-farm.md
 - name: Upgrade
   items:
   - name: Upgrade guide
@@ -79,28 +59,8 @@
       href: upgrade/express.md
     - name: Walkthrough
       href: upgrade/walkthrough.md
-    - name: Upgrade TFS 2013
-      items:
-      - name: Upgrade requirements
-        href: upgrade/upgrade-2013/upgrade-2013-requirements.md
-      - name: Use new app tier hardware
-        href: upgrade/upgrade-2013/new-app-tier-hardware.md
-      - name: Use same app tier hardware
-        href: upgrade/upgrade-2013/same-app-tier-hardware.md
-      - name: Set up SQL Server
-        href: upgrade/upgrade-2013/setup-sql-server.md
-      - name: Use same SharePoint site
-        href: upgrade/upgrade-2013/use-same-sharepoint-site.md
-      - name: Back up and restore TFS data
-        href: upgrade/upgrade-2013/backup-and-restore-data.md
-      - name: Run upgrade wizard
-        href: upgrade/run-upgrade-wizard.md
-    - name: Upgrade from TFS 2005
-      href: upgrade/tfs-2005-to-2015.md
   - name: Configure Lab Management for SCVMM environments
     href: admin/config-lab-scvmm-envs.md
-  - name: Set up secure sockets layer
-    href: admin/setup-secure-sockets-layer.md
   - name: Manage TFVC file types
     href: admin/manage-file-types.md
   - name: Install proxy server and set up remote site
@@ -142,6 +102,8 @@
   items:
   - name: Admin
     items:
+    - name: Administration console
+      href: concepts/open-admin-console.md
     - name: Manage team project collections
       href: admin/manage-team-project-collections.md
     - name: Stop and start services, app pools, and websites
@@ -154,6 +116,10 @@
       href: admin/change-service-account-or-password-sql-reporting.md
     - name: Add users to groups
       href: https://docs.microsoft.com/en-us/vsts/security/add-users-team-project?toc=/tfs/toc.json
+    - name: Active Directory integration
+      href: concepts/setup-ad-groups.md
+    - name: Set up AD groups for TFS users
+      href: admin/setup-ad-groups.md
   - name: Security
     items:
     - name: About permissions and groups
@@ -166,6 +132,8 @@
       href: /vsts/security/change-access-levels?toc=/tfs/server/toc.json&bc=/tfs/server/breadcrumb/toc.json
     - name: Grant or restrict permissions to select tasks (Security)
       href: /vsts/security/restrict-access?toc=/tfs/server/toc.json&bc=/tfs/server/breadcrumb/toc.json 
+    - name: Set up secure sockets layer
+      href: admin/setup-secure-sockets-layer.md
     - name: Security reference
       items:
       - name: Default permission and access assignments
@@ -174,6 +142,8 @@
         href: /vsts/security/permissions-lookup-guide?toc=/tfs/server/toc.json&bc=/tfs/server/breadcrumb/toc.json  
       - name: Permissions and groups reference
         href: /vsts/security/permissions?toc=/tfs/server/toc.json&bc=/tfs/server/breadcrumb/toc.json  
+      - name: Required ports
+        href: architecture/required-ports.md
 - name: Install SQL Server or SharePoint
   items:
   - name: SQL Server
@@ -262,6 +232,38 @@
       href: ref/command-line/tfslabconfig-cmd.md
     - name: TFSServiceControl
       href: ref/command-line/tfsservicecontrol-cmd.md
+  - name: TFS 2013 reference
+    items:
+    - name: Install TFS 2013
+      items:
+      - name: Get started
+        href: install/install-2013/install-tfs.md
+      - name: Basic configuration
+        href: install/install-2013/config-tfs-basic.md
+      - name: Standard configuration
+        href: install/install-2013/config-tfs-standard.md
+      - name: Advanced configuration
+        href: install/install-2013/config-tfs-advanced.md
+      - name: Create high-availability farm
+        href: install/create-tfs-farm.md
+      - name: Upgrade to TFS 2013
+        items:
+        - name: Upgrade requirements
+          href: upgrade/upgrade-2013/upgrade-2013-requirements.md
+        - name: Use new app tier hardware
+          href: upgrade/upgrade-2013/new-app-tier-hardware.md
+        - name: Use same app tier hardware
+          href: upgrade/upgrade-2013/same-app-tier-hardware.md
+        - name: Set up SQL Server
+          href: upgrade/upgrade-2013/setup-sql-server.md
+        - name: Use same SharePoint site
+          href: upgrade/upgrade-2013/use-same-sharepoint-site.md
+        - name: Back up and restore TFS data
+          href: upgrade/upgrade-2013/backup-and-restore-data.md
+        - name: Run upgrade wizard
+          href: upgrade/run-upgrade-wizard.md
+  - name: Upgrade from TFS 2005
+    href: upgrade/tfs-2005-to-2015.md
 - name: Troubleshooting
   items:
   - name: Upgrade failures
