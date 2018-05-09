@@ -120,11 +120,11 @@
       href: ref/command-line/open-admin-console.md
     - name: Manage collections
       items:
-      - name: Manage team project collections
+      - name: Manage project collections
         href: admin/manage-team-project-collections.md
-      - name: Move team project collection
+      - name: Move project collection
         href: admin/move-project-collection.md
-      - name: Split team project collection
+      - name: Split project collection
         href: admin/split-team-project-collection.md
     - name: Manage groups and users
       items:
@@ -132,7 +132,7 @@
         href: admin/setup-ad-groups.md
       - name: Add TFS server administrators
         href: admin/add-administrator-tfs.md
-      - name: Add users to team projects
+      - name: Add users to projects
         href: /vsts/security/add-users-team-project?toc=/tfs/toc.json
       - name: Change service account password
         href: admin/change-service-account-password.md

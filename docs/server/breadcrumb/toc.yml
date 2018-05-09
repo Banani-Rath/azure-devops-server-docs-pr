@@ -1,3 +1,7 @@
-- name: Team Foundation Server
-  tocHref: /server-new
-  topicHref: /server-new/index
+- name: VSTS and TFS 
+  tocHref: /vsts/
+  topicHref: /vsts/index#pivot=services
+  items:
+  - name: Team Foundation Server
+    tocHref: /server-new
+    topicHref: /server-new/index
