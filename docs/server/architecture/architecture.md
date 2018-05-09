@@ -107,7 +107,7 @@ Team Foundation Framework Services:
 <a name="server-level-svcs"></a>
 ### Server-level services
 
-Server-level services (also known as application-level services) provide the functionality for operations for Team Foundation Server as a software application. You can create applications that extend Team Foundation Server by using some of these services. For more information, see [Extending Team Foundation](extend-vs-for-alm.md).
+Server-level services (also known as application-level services) provide the functionality for operations for Team Foundation Server as a software application. You can create applications that extend Team Foundation Server by using some of these services.
 
 Team Foundation Framework Services:
 
@@ -125,7 +125,7 @@ Team Foundation Framework Services:
 <a name="datatier"></a>
 ### Data tier  
 
-The data tier includes data, stored procedures, and other associated logic. When you use VSTS, the data tier is hosted for you using SQL Server Azure. In a local deployment of TFS, the logical data tier consists of the following operational stores within SQL Server. These stores might be located on one physical server or distributed across many servers. You can create applications that extend Team Foundation Server by using some of these operational stores. For more information, see [Extending Team Foundation](extend-vs-for-alm.md).
+The data tier includes data, stored procedures, and other associated logic. When you use VSTS, the data tier is hosted for you using SQL Server Azure. In a local deployment of TFS, the logical data tier consists of the following operational stores within SQL Server. These stores might be located on one physical server or distributed across many servers. You can create applications that extend Team Foundation Server by using some of these operational stores.
 
 * Configuration database (TFS_Configuration)
 * Application warehouse (TFS_Warehouse)

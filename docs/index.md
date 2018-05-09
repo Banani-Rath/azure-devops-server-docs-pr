@@ -16,7 +16,7 @@ featureFlags:
 
 <div id="main" class="v2">
     <div class="container">
-        <h1>Visual Studio Team Services Documentation</h1>
+        <h1>Team Foundation Server Documentation</h1>
         <ul class="pivots">
             <li>
                 <a href="#start">Get Started</a>
@@ -26,19 +26,35 @@ featureFlags:
                         <ul id="start-all" class="cardsL">
                             <li class="fullSpan">
                                 <div class="intro">
-                                    <h1>Get Started with VSTS and TFS</h1>
-                                    <p>Explore our most popular services with quickstarts, samples, and tutorials.</p>
+                                    <h1>Get Started with TFS</h1>
+                                    <p>Install, upgrade, and manage TFS.</p>
                                 </div>
                             </li>
+                            <li>
                             <li>
                                 <div class="cardSize">
                                     <div class="cardPadding">
                                         <div class="card">
                                             <div class="cardText">
-                                                <h3>Add your code</h3>
+                                                <h3>About TFS</h3>
                                                 <ul class="noBullet">
-                                                    <li><a class="barLink" href="/en-us/vsts/git/">Git Repositories</a></li>
-                                                    <li><a class="barLink" href="/en-us/vsts/java/">Get started with Java</a></li>
+                                                    <li><a class="barLink" href="/server/whats-new">TFS release notes</a></li>
+                                                    <li><a class="barLink" href="/server/architecture/architecture">Architecture</a></li>
+                                                    <li><a class="barLink" href="/server/architecture/tfs-concepts">Components, terms, and concepts</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                                <div class="cardSize">
+                                    <div class="cardPadding">
+                                        <div class="card">
+                                            <div class="cardText">
+                                                <h3>Install</h3>
+                                                <ul class="noBullet">
+                                                    <li><a class="barLink" href="/en-us/server/install/get-started">Install guide</a></li>
+                                                    <li><a class="barLink" href="/server/requirements">Requirements guide</a></li> 
                                                 </ul>
                                             </div>
                                         </div>
@@ -50,82 +66,10 @@ featureFlags:
                                     <div class="cardPadding">
                                         <div class="card">
                                             <div class="cardText">
-                                                <h3>Continuous integration &amp; delivery</h3>
+                                                <h3>Upgrade</h3>
                                                 <ul class="noBullet">
-                                                    <li><a class="barLink" href="/vsts/deploy-azure/">Deploy to Azure</a></li>
-                                                    <li><a class="barLink" href="/vsts/build-release/">Build and Release</a></li>
-                                                    <li><a class="barLink" href="/vsts/package/">Package Management</a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="cardSize">
-                                    <div class="cardPadding">
-                                        <div class="card">
-                                            <div class="cardText">
-                                                <h3>Agile</h3>
-                                                <ul class="noBullet">
-                                                    <li><a class="barLink" href="/vsts/work/scrum/index">Scrum</a></li>
-                                                    <li><a class="barLink" href="/vsts/work/kanban/index">Kanban</a></li>
-                                                    <li><a class="barLink" href="/vsts/report/dashboards/index">Dashboards</a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="cardSize">
-                                    <div class="cardPadding">
-                                        <div class="card">
-                                            <div class="cardText">
-                                                <h3>Test your code</h3>
-                                                <ul class="noBullet">
-                                                    <li><a class="barLink" href="/vsts/build-release/test/index">Continuous Testing</a></li>
-                                                    <li><a class="barLink" href="/vsts/manual-test/index">Exploratory &amp; Manual Testing</a></li>
-                                                    <li><a class="barLink" href="/vsts/load-test/index">Load Testing</a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="cardSize">
-                                    <div class="cardPadding">
-                                        <div class="card">
-                                            <div class="cardText">
-                                                <h3>Resources</h3>
-                                                <ul class="noBullet">
-                                                    <li>
-                                                        <a class="barLink" href="/vsts/marketplace/overview"><img src="_img/index/team-services-marketplace.svg" alt="" />Marketplace</a>
-                                                    </li>
-                                                    <li>
-                                                        <a class="barLink" href="/azure/devops/git/what-is-git"><img src="_img/index/team-services-git.svg" alt="" />Learn about Git</a>
-                                                    </li>
-                                                    <li>
-                                                        <a class="barLink" href="/azure/devops/what-is-devops"><img src="_img/index/team-services-devops.svg" alt="" />Learn about DevOps</a>
-                                                    </li>
-                                                    <li>
-                                                        <a class="barLink" href="/azure/devops/agile/what-is-agile"><img src="_img/index/team-services-agile.svg" alt="" />Learn about Agile</a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="cardSize">
-                                    <div class="cardPadding">
-                                        <div class="card">
-                                            <div class="cardText">
-                                                <h3>Command-line tool</h3>
-                                                <ul class="noBullet">
-                                                    <li><a class="barLink" href="https://docs.microsoft.com/en-us/cli/vsts/overview"><img src="_img/index/command-line-window.svg" alt="" />VSTS CLI</a></li>
+                                                    <li><a class="barLink" href="/server/upgrade/get-started">Upgrade guide</a></li>
+                                                    <li><a class="barLink" href="/server/compatibility">Compatibility guide</a></li>
                                                 </ul>
                                             </div>
                                         </div>
