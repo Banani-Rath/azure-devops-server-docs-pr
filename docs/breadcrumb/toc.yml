@@ -1,3 +1,7 @@
-- name: Docs
-  tocHref: /
-  topicHref: /
+- name: TFS
+  tocHref: /tfs/
+  topicHref: /tfs/index#pivot=services
+  items:
+  - name: Team Foundation Server
+    tocHref: /server
+    topicHref: /server/index
