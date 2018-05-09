@@ -37,7 +37,7 @@
     "globalMetadata": {
       "uhfHeaderId": "MSDocsHeader-TeamServices",
       "ms.topic": "conceptual",
-      "breadcrumb_path": "/tfs/breadcrumb/toc.json",
+      "breadcrumb_path": "~/breadcrumb/toc.yml",
       "extendBreadcrumb": true,
       "searchScope": ["VSTS", "Visual Studio Team Services", "TFS", "Team Foundation Server"],
       "author": "erickson-doug",
