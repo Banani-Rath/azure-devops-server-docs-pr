@@ -31,7 +31,6 @@ featureFlags:
                                 </div>
                             </li>
                             <li>
-                            <li>
                                 <div class="cardSize">
                                     <div class="cardPadding">
                                         <div class="card">
@@ -47,6 +46,7 @@ featureFlags:
                                     </div>
                                 </div>
                             </li>
+                            <li>
                                 <div class="cardSize">
                                     <div class="cardPadding">
                                         <div class="card">
