@@ -181,7 +181,7 @@
   - name: REST APIs and permissions
     href: https://docs.microsoft.com/en-us/rest/api/vsts/security/permissions?toc=/tfs/toc.json
   - name: Service account dependencies
-    href: admin/service-account-dependencies-tfs.md
+    href: admin/service-accounts-dependencies-tfs.md
   - name: Command-line tools
     items:
     - name: TFSConfig
