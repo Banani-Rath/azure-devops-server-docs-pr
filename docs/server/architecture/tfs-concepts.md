@@ -7,7 +7,7 @@ ms.author: elbatk
 author: elbatk
 ms.topic: conceptual
 ms.date: 08/16/2016
-ms.prod: devops
+ms.prod: devops-server
 ms.technology: tfs-admin
 ---
 

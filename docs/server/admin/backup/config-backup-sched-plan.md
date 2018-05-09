@@ -1,7 +1,7 @@
 ---
 title: Configure a backup schedule and plan for Team Foundation Server
 description: Configure a backup schedule and plan for Team Foundation Server
-ms.prod: devops
+ms.prod: devops-server
 ms.technology: tfs-admin
 ms.assetid: a92e7f03-61d0-458d-9155-eefa40e228cc
 toc: show

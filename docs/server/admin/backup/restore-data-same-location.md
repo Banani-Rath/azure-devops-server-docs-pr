@@ -7,7 +7,7 @@ ms.manager: douge
 ms.author: elbatk
 author: elbatk
 ms.date: 08/31/2016
-ms.prod: devops
+ms.prod: devops-server
 ms.technology: tfs-admin
 ---
 

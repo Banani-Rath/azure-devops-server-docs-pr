@@ -1,7 +1,7 @@
 ---
 title: Upgrading TFS Express On-premises
 description: Walkthrough of an Express upgrade
-ms.prod: devops
+ms.prod: devops-server
 ms.technology: tfs-admin
 ms.assetid: 25542ee9-2c35-4e95-be1e-6c1243119513
 ms.manager: douge

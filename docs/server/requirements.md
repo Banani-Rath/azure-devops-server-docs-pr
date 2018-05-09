@@ -1,7 +1,7 @@
 ﻿---
 title: Requirements and compatibility | Team Foundation Server Setup, Upgrade and Administration
 description: Describes many kinds of requirements and compatibility for VSTS and TFS -- hardware, operating systems, SQL Server, client versions, server versions, browsers
-ms.prod: devops
+ms.prod: devops-server
 ms.technology: tfs-admin
 ms.assetid: 12652666-b74e-4fd8-aab1-d87cbba6b820
 toc: show
