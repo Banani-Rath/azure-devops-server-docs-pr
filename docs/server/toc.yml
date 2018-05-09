@@ -117,7 +117,7 @@
     - name: Configure and manage TFS resources
       href: admin/config-tfs-resources.md
     - name: Administration console
-      href: concepts/open-admin-console.md
+      href: ref/command-line/open-admin-console.md
     - name: Manage collections
       items:
       - name: Manage team project collections
