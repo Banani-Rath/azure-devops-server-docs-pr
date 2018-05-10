@@ -37,9 +37,9 @@ featureFlags:
                                             <div class="cardText">
                                                 <h3>About TFS</h3>
                                                 <ul class="noBullet">
-                                                    <li><a class="barLink" href="/server/whats-new">TFS release notes</a></li>
-                                                    <li><a class="barLink" href="/server/architecture/architecture">Architecture</a></li>
-                                                    <li><a class="barLink" href="/server/architecture/tfs-concepts">Components, terms, and concepts</a></li>
+                                                    <li><a class="barLink" href="/tfs/server/whats-new">TFS release notes</a></li>
+                                                    <li><a class="barLink" href="/tfs/server/architecture/architecture">Architecture</a></li>
+                                                    <li><a class="barLink" href="/tfs/server/architecture/tfs-concepts">Components, terms, and concepts</a></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -53,8 +53,8 @@ featureFlags:
                                             <div class="cardText">
                                                 <h3>Install</h3>
                                                 <ul class="noBullet">
-                                                    <li><a class="barLink" href="/en-us/server/install/get-started">Install guide</a></li>
-                                                    <li><a class="barLink" href="/server/requirements">Requirements guide</a></li> 
+                                                    <li><a class="barLink" href="/tfs/server/install/get-started">Install guide</a></li>
+                                                    <li><a class="barLink" href="/tfs/server/requirements">Requirements guide</a></li> 
                                                 </ul>
                                             </div>
                                         </div>
@@ -68,8 +68,8 @@ featureFlags:
                                             <div class="cardText">
                                                 <h3>Upgrade</h3>
                                                 <ul class="noBullet">
-                                                    <li><a class="barLink" href="/server/upgrade/get-started">Upgrade guide</a></li>
-                                                    <li><a class="barLink" href="/server/compatibility">Compatibility guide</a></li>
+                                                    <li><a class="barLink" href="/tfs/server/upgrade/get-started">Upgrade guide</a></li>
+                                                    <li><a class="barLink" href="/tfs/server/compatibility">Compatibility guide</a></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -88,7 +88,7 @@ featureFlags:
                         <ul id="all" class="cardText">
                             <li>
                                 <div class="group">
-                                    <h3>Code</h3>
+                                    <h3>Architecture and concepts</h3>
                                     <ul>
                                         <li><a class="barLink" href="/vsts/git/index">Git Repositories</a></li>
                                         <li><a class="barLink" href="/vsts/git/pull-requests-overview">Pull Requests</a></li>
@@ -96,7 +96,7 @@ featureFlags:
                                         <li><a class="barLink" href="/vsts/git/branch-policies-overview">Branch Policies</a></li>
                                         <li><a class="barLink" href="/vsts/tfvc/index">TFVC</a></li>
                                     </ul>
-                                    <h3>Continuous Integration &amp; Delivery</h3>
+                                    <h3>Install</h3>
                                     <ul>
                                         <li><a class="barLink" href="/vsts/build-release/index">Build &amp; Release</a></li>
                                         <li><a class="barLink" href="/vsts/build-release/test/index">Continuous Testing</a></li>
@@ -106,7 +106,7 @@ featureFlags:
                                         <li><a class="barLink" href="/vsts/build-release/concepts/agents/agents">Hosted and Private Agents</a></li>
                                         <li><a class="barLink" href="/vsts/build-release/tasks">Task Reference</a></li>
                                     </ul>
-                                    <h3>Testing</h3>
+                                    <h3>Upgrade</h3>
                                     <ul>
                                         <li><a class="barLink" href="/visualstudio/test/unit-test-your-code">Unit and Functional Testing</a></li>
                                         <li><a class="barLink" href="/vsts/manual-test/index">Exploratory &amp; Manual Testing</a></li>
@@ -117,7 +117,7 @@ featureFlags:
                             </li>
                             <li>
                                 <div class="group">
-                                    <h3>Agile</h3>
+                                    <h3>Backup and restore</h3>
                                     <ul>
                                         <li><a class="barLink" href="/vsts/work/work-items/index">Work Items</a></li>
                                         <li><a class="barLink" href="/vsts/work/backlogs/index">Backlogs</a></li>
@@ -127,14 +127,14 @@ featureFlags:
                                         <li><a class="barLink" href="/vsts/work/customize/index">Customization</a></li>
                                         <li><a class="barLink" href="/vsts/work/scale/index">Agile at Scale</a></li>
                                     </ul>
-                                    <h3>Reporting</h3>
+                                    <h3>Admin and security</h3>
                                     <ul>
                                         <li><a class="barLink" href="/vsts/report/dashboards/index">Dashboards</a></li>
                                         <li><a class="barLink" href="/vsts/report/analytics/index">Analytics (VSTS)</a></li>
                                         <li><a class="barLink" href="/vsts/report/powerbi/index">Power BI (VSTS)</a></li>
                                         <li><a class="barLink" href="/vsts/report/sql-reports/">SQL Server Reporting (TFS)</a></li>
                                     </ul>
-                                    <h3>Collaboration</h3>
+                                    <h3>Reference</h3>
                                     <ul>
                                         <li><a class="barLink" href="/vsts/notifications/index">Notifications</a></li>
                                         <li><a class="barLink" href="/vsts/collaborate/index">READMEs &amp; Wikis</a></li>
@@ -145,7 +145,7 @@ featureFlags:
                             </li>
                             <li>
                                 <div class="group">
-                                    <h3>Admin</h3>
+                                    <h3>Troubleshooting</h3>
                                     <ul>
                                         <li><a class="barLink" href="/vsts/accounts/index">Account Management</a></li>
                                         <li><a class="barLink" href="/vsts/tfs-server/index">Server Administration (TFS)</a></li>
@@ -156,7 +156,7 @@ featureFlags:
                                         <li><a class="barLink" href="/vsts/report/sharepoint-dashboards/">SharePoint Integration</a></li>
                                         <li><a class="barLink" href="/vsts/work/tfs-ps-sync/">Project Server Integration</a></li>
                                     </ul>
-                                    <h3>Extend</h3>
+                                    <h3>Helpful resources</h3>
                                     <ul>
                                         <li><a class="barLink" href="/vsts/extend/index">Develop Extensions</a></li>
                                         <li><a class="barLink" href="/vsts/integrate/index">Build Apps</a></li>
@@ -164,10 +164,6 @@ featureFlags:
                                         <li><a class="barLink" href="/vsts/report/extend-analytics/index">Extend Analytics with OData</a></li>
                                         <li><a class="barLink" href="https://docs.microsoft.com/en-us/rest/api/vsts/">REST APIs</a></li>
                                         <li><a class="barLink" href="https://www.visualstudio.com/docs/integrate/extensions/reference/client/core-sdk">TypeScript APIs</a></li>
-                                    </ul>
-                                    <h3>Marketplace</h3>
-                                    <ul>
-                                        <li><a class="barLink" href="/vsts/marketplace/overview">Discover Extensions</a></li>
                                     </ul>
                                 </div>
                             </li>
