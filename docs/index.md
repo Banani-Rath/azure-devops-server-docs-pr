@@ -170,8 +170,8 @@ featureFlags:
                         </ul>
                     </li>
                     <li>
-                        <a href="#code">Code</a>
-                        <ul id="code" class="cardsA">
+                        <a href="#architecture">Architecture and concepts</a>
+                        <ul id="architecture" class="cardsA">
                             <li>
                                 <a href="/vsts/git">
                                     <div class="cardSize">
@@ -270,8 +270,8 @@ featureFlags:
                         </ul>
                     </li>
                     <li>
-                        <a href="#delivery">Continuous Integration &amp; Delivery</a>
-                        <ul id="delivery" class="cardsA">
+                        <a href="#install">Install</a>
+                        <ul id="install" class="cardsA">
                             <li>
                                 <a href="/vsts/build-release/index">
                                     <div class="cardSize">
@@ -410,8 +410,8 @@ featureFlags:
                         </ul>
                     </li>
                     <li>
-                        <a href="#testing">Testing</a>
-                        <ul id="testing" class="cardsA">
+                        <a href="#backuprestore">Backup and Restore</a>
+                        <ul id="backuprestore" class="cardsA">
                             <li>
                                 <a href="/visualstudio/test/unit-test-your-code">
                                     <div class="cardSize">
@@ -493,8 +493,8 @@ featureFlags:
                         </ul>
                     </li>
                     <li>
-                        <a href="#agile">Agile</a>
-                        <ul id="agile" class="cardsA">
+                        <a href="#adminsecurity">Admin and Security</a>
+                        <ul id="adminsecurity" class="cardsA">
                             <li>
                                 <a href="/vsts/work/work-items/index">
                                     <div class="cardSize">
@@ -634,8 +634,8 @@ featureFlags:
                         </ul>
                     </li>
                     <li>
-                        <a href="#reporting">Reporting</a>
-                        <ul id="reporting" class="cardsA">
+                        <a href="#reference">reference</a>
+                        <ul id="reference" class="cardsA">
                             <li>
                                 <a href="/vsts/report/dashboards/index">
                                     <div class="cardSize">
@@ -715,8 +715,8 @@ featureFlags:
                         </ul>
                     </li>
                     <li>
-                        <a href="#collaboration">Collaboration</a>
-                        <ul id="collaboration" class="cardsA">
+                        <a href="#troubleshooting">Troubleshooting</a>
+                        <ul id="troubleshooting" class="cardsA">
                             <li>
                                 <a href="/vsts/notifications/index">
                                     <div class="cardSize">
@@ -798,8 +798,8 @@ featureFlags:
                         </ul>
                     </li>
                     <li>
-                        <a href="#admin">Admin</a>
-                        <ul id="admin" class="cardsA">
+                        <a href="#helpful">Helpful resources</a>
+                        <ul id="helpful" class="cardsA">
                             <li>
                                 <a href="/vsts/accounts/index">
                                     <div class="cardSize">
@@ -948,150 +948,6 @@ featureFlags:
                                                 <div class="cardText">
                                                     <h3>Project Server Integration</h3>
                                                     <p>Native solution deprecated with TFS 2017. Find Microsoft partners who provide this integration.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#integration">Extend</a>
-                        <ul id="integration" class="cardsA">
-                            <li>
-                                <a href="/vsts/extend/index">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage">
-                                                        <img src="_img/index/i_extensions.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Develop Extensions</h3>
-                                                    <p>Extend VSTS and TFS with custom web experiences, CI/CD tasks, and more.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/vsts/integrate/index">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage">
-                                                        <img src="_img/index/i_build.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Build Apps</h3>
-                                                    <p>Programmatically integrate with VSTS and TFS from custom apps and services.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/vsts/service-hooks/index">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage">
-                                                        <img src="_img/index/i_service-hooks.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Service Hooks</h3>
-                                                    <p>Create subscriptions and configure the integration of VSTS or TFS with
-                                                        third-party apps.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/vsts/report/extend-analytics/index">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage">
-                                                        <img src="_img/index/i_analytics.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Extend Analytics with OData</h3>
-                                                    <p>Use the Analytics Service OData API's to create custom visualizations and reports.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.visualstudio.com/en-us/docs/integrate/api/overview">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage">
-                                                        <img src="_img/index/logo_REST.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>REST APIs</h3>
-                                                    <p>Interact with VSTS through standard REST APIs.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.visualstudio.com/en-us/docs/integrate/extensions/reference/client/core-sdk">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage">
-                                                        <img src="https://docs.microsoft.com/media/logos/logo_TS.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>TypeScript APIs</h3>
-                                                    <p>Interact with VSTS through TypeScript APIs.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#marketplace">Marketplace</a>
-                        <ul id="marketplace" class="cardsA">
-                            <li>
-                                <a href="/vsts/marketplace/overview">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage">
-                                                        <img src="_img/index/i_extensions.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Discover Extensions</h3>
-                                                    <p>Browse the Visual Studio Marketplace and discover extensions for VSTS and TFS.</p>
                                                 </div>
                                             </div>
                                         </div>
