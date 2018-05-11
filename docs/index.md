@@ -16,7 +16,7 @@ featureFlags:
 
 <div id="main" class="v2">
     <div class="container">
-        <h1>Team Foundation Server Documentation</h1>
+        <h1>Team Foundation Server Administration Documentation</h1>
         <ul class="pivots">
             <li>
                 <a href="#start">Get Started</a>
@@ -26,8 +26,8 @@ featureFlags:
                         <ul id="start-all" class="cardsL">
                             <li class="fullSpan">
                                 <div class="intro">
-                                    <h1>Get Started with TFS</h1>
-                                    <p>Install, upgrade, and manage TFS.</p>
+                                    <h1>Get Started with TFS admin</h1>
+                                    <p>Install, upgrade, and manage TFS deployments.</p>
                                 </div>
                             </li>
                             <li>
@@ -81,8 +81,8 @@ featureFlags:
                 </ul>
             </li>
             <li>
-                <a href="#services">Services</a>
-                <ul id="services">
+                <a href="#articles">Articles</a>
+                <ul id="articles">
                     <li>
                         <a data-default="true" href="#all">All</a>
                         <ul id="all" class="cardText">
@@ -90,28 +90,20 @@ featureFlags:
                                 <div class="group">
                                     <h3>Architecture and concepts</h3>
                                     <ul>
-                                        <li><a class="barLink" href="/vsts/git/index">Git Repositories</a></li>
-                                        <li><a class="barLink" href="/vsts/git/pull-requests-overview">Pull Requests</a></li>
-                                        <li><a class="barLink" href="/vsts/git/forks-overview">Forks</a></li>
-                                        <li><a class="barLink" href="/vsts/git/branch-policies-overview">Branch Policies</a></li>
-                                        <li><a class="barLink" href="/vsts/tfvc/index">TFVC</a></li>
+                                        <li><a class="barLink" href="/tfs/server/architecture/architecturex">Architecture overview</a></li>
+                                        <li><a class="barLink" href="/tfs/server/architecture/sql-server-databases">SQL Server databases</a></li>
+                                        <li><a class="barLink" href="/tfs/server/architecture/background-job-agent">Background job agents</a></li>
                                     </ul>
                                     <h3>Install</h3>
                                     <ul>
-                                        <li><a class="barLink" href="/vsts/build-release/index">Build &amp; Release</a></li>
-                                        <li><a class="barLink" href="/vsts/build-release/test/index">Continuous Testing</a></li>
-                                        <li><a class="barLink" href="/vsts/deploy-azure/index">Deploy to Azure</a></li>
-                                        <li><a class="barLink" href="/vsts/package/index">Package Management</a></li>
-                                        <li><a class="barLink" href="/vsts/build-release/concepts/library/index">Library Assets</a></li>
-                                        <li><a class="barLink" href="/vsts/build-release/concepts/agents/agents">Hosted and Private Agents</a></li>
-                                        <li><a class="barLink" href="/vsts/build-release/tasks">Task Reference</a></li>
+                                        <li><a class="barLink" href="/tfs/server/install/get-started">Install guide</a></li>
+                                        <li><a class="barLink" href="/tfs/server/install/install-proxy-setup-remote">Install TFS proxy for a remote site</a></li>
+                                        <li><a class="barLink" href="/tfs/server/install/install-sql-server">Install SQL Server</a></li>
                                     </ul>
                                     <h3>Upgrade</h3>
                                     <ul>
-                                        <li><a class="barLink" href="/visualstudio/test/unit-test-your-code">Unit and Functional Testing</a></li>
-                                        <li><a class="barLink" href="/vsts/manual-test/index">Exploratory &amp; Manual Testing</a></li>
-                                        <li><a class="barLink" href="/vsts/load-test/index">Load Testing</a></li>
-                                        <li><a class="barLink" href="/vsts/build-release/test/index">Continuous Testing</a></li>
+                                        <li><a class="barLink" href="/tfs/server/upgrade/get-started">Upgrade guide</a></li>
+                                        <li><a class="barLink" href="/tfs/server/upgrade/walkthrough">Scenario walkthrough</a></li>
                                     </ul>
                                 </div>
                             </li>
@@ -119,27 +111,18 @@ featureFlags:
                                 <div class="group">
                                     <h3>Backup and restore</h3>
                                     <ul>
-                                        <li><a class="barLink" href="/vsts/work/work-items/index">Work Items</a></li>
-                                        <li><a class="barLink" href="/vsts/work/backlogs/index">Backlogs</a></li>
-                                        <li><a class="barLink" href="/vsts/work/kanban/index">Kanban</a></li>
-                                        <li><a class="barLink" href="/vsts/work/scrum/index">Scrum</a></li>
-                                        <li><a class="barLink" href="/vsts/work/track/index">Queries</a></li>
-                                        <li><a class="barLink" href="/vsts/work/customize/index">Customization</a></li>
-                                        <li><a class="barLink" href="/vsts/work/scale/index">Agile at Scale</a></li>
+                                        <li><a class="barLink" href="/tfs/server/admin/backup/back-up-restore-tfs">Backup and restore guide</a></li>
+                                        <li><a class="barLink" href="/tfs/server/admin/backup/manually-backup-tfs">Manually back up</a></li>
+                                        <li><a class="barLink" href="/tfs/server/admin/backup/config-backup-sched-plan">Configure backup schedule</a></li>
                                     </ul>
                                     <h3>Admin and security</h3>
                                     <ul>
-                                        <li><a class="barLink" href="/vsts/report/dashboards/index">Dashboards</a></li>
-                                        <li><a class="barLink" href="/vsts/report/analytics/index">Analytics (VSTS)</a></li>
-                                        <li><a class="barLink" href="/vsts/report/powerbi/index">Power BI (VSTS)</a></li>
-                                        <li><a class="barLink" href="/vsts/report/sql-reports/">SQL Server Reporting (TFS)</a></li>
-                                    </ul>
-                                    <h3>Reference</h3>
-                                    <ul>
-                                        <li><a class="barLink" href="/vsts/notifications/index">Notifications</a></li>
-                                        <li><a class="barLink" href="/vsts/collaborate/index">READMEs &amp; Wikis</a></li>
-                                        <li><a class="barLink" href="/vsts/search/index">Search</a></li>
-                                        <li><a class="barLink" href="/vsts/feedback/index">Feedback</a></li>
+                                        <li><a class="barLink" href="/tfs/server/admin/config-tfs-resources">Configure and manage TFS resources</a></li>
+                                        <li><a class="barLink" href="/tfs/server/ref/command-line/open-admin-console">Administration console</a></li>
+                                        <li><a class="barLink" href="/tfs/server/admin/manage-team-project-collections">Manage project collections</a></li>
+                                        <li><a class="barLink" href="/tfs/server/admin/add-administrator-tfs">Add TFS server administrators</a></li>
+                                        <li><a class="barLink" href="/tfs/server/security/about-permissions">Permissions and groups</a></li>
+                                        <li><a class="barLink" href="/tfs/server/security/access-levels">Access levels</a></li>
                                     </ul>
                                 </div>
                             </li>
@@ -147,22 +130,22 @@ featureFlags:
                                 <div class="group">
                                     <h3>Troubleshooting</h3>
                                     <ul>
-                                        <li><a class="barLink" href="/vsts/accounts/index">Account Management</a></li>
-                                        <li><a class="barLink" href="/vsts/tfs-server/index">Server Administration (TFS)</a></li>
-                                        <li><a class="barLink" href="/vsts/security/index">Security and Identity</a></li>
-                                        <li><a class="barLink" href="/vsts/billing/index">Billing</a></li>
-                                        <li><a class="barLink" href="/vsts/settings/index">Scale and Configure Teams</a></li>
-                                        <li><a class="barLink" href="/vsts/marketplace/index">Manage Extensions</a></li>
-                                        <li><a class="barLink" href="/vsts/report/sharepoint-dashboards/">SharePoint Integration</a></li>
-                                        <li><a class="barLink" href="/vsts/work/tfs-ps-sync/">Project Server Integration</a></li>
+                                        <li><a class="barLink" href="/tfs/server/accounts/index">Account Management</a></li>
+                                        <li><a class="barLink" href="/tfs/server/tfs-server/index">Server Administration (TFS)</a></li>
+                                        <li><a class="barLink" href="/tfs/server/security/index">Security and Identity</a></li>
+                                        <li><a class="barLink" href="/tfs/server/billing/index">Billing</a></li>
+                                        <li><a class="barLink" href="/tfs/server/settings/index">Scale and Configure Teams</a></li>
+                                        <li><a class="barLink" href="/tfs/server/marketplace/index">Manage Extensions</a></li>
+                                        <li><a class="barLink" href="/tfs/server/report/sharepoint-dashboards/">SharePoint Integration</a></li>
+                                        <li><a class="barLink" href="/tfs/server/work/tfs-ps-sync/">Project Server Integration</a></li>
                                     </ul>
                                     <h3>Helpful resources</h3>
                                     <ul>
-                                        <li><a class="barLink" href="/vsts/extend/index">Develop Extensions</a></li>
-                                        <li><a class="barLink" href="/vsts/integrate/index">Build Apps</a></li>
-                                        <li><a class="barLink" href="/vsts/service-hooks/index">Service Hooks</a></li>
-                                        <li><a class="barLink" href="/vsts/report/extend-analytics/index">Extend Analytics with OData</a></li>
-                                        <li><a class="barLink" href="https://docs.microsoft.com/en-us/rest/api/vsts/">REST APIs</a></li>
+                                        <li><a class="barLink" href="/tfs/server/extend/index">Develop Extensions</a></li>
+                                        <li><a class="barLink" href="/tfs/server/integrate/index">Build Apps</a></li>
+                                        <li><a class="barLink" href="/tfs/server/service-hooks/index">Service Hooks</a></li>
+                                        <li><a class="barLink" href="/tfs/server/report/extend-analytics/index">Extend Analytics with OData</a></li>
+                                        <li><a class="barLink" href="https://docs.microsoft.com/en-us/rest/api/tfs/server/">REST APIs</a></li>
                                         <li><a class="barLink" href="https://www.visualstudio.com/docs/integrate/extensions/reference/client/core-sdk">TypeScript APIs</a></li>
                                     </ul>
                                 </div>
@@ -173,7 +156,7 @@ featureFlags:
                         <a href="#architecture">Architecture and concepts</a>
                         <ul id="architecture" class="cardsA">
                             <li>
-                                <a href="/vsts/git">
+                                <a href="/tfs/server/git">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -192,7 +175,7 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
-                                <a href="/vsts/git/pull-requests-overview">
+                                <a href="/tfs/server/git/pull-requests-overview">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -211,7 +194,7 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
-                                <a href="/vsts/git/forks-overview">
+                                <a href="/tfs/server/git/forks-overview">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -230,7 +213,7 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
-                                <a href="/vsts/git/branch-policies-overview">
+                                <a href="/tfs/server/git/branch-policies-overview">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -249,7 +232,7 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
-                                <a href="/vsts/tfvc">
+                                <a href="/tfs/server/tfvc">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -273,7 +256,7 @@ featureFlags:
                         <a href="#install">Install</a>
                         <ul id="install" class="cardsA">
                             <li>
-                                <a href="/vsts/build-release/index">
+                                <a href="/tfs/server/build-release/index">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -292,7 +275,7 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
-                                <a href="/vsts/build-release/test/index">
+                                <a href="/tfs/server/build-release/test/index">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -312,7 +295,7 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
-                                <a href="/vsts/deploy-azure/index">
+                                <a href="/tfs/server/deploy-azure/index">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -331,7 +314,7 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
-                                <a href="/vsts/package/index">
+                                <a href="/tfs/server/package/index">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -350,7 +333,7 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
-                                <a href="/vsts/build-release/concepts/library/index">
+                                <a href="/tfs/server/build-release/concepts/library/index">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -369,7 +352,7 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
-                                <a href="/vsts/build-release/concepts/agents/agents">
+                                <a href="/tfs/server/build-release/concepts/agents/agents">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -388,7 +371,7 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
-                                <a href="/vsts/build-release/tasks">
+                                <a href="/tfs/server/build-release/tasks">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -432,7 +415,7 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
-                                <a href="/vsts/manual-test/index">
+                                <a href="/tfs/server/manual-test/index">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -452,7 +435,7 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
-                                <a href="/vsts/load-test/index">
+                                <a href="/tfs/server/load-test/index">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -471,7 +454,7 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
-                                <a href="/vsts/build-release/test/index">
+                                <a href="/tfs/server/build-release/test/index">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -496,7 +479,7 @@ featureFlags:
                         <a href="#adminsecurity">Admin and Security</a>
                         <ul id="adminsecurity" class="cardsA">
                             <li>
-                                <a href="/vsts/work/work-items/index">
+                                <a href="/tfs/server/work/work-items/index">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -516,7 +499,7 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
-                                <a href="/vsts/work/backlogs/index">
+                                <a href="/tfs/server/work/backlogs/index">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -536,7 +519,7 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
-                                <a href="/vsts/work/kanban/index">
+                                <a href="/tfs/server/work/kanban/index">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -555,7 +538,7 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
-                                <a href="/vsts/work/scrum/index">
+                                <a href="/tfs/server/work/scrum/index">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -574,7 +557,7 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
-                                <a href="/vsts/work/track/index">
+                                <a href="/tfs/server/work/track/index">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -593,7 +576,7 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
-                                <a href="/vsts/work/customize/index">
+                                <a href="/tfs/server/work/customize/index">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -612,7 +595,7 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
-                                <a href="/vsts/work/scale/index">
+                                <a href="/tfs/server/work/scale/index">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -634,91 +617,10 @@ featureFlags:
                         </ul>
                     </li>
                     <li>
-                        <a href="#reference">reference</a>
-                        <ul id="reference" class="cardsA">
-                            <li>
-                                <a href="/vsts/report/dashboards/index">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage">
-                                                        <img src="_img/index/i_dashboard.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Dashboards</h3>
-                                                    <p>Monitor progress and trends to support improvement of team processes.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/vsts/report/analytics/index">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage">
-                                                        <img src="_img/index/i_analytics.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Analytics (VSTS)</h3>
-                                                    <p>Gain insights. Make data-driven decisions. Evaluate progress.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/vsts/report/powerbi/index">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage">
-                                                        <img src="_img/index/logo_power-bi.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Power BI (VSTS)</h3>
-                                                    <p>Use Power BI to drive ad hoc analysis, produce beautiful reports, and publish them for enterprise consumption.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/vsts/report/sql-reports/">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage">
-                                                        <img src="_img/index/sql-server-reporting.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>SQL Server Reporting (TFS)</h3>
-                                                    <p>Work with Reporting Services reports, add reports, and manage the data warehouse and cube.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
                         <a href="#troubleshooting">Troubleshooting</a>
                         <ul id="troubleshooting" class="cardsA">
                             <li>
-                                <a href="/vsts/notifications/index">
+                                <a href="/tfs/server/notifications/index">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -737,7 +639,7 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
-                                <a href="/vsts/collaborate/index">
+                                <a href="/tfs/server/collaborate/index">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -756,7 +658,7 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
-                                <a href="/vsts/search/index">
+                                <a href="/tfs/server/search/index">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -776,7 +678,7 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
-                                <a href="/vsts/feedback/index">
+                                <a href="/tfs/server/feedback/index">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -801,7 +703,7 @@ featureFlags:
                         <a href="#helpful">Helpful resources</a>
                         <ul id="helpful" class="cardsA">
                             <li>
-                                <a href="/vsts/accounts/index">
+                                <a href="/tfs/server/accounts/index">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -821,7 +723,7 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
-                                <a href="/vsts/tfs-server/index">
+                                <a href="/tfs/server/tfs-server/index">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -840,7 +742,7 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
-                                <a href="/vsts/security/index">
+                                <a href="/tfs/server/security/index">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -860,7 +762,7 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
-                                <a href="/vsts/billing/index">
+                                <a href="/tfs/server/billing/index">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -879,7 +781,7 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
-                                <a href="/vsts/settings/index">
+                                <a href="/tfs/server/settings/index">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -898,7 +800,7 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
-                                <a href="/vsts/marketplace/index">
+                                <a href="/tfs/server/marketplace/index">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -917,7 +819,7 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
-                                <a href="/vsts/report/sharepoint-dashboards/">
+                                <a href="/tfs/server/report/sharepoint-dashboards/">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -936,7 +838,7 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
-                                <a href="/vsts/work/tfs-ps-sync/">
+                                <a href="/tfs/server/work/tfs-ps-sync/">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
