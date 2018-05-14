@@ -130,14 +130,9 @@ featureFlags:
                                 <div class="group">
                                     <h3>Troubleshooting</h3>
                                     <ul>
-                                        <li><a class="barLink" href="/tfs/server/accounts/index">Account Management</a></li>
-                                        <li><a class="barLink" href="/tfs/server/tfs-server/index">Server Administration (TFS)</a></li>
-                                        <li><a class="barLink" href="/tfs/server/security/index">Security and Identity</a></li>
-                                        <li><a class="barLink" href="/tfs/server/billing/index">Billing</a></li>
-                                        <li><a class="barLink" href="/tfs/server/settings/index">Scale and Configure Teams</a></li>
-                                        <li><a class="barLink" href="/tfs/server/marketplace/index">Manage Extensions</a></li>
-                                        <li><a class="barLink" href="/tfs/server/report/sharepoint-dashboards/">SharePoint Integration</a></li>
-                                        <li><a class="barLink" href="/tfs/server/work/tfs-ps-sync/">Project Server Integration</a></li>
+                                        <li><a class="barLink" href="">Upgrade failures</a></li>
+                                        <li><a class="barLink" href="/tfs/server/tfs-server/index">Collection upgrade failures</a></li>
+                                        <li><a class="barLink" href="">Collection attach failures</a></li>
                                     </ul>
                                     <h3>Helpful resources</h3>
                                     <ul>
@@ -237,7 +232,7 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
-                                <a href="/tfs/server/build-release/test/index">
+                                <a href="//tfs/server/install/install-proxy-setup-remote">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -247,9 +242,8 @@ featureFlags:
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Continuous Testing</h3>
-                                                    <p>Automate build-deploy-test workflows to test your changes in a fast,
-                                                        scalable, and efficient manner.</p>
+                                                    <h3>Install TFS proxy</h3>
+                                                    <p>Install TFS proxy for setting up a remote site.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -257,7 +251,7 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
-                                <a href="/tfs/server/deploy-azure/index">
+                                <a href="/tfs/server/install/install-sql-server">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -267,8 +261,32 @@ featureFlags:
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Deploy to Azure</h3>
-                                                    <p>Release apps to Azure services and Azure virtual machines.</p>
+                                                    <h3>Install SQL Server</h3>
+                                                    <p>TODO</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#upgrade">Upgrade</a>
+                        <ul id="upgrade" class="cardsA">
+                            <li>
+                                <a href="/tfs/server/upgrade/get-started">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="_img/index/i_unit-testing.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Upggrade guide</h3>
+                                                    <p>Find what you need to know to begin upgrading your deployment.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -276,76 +294,18 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
-                                <a href="/tfs/server/package/index">
+                                <a href="/tfs/server/upgrade/walkthrough">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="https://docs.microsoft.com/media/common/i_management.svg" alt="" />
+                                                        <img src="_img/index/i_exploratory-testing.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Package Management</h3>
-                                                    <p>Create, host, and share NuGet and npm packages with your teams.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/tfs/server/build-release/concepts/library/index">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage">
-                                                        <img src="_img/index/i_library.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Library Assets</h3>
-                                                    <p>Define and use shared build and release assets for a team project.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/tfs/server/build-release/concepts/agents/agents">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage">
-                                                        <img src="_img/index/i_agent.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Hosted &amp; Private Agents</h3>
-                                                    <p>Add agents as needed to support your cloud build processes.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/tfs/server/build-release/tasks">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage">
-                                                        <img src="_img/index/i_tasks.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Task Reference</h3>
-                                                    <p>Include build, utility, test, and deploy tasks in your build and release
-                                                        definitions.</p>
+                                                    <h3>Upgrade scenario walkthrough</h3>
+                                                    <p>Walk through a specific upgrade scenario to get an idea of the upgrade process.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -358,7 +318,7 @@ featureFlags:
                         <a href="#backuprestore">Backup and Restore</a>
                         <ul id="backuprestore" class="cardsA">
                             <li>
-                                <a href="/visualstudio/test/unit-test-your-code">
+                                <a href="/tfs/server/admin/backup/back-up-restore-tfs">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -368,8 +328,8 @@ featureFlags:
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Unit and Functional Testing</h3>
-                                                    <p>Maintain code health, avoid regressions, and achieve code coverage using Visual Studio.</p>
+                                                    <h3>Backup and restore guide</h3>
+                                                    <p>An overview to backing up and restoring TFS deployments.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -377,7 +337,7 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
-                                <a href="/tfs/server/manual-test/index">
+                                <a href="/tfs/server/admin/backup/manually-backup-tfs">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -387,9 +347,8 @@ featureFlags:
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Exploratory &amp; Manual Testing</h3>
-                                                    <p>Drive quality and collaboration throughout the development process using
-                                                        a rich set of tools.</p>
+                                                    <h3>Manually back up</h3>
+                                                    <p>Learn how to manually back up your TFS deployment.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -416,7 +375,7 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
-                                <a href="/tfs/server/build-release/test/index">
+                                <a href="/tfs/server/admin/backup/config-backup-sched-plan">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -426,9 +385,8 @@ featureFlags:
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Continuous Testing</h3>
-                                                    <p>Automate build-deploy-test workflows to test your changes in a fast,
-                                                        scalable, and efficient manner.</p>
+                                                    <h3>Configure backup schedule</h3>
+                                                    <p>Configure a regular backup schedule for your TFS deployment.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -441,7 +399,7 @@ featureFlags:
                         <a href="#adminsecurity">Admin and Security</a>
                         <ul id="adminsecurity" class="cardsA">
                             <li>
-                                <a href="/tfs/server/work/work-items/index">
+                                <a href="/tfs/server/admin/config-tfs-resources">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -451,9 +409,8 @@ featureFlags:
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Work Items</h3>
-                                                    <p>Track the features and requirements you're developing, code defects,
-                                                        and issues.</p>
+                                                    <h3>Configure and manage TFS resources</h3>
+                                                    <p>An overview of TFS resources and how to manage them.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -461,7 +418,7 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
-                                <a href="/tfs/server/work/backlogs/index">
+                                <a href="/tfs/server/ref/command-line/open-admin-console">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -471,9 +428,8 @@ featureFlags:
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Backlogs</h3>
-                                                    <p>Create and organize your backlog, track features, users stories, and
-                                                        bugs.</p>
+                                                    <h3>Open administration console</h3>
+                                                    <p>Find how to open and use the TFS administration console.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -481,7 +437,7 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
-                                <a href="/tfs/server/work/kanban/index">
+                                <a href="/tfs/server/admin/manage-team-project-collections">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -491,8 +447,8 @@ featureFlags:
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Kanban</h3>
-                                                    <p>Manage the continuous flow of work from concept to completion.</p>
+                                                    <h3>Manage project collections</h3>
+                                                    <p>TODO</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -500,7 +456,7 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
-                                <a href="/tfs/server/work/scrum/index">
+                                <a href="/tfs/server/admin/add-administrator-tfs">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -510,8 +466,8 @@ featureFlags:
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Scrum</h3>
-                                                    <p>Plan a sprint, use a task board in daily scrums, monitor sprint burndown.</p>
+                                                    <h3>Add server administrators</h3>
+                                                    <p>Find how to add more server administrators to your deployment.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -519,7 +475,7 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
-                                <a href="/tfs/server/work/track/index">
+                                <a href="/tfs/server/security/about-permissions">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -529,8 +485,8 @@ featureFlags:
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Queries</h3>
-                                                    <p>Find work items to bulk update and to chart progress and trends.</p>
+                                                    <h3>Permissions and groups</h3>
+                                                    <p>Learn about permissions and groups in TFS.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -538,7 +494,7 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
-                                <a href="/tfs/server/work/customize/index">
+                                <a href="/tfs/server/security/access-levels">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -548,28 +504,8 @@ featureFlags:
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Customization</h3>
-                                                    <p>Configure Agile tools and processes to meet your team's needs.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/tfs/server/work/scale/index">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage">
-                                                        <img src="_img/index/i_agile.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Agile at Scale</h3>
-                                                    <p>Grow your organization, support autonomous teams, and gain visibility
-                                                        across teams.</p>
+                                                    <h3>Access levels</h3>
+                                                    <p>Learn about access levels in TFS.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -582,6 +518,84 @@ featureFlags:
                         <a href="#troubleshooting">Troubleshooting</a>
                         <ul id="troubleshooting" class="cardsA">
                             <li>
+                                <a href="/tfs/server/notifications/index">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="https://docs.microsoft.com/media/common/i_alert.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Notifications</h3>
+                                                    <p>Define which events generate alerts or post messages in third party tools.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/tfs/server/collaborate/index">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="https://docs.microsoft.com/media/common/i_reference.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>READMEs &amp; Wikis</h3>
+                                                    <p>Share information with your team and stakeholders.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/tfs/server/search/index">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="_img/index/i_search.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Search</h3>
+                                                    <p>Quickly find the code or work items you need to access across your account
+                                                        or collection.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/tfs/server/feedback/index">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="https://docs.microsoft.com/media/common/i_feedback.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Feedback</h3>
+                                                    <p>Request feedback on your working apps and quickly capture it within a
+                                                        work item form.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                                                        <li>
                                 <a href="/tfs/server/notifications/index">
                                     <div class="cardSize">
                                         <div class="cardPadding">
