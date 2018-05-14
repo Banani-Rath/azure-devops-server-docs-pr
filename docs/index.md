@@ -90,7 +90,7 @@ featureFlags:
                                 <div class="group">
                                     <h3>Architecture and concepts</h3>
                                     <ul>
-                                        <li><a class="barLink" href="/tfs/server/architecture/architecturex">Architecture overview</a></li>
+                                        <li><a class="barLink" href="/tfs/server/architecture/architecture">Architecture overview</a></li>
                                         <li><a class="barLink" href="/tfs/server/architecture/sql-server-databases">SQL Server databases</a></li>
                                         <li><a class="barLink" href="/tfs/server/architecture/background-job-agent">Background job agents</a></li>
                                     </ul>
@@ -156,7 +156,7 @@ featureFlags:
                         <a href="#architecture">Architecture and concepts</a>
                         <ul id="architecture" class="cardsA">
                             <li>
-                                <a href="/tfs/server/git">
+                                <a href="/tfs/server/architecture/architecture">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -166,8 +166,8 @@ featureFlags:
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Git Repositories</h3>
-                                                    <p>Develop code with distributed, flexible version control.</p>
+                                                    <h3>Architecture overview</h3>
+                                                    <p>TODO</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -175,7 +175,7 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
-                                <a href="/tfs/server/git/pull-requests-overview">
+                                <a href="/tfs/server/architecture/sql-server-databases">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -185,8 +185,8 @@ featureFlags:
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Pull Requests</h3>
-                                                    <p>Create pull requests to review and merge code in a Git team project</p>
+                                                    <h3>SQL Server databases</h3>
+                                                    <p>TODO</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -194,7 +194,7 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
-                                <a href="/tfs/server/git/forks-overview">
+                                <a href="/tfs/server/architecture/background-job-agent">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -204,46 +204,8 @@ featureFlags:
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Forks</h3>
-                                                    <p>Work in your own repo without affecting the original project.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/tfs/server/git/branch-policies-overview">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage">
-                                                        <img src="_img/index/i_branch-policies.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Branch Policies</h3>
-                                                    <p>Enforce code quality and change management standards.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/tfs/server/tfvc">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage">
-                                                        <img src="_img/index/logo_vs-team-services.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>TFVC</h3>
-                                                    <p>Manage code with centralized version control.</p>
+                                                    <h3>Background job agents</h3>
+                                                    <p>TODO</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -256,7 +218,7 @@ featureFlags:
                         <a href="#install">Install</a>
                         <ul id="install" class="cardsA">
                             <li>
-                                <a href="/tfs/server/build-release/index">
+                                <a href="/tfs/server/install/get-started">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -266,8 +228,8 @@ featureFlags:
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Build and Release</h3>
-                                                    <p>Implement continuous integration and continuous deployment.</p>
+                                                    <h3>Install guide</h3>
+                                                    <p>Discover the different installation types and which is best for you.</p>
                                                 </div>
                                             </div>
                                         </div>
