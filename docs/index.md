@@ -291,7 +291,7 @@ featureFlags:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="/vsts/_img/index/i_continuous-testing.svg" alt="" />
+                                                        <img src="/vsts/_img/index/i_queries.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -310,7 +310,7 @@ featureFlags:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="https://docs.microsoft.com/media/common/i_deploy.svg" alt="" />
+                                                        <img src="/vsts/_img/index/sql-server-reporting.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -334,11 +334,11 @@ featureFlags:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="/vsts/_img/index/i_unit-testing.svg" alt="" />
+                                                        <img src="https://docs.microsoft.com/media/common/i_deploy.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Upggrade guide</h3>
+                                                    <h3>Upgrade guide</h3>
                                                     <p>Find what you need to know to begin upgrading your deployment.</p>
                                                 </div>
                                             </div>
@@ -353,7 +353,7 @@ featureFlags:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="/vsts/_img/index/i_exploratory-testing.svg" alt="" />
+                                                        <img src="/vsts/_img/index/i_tasks.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
