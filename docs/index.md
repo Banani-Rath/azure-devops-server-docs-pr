@@ -28,7 +28,6 @@ featureFlags:
                                 <div class="intro">
                                     <h1>Get started with TFS administration</h1>
                                     <p>Install, upgrade, and manage TFS deployments.</p>
-                                    <p>For information on how to use TFS effectively, check out the <a href="/vsts/index">VSTS & TFS documentation</a>.</p>
                                 </div>
                             </li>
                             <li>
@@ -75,6 +74,11 @@ featureFlags:
                                             </div>
                                         </div>
                                     </div>
+                                </div>
+                            </li>
+                             <li class="fullSpan">
+                                <div class="outro">
+                                <p>If you're not looking for admin-related task, check out the <a href="/vsts/index">VSTS & TFS documentation</a>.</p>
                                 </div>
                             </li>
                         </ul>
