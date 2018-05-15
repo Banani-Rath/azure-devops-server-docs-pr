@@ -377,7 +377,7 @@ featureFlags:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="/vsts/_img/index/i_unit-testing.svg" alt="" />
+                                                        <img src="https://docs.microsoft.com/media/common/i_download-install.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -396,31 +396,12 @@ featureFlags:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="/vsts/_img/index/i_exploratory-testing.svg" alt="" />
+                                                        <img src="/vsts/_img/index/i_agile.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Manually back up</h3>
                                                     <p>Learn how to manually back up your TFS deployment.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/tfs/server/load-test/index">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage">
-                                                        <img src="/vsts/_img/index/i_load-testing.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Load Testing</h3>
-                                                    <p>Performance test your code with hundreds of thousands of users.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -434,7 +415,7 @@ featureFlags:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="/vsts/_img/index/i_continuous-testing.svg" alt="" />
+                                                        <img src="/vsts/_img/index/i_scrum.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -515,7 +496,7 @@ featureFlags:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="/vsts/_img/index/i_config-tools.svg" alt="" />
+                                                        <img src="/vsts/_img/index/i_configure-teams.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
