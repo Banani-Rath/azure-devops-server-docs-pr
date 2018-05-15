@@ -26,8 +26,9 @@ featureFlags:
                         <ul id="start-all" class="cardsL">
                             <li class="fullSpan">
                                 <div class="intro">
-                                    <h1>Get Started with TFS admin</h1>
+                                    <h1>Get started with TFS administration</h1>
                                     <p>Install, upgrade, and manage TFS deployments.</p>
+                                    <p>For information on how to use TFS effectively, check out the <a href="/vsts/index">VSTS & TFS documentation</a>.</p>
                                 </div>
                             </li>
                             <li>
