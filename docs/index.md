@@ -210,7 +210,7 @@ featureFlags:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="/vsts/_img/index/logo-git-mark.svg" alt="" />
+                                                        <img src="/vsts/_img/index/i_build.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -229,7 +229,7 @@ featureFlags:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="/vsts/_img/index/i_pull-request.svg" alt="" />
+                                                        <img src="/vsts/_img/index/sql-server-reporting.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -248,7 +248,7 @@ featureFlags:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="/vsts/_img/index/i_forks.svg" alt="" />
+                                                        <img src="/vsts/_img/index/i_queries.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
