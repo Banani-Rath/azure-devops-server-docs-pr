@@ -28,7 +28,7 @@ featureFlags:
                                     </div>
                                 </div>
                                 <div class="cardText">
-                                    <span class="likeAnH3">New User Guide for VSTS and TFS</span>
+                                    <span class="likeAnH3">VSTS and TFS User Guide</span>
                                 </div>
                             </div>
                         </div>
@@ -64,7 +64,7 @@ featureFlags:
                                     </div>
                                 </div>
                                 <div class="cardText">
-                                    <span class="likeAnH3">VSTS & TFS Extension Marketplace</span>
+                                    <span class="likeAnH3">VSTS and TFS Extension Marketplace</span>
                                 </div>
                             </div>
                         </div>
