@@ -53,6 +53,24 @@ featureFlags:
                     </div>
                 </a>
             </li>
+                        <li>
+                <a href="https://marketplace.visualstudio.com/vsts">
+                    <div class="cardSize">
+                        <div class="cardPadding">
+                            <div class="card">
+                                <div class="cardImageOuter">
+                                    <div class="cardImage">
+                                        <img src="/vsts/_img/index/i_extensions.svg" alt="" />
+                                    </div>
+                                </div>
+                                <div class="cardText">
+                                    <span class="likeAnH3">VSTS & TFS Extension Marketplace</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </li>
         </ul>
     </div>
     <div class="container">
