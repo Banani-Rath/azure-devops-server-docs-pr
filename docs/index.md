@@ -16,6 +16,46 @@ featureFlags:
 
 <div id="main" class="v2">
     <div class="container">
+        <ul class="cardsY panelContent featuredContent">
+            <li>
+                <a href="/vsts/user-guide">
+                    <div class="cardSize">
+                        <div class="cardPadding">
+                            <div class="card">
+                                <div class="cardImageOuter">
+                                    <div class="cardImage">
+                                        <img src="https://docs.microsoft.com/media/common/i_get-started.svg" alt="" />
+                                    </div>
+                                </div>
+                                <div class="cardText">
+                                    <span class="likeAnH3">New User Guide for VSTS and TFS</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="/tfs/server/whats-new">
+                    <div class="cardSize">
+                        <div class="cardPadding">
+                            <div class="card">
+                                <div class="cardImageOuter">
+                                    <div class="cardImage">
+                                        <img src="https://docs.microsoft.com/media/common/i_road-map.svg" alt="" />
+                                    </div>
+                                </div>
+                                <div class="cardText">
+                                    <span class="likeAnH3">TFS Release Notes</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="container">
         <h1>Team Foundation Server Administration Documentation</h1>
         <ul class="pivots">
             <li>
@@ -37,7 +77,6 @@ featureFlags:
                                             <div class="cardText">
                                                 <h3>About TFS</h3>
                                                 <ul class="noBullet">
-                                                    <li><a class="barLink" href="/tfs/server/whats-new">TFS release notes</a></li>
                                                     <li><a class="barLink" href="/tfs/server/architecture/architecture">Architecture</a></li>
                                                     <li><a class="barLink" href="/tfs/server/architecture/tfs-concepts">Components, terms, and concepts</a></li>
                                                 </ul>
