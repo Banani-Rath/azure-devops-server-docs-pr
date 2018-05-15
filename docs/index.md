@@ -133,11 +133,6 @@ featureFlags:
                                     </div>
                                 </div>
                             </li>
-                             <li class="fullSpan">
-                                <div class="outro">
-                                <p>If you're not looking for admin-related task, check out the <a href="/vsts/index">VSTS & TFS documentation</a>.</p>
-                                </div>
-                            </li>
                         </ul>
                     </li>
                 </ul>
@@ -215,7 +210,7 @@ featureFlags:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="_img/index/logo-git-mark.svg" alt="" />
+                                                        <img src="/vsts/_img/index/logo-git-mark.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -234,7 +229,7 @@ featureFlags:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="_img/index/i_pull-request.svg" alt="" />
+                                                        <img src="/vsts/_img/index/i_pull-request.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -253,7 +248,7 @@ featureFlags:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="_img/index/i_forks.svg" alt="" />
+                                                        <img src="/vsts/_img/index/i_forks.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -296,7 +291,7 @@ featureFlags:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="_img/index/i_continuous-testing.svg" alt="" />
+                                                        <img src="/vsts/_img/index/i_continuous-testing.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -339,7 +334,7 @@ featureFlags:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="_img/index/i_unit-testing.svg" alt="" />
+                                                        <img src="/vsts/_img/index/i_unit-testing.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -358,7 +353,7 @@ featureFlags:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="_img/index/i_exploratory-testing.svg" alt="" />
+                                                        <img src="/vsts/_img/index/i_exploratory-testing.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -382,7 +377,7 @@ featureFlags:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="_img/index/i_unit-testing.svg" alt="" />
+                                                        <img src="/vsts/_img/index/i_unit-testing.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -401,7 +396,7 @@ featureFlags:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="_img/index/i_exploratory-testing.svg" alt="" />
+                                                        <img src="/vsts/_img/index/i_exploratory-testing.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -420,7 +415,7 @@ featureFlags:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="_img/index/i_load-testing.svg" alt="" />
+                                                        <img src="/vsts/_img/index/i_load-testing.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -439,7 +434,7 @@ featureFlags:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="_img/index/i_continuous-testing.svg" alt="" />
+                                                        <img src="/vsts/_img/index/i_continuous-testing.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -482,7 +477,7 @@ featureFlags:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="_img/index/i_backlog.svg" alt="" />
+                                                        <img src="/vsts/_img/index/i_backlog.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -501,7 +496,7 @@ featureFlags:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="_img/index/i_kanban.svg" alt="" />
+                                                        <img src="/vsts/_img/index/i_kanban.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -520,7 +515,7 @@ featureFlags:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="_img/index/i_scrum.svg" alt="" />
+                                                        <img src="/vsts/_img/index/i_scrum.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -539,7 +534,7 @@ featureFlags:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="_img/index/i_queries.svg" alt="" />
+                                                        <img src="/vsts/_img/index/i_queries.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -558,7 +553,7 @@ featureFlags:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="_img/index/i_config-tools.svg" alt="" />
+                                                        <img src="/vsts/_img/index/i_config-tools.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -620,7 +615,7 @@ featureFlags:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="_img/index/i_search.svg" alt="" />
+                                                        <img src="/vsts/_img/index/i_search.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -644,7 +639,7 @@ featureFlags:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="_img/index/i_account-management.svg" alt="" />
+                                                        <img src="/vsts/_img/index/i_account-management.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
