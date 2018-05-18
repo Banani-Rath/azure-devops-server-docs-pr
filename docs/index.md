@@ -552,25 +552,6 @@ featureFlags:
                         <a href="#troubleshooting">Troubleshooting</a>
                         <ul id="troubleshooting" class="cardsA">
                             <li>
-                                <a href="">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage">
-                                                        <img src="https://docs.microsoft.com/media/common/i_tools.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Upgrade failures</h3>
-                                                    <p>TODO</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
                                 <a href="/tfs/server/tfs-server/index">
                                     <div class="cardSize">
                                         <div class="cardPadding">
@@ -583,25 +564,6 @@ featureFlags:
                                                 <div class="cardText">
                                                     <h3>Collection upgrade failures</h3>
                                                     <p></p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage">
-                                                        <img src="https://docs.microsoft.com/media/common/i_tools.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Collection attach failures</h3>
-                                                    <p>TODO</p>
                                                 </div>
                                             </div>
                                         </div>
