@@ -625,7 +625,7 @@ featureFlags:
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Security and identity</h3>
-                                                    <p>TODOs</p>
+                                                    <p>Manage permissions and access to your team projects and repositories.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -644,7 +644,7 @@ featureFlags:
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Notifications</h3>
-                                                    <p>TODO</p>
+                                                    <p>Define which events generate alerts or post messages in third party tools.</p>
                                                 </div>
                                             </div>
                                         </div>
