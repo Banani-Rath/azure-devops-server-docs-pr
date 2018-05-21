@@ -252,12 +252,8 @@
     href: upgrade/tfs-2005-to-2015.md
 - name: Troubleshooting
   items:
-  - name: Upgrade failures
-    href:
   - name: Collection upgrade failures
     href: troubleshooting/collection-upgrade-failure.md
-  - name: Collection attach failures
-    href:
 - name: Resources
   items:
   - name: Security and Identity
