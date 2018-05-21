@@ -133,7 +133,7 @@
       - name: Add TFS server administrators
         href: admin/add-administrator-tfs.md
       - name: Add users to projects
-        href: /vsts/security/add-users-team-project?toc=/tfs/toc.json
+        href: /vsts/security/add-users-team-project?toc=/tfs/toc.json&bc=/tfs/server/breadcrumb/toc.json 
       - name: Change service account password
         href: admin/change-service-account-password.md
       - name: Change service account or password for SQL reporting
@@ -161,7 +161,7 @@
     - name: Set up secure sockets layer
       href: admin/setup-secure-sockets-layer.md
     - name: Change site and certificate settings
-      href: /vsts/security/websitesettings?toc=/tfs/server/toc.json
+      href: /vsts/security/websitesettings?toc=/tfs/server/toc.json&bc=/tfs/server/breadcrumb/toc.json 
     - name: Security reference
       items:
       - name: Default permission and access assignments
