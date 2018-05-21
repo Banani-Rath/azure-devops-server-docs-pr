@@ -1,3 +1,7 @@
+---
+ms.topic: include
+---
+
 >**Command availability:** TFS 2017 and later
 
 You use the **DeleteTestResults** command to 

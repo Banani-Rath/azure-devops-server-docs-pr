@@ -1,3 +1,7 @@
+---
+ms.topic: include
+---
+
 You can use the **TfsConfig Lab /LibraryShare** command to add, remove, or edit the assignment
 of a library share from System Center Virtual Machine Manager (SCVMM) to a team project collection.
 You can also use this command set properties that are specific to Visual Studio Lab Management

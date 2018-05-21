@@ -1,3 +1,7 @@
+---
+ms.topic: include
+---
+
 The **TfsConfig Lab /DNS** command adds, deletes, or displays DNS records that were created by Visual Studio Lab Management for network-isolated environments.
 
 	TfsConfig Lab /DNS 

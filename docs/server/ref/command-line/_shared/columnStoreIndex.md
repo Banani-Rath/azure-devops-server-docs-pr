@@ -1,3 +1,7 @@
+---
+ms.topic: include
+---
+
 >**Command availability:** TFS 2015 Update 2
 
 You use the **ColumnStoreIndex** command to enable or disable column store indexes for the databases used by your TFS deployment.

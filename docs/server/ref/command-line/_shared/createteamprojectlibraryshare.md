@@ -1,3 +1,6 @@
+---
+ms.topic: include
+---
 
 Use the **CreateTeamProjectLibraryShare** command to assign a library
 share from a team project collection to an individual team project in

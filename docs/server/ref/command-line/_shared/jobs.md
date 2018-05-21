@@ -1,3 +1,7 @@
+---
+ms.topic: include
+---
+
 You can use the **Jobs** command to create a log file that provides the details of the most recent job activity for a specific team project collection,
 or to retry a job for one or all team project collections.
 

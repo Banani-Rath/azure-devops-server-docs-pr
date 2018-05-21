@@ -1,3 +1,6 @@
+---
+ms.topic: include
+---
 
 Use the **TFSLabConfig Permissions** command to set and get permissions
 set for a specified user or for multiple users on a specified object in

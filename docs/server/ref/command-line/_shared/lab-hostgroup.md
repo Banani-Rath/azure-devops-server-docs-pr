@@ -1,3 +1,7 @@
+---
+ms.topic: include
+---
+
 Use the **TfsConfig Lab /HostGroup** commands to add, edit, or delete
 the assignment of a System Center Virtual Machine Manager (SCVMM) host group to a team project collection.
 Host groups that are assigned in this manner are managed by Visual Studio Lab Management.

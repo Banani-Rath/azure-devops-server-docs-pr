@@ -1,3 +1,7 @@
+---
+ms.topic: include
+---
+
 Use the **Certificates** command to change how certificates are configured for client authentication in a deployment
 of TFS that utilizes HTTPS, secure sockets layer (SSL), and certificates.
 

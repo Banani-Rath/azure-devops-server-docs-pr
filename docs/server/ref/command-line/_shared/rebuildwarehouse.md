@@ -1,3 +1,7 @@
+---
+ms.topic: include
+---
+
 You can use the **RebuildWarehouse** command to rebuild the SQL Server Reporting Services and SQL Server Analysis Services databases that Visual Studio Team Foundation Server (TFS) uses.
 
 	TFSConfig RebuildWarehouse /analysisServices | /all [/ReportingDataSourcePassword:Password]

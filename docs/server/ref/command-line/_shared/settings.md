@@ -1,3 +1,7 @@
+---
+ms.topic: include
+---
+
 You can use the **Settings** command to automate changes to the uniform resource locator (URL)
 that is used by the notification interface and for the server address for Visual Studio Team Foundation Server (TFS).
 By default, the notification interface URL and the server URL match in TFS, but you can configure separate URLs.

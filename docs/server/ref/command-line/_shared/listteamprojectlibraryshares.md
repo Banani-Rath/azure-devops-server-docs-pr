@@ -1,3 +1,6 @@
+---
+ms.topic: include
+---
 
 Use the **ListTeamProjectLibraryShares** command to list all *library shares* that are assigned to a team
 project and that you have access to.

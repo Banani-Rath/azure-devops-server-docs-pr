@@ -1,3 +1,7 @@
+---
+ms.topic: include
+---
+
 >**Command availability:** TFS 2016
 
 You can use the **ssh** command to regenerate the SSH server host key, get the server key fingerprint or enable/disable the SSH service on TFS deployment.

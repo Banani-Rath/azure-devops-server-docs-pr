@@ -1,3 +1,7 @@
+---
+ms.topic: include
+---
+
 >**Command availability:** TFS 2015 Update 3 and newer
 
 You use the **OfflineDetach** command to make an offline collection database into 
