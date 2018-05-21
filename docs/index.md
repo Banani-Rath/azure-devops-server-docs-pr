@@ -133,13 +133,28 @@ featureFlags:
                                     </div>
                                 </div>
                             </li>
+                                <div class="cardSize">
+                                    <div class="cardPadding">
+                                        <div class="card">
+                                            <div class="cardText">
+                                                <h3>VSTS & TFS Documentation</h3>
+                                                <ul class="noBullet">
+                                                    <li><a class="barLink" href="/vsts/">VSTS & TFS Get started</a></li>
+                                                    <li><a class="barLink" href="/vsts/#pivot=services">VSTS & TFS Services</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            <li>
+                            </li>
                         </ul>
                     </li>
                 </ul>
             </li>
             <li>
-                <a href="#articles">Articles</a>
-                <ul id="articles">
+                <a href="#tfsdocs">TFS Documentation</a>
+                <ul id="tfsdocs">
                     <li>
                         <a data-default="true" href="#all">All</a>
                         <ul id="all" class="cardText">
