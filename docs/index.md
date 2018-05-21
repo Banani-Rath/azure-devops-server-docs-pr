@@ -170,7 +170,7 @@ featureFlags:
                                     <ul>
                                         <li><a class="barLink" href="/tfs/server/install/get-started">Install guide</a></li>
                                         <li><a class="barLink" href="/tfs/server/install/install-proxy-setup-remote">Install TFS proxy for a remote site</a></li>
-                                        <li><a class="barLink" href="/tfs/server/install/install-sql-server">Install SQL Server</a></li>
+                                        <li><a class="barLink" href="/tfs/server/install/sql-server/install-sql-server">Install SQL Server</a></li>
                                     </ul>
                                     <h3>Upgrade</h3>
                                     <ul>
@@ -193,8 +193,8 @@ featureFlags:
                                         <li><a class="barLink" href="/tfs/server/ref/command-line/open-admin-console">Administration console</a></li>
                                         <li><a class="barLink" href="/tfs/server/admin/manage-team-project-collections">Manage project collections</a></li>
                                         <li><a class="barLink" href="/tfs/server/admin/add-administrator-tfs">Add TFS server administrators</a></li>
-                                        <li><a class="barLink" href="/tfs/server/security/about-permissions">Permissions and groups</a></li>
-                                        <li><a class="barLink" href="/tfs/server/security/access-levels">Access levels</a></li>
+                                        <li><a class="barLink" href="/vsts/security/about-permissions">Permissions and groups</a></li>
+                                        <li><a class="barLink" href="/vsts/security/access-levels">Access levels</a></li>
                                     </ul>
                                 </div>
                             </li>
@@ -202,9 +202,7 @@ featureFlags:
                                 <div class="group">
                                     <h3>Troubleshooting</h3>
                                     <ul>
-                                        <li><a class="barLink" href="">Upgrade failures</a></li>
-                                        <li><a class="barLink" href="/tfs/server/tfs-server/index">Collection upgrade failures</a></li>
-                                        <li><a class="barLink" href="">Collection attach failures</a></li>
+                                        <li><a class="barLink" href="/tfs/server/troubleshooting/collection-upgrade-failures">Collection upgrade failures</a></li>
                                     </ul>
                                     <h3>Helpful resources</h3>
                                     <ul>
@@ -319,7 +317,7 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
-                                <a href="/tfs/server/install/install-sql-server">
+                                <a href="/tfs/server/install/sql-server/install-sql-server">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -524,7 +522,7 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
-                                <a href="/tfs/server/security/about-permissions">
+                                <a href="/vsts/security/about-permissions">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -543,7 +541,7 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
-                                <a href="/tfs/server/security/access-levels">
+                                <a href="/vsts/security/access-levels">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
