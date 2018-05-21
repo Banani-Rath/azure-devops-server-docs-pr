@@ -36,7 +36,7 @@ featureFlags:
                 </a>
             </li>
             <li>
-                <a href="/tfs/server/whats-new">
+                <a href="/visualstudio/releasenotes/tfs2018-update2">
                     <div class="cardSize">
                         <div class="cardPadding">
                             <div class="card">
@@ -137,7 +137,7 @@ featureFlags:
                                     <div class="cardPadding">
                                         <div class="card">
                                             <div class="cardText">
-                                                <h3>VSTS & TFS Documentation</h3>
+                                                <h3>Using VSTS & TFS</h3>
                                                 <ul class="noBullet">
                                                     <li><a class="barLink" href="/vsts/">VSTS & TFS Get started</a></li>
                                                     <li><a class="barLink" href="/vsts/#pivot=services">VSTS & TFS Services</a></li>
