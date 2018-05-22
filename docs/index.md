@@ -565,7 +565,7 @@ featureFlags:
                         <a href="#troubleshooting">Troubleshooting</a>
                         <ul id="troubleshooting" class="cardsA">
                             <li>
-                                <a href="/tfs/server/tfs-server/index">
+                                <a href="/tfs/server/troubleshooting/collection-upgrade-failure">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
