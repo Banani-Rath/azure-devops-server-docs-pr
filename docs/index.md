@@ -202,7 +202,7 @@ featureFlags:
                                 <div class="group">
                                     <h3>Troubleshooting</h3>
                                     <ul>
-                                        <li><a class="barLink" href="/tfs/server/troubleshooting/collection-upgrade-failures">Collection upgrade failures</a></li>
+                                        <li><a class="barLink" href="/tfs/server/troubleshooting/collection-upgrade-failure">Collection upgrade failures</a></li>
                                     </ul>
                                     <h3>Helpful resources</h3>
                                     <ul>
