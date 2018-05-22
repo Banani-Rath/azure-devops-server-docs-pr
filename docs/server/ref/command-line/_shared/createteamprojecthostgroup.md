@@ -1,3 +1,6 @@
+---
+ms.topic: include
+---
 
 Use the **CreateTeamProjectHostGroup** command to assign a 
 *host group* from a team project collection to an

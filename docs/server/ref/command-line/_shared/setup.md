@@ -1,3 +1,7 @@
+---
+ms.topic: include
+---
+
 >**Command availability:** TFS 2015 and TFS 2013
 
 You use the **Setup** command to uninstall features which are currently configured on the machine where the command is being run. 

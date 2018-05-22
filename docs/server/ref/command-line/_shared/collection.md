@@ -1,3 +1,7 @@
+---
+ms.topic: include
+---
+
 You can use the **Collection** command to attach, detach, or delete a team project collection from a deployment of TFS.
 You can also use the **Collection** command to duplicate the database of an existing collection, rename it, and attach it to the deployment.
 This process is sometimes referred to as cloning a collection.

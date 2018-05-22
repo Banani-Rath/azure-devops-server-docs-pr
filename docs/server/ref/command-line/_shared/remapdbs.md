@@ -1,3 +1,7 @@
+---
+ms.topic: include
+---
+
 The **RemapDBs** command redirects Visual Studio Team Foundation Server (TFS) to its databases
 when they are stored on more than one server and you are restoring, moving, or otherwise changing the configuration of your deployment.
 For example, you must redirect TFS to any databases for team project collections

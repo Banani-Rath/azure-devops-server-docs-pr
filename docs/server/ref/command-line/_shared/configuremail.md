@@ -1,3 +1,7 @@
+---
+ms.topic: include
+---
+
 Configure the server that runs Team Foundation Server (TFS) to use an existing SMTP server for email alerts.
 
 	TFSConfig ConfigureMail /FromEmailAddress:emailAddress /SmtpHost:SMTPHostName

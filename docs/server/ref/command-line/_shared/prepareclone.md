@@ -1,3 +1,7 @@
+---
+ms.topic: include
+---
+
 >**Command availability:** TFS 2015 and TFS 2013
 
 The **PrepareClone** command removes information about scheduled backups, SharePoint,

@@ -1,3 +1,7 @@
+---
+ms.topic: include
+---
+
 Use the **Accounts** command to manage these TFS service accounts.
 - the TFS service account
 - the data sources account for SQL Server Reporting Services

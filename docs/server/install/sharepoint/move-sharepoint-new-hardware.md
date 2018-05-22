@@ -40,7 +40,7 @@ Run the TFS installation program from the product DVD and then use the **Configu
 
 1.  In the Team Foundation Server Configuration tool, choose **Configure Extensions for SharePoint Products** and then choose **Start Wizard**.
 
-	![](/vsts/upgrade/_img/ic666063.png)
+	![](../../upgrade/_img/ic666063.png)
 
     The Team Foundation Server SharePoint Extensions Configuration wizard appears.
 
@@ -54,7 +54,7 @@ Run the TFS installation program from the product DVD and then use the **Configu
 
     3.  Type a user account and password for the service account for SharePoint and then choose **Next**.
 
-        For more information, see [Accounts required for installation of Team Foundation Server](/tfs/requirements#accounts)
+        For more information, see [Accounts required for installation of Team Foundation Server](../../requirements.md#accounts)
 
 4.  On the **Review** page, review the settings and choose ** Next**.
 

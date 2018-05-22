@@ -1,3 +1,6 @@
+---
+ms.topic: include
+---
 
 Use the **ListTeamProjectHostGroups** command to list the *host groups* that are assigned to a team project
 and that you have read access to.

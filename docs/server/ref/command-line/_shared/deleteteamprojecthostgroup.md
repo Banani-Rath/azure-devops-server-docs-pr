@@ -1,3 +1,6 @@
+---
+ms.topic: include
+---
 
 Use the **DeleteTeamProjectHostGroup** command to remove the assignment
 of a host group from an individual team project. Host groups specify one

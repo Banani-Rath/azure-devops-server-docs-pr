@@ -65,12 +65,6 @@ is still available in history. TFS VC branches, folders, or individual files can
 Test attachments created during test runs can be cleaned up using the Test Attachment Cleaner, which is included 
 with the [TFS Power Tools](https://visualstudiogallery.msdn.microsoft.com/f017b10c-02b4-4d6d-9845-58a06545627f). 
 
-[//]: # (TODO: Would be really nice to get WIT attachments documented. Needs code.) 
-[//]: # (TODO: Would be really nice to get Build outputs that are copied to the server documented.)
-[//]: # (TODO: Would be really nice to get Git content documented.)
-
-[//]: # (TODO: Workspaces and shelvesets? Ping Taylor.)  
-
 ## XAML Builds
 
 When builds in TFS are deleted, a subset of the information they produced is preserved in order to avoid losing 

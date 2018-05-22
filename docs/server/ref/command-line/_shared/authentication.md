@@ -1,3 +1,7 @@
+---
+ms.topic: include
+---
+
 The **Authentication** command changes the network authentication protocol that the TFS application tier or proxy website uses.
 
 	TFSConfig Authentication [/provider:NTLM|Negotiate] [/viewAll] [/siteType:ApplicationTier|Proxy]

@@ -1,3 +1,7 @@
+---
+ms.topic: include
+---
+
 You can configure Visual Studio Lab Management by using the **TFSConfig Lab /Settings** option. The Settings option
 
 -   Sets the name of the System Center Virtual Machine Manager (SCVMM) Server that controls the administration of virtual machines in your lab.

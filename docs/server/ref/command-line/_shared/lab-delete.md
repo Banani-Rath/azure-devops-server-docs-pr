@@ -1,3 +1,7 @@
+---
+ms.topic: include
+---
+
 Use the **TfsConfig Lab /Delete** option to remove all group hosts, library shares, and environments from a specified team project collection.
 By default, the associated objects in the System Center Virtual Machine Manager (SCVMM) are not deleted.
 You can add the **/External** option to the command line to remove the objects from the project collection and from SCVMM.

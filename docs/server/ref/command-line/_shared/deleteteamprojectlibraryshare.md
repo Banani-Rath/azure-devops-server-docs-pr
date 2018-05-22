@@ -1,3 +1,6 @@
+---
+ms.topic: include
+---
 
 Use the **DeleteTeamProjectLibraryShare** command to remove the
 assignment of a library share from an individual team project. A library

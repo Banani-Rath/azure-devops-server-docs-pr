@@ -1,3 +1,6 @@
+---
+ms.topic: include
+---
 
 > **Note:**
 > These commands only work on SCVMM 2012 server, and are not supported on

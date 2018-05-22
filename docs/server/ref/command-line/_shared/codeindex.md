@@ -1,3 +1,7 @@
+---
+ms.topic: include
+---
+
 >**Command availability:** TFS 2015 and TFS 2013
 
 Use the CodeIndex command to manage code indexing on Team Foundation Server.

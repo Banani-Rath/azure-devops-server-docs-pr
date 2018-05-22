@@ -1,3 +1,7 @@
+---
+ms.topic: include
+---
+
 You can use the **TFSConfig Proxy** command to update or change the settings used by Team Foundation Server Proxy.
 Team Foundation Server Proxy provides support for distributed teams to use version control by managing a cache of downloaded version control files in the location of the distributed team.
 By configuring Team Foundation Server Proxy, you can significantly reduce the bandwidth needed across wide area connections.

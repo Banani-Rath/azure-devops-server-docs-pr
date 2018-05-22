@@ -1,3 +1,7 @@
+---
+ms.topic: include
+---
+
 Use **RegisterDB** to update name of the server that hosts the configuration database in Visual Studio Team Foundation Server (TFS).
 You might use this command when restoring the configuration database to new hardware or when changing the domain of a deployment.
 

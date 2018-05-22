@@ -1,3 +1,7 @@
+---
+ms.topic: include
+---
+
 >**Command availability:** TFS 2015
 
 You use the **RepairJobQueue** command to fix scheduled jobs that have stopped running for deployment and collection hosts.

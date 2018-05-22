@@ -1,3 +1,6 @@
+---
+ms.topic: include
+---
 
 Use the **ListTeamProjectCollectionHostGroups** command to list the
 System Center Virtual Machine Manager (SCVMM) *host groups* that are assigned to a team project

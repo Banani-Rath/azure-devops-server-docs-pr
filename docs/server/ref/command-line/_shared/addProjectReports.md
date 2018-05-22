@@ -1,3 +1,7 @@
+---
+ms.topic: include
+---
+
 <a id="add-project-reports">  </a>
 >**Command availability:** TFS 2017.1 (RC2) 
 

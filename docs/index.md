@@ -5,7 +5,7 @@ layout: HubPage
 hide_bc: true
 ms.topic: hub-page
 ms.prod: devops-server
-ms.technology: vs-devops-overview 
+ms.technology: tfs-admin
 ms.assetid: B13C10AF-4FBC-493A-869F-79BABD6D453A 
 ms.manager: douge 
 ms.author: elbatk 
@@ -36,7 +36,7 @@ featureFlags:
                 </a>
             </li>
             <li>
-                <a href="/tfs/server/whats-new">
+                <a href="/visualstudio/releasenotes/tfs2018-update2">
                     <div class="cardSize">
                         <div class="cardPadding">
                             <div class="card">
@@ -133,13 +133,28 @@ featureFlags:
                                     </div>
                                 </div>
                             </li>
+                                <div class="cardSize">
+                                    <div class="cardPadding">
+                                        <div class="card">
+                                            <div class="cardText">
+                                                <h3>Using VSTS & TFS</h3>
+                                                <ul class="noBullet">
+                                                    <li><a class="barLink" href="/vsts/">VSTS & TFS Get started</a></li>
+                                                    <li><a class="barLink" href="/vsts/#pivot=services">VSTS & TFS Services</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            <li>
+                            </li>
                         </ul>
                     </li>
                 </ul>
             </li>
             <li>
-                <a href="#articles">Articles</a>
-                <ul id="articles">
+                <a href="#tfsdocs">TFS Documentation</a>
+                <ul id="tfsdocs">
                     <li>
                         <a data-default="true" href="#all">All</a>
                         <ul id="all" class="cardText">
@@ -155,7 +170,7 @@ featureFlags:
                                     <ul>
                                         <li><a class="barLink" href="/tfs/server/install/get-started">Install guide</a></li>
                                         <li><a class="barLink" href="/tfs/server/install/install-proxy-setup-remote">Install TFS proxy for a remote site</a></li>
-                                        <li><a class="barLink" href="/tfs/server/install/install-sql-server">Install SQL Server</a></li>
+                                        <li><a class="barLink" href="/tfs/server/install/sql-server/install-sql-server">Install SQL Server</a></li>
                                     </ul>
                                     <h3>Upgrade</h3>
                                     <ul>
@@ -178,8 +193,8 @@ featureFlags:
                                         <li><a class="barLink" href="/tfs/server/ref/command-line/open-admin-console">Administration console</a></li>
                                         <li><a class="barLink" href="/tfs/server/admin/manage-team-project-collections">Manage project collections</a></li>
                                         <li><a class="barLink" href="/tfs/server/admin/add-administrator-tfs">Add TFS server administrators</a></li>
-                                        <li><a class="barLink" href="/tfs/server/security/about-permissions">Permissions and groups</a></li>
-                                        <li><a class="barLink" href="/tfs/server/security/access-levels">Access levels</a></li>
+                                        <li><a class="barLink" href="/vsts/security/about-permissions">Permissions and groups</a></li>
+                                        <li><a class="barLink" href="/vsts/security/access-levels">Access levels</a></li>
                                     </ul>
                                 </div>
                             </li>
@@ -187,9 +202,7 @@ featureFlags:
                                 <div class="group">
                                     <h3>Troubleshooting</h3>
                                     <ul>
-                                        <li><a class="barLink" href="">Upgrade failures</a></li>
-                                        <li><a class="barLink" href="/tfs/server/tfs-server/index">Collection upgrade failures</a></li>
-                                        <li><a class="barLink" href="">Collection attach failures</a></li>
+                                        <li><a class="barLink" href="/tfs/server/troubleshooting/collection-upgrade-failures">Collection upgrade failures</a></li>
                                     </ul>
                                     <h3>Helpful resources</h3>
                                     <ul>
@@ -215,7 +228,7 @@ featureFlags:
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Architecture overview</h3>
-                                                    <p>TODO</p>
+                                                    <p>Review how TFS is deployed within your enterprise topology, and its dependencies.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -234,7 +247,7 @@ featureFlags:
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>SQL Server databases</h3>
-                                                    <p>TODO</p>
+                                                    <p>Understand how SQL Server and TFS work together to help you manage your team projects and resources.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -253,7 +266,7 @@ featureFlags:
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Background job agents</h3>
-                                                    <p>TODO</p>
+                                                    <p>Learn how job agents provide scheduling for your build, test, and release tasks.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -304,7 +317,7 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
-                                <a href="/tfs/server/install/install-sql-server">
+                                <a href="/tfs/server/install/sql-server/install-sql-server">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -315,7 +328,7 @@ featureFlags:
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Install SQL Server</h3>
-                                                    <p>TODO</p>
+                                                    <p>Review the installation of SQL Server to support your enterprise topology and TFS installation(s).</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -482,7 +495,7 @@ featureFlags:
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Manage project collections</h3>
-                                                    <p>TODO</p>
+                                                    <p>Learn how to create and manage the project collections for your organizations and teams.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -509,7 +522,7 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
-                                <a href="/tfs/server/security/about-permissions">
+                                <a href="/vsts/security/about-permissions">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -528,7 +541,7 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
-                                <a href="/tfs/server/security/access-levels">
+                                <a href="/vsts/security/access-levels">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -552,25 +565,6 @@ featureFlags:
                         <a href="#troubleshooting">Troubleshooting</a>
                         <ul id="troubleshooting" class="cardsA">
                             <li>
-                                <a href="">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage">
-                                                        <img src="https://docs.microsoft.com/media/common/i_tools.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Upgrade failures</h3>
-                                                    <p>TODO</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
                                 <a href="/tfs/server/tfs-server/index">
                                     <div class="cardSize">
                                         <div class="cardPadding">
@@ -582,26 +576,7 @@ featureFlags:
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Collection upgrade failures</h3>
-                                                    <p></p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage">
-                                                        <img src="https://docs.microsoft.com/media/common/i_tools.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Collection attach failures</h3>
-                                                    <p>TODO</p>
+                                                    <p>Troubleshoot common collection upgrade failures.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -625,7 +600,7 @@ featureFlags:
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Security and identity</h3>
-                                                    <p>TODOs</p>
+                                                    <p>Manage permissions and access to your team projects and repositories.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -644,7 +619,7 @@ featureFlags:
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Notifications</h3>
-                                                    <p>TODO</p>
+                                                    <p>Define which events generate alerts or post messages in third party tools.</p>
                                                 </div>
                                             </div>
                                         </div>
