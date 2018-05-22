@@ -576,7 +576,7 @@ featureFlags:
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Collection upgrade failures</h3>
-                                                    <p></p>
+                                                    <p>Troubleshoot common collection upgrade failures.</p>
                                                 </div>
                                             </div>
                                         </div>
