@@ -228,7 +228,7 @@ featureFlags:
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Architecture overview</h3>
-                                                    <p>TODO</p>
+                                                    <p>Review how TFS is deployed within your enterprise topology, and its dependencies.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -247,7 +247,7 @@ featureFlags:
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>SQL Server databases</h3>
-                                                    <p>TODO</p>
+                                                    <p>Understand how SQL Server and TFS work together to help you manage your team projects and resources.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -266,7 +266,7 @@ featureFlags:
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Background job agents</h3>
-                                                    <p>TODO</p>
+                                                    <p>Learn how job agents provide scheduling for your build, test, and release tasks.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -328,7 +328,7 @@ featureFlags:
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Install SQL Server</h3>
-                                                    <p>TODO</p>
+                                                    <p>Review the installation of SQL Server to support your enterprise topology and TFS installation(s).</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -495,7 +495,7 @@ featureFlags:
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Manage project collections</h3>
-                                                    <p>TODO</p>
+                                                    <p>Learn how to create and manage the project collections for your organizations and teams.</p>
                                                 </div>
                                             </div>
                                         </div>
