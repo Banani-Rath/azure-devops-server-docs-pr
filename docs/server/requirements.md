@@ -225,7 +225,7 @@ agents on your TFS application tiers.
 
 If you plan to use Code Search, we typically recommend setting up a separate server for it. 
 For more details, see 
-[hardware requirements for Code Search](/vsts/search/code/administration.md#hardware-recommendations).
+[hardware requirements for Code Search](/vsts/project/search/administration.md#hardware-recommendations).
 
 If you plan to use reporting features, we recommend setting up a separate 
 server for your warehouse database and Analysis Services cube or using a 

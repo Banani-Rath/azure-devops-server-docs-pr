@@ -80,7 +80,7 @@ With the *New Deployment - Basic* scenario, you will need to choose:
 - **Language**: Which language you would like to configure TFS for.
 - **SQL Server Instance**: Whether to install SQL Express or use an existing SQL Server instance.
 - **Application Tier**: Which website settings to use, including whether to use HTTP or HTTPS bindings. See [website settings](/vsts/security/websitesettings.md) for more information.
-- **Search**: Whether to install and configure Code Search features. See [configuring search](/vsts/search/code/administration.md#config-tfs) 
+- **Search**: Whether to install and configure Code Search features. See [configuring search](/vsts/project/search/administration.md#config-tfs) 
 for more information.
 
 If you select the *New Deployment - Advanced* scenario, you will additionally need to choose:
