@@ -118,6 +118,8 @@
       href: admin/config-tfs-resources.md
     - name: Administration console
       href: ref/command-line/open-admin-console.md
+    - name: Configure an SMTP server
+      href: admin/setup-customize-alerts.md
     - name: Manage collections
       items:
       - name: Manage project collections
