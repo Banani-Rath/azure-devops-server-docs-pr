@@ -225,7 +225,7 @@ agents on your TFS application tiers.
 
 If you plan to use Code Search, we typically recommend setting up a separate server for it. 
 For more details, see 
-[hardware requirements for Code Search](/vsts/project/search/administration.md#hardware-recommendations).
+[hardware requirements for Code Search](/vsts/project/search/administration#hardware-recommendations).
 
 If you plan to use reporting features, we recommend setting up a separate 
 server for your warehouse database and Analysis Services cube or using a 
@@ -378,7 +378,7 @@ pool for Team Foundation Server.
 
 | Component | Sample user logon name (1) | Requirements |
 | --- | --- | --- |
-| Team Foundation Server | **TFSSERVICE** | You can specify a built-in account or a user account. If you specify a user account, it must have the **Log on as a service** permission. </br> You must not use the account that you use to install Team Foundation Server as the account for TFSSERVICE. For example, if you are logged in as domain\user1 when you install Team Foundation Server, do not use domain\user1 as the account for TFSSERVICE. </br> If your SharePoint site was not installed at the same time as Team Foundation Server, you must add TFSSERVICE to the Farm Administrators group for the SharePoint Central Administration site. For more information, see [Add the service account for Team Foundation Server to the Farm Administrators group](/install/sharepoint/setup-remote-sharepoint.md#tfs-svc-acct-to-farm-admin-group). </br> Default: Network Service |
+| Team Foundation Server | **TFSSERVICE** | You can specify a built-in account or a user account. If you specify a user account, it must have the **Log on as a service** permission. </br> You must not use the account that you use to install Team Foundation Server as the account for TFSSERVICE. For example, if you are logged in as domain\user1 when you install Team Foundation Server, do not use domain\user1 as the account for TFSSERVICE. </br> If your SharePoint site was not installed at the same time as Team Foundation Server, you must add TFSSERVICE to the Farm Administrators group for the SharePoint Central Administration site. For more information, see [Add the service account for Team Foundation Server to the Farm Administrators group](/install/sharepoint/setup-remote-sharepoint#tfs-svc-acct-to-farm-admin-group). </br> Default: Network Service |
 | Team Foundation Build | **TFSBUILD** | You can specify a built-in account or a user account. If you use a user account, it must have the **Log on as a service** permission. |
 | Team Foundation Server Proxy | **TFSPROXY** | You can specify a built-in account or a user account. If you use a user account, it must have the **Log on as a service** permission. |
 
