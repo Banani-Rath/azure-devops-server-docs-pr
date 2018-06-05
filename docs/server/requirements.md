@@ -316,7 +316,7 @@ Foundation Build, and Team Foundation Server Proxy. If you use
 reporting, you also need a report reader account when you install Team
 Foundation Server. This topic describes the requirements for service
 accounts and the report reader account for installation.  For more
-information, see [Service Accounts and Dependencies in Team Foundation Server](/admin/service-accounts-dependencies-tfs) or [link](/stuff/).
+information, see [Service Accounts and Dependencies in Team Foundation Server](/admin/service-accounts-dependencies-tfs).
 
 Team Foundation Server requires multiple identities for installation,
 but you can use a single account for all the identities, as long as that
