@@ -96,7 +96,7 @@ This scenario is optimized for simplicity, using default options for most inputs
 
 When selecting a SQL Server instance in the wizard, be sure to point to the data tier you have already configured. With the New Deployment - Basic scenario, you will also need to choose:
 
-- **Application Tier**: Which website settings to use, including whether to use HTTP or HTTPS bindings. See [website settings](/vsts/security/websitesettings.md) for more information.
+- **Application Tier**: Which website settings to use, including whether to use HTTP or HTTPS bindings. See [website settings](/vsts/security/websitesettings) for more information.
 - **Search**: Whether to install and configure Code Search features. See [configuring Search](/vsts/project/search/administration.md#config-tfs) for more information.
 
 If you select the *New Deployment - Advanced* scenario, you will additionally need to choose:

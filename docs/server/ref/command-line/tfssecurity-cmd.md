@@ -44,7 +44,7 @@ tfssecurity /a+ Namespace Token Action Identity (ALLOW | DENY)[/collection:Colle
 
 #### Required Permissions
 
-To use the **/a+** command, you must have the View collection-level information or the View instance-level information permission set to Allow, depending on whether you are using the **/collection** or **/server** parameter, respectively. If you are changing permissions for a team project, you must also have the Edit project-level information permission for the team project set to Allow. For more information, see [Permission reference for Team Foundation Server](/vsts/security/permissions.md).
+To use the **/a+** command, you must have the View collection-level information or the View instance-level information permission set to Allow, depending on whether you are using the **/collection** or **/server** parameter, respectively. If you are changing permissions for a team project, you must also have the Edit project-level information permission for the team project set to Allow. For more information, see [Permission reference for Team Foundation Server](/vsts/security/permissions).
 
 #### Parameters
 
@@ -324,7 +324,7 @@ Use **/acl** to display the access control list that applies to a particular obj
 To use the **/acl** command, you must have the **View collection-level information**
 or the **View instance-level information** permission set to **Allow**,
 depending on whether you are using the **/collection** or **/server** parameter, respectively.
-For more information, see [Permission reference for Team Foundation Server](/vsts/security/permissions.md).
+For more information, see [Permission reference for Team Foundation Server](/vsts/security/permissions).
 
 #### Parameters
 
@@ -1122,7 +1122,7 @@ Sample output:
 |[Trigger events](/vsts/security/permissions.md#trigger-events-permission)|Server|TRIGGER_EVENT|
 |[Use full Web Access features](/vsts/security/permissions.md#use-full-web-access-features-permission)|Server|FullAccess|
 |[View instance-level information](/vsts/security/permissions.md#view-instance-level-information-permission)|Server|GENERIC_READ|
-|[Publish extensions](/vsts/extend/publish/overview.md)| Publisher| **For TFS 2017 or earlier**:<br />Create<br/>Publish<br />Write<br /><br />**For TFS 2017**:<br />CreatePublisher<br />PublishExtension<br />UpdateExtension<br />DeleteExtensions<br />|
+|[Publish extensions](/vsts/extend/publish/overview)| Publisher| **For TFS 2017 or earlier**:<br />Create<br/>Publish<br />Write<br /><br />**For TFS 2017**:<br />CreatePublisher<br />PublishExtension<br />UpdateExtension<br />DeleteExtensions<br />|
 
 <a id="collection-level-permissions"></a>
 ### Collection level

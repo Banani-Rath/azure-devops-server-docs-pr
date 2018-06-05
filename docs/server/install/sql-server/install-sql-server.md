@@ -311,6 +311,6 @@ To verify a connection to an instance of SQL Server by using SQL Server Manageme
 
 [Install Team Foundation Server](../install-2013/install-tfs.md)  
 
-[TFS upgrade requirements](/vsts/upgrade/upgrade-2013/upgrade-2013-requirements.md)  
+[TFS upgrade requirements](/vsts/upgrade/upgrade-2013/upgrade-2013-requirements)  
 
 [SQL Server Collation Requirements for Team Foundation Server](collation-requirements.md)
