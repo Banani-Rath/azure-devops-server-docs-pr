@@ -49,7 +49,7 @@ To verify permissions:
 
 -   Log on to the server and make sure that users, groups, and service accounts are configured with the permissions that they need to operate.
 
-    For more information, see [Add users to team projects](/vsts/security/add-users-team-project), [Set administrator permissions for team project collections](../add-administrator-tfs), [Set administrator permissions for Team Foundation Server](../add-administrator-tfs), and [Service accounts and dependencies in Team Foundation Server](../service-accounts-dependencies-tfs).
+    For more information, see [Add users to team projects](/vsts/security/add-users-team-project), [Set administrator permissions for team project collections](../add-administrator-tfs.md), [Set administrator permissions for Team Foundation Server](../add-administrator-tfs.md), and [Service accounts and dependencies in Team Foundation Server](../service-accounts-dependencies-tfs.md).
 
 
 ## Refresh the work item cache

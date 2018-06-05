@@ -37,7 +37,7 @@ If you have whole team projects that are no longer needed, deleting them can pot
 since this will remove all content for the team project across all feature areas. There are two ways to delete a 
 team project:
 
-1. From the [Team Foundation Server Administration Console](/vsts/accounts/delete-team-project.md#delete-team-proj).
+1. From the [Team Foundation Server Administration Console](/vsts/accounts/delete-team-project#delete-team-proj).
 2. Using the [TfsDeleteProject](https://msdn.microsoft.com/library/ms181482.aspx) tool that is included with Visual 
 Studio installations.
 
