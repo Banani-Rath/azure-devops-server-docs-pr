@@ -68,7 +68,7 @@ with the [TFS Power Tools](https://visualstudiogallery.msdn.microsoft.com/f017b1
 ## XAML Builds
 
 When builds in TFS are deleted, a subset of the information they produced is preserved in order to avoid losing 
-reporting data the next time the [warehouse is rebuilt](/vsts/report/admin/rebuild-data-warehouse-and-cube.md). Build 
+reporting data the next time the [warehouse is rebuilt](/vsts/report/admin/rebuild-data-warehouse-and-cube). Build 
 data can be physically deleted using the [destroy command](https://msdn.microsoft.com/library/ee794689.aspx) via 
 tfsbuild.exe.
 

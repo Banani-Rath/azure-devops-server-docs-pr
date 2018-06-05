@@ -111,7 +111,7 @@ Install SQL Server in the new environment, prepare SQL Server for restoration of
 is operational. As an alternative, create an instance of SQL Server
 on a server that already has a matching version installed.
 
-For more information, see [Installing Team Foundation Components](/vsts/install/get-started.md).
+For more information, see [Installing Team Foundation Components](/vsts/install/get-started).
 
 <a name="StopServices"></a>
 ## Step 3: Stop Services that Team Foundation Server Uses
@@ -694,7 +694,7 @@ To reconfigure reporting and Analysis Services:
     **GetProcessingStatus** service returns a value of
     **Idle** for all jobs.
 
-    For more information, see [Manually Process the Data Warehouse and Analysis Services Cube](/vsts/report/admin/manually-process-data-warehouse-and-cube.md) for Team Foundation Server.
+    For more information, see [Manually Process the Data Warehouse and Analysis Services Cube](/vsts/report/admin/manually-process-data-warehouse-and-cube) for Team Foundation Server.
 
 26. On the application-tier server, open Computer Management, and start
     the Visual Studio Team Foundation Background Job Agent.

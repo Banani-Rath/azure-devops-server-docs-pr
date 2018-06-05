@@ -49,7 +49,7 @@ To verify permissions:
 
 -   Log on to the server and make sure that users, groups, and service accounts are configured with the permissions that they need to operate.
 
-    For more information, see [Add users to team projects](/vsts/security/add-users-team-project.md), [Set administrator permissions for team project collections](../add-administrator-tfs.md), [Set administrator permissions for Team Foundation Server](../add-administrator-tfs.md), and [Service accounts and dependencies in Team Foundation Server](../service-accounts-dependencies-tfs.md).
+    For more information, see [Add users to team projects](/vsts/security/add-users-team-project), [Set administrator permissions for team project collections](../add-administrator-tfs), [Set administrator permissions for Team Foundation Server](../add-administrator-tfs), and [Service accounts and dependencies in Team Foundation Server](../service-accounts-dependencies-tfs).
 
 
 ## Refresh the work item cache
@@ -94,5 +94,5 @@ To refresh the version control cache on client computers:
 
     **tf workspaces /collection:http://FabrikamPrime:8080/tfs/DefaultCollection**
 
-    For more information, see [Workspaces Command](/vsts/tfvc/workspace-command.md).
+    For more information, see [Workspaces Command](/vsts/tfvc/workspace-command).
 

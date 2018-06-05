@@ -135,7 +135,7 @@ to addresses another (different) issue where SQL Server 2012 with SP1 might requ
 | --- | --- |
 | Required for TFS | Database Engine Services </br></br> Full-Text and Semantic Extractions for Search |
 Required for reporting | Reporting Services – Native </br> Analysis Services |
-| Collation settings | Must be accent sensitive </br> Must not be case sensitive </br> Must not be Binary </br> Must not be Binary - code point </br> For more information, see [SQL Server Collation Requirements for Team Foundation Server](/install/sql-server/collation-requirements.md) |
+| Collation settings | Must be accent sensitive </br> Must not be case sensitive </br> Must not be Binary </br> Must not be Binary - code point </br> For more information, see [SQL Server Collation Requirements for Team Foundation Server](/install/sql-server/collation-requirements) |
 | Authentication | Windows authentication |
 | Service account | You can use a domain account or a built-in account. |
 
@@ -144,7 +144,7 @@ Required for reporting | Reporting Services – Native </br> Analysis Services |
 Microsoft does not support any read operations against the TFS databases that originate from queries, scripts, .dll files, and so on, not provided by Microsoft or its support teams. If Microsoft Support determines that those read operations prevent them from solving your problem, the entire database will be unsupported. To return the database to a supported state, all unsupported read operations must stop.
 
 **SQL Server High Availability features Supported by Team Foundation Server**
-SQL Server 2012 offers a new high availability (HA) feature that requires a Team Foundation Server-specific configuration. For more information, see: [Use SQL Server 2012 Always On Availability Groups with Team Foundation Server](/install/sql-server/use-always-on-groups.md)
+SQL Server 2012 offers a new high availability (HA) feature that requires a Team Foundation Server-specific configuration. For more information, see: [Use SQL Server 2012 Always On Availability Groups with Team Foundation Server](/install/sql-server/use-always-on-groups)
 
 |SQL Server HA feature|TFS support|Requires TFS Configuration|
 |---|---|---|
@@ -225,7 +225,7 @@ agents on your TFS application tiers.
 
 If you plan to use Code Search, we typically recommend setting up a separate server for it. 
 For more details, see 
-[hardware requirements for Code Search](/vsts/project/search/administration.md#hardware-recommendations).
+[hardware requirements for Code Search](/vsts/project/search/administration#hardware-recommendations).
 
 If you plan to use reporting features, we recommend setting up a separate 
 server for your warehouse database and Analysis Services cube or using a 
@@ -258,7 +258,7 @@ TFS 2010    | Office SharePoint Server 2007 (Standard, Enterprise)<br/>Windows S
 
 **Authentication**: NTLM is the recommended authentication provider.  Team Foundation Server Extensions for SharePoint Products does not support Basic authentication or anonymous authentication.  In SharePoint Server 2013, Microsoft deprecated Windows classic-authentication in favor of claims-based authentication. TFS supports both, but for claims-based authentication, the authentication provider must be NTLM. TFS will only support NTLM-based claims.
 
-You can configure the TFS extension for SharePoint Products on your SharePoint server from the [TFS administration console](/ref/command-line/open-admin-console.md).
+You can configure the TFS extension for SharePoint Products on your SharePoint server from the [TFS administration console](/ref/command-line/open-admin-console).
 
 **Tip:**
 
@@ -316,7 +316,7 @@ Foundation Build, and Team Foundation Server Proxy. If you use
 reporting, you also need a report reader account when you install Team
 Foundation Server. This topic describes the requirements for service
 accounts and the report reader account for installation.  For more
-information, see [Service Accounts and Dependencies in Team Foundation Server](/admin/service-accounts-dependencies-tfs.md).
+information, see [Service Accounts and Dependencies in Team Foundation Server](/admin/service-accounts-dependencies-tfs).
 
 Team Foundation Server requires multiple identities for installation,
 but you can use a single account for all the identities, as long as that
@@ -327,7 +327,7 @@ it.
 > Confused about accounts? New for this release is a tutorial available 
 > for Team Foundation Server installation that covers how to create 
 > accounts and groups for a single server installation. For more 
-> information, see [Set up groups for use in TFS deployments.](/admin/setup-ad-groups.md) 
+> information, see [Set up groups for use in TFS deployments.](/admin/setup-ad-groups) 
 
 **Best practices for accounts:**
 
@@ -378,7 +378,7 @@ pool for Team Foundation Server.
 
 | Component | Sample user logon name (1) | Requirements |
 | --- | --- | --- |
-| Team Foundation Server | **TFSSERVICE** | You can specify a built-in account or a user account. If you specify a user account, it must have the **Log on as a service** permission. </br> You must not use the account that you use to install Team Foundation Server as the account for TFSSERVICE. For example, if you are logged in as domain\user1 when you install Team Foundation Server, do not use domain\user1 as the account for TFSSERVICE. </br> If your SharePoint site was not installed at the same time as Team Foundation Server, you must add TFSSERVICE to the Farm Administrators group for the SharePoint Central Administration site. For more information, see [Add the service account for Team Foundation Server to the Farm Administrators group](/install/sharepoint/setup-remote-sharepoint.md#tfs-svc-acct-to-farm-admin-group). </br> Default: Network Service |
+| Team Foundation Server | **TFSSERVICE** | You can specify a built-in account or a user account. If you specify a user account, it must have the **Log on as a service** permission. </br> You must not use the account that you use to install Team Foundation Server as the account for TFSSERVICE. For example, if you are logged in as domain\user1 when you install Team Foundation Server, do not use domain\user1 as the account for TFSSERVICE. </br> If your SharePoint site was not installed at the same time as Team Foundation Server, you must add TFSSERVICE to the Farm Administrators group for the SharePoint Central Administration site. For more information, see [Add the service account for Team Foundation Server to the Farm Administrators group](/install/sharepoint/setup-remote-sharepoint#tfs-svc-acct-to-farm-admin-group). </br> Default: Network Service |
 | Team Foundation Build | **TFSBUILD** | You can specify a built-in account or a user account. If you use a user account, it must have the **Log on as a service** permission. |
 | Team Foundation Server Proxy | **TFSPROXY** | You can specify a built-in account or a user account. If you use a user account, it must have the **Log on as a service** permission. |
 
@@ -391,14 +391,14 @@ Release Management Server and the Microsoft Deployment agent.
 | Component | Sample user logon name (1) | Requirements |
 | --- | --- | --- |
 | Release Management Server | **RMSERVER** | This is the identity used in Internet Information Service (IIS) for the application pool and the **Release Management Monitor** Windows service. </br> Default: Network Service |
-| Microsoft Deployment Agent | **DEPLOY** | This identity is used to configure the machines in your environment for release. Make sure the identity you use here has enough permission to do whatever tasks are required. For example, if you need to install your application on this machine as part of your release, add this identity to the local Windows Administrators security group. If this identity will need to access builds on the network, make sure it has access to the network drop location. For step-by-step procedure, see [Install deployment agent and set up machines for an environment](/vsts/build-release/archive/release/previous-version/install-release-management/install-deployment-agent.md). </br> Default: you are prompted for an account. |
+| Microsoft Deployment Agent | **DEPLOY** | This identity is used to configure the machines in your environment for release. Make sure the identity you use here has enough permission to do whatever tasks are required. For example, if you need to install your application on this machine as part of your release, add this identity to the local Windows Administrators security group. If this identity will need to access builds on the network, make sure it has access to the network drop location. For step-by-step procedure, see [Install deployment agent and set up machines for an environment](/vsts/build-release/archive/release/previous-version/install-release-management/install-deployment-agent). </br> Default: you are prompted for an account. |
 
 
 #### Connect Release Management to TFS account
 
 If you connect Release Management to TFS, you need an account in TFS to
 act as an intermediary account. For a step-by-step procedure, go here:
-[Connect Release Management to TFS](/vsts/build-release/archive/release/previous-version/install-release-management/connect-to-tfs.md)
+[Connect Release Management to TFS](/vsts/build-release/archive/release/previous-version/install-release-management/connect-to-tfs)
 
 
 | Component | Sample user logon name (1) | Requirements |
@@ -434,12 +434,12 @@ placeholder names for any accounts that you might create.
 
 **TFS 2017 discontinues support for Project Server.**
 
-Team Foundation Server doesn't require Project Server, but if you use Project Server, you must use a supported version.  TFS-Project Server integration [enables data to flow from work items in Team Foundation Server to tasks in enterprise project plans in Project Server](/vsts/work/tfs-ps-sync/synchronize-tfs-project-server.md). 
+Team Foundation Server doesn't require Project Server, but if you use Project Server, you must use a supported version.  TFS-Project Server integration [enables data to flow from work items in Team Foundation Server to tasks in enterprise project plans in Project Server](/vsts/work/tfs-ps-sync/synchronize-tfs-project-server). 
 
 TFS version | Supported Project Server versions | Supported Project versions
 ------------|---------------------------------- | ---------------------------
-TFS 2018    | Not supported. See [Synchronize TFS with Project Server](/vsts/work/tfs-ps-sync/sync-ps-tfs.md) for details. | Not supported. 
-TFS 2017    | Not supported. See [Synchronize TFS with Project Server](/vsts/work/tfs-ps-sync/sync-ps-tfs.md) for details. | Not supported. 
+TFS 2018    | Not supported. See [Synchronize TFS with Project Server](/vsts/work/tfs-ps-sync/sync-ps-tfs) for details. | Not supported. 
+TFS 2017    | Not supported. See [Synchronize TFS with Project Server](/vsts/work/tfs-ps-sync/sync-ps-tfs) for details. | Not supported. 
 TFS 2015    | Project Server 2010 with SP1<br/>Project Server 2013 | Project Professional 2007 with SP2 and [update](http://go.microsoft.com/fwlink/?LinkId=211633)<br/>Project Professional 2007 with SP3<br/>Project Professional 2010<br/>Project Professional 2013
 TFS 2013    | Project Server 2010 with SP1<br/>Project Server 2013 | Project Professional 2007 with SP2 and [update](http://go.microsoft.com/fwlink/?LinkId=211633)<br/>Project Professional 2007 with SP3<br/>Project Professional 2010<br/>Project Professional 2013
 TFS 2012    | Project Server 2007 with SP2<br/>Project Server 2007 with SP3<br/>Project Server 2010 with SP1<br/>Project Server 2013 | Project Professional 2007 with SP2 and [update](http://go.microsoft.com/fwlink/?LinkId=211633)<br/>Project Professional 2007 with SP3<br/>Project Professional 2010<br/>Project Professional 2013
@@ -451,7 +451,7 @@ To use Project Server with TFS, you must install Team Foundation Server Extensio
 
 NTLM is the recommended authentication. In SharePoint Server 2013, Microsoft deprecated Windows classic-authentication in favor of claims-based authentication. TFS 2012 supports both, but for claims-based authentication, the authentication provider must be NTLM. TFS 2012 supports only NTLM-based claims.
 
-If you upgrade to Project Server 2013 from a Project Server 2010 installation that has been added to TFS, you have to perform a few extra steps to maintain the connection between TFS and Project Server. For more information, see this topic: [Upgrade Microsoft Project Server 2010 to Microsoft Project Server 2013](/vsts/work/tfs-ps-sync/upgrade-ps-2010-to-ps-2013.md).
+If you upgrade to Project Server 2013 from a Project Server 2010 installation that has been added to TFS, you have to perform a few extra steps to maintain the connection between TFS and Project Server. For more information, see this topic: [Upgrade Microsoft Project Server 2010 to Microsoft Project Server 2013](/vsts/work/tfs-ps-sync/upgrade-ps-2010-to-ps-2013).
 
 ### Should you add Project Server to your current team project portal site?
 

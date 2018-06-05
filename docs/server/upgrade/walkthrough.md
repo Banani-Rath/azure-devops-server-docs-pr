@@ -15,7 +15,7 @@ ms.date: 08/04/2016
 
 **TFS 2017** | **TFS 2015** | **TFS 2013**
 
-This quickstart covers a typical Team Foundation Server (TFS) upgrade scenario to get a sense of what the high level steps discussed in the [overview](/vsts/accounts/account-management.md) might look like in a real world example.
+This quickstart covers a typical Team Foundation Server (TFS) upgrade scenario to get a sense of what the high level steps discussed in the [overview](/vsts/accounts/account-management) might look like in a real world example.
 
 ## Prepare your environment
 
@@ -38,7 +38,7 @@ For our dry run, the steps for our upgrade will be:
 4. Run through the upgrade wizard, 
 being sure to use a service account which does not have any permissions in our production environment. 
 See *Protecting production* in the [dry run in pre-production](pre-production.md) document for more information. 
-5. Optionally [configure new features](/vsts/work/customize/upgrade-tfs-2008-or-2010.md) which require changes to our existing team projects.
+5. Optionally [configure new features](/vsts/work/customize/upgrade-tfs-2008-or-2010) which require changes to our existing team projects.
 
 ## Do the upgrade
 
@@ -50,7 +50,7 @@ Assuming that all goes smoothly, the production upgrade steps will be quite simi
 4. Install TFS 2015 on our new application tier.
 5. Use the scheduled backups wizard to restore the database backups.
 6. Run through the upgrade wizard, using our desired production service account.
-7. Optionally [configure new features](/vsts/work/customize/configure-features-after-upgrade.md) which require changes to our existing team projects.
+7. Optionally [configure new features](/vsts/work/customize/configure-features-after-upgrade) which require changes to our existing team projects.
 
 And we're done! 
 

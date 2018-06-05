@@ -115,7 +115,7 @@ so VSTS and TFS support the most recent version.
 
 ### Office
 
-Office integration supports the following clients: [Excel](/vsts/work/backlogs/office/bulk-add-modify-work-items-excel.md), [Project](/vsts/work/backlogs/office/create-your-backlog-tasks-using-project.md), and [PowerPoint with Storyboarding](/vsts/work/backlogs/office/storyboard-your-ideas-using-powerpoint.md). 
+Office integration supports the following clients: [Excel](/vsts/work/backlogs/office/bulk-add-modify-work-items-excel), [Project](/vsts/work/backlogs/office/create-your-backlog-tasks-using-project), and [PowerPoint with Storyboarding](/vsts/work/backlogs/office/storyboard-your-ideas-using-powerpoint). 
 
 TFS version | Supported Office versions
 ------------|--------------------------
@@ -133,7 +133,7 @@ TFS 2010    | Office 2010<br/>Office 2007
 
 **TFS 2018 discontinues support for the Xaml build system.**
 
-We've built a brand new [scriptable build system](/vsts/build-release/overview.md) that's web based and cross-platform.
+We've built a brand new [scriptable build system](/vsts/build-release/overview) that's web based and cross-platform.
 
 You may want to use an older version of Build if you plan to continue using the Xaml build system, 
 if you are using Build servers against multiple versions of TFS, or if you need to leverage servers 

@@ -12,7 +12,7 @@ Resources** permissions at the Team Project level. By default, members
 of the Team Foundation Server Administrators, Team Project Collection
 Administrators, Team Project Administrators, Team Project Contributors,
 and Team Project Readers groups have this permission. For more
-information, see [Permission reference for Team Foundation Server](/vsts/security/permissions.md).
+information, see [Permission reference for Team Foundation Server](/vsts/security/permissions).
 
 
     TFSLabConfig ListTeamProjectHostGroups
