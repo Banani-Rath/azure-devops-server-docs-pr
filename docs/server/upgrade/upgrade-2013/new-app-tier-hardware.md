@@ -25,7 +25,7 @@ Illustration of migration upgrade
 
 Determine the service account you will use for Team Foundation Server. By default, TFS uses Network Service, but you can also use a domain account. In most cases, you should use the same account you used for the previous installation or consider using Network Service.
 
-For more information, see [requirements for Team Foundation Server](/tfs/requirements), or [Accounts required for installation of Team Foundation Server](setup-sql-server).
+For more information, see [requirements for Team Foundation Server](/tfs/requirements), or [Accounts required for installation of Team Foundation Server](setup-sql-server.md).
 
 ![](../../install/_img/ic646325.png) **Set up SQL Server**. You’re going to install all the SQL Server features that TFS requires on the same server where you’ll eventually run TFS.
 

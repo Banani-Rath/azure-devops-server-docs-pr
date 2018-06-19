@@ -26,7 +26,7 @@ You can install and configure SharePoint Foundation 2013 during the extensions c
 
 ## To install Team Foundation Server Extensions for SharePoint Products
 
-![Step 1](../_img/ic646324.png) Verify that the operating system and hardware or the existing SharePoint Products installation meets the requirements for Team Foundation Server Extensions for SharePoint Products. If you don't want to use SharePoint Foundation 2013, you can install any supported version of SharePoint Products. If you install the Enterprise version of SharePoint Server, you must configure it for dashboards. For more information: [SharePoint Products requirements for Team Foundation Server](/tfs/requirements#sharepoint), [Verify SharePoint products for Team Foundation Server](verify-sharepoint), [Manually Install SharePoint products for Team Foundation Server](install-sharepoint).
+![Step 1](../_img/ic646324.png) Verify that the operating system and hardware or the existing SharePoint Products installation meets the requirements for Team Foundation Server Extensions for SharePoint Products. If you don't want to use SharePoint Foundation 2013, you can install any supported version of SharePoint Products. If you install the Enterprise version of SharePoint Server, you must configure it for dashboards. For more information: [SharePoint Products requirements for Team Foundation Server](/tfs/requirements#sharepoint), [Verify SharePoint products for Team Foundation Server](verify-sharepoint.md), [Manually Install SharePoint products for Team Foundation Server](install-sharepoint.md).
 
 
 

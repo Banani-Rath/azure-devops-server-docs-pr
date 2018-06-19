@@ -135,7 +135,7 @@ to addresses another (different) issue where SQL Server 2012 with SP1 might requ
 | --- | --- |
 | Required for TFS | Database Engine Services </br></br> Full-Text and Semantic Extractions for Search |
 Required for reporting | Reporting Services – Native </br> Analysis Services |
-| Collation settings | Must be accent sensitive </br> Must not be case sensitive </br> Must not be Binary </br> Must not be Binary - code point </br> For more information, see [SQL Server Collation Requirements for Team Foundation Server](/install/sql-server/collation-requirements) |
+| Collation settings | Must be accent sensitive </br> Must not be case sensitive </br> Must not be Binary </br> Must not be Binary - code point </br> For more information, see [SQL Server Collation Requirements for Team Foundation Server](/install/sql-server/collation-requirements.md) |
 | Authentication | Windows authentication |
 | Service account | You can use a domain account or a built-in account. |
 
@@ -144,7 +144,7 @@ Required for reporting | Reporting Services – Native </br> Analysis Services |
 Microsoft does not support any read operations against the TFS databases that originate from queries, scripts, .dll files, and so on, not provided by Microsoft or its support teams. If Microsoft Support determines that those read operations prevent them from solving your problem, the entire database will be unsupported. To return the database to a supported state, all unsupported read operations must stop.
 
 **SQL Server High Availability features Supported by Team Foundation Server**
-SQL Server 2012 offers a new high availability (HA) feature that requires a Team Foundation Server-specific configuration. For more information, see: [Use SQL Server 2012 Always On Availability Groups with Team Foundation Server](/install/sql-server/use-always-on-groups)
+SQL Server 2012 offers a new high availability (HA) feature that requires a Team Foundation Server-specific configuration. For more information, see: [Use SQL Server 2012 Always On Availability Groups with Team Foundation Server](/install/sql-server/use-always-on-groups.md)
 
 |SQL Server HA feature|TFS support|Requires TFS Configuration|
 |---|---|---|
@@ -378,7 +378,7 @@ pool for Team Foundation Server.
 
 | Component | Sample user logon name (1) | Requirements |
 | --- | --- | --- |
-| Team Foundation Server | **TFSSERVICE** | You can specify a built-in account or a user account. If you specify a user account, it must have the **Log on as a service** permission. </br> You must not use the account that you use to install Team Foundation Server as the account for TFSSERVICE. For example, if you are logged in as domain\user1 when you install Team Foundation Server, do not use domain\user1 as the account for TFSSERVICE. </br> If your SharePoint site was not installed at the same time as Team Foundation Server, you must add TFSSERVICE to the Farm Administrators group for the SharePoint Central Administration site. For more information, see [Add the service account for Team Foundation Server to the Farm Administrators group](/install/sharepoint/setup-remote-sharepoint#tfs-svc-acct-to-farm-admin-group). </br> Default: Network Service |
+| Team Foundation Server | **TFSSERVICE** | You can specify a built-in account or a user account. If you specify a user account, it must have the **Log on as a service** permission. </br> You must not use the account that you use to install Team Foundation Server as the account for TFSSERVICE. For example, if you are logged in as domain\user1 when you install Team Foundation Server, do not use domain\user1 as the account for TFSSERVICE. </br> If your SharePoint site was not installed at the same time as Team Foundation Server, you must add TFSSERVICE to the Farm Administrators group for the SharePoint Central Administration site. For more information, see [Add the service account for Team Foundation Server to the Farm Administrators group](/install/sharepoint/setup-remote-sharepoint.md#tfs-svc-acct-to-farm-admin-group). </br> Default: Network Service |
 | Team Foundation Build | **TFSBUILD** | You can specify a built-in account or a user account. If you use a user account, it must have the **Log on as a service** permission. |
 | Team Foundation Server Proxy | **TFSPROXY** | You can specify a built-in account or a user account. If you use a user account, it must have the **Log on as a service** permission. |
 
