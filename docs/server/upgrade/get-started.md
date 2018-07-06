@@ -32,10 +32,9 @@ you have a complete and consistent set of [database backups](../admin/backup/con
 3.	**Do the upgrade**! Once the preparation is done, you'll need to install the new version of TFS to get new binaries, and then run 
 through the upgrade wizard to upgrade your databases.
 
-	> Direct upgrade to TFS 2015 is supported only from TFS 2010 and newer.
-	> If your TFS deployment is on an older version than that,
-	> you will need to upgrade to TFS 2015 in multiple hops.
-	> For example, if you are on TFS 2008 you could upgrade to TFS 2012 first and then to TFS 2015. 
+	> Please note the following **TFS Upgrade Matrix** to see the proper steps to upgrade, based on what version you're upgrading from:
+
+	<div style="display:block; margin-left:auto; margin-right:auto; width:50%"><img src="../_img/tfs2018upgradematrix.png" /></div>
 
 4. **Configure new features**. Depending on what version you upgraded from, you may need to [configure each team project](/vsts/work/customize/configure-features-after-upgrade) to gain access to some of the new features made available. You don't have to do this immediately, but those features aren't available in that team project until they're configured. Depending on the team project, you'll use some combination of the Configure Features wizard that appears on the Work page and some manual configuration.
 
