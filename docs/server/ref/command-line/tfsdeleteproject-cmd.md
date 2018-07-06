@@ -13,7 +13,7 @@ ms.date: 08/04/2016
 
 # Delete a team project with TFSDeleteProject
 
-**TFS 2017** | **TFS 2015** | **TFS 2013**
+**TFS 2018** | **TFS 2017** | **TFS 2015** | **TFS 2013**
 
 You can remove a team project from Team Foundation Server(TFS) when the project is no longer required by using TFSDeleteProject.
 In addition, if there are components that remain undeleted after an unsuccessful team project creation, you can use TFSDeleteProject to remove them. 
