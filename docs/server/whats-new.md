@@ -223,7 +223,7 @@ To learn about  what's new with the cloud service offering, see [VSTS Features u
 >[!NOTE]  
 >The links provided below open related sections within the [Team Foundation Server 2018 RC1](https://www.visualstudio.com/news/releasenotes/tfs2018-relnotes) release notes. 
 
-### [Work item tracking improvements](https://www.visualstudio.com/news/releasenotes/tfs2018-relnotes#wit) 
+### [Work item tracking improvements](https://docs.microsoft.com/en-us/visualstudio/releasenotes/tfs2018-relnotes#--work-item-tracking) 
 <ul>
 <li>Project Creation Wizard on the web</li>
 <li>Process Template Manager on the web</li>
@@ -234,7 +234,7 @@ To learn about  what's new with the cloud service offering, see [VSTS Features u
 </ul>
 
 
-### [Version control improvements](https://www.visualstudio.com/news/releasenotes/tfs2018-relnotes#vc)
+### [Version control improvements](https://docs.microsoft.com/en-us/visualstudio/releasenotes/tfs2018-relnotes#--version-control)
 <ul>
 <li>Forks</li>
 <li>Setting to turn off web editing for TFVC repos</li>
@@ -263,11 +263,11 @@ To learn about  what's new with the cloud service offering, see [VSTS Features u
 ### Collaborate feature improvements
 
 <ul>
-<li>[Team project Wiki](https://www.visualstudio.com/news/releasenotes/tfs2018-relnotes#wiki)</li>
+<li>[Team project Wiki](https://docs.microsoft.com/en-us/visualstudio/releasenotes/tfs2018-relnotes#-wiki)</li>
 <li>Create a Wiki page from a broken link</li>
 </ul>
 
-### [Package management improvements](https://www.visualstudio.com/news/releasenotes/tfs2018-relnotes#pk) 
+### [Package management improvements](https://docs.microsoft.com/en-us/visualstudio/releasenotes/tfs2018-relnotes#--package-management) 
 <ul>
 <li>Package Management experience updates</li>
 <li>Maven packages</li>
@@ -280,7 +280,7 @@ To learn about  what's new with the cloud service offering, see [VSTS Features u
 </ul>
 
 
-### [Build & Release improvements](https://www.visualstudio.com/news/releasenotes/tfs2018-relnotes#build) 
+### [Build & Release improvements](https://docs.microsoft.com/en-us/visualstudio/releasenotes/tfs2018-relnotes#--build-and-release) 
 <ul>
 <li>Removing support for XAML Builds</li>
 <li>Export and import build definitions
@@ -335,7 +335,7 @@ For known issues, see [Known issues](https://www.visualstudio.com/news/releaseno
 >[!NOTE]  
 >The links provided below open related sections within the [Team Foundation Server 2017 Update 2 RC1](https://www.visualstudio.com/news/releasenotes/tfs2017-update2) release notes. 
 
-### [Work item tracking improvements](https://www.visualstudio.com/en-us/news/releasenotes/tfs2017-update2#wit) 
+### [Work item tracking improvements](https://www.docs.microsoft.com/visualstudio/releasenotes/tfs2017-update2#wit) 
 <ul>
 <li>Work item type icons</li>
 <li>Delivery plans and field criteria</li>
@@ -343,7 +343,7 @@ For known issues, see [Known issues](https://www.visualstudio.com/news/releaseno
 <li>Work item search </li>
 </ul>
 
-### [Pull request improvements](https://www.visualstudio.com/en-us/news/releasenotes/tfs2017-update2#pr) 
+### [Pull request improvements](https://www.docs.microsoft.com/visualstudio/releasenotes/tfs2017-update2#pr) 
 <ul>
 <li>Improved CTAs for PR author and reviewers</li>
 <li>Actionable comments</li>
@@ -356,7 +356,7 @@ For known issues, see [Known issues](https://www.visualstudio.com/news/releaseno
 </ul>
 
 
-### [Version control improvements](https://www.visualstudio.com/en-us/news/releasenotes/tfs2017-update2#vc)
+### [Version control improvements](https://www.docs.microsoft.com/visualstudio/releasenotes/tfs2017-update2#vc)
 <ul>
 <li>New branch policies configuration experience</li>
 <li>New policy for no active comments</li>
@@ -372,14 +372,14 @@ For known issues, see [Known issues](https://www.visualstudio.com/news/releaseno
 <li>New tree view control</li>
 </ul>
  
-### [Package Management improvements](https://www.visualstudio.com/en-us/news/releasenotes/tfs2017-update2#pk)
+### [Package Management improvements](https://www.docs.microsoft.com/visualstudio/releasenotes/tfs2017-update2#pk)
 <ul>
 <li>Updated Package Management experience</li>
 <li>npm READMEs and download button</li>
 <li>NuGet Restore, Command, and Tool Installer build tasks</li>
 </ul>
 
-### [Build & Release improvements](https://www.visualstudio.com/en-us/news/releasenotes/tfs2017-update2#build) 
+### [Build & Release improvements](https://www.docs.microsoft.com/visualstudio/releasenotes/tfs2017-update2#build) 
 <ul>
 <li>New build definition editor</li>
 <li>Template search</li>
@@ -413,13 +413,13 @@ For known issues, see [Known issues](https://www.visualstudio.com/news/releaseno
 </ul>
 
 
-### [Test improvements](https://www.visualstudio.com/en-us/news/releasenotes/tfs2017-update2#test) 
+### [Test improvements](https://www.docs.microsoft.com/visualstudio/releasenotes/tfs2017-update2#test) 
 <ul>
 <li>Run tests using agent phases</li>
 <li>On-demand triggering of automated tests</li>
 </ul>
 
-### [Administrative improvements](https://www.visualstudio.com/en-us/news/releasenotes/tfs2017-update2#admin) 
+### [Administrative improvements](https://www.docs.microsoft.com/visualstudio/releasenotes/tfs2017-update2#admin) 
 <ul>
 <li>Combined email recipients for notifications</li>
 <li>Out-of-the-box notifications</li>
@@ -629,7 +629,7 @@ Download: [Team Foundation Server Update 4](https://go.microsoft.com/fwlink/?Lin
 
 To learn more about related downloads, see the [Downloads page](https://www.visualstudio.com/downloads/download-visual-studio-vs).
 
-To learn about what's new and the bug fixes made in this release, see the [Release notes for Team Foundation Server 2015 Update 4](https://www.visualstudio.com/en-us/news/releasenotes/tfs2015-update4-vs).   
+To learn about what's new and the bug fixes made in this release, see the [Release notes for Team Foundation Server 2015 Update 4](https://www.docs.microsoft.com/visualstudio/releasenotes/tfs2015-update4-vs).   
 
 
 ## TFS 2015 Update 3
@@ -800,46 +800,46 @@ To learn about what's new and the bug fixes made in this release, see the [Relea
 
 ###Source control 
 <ul>
-<li><a href="https://www.visualstudio.com/en-us/news/releasenotes/tfs2015-rtm-vs#brpol">Branch policies </a></li>
-<li><a href="https://www.visualstudio.com/en-us/news/releasenotes/tfs2015-rtm-vs#gatebld">Branch policies - Gated build</a></li>
-<li><a href="https://www.visualstudio.com/en-us/news/releasenotes/tfs2015-rtm-vs#codepol">Branch policies - Code review</a></li>
-<li><a href="https://www.visualstudio.com/en-us/news/releasenotes/tfs2015-rtm-vs#branchist">Branch history (pushes &amp; pull requests)</a></li>
-<li><a href="https://www.visualstudio.com/en-us/news/releasenotes/tfs2015-rtm-vs#webhistgit">Web history view for Git projects</a></li>
-<li><a href="https://www.visualstudio.com/en-us/news/releasenotes/tfs2015-rtm-vs#quicked">Quick code editing</a></li>
-<li><a href="https://www.visualstudio.com/en-us/news/releasenotes/tfs2015-rtm-vs#histcon">History control</a></li>
-<li><a href="https://www.visualstudio.com/en-us/news/releasenotes/tfs2015-rtm-vs#vhist">View history on a folder</a></li>
-<li><a href="https://www.visualstudio.com/en-us/news/releasenotes/tfs2015-rtm-vs#mergperf">Improved merge performance</a></li>
+<li><a href="https://www.docs.microsoft.com/visualstudio/releasenotes/tfs2015-rtm-vs#brpol">Branch policies </a></li>
+<li><a href="https://www.docs.microsoft.com/visualstudio/releasenotes/tfs2015-rtm-vs#gatebld">Branch policies - Gated build</a></li>
+<li><a href="https://www.docs.microsoft.com/visualstudio/releasenotes/tfs2015-rtm-vs#codepol">Branch policies - Code review</a></li>
+<li><a href="https://www.docs.microsoft.com/visualstudio/releasenotes/tfs2015-rtm-vs#branchist">Branch history (pushes &amp; pull requests)</a></li>
+<li><a href="https://www.docs.microsoft.com/visualstudio/releasenotes/tfs2015-rtm-vs#webhistgit">Web history view for Git projects</a></li>
+<li><a href="https://www.docs.microsoft.com/visualstudio/releasenotes/tfs2015-rtm-vs#quicked">Quick code editing</a></li>
+<li><a href="https://www.docs.microsoft.com/visualstudio/releasenotes/tfs2015-rtm-vs#histcon">History control</a></li>
+<li><a href="https://www.docs.microsoft.com/visualstudio/releasenotes/tfs2015-rtm-vs#vhist">View history on a folder</a></li>
+<li><a href="https://www.docs.microsoft.com/visualstudio/releasenotes/tfs2015-rtm-vs#mergperf">Improved merge performance</a></li>
 </ul>
 
 ###Agile & Reporting 
 <ul>
-<li><a href="https://www.visualstudio.com/en-us/news/releasenotes/tfs2015-rtm-vs#indentav">Identity control and avatars</a></li>
-<li><a href="https://www.visualstudio.com/en-us/news/releasenotes/tfs2015-rtm-vs#tbugs">Taskboard: Bugs on your backlogs and boards</a></li>
-<li><a href="https://www.visualstudio.com/en-us/news/releasenotes/tfs2015-rtm-vs#pbacklogup">Product backlog updates</a></li>
-<li><a href="https://www.visualstudio.com/en-us/news/releasenotes/tfs2015-rtm-vs#sprint">Sprint backlog and task board updates</a></li>
-<li><a href="https://www.visualstudio.com/en-us/news/releasenotes/tfs2015-rtm-vs#ccards">Customize and configure your cards</a></li>
-<li><a href="https://www.visualstudio.com/en-us/news/releasenotes/tfs2015-rtm-vs#kanban">Kanban board updates</a></li>
-<li><a href="https://www.visualstudio.com/en-us/news/releasenotes/tfs2015-rtm-vs#cfdcol">Turn off the first column on the CFD chart</a></li>
-<li><a href="https://www.visualstudio.com/en-us/news/releasenotes/tfs2015-rtm-vs#safe">SAFe support for Process Templates</a></li>
-<li><a href="https://www.visualstudio.com/en-us/news/releasenotes/tfs2015-rtm-vs#proctemp">Process Templates renamed</a></li>
-<li><a href="https://www.visualstudio.com/en-us/news/releasenotes/tfs2015-rtm-vs#curitoken">Current iteration query token</a></li>
-<li><a href="https://www.visualstudio.com/en-us/news/releasenotes/tfs2015-rtm-vs#qprog">Query progressive disclosure</a></li>
+<li><a href="https://www.docs.microsoft.com/visualstudio/releasenotes/tfs2015-rtm-vs#indentav">Identity control and avatars</a></li>
+<li><a href="https://www.docs.microsoft.com/visualstudio/releasenotes/tfs2015-rtm-vs#tbugs">Taskboard: Bugs on your backlogs and boards</a></li>
+<li><a href="https://www.docs.microsoft.com/visualstudio/releasenotes/tfs2015-rtm-vs#pbacklogup">Product backlog updates</a></li>
+<li><a href="https://www.docs.microsoft.com/visualstudio/releasenotes/tfs2015-rtm-vs#sprint">Sprint backlog and task board updates</a></li>
+<li><a href="https://www.docs.microsoft.com/visualstudio/releasenotes/tfs2015-rtm-vs#ccards">Customize and configure your cards</a></li>
+<li><a href="https://www.docs.microsoft.com/visualstudio/releasenotes/tfs2015-rtm-vs#kanban">Kanban board updates</a></li>
+<li><a href="https://www.docs.microsoft.com/visualstudio/releasenotes/tfs2015-rtm-vs#cfdcol">Turn off the first column on the CFD chart</a></li>
+<li><a href="https://www.docs.microsoft.com/visualstudio/releasenotes/tfs2015-rtm-vs#safe">SAFe support for Process Templates</a></li>
+<li><a href="https://www.docs.microsoft.com/visualstudio/releasenotes/tfs2015-rtm-vs#proctemp">Process Templates renamed</a></li>
+<li><a href="https://www.docs.microsoft.com/visualstudio/releasenotes/tfs2015-rtm-vs#curitoken">Current iteration query token</a></li>
+<li><a href="https://www.docs.microsoft.com/visualstudio/releasenotes/tfs2015-rtm-vs#qprog">Query progressive disclosure</a></li>
 </ul>
 
 ###DevOps 
 <ul>
-<li><a href="https://www.visualstudio.com/en-us/news/releasenotes/tfs2015-rtm-vs#bldauto">Build automation system</a></li>
-<li><a href="https://www.visualstudio.com/en-us/news/releasenotes/tfs2015-rtm-vs#multitest">Assign multiple testers</a></li>
-<li><a href="https://www.visualstudio.com/en-us/news/releasenotes/tfs2015-rtm-vs#loadtest">Cloud-based load tests</a></li>
-<li><a href="https://www.visualstudio.com/en-us/news/releasenotes/tfs2015-rtm-vs#autotest">Automated testing</a></li>
+<li><a href="https://www.docs.microsoft.com/visualstudio/releasenotes/tfs2015-rtm-vs#bldauto">Build automation system</a></li>
+<li><a href="https://www.docs.microsoft.com/visualstudio/releasenotes/tfs2015-rtm-vs#multitest">Assign multiple testers</a></li>
+<li><a href="https://www.docs.microsoft.com/visualstudio/releasenotes/tfs2015-rtm-vs#loadtest">Cloud-based load tests</a></li>
+<li><a href="https://www.docs.microsoft.com/visualstudio/releasenotes/tfs2015-rtm-vs#autotest">Automated testing</a></li>
 </ul>
 
 ###Administration, Marketplace, & Other 
 <ul>
-<li><a href="https://www.visualstudio.com/en-us/news/releasenotes/tfs2015-rtm-vs#tpr">Team project rename</a></li>
-<li><a href="https://www.visualstudio.com/en-us/news/releasenotes/tfs2015-rtm-vs#restapi">REST APIs</a></li>
-<li><a href="https://www.visualstudio.com/en-us/news/releasenotes/tfs2015-rtm-vs#svchook">Service hooks</a></li>
-<li><a href="https://www.visualstudio.com/en-us/news/releasenotes/tfs2015-rtm-vs#apichange">Change in API behavior</a></li>
+<li><a href="https://www.docs.microsoft.com/visualstudio/releasenotes/tfs2015-rtm-vs#tpr">Team project rename</a></li>
+<li><a href="https://www.docs.microsoft.com/visualstudio/releasenotes/tfs2015-rtm-vs#restapi">REST APIs</a></li>
+<li><a href="https://www.docs.microsoft.com/visualstudio/releasenotes/tfs2015-rtm-vs#svchook">Service hooks</a></li>
+<li><a href="https://www.docs.microsoft.com/visualstudio/releasenotes/tfs2015-rtm-vs#apichange">Change in API behavior</a></li>
 <li><a href="https://msdn.microsoft.com/library/mt622451.aspx">Known issues and fixed bugs</a></li>
 </ul>
 

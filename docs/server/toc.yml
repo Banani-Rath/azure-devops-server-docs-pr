@@ -1,5 +1,5 @@
 - name: "Team Foundation Server"
-  href: index.md
+  href: https://docs.microsoft.com/en-us/tfs/index#pivot=services
 - name: Overview
   items:
   - name: What's new?
