@@ -135,7 +135,7 @@ to addresses another (different) issue where SQL Server 2012 with SP1 might requ
 | --- | --- |
 | Required for TFS | Database Engine Services </br></br> Full-Text and Semantic Extractions for Search |
 Required for reporting | Reporting Services – Native </br> Analysis Services |
-| Collation settings | Must be accent sensitive </br> Must not be case sensitive </br> Must not be Binary </br> Must not be Binary - code point </br> For more information, see [SQL Server Collation Requirements for Team Foundation Server](/install/sql-server/collation-requirements.md) |
+| Collation settings | Must be accent sensitive </br> Must not be case sensitive </br> Must not be Binary </br> Must not be Binary - code point </br> For more information, see [SQL Server Collation Requirements](https://docs.microsoft.com/en-us/sql/relational-databases/collations/collation-and-unicode-support?view=sql-server-2017) |
 | Authentication | Windows authentication |
 | Service account | You can use a domain account or a built-in account. |
 
