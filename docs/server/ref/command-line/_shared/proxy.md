@@ -58,7 +58,7 @@ see <span sdata="link"> How to: Install Team Foundation Proxy and set up a remot
 		</tr>
 		<tr>
 			<td><strong>/Collection</strong>:TeamProjectCollectionURL</td>
-			<td>Specifies the URL of the team project collection that is hosted on VSTS, in `AccountName.DomainName/CollectionName` format.</td>
+			<td>Specifies the URL of the project collection that is hosted on VSTS, in `AccountName.DomainName/CollectionName` format.</td>
 		</tr>
 		<tr>
 			<td><strong>/account</strong>:AccountName</td>
@@ -101,16 +101,16 @@ The following example shows how to add a TFS deployment named FABRIKAM to the pr
 
     TFSConfig Proxy /add /Server:http://www.fabrikam.com:8080/tfs 
 
-The following example shows how to add a team project collection hosted on VSTS to the proxy list using a [Personal Access Token](/vsts/accounts/use-personal-access-tokens-to-authenticate) to authenticate. This token will be used only to register the proxy with the VSTS account - the default service account will still be used to run the proxy. This parameter was added in TFS 2018 Update 1 to support registering a Proxy with VSTS without requiring a login prompt.
+The following example shows how to add a project collection hosted on VSTS to the proxy list using a [Personal Access Token](/vsts/accounts/use-personal-access-tokens-to-authenticate) to authenticate. This token will be used only to register the proxy with the VSTS account - the default service account will still be used to run the proxy. This parameter was added in TFS 2018 Update 1 to support registering a Proxy with VSTS without requiring a login prompt.
 
     TFSConfig Proxy /add /Collection:https://HelenaPetersen.tfs.visualstudio.com/PhoneSaver 
 
-The following example shows how to add a team project collection to the proxy list. This example uses a personal access token to authenticate against the collection specified with the "/Collection" parameter. The personal access token to be used is saved to a file at "c:\PersonalAccessToken.txt"
+The following example shows how to add a project collection to the proxy list. This example uses a personal access token to authenticate against the collection specified with the "/Collection" parameter. The personal access token to be used is saved to a file at "c:\PersonalAccessToken.txt"
 
     TFSConfig Proxy /add /Collection:https://HelenaPetersen.tfs.visualstudio.com/PhoneSaver
 		/PersonalAccessTokenFile:c:\PersonalAccessToken.txt
 
-The following example shows how to change the service account used by the proxy for the team project collection hosted on VSTS. The collection is named PhoneSaver, the account name used for VSTS is HelenaPetersen.fabrikam.com, and the service account used by the proxy is being changed to "My Proxy Service Account". Because the account name contains spaces, quotation marks are used to enclose the name.
+The following example shows how to change the service account used by the proxy for the project collection hosted on VSTS. The collection is named PhoneSaver, the account name used for VSTS is HelenaPetersen.fabrikam.com, and the service account used by the proxy is being changed to "My Proxy Service Account". Because the account name contains spaces, quotation marks are used to enclose the name.
 
     TFSConfig Proxy /change /Collection:https://HelenaPetersen.tfs.visualstudio.com/PhoneSaver
 		/account:"My Proxy Service Account"

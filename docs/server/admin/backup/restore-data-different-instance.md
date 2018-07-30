@@ -185,9 +185,9 @@ Server:
 -   TFS\_Configuration -- This database name might include additional characters between
     **TFS\_** and **Configuration**.
 
--   TFS\_*CollectionName* -- Each team project collection has its own database. For example, if you
-    have five team project collections, you will have five databases, each
-    distinguished by the name of the team project collection. These
+-   TFS\_*CollectionName* -- Each project collection has its own database. For example, if you
+    have five project collections, you will have five databases, each
+    distinguished by the name of the project collection. These
     databases might be on the same instance of SQL Server, on separate
     instances, or on separate physical servers. You must back up each
     database and then restore each database.
@@ -380,7 +380,7 @@ are not restoring the databases for the report server.
 After you redirect SharePoint Products to the new content databases, you
 must redirect Reporting Services to the new location of its databases
 (ReportServer and ReportServer\_TempDB). Unless you perform this
-procedure, no reports will be available for any team project. These
+procedure, no reports will be available for any project. These
 databases must be operational before you can reconfigure Team Foundation
 Server with the new locations of its databases.
 

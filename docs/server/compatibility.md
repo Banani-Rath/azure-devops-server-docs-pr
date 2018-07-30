@@ -21,7 +21,7 @@ ms.date: 10/02/2017
 We define three levels of client support for different versions of Visual Studio and Team Explorer.
 Only the latest version has "full" compatibility with the latest Team Foundation Server,
 because this will be the only client that contains components that can interface with new features for that release,
-and will also be the only client from which you can perform certain administrative tasks such as creating new team projects.
+and will also be the only client from which you can perform certain administrative tasks such as creating new projects.
 Previous versions will have varying levels of support below that, depending on how old they are.
 
 Next, we describe the level of support that we guarantee with each client version.

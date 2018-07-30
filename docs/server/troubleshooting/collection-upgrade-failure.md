@@ -12,15 +12,15 @@ ms.topic: conceptual
 ms.date: 11/08/2017
 ---
 
-# Handling team project collection upgrade failures
+# Handling project collection upgrade failures
 
 **TFS 2018** | **TFS 2017** | **TFS 2015**
 
-When one or more of your team project collections has an upgrade failure,
+When one or more of your project collections has an upgrade failure,
 you'll want to:
 
 1. Resolve the issue.
-2. Re-run the upgrade job for the team project collection.
+2. Re-run the upgrade job for the project collection.
 
 ## Resolve the issue
 

@@ -27,7 +27,7 @@ across many servers. It is accessed by clients in multiple domains in
 geographically distant physical locations. Team Foundation Server Proxy
 is installed in addition to optional components such as SharePoint
 Products and SQL Server Reporting Services. There are several different
-code bases, and these code bases each have their own team project
+code bases, and these code bases each have their own project
 collection for the projects that use them. The databases for team
 project collections are stored on several different servers that are
 running SQL Server.
@@ -65,8 +65,8 @@ files that it downloads on the proxy server.
 The topology in this example is also concerned about fault tolerance and
 high performance. Data tier fault tolerance is provided by taking
 advantage of the SQL Server clustering technologies. Multiple SharePoint
-Web applications are configured for use by team projects within
-collections in a SharePoint Web farm. Team project collection databases
+Web applications are configured for use by projects within
+collections in a SharePoint Web farm. Project collection databases
 are distributed across SQL Server instances for improved performance and
 ease of individual management. SQL Server Reporting Services and SQL
 Server Analysis Servers are running on separate servers for improved

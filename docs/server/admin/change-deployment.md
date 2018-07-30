@@ -19,8 +19,8 @@ After you have configured Visual Studio Team Foundation Server (TFS) and
 Microsoft Project Server to support data synchronization, you might need
 to perform additional administrative tasks when you change your
 deployment. For example, you might need to remove, re-register, or
-re-map a component before or after you move or delete a team project, a
-team project collection, or an application-tier server. Before you
+re-map a component before or after you move or delete a project, a
+project collection, or an application-tier server. Before you
 change your deployment or perform maintenance operations, you should
 consider the impact that these operations have on the synchronization
 process.
@@ -46,14 +46,14 @@ the following guidelines:
 
 -   **Delete an enterprise project plan or a team
     project**. Before you delete a mapped project plan or a mapped
-    team project, you must first unmap all project plans that are mapped
-    to the team project. For more information, see [Manage the
+    project, you must first unmap all project plans that are mapped
+    to the project. For more information, see [Manage the
     association of enterprise projects to team
     projects](https://msdn.microsoft.com/en-us/library/gg412651(v=vs.120).aspx).
 
 -   **Delete an instance of Project Web Access or
     Project Web App (PWA)**. Before you delete an instance of PWA,
-    you must first remove all associations of team project collections
+    you must first remove all associations of project collections
     that are mapped to the instance and then unregister it. For more
     information, see [Remove a component from participating in
     data
@@ -61,7 +61,7 @@ the following guidelines:
     and [Remove an Instance of PWA from Participating in
     Synchronization](https://msdn.microsoft.com/en-us/library/gg412644(v=vs.120).aspx#removepwa).
 
--   **Delete a team project collection**. Before
+-   **Delete a project collection**. Before
     you delete a mapped collection, you should unmap it by following the
     procedure in [Remove a component from participating in data
     synchronization](https://msdn.microsoft.com/en-us/library/gg412644(v=vs.120).aspx).
@@ -96,7 +96,7 @@ To move all mapped collections to a different instance of TFS:
 
   1.  Move or split the collection.
 
-      For more information, see [Manage team project collections](manage-team-project-collections.md).
+      For more information, see [Manage project collections](manage-team-project-collections.md).
 
   2.  Grant required permissions to the service account for the second
       instance of Team Foundation Server.
@@ -129,12 +129,12 @@ To move some collections to a different instance of TFS and a different instance
 
       > [!WARNING]
       > By using the **/force** switch, you break all associations between
-      > enterprise project plans and team projects that are defined for
+      > enterprise project plans and projects that are defined for
       > the collection.
 
   2.  Move or split the collection.
 
-      For more information, see [Manage team project collections](manage-team-project-collections.md).
+      For more information, see [Manage project collections](manage-team-project-collections.md).
 
   3.  Assign all required permissions.
 
@@ -149,7 +149,7 @@ To move some collections to a different instance of TFS and a different instance
       collection that you moved to the second instance of PWA.
 
   6.  Use the **/MapPlapToTeamProject** command option to map each plan to
-      the team project that was moved to a different collection.
+      the project that was moved to a different collection.
 
 For more information, see the following topics:
 
@@ -162,7 +162,7 @@ For more information, see the following topics:
 -   [Register an instance of PWA to TFS](https://msdn.microsoft.com/en-us/library/gg412639(v=vs.120).aspx)
     
 
--   [Map a team project collection to an instance of PWA](https://msdn.microsoft.com/en-us/library/gg412654(v=vs.120).aspx)
+-   [Map a project collection to an instance of PWA](https://msdn.microsoft.com/en-us/library/gg412654(v=vs.120).aspx)
     
 
 -   [Manage mappings between an enterprise project and a team

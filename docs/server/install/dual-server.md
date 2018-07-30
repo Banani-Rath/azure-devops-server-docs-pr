@@ -105,6 +105,6 @@ If you select the *New Deployment - Advanced* scenario, you will additionally ne
 - Whether to enable SSH, along with the port it should listen on. The default value used in the Basic scenario is to configure SSH on port 22.
 - The location of the file cache used for frequently accessed TFS resources. The default value used in the Basic scenario is the path `TfsData\ApplicationTier\_fileCache` on the local drive which has the most free space.
 - Whether to configure Reporting features and SharePoint integration. The default behavior used in the Basic scenario is to not configure these features. Note that these options are not available on client  operating systems.
-- Whether to create a team project collection in which to store your projects, along with the name of that collection. The default behavior in the Basic scenario is to create a project collection named `DefaultCollection`.
+- Whether to create a project collection in which to store your projects, along with the name of that collection. The default behavior in the Basic scenario is to create a project collection named `DefaultCollection`.
 
 In both cases, the wizard will run readiness checks to validate your environment and your setting selections. If all goes well, the wizard will then let you configure your deployment. If there are errors, you will need to fix each of them and re-run the readiness checks before you can continue.

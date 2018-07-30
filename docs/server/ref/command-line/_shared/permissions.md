@@ -32,8 +32,8 @@ information, see [Permission reference for Team Foundation Server](/vsts/securit
 
 | Option | Description |
 | --- | --- |
-| **Collection**:*collectionUrl* | Required. The URL of the team project collection on the application tier of Team Foundation Server that contains the team project. For example, ```/collection:http://abc:8080/TFS/DefaultCollection```.  |
-| *objectSpec* | Optional. Specifies the target object such as a team project or library share to which the permissions are applied. For information about how to specify objects, see objectSpec below. |
+| **Collection**:*collectionUrl* | Required. The URL of the project collection on the application tier of Team Foundation Server that contains the project. For example, ```/collection:http://abc:8080/TFS/DefaultCollection```.  |
+| *objectSpec* | Optional. Specifies the target object such as a project or library share to which the permissions are applied. For information about how to specify objects, see objectSpec below. |
 | **User**: *userName1[,userName2][,...]* | Optional. Specifies one or more users to which the permissions are applied. Use commas to separate multiple user names. |
 | **Group**: *groupName1[,groupName2][,...]* | Optional. Specifies one or more groups to which the permissions are applied. Use commas to separate multiple group names. |
 | **Allow**: {* &#124; *perm1*[,*perm2*][,...] } | Optional. Enables the specified permissions for the specified users or groups. Use an asterisk (*) to specify all permissions. To specify an individual permission, use the identifiers in the **Name at command line** column of the table in the Lab Management Permissions section of [Permission reference for Team Foundation Server](/vsts/security/permissions). Use commas to separate multiple permissions. | 
@@ -64,15 +64,15 @@ permissions** command.
 
 | To set permissions on | Use these options |
 | --- | --- |
-| A specific host group in a team project collection | **/TeamProjectCollectionHostGroup**: *teamProjectCollectionHostGroupName* |
-| A specific library share in a team project collection | **/TeamProjectCollectionLibraryShare**: *teamProjectCollectionLibraryShareName* |
-| All group hosts in a team project | **/TeamProject**: *projectName* **/TeamProjectHostGroup**: * |
-| A group host in a team project | **/TeamProject**: *projectName* **/TeamProjectHostGroup**:*teamProjectHostGroupName* |
-| A lab environment in a host group for a team project | **/TeamProject**: *projectName*  **/TeamProjectHostGroup**: *teamProjectHostGroupName* **/LabEnvironment**:*labEnvironmentName* |
-| All library shares in a team project | **/TeamProject**: *projectName* **/TeamProjectLibraryShare**: * |
-| A library share in a team project | **/TeamProject**: *projectName* **/TeamProjectLibraryShare**:*teamProjectLibraryShareName* |
-| A lab template in a library share of a team project | **/TeamProject**: *projectName*  **/TeamProjectLibraryShare**: *teamProjectLibraryShareName*  **/LabTemplate**: *labTemplateName* |
-| A lab environment in a library share of a team project | **/TeamProject**: *projectName*  **/TeamProjectLibraryShare**: *teamProjectLibraryShareName*  **/LabEnvironment**: *labEnvironmentName* |
+| A specific host group in a project collection | **/TeamProjectCollectionHostGroup**: *teamProjectCollectionHostGroupName* |
+| A specific library share in a project collection | **/TeamProjectCollectionLibraryShare**: *teamProjectCollectionLibraryShareName* |
+| All group hosts in a project | **/TeamProject**: *projectName* **/TeamProjectHostGroup**: * |
+| A group host in a project | **/TeamProject**: *projectName* **/TeamProjectHostGroup**:*teamProjectHostGroupName* |
+| A lab environment in a host group for a project | **/TeamProject**: *projectName*  **/TeamProjectHostGroup**: *teamProjectHostGroupName* **/LabEnvironment**:*labEnvironmentName* |
+| All library shares in a project | **/TeamProject**: *projectName* **/TeamProjectLibraryShare**: * |
+| A library share in a project | **/TeamProject**: *projectName* **/TeamProjectLibraryShare**:*teamProjectLibraryShareName* |
+| A lab template in a library share of a project | **/TeamProject**: *projectName*  **/TeamProjectLibraryShare**: *teamProjectLibraryShareName*  **/LabTemplate**: *labTemplateName* |
+| A lab environment in a library share of a project | **/TeamProject**: *projectName*  **/TeamProjectLibraryShare**: *teamProjectLibraryShareName*  **/LabEnvironment**: *labEnvironmentName* |
 
 
 #### URL
@@ -93,13 +93,13 @@ The following table lists the valid keywords for the
 
 | Object Type | Description |
 | --- | --- |
-| **TeamProjectCollectionHostGroup**   | A host group of a team project collection |
-| **TeamProjectCollectionLibraryShare** | A library share of a team project collection |
-| **TeamProject** | A team project |
-| **TeamProjectHostGroup** | A host group of a team project |
-| **TeamProjectLibraryShare** | A library share of a team project |
-| **LabTemplate** | A virtual machine or template in a team project library share |
-| **LabEnvironment** | An environment that is deployed on a team project host group or stored in a team project library share. |
+| **TeamProjectCollectionHostGroup**   | A host group of a project collection |
+| **TeamProjectCollectionLibraryShare** | A library share of a project collection |
+| **TeamProject** | A project |
+| **TeamProjectHostGroup** | A host group of a project |
+| **TeamProjectLibraryShare** | A library share of a project |
+| **LabTemplate** | A virtual machine or template in a project library share |
+| **LabEnvironment** | An environment that is deployed on a project host group or stored in a project library share. |
 
 
 ### Permissions

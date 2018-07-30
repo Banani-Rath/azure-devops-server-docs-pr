@@ -82,7 +82,7 @@ To modify or delete access from Team Foundation Server to a SharePoint web appli
 
         > [!NOTE]
         > Any changes that you make to the access settings for the web application
-        > might have a significant impact on the team projects and team project
+        > might have a significant impact on the projects and project
         > collections that use this SharePoint web application. On the 
         > **Dependents** tab, you can review the list of
         > collections and projects that use this web application. You should
@@ -97,10 +97,10 @@ To modify or delete access from Team Foundation Server to a SharePoint web appli
 
         > [!IMPORTANT]
         > When you remove a web application, you will have a significant impact on
-        > any team projects and team project collections that use this SharePoint
+        > any projects and project collections that use this SharePoint
         > web application. If you remove access for a SharePoint web application,
-        > any team project or team project collection that uses this web
-        > application will lose whatever SharePoint libraries or team project
+        > any project or project collection that uses this web
+        > application will lose whatever SharePoint libraries or project
         > portals that were hosted on that web application. Before you remove a
         > web application, you should make sure that you understand what projects
         > and collections will be affected. To review the list of collections and

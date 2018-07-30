@@ -15,7 +15,7 @@ ms.technology: tfs-admin
 
 **TFS 2017** | **TFS 2015** | **TFS 2013**
 
-You can force a rebuild of the cache on each client computer the next time it connects to a team project collection by using the **witadmin rebuildcache** command. 
+You can force a rebuild of the cache on each client computer the next time it connects to a project collection by using the **witadmin rebuildcache** command. 
 
 To prevent workspace errors from occurring during version control or build operations in Team Foundation, the data cache on client computers must be updated after certain maintenance operations. After you move, restore, rename, or fail over a data-tier or application-tier server, you must refresh the cache for tracking work items and users must refresh the version control cache on client computers. 
 
@@ -42,13 +42,13 @@ On a 32-bit edition of Windows, replace ```%programfiles(x86)%``` with ```%progr
 
 | Parameter | Description |
 | --- | --- |
-| **/collection:** *CollectionURL* | Specifies the URI of the team project collection or Visual Studio Team Services (VSTS) account. For example: </br> **On-premises TFS format:** ```http://ServerName:Port/VirtualDirectoryName/CollectionName``` </br> If no virtual directory is used, then the format for the URI is the following: ```http://ServerName:Port/CollectionName```. </br> **VSTS format:** http://AccountName.visualstudio.com.DefaultCollection |
+| **/collection:** *CollectionURL* | Specifies the URI of the project collection or Visual Studio Team Services (VSTS) account. For example: </br> **On-premises TFS format:** ```http://ServerName:Port/VirtualDirectoryName/CollectionName``` </br> If no virtual directory is used, then the format for the URI is the following: ```http://ServerName:Port/CollectionName```. </br> **VSTS format:** http://AccountName.visualstudio.com.DefaultCollection |
 | **/noprompt** | Disables the prompt for confirmation. |
 | **/?** or **help** | Displays help about the command in the Command Prompt window. |
 
 **Remarks:**
 
-The **witadmin rebuildcache** command invalidates cached data on all clients for a specified team project collection. This causes the cache for each client to be refreshed the next time the client connects to the project collection. 
+The **witadmin rebuildcache** command invalidates cached data on all clients for a specified project collection. This causes the cache for each client to be refreshed the next time the client connects to the project collection. 
 
 **Example:**
 

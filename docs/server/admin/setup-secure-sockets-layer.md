@@ -393,7 +393,7 @@ To configure Team Foundation Build for SSL connections, you must configure the b
 
     The **Build Service Properties** dialog box opens.
 
-4.  In **Communications**, make sure that the URL for the team project collection is using the correct HTTPS address and full server name.
+4.  In **Communications**, make sure that the URL for the project collection is using the correct HTTPS address and full server name.
 
 5.  In **Local Build Service Endpoint (incoming)**, choose **Change**.
 
@@ -540,7 +540,7 @@ On every client computer from which users access Team Foundation, you must insta
 
 -   In Visual Studio, connect to Team Foundation Server by using the new HTTPS URL.
 
-    For more information, see [Connect to team projects in Team Foundation Server](/vsts/user-guide/connect-team-projects).
+    For more information, see [Connect to projects in Team Foundation Server](/vsts/user-guide/connect-team-projects).
 
 <a name="config-git"></a>
 ## Configuring Git

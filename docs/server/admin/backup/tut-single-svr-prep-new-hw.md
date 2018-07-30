@@ -111,7 +111,7 @@ After you acquire a server that meets the requirements mentioned above and give 
 <a name="installing-sharept-new-svr"></a>
 ## Installing SharePoint Foundation on the new server
 
-Unlike a new installation of Team Foundation Server, you cannot use the installation wizard for TFS to install SharePoint Foundation for you. If you want to be able to restore the team project portals and other information used in the SharePoint Foundation portion of your deployment, you must first install SharePoint Foundation manually, and then restore the farm.
+Unlike a new installation of Team Foundation Server, you cannot use the installation wizard for TFS to install SharePoint Foundation for you. If you want to be able to restore the project portals and other information used in the SharePoint Foundation portion of your deployment, you must first install SharePoint Foundation manually, and then restore the farm.
 
 ## Use SharePoint Tools to install SharePoint Foundation
 

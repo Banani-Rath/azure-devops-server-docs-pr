@@ -19,7 +19,7 @@ Before you can use the Enterprise edition of either Microsoft Office
 SharePoint Server 2007 or Microsoft SharePoint Server 2010, you must
 configure it to work with your deployment of Team Foundation Server. If
 you do not configure the settings that this topic describes, the
-reports and dashboards in team project portals might not have all the
+reports and dashboards in project portals might not have all the
 functionality that you expect or might not function correctly.
 
 **Required Permissions**
@@ -185,7 +185,7 @@ you must perform the procedures in this section.
 
 Team Foundation Server requires certain services to run in Microsoft
 Office SharePoint Server 2007 for reports and dashboards to appear
-correctly in team project portals.
+correctly in project portals.
 
 To configure services in Office SharePoint Server 2007:
 

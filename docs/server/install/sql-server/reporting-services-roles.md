@@ -30,7 +30,7 @@ The following predefined roles are suggested for use with Team Foundation Server
 For detailed information about pre-defined roles in Reporting Services, see the following topic on the Microsoft Web site: [Using Predefined Roles](http://go.microsoft.com/fwlink/?LinkId=117113).
 
 > [!IMPORTANT]
-> You should restrict membership in Reporting Services to only those users who need the specific level of access and permissions granted by membership in that predefined role. Add a user or group to the predefined role that has the minimum permissions required to complete the user's or group's role within a team project. For example, if a user only needs to view the project schedule, you should add the user to the Browser role but not to the Content Manager role.
+> You should restrict membership in Reporting Services to only those users who need the specific level of access and permissions granted by membership in that predefined role. Add a user or group to the predefined role that has the minimum permissions required to complete the user's or group's role within a project. For example, if a user only needs to view the project schedule, you should add the user to the Browser role but not to the Content Manager role.
 
 ## System Administrator
 
@@ -38,14 +38,14 @@ The System Administrator role includes permissions that are useful for a report 
 
 ## Team Foundation Content Manager
 
-Make sure to [add your administrators to the Team Foundation Content Managers group](/vsts/report/admin/grant-permissions-to-reports) on the server that hosts SQL Server Reporting Services. Otherwise they might have problems, such as being blocked by a TF218027 error when trying to create a team project.
+Make sure to [add your administrators to the Team Foundation Content Managers group](/vsts/report/admin/grant-permissions-to-reports) on the server that hosts SQL Server Reporting Services. Otherwise they might have problems, such as being blocked by a TF218027 error when trying to create a project.
 
-Unlike the other roles described in this topic, the Team Foundation Content Manager role is not a default role in SQL Server. The role is created specifically for integration between Team Foundation Server and SQL Server Reporting Services when Team Foundation Server is installed. Its structure and permissions are similar to the Content Manager role that is native to SQL Server. The Team Foundation Content Manager role includes permissions that are useful for users who manage reports and Web content but that do not necessarily write reports or manage a Web server or instance of SQL Server. A content manager deploys reports, manages report models and data source connections, and decides how to use reports. The Team Foundation Content Manager role provides the typical range of permissions required by users who belong to the Project Administrators group in a team project, in addition to users who belong to the Project Collection Administrators group. You should also add members of the Team Foundation Administrators group to this role.
+Unlike the other roles described in this topic, the Team Foundation Content Manager role is not a default role in SQL Server. The role is created specifically for integration between Team Foundation Server and SQL Server Reporting Services when Team Foundation Server is installed. Its structure and permissions are similar to the Content Manager role that is native to SQL Server. The Team Foundation Content Manager role includes permissions that are useful for users who manage reports and Web content but that do not necessarily write reports or manage a Web server or instance of SQL Server. A content manager deploys reports, manages report models and data source connections, and decides how to use reports. The Team Foundation Content Manager role provides the typical range of permissions required by users who belong to the Project Administrators group in a project, in addition to users who belong to the Project Collection Administrators group. You should also add members of the Team Foundation Administrators group to this role.
 
 
 ## Browser
 
-The Browser role includes permissions that are useful for users who view reports, but do not necessarily write or manage them. This role provides basic capabilities for users who belong to either the Contributor or Reader group in a team project.
+The Browser role includes permissions that are useful for users who view reports, but do not necessarily write or manage them. This role provides basic capabilities for users who belong to either the Contributor or Reader group in a project.
 
 ## See Also
 

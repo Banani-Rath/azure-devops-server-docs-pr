@@ -21,7 +21,7 @@ Managing users in TFS is much easier if you create Windows or Active Directory g
 
 Team Foundation Server, SharePoint Products, and SQL Server Reporting Services all maintain their own information about groups, users, and permissions. To make managing users and permissions across these programs simpler, you can create groups of users with similar access requirements in the deployment, give those groups appropriate access in the different software programs, and then just add or remove users from a group as needed. This is much easier than maintaining individual users or groups of users separately in three separate programs.
 
-If your server is in an Active Directory domain, one option is to create specific Active Directory groups to manage your users, like a group of developers and testers for all projects in the team project collection, or a group of users who can create and administer projects in the collection. Similarly, you can create an Active Directory account for services that can't be configured to use the Network Service system account as the service account. To do so, create an Active Directory account for SharePoint Foundation and as the read-access data source account for reports in SQL Server Reporting Services.
+If your server is in an Active Directory domain, one option is to create specific Active Directory groups to manage your users, like a group of developers and testers for all projects in the project collection, or a group of users who can create and administer projects in the collection. Similarly, you can create an Active Directory account for services that can't be configured to use the Network Service system account as the service account. To do so, create an Active Directory account for SharePoint Foundation and as the read-access data source account for reports in SQL Server Reporting Services.
 
 > [!IMPORTANT]
 > If you decide to use Active Directory groups in TFS, consider creating specific ones whose purpose is dedicated to user management in TFS. Using previously existing groups that were created for another purpose, particularly if they are managed by others who are not familiar with TFS, can lead to unexpected user consequences when membership changes to support some other function.
@@ -32,7 +32,7 @@ If your server is in an Active Directory domain but you don't have permissions t
 
 For example, after reviewing business requirements for the new deployment and the security requirements with the project managers, you might decide to create three groups to manage the majority of users in the deployment:
 
--   A general group for developers and testers who will participate fully in all projects in the default team project collection. This group will contain the majority of users. You might name this group TFS\_ProjectContributors.
+-   A general group for developers and testers who will participate fully in all projects in the default project collection. This group will contain the majority of users. You might name this group TFS\_ProjectContributors.
 
 -   A small group of project administrators who will have permissions to create and manage projects in the collection. You might name this group TFS\_ProjectAdmins.
 
@@ -58,11 +58,11 @@ Later on, as the deployment expands, you might decide to create other groups.
 
 ## Try this next
 > [!div class="nextstepaction"]
-> [Add users to team projects](/vsts/security/add-users-team-project) 
+> [Add users to projects](/vsts/security/add-users-team-project) 
 
 ## Q & A
 
 **Q: Can I use groups to restrict access to projects or features in TFS?**
 
-**A:** Yes, you can. You can create specific groups for [granting or restricting access to select features, functions, and team projects](/vsts/security/restrict-access), for [managing access levels](/vsts/security/change-access-levels), and other purposes.
+**A:** Yes, you can. You can create specific groups for [granting or restricting access to select features, functions, and projects](/vsts/security/restrict-access), for [managing access levels](/vsts/security/change-access-levels), and other purposes.
 

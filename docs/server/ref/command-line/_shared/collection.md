@@ -2,10 +2,10 @@
 ms.topic: include
 ---
 
-You can use the **Collection** command to attach, detach, or delete a team project collection from a deployment of TFS.
+You can use the **Collection** command to attach, detach, or delete a project collection from a deployment of TFS.
 You can also use the **Collection** command to duplicate the database of an existing collection, rename it, and attach it to the deployment.
 This process is sometimes referred to as cloning a collection.
-However, you cannot use the **Collection** command to create a team project collection.
+However, you cannot use the **Collection** command to create a project collection.
 
 	TFSConfig Collection {/attach | /detach | /delete} [/collectionName:CollectionName]
 		[/collectionDB:ServerName;DatabaseName] [/clone]
@@ -51,7 +51,7 @@ However, you cannot use the **Collection** command to create a team project coll
 		<tr>
 			<td><strong>/CollectionName:</strong> CollectionName</td>
 			<td>
-				Specifies the name of the team project collection. If the name of the collection contains spaces, you must enclose the name in quotation marks (for example, &quot;My Collection&quot;).
+				Specifies the name of the project collection. If the name of the collection contains spaces, you must enclose the name in quotation marks (for example, &quot;My Collection&quot;).
 				Required if either <strong>/detach</strong> or <strong>/delete</strong> is used.
 				If you use this option with <strong>/detach</strong> or <strong>/delete</strong>, it specifies the collection that will be detached or deleted.
 				If you use this option with <strong>/attach</strong>, it specifies a new name for the collection.
@@ -79,7 +79,7 @@ However, you cannot use the **Collection** command to create a team project coll
 			<td><strong>/clone</strong></td>
 			<td>
 				If you specify this option, the original collection database will be attached as a clone in SQL Server,
-				and this database will be attached to TFS. This option is primarily used as part of splitting a team project collection.
+				and this database will be attached to TFS. This option is primarily used as part of splitting a project collection.
 			</td>
 		</tr>
 	</tbody>
@@ -93,23 +93,23 @@ For more information, see [Permission reference for Team Foundation Server](/vst
 
 ### Remarks
 
-To manage collections interactively or to create a collection, you can use the Team Project Collections node in the administration console for Team Foundation.
-See [Manage team project collections](https://msdn.microsoft.com/library/80848156-fa61-4f13-aea7-2bc47c59d9bf).
+To manage collections interactively or to create a collection, you can use the Project Collections node in the administration console for Team Foundation.
+See [Manage project collections](https://msdn.microsoft.com/library/80848156-fa61-4f13-aea7-2bc47c59d9bf).
 
 ### Examples
 
-The following example shows how to permanently remove the "Contoso Summer Intern Projects" team project collection from a deployment of Team Foundation Server.
+The following example shows how to permanently remove the "Contoso Summer Intern Projects" project collection from a deployment of Team Foundation Server.
 
     TFSConfig Collection /delete /CollectionName:"Contoso Summer Intern Projects"
 
     TFSConfig - Team Foundation Server Configuration Tool
     Copyright � Microsoft Corporation. All rights reserved.
-    Deleting a team project collection is an irreversible operation. A deleted collection cannot be reattached to the same or another Team Foundation Server. Are you sure you want to delete 'Contoso Summer Intern Projects'? (Yes/No)
+    Deleting a project collection is an irreversible operation. A deleted collection cannot be reattached to the same or another Team Foundation Server. Are you sure you want to delete 'Contoso Summer Intern Projects'? (Yes/No)
     Yes
     Found Collection 'Contoso Summer Intern Projects' Deleting...
     The delete of collection 'Contoso Summer Intern Projects' succeeded.
 
-The following example shows how to duplicate the "Contoso Summer Interns Projects" team project collection, name it "Contoso Winter Interns Projects," and attach the duplicate collection to the deployment of Team Foundation Server.
+The following example shows how to duplicate the "Contoso Summer Interns Projects" project collection, name it "Contoso Winter Interns Projects," and attach the duplicate collection to the deployment of Team Foundation Server.
 
     TFSConfig Collection /attach /collectiondb:"ContosoMain;TFS_Contoso Summer Interns Projects"
 		/CollectionName:"Contoso Winter Intern Projects" /clone

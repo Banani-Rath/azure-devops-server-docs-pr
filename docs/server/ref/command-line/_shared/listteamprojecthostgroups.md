@@ -2,16 +2,16 @@
 ms.topic: include
 ---
 
-Use the **ListTeamProjectHostGroups** command to list the *host groups* that are assigned to a team project
+Use the **ListTeamProjectHostGroups** command to list the *host groups* that are assigned to a project
 and that you have read access to.
 
 **Required Permissions:**
 
 To use the ListTeamProjectHostGroups command, you must have **View Lab
-Resources** permissions at the Team Project level. By default, members
-of the Team Foundation Server Administrators, Team Project Collection
-Administrators, Team Project Administrators, Team Project Contributors,
-and Team Project Readers groups have this permission. For more
+Resources** permissions at the Project level. By default, members
+of the Team Foundation Server Administrators, Project Collection
+Administrators, Project Administrators, Project Contributors,
+and Project Readers groups have this permission. For more
 information, see [Permission reference for Team Foundation Server](/vsts/security/permissions).
 
 
@@ -24,8 +24,8 @@ information, see [Permission reference for Team Foundation Server](/vsts/securit
 
 | Option | Description |
 | --- | --- |
-| **Collection**:*collectionUrl* | Required. The URL of the team project collection on the application tier of Team Foundation Server that contains the team project. For example, ```/collection:http://abc:8080/TFS/DefaultCollection```.  |
-| **TeamProject:**  *teamProjectName* | Required. The name of the team project. Use quotation marks if there are spaces in the name. |
+| **Collection**:*collectionUrl* | Required. The URL of the project collection on the application tier of Team Foundation Server that contains the project. For example, ```/collection:http://abc:8080/TFS/DefaultCollection```.  |
+| **TeamProject:**  *teamProjectName* | Required. The name of the project. Use quotation marks if there are spaces in the name. |
 
 ### Example
 

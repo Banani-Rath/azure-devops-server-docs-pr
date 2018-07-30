@@ -1,6 +1,6 @@
 ---
-title: Delete a team project using TFSDeleteProject
-description: Delete a team project in TFS from the command-line using TFSDeleteProject
+title: Delete a project using TFSDeleteProject
+description: Delete a project in TFS from the command-line using TFSDeleteProject
 ms.assetid: dc7efa4d-9c70-4b61-a910-8f1e66678866
 ms.prod: devops-server
 ms.technology: tfs-admin
@@ -11,17 +11,17 @@ ms.topic: conceptual
 ms.date: 08/04/2016
 ---
 
-# Delete a team project with TFSDeleteProject
+# Delete a project with TFSDeleteProject
 
 **TFS 2018** | **TFS 2017** | **TFS 2015** | **TFS 2013**
 
-You can remove a team project from Team Foundation Server(TFS) when the project is no longer required by using TFSDeleteProject.
-In addition, if there are components that remain undeleted after an unsuccessful team project creation, you can use TFSDeleteProject to remove them. 
+You can remove a project from Team Foundation Server(TFS) when the project is no longer required by using TFSDeleteProject.
+In addition, if there are components that remain undeleted after an unsuccessful project creation, you can use TFSDeleteProject to remove them. 
 
-To delete a team project from VSTS or from TFS using the admin console, see [Delete a team project](/vsts/accounts/delete-team-project). 
+To delete a project from VSTS or from TFS using the admin console, see [Delete a project](/vsts/accounts/delete-team-project). 
 
 > [!WARNING]
-> TFSDeleteProject permanently destroys the team project, after which it cannot be recovered. You should backup all important project data before using TFSDeleteProject. 
+> TFSDeleteProject permanently destroys the project, after which it cannot be recovered. You should backup all important project data before using TFSDeleteProject. 
 
 To access the TFSDeleteProject command-line tool, open a Command Prompt window where either Visual Studio or Team Explorer is installed and enter: 
 
@@ -76,7 +76,7 @@ For more information, see Set administrator permissions for Team Foundation Serv
     </p>
     </td>
     <td>
-    <p>Optional. Specifies to not delete the SharePoint site that is associated with the team project. Specify this option to maintain the existing site so that other team projects can continue using it.</p>
+    <p>Optional. Specifies to not delete the SharePoint site that is associated with the project. Specify this option to maintain the existing site so that other projects can continue using it.</p>
     </td>
 </tr>
 <tr>
@@ -85,7 +85,7 @@ For more information, see Set administrator permissions for Team Foundation Serv
         <strong>/collection</strong>:<span class="parameter">URL</span></p>
     </td>
     <td>
-    <p>Required. Specifies the URI of the team project collection. You must use the following format for the URI: <strong>http</strong>://<span class="parameter">ServerName:Port/VirtualDirectoryName/CollectionName</span></p>
+    <p>Required. Specifies the URI of the project collection. You must use the following format for the URI: <strong>http</strong>://<span class="parameter">ServerName:Port/VirtualDirectoryName/CollectionName</span></p>
     <p>If you do not specify a virtual directory, you must use the following format for the URI:</p>
     <p>
         <strong>http</strong>://<span class="parameter">ServerName:Port/CollectionName</span>. </p>
@@ -106,11 +106,11 @@ For more information, see Set administrator permissions for Team Foundation Serv
  
 ## Remarks  
  
-When you create a team project, Team Foundation Server creates data objects on the server that hosts Team Foundation Server,
+When you create a project, Team Foundation Server creates data objects on the server that hosts Team Foundation Server,
 and may create data objects on the server that hosts SharePoint Products, and the server that hosts SQL Server Reporting Services.
-When you remove a team project, the reports are automatically removed from SQL Server Reporting Services.
+When you remove a project, the reports are automatically removed from SQL Server Reporting Services.
 
-When you remove a team project, you can choose whether or not to remove the objects that were created to support the SharePoint site.
+When you remove a project, you can choose whether or not to remove the objects that were created to support the SharePoint site.
 However, an error can prevent Team Foundation Server from creating or deleting all the objects. To troubleshoot these problems,
 the following sections provide background information, links to other resources, and specific steps that help you determine the cause of the problem,
 fix the problem, and when necessary delete data objects that remain after running TFSDeleteProject. 
@@ -121,7 +121,7 @@ When you use the TFSDeleteProject command-line tool, it first deletes project da
 
 ### Phase 1: TFSDeleteProject Deletes Project Data  
  
-In the first phase, TFSDeleteProject automatically performs the following steps to remove team project data: 
+In the first phase, TFSDeleteProject automatically performs the following steps to remove project data: 
 
 0. TFSDeleteProject creates an inventory of all the components that are candidates for deletion.
 This includes components that integrate with Test Manager, Team Foundation Build, and Team Foundation version control. 
@@ -137,8 +137,8 @@ The information includes all version control branches in the specified project, 
 	When the specified project is deleted, the branch project becomes an orphan. 
 
 0. TFSDeleteProject immediately deletes build data, including information and core data, build definitions,
-build agents, and test results associated with the team project. The tool does not delete build drop locations.
-You do not need to delete the build drop location of an old team project before creating a team project that uses the same build drop location.
+build agents, and test results associated with the project. The tool does not delete build drop locations.
+You do not need to delete the build drop location of an old project before creating a project that uses the same build drop location.
 
 	If the specified project contains a large amount of build data, the deletion might not finish within the timeout period.
 	To work around this problem, see Increase the Time-Out Period, and then run TFSDeleteProject again. 
@@ -162,37 +162,37 @@ This step occurs only if the project owns the site and site deletion is not excl
 (Consider that multiple projects may point to a single site, but only one of them can be the owner where reports/dashboards are by default using this project).
 
 	> [!NOTE]
-	> Prior to deleting a team project, you can confirm that Reporting Services and SharePoint Products
+	> Prior to deleting a project, you can confirm that Reporting Services and SharePoint Products
 	> are using the correct project URLs by verifying the portal settings.
-	> For more information, see [How to: Add a Team Project Portal](https://msdn.microsoft.com/library/dd386320.aspx).
+	> For more information, see [How to: Add a Project Portal](https://msdn.microsoft.com/library/dd386320.aspx).
 
 If TFSDeleteProject successfully deletes all of the above data elements, it returns the message Done.
-To verify this result, see Verify Team Project Components Are Deleted.
+To verify this result, see Verify Project Components Are Deleted.
 
 If one or more components are not removed, you can rerun TFSProjectDelete by using the /force option
 to continue the deletion process even if it is unable to delete all data elements.
 With this option TFSDeleteProject, skips a component that it cannot delete, returns an error message,
-deletes the next component, and leaves the team project metadata and security settings intact. 
+deletes the next component, and leaves the project metadata and security settings intact. 
 
 ## Data That May Remain Undeleted
 
 The following data might remain in the deployment after TFSDeleteProject successfully completes:
 
-- **Team project data in the cube**.
-Team project data remains in the cube until the cube is rebuilt, at which time the warehouse controller service
+- **Project data in the cube**.
+Project data remains in the cube until the cube is rebuilt, at which time the warehouse controller service
 removes all of the historic build data that has been deleted from the Team Foundation databases. 
 - **Build drop files and folders**.
 Build binaries, build log files, and log files containing test results are published during the build process.
 The locations for these files are not deleted. If you want to remove these files, you must remove them manually. 
 - **Work item tracking metadata that is shared**.
-TFSDeleteProject does not delete any metadata for work item tracking that is shared between team projects.
+TFSDeleteProject does not delete any metadata for work item tracking that is shared between projects.
 - **Version control shelvesets containing shared code**.
-Version control shelvesets are not deleted if there is code in the shelveset from multiple team projects. 
+Version control shelvesets are not deleted if there is code in the shelveset from multiple projects. 
 
 
 ## Verify Project Deletion  
 
-You can verify the success of a project deletion by confirming that the team project node no longer appears
+You can verify the success of a project deletion by confirming that the project node no longer appears
 in Team Explorer and that its project portal Web site and reports folders no longer exist. 
 
 0. Open Team Explorer and verify that the project does not appear as a project node. 
@@ -206,17 +206,17 @@ in Team Explorer and that its project portal Web site and reports folders no lon
 
 0. In Report Manager, choose Show Details.
 
-0. Verify that the folder for the deleted team project no longer appears.
-Choose the root folder TfsReports, and then choose the folder named for the team project collection.
+0. Verify that the folder for the deleted project no longer appears.
+Choose the root folder TfsReports, and then choose the folder named for the project collection.
 There should no longer be a folder with the name of the deleted project.
 
 0. If either the reports or the Web site remain, see the next procedure. 
 
 ## Remove Remaining Components After Partial Project Deletion  
 
-If the project portal Web site and reports folder remain after you delete a team project, remove the site and folder manually.
+If the project portal Web site and reports folder remain after you delete a project, remove the site and folder manually.
 
-0. Log on to the server that hosts Reporting Services for the team project that you deleted. 
+0. Log on to the server that hosts Reporting Services for the project that you deleted. 
 
 0. Open Internet Explorer, and in the Address box type the URL of the Reporting Services Web site using one of the following URL formats:
 
@@ -225,15 +225,15 @@ If the project portal Web site and reports folder remain after you delete a team
 
 0. In Report Manager, choose Show Details.
 
-0. Choose the root folder TfsReports, and then choose the folder named for the team project collection. 
+0. Choose the root folder TfsReports, and then choose the folder named for the project collection. 
 
-0. Select the check box for the team project that was deleted.
+0. Select the check box for the project that was deleted.
 
 0. Choose Delete. 
 
-0. Choose OK to confirm that you want to delete the reports folder for the team project.
+0. Choose OK to confirm that you want to delete the reports folder for the project.
 
-0. To remove the project portal Web site of a deleted team project, see the following page on the Microsoft Web site:
+0. To remove the project portal Web site of a deleted project, see the following page on the Microsoft Web site:
 [How to: Create, Edit, and Delete Windows SharePoint Services Sites](http://go.microsoft.com/fwlink/?LinkId=131660).
 
 
@@ -241,7 +241,7 @@ If the project portal Web site and reports folder remain after you delete a team
 
 By default, each Web service call that the TFSDeleteProject command issues to delete a component must complete within 10 minutes.
 If there are six calls, then the process could take up to an hour.
-If you want to delete a team project that is associated with a large amount of data, you can temporarily increase this time-out period. 
+If you want to delete a project that is associated with a large amount of data, you can temporarily increase this time-out period. 
 
 > [!NOTE]
 > When you increase the time-out period, the change affects all Web service calls.
@@ -288,7 +288,7 @@ To complete these procedures, you must be a Windows Administrator on the applica
 
 ## Example
 
-The following command removes all components associated with the team project StoreFront
+The following command removes all components associated with the project StoreFront
 on the Team Foundation Server AdventureWorks1 server in project collection Collection1 and from Team Explorer.
 
 	TFSDeleteProject /force /collection:http://AdventureWorks1:8080/tfs/Collection1 StoreFront

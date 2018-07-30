@@ -39,13 +39,13 @@ You can restore data from a backup to the same server and instance of SQL Server
 If you want to restore data to another server or another instance of SQL Server, see [Restore a deployment to new hardware](tut-single-svr-home.md). 
 
 > **Note:**  
-> If you use SharePoint Products in your deployment, when you restore data, you do not have to restore the websites that are automatically generated based on the data for each team project. The data for the team project portals is contained in the databases that you restore.
+> If you use SharePoint Products in your deployment, when you restore data, you do not have to restore the websites that are automatically generated based on the data for each project. The data for the project portals is contained in the databases that you restore.
 
 The steps to restore data to the same server or servers vary based on how Team Foundation Server is installed and configured. For simplicity, the procedures in this topic are structured for a moderately complex deployment of Team Foundation Server, as the following illustration shows:
 
 ![Example moderate topology with databases](../_img/ic372331.png)
 
-If your topology does not exactly match this example, you might have to adjust the steps in this procedure to follow it successfully. For example, if you have a deployment where all components are installed on a single physical server, you would perform all procedures on that server. If databases for team project collections are deployed on more than one server, you must perform the steps to restore each collection database on the appropriate server. For more information about which components might be deployed on each server, see the following topics:
+If your topology does not exactly match this example, you might have to adjust the steps in this procedure to follow it successfully. For example, if you have a deployment where all components are installed on a single physical server, you would perform all procedures on that server. If databases for project collections are deployed on more than one server, you must perform the steps to restore each collection database on the appropriate server. For more information about which components might be deployed on each server, see the following topics:
 
 -    [Understand TFS databases, deployment topologies, and backup](backup-db-architecture.md) 
 
@@ -102,7 +102,7 @@ successfully follow the procedures in this topic, but you might have to
 adjust the steps. For example, if you have a deployment where all
 components are installed on a single physical server, you would perform
 all procedures on the server that is running Team Foundation Server. If
-databases for team project collections were originally deployed on more
+databases for project collections were originally deployed on more
 than one server, you must perform the steps to restore each database on
 the server or servers that you specify. You do not have to restore the
 databases in the same configuration as before, but you must restore each

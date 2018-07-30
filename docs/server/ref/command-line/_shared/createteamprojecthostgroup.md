@@ -3,25 +3,25 @@ ms.topic: include
 ---
 
 Use the **CreateTeamProjectHostGroup** command to assign a 
-*host group* from a team project collection to an
-individual team project in the collection. Host groups specify one or
+*host group* from a project collection to an
+individual project in the collection. Host groups specify one or
 more physical machines that are the deployment targets for virtual
 environments in Visual Studio Lab Management. Host groups are created in
 System Center Virtual Machine Manager (SCVMM) and assigned to a project
 collection by Visual Studio Lab Management. Use separate
 **CreateTeamProjectHostGroup** commands to assign multiple host groups
-to a team project. 
+to a project. 
 
 > **Note:**
 > You can automatically assign a host group to all the projects in a team
-> project collection when you assign the host group to the team project
+> project collection when you assign the host group to the project
 > collection. See [TFSConfig Lab /HostGroup Commands](lab-hostgroup.md)
-> and [How to: Change the Host Groups for Your Team Project Collections](https://msdn.microsoft.com/en-us/library/dd386364(v=vs.120).aspx).
+> and [How to: Change the Host Groups for Your Project Collections](https://msdn.microsoft.com/en-us/library/dd386364(v=vs.120).aspx).
 
 **Required Permissions**
 
 To use the **CreateTeamProjectHostGroup** command, you must have the
-**Manage Lab Locations** permission at the Team Project Collection Host
+**Manage Lab Locations** permission at the Project Collection Host
 Group level. By default, the members of the Team Foundation Server
 Administrators and Project Collection Administrators groups have this
 permission. For more information, see [Permission reference for Team Foundation Server](/vsts/security/permissions).
@@ -39,11 +39,11 @@ permission. For more information, see [Permission reference for Team Foundation 
 
 | Option | Description |
 | --- | --- |
-| **Collection**:*collectionUrl* | Required. The URL of the team project collection on the application tier of Team Foundation Server that contains the team project. For example, ```/collection:http://abc:8080/TFS/DefaultCollection```.  |
-| **TeamProject:**{ * &#124; *teamProjectName*} | Required. The name of the team project. Use quotation marks if there are spaces in the name. Use an asterisk (* ) to assign the specified host group to all team projects in the collection. |
+| **Collection**:*collectionUrl* | Required. The URL of the project collection on the application tier of Team Foundation Server that contains the project. For example, ```/collection:http://abc:8080/TFS/DefaultCollection```.  |
+| **TeamProject:**{ * &#124; *teamProjectName*} | Required. The name of the project. Use quotation marks if there are spaces in the name. Use an asterisk (* ) to assign the specified host group to all projects in the collection. |
 | **TeamProjectCollectionHostGroup:**{ * &#124; *teamProjectCollectionHostGroupName*} |
-| **Name:** *teamProjectHostGroupName* | Required. The name to assign to the host group in the team project. |
-| **Description:** *teamProjectHostGroupDescription* | Optional. A description of the team project host group. |
+| **Name:** *teamProjectHostGroupName* | Required. The name to assign to the host group in the project. |
+| **Description:** *teamProjectHostGroupDescription* | Optional. A description of the project host group. |
 | **NoPrompt** | Optional. Do not prompt the user for confirmation. |
 
 
@@ -53,10 +53,10 @@ For increased readability in the example, command options are listed on
 separate lines. In a command prompt window, type all options for a
 command on the same line.
 
-In the first example, all the host groups in the team project collection
-are assigned to each team project in the collection. In the second
-example, one host group in the team project collection is assigned to a
-specific team project.
+In the first example, all the host groups in the project collection
+are assigned to each project in the collection. In the second
+example, one host group in the project collection is assigned to a
+specific project.
 
     REM First example
     TFSLabConfig CreateTeamProjectHostGroup

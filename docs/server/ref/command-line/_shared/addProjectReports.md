@@ -5,7 +5,7 @@ ms.topic: include
 <a id="add-project-reports">  </a>
 >**Command availability:** TFS 2017.1 (RC2) 
 
-You use the **AddProjectReports** command to add or overwrite reports for an existing team project.
+You use the **AddProjectReports** command to add or overwrite reports for an existing project.
 
 	TfsConfig addProjectReports
 		/collection:teamProjectCollectionUrl
@@ -23,11 +23,11 @@ You use the **AddProjectReports** command to add or overwrite reports for an exi
 	<tbody>
 		<tr>
 			<td><strong>/collection</strong></td>
-			<td>Required. URL of Team Project Collection.</td>
+			<td>Required. URL of Project Collection.</td>
 		</tr>
 		<tr>
 			<td><strong>/teamProject</strong></td>
-			<td>Required. Specifies the name of the team project.</td>
+			<td>Required. Specifies the name of the project.</td>
 		</tr>
 		<tr>
 			<td><strong>/template</strong></td>
@@ -46,18 +46,18 @@ To use the **AddProjectReports** command, you must have permissions to run **TFS
 
 ### Remarks
 
-You use the **AddProjectReports** command when your team project does not have reports or you want to update the reports defined for a process. 
+You use the **AddProjectReports** command when your project does not have reports or you want to update the reports defined for a process. 
 
 You may need to use this command when:
--   the team project was created in the TFS web portal and not from Visual Studio
--   the team project was created from Visual Studio, however reporting was not configured in TFS.
+-   the project was created in the TFS web portal and not from Visual Studio
+-   the project was created from Visual Studio, however reporting was not configured in TFS.
 
-If you would like to overwrite reports in your project with default reports because you upgraded TFS and old reports in your team project are no longer compatible, use the **/force** option. If you have customized reports, please make a backup before doing this. 
+If you would like to overwrite reports in your project with default reports because you upgraded TFS and old reports in your project are no longer compatible, use the **/force** option. If you have customized reports, please make a backup before doing this. 
 
-To learn more about adding reports to an on-premises TFS, see [Add reports to a team project](/vsts/report/admin/add-reports-to-a-team-project).
+To learn more about adding reports to an on-premises TFS, see [Add reports to a project](/vsts/report/admin/add-reports-to-a-team-project).
 
 ### Example
 
-The following example shows how to add Agile reports to MyProject team project in http://myTfsServer:8080/tfs/DefaultCollection project collection
+The following example shows how to add Agile reports to MyProject project in http://myTfsServer:8080/tfs/DefaultCollection project collection
 	
 	TFSConfig addprojectreports /collection:http://myTfsServer:8080/tfs/DefaultCollection /teamproject:MyProject /template:Agile

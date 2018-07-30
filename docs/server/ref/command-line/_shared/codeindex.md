@@ -176,7 +176,7 @@ For example, you might want to reset the index to fix CodeLens information, or t
     </p>
     </td>
     <td data-th="Description">
-    <p>Specifies the name of the team project collection on which to run the <strong>CodeIndex</strong> command. Required if you don't use <strong>/CollectionId</strong>.</p>
+    <p>Specifies the name of the project collection on which to run the <strong>CodeIndex</strong> command. Required if you don't use <strong>/CollectionId</strong>.</p>
     </td>
 </tr>
 <tr>
@@ -187,7 +187,7 @@ For example, you might want to reset the index to fix CodeLens information, or t
     </p>
     </td>
     <td data-th="Description">
-    <p>Specifies the identification number of the team project collection on which to run the <strong>CodeIndex</strong> command. Required if you don't use <strong>/CollectionName</strong>.</p>
+    <p>Specifies the identification number of the project collection on which to run the <strong>CodeIndex</strong> command. Required if you don't use <strong>/CollectionName</strong>.</p>
     </td>
 </tr>
 </table>

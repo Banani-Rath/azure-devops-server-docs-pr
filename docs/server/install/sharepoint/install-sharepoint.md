@@ -27,7 +27,7 @@ We’re going to install SharePoint after we install SQL Server, so that we can 
 
 Maybe. SharePoint is a collaboration website product that offers deep integration with Office products like Word, Outlook, and Excel. Although it’s not a TFS requirement, some teams do find its features useful. SharePoint is different from the Team Web Access site that comes with TFS. Team Web Access is a website that mirrors Visual Studio features and offers functionality for certain specialized team collaborations that relate to creating software projects. You get Team Web Access by default when you install TFS.
 
-You don’t need to add SharePoint to your initial TFS installation. You can always install TFS first, add SharePoint later, and then manually hook up each of your TFS team projects to SharePoint.
+You don’t need to add SharePoint to your initial TFS installation. You can always install TFS first, add SharePoint later, and then manually hook up each of your TFS projects to SharePoint.
 
 ## What will I need?
 

@@ -44,7 +44,7 @@ tfssecurity /a+ Namespace Token Action Identity (ALLOW | DENY)[/collection:Colle
 
 #### Required Permissions
 
-To use the **/a+** command, you must have the View collection-level information or the View instance-level information permission set to Allow, depending on whether you are using the **/collection** or **/server** parameter, respectively. If you are changing permissions for a team project, you must also have the Edit project-level information permission for the team project set to Allow. For more information, see [Permission reference for Team Foundation Server](/vsts/security/permissions).
+To use the **/a+** command, you must have the View collection-level information or the View instance-level information permission set to Allow, depending on whether you are using the **/collection** or **/server** parameter, respectively. If you are changing permissions for a project, you must also have the Edit project-level information permission for the project set to Allow. For more information, see [Permission reference for Team Foundation Server](/vsts/security/permissions).
 
 #### Parameters
 
@@ -54,7 +54,7 @@ To use the **/a+** command, you must have the View collection-level information 
 | Token | The name or GUID of the object on which you want to add permissions.<br>**Note:** Tokens vary depending on the namespace you specify. Some namespaces do not have tokens that apply for this command. |
 | Action | The name of the permission for which you are granting or denying access. For a list of valid IDs, see <a href="https://msdn.microsoft.com/library/39997de5-b7fb-4777-b779-07de0543abe6">Permission reference for Team Foundation Server</a>, or use the **tfssecurity /a** command to view a list of valid actions for a namespace that you specify. |
 | Identity | The identity of the user or the group. For more information about identity specifiers, see [TFSSecurity Identity and Output Specifiers](#specifiers).<br><ul><li>**ALLOW**<br>The group or user can perform the operation that the Action specifies.</li><li>**DENY**<br>The group or user cannot perform the operation that the Action specifies.</li></ul> |
-| **/collection** :CollectionURL | Required if **/server** is not used. Specifies the URL of a team project collection in the following format: **http://** ServerName **:** Port **/** VirtualDirectoryName **/** CollectionName |
+| **/collection** :CollectionURL | Required if **/server** is not used. Specifies the URL of a project collection in the following format: **http://** ServerName **:** Port **/** VirtualDirectoryName **/** CollectionName |
 | **/server** :ServerURL | Required if **/collection** is not used. Specifies the URL of an application-tier server in the following format: **http://** ServerName **:** Port **/** VirtualDirectoryName |
 
 #### Remarks
@@ -148,7 +148,7 @@ Sample output:
 
     Done.
 
-The following example grants the collection-level "View collection-level information" permission to the Collection0 team project collection for Datum1 domain user John Peoples (Datum1\\jpeoples).
+The following example grants the collection-level "View collection-level information" permission to the Collection0 project collection for Datum1 domain user John Peoples (Datum1\\jpeoples).
 
      tfssecurity /a+ Server FrameworkGlobalSecurity GenericRead n:Datum1\jpeoples ALLOW /collection:http://ADatumCorporation:8080/Collection0
 
@@ -186,7 +186,7 @@ Use the **/a-** command to remove a user or a group from membership in a server-
 
 #### Required Permissions
 
-To use the **/a-** command, you must have the View collection-level information or the View instance-level information permission set to Allow, depending on whether you are using the **/collection** or **/server** parameter, respectively. If you are changing permissions for a team project, you must also have the Edit project-level information permission for the team project set to Allow.
+To use the **/a-** command, you must have the View collection-level information or the View instance-level information permission set to Allow, depending on whether you are using the **/collection** or **/server** parameter, respectively. If you are changing permissions for a project, you must also have the Edit project-level information permission for the project set to Allow.
 
 #### Parameters
 
@@ -196,7 +196,7 @@ To use the **/a-** command, you must have the View collection-level information 
 | Token | The name or GUID of the object on which you want to set permissions.<br>**Note:** Tokens vary depending on the namespace you specify. Some namespaces do not have tokens that apply for this command. |
 | Action | The name of the permission for which you are granting or denying access. For a list of valid IDs, see <a href="https://msdn.microsoft.com/library/39997de5-b7fb-4777-b779-07de0543abe6">Permission reference for Team Foundation Server</a>, or use the **tfssecurity /a** command to view a list of valid actions for a namespace that you specify. |
 | Identity | The identity of the user or the group. For more information about identity specifiers, see [TFSSecurity Identity and Output Specifiers](#specifiers).<br><ul><li>**ALLOW**<br>The group or user can perform the operation that the Action specifies.</li><li>**DENY**<br>The group or user cannot perform the operation that the Action specifies.</li></ul> |
-| **/collection** :CollectionURL | Required if **/server** is not used. Specifies the URL of a team project collection in the following format: **http://** ServerName **:** Port **/** VirtualDirectoryName **/** CollectionName |
+| **/collection** :CollectionURL | Required if **/server** is not used. Specifies the URL of a project collection in the following format: **http://** ServerName **:** Port **/** VirtualDirectoryName **/** CollectionName |
 | **/server** :ServerURL | Required if **/collection** is not used. Specifies the URL of an application-tier server in the following format: **http://** ServerName **:** Port **/** VirtualDirectoryName |
 
 #### Remarks
@@ -283,7 +283,7 @@ Sample output:
 
     Done.
 
-The following example removes the collection-level "View collection-level information" permission to the Collection0 team project collection for Datum1 domain user John Peoples (Datum1\\jpeoples).
+The following example removes the collection-level "View collection-level information" permission to the Collection0 project collection for Datum1 domain user John Peoples (Datum1\\jpeoples).
 
     tfssecurity /a+ Server FrameworkGlobalSecurity GenericRead n:Datum1\jpeoples ALLOW /collection:http://ADatumCorporation:8080/Collection0
 
@@ -332,7 +332,7 @@ For more information, see [Permission reference for Team Foundation Server](/vst
 | --- | --- |
 | Namespace | The namespace that contains the group to which you want to view permissions for a user or group. |
 | Token | The name or GUID of the object on which you want to view permissions.<br>**Note:** Tokens vary depending on the namespace you specify. Some namespaces do not have tokens that apply for this command. |
-| **/collection** :CollectionURL | Required if **/server** is not used. Specifies the URL of a team project collection in the following format: **http://** ServerName **:** Port **/** VirtualDirectoryName **/** CollectionName |
+| **/collection** :CollectionURL | Required if **/server** is not used. Specifies the URL of a project collection in the following format: **http://** ServerName **:** Port **/** VirtualDirectoryName **/** CollectionName |
 | **/server** :ServerURL | Required if **/collection** is not used. Specifies the URL of an application-tier server in the following format: **http://** ServerName **:** Port **/** VirtualDirectoryName |
 
 #### Remarks  
@@ -377,31 +377,31 @@ Sample output:
 
 <a id="g"></a>
 ### /g: List the groups
-Use **/g** to list the groups in a team project, in a team project collection, or across Team Foundation Server.
+Use **/g** to list the groups in a project, in a project collection, or across Team Foundation Server.
 
 	tfssecurity /g [scope] [/collection:CollectionURL] [/server:ServerURL]
 
 #### Required Permissions
 
-To use the **/g** command, you must have the View collection-level information or the View instance-level information permission set to Allow, depending on whether you are using the **/collection** or **/server** parameter, respectively. To use the /g command within the scope of a single team project, you must have the View project-level information permissions set to Allow. For more information, see [Permission reference for Team Foundation Server](https://msdn.microsoft.com/library/39997de5-b7fb-4777-b779-07de0543abe6).
+To use the **/g** command, you must have the View collection-level information or the View instance-level information permission set to Allow, depending on whether you are using the **/collection** or **/server** parameter, respectively. To use the /g command within the scope of a single project, you must have the View project-level information permissions set to Allow. For more information, see [Permission reference for Team Foundation Server](https://msdn.microsoft.com/library/39997de5-b7fb-4777-b779-07de0543abe6).
 
 #### Parameters
 
 |Argument|Description|
 |---|---|
-|scope|Optional. Specifies the URI of the team project for which you want to display groups. To obtain the URI for a team project, open Team Explorer, right-click the team project, click Properties, and copy the entire entry for URL.|
-|**/collection** :CollectionURL|Required if **/server** is not used. Specifies the URL of a team project collection in the following format: **http://** ServerName **:** Port **/** VirtualDirectoryName **/** CollectionName|
+|scope|Optional. Specifies the URI of the project for which you want to display groups. To obtain the URI for a project, open Team Explorer, right-click the project, click Properties, and copy the entire entry for URL.|
+|**/collection** :CollectionURL|Required if **/server** is not used. Specifies the URL of a project collection in the following format: **http://** ServerName **:** Port **/** VirtualDirectoryName **/** CollectionName|
 |**/server** :ServerURL|Required if **/collection** is not used. Specifies the URL of an application-tier server in the following format: **http://** ServerName **:** Port **/** VirtualDirectoryName|
 
 #### Remarks
 
 Run this command on an application-tier server for Team Foundation.
 
-The **/g** command of the **TFSSecurity** command-line utility displays information about every group within the selected scope. This scope can be the team project collection (**/server**) or the application-tier server (**/instance**). If used with the scope of a team project, it will display information only about the groups associated with that team project.
+The **/g** command of the **TFSSecurity** command-line utility displays information about every group within the selected scope. This scope can be the project collection (**/server**) or the application-tier server (**/instance**). If used with the scope of a project, it will display information only about the groups associated with that project.
 
 #### Example
 
-The following example displays information for all the groups within a team project collection.
+The following example displays information for all the groups within a project collection.
 
     tfssecurity /g /collection:CollectionURL
 
@@ -421,7 +421,7 @@ To use the **/g+** command, you must have the View collection-level information 
 |---|---|
 |groupIdentity|Specifies the group identity. For more information on valid identity specifiers, see [TFSSecurity Identity and Output Specifiers](#specifiers).|
 |memberIdentity|Specifies the member identity. For more information on valid identity specifiers, see [TFSSecurity Identity and Output Specifiers](#specifiers).|
-|**/collection** :CollectionURL|Required if **/server** is not used. Specifies the URL of a team project collection in the following format: **http://** ServerName **:** Port **/** VirtualDirectoryName **/** CollectionName|
+|**/collection** :CollectionURL|Required if **/server** is not used. Specifies the URL of a project collection in the following format: **http://** ServerName **:** Port **/** VirtualDirectoryName **/** CollectionName|
 |**/server** :ServerURL|Required if **/collection** is not used. Specifies the URL of an application-tier server in the following format: **http://** ServerName **:** Port **/** VirtualDirectoryName|
 
 #### Remarks
@@ -491,14 +491,14 @@ To use the **/g-** command, you must have the View collection-level information 
 |---|---|
 |groupIdentity|Specifies the group identity. For more information about valid identity specifiers, see [TFSSecurity Identity and Output Specifiers](#specifiers).|
 |memberIdentity|Specifies the member identity. For more information about valid identity specifiers, see [TFSSecurity Identity and Output Specifiers](#specifiers).|
-|**/collection** :CollectionURL|Required if **/server** is not used. Specifies the URL of a team project collection in the following format: **http://** ServerName **:** Port **/** VirtualDirectoryName **/** CollectionName|
+|**/collection** :CollectionURL|Required if **/server** is not used. Specifies the URL of a project collection in the following format: **http://** ServerName **:** Port **/** VirtualDirectoryName **/** CollectionName|
 |**/server** :ServerURL|Required if **/collection** is not used. Specifies the URL of an application-tier server in the following format: **http://** ServerName **:** Port **/** VirtualDirectoryName|
 
 #### Remarks
 
 Run this command on an application-tier server for Team Foundation.
 
-You can also add users and groups to an existing group using Team Explorer. For more information, see [Remove Users from a Team Project Group](https://msdn.microsoft.com/library/a4af4029-0202-4b56-8053-40b3a8c0f175), [Remove Users from a Default Group](https://msdn.microsoft.com/library/4e495381-f55a-480e-b7a0-da221ad0ae1a) or [Remove Users from a Collection-Level Group](https://msdn.microsoft.com/library/1c4b2566-3381-4d7a-ba50-e4633abf617d).
+You can also add users and groups to an existing group using Team Explorer. For more information, see [Remove Users from a Project Group](https://msdn.microsoft.com/library/a4af4029-0202-4b56-8053-40b3a8c0f175), [Remove Users from a Default Group](https://msdn.microsoft.com/library/4e495381-f55a-480e-b7a0-da221ad0ae1a) or [Remove Users from a Collection-Level Group](https://msdn.microsoft.com/library/1c4b2566-3381-4d7a-ba50-e4633abf617d).
 
 #### Examples
 
@@ -551,22 +551,22 @@ Use **/gc** at a command prompt to create a project-level group. To create a pro
 
 #### Required Permissions
 
-To use the **/gc** command, you must have the Edit Project-Level Information permission for that team project set to Allow. For more information, see <span sdata="link"> Permission reference for Team Foundation Server </span>.
+To use the **/gc** command, you must have the Edit Project-Level Information permission for that project set to Allow. For more information, see <span sdata="link"> Permission reference for Team Foundation Server </span>.
 
 #### Parameters
 
 |Argument|Description|
 |---|---|
-|Scope|The URI of the team project to which you want to add a project-level group. To obtain the URI for a team project, connect to it, and open Team Explorer, hover over the name of the project in Home, and read the address. Alternatively, connect to the project in Web Access and copy the URL.|
+|Scope|The URI of the project to which you want to add a project-level group. To obtain the URI for a project, connect to it, and open Team Explorer, hover over the name of the project in Home, and read the address. Alternatively, connect to the project in Web Access and copy the URL.|
 |GroupName|The name of the new group.|
 |GroupDescription|A description of the project group. Optional.|
-|**/collection** :CollectionURL|The URL of the team project collection. Required. The group will be created within the team project collection. The format for the URL is **http://** ServerName **:** Port **/** VirtualDirectoryName **/** CollectionName|
+|**/collection** :CollectionURL|The URL of the project collection. Required. The group will be created within the project collection. The format for the URL is **http://** ServerName **:** Port **/** VirtualDirectoryName **/** CollectionName|
 
 #### Remarks
 
 Run this command on an application-tier server for Team Foundation.
 
-A project-level group is a security group for your team project. You can use project groups to grant read, write, and administrative permissions that meet the security requirements of your organization.
+A project-level group is a security group for your project. You can use project groups to grant read, write, and administrative permissions that meet the security requirements of your organization.
 
 #### Example
 
@@ -575,9 +575,9 @@ The following example creates a group that is specific to the project that the U
 > [!NOTE]
 > The examples are for illustration only and are fictitious. No real association is intended or inferred.
 
-You must replace the placeholder GUID with the URI of the team project for which you want to create this group. To obtain the URI for a team project, open Team Explorer, right-click the team project, click Properties, and copy the entire value of the URL property.
+You must replace the placeholder GUID with the URI of the project for which you want to create this group. To obtain the URI for a project, open Team Explorer, right-click the project, click Properties, and copy the entire value of the URL property.
 
-After you run the command, you can verify the group in Team Explorer. Right-click the team project that you used in the command, click Team Project Settings, and then click Group Memberships. In the Project Groups on  TeamProjectName dialog box, the Groups list includes Test Group .
+After you run the command, you can verify the group in Team Explorer. Right-click the project that you used in the command, click Project Settings, and then click Group Memberships. In the Project Groups on  TeamProjectName dialog box, the Groups list includes Test Group .
 
 > [!NOTE]
 > You can use the **/gc** command to create groups but not to add any users to the groups or assign any permissions. To change the membership of the group, see [/g+: Add a user or another group to an existing group](#gplus) and [/g-: Remove a user or group](#gminus). To change the permissions for the group, see [/a+: Add permissions](#aplus) and [/a-: Remove a user or a group from membership in a group](#aminus).
@@ -593,7 +593,7 @@ Use the **/gcg** command to create a server-level or collection-level group. To 
 
 #### Required Permissions
 
-To use the **/gcg** command, you must have the Edit project-level information permission for that team project set to Allow. For more information, see [Permission reference for Team Foundation Server](https://msdn.microsoft.com/library/39997de5-b7fb-4777-b779-07de0543abe6).
+To use the **/gcg** command, you must have the Edit project-level information permission for that project set to Allow. For more information, see [Permission reference for Team Foundation Server](https://msdn.microsoft.com/library/39997de5-b7fb-4777-b779-07de0543abe6).
 
 #### Parameters
 
@@ -601,14 +601,14 @@ To use the **/gcg** command, you must have the Edit project-level information pe
 |---|---|
 |GroupName|The group name.|
 |GroupDescription|A description of the group. Optional.|
-|**/collection** :CollectionURL|Required if **/server** is not used. Specifies the URL of a team project collection in the following format: **http://** ServerName **:** Port **/** VirtualDirectoryName **/** CollectionName|
+|**/collection** :CollectionURL|Required if **/server** is not used. Specifies the URL of a project collection in the following format: **http://** ServerName **:** Port **/** VirtualDirectoryName **/** CollectionName|
 |**/server** :ServerURL|Required if **/collection** is not used. Specifies the URL of an application-tier server in the following format: **http://** ServerName **:** Port **/** VirtualDirectoryName|
 
 #### Remarks
 
 Run this command on an application-tier server for Team Foundation.
 
-Server-level groups are created directly on the application tier and apply to all team project collections. Collection-level are created at the team project collection level. They apply to that collection and have implications for all team projects within the collection. In contrast, team project groups apply to a specific project within a collection but not any other projects in that collection. You can assign permissions to server-level groups so that members of those groups can perform tasks in Team Foundation Server (TFS) itself, such as creating team project collections. You can assign permissions to collection-level groups so that members of those groups can perform tasks across a team project collection, such as administering users.
+Server-level groups are created directly on the application tier and apply to all project collections. Collection-level are created at the project collection level. They apply to that collection and have implications for all projects within the collection. In contrast, project groups apply to a specific project within a collection but not any other projects in that collection. You can assign permissions to server-level groups so that members of those groups can perform tasks in Team Foundation Server (TFS) itself, such as creating project collections. You can assign permissions to collection-level groups so that members of those groups can perform tasks across a project collection, such as administering users.
 
 > [!NOTE]
 > You can use the <b>/gcg</b> command to create groups, but you cannot use it to add any users to the groups or assign any permissions. For information about how to change the membership of a group, see [/g+: Add a user or another group to an existing group](#gplus) and [/g-: Remove a user or group](#gminus). For information about how to change the permissions for the group, see [/a+: Add permissions](#aplus) and [/a-: Remove a user or a group from membership in a group](#aminus).
@@ -641,18 +641,18 @@ To use the **/gd** command, you must have the View collection-level information 
 |Argument|Description|
 |---|---|
 |groupIdentity|Specifies the group identity. |
-|**/collection** :CollectionURL|Required if **/server** is not used. Specifies the URL of a team project collection in the following format: **http://** ServerName **:** Port **/** VirtualDirectoryName **/** CollectionName|
+|**/collection** :CollectionURL|Required if **/server** is not used. Specifies the URL of a project collection in the following format: **http://** ServerName **:** Port **/** VirtualDirectoryName **/** CollectionName|
 |**/server** :ServerURL|Required if **/collection** is not used. Specifies the URL of an application-tier server in the following format: **http://** ServerName **:** Port **/** VirtualDirectoryName|
 
 #### Remarks
 
 Run this command on an application-tier server for Team Foundation.
 
-You can also remove groups on Team Explorer. For more information, see [Remove a Collection-Level Group](https://msdn.microsoft.com/library/68582caf-aa57-47a0-924a-6de7f541c246) and [Remove a Team Project Group](https://msdn.microsoft.com/library/dfb686ca-5a8b-4da9-bd00-6d68ae85f9fa).
+You can also remove groups on Team Explorer. For more information, see [Remove a Collection-Level Group](https://msdn.microsoft.com/library/68582caf-aa57-47a0-924a-6de7f541c246) and [Remove a Project Group](https://msdn.microsoft.com/library/dfb686ca-5a8b-4da9-bd00-6d68ae85f9fa).
 
 #### Example
 
-The following example deletes a group from the team project collection. The group is identified by "S-1-5-21-2127521184-1604012920-1887927527-588340", the security identifier (SID). For more information about finding the SID of a group, see [/im: Display information about identities that compose direct membership](#im). You can also use the friendly name to delete a group.
+The following example deletes a group from the project collection. The group is identified by "S-1-5-21-2127521184-1604012920-1887927527-588340", the security identifier (SID). For more information about finding the SID of a group, see [/im: Display information about identities that compose direct membership](#im). You can also use the friendly name to delete a group.
 
 > [!NOTE]
 > The examples are for illustration only and are fictitious. No real association is intended or inferred.
@@ -675,7 +675,7 @@ To use the **/gud** command, you must have the Edit project-level information pe
 |---|---|
 |GroupIdentity|Specifies the group identity. For more information about valid identity specifiers, see [TFSSecurity Identity and Output Specifiers](#specifiers).|
 |GroupDescription|Specifies the new description for the group.|
-|**/collection** :CollectionURL|Required if **/server** is not used. Specifies the URL of a team project collection in the following format: **http://** ServerName **:** Port **/** VirtualDirectoryName **/** CollectionName|
+|**/collection** :CollectionURL|Required if **/server** is not used. Specifies the URL of a project collection in the following format: **http://** ServerName **:** Port **/** VirtualDirectoryName **/** CollectionName|
 |**/server** :ServerURL|Required if **/collection** is not used. Specifies the URL of an application-tier server in the following format: **http://** ServerName **:** Port **/** VirtualDirectoryName|
 
 #### Remarks
@@ -707,7 +707,7 @@ To use the **/gun** command, you must have the View collection-level information
 |---|---|
 |GroupIdentity|Specifies the group identity. For more information about valid identity specifiers, see [TFSSecurity Identity and Output Specifiers](#specifiers).|
 |GroupName|Specifies the new name of the group.|
-|**/collection** :CollectionURL|Required if **/server** is not used. Specifies the URL of a team project collection in the following format: **http://** ServerName **:** Port **/** VirtualDirectoryName **/** CollectionName|
+|**/collection** :CollectionURL|Required if **/server** is not used. Specifies the URL of a project collection in the following format: **http://** ServerName **:** Port **/** VirtualDirectoryName **/** CollectionName|
 |**/server** :ServerURL|Required if **/collection** is not used. Specifies the URL of an application-tier server in the following format: **http://** ServerName **:** Port **/** VirtualDirectoryName|
 
 #### Remarks
@@ -740,14 +740,14 @@ To use the **/i** command, you must have the View collection-level information o
 |Argument|Description|
 |---|---|
 |Identity|The identity of the user or the application group. For more information about identity specifiers, see [TFSSecurity Identity and Output Specifiers](#specifiers).|
-|**/collection** :CollectionURL|Required if **/server** is not used. Specifies the URL of a team project collection in the following format: **http://** ServerName **:** Port **/** VirtualDirectoryName **/** CollectionName|
+|**/collection** :CollectionURL|Required if **/server** is not used. Specifies the URL of a project collection in the following format: **http://** ServerName **:** Port **/** VirtualDirectoryName **/** CollectionName|
 |**/server** :ServerURL|Required if **/collection** is not used. Specifies the URL of an application-tier server in the following format: **http://** ServerName **:** Port **/** VirtualDirectoryName|
 
 #### Remarks
 
 Run this command on an application-tier server for Team Foundation.
 
-The **/i** command of the **TFSSecurity** command-line utility displays information about each group within the team project collection (/server) or the application-tier server (/instance). It does not display any membership information.
+The **/i** command of the **TFSSecurity** command-line utility displays information about each group within the project collection (/server) or the application-tier server (/instance). It does not display any membership information.
 
 #### Examples
 
@@ -788,7 +788,7 @@ Sample output:
        Group type: AdministrativeApplicationGroup
     Project scope: Server scope
      Display name: [DatumOne]\Project Collection Administrators
-      Description: Members of this application group can perform all privileged operations on the team project collection.
+      Description: Members of this application group can perform all privileged operations on the project collection.
 
 The following example displays identity information for the Project Administrators group for the "Datum" project by using the adm: identity specifier.
 
@@ -806,7 +806,7 @@ Sample output:
        Group type: AdministrativeApplicationGroup
     Project scope: Datum
      Display name: [Datum]\Project Administrators
-      Description: Members of this application group can perform all operations in the team project.
+      Description: Members of this application group can perform all operations in the project.
 
 <a id="im"></a>
 ### /im: Display information about identities that compose direct membership
@@ -823,7 +823,7 @@ To use the **/im** command, you must have the View collection-level information 
 |Argument|Description|
 |---|---|
 |Identity|The identity of the user or the group. For more information about identity specifiers, see [TFSSecurity Identity and Output Specifiers](#specifiers).|
-|**/collection** :CollectionURL|Required if **/server** is not used. Specifies the URL of a team project collection in the following format: **http://** ServerName **:** Port **/** VirtualDirectoryName **/** CollectionName|
+|**/collection** :CollectionURL|Required if **/server** is not used. Specifies the URL of a project collection in the following format: **http://** ServerName **:** Port **/** VirtualDirectoryName **/** CollectionName|
 |**/server** :ServerURL|Required if **/collection** is not used. Specifies the URL of an application-tier server in the following format: **http://** ServerName **:** Port **/** VirtualDirectoryName|
 
 #### Remarks
@@ -866,7 +866,7 @@ Sample output:
 
     Done.
 
-The following example displays identity information for the Project Collection Administrators group in the "DatumOne" team project collection in the domain "Datum1" at the fictitious company "A. Datum Corporation" by using the adm: identity specifier.
+The following example displays identity information for the Project Collection Administrators group in the "DatumOne" project collection in the domain "Datum1" at the fictitious company "A. Datum Corporation" by using the adm: identity specifier.
 
     tfssecurity /im adm: /collection:CollectionURL 
 
@@ -882,7 +882,7 @@ Sample output:
     Group type: AdministrativeApplicationGroup
     Project scope: Server scope
     Display name: [DatumOne]\Project Collection Administrators
-    Description: Members of this application group can perform all privileged operations on the team project collection.
+    Description: Members of this application group can perform all privileged operations on the project collection.
 
     5 member(s):
       [U] Datum1\jpeoples (Peoples, John)
@@ -896,7 +896,7 @@ Sample output:
 
     Done.
 
-The following example displays identity information for the Project Administrators group for the "Datum" project in the "DatumOne" team project collection in the domain "Datum1" at the fictitious company "A. Datum Corporation" using the adm: identity specifier.
+The following example displays identity information for the Project Administrators group for the "Datum" project in the "DatumOne" project collection in the domain "Datum1" at the fictitious company "A. Datum Corporation" using the adm: identity specifier.
 
     tfssecurity /im adm:vstfs:///Classification/TeamProject/ProjectGUID /collection:CollectionURL 
 
@@ -912,7 +912,7 @@ Sample output:
     Group type: AdministrativeApplicationGroup
     Project scope: Datum
     Display name: [Datum]\Project Administrators
-    Description: Members of this application group can perform all operations in the team project.
+    Description: Members of this application group can perform all operations in the project.
 
     2 member(s):
       [U] Datum1\jpeoples (Peoples, John)
@@ -938,7 +938,7 @@ To use the **/imx** command, you must have the View collection-level information
 |Argument|Description|
 |---|---|
 |Identity|The identity of the user or the group. For more information about identity specifiers, see [TFSSecurity Identity and Output Specifiers](#specifiers).|
-|**/collection** :CollectionURL|Required if **/server** is not used. Specifies the URL of a team project collection in the following format: **http://** ServerName **:** Port **/** VirtualDirectoryName **/** CollectionName|
+|**/collection** :CollectionURL|Required if **/server** is not used. Specifies the URL of a project collection in the following format: **http://** ServerName **:** Port **/** VirtualDirectoryName **/** CollectionName|
 |**/server** :ServerURL|Required if **/collection** is not used. Specifies the URL of an application-tier server in the following format: **http://** ServerName **:** Port **/** VirtualDirectoryName|
 
 #### Remarks
@@ -990,7 +990,7 @@ Sample output:
 
     Done.
 
-The following example displays identity information for the Project Collection Administrators group in the "DatumOne" team project collection in the domain "Datum1" at the fictitious company "A. Datum Corporation" using the adm: identity specifier.
+The following example displays identity information for the Project Collection Administrators group in the "DatumOne" project collection in the domain "Datum1" at the fictitious company "A. Datum Corporation" using the adm: identity specifier.
 
     tfssecurity /imx adm: /collection:CollectionURL 
 
@@ -1006,7 +1006,7 @@ Sample output:
     Group type: AdministrativeApplicationGroup
     Project scope: Server scope
     Display name: [DatumOne]\Project Collection Administrators
-    Description: Members of this application group can perform all privileged operations on the team project collection.
+    Description: Members of this application group can perform all privileged operations on the project collection.
 
     6 member(s):
       [U] Datum1\jpeoples (Peoples, John)
@@ -1021,7 +1021,7 @@ Sample output:
 
     Done.
 
-The following example displays identity information for the Project Administrators group for the "Datum" project in the "DatumOne" team project collection in the domain "Datum1" at the fictitious company "A. Datum Corporation" using the adm: identity specifier.
+The following example displays identity information for the Project Administrators group for the "Datum" project in the "DatumOne" project collection in the domain "Datum1" at the fictitious company "A. Datum Corporation" using the adm: identity specifier.
 
     tfssecurity /imx adm:vstfs:///Classification/TeamProject/ProjectGUID /collection:CollectionURL 
 
@@ -1037,7 +1037,7 @@ Sample output:
     Group type: AdministrativeApplicationGroup
     Project scope: Datum
     Display name: [Datum]\Project Administrators
-    Description: Members of this application group can perform all operations in the team project.
+    Description: Members of this application group can perform all operations in the project.
 
     2 member(s):
       [U] Datum1\jpeoples (Peoples, John)
@@ -1070,7 +1070,7 @@ To use the **/m** command, you must be a member of the Team Foundation Administr
 |---|---|
 |GroupIdentity|Specifies the group identity. For more information on valid identity specifiers, see [TFSSecurity Identity and Output Specifiers](#specifiers).|
 |MemberIdentity|Specifies the member identity. By default, the value of this argument is the identity of the user who is running the command. For more information on valid identity specifiers, see [TFSSecurity Identity and Output Specifiers](#specifiers).|
-|**/collection** :CollectionURL|Required if **/server** is not used. Specifies the URL of a team project collection in the following format: **http://** ServerName **:** Port **/** VirtualDirectoryName **/** CollectionName|
+|**/collection** :CollectionURL|Required if **/server** is not used. Specifies the URL of a project collection in the following format: **http://** ServerName **:** Port **/** VirtualDirectoryName **/** CollectionName|
 |**/server** :ServerURL|Required if **/collection** is not used. Specifies the URL of an application-tier server in the following format: **http://** ServerName **:** Port **/** VirtualDirectoryName|
 
 #### Remarks
@@ -1115,8 +1115,8 @@ Sample output:
 |Permission|Namespace|Action|
 |---|---|---|
 |[Administer warehouse](/vsts/security/permissions#administer-warehouse-permission)|Warehouse|Administer|
-|[Create team project collection](/vsts/security/permissions#create-team-project-collection-permission)|CollectionManagement|CreateCollection|
-|[Delete team project collection](/vsts/security/permissions#delete-team-project-collection-permission)|CollectionManagement|DeleteCollection|
+|[Create project collection](/vsts/security/permissions#create-team-project-collection-permission)|CollectionManagement|CreateCollection|
+|[Delete project collection](/vsts/security/permissions#delete-team-project-collection-permission)|CollectionManagement|DeleteCollection|
 |[Edit instance-level information](/vsts/security/permissions#edit-instance-level-information-permission)|Server|GENERIC_WRITE<br /><br />tf: AdminConfiguration<br /><br />tf: AdminConnections|
 |[Make requests on behalf of others](/vsts/security/permissions#make-requests-on-behalf-of-others-permission)|Server|Impersonate|
 |[Trigger events](/vsts/security/permissions#trigger-events-permission)|Server|TRIGGER_EVENT|
@@ -1136,7 +1136,7 @@ Sample output:
 |[Alter trace settings](/vsts/security/permissions#alter-trace-settings-permission)|Collection|DIAGNOSTIC_TRACE|
 |[Create a workspace](/vsts/security/permissions#create-a-workspace-permission)|VersionControlPrivileges|tf: CreateWorkspace|
 |[Create new projects](/vsts/security/permissions#create-new-team-projects-permission)|Collection|CREATE_PROJECTS|
-|[Delete team project](/vsts/security/permissions#delete-team-project-permission)|Project|Delete|
+|[Delete project](/vsts/security/permissions#delete-team-project-permission)|Project|Delete|
 |[Edit collection-level information](/vsts/security/permissions#edit-collection-level-information-permission)|Collection<br /><br />VersionControlPrivileges|GENERIC_WRITE<br /><br />tf: AdminConfiguration<br /><br />tf: AdminConnections|
 |[Make requests on behalf of others](/vsts/security/permissions#make-requests-on-behalf-of-others-permission)|Server|Impersonate|
 |[Manage build resources](/vsts/security/permissions#manage-build-resources-permission)|BuildAdministration|ManageBuildResources|
@@ -1148,18 +1148,18 @@ Sample output:
 |[View collection-level information](/vsts/security/permissions#view-collection-level-information-permission)|Collection|GENERIC_READ|
 |[View system synchronization information](/vsts/security/permissions#view-system-synchronization-information-permission)|Collection|SYNCHRONIZE_READ|
 |Can create a SOAP-based web service subscription. |EventSubscription|CREATE_SOAP_SUBSCRIPTION|
-|Can view subscription events defined for a team project. |EventSubscription|GENERIC_READ|
+|Can view subscription events defined for a project. |EventSubscription|GENERIC_READ|
 |Can create alerts for other users or for a team. |EventSubscription|GENERIC_WRITE|
 |Can unsubscribe from an event subscription. |EventSubscription|UNSUBSCRIBE|
 
 <a id="team-project-level-permissions"></a>
-### Team project level
+### Project level
 
 |Permission|Namespace|Action|
 |---|---|---|
 |[Create tag definition](/vsts/security/permissions#create-tag-definition-permission)|Tagging|Create|
 |[Create test runs](/vsts/security/permissions#create-test-runs-permission)|Project| PUBLISH_TEST_RESULTS
-|[Delete team project](/vsts/security/permissions#delete-team-project-permission)|Project|DELETE|
+|[Delete project](/vsts/security/permissions#delete-team-project-permission)|Project|DELETE|
 |[Delete work items](/vsts/security/permissions#delete-work-items-in-this-project-permission) (TFS 2015.2)| Project | WORK_ITEM_DELETE | 
 |[Delete test runs](/vsts/security/permissions#delete-test-runs-permission)|Project|DELETE_TEST_RESULTS|
 |[Edit project-level information](/vsts/security/permissions#edit-team-project-level-information-permission)|Project|GENERIC_WRITE|

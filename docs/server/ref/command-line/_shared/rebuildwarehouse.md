@@ -52,7 +52,7 @@ For more information, see [Permission reference for Team Foundation Server](/vst
 
 ### Remarks
 
-You might use this command when moving or splitting a team project collection, restoring data, or otherwise changing the configuration of your deployment.
+You might use this command when moving or splitting a project collection, restoring data, or otherwise changing the configuration of your deployment.
 
 To start the rebuild of these databases interactively, you can use the Reporting node in the administration console for Team Foundation. For more information, see [Open the Team Foundation Administration Console](https://msdn.microsoft.com/library/d4e7d06b-fd68-43d1-8baf-ce31c8989a02)>.
 

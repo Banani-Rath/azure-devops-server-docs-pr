@@ -2,8 +2,8 @@
 ms.topic: include
 ---
 
-You can use the **Jobs** command to create a log file that provides the details of the most recent job activity for a specific team project collection,
-or to retry a job for one or all team project collections.
+You can use the **Jobs** command to create a log file that provides the details of the most recent job activity for a specific project collection,
+or to retry a job for one or all project collections.
 
 	TFSConfig Jobs /retry|dumplog [/CollectionName:CollectionName] [/CollectionID:ID]
 
@@ -17,7 +17,7 @@ or to retry a job for one or all team project collections.
 	<tbody>
 		<tr>
 			<td><strong>/retry</strong></td>
-			<td>Required if <strong>/dumplog</strong> is not used. Specifies that the most recent job will be reattempted for the specified team project collection. If you use this option, you must also use either the <strong>/CollectionName</strong> or the <strong>/CollectionID</strong> option.</td>
+			<td>Required if <strong>/dumplog</strong> is not used. Specifies that the most recent job will be reattempted for the specified project collection. If you use this option, you must also use either the <strong>/CollectionName</strong> or the <strong>/CollectionID</strong> option.</td>
 		</tr>
 		<tr>
 			<td><strong>/dumplog</strong></td>
@@ -45,6 +45,6 @@ For more information, see [Open the Team Foundation Administration Console](http
 
 ### Example
 
-The following example shows how to create a log file that lists the most recent job activity for the "Contoso Summer Intern Projects" team project collection in Team Foundation Server.
+The following example shows how to create a log file that lists the most recent job activity for the "Contoso Summer Intern Projects" project collection in Team Foundation Server.
 
     TFSConfig Jobs /dumplog /CollectionName:"Contoso Summer Intern Projects"

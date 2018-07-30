@@ -157,11 +157,11 @@ You must be a member of the **Administrators** security group on the server on w
 
         3.  In **Administration URL**, type the URL for the SharePoint Central Administration site. To test connectivity to each of these URLs, choose **Test**.
 
-11. Select the **Create a new team project collection** check box to create a collection, or clear that check box to skip that step.
+11. Select the **Create a new project collection** check box to create a collection, or clear that check box to skip that step.
 
     If you create a collection, accept the default values, or type a new name and description.
 
-    ![Create a new team project collection](/vsts/admin/_img/ic742591.png)
+    ![Create a new project collection](/vsts/admin/_img/ic742591.png)
 
 12. On the **Review** page, review the settings, and choose **Next** to let the wizard validate your configuration.
 

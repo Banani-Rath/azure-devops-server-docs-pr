@@ -15,7 +15,7 @@ ms.date: 09/26/2016
 
 **TFS 2017** | **TFS 2015** | **TFS 2013**
 
-You can configure and manage various aspects of your deployment of Team Foundation by using the administration console for Team Foundation. For example, you can add a server for hosting team project portals, create and modify team project collections, and change the service account for Visual Studio Team Foundation Server. This administration console is installed when you install one or more of the following components on a server:
+You can configure and manage various aspects of your deployment of Team Foundation by using the administration console for Team Foundation. For example, you can add a server for hosting project portals, create and modify project collections, and change the service account for Visual Studio Team Foundation Server. This administration console is installed when you install one or more of the following components on a server:
 
 * an application-tier for Team Foundation Server
 * the extensions for SharePoint Products

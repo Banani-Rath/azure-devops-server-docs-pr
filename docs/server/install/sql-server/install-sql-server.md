@@ -211,7 +211,7 @@ When you install Team Foundation Server, you must select the **Use pre-existing 
 
 ## Work with SQL Server Named Instances
 
-You can choose to install Team Foundation Server using the default instance of SQL Server or a named instance of SQL Server. Depending on your business infrastructure and deployment needs, you might prefer to use a named instance. If you want to use a named instance in your deployment of Team Foundation Server, you must create that named instance in SQL Server before you install Team Foundation Server or create a team project collection that uses that instance. You cannot create a named instance during installation of Team Foundation Server.
+You can choose to install Team Foundation Server using the default instance of SQL Server or a named instance of SQL Server. Depending on your business infrastructure and deployment needs, you might prefer to use a named instance. If you want to use a named instance in your deployment of Team Foundation Server, you must create that named instance in SQL Server before you install Team Foundation Server or create a project collection that uses that instance. You cannot create a named instance during installation of Team Foundation Server.
 
 To use a named instance of SQL Server in a deployment of Team Foundation Server, you must do one of the following:
 
@@ -219,7 +219,7 @@ To use a named instance of SQL Server in a deployment of Team Foundation Server,
 
 * move or restore Team Foundation Server data to a named instance
 
-* create a team project collection on a named instance
+* create a project collection on a named instance
 
 
 

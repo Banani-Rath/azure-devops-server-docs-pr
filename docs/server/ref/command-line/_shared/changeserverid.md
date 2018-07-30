@@ -4,7 +4,7 @@ ms.topic: include
 
 The **ChangeServerID** command changes the GUIDs that are associated with the databases for TFS.
 GUIDs must be unique within a deployment of TFS. If more than one database has the same GUID, your deployment can become unstable or unusable.
-You can change the GUID for the configuration database, the GUIDs for all team project collection databases in the deployment, or both.
+You can change the GUID for the configuration database, the GUIDs for all project collection databases in the deployment, or both.
 Although you would not typically use this command in daily operations, you might use this command in the following circumstances:
 
 -   You restored your deployment to new hardware, the old deployment is still operational, and you want to utilize both deployments. This scenario is sometimes referred to as cloning the server.

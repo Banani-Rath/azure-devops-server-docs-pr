@@ -247,7 +247,7 @@ featureFlags:
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>SQL Server databases</h3>
-                                                    <p>Understand how SQL Server and TFS work together to help you manage your team projects and resources.</p>
+                                                    <p>Understand how SQL Server and TFS work together to help you manage your projects and resources.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -600,7 +600,7 @@ featureFlags:
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Security and identity</h3>
-                                                    <p>Manage permissions and access to your team projects and repositories.</p>
+                                                    <p>Manage permissions and access to your projects and repositories.</p>
                                                 </div>
                                             </div>
                                         </div>

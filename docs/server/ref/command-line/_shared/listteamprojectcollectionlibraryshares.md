@@ -3,19 +3,19 @@ ms.topic: include
 ---
 
 Use the **ListTeamProjectCollectionLibraryShares** command to list the
-library shares that have been assigned to a team project collection and
+library shares that have been assigned to a project collection and
 that you have read access to. Library shares are created in System
 Center Virtual Machine Manager (SCVMM). and are assigned to a team
 project collection by using the [TFSConfig Lab /LibraryShare Commands](lab-libraryshare.md). 
-Team project collection library shares can be added to a team project by
+Project collection library shares can be added to a project by
 using the **CreateTeamProjectLibraryShare** command. For more
 information, see [TFSLabConfig CreateTeamProjectLibraryShare Command](createteamprojectlibraryshare.md).
 
 **Required Permissions:**
 
 To use the **ListTeamProjectCollectionLibraryShares** command, you must
-have **View Lab Resources** permission at the Team Project collection
-level. By default, members of the TFS Administrators and Team Project
+have **View Lab Resources** permission at the Project collection
+level. By default, members of the TFS Administrators and Project
 Collection Administrators groups have this permission. For more
 information, see [Permission reference for Team Foundation Server](/vsts/security/permissions).
 
@@ -29,7 +29,7 @@ information, see [Permission reference for Team Foundation Server](/vsts/securit
 
 | Option | Description |
 | --- | --- |
-| **Collection**:*collectionUrl* | Required. The URL of the team project collection on the application tier of Team Foundation Server that contains the team project. For example, ```/collection:http://abc:8080/TFS/DefaultCollection```.  |
+| **Collection**:*collectionUrl* | Required. The URL of the project collection on the application tier of Team Foundation Server that contains the project. For example, ```/collection:http://abc:8080/TFS/DefaultCollection```.  |
 
 
 

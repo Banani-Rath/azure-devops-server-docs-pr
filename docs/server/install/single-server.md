@@ -91,11 +91,11 @@ If you select the *New Deployment - Advanced* scenario, you will additionally ne
 `TfsData\ApplicationTier\_fileCache` on the local drive which has the most free space.
 - Whether to configure Reporting features and SharePoint integration. The default behavior used in the Basic scenario is to not configure
 these features. Note that these options are not available on client operating systems.
-- Whether to create a team project collection in which to store your projects, along with the name of that collection. The default behavior in the Basic scenario is to create a project collection named DefaultCollection.
+- Whether to create a project collection in which to store your projects, along with the name of that collection. The default behavior in the Basic scenario is to create a project collection named DefaultCollection.
 
 In both cases, the wizard will run readiness checks to validate your environment and your setting selections. If all goes well, the wizard will then let you configure your deployment. If there are errors, you will need to fix each of them and re-run the readiness checks before you can continue.
 
 ## Next Steps
 
-* [Create a team project](/vsts/accounts/create-team-project.md?toc=/vsts/tfs-server/toc.json&bc=/vsts/tfs-server/breadcrumb/toc.json)
+* [Create a project](/vsts/accounts/create-team-project.md?toc=/vsts/tfs-server/toc.json&bc=/vsts/tfs-server/breadcrumb/toc.json)
 * [Upgrade TFS](../upgrade/get-started.md)

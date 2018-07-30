@@ -143,7 +143,7 @@ The first command returns the following:
     Command: unattend
     Logging sent to file C:\ProgramData\Microsoft\Team Foundation\Server Configuration\Logs\TFS_Build Configuration_0512_203133.log
 
-The second command returns the following information, including the name of the server where Team Foundation Build was configured (FabrikamFiberTFS) and the team project collection associated with the controller (DefaultCollection):
+The second command returns the following information, including the name of the server where Team Foundation Build was configured (FabrikamFiberTFS) and the project collection associated with the controller (DefaultCollection):
 
     Microsoft (R) TfsConfig - Team Foundation Server Configuration Tool
     Copyright (c) Microsoft Corporation. All rights reserved.
@@ -163,7 +163,7 @@ The second command returns the following information, including the name of the 
             New Controller Name: FabrikamFiberTFS - Controller
             Clean Up Resources: False
 
-    Team Project Collection
+    Project Collection
             Collection URL: http://FabrikamFiberTFS:8080/tfs/defaultcollection
 
     Windows Service

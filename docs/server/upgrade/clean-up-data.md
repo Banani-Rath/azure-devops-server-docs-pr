@@ -25,23 +25,23 @@ time spent on upgrades in addition to the increased disk space requirements - ma
 This document provides guidance for cleaning up a variety of different types of data, primarily from TFS collection 
 databases. Note that in all of these cases, once the data has been cleaned up it *cannot be recovered* except by 
 restoring a database backup. As such, be careful to only clean up data that you are sure you will not need in the 
-future. Also note that you will need to be a highly permissioned user - typically a member of a Team Project 
-Collection or Team Project Administrators group - in order to perform these actions. 
+future. Also note that you will need to be a highly permissioned user - typically a member of a Project 
+Collection or Project Administrators group - in order to perform these actions. 
 
 Finally, it should be noted that the size of the SQL data files will not decrease after you perform any of the 
 below commands, since SQL will reserve the space for later use.
 
-## Team Projects
+## Projects
 
-If you have whole team projects that are no longer needed, deleting them can potentially have a very large impact, 
-since this will remove all content for the team project across all feature areas. There are two ways to delete a 
-team project:
+If you have whole projects that are no longer needed, deleting them can potentially have a very large impact, 
+since this will remove all content for the project across all feature areas. There are two ways to delete a 
+project:
 
 1. From the [Team Foundation Server Administration Console](/vsts/accounts/delete-team-project#delete-team-proj).
 2. Using the [TfsDeleteProject](https://msdn.microsoft.com/library/ms181482.aspx) tool that is included with Visual 
 Studio installations.
 
-The primary difference between these two methods of deleting a team project is that TfsDeleteProject will attempt to 
+The primary difference between these two methods of deleting a project is that TfsDeleteProject will attempt to 
 delete artifacts from the Sharepoint site with which TFS is integrated. If your TFS deployment is not integrated 
 with Sharepoint, the two methods will by default perform the same set of actions.
 

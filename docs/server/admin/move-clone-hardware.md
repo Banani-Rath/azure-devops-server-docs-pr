@@ -289,11 +289,11 @@ After you move to new hardware, make sure that all users, groups, and service ac
 
 -   Log on to the server and make sure that users, groups, and service accounts are configured with the permissions required for operation. Manually spot-check membership in project groups and teams, and verify that those groups and teams have the permissions you expect.
 
--   Browse to a team project collection and make sure that all projects in that collection appear as expected, and that users in those projects can appropriately access their work items.
+-   Browse to a project collection and make sure that all projects in that collection appear as expected, and that users in those projects can appropriately access their work items.
 
 -   Open Team Web Access and verify that team sites and teams appear as expected.
 
-Not sure what groups and permissions to expect? For more information, see [Add users to team projects](/vsts/security/add-users-team-project), [Set administrator permissions for team project collections](add-administrator-tfs.md), [Set administrator permissions for Team Foundation Server](add-administrator-tfs.md), and [Service accounts and dependencies in Team Foundation Server](service-accounts-dependencies-tfs.md).
+Not sure what groups and permissions to expect? For more information, see [Add users to projects](/vsts/security/add-users-team-project), [Set administrator permissions for project collections](add-administrator-tfs.md), [Set administrator permissions for Team Foundation Server](add-administrator-tfs.md), and [Service accounts and dependencies in Team Foundation Server](service-accounts-dependencies-tfs.md).
 
 <a name="refresh-caches-clients"></a>
 ## Refresh the data cache on client computers
@@ -322,11 +322,11 @@ Now that you've moved TFS, you'll need to tell your users how to connect to the 
 
 -   The new URL for SharePoint, if SharePoint is part of your deployment
 
--   If they are members of a team project that uses Git, instructions for how to update every clone they have locally for every repository for that project. Specifically, they will have to run the following command for every clone:
+-   If they are members of a project that uses Git, instructions for how to update every clone they have locally for every repository for that project. Specifically, they will have to run the following command for every clone:
 
         git remote set-url <remote name> <new URL>
 
-    Users can see what the URL is for each clone by browsing the team project from the Explorer tab.
+    Users can see what the URL is for each clone by browsing the project from the Explorer tab.
 
     ![Copying the URL to manually clone a repository in](_img/ic675405.png)
 

@@ -259,9 +259,9 @@ To make sure that all databases are marked, you can create a procedure that will
 
 2.  On the **SQL Editor** toolbar, open the **Available Databases** list, and then choose **TFS\_Configuration**.
 
-3.  In the query window, create a stored procedure that executes the stored procedures that you created in each database that TFS uses. Replace *ServerName* with the name of the server that is running SQL Server, and replace *Tfs\_CollectionName* with the name of the database for each team project collection.
+3.  In the query window, create a stored procedure that executes the stored procedures that you created in each database that TFS uses. Replace *ServerName* with the name of the server that is running SQL Server, and replace *Tfs\_CollectionName* with the name of the database for each project collection.
 
-    In the example deployment, the name of the server is FABRIKAMPRIME, and there is only one team project collection in the deployment, the default one created when she installed Team Foundation Server (DefaultCollection). With that in mind, you would create the following script:
+    In the example deployment, the name of the server is FABRIKAMPRIME, and there is only one project collection in the deployment, the default one created when she installed Team Foundation Server (DefaultCollection). With that in mind, you would create the following script:
 
             CREATE PROCEDURE sp_SetTransactionLogMarkAll
         @name nvarchar (128)

@@ -52,7 +52,7 @@ To refresh the cache for tracking work items on client computers:
 
 ## Refresh the Version Control Cache
 
-To refresh the version control cache, each user runs the **tf workspaces** command on any computer that must be updated. They must update any computer that uses version control and that connects to a team project collection whose databases were relocated.
+To refresh the version control cache, each user runs the **tf workspaces** command on any computer that must be updated. They must update any computer that uses version control and that connects to a project collection whose databases were relocated.
 
 To refresh the version control cache on client computers:
 

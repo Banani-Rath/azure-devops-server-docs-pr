@@ -39,7 +39,7 @@ for Team Foundation Server are installed on a separate server, referred
 to as a data-tier server. A separate server hosts the SharePoint Web
 application that Team Foundation Server uses, and another server hosts
 the instance of SQL Server Reporting Services that Team Foundation
-Server uses. The portal for each team project is hosted on the
+Server uses. The portal for each project is hosted on the
 SharePoint Web application. Therefore, the administrator must configure
 permissions for the users of that project on that Web application. The
 same consideration applies to configuring permission for users in SQL

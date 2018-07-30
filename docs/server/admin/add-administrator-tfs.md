@@ -1,6 +1,6 @@
 ---
 title: Add administrators TFS  
-description: Add server, team project collection,  or team project administrators 
+description: Add server, project collection,  or project administrators 
 ms.assetid: ed578715-f4d2-4042-b797-5f97abde9973
 ms.prod: devops-server
 ms.technology: tfs-admin
@@ -16,7 +16,7 @@ ms.date: 03/29/2017
 **TFS 2018** | **TFS 2017** | **TFS 2015** | **TFS 2013**
 
 Administrators in VSTS and TFS exist at three levels:
-the team, the team project, and the team project collection.
+the team, the project, and the project collection.
 
 In TFS, there are also server-level administrators.
 

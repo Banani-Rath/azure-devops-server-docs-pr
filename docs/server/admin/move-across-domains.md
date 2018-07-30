@@ -128,7 +128,7 @@ Skip this procedure if you are not using SharePoint Products in your deployment
 
     **stsadm.exe -o setproperty -pn peoplepicker-searchadforests -pv** *domain:DnsName***,***user***,***password* **-url http://***WebApp*
 
-4.  Type the following command, where *URL* is the URL for a site collection that supports a team project collection, *Port* is the port number that is assigned to that site collection, and *UserName* is the user name of the account that will act as the owner for that site collection:
+4.  Type the following command, where *URL* is the URL for a site collection that supports a project collection, *Port* is the port number that is assigned to that site collection, and *UserName* is the user name of the account that will act as the owner for that site collection:
 
     **stsadm.exe -o siteowner -url http://** *URL* **:** *Port* **-ownerlogin** *UserName*
 
@@ -171,7 +171,7 @@ If account names are the same in both domains, and the only difference is the do
         TFSConfig Accounts /change /AccountType:Proxy /account:AccountName /password:Password
 
     > [!NOTE]
-    > If you are moving to a non-trusted domain, you might also need to manually add users and groups to teams, projects, collections, and Team Foundation Server itself. For more information, see [Add users to team projects](/vsts/security/add-users-team-project), [Set administrator permissions for team project collections](add-administrator-tfs.md), and [Set administrator permissions for Team Foundation Server](add-administrator-tfs.md).
+    > If you are moving to a non-trusted domain, you might also need to manually add users and groups to teams, projects, collections, and Team Foundation Server itself. For more information, see [Add users to projects](/vsts/security/add-users-team-project), [Set administrator permissions for project collections](add-administrator-tfs.md), and [Set administrator permissions for Team Foundation Server](add-administrator-tfs.md).
 
 7.  If your deployment is integrated with Project Server, you might need to perform additional steps to configure the service accounts with the permissions required for operation. For more information, see [Assign permissions to support TFS-Project Server integration](https://msdn.microsoft.com/library/gg412653) and [ConfigureTFS-Project Server integration](https://msdn.microsoft.com/library/gg412647).
 

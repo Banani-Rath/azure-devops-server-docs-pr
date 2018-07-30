@@ -35,7 +35,7 @@ To benefit from multiple application-tier servers, you should ensure that your i
 
 You use NLB to create a cluster of Web servers that appear as a single logical Web service. This procedure is separate from the Application-tier Only Configuration wizard. For more information about how to set up NLB, see the following page on the Microsoft website: [Network Load Balancing](http://go.microsoft.com/fwlink/?LinkId=158320).
 
-If you create an NLB cluster, you do not need to use a SQL Server cluster for your configuration database or any team project collection. For the purposes of performance, scalability, and availability, any SQL Server cluster that you might deploy is independent of the NLB cluster.
+If you create an NLB cluster, you do not need to use a SQL Server cluster for your configuration database or any project collection. For the purposes of performance, scalability, and availability, any SQL Server cluster that you might deploy is independent of the NLB cluster.
 
 **Disaster recovery and hardware upgrade**  
 If you have a backup of your configuration database and your application tier has a hardware failure, you can use the Application-tier Only Configuration wizard to restore the application tier.

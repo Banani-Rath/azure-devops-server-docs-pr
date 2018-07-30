@@ -73,10 +73,10 @@ To configure Team Foundation Server Proxy by using Team Foundation Server Config
 	>**Tip:**  
 	>Would you like more details about what happens with any of these options? See this [blog post](http://blogs.msdn.com/b/tfsao/archive/2013/06/27/how-to-verify-skipped-proxy-endpoints.aspx).
 
-3.  Choose **Browse**, and then choose the team project collection to which you want this proxy server to connect. Choose **Next**.
+3.  Choose **Browse**, and then choose the project collection to which you want this proxy server to connect. Choose **Next**.
 
 	>**Note:**  
-	>If your team project collection is on VSTS, you're prompted to authenticate. Enter the Microsoft account you used to set up the service.
+	>If your project collection is on VSTS, you're prompted to authenticate. Enter the Microsoft account you used to set up the service.
 
 4.  Under **Service Account**, choose **Use a system account** to use Network Service or **Use a user account** to use a domain or local account. If you are using a user account, you must type the password. To test the user account and password combination, choose **Test.**
 

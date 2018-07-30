@@ -26,7 +26,7 @@ See below for more information.
 
 ## Introduction
 Team Foundation Server 2015 includes schema changes to a large number of tables in order to 
-support renaming team projects. As a result, upgrading to Team Foundation Server 2015 can take 
+support renaming projects. As a result, upgrading to Team Foundation Server 2015 can take 
 a significant amount of time, depending on the size of your database. Because TFS upgrades are 
 offline, Microsoft is providing a tool, TfsPreUpgrade.exe, which can be used to do the most expensive 
 parts of the work to upgrade to TFS 2015 while your TFS 2013 deployment is still online.
@@ -99,7 +99,7 @@ and before offline upgrade to TFS 2015 is completed.
 
 - Creating, deleting and renaming branches. 
 - Destroy operations which impact large numbers of items.
-- Deleting team projects that use TFVC.
+- Deleting projects that use TFVC.
 
 If you do need to perform these operations,
 you can expect them to take at least twice as long to complete with the TfsPreUpgrade triggers in place.
@@ -164,14 +164,14 @@ Early on during the execution of TfsPreUpgrade.exe a number of "safety" triggers
 operations which were allowed by TFS 2013 but which are either no longer allowed by TFS 2015 or which would 
 cause problems in the presence of the triggers put in place by TfsPreUpgrade.exe. These include:
  
-1.	Deletion of team projects. It is not recommended to delete team projects once you have run TfsPreUpgrade.exe 
-against a collection database. If you do delete a team project, it will fail just before finalizing the deletion, 
-leaving the project behind in a Deleting state. Team project deletion will be supported again once you upgrade to 
+1.	Deletion of projects. It is not recommended to delete projects once you have run TfsPreUpgrade.exe 
+against a collection database. If you do delete a project, it will fail just before finalizing the deletion, 
+leaving the project behind in a Deleting state. Project deletion will be supported again once you upgrade to 
 TFS 2015.
 2.	Creation of workspaces with references to root folders which do not exist. These will fail with error 
 TF10169. Note that one scenario where this could surface is in build definitions whose workspace templates reference 
 root folders which do not exist - in these scenarios, builds may fail during workspace creation with the given error. 
-This scenario will continue to be unsupported in TFS 2015 due to changes related to Team Project rename but will 
+This scenario will continue to be unsupported in TFS 2015 due to changes related to Project rename but will 
 fail with a more relevant error message. 
 3.	Calling VersionControlServer.CreateTeamProjectFolder() via code written against the TFS client OM. This will 
 fail with error TF10169. This scenario will continue to be unsupported in TFS 2015 due to changes related to Team 

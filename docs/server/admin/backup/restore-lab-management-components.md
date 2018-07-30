@@ -88,31 +88,31 @@ If Team Foundation Server has failed, you must restore both the application-tier
 
     3.  When you are prompted for a user name and password, type the user name and password of a member of the Administrators group on all the Hyper-V hosts. The service account for Team Foundation Server is automatically configured for you.
 
-    4.  Repeat steps b and c for each team project collection.
+    4.  Repeat steps b and c for each project collection.
 
 4.  In SCVMM, manually delete any virtual machines that were created after the point to which you restored Team Foundation Server.
 
-    These machines will not appear in either Microsoft Test Manager or Microsoft Environment Viewer. You can find them in SCVMM by looking for the team project name in the description field of the virtual machine.
+    These machines will not appear in either Microsoft Test Manager or Microsoft Environment Viewer. You can find them in SCVMM by looking for the project name in the description field of the virtual machine.
 
 5.  In Microsoft Test Manager, manually delete any virtual machines that were deleted after the point to which you restored Team Foundation Server.
 
-    These machines are no longer in SCVMM. In both Microsoft Test Manager and Microsoft Environment Viewer, the environment will have a status of **Failed**, and the virtual machines will have a status as **Deleted**. If a host was added to a SCVMM host group that was already associated with a team project collection, that host will be available for placement the next time that you deploy an environment.
+    These machines are no longer in SCVMM. In both Microsoft Test Manager and Microsoft Environment Viewer, the environment will have a status of **Failed**, and the virtual machines will have a status as **Deleted**. If a host was added to a SCVMM host group that was already associated with a project collection, that host will be available for placement the next time that you deploy an environment.
 
 6.  In Microsoft Test Manager, manually delete any hosts that were removed from SCVMM after the point to which you restored Team Foundation Server.
 
     Because these hosts can no longer run virtual machines and environments, all environments on these hosts will appear as **Failed** in Microsoft Test Manager and Microsoft Environment Viewer.
 
-7.  Manually reassociate any a host groups that were associated with a team project collection and team project after the point to which you restored Team Foundation Server.
+7.  Manually reassociate any a host groups that were associated with a project collection and project after the point to which you restored Team Foundation Server.
 
-    The virtual machines on this host group will not be associated with the team project.
+    The virtual machines on this host group will not be associated with the project.
 
-8.  At the levels of both team project collections and team projects, manually unassociate any host groups that were unassociated after the point to which you restored Team Foundation Server.
+8.  At the levels of both project collections and projects, manually unassociate any host groups that were unassociated after the point to which you restored Team Foundation Server.
 
-    For more information, see [How to: Change the Host Groups for Your Team Project Collections](https://msdn.microsoft.com/en-us/library/dd386364(v=vs.120).aspx).
+    For more information, see [How to: Change the Host Groups for Your Project Collections](https://msdn.microsoft.com/en-us/library/dd386364(v=vs.120).aspx).
 
-9.  Reassociate any host groups that were associated with a team project after the point to which you restored Team Foundation Server.
+9.  Reassociate any host groups that were associated with a project after the point to which you restored Team Foundation Server.
 
-10. Reassociate any library shares that were associated with a team project after the point to which you restored Team Foundation Server, and reimport all virtual machines and templates that were imported into the team project.
+10. Reassociate any library shares that were associated with a project after the point to which you restored Team Foundation Server, and reimport all virtual machines and templates that were imported into the project.
 
 <a name="restore-hyper-v-hosts"></a>
 ## Restore the Hyper-V Hosts
@@ -137,4 +137,4 @@ If a host that had virtual environments crashed, they will be in a **Failed** st
 
  [Back up and restore TFS](back-up-restore-tfs.md) 
 
- [Move a team project collection](../move-project-collection.md) 
+ [Move a project collection](../move-project-collection.md) 

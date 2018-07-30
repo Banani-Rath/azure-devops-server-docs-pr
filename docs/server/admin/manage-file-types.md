@@ -21,7 +21,7 @@ File type definitions allow you to customize the way Team Foundation version con
 > By default, file merging and multiple check-out is enabled.
 
 > [!NOTE]
-> Multiple check-out can be disabled at the team project level.
+> Multiple check-out can be disabled at the project level.
 
 ## File Type Properties
 

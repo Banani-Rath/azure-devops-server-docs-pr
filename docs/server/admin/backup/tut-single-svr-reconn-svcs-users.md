@@ -15,12 +15,12 @@ ms.technology: tfs-admin
 
 **TFS 2015** | **TFS 2013**
 
-This topic, the fourth part of the Restore a Single-Server tutorial, teaches you how to start team project collections and verify user groups on the new server. You will also learn how to clear the data caches on the new server, and how to help ensure that your users do not experience data caching problems when they connect to the new server.
+This topic, the fourth part of the Restore a Single-Server tutorial, teaches you how to start project collections and verify user groups on the new server. You will also learn how to clear the data caches on the new server, and how to help ensure that your users do not experience data caching problems when they connect to the new server.
 
 Use this topic to:
 
  
-* Start team project collections and verify permissions
+* Start project collections and verify permissions
 * Refresh the version control cache on client computers and reconnect to TFS
 
 
@@ -31,25 +31,25 @@ To invoke the **StampWorkitemCache** web method, you must be a member of the **A
 To use the **tf workspaces** command on the client computer, your **Read** permission must be set to **Allow**.
 
 <a name="start-team-project-colls"></a>
-## Start team project collections and verify permissions
+## Start project collections and verify permissions
 
-After you have completed restoring the data and software on the new server, start the team project collections, and then make sure that all users, groups, and service accounts for your deployment are configured with the permissions that they require to perform tasks and function correctly.
+After you have completed restoring the data and software on the new server, start the project collections, and then make sure that all users, groups, and service accounts for your deployment are configured with the permissions that they require to perform tasks and function correctly.
 
 You cannot automatically migrate all permissions. For example, administrators for Team Foundation must be members of the local **Administrators** group on the server so that they can open the administration console, and you must manually add them to that group.
 
-To start a team project collection:
+To start a project collection:
 
-1.  Open the administration console, and in Team Project Collections, start the default collection.
+1.  Open the administration console, and in Project Collections, start the default collection.
 
     ![Collections remain offline until started](../_img/ic664996.png)
 
-2.  Repeat this action for any other team project collections in the deployment.
+2.  Repeat this action for any other project collections in the deployment.
 
 To verify permissions:
 
 -   Log on to the server and make sure that users, groups, and service accounts are configured with the permissions that they need to operate.
 
-    For more information, see [Add users to team projects](/vsts/security/add-users-team-project), [Set administrator permissions for team project collections](../add-administrator-tfs.md), [Set administrator permissions for Team Foundation Server](../add-administrator-tfs.md), and [Service accounts and dependencies in Team Foundation Server](../service-accounts-dependencies-tfs.md).
+    For more information, see [Add users to projects](/vsts/security/add-users-team-project), [Set administrator permissions for project collections](../add-administrator-tfs.md), [Set administrator permissions for Team Foundation Server](../add-administrator-tfs.md), and [Service accounts and dependencies in Team Foundation Server](../service-accounts-dependencies-tfs.md).
 
 
 ## Refresh the work item cache

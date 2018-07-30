@@ -19,8 +19,8 @@ The **TfsConfig Lab /DNS** command adds, deletes, or displays DNS records that w
 |**Delete**|Removes the specified DNS records.|
 |**List**|Displays the specified DNS records.|
 |**LabEnvironment:** environmentUri|Targets the **/Add**, **/Delete**, or **/List** options to an individual network-isolated environment that is specified by environmentUri.<br /><br />To use the **LabEnvironment** option, you must also specify the **/Collection** and **/TeamProject** options.|
-|**TeamProject:** projectName|When used without **/LabEnvironment**, targets the **/Add**, **/Delete**, or **/List** options to all of the network-isolated environments in the team project that is specified by projectName. Otherwise, **/TeamProject** specifies the team project that contains the environment.<br /><br />To use the **/TeamProject** option, you must also specify the **/Collection** option|
-|**CollectionName:** collectionName|When used without **/TeamProject**, targets the **/Add**, **/Delete**, or **/List** options to all of the network-isolated environments in the team project collection that is specified by collectionName. Otherwise, **/Collection** specifies the team project collection that contains the team project.|
+|**TeamProject:** projectName|When used without **/LabEnvironment**, targets the **/Add**, **/Delete**, or **/List** options to all of the network-isolated environments in the project that is specified by projectName. Otherwise, **/TeamProject** specifies the project that contains the environment.<br /><br />To use the **/TeamProject** option, you must also specify the **/Collection** option|
+|**CollectionName:** collectionName|When used without **/TeamProject**, targets the **/Add**, **/Delete**, or **/List** options to all of the network-isolated environments in the project collection that is specified by collectionName. Otherwise, **/Collection** specifies the project collection that contains the project.|
 |**Name:** FQDN|Specifies the fully qualified domain name of the network location that contains the environment to target.<br /><br />You must specify the **/Name** and **/IP** options together.|
 |**IP:** IPAddress|Specifies the IP address of the environment to target.<br /><br />You must specify the **/Name** and **/IP** options together.|
 
@@ -37,7 +37,7 @@ then each application-tier service account must have permission to edit the DNS 
 >DNS record management is performed automatically by Lab Management. You should use the **/DNS** command only in the following situations:
 >
 >-   You change the account under which Visual Studio Team Foundation Server (TFS) runs.
->-   You move a team project collection from one instance of Team Foundation Server to another.
+>-   You move a project collection from one instance of Team Foundation Server to another.
 >
 >In both these cases, the DNS records that were created by using the old TFS service account have to be removed, and then the same DNS records have to be re-created by using the new TFS service account. If these steps are not performed in the previous scenarios, the new TFS service account will not be able to perform automatic management of those DNS records. As a result, users will not be able connect to virtual environments.
 
@@ -45,19 +45,19 @@ Specify only one of the **/Add**, **/Delete**, or **/List** options on a **TfsCo
 
 To target the DNS entries of network isolated environments of an object in the Lab Management object hierarchy, use the appropriate combination of **/Collection**, **/TeamProject**, and **/LabEnvironment** options
 
--   The **/LabEnvironment** option targets the command to the specified network-isolated environment. You must use the **/CollectionName** and **/TeamProject** options with the **/LabEnvironment** option to specify the team project collection and the team project that contain the environment.
+-   The **/LabEnvironment** option targets the command to the specified network-isolated environment. You must use the **/CollectionName** and **/TeamProject** options with the **/LabEnvironment** option to specify the project collection and the project that contain the environment.
 
     Use the format **vstfs:///LabManagement/LabEnvironment/** environmentID to specify the environment URI. You can view the environment identifier (environmnetID) in the Environment Viewer of Lab Management or from the description of the virtual machine in SCVMM Administrator Console.
 
--   The **/TeamProject** option targets the operation to isolated network environments in the specified team project. The **/TeamProject** option must be used with the **/CollectionName** option and the **/CollectionName** option must specify the team project collection that contains the team project.
+-   The **/TeamProject** option targets the operation to isolated network environments in the specified project. The **/TeamProject** option must be used with the **/CollectionName** option and the **/CollectionName** option must specify the project collection that contains the project.
 
--   The **/CollectionName** option targets the operation to network isolated environments in the specified team project collection.
+-   The **/CollectionName** option targets the operation to network isolated environments in the specified project collection.
 
 The second way to target a network isolated environment is to use the **/Name** and **/IP** options to specify the fully qualified external name and external IP address of an individual virtual machine. You must specify both the **/Name** and **/IP** options on the command line. You can view the external name and external IP address of a virtual machine in the Environment Viewer of Lab Management or from the description of the virtual machine in SCVMM Administrator Console.
 
 ### Examples
 
-In the first example, records for all network-isolated environments in a team project are added to DNS. In the second example, an individual DNS record is removed.
+In the first example, records for all network-isolated environments in a project are added to DNS. In the second example, an individual DNS record is removed.
 
     REM First example
     tfsconfig lab /dns /add /collectionname:Collection0 /teamproject:Project1

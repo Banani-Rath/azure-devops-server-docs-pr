@@ -15,12 +15,12 @@ ms.technology: tfs-admin
 
 **TFS 2017** | **TFS 2015** | **TFS 2013**
 
-The Visual Studio Team Foundation Background Job Agent service provides a general scheduling mechanism for Web services and jobs for Team Foundation. This Windows service is also used to run the tasks spawned by various wizards, such as the New Team Project wizard and Create a Team Project Collection wizard. The service uses the service account for Team Foundation Server (TFS), referred to as *TFSService*. The service runs on any server that is running a Web service or Web application in the logical application tier for Team Foundation. To operate correctly, the service account for the Team Foundation Background Job Agent service must have the permissions required for the tasks that it performs.
+The Visual Studio Team Foundation Background Job Agent service provides a general scheduling mechanism for Web services and jobs for Team Foundation. This Windows service is also used to run the tasks spawned by various wizards, such as the New Project wizard and Create a Project Collection wizard. The service uses the service account for Team Foundation Server (TFS), referred to as *TFSService*. The service runs on any server that is running a Web service or Web application in the logical application tier for Team Foundation. To operate correctly, the service account for the Team Foundation Background Job Agent service must have the permissions required for the tasks that it performs.
 
 Some Team Foundation services have tasks that recur at regular intervals. For example, administrators might want to schedule builds on a nightly basis. To accomplish this, build services must be able to set up an automatically scheduled event in the registration database. The Team Foundation Background Job Agent service provides a single Windows-based service to schedule repeating tasks on servers that are running Team Foundation. The service runs through the registration database, identifies all Team Foundation Server Web services that have scheduled events, and schedules these tasks.
 
 > [!IMPORTANT]
-> To perform tasks such as creating team project collections, the service account that the Team Foundation Background Job Agent uses must have certain permissions granted to it. For more information, see [Service accounts and dependencies in Team Foundation Server](../admin/service-accounts-dependencies-tfs.md).
+> To perform tasks such as creating project collections, the service account that the Team Foundation Background Job Agent uses must have certain permissions granted to it. For more information, see [Service accounts and dependencies in Team Foundation Server](../admin/service-accounts-dependencies-tfs.md).
 
 ## Instances
 

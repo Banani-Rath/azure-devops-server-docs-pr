@@ -17,7 +17,7 @@ ms.technology: tfs-admin
 
 This topic provides general guidelines for enabling AlwaysOn Availability Groups with Team Foundation Server. AlwaysOn Availability Groups requires a small amount of TFS-specific configuration, which can help you provide high availability (HA) to TFS relational databases like TFS_Configuration and TFS_Collection database. The TFS-specific configuration sets the MultisubnetFailover option to true in the connection string that TFS uses for the data tier and is not necessary for providing HA support for reporting or SharePoint. To provide high availability to the TFS report server or SharePoint deployment, use the documentation for those products. 
 
-TFS support for AlwaysOn Availability Groups is an on or off proposition: if you use it, you must include your TFS_Configuration database as well as all of your TFS_Collection databases in the availability group. If you add a team project collection in the future, the database for that collection must be added to the availability group in SQL Server.
+TFS support for AlwaysOn Availability Groups is an on or off proposition: if you use it, you must include your TFS_Configuration database as well as all of your TFS_Collection databases in the availability group. If you add a project collection in the future, the database for that collection must be added to the availability group in SQL Server.
 
 You can use more than one SQL Server availability group.
 
@@ -50,7 +50,7 @@ If you’re installing TFS for the first time, use the Advanced configuration wi
 You’ll need to back up any databases that you want to add to the AlwaysOn Availability Group to bring them into compliance for data stored in an AlwaysOn Availability Group. Next, use the Availability Group Wizard to add the databases to the group. See [Creation and Configuration of Availability Groups (SQL Server)](https://technet.microsoft.com/library/ff878265.aspx), and [Use the New Availability Group Wizard (SQL Server Management Studio)](https://technet.microsoft.com/library/hh403415.aspx).
 
 > [!TIP]
-> If you add a new team project collection to TFS, remember to add the database for the collection to your availability group in SQL Server. You cannot have some databases for team project collections in and some outside the availability group.
+> If you add a new project collection to TFS, remember to add the database for the collection to your availability group in SQL Server. You cannot have some databases for project collections in and some outside the availability group.
 
 ## AlwaysOn Availability Groups Support for Reporting and SharePoint
 

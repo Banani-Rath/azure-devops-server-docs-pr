@@ -44,7 +44,7 @@ Besides its own services, Team Foundation Server depends on other services in or
 
 Microsoft offers the option of using VSTS, which can host all of the server-side aspects of TFS for you. Your source code, work items, build configurations, and team features are all hosted in the cloud. From an architectural point of view, this greatly simplifies your use of TFS, as the only aspects of the architecture you need to consider are the client components and their Internet access.
 
-When using the VSTS, you use a web browser to connect to the service using your Microsoft account. You can create team projects, add members to your team, and work as you would with a locally installed TFS, without the overhead of administering the servers. VSTS hosts your application tier, data tier, and build servers in the cloud. 
+When using the VSTS, you use a web browser to connect to the service using your Microsoft account. You can create projects, add members to your team, and work as you would with a locally installed TFS, without the overhead of administering the servers. VSTS hosts your application tier, data tier, and build servers in the cloud. 
 
 
 <a name="theobjectmodel"></a>
@@ -70,7 +70,7 @@ Team Foundation Server includes a set of Web services and databases that you ins
 <a name="collection-level-svcs"></a>
 ### Collection-level services
 
-Collection-level services provide the functionality for operations at the level of the team project collection. You can create applications that extend Team Foundation Server by using some of these services. For more information about creating applications for TFS, see Extending Team Foundation. 
+Collection-level services provide the functionality for operations at the level of the project collection. You can create applications that extend Team Foundation Server by using some of these services. For more information about creating applications for TFS, see Extending Team Foundation. 
 
 > **Tip!** Some services appear in more than one level. For example, the Registry service functions at the collection level and the server level, and appears in both lists.
 
@@ -113,7 +113,7 @@ Team Foundation Framework Services:
 
 * Registry service
 * Event service
-* Team Project Collection service
+* Project Collection service
 * Property service
 * Security service
 * Location service
@@ -130,7 +130,7 @@ The data tier includes data, stored procedures, and other associated logic. When
 * Configuration database (TFS_Configuration)
 * Application warehouse (TFS_Warehouse)
 * Analysis Services database (TFS_Analysis)
-* Databases for team project collections (TFS_CollectionName)
+* Databases for project collections (TFS_CollectionName)
 
 
 The following table provides a list of the databases that Team Foundation Server uses in local deployments. Unless otherwise noted, you can move all databases in this list from the original server and instance where they are installed and restore them to another server or instance.
@@ -140,8 +140,8 @@ The following table provides a list of the databases that Team Foundation Server
 | --- | --- |
 | **TFS_Configuration** This database stores the catalog of resources and the configuration information for Team Foundation Server. This database contains the operational stores for Team Foundation Server. | Instance of SQL Server that is used when Team Foundation Server is installed and configured. |
 | **TFS_Warehouse** This database stores the data for reports. | Instance of SQL Server that is used when Team Foundation Server is installed and configured. |
-| **TFS_Analysis** This multi-dimensional database stores the aggregated data from team project collections. | Instance of SQL Server that is used when Team Foundation Server is installed and configured. |
-| **Databases for team project collections** One database for each team project collection, containing data from all team projects in that collection. | Instance of SQL Server that is compatible with Team Foundation Server. |
+| **TFS_Analysis** This multi-dimensional database stores the aggregated data from project collections. | Instance of SQL Server that is used when Team Foundation Server is installed and configured. |
+| **Databases for project collections** One database for each project collection, containing data from all projects in that collection. | Instance of SQL Server that is compatible with Team Foundation Server. |
  
 
 <a name="clienttier"></a>

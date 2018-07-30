@@ -1,6 +1,6 @@
 ---
-title: Move a team project collection
-description: Move a team project collection
+title: Move a project collection
+description: Move a project collection
 ms.assetid: b5d79dcb-826e-4eb4-ab8e-de222d9b9974
 ms.topic: conceptual
 ms.manager: douge
@@ -11,11 +11,11 @@ ms.prod: devops-server
 ms.technology: tfs-admin
 ---
 
-# Move a team project collection
+# Move a project collection
 
 **TFS 2015** | **TFS 2013**
 
-You can move a team project collection from one deployment of Team Foundation Server (TFS) to another. For example:
+You can move a project collection from one deployment of Team Foundation Server (TFS) to another. For example:
 
 -   You have more than one deployment of TFS in your organization, and you want to move a collection to another deployment to better align with your business needs.
 
@@ -23,11 +23,11 @@ You can move a team project collection from one deployment of Team Foundation Se
 
 -   You want to expand your deployment of TFS by adding another instance of SQL Server to it, and you want to distribute existing collections between the instances.
 
--   You need to incrementally upgrade your deployment by detaching an individual team project collection from a deployment of TFS running an earlier version, and then move it to a server running the current version of TFS. (One common reason for this is some teams might need to migrate to a newer version of TFS, while others must remain on an older version for tools or projects reasons.) In this scenario, you must also then upgrade each team project within the collection by using the Configure Features wizard. For more information, see [Configure features after a TFS upgrade](/vsts/work/customize/configure-features-after-upgrade).
+-   You need to incrementally upgrade your deployment by detaching an individual project collection from a deployment of TFS running an earlier version, and then move it to a server running the current version of TFS. (One common reason for this is some teams might need to migrate to a newer version of TFS, while others must remain on an older version for tools or projects reasons.) In this scenario, you must also then upgrade each project within the collection by using the Configure Features wizard. For more information, see [Configure features after a TFS upgrade](/vsts/work/customize/configure-features-after-upgrade).
 
 The steps to move a collection will depend on the particular configuration of the deployment that hosted the collection and the deployment to which you move it. For example, if you move a collection to a new domain, you will need to add users from that domain to the appropriate groups at the collection level and the project level. Similarly, if you move a collection to a deployment of TFS that uses a different SharePoint Web application, you'll either need to move the site collection database that supports the collection to that SharePoint Web application, or you must add the SharePoint Web application that supports the collection to the deployment of TFS to which you have moved it.
 
-Here's how to move an entire team project collection. If you want to move part of a collection, see [Split a Team Project Collection](split-team-project-collection.md).
+Here's how to move an entire project collection. If you want to move part of a collection, see [Split a Project Collection](split-team-project-collection.md).
 
 **In this topic**
 
@@ -39,7 +39,7 @@ Here's how to move an entire team project collection. If you want to move part o
 
 4.  [Attach the collection](#attach-coll)
 
-5.  [Configure the moved team project collection](#config-moved-team-coll)
+5.  [Configure the moved project collection](#config-moved-team-coll)
 
 6.  [Configure projects](#config-projs)
 
@@ -49,11 +49,11 @@ Here's how to move an entire team project collection. If you want to move part o
 
 -   How do I move a collection that uses SharePoint Products?
 
--   How do I move a team project collection that includes Lab Management?
+-   How do I move a project collection that includes Lab Management?
 
--   Can I move a team project collection that's integrated with Project Server?
+-   Can I move a project collection that's integrated with Project Server?
 
--   I moved my collection to a TFS that has users or groups that shouldn't have access to projects or functions in some of the team projects, but need access to other projects in the moved collection. Can I keep them from seeing projects I don't want them to see?
+-   I moved my collection to a TFS that has users or groups that shouldn't have access to projects or functions in some of the projects, but need access to other projects in the moved collection. Can I keep them from seeing projects I don't want them to see?
 
 **Before you begin**
 
@@ -62,38 +62,38 @@ Before you start your move, make sure that you're an administrator on the server
 <a name="detach-coll"></a>
 ## 1. Detach the collection
 
-Before you move a collection, you must first detach it from the deployment of TFS on which it is running. It's very important that you not skip this step. When you detach a collection, all jobs and services are stopped, and then the collection database is stopped. In addition, the detach process copies over the collection-specific data from the configuration database and saves it as part of the team project collection database. This configuration data is what allows the collection database to be attached to a different deployment of TFS. If that data is not present, you cannot attach the collection to any deployment of TFS except the one from which it originated.
+Before you move a collection, you must first detach it from the deployment of TFS on which it is running. It's very important that you not skip this step. When you detach a collection, all jobs and services are stopped, and then the collection database is stopped. In addition, the detach process copies over the collection-specific data from the configuration database and saves it as part of the project collection database. This configuration data is what allows the collection database to be attached to a different deployment of TFS. If that data is not present, you cannot attach the collection to any deployment of TFS except the one from which it originated.
 
 > [!NOTE]
 >  Detaching a collection prevents users from accessing any projects in that collection.
 
-1.  Open the administration console for Team Foundation on the server that hosts the collection that you want to move, and in **Team Project Collections**, highlight the collection that you want to move.
+1.  Open the administration console for Team Foundation on the server that hosts the collection that you want to move, and in **Project Collections**, highlight the collection that you want to move.
 
 2.  On the **General** tab, choose **Detach Collection**.
 
     ![On the General tab, select then detach](_img/ic738718.png)
 
-    The **Detach Team Project Collection Wizard** opens.
+    The **Detach Project Collection Wizard** opens.
 
-3.  (Optional) On the **Provide a servicing message for the team project collection** page, in **Servicing Message**, provide a message for users who might try to connect to projects in this collection.
+3.  (Optional) On the **Provide a servicing message for the project collection** page, in **Servicing Message**, provide a message for users who might try to connect to projects in this collection.
 
 4.  Choose **Next**.
 
-5.  On the **Review settings that will be used to detach team project collection** page, review the details.
+5.  On the **Review settings that will be used to detach project collection** page, review the details.
 
 6.  If you want to changes any settings, choose **Previous**. If they appear to be correct, choose **Verify**.
 
 7.  When all the readiness checks have completed successfully, choose **Detach**.
 
-8.  On the **Monitor the team project collection detach progress** page, when all processes have completed, choose **Next**.
+8.  On the **Monitor the project collection detach progress** page, when all processes have completed, choose **Next**.
 
     ![The wizard shows you progress](_img/ic738719.png)
 
-9.  (Optional) On the **Review supplemental information for this team project collection** page, either choose or note the location of the log file.
+9.  (Optional) On the **Review supplemental information for this project collection** page, either choose or note the location of the log file.
 
 10. Choose **Close**.
 
-    The team project collection no longer appears in the list of collections in the administration console.
+    The project collection no longer appears in the list of collections in the administration console.
 
     ![TFS admin console doesn't show detached](_img/ic738720.png)
 
@@ -132,44 +132,44 @@ After you restore the collection database, you can attach the collection to the 
 
 1.  Open the administration console for Team Foundation on the server that hosts the application tier for the deployment to which you want to move the collection.
 
-2.  Choose **Team Project Collections**, and then choose **Attach Collection**.
+2.  Choose **Project Collections**, and then choose **Attach Collection**.
 
     ![Use the TFS administration console](_img/ic738723.png)
 
-    The **Attach Team Project Collection Wizard** opens.
+    The **Attach Project Collection Wizard** opens.
 
-3.  On the **Select the team project collection database to attach** page, in **SQL Server Instance**, provide the name of the server and the instance that hosts the collection database, if it is not already listed.
+3.  On the **Select the project collection database to attach** page, in **SQL Server Instance**, provide the name of the server and the instance that hosts the collection database, if it is not already listed.
 
     ![Make sure the SQL Server instance is correct](_img/ic738724.png)
 
 4.  In the **Databases** list, choose the collection database that you want to attach, and then choose **Next**.
 
-5.  On the **Enter the team project collection information** page, provide a name for the collection in **Name** if one is not already present.
+5.  On the **Enter the project collection information** page, provide a name for the collection in **Name** if one is not already present.
 
 6.  (Optional) In **Description**, provide a description of the collection.
 
 7.  Choose **Next**.
 
-8.  On the **Review settings that will be used to attach the team project collection** page, review the information.
+8.  On the **Review settings that will be used to attach the project collection** page, review the information.
 
 9.  If you must change any settings, choose **Previous**. If all the settings are correct, choose **Verify**.
 
 10. When all the readiness checks have completed successfully, choose **Attach**.
 
-11. On the **Monitor the team project collection attach progress** page, when all processes have completed, choose **Next**.
+11. On the **Monitor the project collection attach progress** page, when all processes have completed, choose **Next**.
 
-12. (Optional) On the **Review supplemental information for this team project collection** page, choose or note the location of the log file.
+12. (Optional) On the **Review supplemental information for this project collection** page, choose or note the location of the log file.
 
 13. Choose **Close**.
 
-    The team project collection appears in the list of collections in the administration console. The SharePoint Web application that supported this collection in its original deployment will appear in the list of Web applications.
+    The project collection appears in the list of collections in the administration console. The SharePoint Web application that supported this collection in its original deployment will appear in the list of Web applications.
 
     ![Stop collection if configuration isn't complete](_img/ic738725.png)
 
 14. (Optional) Modify or remove the Web application from the list of Web applications. For more information, see [Modify or Remove Access Between a SharePoint Web Application and Team Foundation Server](modify-remove-access-shareport-tfs.md).
 
 <a name="config-moved-team-coll"></a>
-## 6. Configure the moved team project collection
+## 6. Configure the moved project collection
 
 You can skip this procedure if you moved the collection in the same domain, intend to use the same Web application that previously supported the collection, **and** you want to allow access for the administrators of that collection to this deployment of TFS.
 
@@ -177,9 +177,9 @@ After you have moved a collection, you must update the Web application and permi
 
 ### To configure the moved collection
 
--   Open each tab for the team project collection and, if necessary, modify the settings to reflect the services and locations to match the locations of the resources on the current TFS. This is particularly important to do for SharePoint and reporting resources. If you see errors, make sure that your account has the permissions required for administrators of team project collections, and that any other team project collection administrators have been added appropriately.
+-   Open each tab for the project collection and, if necessary, modify the settings to reflect the services and locations to match the locations of the resources on the current TFS. This is particularly important to do for SharePoint and reporting resources. If you see errors, make sure that your account has the permissions required for administrators of project collections, and that any other project collection administrators have been added appropriately.
 
-    For information about this task, see [Modify a Team Project Collection](manage-team-project-collections.md) and [Set administrator permissions for team project collections](add-administrator-tfs.md).
+    For information about this task, see [Modify a Project Collection](manage-team-project-collections.md) and [Set administrator permissions for project collections](add-administrator-tfs.md).
 
 <a name="config-projs"></a>
 ## Configure projects
@@ -188,13 +188,13 @@ You can skip this procedure if you moved the collection in the same domain and y
 
 After you configure administrators for the moved collection, either you or those administrators must add users and groups to the projects in that collection. Depending on your deployment, you might also need to configure permissions for those users in SharePoint Products and Reporting Services.
 
-### To add users to team projects
+### To add users to projects
 
--   For information about this task, see [Add users to team projects](/vsts/security/add-users-team-project).
+-   For information about this task, see [Add users to projects](/vsts/security/add-users-team-project).
 
-### To add resources to moved team projects
+### To add resources to moved projects
 
--   For more information about this task, see [Configure resources to support team projects](config-tfs-resources.md).
+-   For more information about this task, see [Configure resources to support projects](config-tfs-resources.md).
 
 <a name="q-and-a"></a>
 ## Q & A
@@ -232,11 +232,11 @@ You'll also need to rebuild the warehouse and analysis services cube on the orig
 
 ### Q: How do I move a collection that uses SharePoint Products?
 
-**A:** To move a team project collection that uses a SharePoint Web application, you must move both the team project collection itself and the SharePoint site collection that supports the team project collection. The site collection must be moved to the Web application that will support the team project collection in the new deployment. Specifically, you must [back up the site collection database](https://technet.microsoft.com/library/ee748617(v=office.15).aspx) and then [move the site collection database](https://technet.microsoft.com/library/cc825328(v=office.15).aspx). Once you've done that and attached the moved team project collection to its destination TFS, you'll need to repair the connection between that TFS and its SharePoint web application to ensure that the attached collection connects properly to the moved site collection. You’ll also need to make sure that the SharePoint tab for the team project collection points to that site collection database.
+**A:** To move a project collection that uses a SharePoint Web application, you must move both the project collection itself and the SharePoint site collection that supports the project collection. The site collection must be moved to the Web application that will support the project collection in the new deployment. Specifically, you must [back up the site collection database](https://technet.microsoft.com/library/ee748617(v=office.15).aspx) and then [move the site collection database](https://technet.microsoft.com/library/cc825328(v=office.15).aspx). Once you've done that and attached the moved project collection to its destination TFS, you'll need to repair the connection between that TFS and its SharePoint web application to ensure that the attached collection connects properly to the moved site collection. You’ll also need to make sure that the SharePoint tab for the project collection points to that site collection database.
 
 > [!NOTE]
 > If you are moving the collection between deployments that use SharePoint Products, it is strongly recommended that the service account for TFS be a member of the <strong>Farm Administrators</strong> group in SharePoint Products in both deployments. Otherwise, you might experience errors when you attempt to detach or attach the collection. </br>
-> You can move a team project collection without granting this membership to the service account for TFS. However, errors will appear when you attach the collection, and you will need to perform additional steps to reconnect projects with their portals. Even if your operational requirements generally restrict granting this membership to the service account, you should consider adding the service account to the Farm Administrators group for the duration of the move operation.
+> You can move a project collection without granting this membership to the service account for TFS. However, errors will appear when you attach the collection, and you will need to perform additional steps to reconnect projects with their portals. Even if your operational requirements generally restrict granting this membership to the service account, you should consider adding the service account to the Farm Administrators group for the duration of the move operation.
 
 1.  Open the administration console for Team Foundation, choose **SharePoint Web Applications**, and in the list of Web applications, choose the Web application that will support the collection that you just attached.
 
@@ -244,15 +244,15 @@ You'll also need to rebuild the warehouse and analysis services cube on the orig
 
 2.  Choose **Repair Connection**, and in the **Repair the connection to a SharePoint Web Application** dialog box, choose **Repair**.
 
-3.  In **Team Project Collections**, select the moved team project collection, choose the SharePoint Products tab, and modify the settings to point to the site collection database.
+3.  In **Project Collections**, select the moved project collection, choose the SharePoint Products tab, and modify the settings to point to the site collection database.
 
-### Q: How do I move a team project collection that includes Lab Management?
+### Q: How do I move a project collection that includes Lab Management?
 
-**A:** If you moved the collection to a different domain or intend to use a different System Center Virtual Machine Manager, you must delete the virtual machines, templates, team project host groups, and team project library shares from the collection database before you start the move, and recreate them in Microsoft Test Manager after the move.
+**A:** If you moved the collection to a different domain or intend to use a different System Center Virtual Machine Manager, you must delete the virtual machines, templates, project host groups, and project library shares from the collection database before you start the move, and recreate them in Microsoft Test Manager after the move.
 
 ### To delete the Lab Management resources before moving the collection
 
--   For information about how to remove all group hosts, library shares, and environments from a specified team project collection, see [TFSConfig Lab /Delete Command](../ref/command-line/tfsconfig-cmd.md#lab-delete) with the **/External** option.
+-   For information about how to remove all group hosts, library shares, and environments from a specified project collection, see [TFSConfig Lab /Delete Command](../ref/command-line/tfsconfig-cmd.md#lab-delete) with the **/External** option.
 
 ### To configure Lab Management resources after moving the collection
 
@@ -260,15 +260,15 @@ You'll also need to rebuild the warehouse and analysis services cube on the orig
 
     For more information, see [Configuring Lab Management for SCVMM Environments](config-lab-scvmm-envs.md).
 
-2.  Recreate the golden master virtual machines and templates in the new SCVMM and import virtual machines and templates into the team project collection.
+2.  Recreate the golden master virtual machines and templates in the new SCVMM and import virtual machines and templates into the project collection.
 
     For more information, see [How to: Create and Store Virtual Machines and Templates Ready for Lab Management](https://msdn.microsoft.com/en-us/library/ee702479(v=vs.120).aspx).
 
-3.  Recreate the environments for each team project.
+3.  Recreate the environments for each project.
 
     For more information, see [Creating an SCVMM Environment Using Stored Virtual Machines and Templates](https://msdn.microsoft.com/en-us/library/ee518915(v=vs.120).aspx).
 
 
-### Q: How do I restrict access to select functions in a team project?
+### Q: How do I restrict access to select functions in a project?
 
 **A:** Users who have permissions to access one project within a collection can view other projects within that collection, even if they don't have permissions to modify work items or perform other actions in that project. You can [Grant or restrict access to select features and functions](/vsts/security/restrict-access) from creating or modifying select artifacts, as well as restrict them from seeing projects, by specifically creating groups and configuring restrictions on those groups. 

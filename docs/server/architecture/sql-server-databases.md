@@ -24,7 +24,7 @@ The following table describes the databases that might be present in your deploy
 | Database | Used If | Description |
 |---|---|---|
 | Tfs_Configuration | Always | Stores data that describes your deployment of Team Foundation Server, including the name and location of the other databases. |
-| Tfs_*Collection* | Always | One database for each team project collection. Each database stores the data for the team projects (version control, builds, and work items) in that collection. |
+| Tfs_*Collection* | Always | One database for each project collection. Each database stores the data for the projects (version control, builds, and work items) in that collection. |
 | Tfs_Warehouse | Reporting is configured | Data from all project collections is collected and stored in tables that are optimized for reporting. |
 | Tfs_Analysis | Reporting is configured | Analysis Services database that organizes the data from the warehouse database into a cube structure.. |
 | ReportServer | Reporting is configured | Stores reports and report configuration data for Reporting Services. |

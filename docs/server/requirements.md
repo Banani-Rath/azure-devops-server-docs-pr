@@ -453,7 +453,7 @@ NTLM is the recommended authentication. In SharePoint Server 2013, Microsoft dep
 
 If you upgrade to Project Server 2013 from a Project Server 2010 installation that has been added to TFS, you have to perform a few extra steps to maintain the connection between TFS and Project Server. For more information, see this topic: [Upgrade Microsoft Project Server 2010 to Microsoft Project Server 2013](/vsts/work/tfs-ps-sync/upgrade-ps-2010-to-ps-2013).
 
-### Should you add Project Server to your current team project portal site?
+### Should you add Project Server to your current project portal site?
 
 Project Server is an extension of SharePoint Products. You can easily run Project Server on the same SharePoint Products farm you use for Team Foundation Server. If you run Project Server this way, you need to install both the Team Foundation Server extensions for SharePoint Products and the extensions for Project Server on the same server. Team Foundation Server recommends you use a web application running on port 80 for integration with SharePoint Products and you can use this same web application to host the Project Server projects. For example, the URL for team portal sites and Microsoft Project Web App (PWA) sites both hosted on a web application on port 80 might look something like these:
 
@@ -461,7 +461,7 @@ Project Server is an extension of SharePoint Products. You can easily run Projec
 
 -   http://*MOSS2013Server*/pwa/*EnterpriseProject*
 
-You can also run Project Server on its own SharePoint farm, separate from any farm where you might host team project portal sites. This would give you two SharePoint Products farm integrations in a single Team Foundation Server deployment.
+You can also run Project Server on its own SharePoint farm, separate from any farm where you might host project portal sites. This would give you two SharePoint Products farm integrations in a single Team Foundation Server deployment.
 
 > [!TIP]    
 > Team Foundation Server has no topology requirements for Project Server. For performance reasons, we recommend you run Project Server on a server other than Team Foundation Server. If you want to set up a sandbox integration of Project Server and Team Foundation Server, you could install all the products on a single server for demonstrations or test purposes.

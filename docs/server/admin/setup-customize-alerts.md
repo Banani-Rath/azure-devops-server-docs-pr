@@ -95,6 +95,6 @@ To perform these procedures, you must be a member of the **Administrators** secu
 
  [Support alerts and feedback requests with an SMTP server](setup-customize-alerts.md)  
 
- [Configure resources to support team projects](config-tfs-resources.md)
+ [Configure resources to support projects](config-tfs-resources.md)
  
  [You can also use TFSConfig ConfigureMail](../ref/command-line/tfsconfig-cmd.md#configure-email)  

@@ -36,7 +36,7 @@ through the upgrade wizard to upgrade your databases.
 
 	<div style="display:block; margin-left:auto; margin-right:auto; width:50%"><img src="../_img/tfs2018upgradematrix.png" /></div>
 
-4. **Configure new features**. Depending on what version you upgraded from, you may need to [configure each team project](/vsts/work/customize/configure-features-after-upgrade) to gain access to some of the new features made available. You don't have to do this immediately, but those features aren't available in that team project until they're configured. Depending on the team project, you'll use some combination of the Configure Features wizard that appears on the Work page and some manual configuration.
+4. **Configure new features**. Depending on what version you upgraded from, you may need to [configure each project](/vsts/work/customize/configure-features-after-upgrade) to gain access to some of the new features made available. You don't have to do this immediately, but those features aren't available in that project until they're configured. Depending on the project, you'll use some combination of the Configure Features wizard that appears on the Work page and some manual configuration.
 
 
 ## Before you upgrade to TFS 2018

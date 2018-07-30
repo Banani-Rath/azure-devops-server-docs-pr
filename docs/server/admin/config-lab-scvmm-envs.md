@@ -50,7 +50,7 @@ Foundation Server before configuring Lab Management. For more
 information about how to set up and configure Team Foundation Server,
 see the Team Foundation Server Installation Guide. After the
 administrator has configured Team Foundation Server and created a
-default team project collection, make sure that you have the following
+default project collection, make sure that you have the following
 information:
 
 -   *TfsMachine*: The name of the machine
@@ -173,8 +173,8 @@ the permissions that are required. For a simple setup, the
 | 1 | [Set Up And Configure Hyper-V Hosts](#setup-hyperv) | Hyper-V lets you manage virtual machines and their resources. | *HyperVHost* | Administrator for the *HyperVHost* |
 | 2 | [Install and configure SCVMM](#install-scvmm) | SCVMM helps you manage your virtual machines and templates, and where and how you store them. | *VmmMachine* </br> **Note:** You can use a separate machine as the LibraryMachine to use for the library share to store the virtual machines. | Administrator for *VmmMachine* |
 | 3 | [Configure Team Foundation Server to enable Lab Management](#config-tfs-for-lab) | You configure TFS to give you access to the virtual machines and templates that you have created. | *TfsMachine* | Team Foundation Server Administrator |
-| 4 | [Verify the configuration using Microsoft Test Manager](https://msdn.microsoft.com/en-us/library/dd380739.aspx) | Verify that you can connect to a team project and access the **Lab Center** by using Microsoft Test Manager. | *DesktopClient* | Any user account that has been added to the computer |
-| 5 | [Install test controller](#build-test-controller) | If you want to build and deploy your application by using Team Foundation Build and run tests, you will need build controllers and test controllers. | *TfsMachine* </br> **Note:** It is recommended that you use a separate machine as the ControllerMachine to install the test controller. | Team Project Collection Administrator |
+| 4 | [Verify the configuration using Microsoft Test Manager](https://msdn.microsoft.com/en-us/library/dd380739.aspx) | Verify that you can connect to a project and access the **Lab Center** by using Microsoft Test Manager. | *DesktopClient* | Any user account that has been added to the computer |
+| 5 | [Install test controller](#build-test-controller) | If you want to build and deploy your application by using Team Foundation Build and run tests, you will need build controllers and test controllers. | *TfsMachine* </br> **Note:** It is recommended that you use a separate machine as the ControllerMachine to install the test controller. | Project Collection Administrator |
 
 <a name="setup-hyperv"></a>
 ## Set up and configure Hyper-V hosts
@@ -749,7 +749,7 @@ To verify that SCVMM is installed correctly and is working:
 
       2.  On the **Select Path** wizard page,
           browse to the path for your library share that you plan to use
-          for your team project collection on Team Foundation Server.
+          for your project collection on Team Foundation Server.
 
       3.  When you are finished, confirm that a virtual machine called
           **blank** appears in the 
@@ -987,11 +987,11 @@ To configure Lab Management for Team Foundation Server:
           account of this application tier will be added to the SCVMM
           Administrator role.
 
-## Configure Lab Management for Each Team Project Collection
+## Configure Lab Management for Each Project Collection
 
 You must configure the host group and library share from SCVMM that you
-want to use with each team project collection. For example, you might
-decide to allocate one host group to each team project collection to
+want to use with each project collection. For example, you might
+decide to allocate one host group to each project collection to
 evenly divide the virtual machine resources.
 
 To use the workflow capability from a Team Foundation Build build
@@ -1000,10 +1000,10 @@ controller on your SCVMM environments, you must add a domain user
 account that will be used by test agents and build agents.
 
 > [!NOTE]
-> You must have a team project collection already created for this step of
+> You must have a project collection already created for this step of
 > the configuration.
 
-To configure Lab Management for each team project collection:
+To configure Lab Management for each project collection:
 
   1.  To select the library share to use to store virtual machines,
       templates, and SCVMM environments, choose **Team
@@ -1011,10 +1011,10 @@ To configure Lab Management for each team project collection:
       Tier**.
 
       > [!IMPORTANT]
-      > You must configure a library share for each team project collection that
+      > You must configure a library share for each project collection that
       > you want to configure for Lab Management.
 
-  2.  In the right-side pane, choose the appropriate team project
+  2.  In the right-side pane, choose the appropriate project
       collection from the list of project collections.
 
   3.  Choose the **Lab Management** tab, and then
@@ -1029,7 +1029,7 @@ To configure Lab Management for each team project collection:
       The Select Library Shares dialog box appears.
 
   5.  In the **Select Library Shares** dialog box,
-      choose one or more SCVMM library shares that this team project
+      choose one or more SCVMM library shares that this project
       collection will use, and then choose **Add**.
 
       The verify process now confirms that Team Foundation Server can
@@ -1039,49 +1039,49 @@ To configure Lab Management for each team project collection:
       **Verify** to confirm that Team Foundation Server
       can connect to the library share.
 
-  6.  To add the library share to each team project in the team project
+  6.  To add the library share to each project in the project
       collection, select the **Auto Provision**
       check box for the library share.
 
       > [!NOTE]
       > If you select to auto-provision the library share, Team Foundation
-      > Server automatically adds the library share to all the team projects in
-      > this team project collection. For team projects that have not yet been
-      > created, the library share is added when the New Team Project wizard
-      > creates the project. For team projects that have already been created in
-      > this team project collection, the library share is added when these
+      > Server automatically adds the library share to all the projects in
+      > this project collection. For projects that have not yet been
+      > created, the library share is added when the New Project wizard
+      > creates the project. For projects that have already been created in
+      > this project collection, the library share is added when these
       > settings are saved. If you clear Auto Provision the library share will
-      > no longer be added to new team projects that you add to your team
+      > no longer be added to new projects that you add to your team
       > project collection.
 
-  7.  To select the host group to use for a team project collection,
+  7.  To select the host group to use for a project collection,
       choose **Host Groups**.
 
       > [!IMPORTANT]
-      > You must select the host group for each team project collection that you
+      > You must select the host group for each project collection that you
       > want to configure for Lab Management.
 
   8.  On the **Host Groups** tab, choose 
       **Add and Verify**.
 
   9.  In the **Select Host Groups** dialog box,
-      choose one or more SCVMM host groups that this team project
+      choose one or more SCVMM host groups that this project
       collection will use, and then choose **Add**.
 
-  10. To add the host group to each team project in the team project
+  10. To add the host group to each project in the project
       collection, choose the **Auto Provision**
       check box for the host group.
 
       > [!NOTE]
       > If you select to auto-provision the host group, Team Foundation Server
-      > automatically adds the host group to all the team projects in this team
-      > project collection. For team projects that have not yet been created,
-      > the host group is added when the New Team Project wizard creates
-      > the project. For team projects that have already been created in this
-      > team project collection, the host group is added when these settings
+      > automatically adds the host group to all the projects in this team
+      > project collection. For projects that have not yet been created,
+      > the host group is added when the New Project wizard creates
+      > the project. For projects that have already been created in this
+      > project collection, the host group is added when these settings
       > are saved. If you clear **Auto Provision**, the
-      > host group will no longer be added to new team projects that you add to
-      > your team project collection.
+      > host group will no longer be added to new projects that you add to
+      > your project collection.
 
 
 <a name="build-test-controller"></a>
@@ -1103,7 +1103,7 @@ To install the test controller:
       Controllers](https://msdn.microsoft.com/en-us/library/dd648127(v=vs.120).aspx).
 
       > [!NOTE]
-      > You must register the test controller with the team project collection
+      > You must register the test controller with the project collection
       > that you are using for Lab Management.
 
   2.  Specify the user account to use for communication between the test
@@ -1124,5 +1124,5 @@ To install the test controller:
       > Account](https://msdn.microsoft.com/en-us/library/dd692846(v=vs.120).asp
       > x).
       >
-      > You must configure the user account for each team project collection
+      > You must configure the user account for each project collection
       > that you want to configure for Lab Management.

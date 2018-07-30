@@ -91,25 +91,25 @@ If the automatic migration fails, use the **TCM** command to upgrade your test p
 			<td><strong>/upgradeStatus</strong></td>
 			<td>
 				Required unless <strong>/upgradeTestPlans</strong> is used.<br/><br/>
-				Reports the migration status of test data for the specified team project.
+				Reports the migration status of test data for the specified project.
 				It will also indicate whether the specified project has any test plans.
 			</td>
 		</tr>
 		<tr>
 			<td><strong>/CollectionName</strong>:CollectionName</td>
 			<td>
-				Required. Specifies the project collection that contains the team project
+				Required. Specifies the project collection that contains the project
 				for which you want to migrate test data or check the migration status.<br/><br/>
-				If there are spaces in the name of the team project collection,
+				If there are spaces in the name of the project collection,
 				enclose the name in quotation marks, for example, &quot;Fabrikam Fiber Collection&quot;.
 			</td>
 		</tr>
 		<tr>
 			<td><strong>/TeamProjectName</strong>:TeamProjectName</td>
 			<td>
-				Required. Specifies the team project for which you want to migrate test data or check the migration status.
-				This team project must be defined in the collection that you specified by using the <strong>/collectionName</strong> parameter.
-				<br/><br/>If there are spaces in the name of the team project, enclose the name in quotation marks, for example, &quot;My Team Project&quot;.
+				Required. Specifies the project for which you want to migrate test data or check the migration status.
+				This project must be defined in the collection that you specified by using the <strong>/collectionName</strong> parameter.
+				<br/><br/>If there are spaces in the name of the project, enclose the name in quotation marks, for example, &quot;My Project&quot;.
 			</td>
 		</tr>
 	</tbody>
@@ -127,7 +127,7 @@ Your application-tier server must be upgraded to the latest version of TFS to us
 Before you can use the TCM command, you must first import the test plan work item definition and the test plan category into the project.
 To learn more about the migration and when to use this command, see [Manual updates to support test management](https://msdn.microsoft.com/library/edbe689d-7863-4273-916f-b7e93b7f00b3).
 
-The TCM command is applied to individual team projects. If you need to upgrade test plans in more than one team project, you will have to run it against each team project individually.
+The TCM command is applied to individual projects. If you need to upgrade test plans in more than one project, you will have to run it against each project individually.
 
 You must run the **TCM** command from the tools directory for TFS. By default, that location is: `drive:\%programfiles%\TFS 12.0\Tools`.
 
@@ -136,11 +136,11 @@ To learn more about the migration and when to use this command, [Manual updates 
 
 If you can't access test plans or test suites that were defined before the server upgrade occurred, run **TFSConfig TCM upgradeStatus** to determine the status of the migration.
 
-You run the **TCM** command for an individual team project. If you need to upgrade more than one team project, you will have to run it against each team project in turn.
+You run the **TCM** command for an individual project. If you need to upgrade more than one project, you will have to run it against each project in turn.
 
 ### Examples
 
-The following example shows how to check the status of test plan upgrade on the Fabrikam Fiber project hosted on the default team project collection (DefaultCollection):
+The following example shows how to check the status of test plan upgrade on the Fabrikam Fiber project hosted on the default project collection (DefaultCollection):
 
     tfsconfig tcm /upgradeStatus /CollectionName:DefaultCollection /TeamProject:"Fabrikam Fiber"
 

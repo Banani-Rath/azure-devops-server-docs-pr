@@ -16,7 +16,7 @@ ms.date: 09/09/2017
 > [!NOTE]
 > TFS 2018 and later versions no longer support native integration with SharePoint products. If you're planning to upgrade to TFS 2018, read [About SharePoint integration](/vsts/report/sharepoint-dashboards/about-sharepoint-integration) to learn about the options available to you.
 
-To integrate team projects with SharePoint sites, you must add one or
+To integrate projects with SharePoint sites, you must add one or
 more SharePoint Web applications to standard and advanced installations
 of Team Foundation Server (TFS). The version of SharePoint Products must
 also be compatible with TFS. For more information, see [SharePoint Products requirements for Team Foundation Server](../requirements.md#sharepoint).
@@ -126,9 +126,9 @@ To grant access between Team Foundation Server and a SharePoint web application:
     > SharePoint Central Administration. If not, you must obtain this
     > information from an administrator for that server.
 
-7.  In **Default location for team project collection
+7.  In **Default location for project collection
     sites**, specify the relative path for the site collection that
-    you want to use as the root for team project collections that use
+    you want to use as the root for project collections that use
     this SharePoint web application.
 
     > [!NOTE]
