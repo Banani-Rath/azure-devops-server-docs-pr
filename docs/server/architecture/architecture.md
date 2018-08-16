@@ -38,7 +38,7 @@ Besides its own services, Team Foundation Server depends on other services in or
 
 
 <a name="teamservices"></a>
-## Azure DevOps Services (Azure DevOps Services) 
+## Azure DevOps Services 
 
 ![Azure DevOps Services](../_img/architecture/vsts_architecture_intro.png)
 

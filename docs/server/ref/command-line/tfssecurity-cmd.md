@@ -23,7 +23,7 @@ This server-level tool is located in Drive:\\%programfiles%\\TFS 12.0\\Tools on 
 > you must open an elevated Command Prompt to perform this function.
 
 ## Use with Azure DevOps Services
-The **TFSSecurity** command-line tool can be used with Azure DevOps Services (Azure DevOps Services) as well. To use it for Azure DevOps Services, use the same commands as TFS but replace the *CollectionURL* with your *AccountURL* (ServerURL is not applicable with Azure DevOps Services). 
+The **TFSSecurity** command-line tool can be used with Azure DevOps Services as well. To use it for Azure DevOps Services, use the same commands as TFS but replace the *CollectionURL* with your *AccountURL* (ServerURL is not applicable with Azure DevOps Services). 
 
 ### Example:
 ```

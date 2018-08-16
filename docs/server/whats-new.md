@@ -16,7 +16,7 @@ ms.date: 09/14/2017
 
 <b>TFS 2018 | TFS 2017 | TFS 2015</b>  
 
-You can use Visual Studio Team Foundation Server (TFS) to manage your product lifecycle, reduce risks, and improve team efficiency. Updates are made every few weeks to the cloud-hosted version, Azure DevOps Services (Azure DevOps Services). These updates are then rolled up and made available through quarterly updates to the on-premises TFS. To understand the differences between the hosted and on-premises versions, see [A tour of services provided with Azure DevOps Services and TFS](/vsts/user-guide/services).   
+You can use Visual Studio Team Foundation Server (TFS) to manage your product lifecycle, reduce risks, and improve team efficiency. Updates are made every few weeks to the cloud-hosted version, Azure DevOps Services . These updates are then rolled up and made available through quarterly updates to the on-premises TFS. To understand the differences between the hosted and on-premises versions, see [A tour of services provided with Azure DevOps Services and TFS](/vsts/user-guide/services).   
 
 To learn about  what's new with the cloud service offering, see [Azure DevOps Services Features update](https://www.visualstudio.com/news/releasenotes/tfs2018-relnotes).   
 
