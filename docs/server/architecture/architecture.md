@@ -17,11 +17,11 @@ ms.technology: tfs-admin
 
 To best plan and manage your deployment, you should first understand the underlying architecture of Team Foundation Server (TFS). Understanding the architecture can help you maintain the overall health of the deployment and help ensure the overall availability of the servers and services your development teams require. 
 
-You can deploy TFS in several ways: on one server; on many servers; or in one domain or workgroup or across domains. Alternatively, you might choose to use VSTS, where all the server elements of your deployment are hosted for you by Microsoft. Understanding the architecture can help you decide what topology is most likely to meet your business needs. Regardless of your choice of topology, if you understand the architecture underlying TFS, you can better manage the physical and logical requirements. This topic provides a simple overview of the various architectures, with links to more information about example deployments. It also provides technical information about the services, databases, configuration information, and network ports and protocols of local deployments.
+You can deploy TFS in several ways: on one server; on many servers; or in one domain or workgroup or across domains. Alternatively, you might choose to use Azure DevOps Services, where all the server elements of your deployment are hosted for you by Microsoft. Understanding the architecture can help you decide what topology is most likely to meet your business needs. Regardless of your choice of topology, if you understand the architecture underlying TFS, you can better manage the physical and logical requirements. This topic provides a simple overview of the various architectures, with links to more information about example deployments. It also provides technical information about the services, databases, configuration information, and network ports and protocols of local deployments.
 
 To understand the architecture of TFS and how it affects your deployment, you should consider the following:
 
-* The logical application, data, and client tiers of Team Foundation, and whether you want to use one or more servers for the application and data tiers, or whether you want the application and data tiers hosted in the cloud for you by using VSTS 
+* The logical application, data, and client tiers of Team Foundation, and whether you want to use one or more servers for the application and data tiers, or whether you want the application and data tiers hosted in the cloud for you by using Azure DevOps Services 
 
 * The location of the physical or virtual servers that host those tiers
 
@@ -38,13 +38,13 @@ Besides its own services, Team Foundation Server depends on other services in or
 
 
 <a name="teamservices"></a>
-## Visual Studio Team Services (VSTS) 
+## Azure DevOps Services (Azure DevOps Services) 
 
-![VSTS](../_img/architecture/vsts_architecture_intro.png)
+![Azure DevOps Services](../_img/architecture/vsts_architecture_intro.png)
 
-Microsoft offers the option of using VSTS, which can host all of the server-side aspects of TFS for you. Your source code, work items, build configurations, and team features are all hosted in the cloud. From an architectural point of view, this greatly simplifies your use of TFS, as the only aspects of the architecture you need to consider are the client components and their Internet access.
+Microsoft offers the option of using Azure DevOps Services, which can host all of the server-side aspects of TFS for you. Your source code, work items, build configurations, and team features are all hosted in the cloud. From an architectural point of view, this greatly simplifies your use of TFS, as the only aspects of the architecture you need to consider are the client components and their Internet access.
 
-When using the VSTS, you use a web browser to connect to the service using your Microsoft account. You can create projects, add members to your team, and work as you would with a locally installed TFS, without the overhead of administering the servers. VSTS hosts your application tier, data tier, and build servers in the cloud. 
+When using the Azure DevOps Services, you use a web browser to connect to the service using your Microsoft account. You can create projects, add members to your team, and work as you would with a locally installed TFS, without the overhead of administering the servers. Azure DevOps Services hosts your application tier, data tier, and build servers in the cloud. 
 
 
 <a name="theobjectmodel"></a>
@@ -125,7 +125,7 @@ Team Foundation Framework Services:
 <a name="datatier"></a>
 ### Data tier  
 
-The data tier includes data, stored procedures, and other associated logic. When you use VSTS, the data tier is hosted for you using SQL Server Azure. In a local deployment of TFS, the logical data tier consists of the following operational stores within SQL Server. These stores might be located on one physical server or distributed across many servers. You can create applications that extend Team Foundation Server by using some of these operational stores.
+The data tier includes data, stored procedures, and other associated logic. When you use Azure DevOps Services, the data tier is hosted for you using SQL Server Azure. In a local deployment of TFS, the logical data tier consists of the following operational stores within SQL Server. These stores might be located on one physical server or distributed across many servers. You can create applications that extend Team Foundation Server by using some of these operational stores.
 
 * Configuration database (TFS_Configuration)
 * Application warehouse (TFS_Warehouse)
@@ -147,7 +147,7 @@ The following table provides a list of the databases that Team Foundation Server
 <a name="clienttier"></a>
 ### Client tier  
  
-The client tier communicates with the application tier through the server object model, and uses the same Web services that are listed for that tier. This is true whether you deploy TFS locally, or if you use VSTS. Besides that model, the client tier consists of Visual Studio Industry Partners (VSIP) components, Microsoft Office integration, command-line interfaces, and a framework for check-in policies. 
+The client tier communicates with the application tier through the server object model, and uses the same Web services that are listed for that tier. This is true whether you deploy TFS locally, or if you use Azure DevOps Services. Besides that model, the client tier consists of Visual Studio Industry Partners (VSIP) components, Microsoft Office integration, command-line interfaces, and a framework for check-in policies. 
 
 
 <a name="config-info"></a>
@@ -184,7 +184,7 @@ Identity Management Services (IMS) synchronizes with Active Directory, and chang
  
 In a local deployment, Team Foundation Server has its own set of default groups and permissions that you can set at the project, collection, or server level. You can create custom groups and customize permissions at group and individual levels. However, users or groups that you add to Team Foundation Server are not automatically added to two components on which local deployments of Team Foundation Server can depend: SharePoint Products and Reporting Services. If your deployment uses these programs, you must add users and groups to them and grant the appropriate permissions before those users or groups will function correctly across all operations in Team Foundation Server. For more information, see [Manage users or groups in TFS](/vsts/security/permissions).
 
-For hosted deployments, access is controlled through a combination of Microsoft accounts and team membership. For more information, see the [VSTS overview](/vsts/overview). 
+For hosted deployments, access is controlled through a combination of Microsoft accounts and team membership. For more information, see the [Azure DevOps Services overview](/vsts/overview). 
 
 
 <a name="network-ports-protocols"></a>

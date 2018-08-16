@@ -16,9 +16,9 @@ ms.date: 09/14/2017
 
 <b>TFS 2018 | TFS 2017 | TFS 2015</b>  
 
-You can use Visual Studio Team Foundation Server (TFS) to manage your product lifecycle, reduce risks, and improve team efficiency. Updates are made every few weeks to the cloud-hosted version, Visual Studio Team Services (VSTS). These updates are then rolled up and made available through quarterly updates to the on-premises TFS. To understand the differences between the hosted and on-premises versions, see [A tour of services provided with VSTS and TFS](/vsts/user-guide/services).   
+You can use Visual Studio Team Foundation Server (TFS) to manage your product lifecycle, reduce risks, and improve team efficiency. Updates are made every few weeks to the cloud-hosted version, Azure DevOps Services (Azure DevOps Services). These updates are then rolled up and made available through quarterly updates to the on-premises TFS. To understand the differences between the hosted and on-premises versions, see [A tour of services provided with Azure DevOps Services and TFS](/vsts/user-guide/services).   
 
-To learn about  what's new with the cloud service offering, see [VSTS Features update](https://www.visualstudio.com/news/releasenotes/tfs2018-relnotes).   
+To learn about  what's new with the cloud service offering, see [Azure DevOps Services Features update](https://www.visualstudio.com/news/releasenotes/tfs2018-relnotes).   
 
 ## TFS 2018.2 RC1
 
@@ -276,7 +276,7 @@ To learn about  what's new with the cloud service offering, see [VSTS Features u
 <li>Maven now supports authenticated feeds</li>
 <li>dotnet task supports authenticated feeds, web projects</li>
 <li>Working outside your account/collection</li>
-<li>Feed picker for VSTS/TFS feeds</li>
+<li>Feed picker for Azure DevOps Services/TFS feeds</li>
 </ul>
 
 
@@ -563,7 +563,7 @@ For known issues, see [Known issues](https://www.visualstudio.com/news/releaseno
 
 ### Deprecated features  
 
-- **Team rooms**: Several good solutions are available that integrate well with TFS that support notifications and chat, such as [Microsoft Teams](https://marketplace.visualstudio.com/items?itemName=ms-vsts.vss-services-teams) and [Slack](/vsts/collaborate/slack). As a result, we have made a decision to deprecate our Team Room feature from both VSTS and TFS. To learn more about this change and the timeline for deprecation, see this blog post: [Deprecation of the Team Rooms in VSTS and TFS](https://blogs.msdn.microsoft.com/visualstudioalm/2017/01/04/deprecation-of-the-team-rooms-in-team-services-and-tfs/).  
+- **Team rooms**: Several good solutions are available that integrate well with TFS that support notifications and chat, such as [Microsoft Teams](https://marketplace.visualstudio.com/items?itemName=ms-vsts.vss-services-teams) and [Slack](/vsts/collaborate/slack). As a result, we have made a decision to deprecate our Team Room feature from both Azure DevOps Services and TFS. To learn more about this change and the timeline for deprecation, see this blog post: [Deprecation of the Team Rooms in Azure DevOps Services and TFS](https://blogs.msdn.microsoft.com/visualstudioalm/2017/01/04/deprecation-of-the-team-rooms-in-team-services-and-tfs/).  
 
 
 ## TFS 2017 RTW

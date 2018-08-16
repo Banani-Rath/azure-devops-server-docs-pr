@@ -28,7 +28,7 @@ featureFlags:
                                     </div>
                                 </div>
                                 <div class="cardText">
-                                    <span class="likeAnH3">VSTS and TFS User Guide</span>
+                                    <span class="likeAnH3">Azure DevOps Services and TFS User Guide</span>
                                 </div>
                             </div>
                         </div>
@@ -64,7 +64,7 @@ featureFlags:
                                     </div>
                                 </div>
                                 <div class="cardText">
-                                    <span class="likeAnH3">VSTS and TFS Extension Marketplace</span>
+                                    <span class="likeAnH3">Azure DevOps Services and TFS Extension Marketplace</span>
                                 </div>
                             </div>
                         </div>
@@ -137,10 +137,10 @@ featureFlags:
                                     <div class="cardPadding">
                                         <div class="card">
                                             <div class="cardText">
-                                                <h3>Using VSTS & TFS</h3>
+                                                <h3>Using Azure DevOps Services & TFS</h3>
                                                 <ul class="noBullet">
-                                                    <li><a class="barLink" href="/vsts/">VSTS & TFS Get started</a></li>
-                                                    <li><a class="barLink" href="/vsts/#pivot=services">VSTS & TFS Services</a></li>
+                                                    <li><a class="barLink" href="/vsts/">Azure DevOps Services & TFS Get started</a></li>
+                                                    <li><a class="barLink" href="/vsts/#pivot=services">Azure DevOps Services & TFS Services</a></li>
                                                 </ul>
                                             </div>
                                         </div>

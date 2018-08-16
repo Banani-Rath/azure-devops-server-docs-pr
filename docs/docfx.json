@@ -4,7 +4,8 @@
       {
         "files": [
           "**/*.md",
-          "**/*.yml"
+          "**/*.yml",
+          "**/*.svg"
         ],
         "exclude": [
           "**/obj/**",
@@ -35,11 +36,11 @@
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
-      "uhfHeaderId": "MSDocsHeader-TeamServices",
+      "uhfHeaderId": "MSDocsHeader-TFS",
       "ms.topic": "conceptual",
       "breadcrumb_path": "~/breadcrumb/toc.yml",
       "extendBreadcrumb": true,
-      "searchScope": ["VSTS", "Visual Studio Team Services", "TFS", "Team Foundation Server"],
+      "searchScope": ["Azure DevOps", "Azure DevOps Services", "TFS", "Team Foundation Server"],
       "author": "erickson-doug",
       "ms.author": "douge",
       "ms.date": "03/01/2018",

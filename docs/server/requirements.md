@@ -1,6 +1,6 @@
 ﻿---
 title: Requirements and compatibility | Team Foundation Server Setup, Upgrade and Administration
-description: Describes many kinds of requirements and compatibility for VSTS and TFS -- hardware, operating systems, SQL Server, client versions, server versions, browsers
+description: Describes many kinds of requirements and compatibility for Azure DevOps Services and TFS -- hardware, operating systems, SQL Server, client versions, server versions, browsers
 ms.prod: devops-server
 ms.technology: tfs-admin
 ms.assetid: 12652666-b74e-4fd8-aab1-d87cbba6b820
@@ -14,7 +14,7 @@ ms.date: 10/02/2017
 
 # Requirements and compatibility
 
-**VSTS** | **TFS 2018** | **TFS 2017** | **TFS 2015** | **TFS 2013**
+**Azure DevOps Services** | **TFS 2018** | **TFS 2017** | **TFS 2015** | **TFS 2013**
 
 <a name="operating-systems"></a>
 ## Operating systems

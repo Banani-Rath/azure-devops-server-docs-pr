@@ -51,7 +51,7 @@ that building and testing software places on processing power. The
 following illustration shows a simple topology for Team Foundation
 Server:
 
-![Simple VSTS topology](../_img/a-simple-topo.png)
+![Simple Azure DevOps Services topology](../_img/a-simple-topo.png)
 
 In this example, the Web services and databases for Team Foundation are
 hosted on the same physical server, but the build services are installed
