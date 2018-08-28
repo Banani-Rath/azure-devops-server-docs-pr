@@ -303,6 +303,6 @@ With SharePoint Server 2013 installed, you’re ready to move to the topic on TF
 
 [Install Team Foundation Server](../install-2013/install-tfs.md) 
 
-[TFS upgrade requirements](/vsts/upgrade/upgrade-2013/upgrade-2013-requirements) 
+[TFS upgrade requirements](/tfs/server/upgrade/upgrade-2013/upgrade-2013-requirements) 
 
 [How to: Set up remote SharePoint Products for Team Foundation Server](setup-remote-sharepoint.md) 

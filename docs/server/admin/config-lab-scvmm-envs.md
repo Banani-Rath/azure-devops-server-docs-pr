@@ -191,7 +191,7 @@ To set up Hyper-V, you can do one of the following:
 
 -   Install Hyper-V Server 2008 R2 on your 
     *HyperVHost*. For information about Hyper-V
-    server and how to install it, see the [Hyper-V documentation](https://docs.microsoft.com/en-us/windows-server/virtualization/hyper-v/hyper-v-server-2016).
+    server and how to install it, see the [Hyper-V documentation](/windows-server/virtualization/hyper-v/hyper-v-server-2016).
 
 To enable the Hyper-V role on each Hyper-V host with Windows Server: 
 
@@ -318,7 +318,7 @@ To verify that Hyper-V is installed correctly and is working:
     > site](http://go.microsoft.com/fwlink/?LinkId=179170).
 
     If you are using Hyper-V Server, create a virtual machine using the
-    information in the [Hyper-V documentation](https://docs.microsoft.com/en-us/windows-server/virtualization/hyper-v/hyper-v-server-2016) Web site.
+    information in the [Hyper-V documentation](/windows-server/virtualization/hyper-v/hyper-v-server-2016) Web site.
 
     > [!NOTE]
     > If you have multiple hard disk drives on your Hyper-V machine, you must
@@ -667,7 +667,7 @@ To configure SCVMM:
       4.  In the **Memory** edit box, enter or
           select ```1024```, and then choose 
           **OK**. For more information about the minimum
-          required memory for Hyper-V hosts, see this [Hyper-V system requirements page](https://docs.microsoft.com/en-us/windows-server/virtualization/hyper-v/system-requirements-for-hyper-v-on-windows).
+          required memory for Hyper-V hosts, see this [Hyper-V system requirements page](/windows-server/virtualization/hyper-v/system-requirements-for-hyper-v-on-windows).
 
       5.  Repeat steps b through d for each host.
 

@@ -1,5 +1,5 @@
 - name: "Team Foundation Server"
-  href: https://docs.microsoft.com/en-us/tfs/index#pivot=services
+  href: /tfs/index#pivot=services
 - name: Overview
   items:
   - name: What's new?
@@ -173,15 +173,15 @@
       - name: Permissions and groups reference
         href: /vsts/security/permissions?toc=/tfs/server/toc.json&bc=/tfs/server/breadcrumb/toc.json
       - name: About security roles
-        href: https://docs.microsoft.com/en-us/vsts/security/about-security-roles?toc=/tfs/toc.json
+        href: /vsts/security/about-security-roles?toc=/tfs/toc.json
       - name: Required ports
         href: architecture/required-ports.md
       - name: Security glossary
-        href: https://docs.microsoft.com/en-us/vsts/security/security-glossary?toc=/tfs/toc.json
+        href: /vsts/security/security-glossary?toc=/tfs/toc.json
 - name: Reference
   items:
   - name: REST APIs and permissions
-    href: https://docs.microsoft.com/en-us/rest/api/vsts/security/permissions?toc=/tfs/toc.json
+    href: /rest/api/vsts/security/permissions?toc=/tfs/toc.json
   - name: Service account dependencies
     href: admin/service-accounts-dependencies-tfs.md
   - name: Command-line tools
@@ -259,6 +259,6 @@
 - name: Resources
   items:
   - name: Security and Identity
-    href: https://docs.microsoft.com/en-us/vsts/security/
+    href: /vsts/security/
   - name: Notifications
-    href: https://docs.microsoft.com/en-us/vsts/notifications/
+    href: /vsts/notifications/

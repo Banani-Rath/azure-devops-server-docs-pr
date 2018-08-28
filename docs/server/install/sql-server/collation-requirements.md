@@ -65,4 +65,4 @@ To learn more, see one of the following topics:
 
 [Install Team Foundation Server](../install-2013/install-tfs.md) 
 
-[TFS upgrade requirements](/vsts/upgrade/upgrade-2013/upgrade-2013-requirements) 
+[TFS upgrade requirements](/tfs/server/upgrade/upgrade-2013/upgrade-2013-requirements) 

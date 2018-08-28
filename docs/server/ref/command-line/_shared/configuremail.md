@@ -31,7 +31,7 @@ To use the **ConfigureMail** command, you must be a member of the Team Foundatio
 
 ### Remarks
 
-You can also [use the administration console](/vsts/admin/setup-customize-alerts) to configure TFS to use an SMPT server.
+You can also [use the administration console](/tfs/server/admin/setup-customize-alerts) to configure TFS to use an SMPT server.
 
 ### Example
 

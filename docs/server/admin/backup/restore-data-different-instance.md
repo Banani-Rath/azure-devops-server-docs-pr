@@ -111,7 +111,7 @@ Install SQL Server in the new environment, prepare SQL Server for restoration of
 is operational. As an alternative, create an instance of SQL Server
 on a server that already has a matching version installed.
 
-For more information, see [Installing Team Foundation Components](/vsts/install/get-started).
+For more information, see [Installing Team Foundation Components](/tfs/server/install/get-started).
 
 <a name="StopServices"></a>
 ## Step 3: Stop Services that Team Foundation Server Uses

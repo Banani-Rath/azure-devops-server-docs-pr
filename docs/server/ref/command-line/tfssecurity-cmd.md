@@ -30,7 +30,7 @@ The **TFSSecurity** command-line tool can be used with Azure DevOps Services as 
 tfssecurity /a+ Namespace Token Action Identity (ALLOW | DENY)[/collection:AccountURL]
 ```
 
-> While this tool is supported, we recommend using our [Security REST API](https://docs.microsoft.com/en-us/rest/api/vsts/security/) when working with security groups and permissions in Azure DevOps Services as our APIs are updated faster and more often.
+> While this tool is supported, we recommend using our [Security REST API](/rest/api/vsts/security/) when working with security groups and permissions in Azure DevOps Services as our APIs are updated faster and more often.
 
 ## Permissions
 

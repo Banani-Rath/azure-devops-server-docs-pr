@@ -36,7 +36,7 @@ TFS 2012    | Windows Server 2012 R2 (Essentials, Standard, Datacenter)<br/>Wind
 TFS 2010    | Windows Server 2008 R2 (Standard, Enterprise, Datacenter)<br/>Windows Server 2008 (minimum SP2)<br/>Windows Server 2003 R2<br/>Windows Server 2003 (minimum SP2)
 
 The [server core](https://msdn.microsoft.com/library/dd184075.aspx) installation option is supported for TFS 2017 and TFS 2018, but not for earlier versions.
-[Windows Server, version 1709](https://docs.microsoft.com/windows-server/get-started/get-started-with-1709) is not supported. Eventually we do plan to support
+[Windows Server, version 1709](/windows-server/get-started/get-started-with-1709) is not supported. Eventually we do plan to support
 Windows Server releases from the Semi-Annual Channel. 
 
 ### Client operating systems
@@ -135,7 +135,7 @@ to addresses another (different) issue where SQL Server 2012 with SP1 might requ
 | --- | --- |
 | Required for TFS | Database Engine Services </br></br> Full-Text and Semantic Extractions for Search |
 Required for reporting | Reporting Services – Native </br> Analysis Services |
-| Collation settings | Must be accent sensitive </br> Must not be case sensitive </br> Must not be Binary </br> Must not be Binary - code point </br> For more information, see [SQL Server Collation Requirements](https://docs.microsoft.com/en-us/sql/relational-databases/collations/collation-and-unicode-support?view=sql-server-2017) |
+| Collation settings | Must be accent sensitive </br> Must not be case sensitive </br> Must not be Binary </br> Must not be Binary - code point </br> For more information, see [SQL Server Collation Requirements](/sql/relational-databases/collations/collation-and-unicode-support?view=sql-server-2017) |
 | Authentication | Windows authentication |
 | Service account | You can use a domain account or a built-in account. |
 

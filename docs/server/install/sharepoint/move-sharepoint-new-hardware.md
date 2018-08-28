@@ -124,6 +124,6 @@ When you installed SharePoint, a brand new content database was created for Shar
 
 You can use TFS custom backup and restore tools to manage your data. First you’re going to back up your data, including the encryption key on the report server. Next, you’re going to restore your data to the SQL Server instance you set up in step 2. With the restore complete, you’ll use the SQL Server Reporting tool to restart the database, restore the encryption key, and then verify access to the report server. If you installed SharePoint, you’ll use a SharePoint command line tool to attach and upgrade your content database
 
-For more information, see [Back up and restore data for TFS](/vsts/upgrade/upgrade-2013/backup-and-restore-data)
+For more information, see [Back up and restore data for TFS](/tfs/server/upgrade/upgrade-2013/backup-and-restore-data)
 
 ![](../_img/ic612476.png)
