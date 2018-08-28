@@ -18,7 +18,7 @@ To use the **DeleteTeamProjectLibraryShare** command, you must have
 **Delete Lab Locations** permission for that Project Library Share.
 By default, members of the Team Foundation Server Administrators,
 Project Collection Administrators and Project Administrators groups
-have this permission. For more information, see [Permission reference for Team Foundation Server](/vsts/security/permissions).
+have this permission. For more information, see [Permission reference for Team Foundation Server](/azure/devops/security/permissions).
 
 
     TFSLabConfig DeleteTeamProjectLibraryShare

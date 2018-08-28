@@ -14,7 +14,7 @@ ms.date: 09/09/2017
 # Verify SharePoint products for Team Foundation Server
 
 > [!NOTE]
-> TFS 2018 and later versions no longer support native integration with SharePoint products. If you're planning to upgrade to TFS 2018, read [About SharePoint integration](/vsts/report/sharepoint-dashboards/about-sharepoint-integration) to learn about the options available to you.
+> TFS 2018 and later versions no longer support native integration with SharePoint products. If you're planning to upgrade to TFS 2018, read [About SharePoint integration](/azure/devops/report/sharepoint-dashboards/about-sharepoint-integration) to learn about the options available to you.
 
 If you choose to use an installation of SharePoint Products other than the one that was installed during Team Foundation Server installation, you should verify that your installation of SharePoint Products meets the following guidelines:
 

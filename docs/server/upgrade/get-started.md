@@ -36,7 +36,7 @@ through the upgrade wizard to upgrade your databases.
 
 	<div style="display:block; margin-left:auto; margin-right:auto; width:50%"><img src="../_img/tfs2018upgradematrix.png" /></div>
 
-4. **Configure new features**. Depending on what version you upgraded from, you may need to [configure each project](/vsts/work/customize/configure-features-after-upgrade) to gain access to some of the new features made available. You don't have to do this immediately, but those features aren't available in that project until they're configured. Depending on the project, you'll use some combination of the Configure Features wizard that appears on the Work page and some manual configuration.
+4. **Configure new features**. Depending on what version you upgraded from, you may need to [configure each project](/azure/devops/work/customize/configure-features-after-upgrade) to gain access to some of the new features made available. You don't have to do this immediately, but those features aren't available in that project until they're configured. Depending on the project, you'll use some combination of the Configure Features wizard that appears on the Work page and some manual configuration.
 
 
 ## Before you upgrade to TFS 2018
@@ -55,10 +55,10 @@ We recommend that you review [handling a TFS 2018 upgrade from old form to new f
 
 If you use TFS-Project Server integration to synchronize data between TFS and Project Server, then you'll want to review the following two topics:  
 
-- [Synchronize TFS with Project Server](/vsts/work/tfs-ps-sync/sync-ps-tfs) - which describes how native integration with Project Server is no longer supported, and instead a solution is provided by our partner, Tivitie. 
-- [Remove integration of TFS with Project Server](/vsts/work/tfs-ps-sync/remove-tfs-ps-integration) - which provides step-by-step procedures for removing the integration. You need to perform the first procedure provided prior to your upgrade.  
+- [Synchronize TFS with Project Server](/azure/devops/work/tfs-ps-sync/sync-ps-tfs) - which describes how native integration with Project Server is no longer supported, and instead a solution is provided by our partner, Tivitie. 
+- [Remove integration of TFS with Project Server](/azure/devops/work/tfs-ps-sync/remove-tfs-ps-integration) - which provides step-by-step procedures for removing the integration. You need to perform the first procedure provided prior to your upgrade.  
 
-Also, we recommend that you review the options you have when [you upgrade from TFS 2008 or TFS 2010](/vsts/work/customize/upgrade-tfs-2008-or-2010). Depending on the amount of customization you've made to your work tracking process, you'll want to choose between the options described.  
+Also, we recommend that you review the options you have when [you upgrade from TFS 2008 or TFS 2010](/azure/devops/work/customize/upgrade-tfs-2008-or-2010). Depending on the amount of customization you've made to your work tracking process, you'll want to choose between the options described.  
 
 ## Complexity
 
@@ -77,7 +77,7 @@ prepare for the worst; and finally, do the upgrade.
 
 Your TFS deployment will be offline for the duration of the upgrade. Upgrade times can be measured in minutes for 
 very small deployments or in days for very large deployments. You can keep 
-your upgrades comparably speedy by [cleaning up unnecessary data](/vsts/tfs-server/upgrade/clean-up-data). If you're keeping up 
+your upgrades comparably speedy by [cleaning up unnecessary data](/azure/devops/tfs-server/upgrade/clean-up-data). If you're keeping up 
 with the latest versions of TFS, that helps a lot, too. 
 
 If you're upgrading a very large database to TFS 2015, consider using the [TfsPreUpgrade tool](pre-upgrade.md). 

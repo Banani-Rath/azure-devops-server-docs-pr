@@ -37,7 +37,7 @@ As a Team Foundation administrator, you might want to specify that files of cert
 
 ## File Ecodings
 
-In addition to these basic file type properties, Team Foundation also tracks the file encoding for each file on the version control server. You can override the default encoding for a file from the version control Properties window opened from Source Control Explorer, or using the command line interface. For more information, see [Configure Version Control File Encoding](#config-file-encodings) and [Checkout and Edit Commands](/vsts/tfvc/checkout-or-edit-command).
+In addition to these basic file type properties, Team Foundation also tracks the file encoding for each file on the version control server. You can override the default encoding for a file from the version control Properties window opened from Source Control Explorer, or using the command line interface. For more information, see [Configure Version Control File Encoding](#config-file-encodings) and [Checkout and Edit Commands](/azure/devops/tfvc/checkout-or-edit-command).
 
 
 <a name="edit-file-type"></a>
@@ -77,7 +77,7 @@ Team Foundation version control properties include general file and folder infor
  
 **Required Permissions:**
 
-To perform these procedures, you must have the Read and the Check out permissions set to Allow. For more information, see [Team Foundation Server Permissions](/vsts/security/permissions).
+To perform these procedures, you must have the Read and the Check out permissions set to Allow. For more information, see [Team Foundation Server Permissions](/azure/devops/security/permissions).
 
 To configure version control file encoding:
 
@@ -109,7 +109,7 @@ File type definitions allow you to customize the way the version control system 
 
 **Required Permissions:**
 
-To add a file type association, you must have the **Edit server-level information** permission set to **Allow**. For more information, see [Team Foundation Server Permissions](/vsts/security/permissions).
+To add a file type association, you must have the **Edit server-level information** permission set to **Allow**. For more information, see [Team Foundation Server Permissions](/azure/devops/security/permissions).
 
 To add a file type association to version control:
 
@@ -136,7 +136,7 @@ File type definitions let you customize the way the version control system handl
 
 **Required Permissions:**
 
-To remove a file type association, you must have the **Edit server-level information** permission set to Allow. For more information, see [Team Foundation Server Permissions](/vsts/security/permissions).
+To remove a file type association, you must have the **Edit server-level information** permission set to Allow. For more information, see [Team Foundation Server Permissions](/azure/devops/security/permissions).
 
 To remove a file type associated with version control:
 

@@ -101,7 +101,7 @@ The following example shows how to add a TFS deployment named FABRIKAM to the pr
 
     TFSConfig Proxy /add /Server:http://www.fabrikam.com:8080/tfs 
 
-The following example shows how to add a project collection hosted on Azure DevOps Services to the proxy list using a [Personal Access Token](/vsts/accounts/use-personal-access-tokens-to-authenticate) to authenticate. This token will be used only to register the proxy with the Azure DevOps Services account - the default service account will still be used to run the proxy. This parameter was added in TFS 2018 Update 1 to support registering a Proxy with Azure DevOps Services without requiring a login prompt.
+The following example shows how to add a project collection hosted on Azure DevOps Services to the proxy list using a [Personal Access Token](/azure/devops/accounts/use-personal-access-tokens-to-authenticate) to authenticate. This token will be used only to register the proxy with the Azure DevOps Services account - the default service account will still be used to run the proxy. This parameter was added in TFS 2018 Update 1 to support registering a Proxy with Azure DevOps Services without requiring a login prompt.
 
     TFSConfig Proxy /add /Collection:https://HelenaPetersen.tfs.visualstudio.com/PhoneSaver 
 

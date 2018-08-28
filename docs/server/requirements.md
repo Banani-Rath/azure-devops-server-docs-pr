@@ -225,7 +225,7 @@ agents on your TFS application tiers.
 
 If you plan to use Code Search, we typically recommend setting up a separate server for it. 
 For more details, see 
-[hardware requirements for Code Search](/vsts/project/search/administration#hardware-recommendations).
+[hardware requirements for Code Search](/azure/devops/project/search/administration#hardware-recommendations).
 
 If you plan to use reporting features, we recommend setting up a separate 
 server for your warehouse database and Analysis Services cube or using a 
@@ -391,14 +391,14 @@ Release Management Server and the Microsoft Deployment agent.
 | Component | Sample user logon name (1) | Requirements |
 | --- | --- | --- |
 | Release Management Server | **RMSERVER** | This is the identity used in Internet Information Service (IIS) for the application pool and the **Release Management Monitor** Windows service. </br> Default: Network Service |
-| Microsoft Deployment Agent | **DEPLOY** | This identity is used to configure the machines in your environment for release. Make sure the identity you use here has enough permission to do whatever tasks are required. For example, if you need to install your application on this machine as part of your release, add this identity to the local Windows Administrators security group. If this identity will need to access builds on the network, make sure it has access to the network drop location. For step-by-step procedure, see [Install deployment agent and set up machines for an environment](/vsts/build-release/archive/release/previous-version/install-release-management/install-deployment-agent). </br> Default: you are prompted for an account. |
+| Microsoft Deployment Agent | **DEPLOY** | This identity is used to configure the machines in your environment for release. Make sure the identity you use here has enough permission to do whatever tasks are required. For example, if you need to install your application on this machine as part of your release, add this identity to the local Windows Administrators security group. If this identity will need to access builds on the network, make sure it has access to the network drop location. For step-by-step procedure, see [Install deployment agent and set up machines for an environment](/azure/devops/build-release/archive/release/previous-version/install-release-management/install-deployment-agent). </br> Default: you are prompted for an account. |
 
 
 #### Connect Release Management to TFS account
 
 If you connect Release Management to TFS, you need an account in TFS to
 act as an intermediary account. For a step-by-step procedure, go here:
-[Connect Release Management to TFS](/vsts/build-release/archive/release/previous-version/install-release-management/connect-to-tfs)
+[Connect Release Management to TFS](/azure/devops/build-release/archive/release/previous-version/install-release-management/connect-to-tfs)
 
 
 | Component | Sample user logon name (1) | Requirements |
@@ -434,12 +434,12 @@ placeholder names for any accounts that you might create.
 
 **TFS 2017 discontinues support for Project Server.**
 
-Team Foundation Server doesn't require Project Server, but if you use Project Server, you must use a supported version.  TFS-Project Server integration [enables data to flow from work items in Team Foundation Server to tasks in enterprise project plans in Project Server](/vsts/work/tfs-ps-sync/synchronize-tfs-project-server). 
+Team Foundation Server doesn't require Project Server, but if you use Project Server, you must use a supported version.  TFS-Project Server integration [enables data to flow from work items in Team Foundation Server to tasks in enterprise project plans in Project Server](/azure/devops/work/tfs-ps-sync/synchronize-tfs-project-server). 
 
 TFS version | Supported Project Server versions | Supported Project versions
 ------------|---------------------------------- | ---------------------------
-TFS 2018    | Not supported. See [Synchronize TFS with Project Server](/vsts/work/tfs-ps-sync/sync-ps-tfs) for details. | Not supported. 
-TFS 2017    | Not supported. See [Synchronize TFS with Project Server](/vsts/work/tfs-ps-sync/sync-ps-tfs) for details. | Not supported. 
+TFS 2018    | Not supported. See [Synchronize TFS with Project Server](/azure/devops/work/tfs-ps-sync/sync-ps-tfs) for details. | Not supported. 
+TFS 2017    | Not supported. See [Synchronize TFS with Project Server](/azure/devops/work/tfs-ps-sync/sync-ps-tfs) for details. | Not supported. 
 TFS 2015    | Project Server 2010 with SP1<br/>Project Server 2013 | Project Professional 2007 with SP2 and [update](http://go.microsoft.com/fwlink/?LinkId=211633)<br/>Project Professional 2007 with SP3<br/>Project Professional 2010<br/>Project Professional 2013
 TFS 2013    | Project Server 2010 with SP1<br/>Project Server 2013 | Project Professional 2007 with SP2 and [update](http://go.microsoft.com/fwlink/?LinkId=211633)<br/>Project Professional 2007 with SP3<br/>Project Professional 2010<br/>Project Professional 2013
 TFS 2012    | Project Server 2007 with SP2<br/>Project Server 2007 with SP3<br/>Project Server 2010 with SP1<br/>Project Server 2013 | Project Professional 2007 with SP2 and [update](http://go.microsoft.com/fwlink/?LinkId=211633)<br/>Project Professional 2007 with SP3<br/>Project Professional 2010<br/>Project Professional 2013
@@ -451,7 +451,7 @@ To use Project Server with TFS, you must install Team Foundation Server Extensio
 
 NTLM is the recommended authentication. In SharePoint Server 2013, Microsoft deprecated Windows classic-authentication in favor of claims-based authentication. TFS 2012 supports both, but for claims-based authentication, the authentication provider must be NTLM. TFS 2012 supports only NTLM-based claims.
 
-If you upgrade to Project Server 2013 from a Project Server 2010 installation that has been added to TFS, you have to perform a few extra steps to maintain the connection between TFS and Project Server. For more information, see this topic: [Upgrade Microsoft Project Server 2010 to Microsoft Project Server 2013](/vsts/work/tfs-ps-sync/upgrade-ps-2010-to-ps-2013).
+If you upgrade to Project Server 2013 from a Project Server 2010 installation that has been added to TFS, you have to perform a few extra steps to maintain the connection between TFS and Project Server. For more information, see this topic: [Upgrade Microsoft Project Server 2010 to Microsoft Project Server 2013](/azure/devops/work/tfs-ps-sync/upgrade-ps-2010-to-ps-2013).
 
 ### Should you add Project Server to your current project portal site?
 

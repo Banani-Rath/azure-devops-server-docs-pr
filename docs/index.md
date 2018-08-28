@@ -18,7 +18,7 @@ featureFlags:
     <div class="container">
         <ul class="cardsY panelContent featuredContent">
             <li>
-                <a href="/vsts/user-guide">
+                <a href="/azure/devops/user-guide">
                     <div class="cardSize">
                         <div class="cardPadding">
                             <div class="card">
@@ -60,7 +60,7 @@ featureFlags:
                             <div class="card">
                                 <div class="cardImageOuter">
                                     <div class="cardImage">
-                                        <img src="/vsts/_img/index/i_extensions.svg" alt="" />
+                                        <img src="/azure/devops/_img/index/i_extensions.svg" alt="" />
                                     </div>
                                 </div>
                                 <div class="cardText">
@@ -139,8 +139,8 @@ featureFlags:
                                             <div class="cardText">
                                                 <h3>Using Azure DevOps Services & TFS</h3>
                                                 <ul class="noBullet">
-                                                    <li><a class="barLink" href="/vsts/">Azure DevOps Services & TFS Get started</a></li>
-                                                    <li><a class="barLink" href="/vsts/#pivot=services">Azure DevOps Services & TFS Services</a></li>
+                                                    <li><a class="barLink" href="/azure/devops/">Azure DevOps Services & TFS Get started</a></li>
+                                                    <li><a class="barLink" href="/azure/devops/#pivot=services">Azure DevOps Services & TFS Services</a></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -193,8 +193,8 @@ featureFlags:
                                         <li><a class="barLink" href="/tfs/server/ref/command-line/open-admin-console">Administration console</a></li>
                                         <li><a class="barLink" href="/tfs/server/admin/manage-team-project-collections">Manage project collections</a></li>
                                         <li><a class="barLink" href="/tfs/server/admin/add-administrator-tfs">Add TFS server administrators</a></li>
-                                        <li><a class="barLink" href="/vsts/security/about-permissions">Permissions and groups</a></li>
-                                        <li><a class="barLink" href="/vsts/security/access-levels">Access levels</a></li>
+                                        <li><a class="barLink" href="/azure/devops/security/about-permissions">Permissions and groups</a></li>
+                                        <li><a class="barLink" href="/azure/devops/security/access-levels">Access levels</a></li>
                                     </ul>
                                 </div>
                             </li>
@@ -206,8 +206,8 @@ featureFlags:
                                     </ul>
                                     <h3>Helpful resources</h3>
                                     <ul>
-                                        <li><a class="barLink" href="/vsts/security/index">Security and identity</a></li>
-                                        <li><a class="barLink" href="/vsts/notifications/index">Notifications</a></li>
+                                        <li><a class="barLink" href="/azure/devops/security/index">Security and identity</a></li>
+                                        <li><a class="barLink" href="/azure/devops/notifications/index">Notifications</a></li>
                                     </ul>
                                 </div>
                             </li>
@@ -223,7 +223,7 @@ featureFlags:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="/vsts/_img/index/i_build.svg" alt="" />
+                                                        <img src="/azure/devops/_img/index/i_build.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -242,7 +242,7 @@ featureFlags:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="/vsts/_img/index/sql-server-reporting.svg" alt="" />
+                                                        <img src="/azure/devops/_img/index/sql-server-reporting.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -261,7 +261,7 @@ featureFlags:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="/vsts/_img/index/i_queries.svg" alt="" />
+                                                        <img src="/azure/devops/_img/index/i_queries.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -304,7 +304,7 @@ featureFlags:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="/vsts/_img/index/i_queries.svg" alt="" />
+                                                        <img src="/azure/devops/_img/index/i_queries.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -323,7 +323,7 @@ featureFlags:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="/vsts/_img/index/sql-server-reporting.svg" alt="" />
+                                                        <img src="/azure/devops/_img/index/sql-server-reporting.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -366,7 +366,7 @@ featureFlags:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="/vsts/_img/index/i_tasks.svg" alt="" />
+                                                        <img src="/azure/devops/_img/index/i_tasks.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -409,7 +409,7 @@ featureFlags:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="/vsts/_img/index/i_agile.svg" alt="" />
+                                                        <img src="/azure/devops/_img/index/i_agile.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -428,7 +428,7 @@ featureFlags:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="/vsts/_img/index/i_scrum.svg" alt="" />
+                                                        <img src="/azure/devops/_img/index/i_scrum.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -471,7 +471,7 @@ featureFlags:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="/vsts/_img/index/i_queries.svg" alt="" />
+                                                        <img src="/azure/devops/_img/index/i_queries.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -490,7 +490,7 @@ featureFlags:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="/vsts/_img/index/i_kanban.svg" alt="" />
+                                                        <img src="/azure/devops/_img/index/i_kanban.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -509,7 +509,7 @@ featureFlags:
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="/vsts/_img/index/i_configure-teams.svg" alt="" />
+                                                        <img src="/azure/devops/_img/index/i_configure-teams.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -522,7 +522,7 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
-                                <a href="/vsts/security/about-permissions">
+                                <a href="/azure/devops/security/about-permissions">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -541,7 +541,7 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
-                                <a href="/vsts/security/access-levels">
+                                <a href="/azure/devops/security/access-levels">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -589,7 +589,7 @@ featureFlags:
                         <a href="#helpful">Helpful resources</a>
                         <ul id="helpful" class="cardsA">
                             <li>
-                                <a href="/vsts/security/index">
+                                <a href="/azure/devops/security/index">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -608,7 +608,7 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
-                                <a href="/vsts/notifications/index">
+                                <a href="/azure/devops/notifications/index">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">

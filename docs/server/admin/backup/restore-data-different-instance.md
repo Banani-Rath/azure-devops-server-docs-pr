@@ -694,7 +694,7 @@ To reconfigure reporting and Analysis Services:
     **GetProcessingStatus** service returns a value of
     **Idle** for all jobs.
 
-    For more information, see [Manually Process the Data Warehouse and Analysis Services Cube](/vsts/report/admin/manually-process-data-warehouse-and-cube) for Team Foundation Server.
+    For more information, see [Manually Process the Data Warehouse and Analysis Services Cube](/azure/devops/report/admin/manually-process-data-warehouse-and-cube) for Team Foundation Server.
 
 26. On the application-tier server, open Computer Management, and start
     the Visual Studio Team Foundation Background Job Agent.

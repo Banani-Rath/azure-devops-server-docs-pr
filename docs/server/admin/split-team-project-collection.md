@@ -293,7 +293,7 @@ After you configure administrators for both collections, either you or those adm
 
 ### To configure access for users to projects
 
--   For more information, see [Add users to projects or teams](/vsts/security/add-users-team-project).
+-   For more information, see [Add users to projects or teams](/azure/devops/security/add-users-team-project).
 
 <a name="q-and-a"></a>
 ## Q & A

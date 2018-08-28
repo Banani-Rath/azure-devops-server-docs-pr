@@ -14,7 +14,7 @@ ms.date: 09/09/2017
 # Configure the enterprise application definition for Team Foundation Server
 
 > [!NOTE]
-> TFS 2018 and later versions no longer support native integration with SharePoint products. If you're planning to upgrade to TFS 2018, read [About SharePoint integration](/vsts/report/sharepoint-dashboards/about-sharepoint-integration) to learn about the options available to you.
+> TFS 2018 and later versions no longer support native integration with SharePoint products. If you're planning to upgrade to TFS 2018, read [About SharePoint integration](/azure/devops/report/sharepoint-dashboards/about-sharepoint-integration) to learn about the options available to you.
 
 If you’re using a supported enterprise edition of SharePoint Server, you must add the enterprise application definition to your deployment of Team Foundation Server. You created the enterprise application definition when you [configured SharePoint for dashboard compatibility](install-sharepoint.md). You must perform this configuration before reports and dashboards will appear correctly in Team Foundation Server. 
 

@@ -38,7 +38,7 @@ set to **Allow** in Team Foundation Server. You
 must also be a member of the local 
 **Administrators** group on each server that hosts the
 administration console for Team Foundation. For more information about
-permissions, see [Team Foundation Server Permissions](/vsts/security/permissions).
+permissions, see [Team Foundation Server Permissions](/azure/devops/security/permissions).
 
 To modify or delete access from a SharePoint web application to Team Foundation Server:
 

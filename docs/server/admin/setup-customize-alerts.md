@@ -43,14 +43,14 @@ For feedback requests and alerts to work, you must configure an SMTP server for 
 
     ![Manage individual alerts from Team Web Access](_img/ic726730.png)
 
-    Create an alert and then perform an action that will trigger the alert. You can [set alerts for yourself or for a team](/vsts/work/track/alerts-and-notifications).
+    Create an alert and then perform an action that will trigger the alert. You can [set alerts for yourself or for a team](/azure/devops/work/track/alerts-and-notifications).
 
-This task supports [Request and review feedback](/vsts/feedback/get-feedback) and [Set alerts, get notified when changes occur](/vsts/work/track/alerts-and-notifications).
+This task supports [Request and review feedback](/azure/devops/feedback/get-feedback) and [Set alerts, get notified when changes occur](/azure/devops/work/track/alerts-and-notifications).
 
 
 ## Customize the format for TFS email alerts
 
-You can customize the format of email notifications, or alerts, that [team members subscribe to](/vsts/work/track/alerts-and-notifications). These notifications are sent when changes occur to work items, code reviews, source control files, and builds. To customize their format, you can modify their associated XSL transform files. In addition, your team members can configure *project alerts* in Team Web Access (TWA) for various notifications and specify whether they want HTML or plain text as the format.
+You can customize the format of email notifications, or alerts, that [team members subscribe to](/azure/devops/work/track/alerts-and-notifications). These notifications are sent when changes occur to work items, code reviews, source control files, and builds. To customize their format, you can modify their associated XSL transform files. In addition, your team members can configure *project alerts* in Team Web Access (TWA) for various notifications and specify whether they want HTML or plain text as the format.
 
 Alert format transform files are stored in the following folder on the application-tier server:
 
@@ -91,7 +91,7 @@ To perform these procedures, you must be a member of the **Administrators** secu
 
 ## See Also
 
- [Set alerts, get notified when changes occur](/vsts/work/track/alerts-and-notifications)  
+ [Set alerts, get notified when changes occur](/azure/devops/work/track/alerts-and-notifications)  
 
  [Support alerts and feedback requests with an SMTP server](setup-customize-alerts.md)  
 

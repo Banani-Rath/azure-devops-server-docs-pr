@@ -347,7 +347,7 @@ To create a shared service provider and the web application that it will use:
     **/**. Users typically specify **/My**, but you can
     specify any name that does not use prohibited characters. For more
     information, see the following page on the Microsoft website:
-    [Naming Restrictions in Team Foundation](/vsts/collaborate/naming-restrictions).
+    [Naming Restrictions in Team Foundation](/azure/devops/collaborate/naming-restrictions).
 
 12. In **Enter the SSP Service Credentials**,
     enter the user name and password of a domain account that you want

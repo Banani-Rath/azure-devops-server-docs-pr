@@ -44,7 +44,7 @@ tfssecurity /a+ Namespace Token Action Identity (ALLOW | DENY)[/collection:Colle
 
 #### Required Permissions
 
-To use the **/a+** command, you must have the View collection-level information or the View instance-level information permission set to Allow, depending on whether you are using the **/collection** or **/server** parameter, respectively. If you are changing permissions for a project, you must also have the Edit project-level information permission for the project set to Allow. For more information, see [Permission reference for Team Foundation Server](/vsts/security/permissions).
+To use the **/a+** command, you must have the View collection-level information or the View instance-level information permission set to Allow, depending on whether you are using the **/collection** or **/server** parameter, respectively. If you are changing permissions for a project, you must also have the Edit project-level information permission for the project set to Allow. For more information, see [Permission reference for Team Foundation Server](/azure/devops/security/permissions).
 
 #### Parameters
 
@@ -324,7 +324,7 @@ Use **/acl** to display the access control list that applies to a particular obj
 To use the **/acl** command, you must have the **View collection-level information**
 or the **View instance-level information** permission set to **Allow**,
 depending on whether you are using the **/collection** or **/server** parameter, respectively.
-For more information, see [Permission reference for Team Foundation Server](/vsts/security/permissions).
+For more information, see [Permission reference for Team Foundation Server](/azure/devops/security/permissions).
 
 #### Parameters
 
@@ -1114,39 +1114,39 @@ Sample output:
 
 |Permission|Namespace|Action|
 |---|---|---|
-|[Administer warehouse](/vsts/security/permissions#administer-warehouse-permission)|Warehouse|Administer|
-|[Create project collection](/vsts/security/permissions#create-team-project-collection-permission)|CollectionManagement|CreateCollection|
-|[Delete project collection](/vsts/security/permissions#delete-team-project-collection-permission)|CollectionManagement|DeleteCollection|
-|[Edit instance-level information](/vsts/security/permissions#edit-instance-level-information-permission)|Server|GENERIC_WRITE<br /><br />tf: AdminConfiguration<br /><br />tf: AdminConnections|
-|[Make requests on behalf of others](/vsts/security/permissions#make-requests-on-behalf-of-others-permission)|Server|Impersonate|
-|[Trigger events](/vsts/security/permissions#trigger-events-permission)|Server|TRIGGER_EVENT|
-|[Use full Web Access features](/vsts/security/permissions#use-full-web-access-features-permission)|Server|FullAccess|
-|[View instance-level information](/vsts/security/permissions#view-instance-level-information-permission)|Server|GENERIC_READ|
-|[Publish extensions](/vsts/extend/publish/overview)| Publisher| **For TFS 2017 or earlier**:<br />Create<br/>Publish<br />Write<br /><br />**For TFS 2017**:<br />CreatePublisher<br />PublishExtension<br />UpdateExtension<br />DeleteExtensions<br />|
+|[Administer warehouse](/azure/devops/security/permissions#administer-warehouse-permission)|Warehouse|Administer|
+|[Create project collection](/azure/devops/security/permissions#create-team-project-collection-permission)|CollectionManagement|CreateCollection|
+|[Delete project collection](/azure/devops/security/permissions#delete-team-project-collection-permission)|CollectionManagement|DeleteCollection|
+|[Edit instance-level information](/azure/devops/security/permissions#edit-instance-level-information-permission)|Server|GENERIC_WRITE<br /><br />tf: AdminConfiguration<br /><br />tf: AdminConnections|
+|[Make requests on behalf of others](/azure/devops/security/permissions#make-requests-on-behalf-of-others-permission)|Server|Impersonate|
+|[Trigger events](/azure/devops/security/permissions#trigger-events-permission)|Server|TRIGGER_EVENT|
+|[Use full Web Access features](/azure/devops/security/permissions#use-full-web-access-features-permission)|Server|FullAccess|
+|[View instance-level information](/azure/devops/security/permissions#view-instance-level-information-permission)|Server|GENERIC_READ|
+|[Publish extensions](/azure/devops/extend/publish/overview)| Publisher| **For TFS 2017 or earlier**:<br />Create<br/>Publish<br />Write<br /><br />**For TFS 2017**:<br />CreatePublisher<br />PublishExtension<br />UpdateExtension<br />DeleteExtensions<br />|
 
 <a id="collection-level-permissions"></a>
 ### Collection level
 
 |Permission|Namespace|Action|
 |---|---|---|
-|[Administer build resource permissions](/vsts/security/permissions#administer-build-resource-permissions-permission)|BuildAdministration|AdministerBuildResourcePermissions|
-|[Administer Project Server integration](/vsts/security/permissions#administer-Project-Server-integration-permission)|ProjectServerAdministration|AdministerProjectServer|
-|[Administer shelved changes](/vsts/security/permissions#administer-shelved-changes-permission)|VersionControlPrivileges|AdminShelvesets<br /><br />tf: AdminShelvesets|
-|[Administer workspaces](/vsts/security/permissions#administer-workspaces-permission)|VersionControlPrivileges|AdminWorkspaces<br /><br />tf: AdminWorkspaces|
-|[Alter trace settings](/vsts/security/permissions#alter-trace-settings-permission)|Collection|DIAGNOSTIC_TRACE|
-|[Create a workspace](/vsts/security/permissions#create-a-workspace-permission)|VersionControlPrivileges|tf: CreateWorkspace|
-|[Create new projects](/vsts/security/permissions#create-new-team-projects-permission)|Collection|CREATE_PROJECTS|
-|[Delete project](/vsts/security/permissions#delete-team-project-permission)|Project|Delete|
-|[Edit collection-level information](/vsts/security/permissions#edit-collection-level-information-permission)|Collection<br /><br />VersionControlPrivileges|GENERIC_WRITE<br /><br />tf: AdminConfiguration<br /><br />tf: AdminConnections|
-|[Make requests on behalf of others](/vsts/security/permissions#make-requests-on-behalf-of-others-permission)|Server|Impersonate|
-|[Manage build resources](/vsts/security/permissions#manage-build-resources-permission)|BuildAdministration|ManageBuildResources|
-|[Manage process template](/vsts/security/permissions#manage-process-template-permission)|Collection|MANAGE_TEMPLATE|
-|[Manage test controllers](/vsts/security/permissions#manage-test-controllers-permission)|Collection|MANAGE_TEST_CONTROLLERS|
-|[Trigger events](/vsts/security/permissions#trigger-events-permission)|Collection|TRIGGER_EVENT|
-|[Use build resources](/vsts/security/permissions#use-build-resources-permission)|BuildAdministration|UseBuildResources|
-|[View build resources](/vsts/security/permissions#view-build-resources-permission)|BuildAdministration|ViewBuildResources|
-|[View collection-level information](/vsts/security/permissions#view-collection-level-information-permission)|Collection|GENERIC_READ|
-|[View system synchronization information](/vsts/security/permissions#view-system-synchronization-information-permission)|Collection|SYNCHRONIZE_READ|
+|[Administer build resource permissions](/azure/devops/security/permissions#administer-build-resource-permissions-permission)|BuildAdministration|AdministerBuildResourcePermissions|
+|[Administer Project Server integration](/azure/devops/security/permissions#administer-Project-Server-integration-permission)|ProjectServerAdministration|AdministerProjectServer|
+|[Administer shelved changes](/azure/devops/security/permissions#administer-shelved-changes-permission)|VersionControlPrivileges|AdminShelvesets<br /><br />tf: AdminShelvesets|
+|[Administer workspaces](/azure/devops/security/permissions#administer-workspaces-permission)|VersionControlPrivileges|AdminWorkspaces<br /><br />tf: AdminWorkspaces|
+|[Alter trace settings](/azure/devops/security/permissions#alter-trace-settings-permission)|Collection|DIAGNOSTIC_TRACE|
+|[Create a workspace](/azure/devops/security/permissions#create-a-workspace-permission)|VersionControlPrivileges|tf: CreateWorkspace|
+|[Create new projects](/azure/devops/security/permissions#create-new-team-projects-permission)|Collection|CREATE_PROJECTS|
+|[Delete project](/azure/devops/security/permissions#delete-team-project-permission)|Project|Delete|
+|[Edit collection-level information](/azure/devops/security/permissions#edit-collection-level-information-permission)|Collection<br /><br />VersionControlPrivileges|GENERIC_WRITE<br /><br />tf: AdminConfiguration<br /><br />tf: AdminConnections|
+|[Make requests on behalf of others](/azure/devops/security/permissions#make-requests-on-behalf-of-others-permission)|Server|Impersonate|
+|[Manage build resources](/azure/devops/security/permissions#manage-build-resources-permission)|BuildAdministration|ManageBuildResources|
+|[Manage process template](/azure/devops/security/permissions#manage-process-template-permission)|Collection|MANAGE_TEMPLATE|
+|[Manage test controllers](/azure/devops/security/permissions#manage-test-controllers-permission)|Collection|MANAGE_TEST_CONTROLLERS|
+|[Trigger events](/azure/devops/security/permissions#trigger-events-permission)|Collection|TRIGGER_EVENT|
+|[Use build resources](/azure/devops/security/permissions#use-build-resources-permission)|BuildAdministration|UseBuildResources|
+|[View build resources](/azure/devops/security/permissions#view-build-resources-permission)|BuildAdministration|ViewBuildResources|
+|[View collection-level information](/azure/devops/security/permissions#view-collection-level-information-permission)|Collection|GENERIC_READ|
+|[View system synchronization information](/azure/devops/security/permissions#view-system-synchronization-information-permission)|Collection|SYNCHRONIZE_READ|
 |Can create a SOAP-based web service subscription. |EventSubscription|CREATE_SOAP_SUBSCRIPTION|
 |Can view subscription events defined for a project. |EventSubscription|GENERIC_READ|
 |Can create alerts for other users or for a team. |EventSubscription|GENERIC_WRITE|
@@ -1157,59 +1157,59 @@ Sample output:
 
 |Permission|Namespace|Action|
 |---|---|---|
-|[Create tag definition](/vsts/security/permissions#create-tag-definition-permission)|Tagging|Create|
-|[Create test runs](/vsts/security/permissions#create-test-runs-permission)|Project| PUBLISH_TEST_RESULTS
-|[Delete project](/vsts/security/permissions#delete-team-project-permission)|Project|DELETE|
-|[Delete work items](/vsts/security/permissions#delete-work-items-in-this-project-permission) (TFS 2015.2)| Project | WORK_ITEM_DELETE | 
-|[Delete test runs](/vsts/security/permissions#delete-test-runs-permission)|Project|DELETE_TEST_RESULTS|
-|[Edit project-level information](/vsts/security/permissions#edit-team-project-level-information-permission)|Project|GENERIC_WRITE|
-|[Move work items out of this project](/vsts/security/permissions#move-work-items-out-of-this-project-permission) (TFS 2015.2)| Project| WORK_ITEM_MOVE | 
-|[Manage test configurations](/vsts/security/permissions#manage-test-configurations-permission)|Project|MANAGE_TEST_CONFIGURATIONS|
-|[Manage test environments](/vsts/security/permissions#manage-test-environments-permission)|Project|MANAGE_TEST_ENVIRONMENTS|
-|[Permanently delete (destroy) work items in this project](/vsts/security/permissions#permanently-delete-work-items-in-this-project-permission) (TFS 2015.2)| Project | WORK_ITEM_PERMANENTLY_DELETE | 
-|[View project-level information](/vsts/security/permissions#view-team-project-level-information-permission)|Project|GENERIC_READ|
-|[View test runs](/vsts/security/permissions#view-test-runs-permission)|Project|VIEW_TEST_RESULTS|
+|[Create tag definition](/azure/devops/security/permissions#create-tag-definition-permission)|Tagging|Create|
+|[Create test runs](/azure/devops/security/permissions#create-test-runs-permission)|Project| PUBLISH_TEST_RESULTS
+|[Delete project](/azure/devops/security/permissions#delete-team-project-permission)|Project|DELETE|
+|[Delete work items](/azure/devops/security/permissions#delete-work-items-in-this-project-permission) (TFS 2015.2)| Project | WORK_ITEM_DELETE | 
+|[Delete test runs](/azure/devops/security/permissions#delete-test-runs-permission)|Project|DELETE_TEST_RESULTS|
+|[Edit project-level information](/azure/devops/security/permissions#edit-team-project-level-information-permission)|Project|GENERIC_WRITE|
+|[Move work items out of this project](/azure/devops/security/permissions#move-work-items-out-of-this-project-permission) (TFS 2015.2)| Project| WORK_ITEM_MOVE | 
+|[Manage test configurations](/azure/devops/security/permissions#manage-test-configurations-permission)|Project|MANAGE_TEST_CONFIGURATIONS|
+|[Manage test environments](/azure/devops/security/permissions#manage-test-environments-permission)|Project|MANAGE_TEST_ENVIRONMENTS|
+|[Permanently delete (destroy) work items in this project](/azure/devops/security/permissions#permanently-delete-work-items-in-this-project-permission) (TFS 2015.2)| Project | WORK_ITEM_PERMANENTLY_DELETE | 
+|[View project-level information](/azure/devops/security/permissions#view-team-project-level-information-permission)|Project|GENERIC_READ|
+|[View test runs](/azure/devops/security/permissions#view-test-runs-permission)|Project|VIEW_TEST_RESULTS|
 
 <a id="build-permissions"></a>
 ### Build
 
 |Permission|Namespace|Action|
 |---|---|---|
-|[Administer build permissions](/vsts/security/permissions#administer-build-permissions-permission)|Build|AdministerBuildPermissions|
-|[Delete build definition](/vsts/security/permissions#delete-build-definition-permission)|Build|DeleteBuildDefinition|
-|[Delete builds](/vsts/security/permissions#delete-builds-permission)|Build|DeleteBuilds|
-|[Destroy builds](/vsts/security/permissions#destroy-builds-permission)|Build|DestroyBuilds|
-|[Edit build definition](/vsts/security/permissions#edit-build-definition-permission)|Build|EditBuildDefinition|
-|[Edit build quality](/vsts/security/permissions#edit-build-quality-permission)|Build|EditBuildDefinition|
-|[Manage build qualities](/vsts/security/permissions#manage-build-qualities-permission)|Build|ManageBuildQualities|
-|[Manage build queue](/vsts/security/permissions#manage-build-queue-permission)|Build|ManageBuildQueue|
-|[Override check-in validation by build](/vsts/security/permissions#override-check-in-validation-by-build-permission)|Build|OverrideBuildCheckInValidation|
-|[Queue builds](/vsts/security/permissions#queue-builds-permission)|Build|QueueBuilds|
-|[Retain indefinitely](/vsts/security/permissions#retain-indefinitely-permission)|Build|RetainIndefinitely|
-|[Stop builds](/vsts/security/permissions#stop-builds-permission)|Build|StopBuilds|
-|[Update build information](/vsts/security/permissions#update-build-information-permission)|Build|UpdateBuildInformation|
-|[View build definition](/vsts/security/permissions#view-build-definition-permission)|Build|ViewBuildDefinition|
-|[View builds](/vsts/security/permissions#view-builds-permission)|Build|ViewBuilds|
+|[Administer build permissions](/azure/devops/security/permissions#administer-build-permissions-permission)|Build|AdministerBuildPermissions|
+|[Delete build definition](/azure/devops/security/permissions#delete-build-definition-permission)|Build|DeleteBuildDefinition|
+|[Delete builds](/azure/devops/security/permissions#delete-builds-permission)|Build|DeleteBuilds|
+|[Destroy builds](/azure/devops/security/permissions#destroy-builds-permission)|Build|DestroyBuilds|
+|[Edit build definition](/azure/devops/security/permissions#edit-build-definition-permission)|Build|EditBuildDefinition|
+|[Edit build quality](/azure/devops/security/permissions#edit-build-quality-permission)|Build|EditBuildDefinition|
+|[Manage build qualities](/azure/devops/security/permissions#manage-build-qualities-permission)|Build|ManageBuildQualities|
+|[Manage build queue](/azure/devops/security/permissions#manage-build-queue-permission)|Build|ManageBuildQueue|
+|[Override check-in validation by build](/azure/devops/security/permissions#override-check-in-validation-by-build-permission)|Build|OverrideBuildCheckInValidation|
+|[Queue builds](/azure/devops/security/permissions#queue-builds-permission)|Build|QueueBuilds|
+|[Retain indefinitely](/azure/devops/security/permissions#retain-indefinitely-permission)|Build|RetainIndefinitely|
+|[Stop builds](/azure/devops/security/permissions#stop-builds-permission)|Build|StopBuilds|
+|[Update build information](/azure/devops/security/permissions#update-build-information-permission)|Build|UpdateBuildInformation|
+|[View build definition](/azure/devops/security/permissions#view-build-definition-permission)|Build|ViewBuildDefinition|
+|[View builds](/azure/devops/security/permissions#view-builds-permission)|Build|ViewBuilds|
 
 <a id="work-item-query-permissions"></a>
 ### Work item query
 
 |Permission|Namespace|Action|
 |---|---|---|
-|[Contribute](/vsts/security/permissions#workitemqueryfolders-contribute-permission)|WorkItemQueryFolders|CONTRIBUTE|
-|[Delete](/vsts/security/permissions#workitemqueryfolders-delete-permission)|WorkItemQueryFolders|DELETE|
-|[Manage permissions](/vsts/security/permissions#workitemqueryfolders-manage-permissions-permission)||MANAGEPERMISSIONS|
-|[Read](/vsts/security/permissions#workitemqueryfolders-read-permission)|WorkItemQueryFolders|READ|
+|[Contribute](/azure/devops/security/permissions#workitemqueryfolders-contribute-permission)|WorkItemQueryFolders|CONTRIBUTE|
+|[Delete](/azure/devops/security/permissions#workitemqueryfolders-delete-permission)|WorkItemQueryFolders|DELETE|
+|[Manage permissions](/azure/devops/security/permissions#workitemqueryfolders-manage-permissions-permission)||MANAGEPERMISSIONS|
+|[Read](/azure/devops/security/permissions#workitemqueryfolders-read-permission)|WorkItemQueryFolders|READ|
 
 <a id="tagging-permissions"></a>
 ### Tagging
 
 |Permission|Namespace|Action|
 |---|---|---|
-|[Create tag definition](/vsts/security/permissions#create-tag-definition-permission)|Tagging|CREATE|
-|[Delete tag definition](/vsts/security/permissions#delete-tag-definition-permission)|Tagging|DELETE|
-|[Enumerate tag definition](/vsts/security/permissions#enumerate-tag-definition-permission)|Tagging|ENUMERATE|
-|[Update tag definition](/vsts/security/permissions#update-tag-definition-permission)|Tagging|UPDATE|
+|[Create tag definition](/azure/devops/security/permissions#create-tag-definition-permission)|Tagging|CREATE|
+|[Delete tag definition](/azure/devops/security/permissions#delete-tag-definition-permission)|Tagging|DELETE|
+|[Enumerate tag definition](/azure/devops/security/permissions#enumerate-tag-definition-permission)|Tagging|ENUMERATE|
+|[Update tag definition](/azure/devops/security/permissions#update-tag-definition-permission)|Tagging|UPDATE|
 
 
 <a id="area-permissions"></a>
@@ -1217,43 +1217,43 @@ Sample output:
 
 |Permission|Namespace|Action|
 |---|---|---|
-|[Create child nodes](/vsts/security/permissions#area-create-child-nodes-permission)|CSS|CREATE_CHILDREN|
-|[Delete this node](/vsts/security/permissions#area-delete-this-node-permission)|CSS|DELETE|
-|[Edit this node](/vsts/security/permissions#area-edit-this-node-permission)|CSS|GENERIC_WRITE|
-|[Edit work items in this node](/vsts/security/permissions#area-edit-work-items-in-this-node-permission)|CSS|WORK_ITEM_WRITE|
-|[Manage test plans](/vsts/security/permissions#area-manage-test-plans-permission)|CSS|MANAGE_TEST_PLANS|
-|[Manage test suites](/vsts/security/permissions#area-manage-test-suites-permission)|CSS|MANAGE_TEST_SUITES|
-|[View permissions for this node](/vsts/security/permissions#area-view-permissions-for-this-node-permission)|CSS|GENERIC_READ|
-|[View work items in this node](/vsts/security/permissions#area-view-work-items-in-this-node-permission)|CSS|WORK_ITEM_READ|
+|[Create child nodes](/azure/devops/security/permissions#area-create-child-nodes-permission)|CSS|CREATE_CHILDREN|
+|[Delete this node](/azure/devops/security/permissions#area-delete-this-node-permission)|CSS|DELETE|
+|[Edit this node](/azure/devops/security/permissions#area-edit-this-node-permission)|CSS|GENERIC_WRITE|
+|[Edit work items in this node](/azure/devops/security/permissions#area-edit-work-items-in-this-node-permission)|CSS|WORK_ITEM_WRITE|
+|[Manage test plans](/azure/devops/security/permissions#area-manage-test-plans-permission)|CSS|MANAGE_TEST_PLANS|
+|[Manage test suites](/azure/devops/security/permissions#area-manage-test-suites-permission)|CSS|MANAGE_TEST_SUITES|
+|[View permissions for this node](/azure/devops/security/permissions#area-view-permissions-for-this-node-permission)|CSS|GENERIC_READ|
+|[View work items in this node](/azure/devops/security/permissions#area-view-work-items-in-this-node-permission)|CSS|WORK_ITEM_READ|
 
 <a id="iteration-permissions"></a>
 ### Iteration
 
 |Permission|Namespace|Action|
 |---|---|---|
-|[Create child nodes](/vsts/security/permissions#iteration-create-child-nodes-permission)|Iteration|CREATE_CHILDREN|
-|[Delete this node](/vsts/security/permissions#iteration-delete-this-node-permission)|Iteration|DELETE|
-|[Edit this node](/vsts/security/permissions#iteration-edit-this-node-permission)|Iteration|GENERIC_WRITE|
-|[View permissions for this node](/vsts/security/permissions#iteration-view-permissions-for-this-node-permission)|Iteration|GENERIC_WRITE|
+|[Create child nodes](/azure/devops/security/permissions#iteration-create-child-nodes-permission)|Iteration|CREATE_CHILDREN|
+|[Delete this node](/azure/devops/security/permissions#iteration-delete-this-node-permission)|Iteration|DELETE|
+|[Edit this node](/azure/devops/security/permissions#iteration-edit-this-node-permission)|Iteration|GENERIC_WRITE|
+|[View permissions for this node](/azure/devops/security/permissions#iteration-view-permissions-for-this-node-permission)|Iteration|GENERIC_WRITE|
 
 <a id="tfvc-permissions"></a>
 ### TFVC
 
 |Permission|Namespace|Action|
 |---|---|---|
-|[Administer labels](/vsts/security/permissions#administer-labels-permission)|VersionControlItems|LabelOthers|
-|[Check in](/vsts/security/permissions#check-in-permission)|VersionControlItems|Checkin|
-|[Check in other users' changes](/vsts/security/permissions#check-in-other-users-changes-permission)|VersionControlItems|CheckinOther|
-|[Check out](/vsts/security/permissions#check-out-permission)|VersionControlItems|PendChange|
-|[Label](/vsts/security/permissions#label-permission)|VersionControlItems|Label|
-|[Lock](/vsts/security/permissions#lock-permission)|VersionControlItems|Lock|
-|[Manage branch](/vsts/security/permissions#manage-branch-permission)|VersionControlItems|ManageBranch|
-|[Manage permissions](/vsts/security/permissions#manage-permissions-permission)|VersionControlItems|AdminProjectRights|
-|[Merge](/vsts/security/permissions#merge-permission)|VersionControlItems|VersionControlItems|
-|[Read](/vsts/security/permissions#read-permission)|VersionControlItems||
-|[Revise other users' changes](/vsts/security/permissions#revise-other-users-changes-permission)|VersionControlItems|ReviseOther|
-|[Undo other users' changes](/vsts/security/permissions#undo-other-users-changes-merge-permission)|VersionControlItems|UndoOther|
-|[Unlock other users'-changes](/vsts/security/permissions#unlock-other-users-changes-permission)|VersionControlItems|UnlockOther|
+|[Administer labels](/azure/devops/security/permissions#administer-labels-permission)|VersionControlItems|LabelOthers|
+|[Check in](/azure/devops/security/permissions#check-in-permission)|VersionControlItems|Checkin|
+|[Check in other users' changes](/azure/devops/security/permissions#check-in-other-users-changes-permission)|VersionControlItems|CheckinOther|
+|[Check out](/azure/devops/security/permissions#check-out-permission)|VersionControlItems|PendChange|
+|[Label](/azure/devops/security/permissions#label-permission)|VersionControlItems|Label|
+|[Lock](/azure/devops/security/permissions#lock-permission)|VersionControlItems|Lock|
+|[Manage branch](/azure/devops/security/permissions#manage-branch-permission)|VersionControlItems|ManageBranch|
+|[Manage permissions](/azure/devops/security/permissions#manage-permissions-permission)|VersionControlItems|AdminProjectRights|
+|[Merge](/azure/devops/security/permissions#merge-permission)|VersionControlItems|VersionControlItems|
+|[Read](/azure/devops/security/permissions#read-permission)|VersionControlItems||
+|[Revise other users' changes](/azure/devops/security/permissions#revise-other-users-changes-permission)|VersionControlItems|ReviseOther|
+|[Undo other users' changes](/azure/devops/security/permissions#undo-other-users-changes-merge-permission)|VersionControlItems|UndoOther|
+|[Unlock other users'-changes](/azure/devops/security/permissions#unlock-other-users-changes-permission)|VersionControlItems|UnlockOther|
 
 <a id="git-repo-permissions"></a>
 ### Git repository
@@ -1262,32 +1262,32 @@ TFS 2017 Update 1 and later
 
 |Permission|Namespace|Action|
 |---|---|---|
-|[Contribute](/vsts/security/permissions#git-contribute-permission)|GitRepositories|GenericContribute|
-|[Contribute to Pull Requests](/vsts/security/permissions#git-contribute-to-pull-requests-permission)|GitRepositories|PullRequestContribute|
-|[Create Branch](/vsts/security/permissions#git-create-branch-permission)|GitRepositories|CreateBranch|
-|[Create Repository](/vsts/security/permissions#git-create-repository-permission)|GitRepositories|CreateRepository|
-|[Create Tag](/vsts/security/permissions#git-create-tag-permission)|GitRepositories|CreateTag|
-|[Delete Repository](/vsts/security/permissions#git-delete-repository-permission)|GitRepositories|DeleteRepository|
-|[Edit Policies](/vsts/security/permissions#git-edit-policies-permission)|GitRepositories|EditPolicies|
-|[Exempt From Policy Enforcement](/vsts/security/permissions#git-repository)|GitRepositories|PolicyExempt|
-|[Force Push (Rewrite History and Delete Branches)](/vsts/security/permissions#git-force-push-permission)|GitRepositories|ForcePush|
-|[Manage Notes](/vsts/security/permissions#git-repository)|GitRepositories|ManageNote|
-|[Manage Permissions](/vsts/security/permissions#git-repository)|GitRepositories|ManagePermissions|
-|[Read](/vsts/security/permissions#git-read-permission)|GitRepositories|GenericRead|
-|[Remove Others' Locks](/vsts/security/permissions#git-remove-others-locks-permission)|GitRepositories|RemoveOthersLocks|
-|[Rename Repository](/vsts/security/permissions#git-rename-repository-permission)|GitRepositories|RenameRepository|
+|[Contribute](/azure/devops/security/permissions#git-contribute-permission)|GitRepositories|GenericContribute|
+|[Contribute to Pull Requests](/azure/devops/security/permissions#git-contribute-to-pull-requests-permission)|GitRepositories|PullRequestContribute|
+|[Create Branch](/azure/devops/security/permissions#git-create-branch-permission)|GitRepositories|CreateBranch|
+|[Create Repository](/azure/devops/security/permissions#git-create-repository-permission)|GitRepositories|CreateRepository|
+|[Create Tag](/azure/devops/security/permissions#git-create-tag-permission)|GitRepositories|CreateTag|
+|[Delete Repository](/azure/devops/security/permissions#git-delete-repository-permission)|GitRepositories|DeleteRepository|
+|[Edit Policies](/azure/devops/security/permissions#git-edit-policies-permission)|GitRepositories|EditPolicies|
+|[Exempt From Policy Enforcement](/azure/devops/security/permissions#git-repository)|GitRepositories|PolicyExempt|
+|[Force Push (Rewrite History and Delete Branches)](/azure/devops/security/permissions#git-force-push-permission)|GitRepositories|ForcePush|
+|[Manage Notes](/azure/devops/security/permissions#git-repository)|GitRepositories|ManageNote|
+|[Manage Permissions](/azure/devops/security/permissions#git-repository)|GitRepositories|ManagePermissions|
+|[Read](/azure/devops/security/permissions#git-read-permission)|GitRepositories|GenericRead|
+|[Remove Others' Locks](/azure/devops/security/permissions#git-remove-others-locks-permission)|GitRepositories|RemoveOthersLocks|
+|[Rename Repository](/azure/devops/security/permissions#git-rename-repository-permission)|GitRepositories|RenameRepository|
 
 TFS 2017 RTM and earlier
 
 |Permission|Namespace|Action|
 |---|---|---|
-|[Administer](/vsts/security/git-permissions-before-2017#git-administer-permission)|GitRepositories|Administer|
-|[Branch Creation](/vsts/security/git-permissions-before-2017#git-branch-creation-permission)|GitRepositories|CreateBranch|
-|[Contribute](/vsts/security/git-permissions-before-2017#git-contribute-permission)|GitRepositories|GenericContribute|
-|[Note Management](/vsts/security/git-permissions-before-2017#git-note-management-permission)|GitRepositories|ManageNote|
-|[Read](/vsts/security/git-permissions-before-2017#git-read-permission)|GitRepositories|GenericRead|
-|[Rewrite and destroy history (force push)](/vsts/security/git-permissions-before-2017#git-rewrite-and-destroy-history-permission)|GitRepositories|ForcePush|
-|[Tag Creation](/vsts/security/git-permissions-before-2017#git-tag-creation-permission)|GitRepositories|CreateTag|
+|[Administer](/azure/devops/security/git-permissions-before-2017#git-administer-permission)|GitRepositories|Administer|
+|[Branch Creation](/azure/devops/security/git-permissions-before-2017#git-branch-creation-permission)|GitRepositories|CreateBranch|
+|[Contribute](/azure/devops/security/git-permissions-before-2017#git-contribute-permission)|GitRepositories|GenericContribute|
+|[Note Management](/azure/devops/security/git-permissions-before-2017#git-note-management-permission)|GitRepositories|ManageNote|
+|[Read](/azure/devops/security/git-permissions-before-2017#git-read-permission)|GitRepositories|GenericRead|
+|[Rewrite and destroy history (force push)](/azure/devops/security/git-permissions-before-2017#git-rewrite-and-destroy-history-permission)|GitRepositories|ForcePush|
+|[Tag Creation](/azure/devops/security/git-permissions-before-2017#git-tag-creation-permission)|GitRepositories|CreateTag|
 
 <a id="specifiers"></a>
 ## Identity specifiers
