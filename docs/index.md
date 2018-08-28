@@ -141,7 +141,7 @@ featureFlags:
                                                 <ul class="noBullet">
                                                      <li><a class="barLink" href="server/azure-devops-and-tfs.md">What's Azure DevOps?</a></li>
                                                     <li><a class="barLink" href="/azure/devops/">Azure DevOps Services & TFS Get started</a></li>
-                                                    <li><a class="barLink" href="/azure/devops/#pivot=services">Azure DevOps Services & TFS Services</a></li>
+                                                    <li><a class="barLink" href="/azure/devops/index-tfs">Azure DevOps Services & TFS Services</a></li>
                                                 </ul>
                                             </div>
                                         </div>
