@@ -36,11 +36,7 @@
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
-<<<<<<< HEAD
-      "uhfHeaderId": "MSDocsTFSHeader",
-=======
       "uhfHeaderId": "MSDocsHeader-TFS",
->>>>>>> c7d89c5ac9eca59526a08e3f59c3fb49c050d008
       "ms.topic": "conceptual",
       "breadcrumb_path": "~/breadcrumb/toc.yml",
       "extendBreadcrumb": true,
