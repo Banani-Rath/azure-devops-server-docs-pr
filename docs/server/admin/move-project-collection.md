@@ -256,7 +256,7 @@ Once the deployment groups are set up, you can register the agents with the new 
 
 ### To setup deployment groups after moving the collection
 
-Refer to  [Create Deployment Groups](https://docs.microsoft.com/en-us/vsts/build-release/concepts/definitions/release/deployment-groups/#create-a-deployment-group).
+Refer to  [Create Deployment Groups](https://docs.microsoft.com/vsts/build-release/concepts/definitions/release/deployment-groups/#create-a-deployment-group).
 
 ### Q: How do I move a project collection that includes Lab Management?
 
@@ -274,11 +274,11 @@ Refer to  [Create Deployment Groups](https://docs.microsoft.com/en-us/vsts/build
 
 2.  Recreate the golden master virtual machines and templates in the new SCVMM and import virtual machines and templates into the project collection.
 
-    For more information, see [How to: Create and Store Virtual Machines and Templates Ready for Lab Management](https://msdn.microsoft.com/en-us/library/ee702479(v=vs.120).aspx).
+    For more information, see [How to: Create and Store Virtual Machines and Templates Ready for Lab Management](https://msdn.microsoft.com/library/ee702479(v=vs.120).aspx).
 
 3.  Recreate the environments for each project.
 
-    For more information, see [Creating an SCVMM Environment Using Stored Virtual Machines and Templates](https://msdn.microsoft.com/en-us/library/ee518915(v=vs.120).aspx).
+    For more information, see [Creating an SCVMM Environment Using Stored Virtual Machines and Templates](https://msdn.microsoft.com/library/ee518915(v=vs.120).aspx).
 
 
 ### Q: How do I restrict access to select functions in a project?

@@ -157,7 +157,7 @@ SQL Server 2012 offers a new high availability (HA) feature that requires a Team
 
 ### SQL Server editions
 
-TFS supports Express, Standard, and Enterprise [editions of SQL server](http://www.microsoft.com/en-us/server-cloud/products/sql-server-editions/).
+TFS supports Express, Standard, and Enterprise [editions of SQL server](http://www.microsoft.com/server-cloud/products/sql-server-editions/).
 The Express edition is only recommended for evaluation purposes, personal use, or for very small teams.
 We recommend Standard or Enterprise for all other scenarios.
 

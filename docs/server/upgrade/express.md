@@ -40,7 +40,7 @@ taking backups.
 ## Do the upgrade
 
 The upgrade process itself for TFS Express is quite simple -
-just install [TFS Express 2015](https://www.visualstudio.com/en-us/downloads/download-visual-studio-vs)
+just install [TFS Express 2015](https://www.visualstudio.com/downloads/download-visual-studio-vs)
 where you have the older version of TFS installed.
 You will only need to make a couple of basic decisions, and when upgrading
 from TFS 2012 or TFS 2013 the settings from your previous deployment will be remembered for you.

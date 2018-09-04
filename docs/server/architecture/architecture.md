@@ -177,7 +177,7 @@ In local deployments where Team Foundation Server is running in an Active Direct
 * The period of time that is specified in the scheduled job elapses. The default is one hour, and all groups in Team Foundation Server update every 24 hours.
 
 
-Identity Management Services (IMS) synchronizes with Active Directory, and changed identities propagate from the server to the clients. By default, all groups update within 24 hours, but you can customize this to better suit the needs of your deployment. For more information, see [Trusts and Forests Considerations for Team Foundation Server](https://msdn.microsoft.com/en-us/library/ms253081(v=vs.120).aspx). For local deployments that do not use Active Directory, see [Managing Team Foundation Server in a Workgroup](https://msdn.microsoft.com/en-us/library/ms252507(v=vs.120).aspx).
+Identity Management Services (IMS) synchronizes with Active Directory, and changed identities propagate from the server to the clients. By default, all groups update within 24 hours, but you can customize this to better suit the needs of your deployment. For more information, see [Trusts and Forests Considerations for Team Foundation Server](https://msdn.microsoft.com/library/ms253081(v=vs.120).aspx). For local deployments that do not use Active Directory, see [Managing Team Foundation Server in a Workgroup](https://msdn.microsoft.com/library/ms252507(v=vs.120).aspx).
 
 <a name="groups-n-perms"></a>
 ## Groups and permissions  

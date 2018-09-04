@@ -41,7 +41,7 @@ For most other locales, the default setting is an option under **Windows collati
 
 To avoid problems with double-width or hiragana/katakana-equivalent characters, you should select the check boxes to enable Kana and width sensitivity when you install SQL Server.
 
-For more information, see the Microsoft website: [Collation Settings in Setup](https://msdn.microsoft.com/en-us/library/ms143508.aspx).
+For more information, see the Microsoft website: [Collation Settings in Setup](https://msdn.microsoft.com/library/ms143508.aspx).
 
 ## Full-Text search queries and collation settings
 

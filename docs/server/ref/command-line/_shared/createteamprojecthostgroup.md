@@ -16,7 +16,7 @@ to a project.
 > You can automatically assign a host group to all the projects in a team
 > project collection when you assign the host group to the project
 > collection. See [TFSConfig Lab /HostGroup Commands](lab-hostgroup.md)
-> and [How to: Change the Host Groups for Your Project Collections](https://msdn.microsoft.com/en-us/library/dd386364(v=vs.120).aspx).
+> and [How to: Change the Host Groups for Your Project Collections](https://msdn.microsoft.com/library/dd386364(v=vs.120).aspx).
 
 **Required Permissions**
 

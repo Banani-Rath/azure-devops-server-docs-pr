@@ -368,7 +368,7 @@ To redirect project sites to use the content database on the new data-tier serve
     it to use the content databases on the new server.
 
     For more information, see
-    [Redirect SharePoint Products to Use a New Content Database](https://msdn.microsoft.com/en-us/library/cc668750).
+    [Redirect SharePoint Products to Use a New Content Database](https://msdn.microsoft.com/library/cc668750).
 
 <a name="ChangeSQLRS"></a>
 ## Step 6: Change the Database in Reporting Services Configuration Manager
@@ -389,7 +389,7 @@ To redirect Reporting Services to connect to the new server:
 -   Log on to the server that hosts Reporting Services, and redirect it
     to connect to the databases on the new server.
 
-    For more information, see [Redirect Reporting Services to Connect to a Different Server](https://msdn.microsoft.com/en-us/library/cc668756).
+    For more information, see [Redirect Reporting Services to Connect to a Different Server](https://msdn.microsoft.com/library/cc668756).
 
 <a name="ConfigNewSQL"></a>
 ## Step 7: Prepare SQL Server for Team Foundation Server

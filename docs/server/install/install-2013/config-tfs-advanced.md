@@ -191,4 +191,4 @@ You must be a member of the **Administrators** security group on the server on w
 
 [How to: Set up remote SharePoint Products for Team Foundation Server](../sharepoint/setup-remote-sharepoint.md)  
 
-[Set up Team Foundation Build Service](https://msdn.microsoft.com/en-us/library/ee259687(v=vs.120).aspx)
+[Set up Team Foundation Build Service](https://msdn.microsoft.com/library/ee259687(v=vs.120).aspx)

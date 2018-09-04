@@ -49,7 +49,7 @@ the following guidelines:
     project, you must first unmap all project plans that are mapped
     to the project. For more information, see [Manage the
     association of enterprise projects to team
-    projects](https://msdn.microsoft.com/en-us/library/gg412651(v=vs.120).aspx).
+    projects](https://msdn.microsoft.com/library/gg412651(v=vs.120).aspx).
 
 -   **Delete an instance of Project Web Access or
     Project Web App (PWA)**. Before you delete an instance of PWA,
@@ -57,14 +57,14 @@ the following guidelines:
     that are mapped to the instance and then unregister it. For more
     information, see [Remove a component from participating in
     data
-    synchronization](https://msdn.microsoft.com/en-us/library/gg412644(v=vs.120).aspx)
+    synchronization](https://msdn.microsoft.com/library/gg412644(v=vs.120).aspx)
     and [Remove an Instance of PWA from Participating in
-    Synchronization](https://msdn.microsoft.com/en-us/library/gg412644(v=vs.120).aspx#removepwa).
+    Synchronization](https://msdn.microsoft.com/library/gg412644(v=vs.120).aspx#removepwa).
 
 -   **Delete a project collection**. Before
     you delete a mapped collection, you should unmap it by following the
     procedure in [Remove a component from participating in data
-    synchronization](https://msdn.microsoft.com/en-us/library/gg412644(v=vs.120).aspx).
+    synchronization](https://msdn.microsoft.com/library/gg412644(v=vs.120).aspx).
 
     > [!NOTE]
     > If you delete not only a mapped project collection but also all
@@ -103,7 +103,7 @@ To move all mapped collections to a different instance of TFS:
 
       For more information, see [Assign permissions to support
       TFS-Project Server
-      integration](https://msdn.microsoft.com/en-us/library/gg412653(v=vs.120).aspx).
+      integration](https://msdn.microsoft.com/library/gg412653(v=vs.120).aspx).
 
   3.  Add the **Administer Project Server
       integration** permission to those accounts that will run the
@@ -140,7 +140,7 @@ To move some collections to a different instance of TFS and a different instance
 
       For more information, see [Assign permissions to support
       TFS-Project Server
-      integration](https://msdn.microsoft.com/en-us/library/gg412653(v=vs.120).aspx).
+      integration](https://msdn.microsoft.com/library/gg412653(v=vs.120).aspx).
 
   4.  Use the **/RegisterPWA** command option to register the second
       instance of PWA with the second application-tier server.
@@ -159,14 +159,14 @@ For more information, see the following topics:
 -   [Move Team Foundation Server from one environment to another](move-across-domains.md)
     
 
--   [Register an instance of PWA to TFS](https://msdn.microsoft.com/en-us/library/gg412639(v=vs.120).aspx)
+-   [Register an instance of PWA to TFS](https://msdn.microsoft.com/library/gg412639(v=vs.120).aspx)
     
 
--   [Map a project collection to an instance of PWA](https://msdn.microsoft.com/en-us/library/gg412654(v=vs.120).aspx)
+-   [Map a project collection to an instance of PWA](https://msdn.microsoft.com/library/gg412654(v=vs.120).aspx)
     
 
 -   [Manage mappings between an enterprise project and a team
-    project](https://msdn.microsoft.com/en-us/library/gg412638(v=vs.120).aspx)
+    project](https://msdn.microsoft.com/library/gg412638(v=vs.120).aspx)
 
 
 <a name="tfs"></a>
@@ -185,7 +185,7 @@ To move an instance of Team Foundation Server to which an instance of PWA is map
 
       For more information, see [Assign permissions to support
       TFS-Project Server
-      integration](https://msdn.microsoft.com/en-us/library/gg412653(v=vs.120).aspx).
+      integration](https://msdn.microsoft.com/library/gg412653(v=vs.120).aspx).
 
   3.  Use the **/RegisterPWA** command option to register the instance of
       PWA with the second application-tier server.
@@ -227,4 +227,4 @@ Project Server 2007 to Project Server 2010:
     ```TfsAdmin ProjectServer /RegisterPwa /tfs:TfsURL /previousPWA:URLFor2007 /PWA:URLFor2010```
 
     For more information, see [Register an instance of PWA to
-    TFS](https://msdn.microsoft.com/en-us/library/gg412639(v=vs.120).aspx).
+    TFS](https://msdn.microsoft.com/library/gg412639(v=vs.120).aspx).

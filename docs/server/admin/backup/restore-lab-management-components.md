@@ -108,7 +108,7 @@ If Team Foundation Server has failed, you must restore both the application-tier
 
 8.  At the levels of both project collections and projects, manually unassociate any host groups that were unassociated after the point to which you restored Team Foundation Server.
 
-    For more information, see [How to: Change the Host Groups for Your Project Collections](https://msdn.microsoft.com/en-us/library/dd386364(v=vs.120).aspx).
+    For more information, see [How to: Change the Host Groups for Your Project Collections](https://msdn.microsoft.com/library/dd386364(v=vs.120).aspx).
 
 9.  Reassociate any host groups that were associated with a project after the point to which you restored Team Foundation Server.
 

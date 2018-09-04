@@ -70,7 +70,7 @@ so that TFS can get through the firewall to connect to the SQL Server database e
 
 0. You can download TFS from:
 	* [www.visualstudio.com/tfs/](https://www.visualstudio.com/tfs/) (the simplest method), 
-	* [MSDN Subscriber Downloads](https://msdn.microsoft.com/en-us/library/hh442898.aspx), 
+	* [MSDN Subscriber Downloads](https://msdn.microsoft.com/library/hh442898.aspx), 
 	* the [Volume Licensing Service Center](https://www.microsoft.com/Licensing/servicecenter/default.aspx), 
 	* or purchase a DVD through retail channels
 

@@ -29,10 +29,10 @@ Management. These components are:
 
 For more information about Lab Management, see [Using a Lab
 Environment for Your Application
-Lifecycle](https://msdn.microsoft.com/en-us/library/dd997438(v=vs.120).aspx).
+Lifecycle](https://msdn.microsoft.com/library/dd997438(v=vs.120).aspx).
 
 If you are upgrading from earlier versions of Lab Management or SCVMM,
-see [upgrading](https://msdn.microsoft.com/en-us/library/hh707966(v=vs.120).aspx).
+see [upgrading](https://msdn.microsoft.com/library/hh707966(v=vs.120).aspx).
 
 > [!NOTE]
 > Any computers that you use as Library Servers (including the SCVMM
@@ -173,7 +173,7 @@ the permissions that are required. For a simple setup, the
 | 1 | [Set Up And Configure Hyper-V Hosts](#setup-hyperv) | Hyper-V lets you manage virtual machines and their resources. | *HyperVHost* | Administrator for the *HyperVHost* |
 | 2 | [Install and configure SCVMM](#install-scvmm) | SCVMM helps you manage your virtual machines and templates, and where and how you store them. | *VmmMachine* </br> **Note:** You can use a separate machine as the LibraryMachine to use for the library share to store the virtual machines. | Administrator for *VmmMachine* |
 | 3 | [Configure Team Foundation Server to enable Lab Management](#config-tfs-for-lab) | You configure TFS to give you access to the virtual machines and templates that you have created. | *TfsMachine* | Team Foundation Server Administrator |
-| 4 | [Verify the configuration using Microsoft Test Manager](https://msdn.microsoft.com/en-us/library/dd380739.aspx) | Verify that you can connect to a project and access the **Lab Center** by using Microsoft Test Manager. | *DesktopClient* | Any user account that has been added to the computer |
+| 4 | [Verify the configuration using Microsoft Test Manager](https://msdn.microsoft.com/library/dd380739.aspx) | Verify that you can connect to a project and access the **Lab Center** by using Microsoft Test Manager. | *DesktopClient* | Any user account that has been added to the computer |
 | 5 | [Install test controller](#build-test-controller) | If you want to build and deploy your application by using Team Foundation Build and run tests, you will need build controllers and test controllers. | *TfsMachine* </br> **Note:** It is recommended that you use a separate machine as the ControllerMachine to install the test controller. | Project Collection Administrator |
 
 <a name="setup-hyperv"></a>
@@ -905,7 +905,7 @@ To configure Lab Management for Team Foundation Server:
       If Team Foundation Server cannot contact the SCVMM server, a red x
       and an error message is displayed. For more information about how to
       troubleshoot installation issues, see [Troubleshooting Lab
-      Management](https://msdn.microsoft.com/en-us/library/ee853230(v=vs.120).aspx).
+      Management](https://msdn.microsoft.com/library/ee853230(v=vs.120).aspx).
 
   6.  You can use network isolation in Visual Studio Lab Management to
       enable multiple copies of a lab environment to run at the same time
@@ -913,7 +913,7 @@ To configure Lab Management for Team Foundation Server:
       names and Domain Name System (DNS) registration. For more
       information about network isolation, see [Creating and using
       a network isolated
-      environment](https://msdn.microsoft.com/en-us/library/ee518924(v=vs.120).aspx).
+      environment](https://msdn.microsoft.com/library/ee518924(v=vs.120).aspx).
       On the **Network Isolation** tab, follow
       these steps:
 
@@ -1091,7 +1091,7 @@ You can use Lab Management to deploy an application to your SCVMM
 environment and also to run tests on that environment. This requires a
 test controller. For more information about how to run tests using test
 settings and environments, see [Setting Up Test Machines to Run
-Tests or Collect Data](https://msdn.microsoft.com/en-us/library/dd293551(v=vs.120).aspx).
+Tests or Collect Data](https://msdn.microsoft.com/library/dd293551(v=vs.120).aspx).
 
 To install the test controller:
 
@@ -1100,7 +1100,7 @@ To install the test controller:
       different machine. For information about how to install and
       configure a test controller, see [Installing and Configuring
       Test Agents and Test
-      Controllers](https://msdn.microsoft.com/en-us/library/dd648127(v=vs.120).aspx).
+      Controllers](https://msdn.microsoft.com/library/dd648127(v=vs.120).aspx).
 
       > [!NOTE]
       > You must register the test controller with the project collection
@@ -1121,7 +1121,7 @@ To install the test controller:
       > service account. For more information about how to switch between these
       > two accounts and how existing environments are updated with the service
       > account, see [How to: Configure the Lab Service
-      > Account](https://msdn.microsoft.com/en-us/library/dd692846(v=vs.120).asp
+      > Account](https://msdn.microsoft.com/library/dd692846(v=vs.120).asp
       > x).
       >
       > You must configure the user account for each project collection

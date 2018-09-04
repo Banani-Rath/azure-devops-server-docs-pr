@@ -353,10 +353,10 @@ In addition, the following objects are managed at the collection level:
 
 -   **Work item tracking**: [Process templates](/azure/devops/work/work-items/guidance/manage-process-templates),
     [work item types](/azure/devops/work/customize/add-modify-wit),
-    [link types](https://msdn.microsoft.com/en-us/library/dd728085(v=vs.120).aspx),
+    [link types](https://msdn.microsoft.com/library/dd728085(v=vs.120).aspx),
     [work item fields](/azure/devops/work/customize/add-modify-field),
     [global lists](/azure/devops/work/customize/reference/define-global-lists),
-    and [global workflow](https://msdn.microsoft.com/en-us/library/gg534720(v=vs.120).aspx).
+    and [global workflow](https://msdn.microsoft.com/library/gg534720(v=vs.120).aspx).
 
     All fields defined for all projects defined within a collection
     are managed or configured for a collection. You can define no more

@@ -38,7 +38,7 @@ consider a [dual server](../install/dual-server.md) or [multiple server](../inst
 	While the configuration wizard will install SQL Server Express for you, we don't recommend using SQL Server Express for anything but
 	personal or evaluation deployments of TFS. Paid copies of TFS come with a license to SQL Server Standard for use with TFS. The [Team Foundation Server pricing page](https://www.visualstudio.com/team-services/tfs-pricing) explains the details. If you use the license that's included with TFS, you can only use if for the TFS databases.
 
-0. Ensure that the account you plan to use to configure TFS is a member of the [SysAdmin server role in SQL Server](https://msdn.microsoft.com/en-us/library/ms188659.aspx). 
+0. Ensure that the account you plan to use to configure TFS is a member of the [SysAdmin server role in SQL Server](https://msdn.microsoft.com/library/ms188659.aspx). 
 
 > [!NOTE]
 > Installing TFS involves a complex set of operations that require a high degree of privilege - these include creating databases, 
@@ -52,7 +52,7 @@ consider a [dual server](../install/dual-server.md) or [multiple server](../inst
 
 0. You can download TFS from:
 	* [www.visualstudio.com/tfs/](https://www.visualstudio.com/tfs/) (the simplest method), 
-	* [MSDN Subscriber Downloads](https://msdn.microsoft.com/en-us/library/hh442898.aspx), 
+	* [MSDN Subscriber Downloads](https://msdn.microsoft.com/library/hh442898.aspx), 
 	* the [Volume Licensing Service Center](https://www.microsoft.com/Licensing/servicecenter/default.aspx), 
 	* or purchase a DVD through retail channels
 

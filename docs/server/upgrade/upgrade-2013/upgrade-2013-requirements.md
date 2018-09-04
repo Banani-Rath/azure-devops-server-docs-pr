@@ -71,7 +71,7 @@ If you are using the trial edition of Team Foundation Server and your evaluation
 
 Release Management for Visual Studio 2013 has three components (server, client and deployment agent) and you should use the same version of all components throughout your deployment. If you have the trial version of Release Management Server for Team Foundation Server 2013 installed and you upgrade to the full version, you should upgrade all three components before you start to manage any releases. You have to uninstall the trial version of Release Management to install the full version.
 
-For more information, see this topic: [Install Release Management for Visual Studio 2013](https://msdn.microsoft.com/en-us/library/dn593700%28v=vs.120%29.aspx)
+For more information, see this topic: [Install Release Management for Visual Studio 2013](https://msdn.microsoft.com/library/dn593700%28v=vs.120%29.aspx)
 
 ### Upgrading a Team Foundation Server application-tier farm
 
@@ -85,4 +85,4 @@ For more information, see this topic: [How to: Create a Team Foundation server f
 
 ### Upgrading the TFS Extensions for Project Server
 
-If you have integrated Project Server with your TFS deployment and you upgrade TFS, your projects should continue to work as before, but you won’t have access to any new features until you install the new TFS Extensions for Project Server. You should uninstall the old extensions from Project Server and then install the latest version of the extensions on all the servers where it was previously installed. The version of the extensions you use for Project Server should always match the version of Team Foundation Server you’re running. For more information, see this topic: [How to: Add Project Server to Team Foundation Server](https://msdn.microsoft.com/en-us/library/hh548139(v=vs.120).aspx )
+If you have integrated Project Server with your TFS deployment and you upgrade TFS, your projects should continue to work as before, but you won’t have access to any new features until you install the new TFS Extensions for Project Server. You should uninstall the old extensions from Project Server and then install the latest version of the extensions on all the servers where it was previously installed. The version of the extensions you use for Project Server should always match the version of Team Foundation Server you’re running. For more information, see this topic: [How to: Add Project Server to Team Foundation Server](https://msdn.microsoft.com/library/hh548139(v=vs.120).aspx )

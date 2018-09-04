@@ -108,7 +108,7 @@ You can specify one or more of Lab Management permissions as the target
 of the **/Allow**, **/Deny**, or **/Remove** options. For a lists of
 available permissions, see the **Lab Management Permissions** section of
 the <span>[Permission reference for Team Foundation
-Server](https://msdn.microsoft.com/en-us/library/ms252587(v=vs.120).aspx)</span>
+Server](https://msdn.microsoft.com/library/ms252587(v=vs.120).aspx)</span>
 topic.
 
 -   Use an asterisk (\*) to specify all lab permissions.

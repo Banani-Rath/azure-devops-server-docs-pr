@@ -87,4 +87,4 @@ For more information, see [Configure Team Foundation Server using the advanced c
 
 ## See Also
 
-[Set up Team Foundation Build Service](https://msdn.microsoft.com/en-us/library/ee259687(v=vs.120).aspx) 
+[Set up Team Foundation Build Service](https://msdn.microsoft.com/library/ee259687(v=vs.120).aspx) 

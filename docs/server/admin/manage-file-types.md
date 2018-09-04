@@ -70,7 +70,7 @@ To change a file type association in version control:
 <a name="config-file-encodings"></a>
 ## Configure Version Control File Encoding
 
-Team Foundation version control properties include general file and folder information and the file encoding type. The properties also list the pending check-in status, security information, and branching history. For more information, see [View Version Control File and Folder Properties](https://msdn.microsoft.com/en-us/library/ms245468(v=vs.110).aspx).
+Team Foundation version control properties include general file and folder information and the file encoding type. The properties also list the pending check-in status, security information, and branching history. For more information, see [View Version Control File and Folder Properties](https://msdn.microsoft.com/library/ms245468(v=vs.110).aspx).
 
 > [!NOTE]
 > Team Foundation version control properties are not viewed in Visual Studio's Properties Window. They are viewed in their own **Properties** dialog box, as described in the procedure below.
