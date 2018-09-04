@@ -19,7 +19,7 @@ featureFlags:
 <div id="main" class="v2">
     <div class="container">
         <h1>Visual Studio Team Foundation Server Documentation</h1>
-        <p>Team Foundation Server, the on-premises version of <a href="/azure/devops/index">Azure DevOps</a>, provides integrated tools to support collaborative software development, including Git repositories, continuous integration and deployment, and interactive Kanban boards.</p>
+        <p>Team Foundation Server, the on-premises version of <a href="/azure/devops/index">Azure DevOps</a>, provides integrated tools to support collaborative software development, including Git repositories, continuous integration and continuous deployment (CI/CD), and interactive Kanban boards.</p>
         <ul class="pivots">
             <li>
                 <a href="#index"></a>
@@ -137,7 +137,7 @@ featureFlags:
                                                     <div class="card">
                                                         <div class="cardImageOuter">
                                                             <div class="cardImage">
-                                                                <img src="https://docs.microsoft.com/media/common/i_kanban.svg" alt="" />
+                                                                <img src="_img/index/i_kanban.svg" alt="" />
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
@@ -255,7 +255,7 @@ featureFlags:
                                                     <div class="card">
                                                         <div class="cardImageOuter">
                                                             <div class="cardImage">
-                                                                <img src="https://docs.microsoft.com/media/common/sql-server-reporting.svg" alt="" />
+                                                                <img src="_img/index/sql-server-reporting.svg" alt="" />
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
