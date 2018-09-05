@@ -1,5 +1,5 @@
 - name: "Team Foundation Server"
-  href: /tfs/index#pivot=services
+  href: /tfs/server/index#pivot=services
 - name: Overview
   items:
   - name: What's new?
