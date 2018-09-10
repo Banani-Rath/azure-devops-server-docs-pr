@@ -58,11 +58,11 @@ Later on, as the deployment expands, you might decide to create other groups.
 
 ## Try this next
 > [!div class="nextstepaction"]
-> [Add users to projects](/vsts/security/add-users-team-project) 
+> [Add users to projects](/azure/devops/security/add-users-team-project) 
 
 ## Q & A
 
 **Q: Can I use groups to restrict access to projects or features in TFS?**
 
-**A:** Yes, you can. You can create specific groups for [granting or restricting access to select features, functions, and projects](/vsts/security/restrict-access), for [managing access levels](/vsts/security/change-access-levels), and other purposes.
+**A:** Yes, you can. You can create specific groups for [granting or restricting access to select features, functions, and projects](/azure/devops/security/restrict-access), for [managing access levels](/azure/devops/security/change-access-levels), and other purposes.
 

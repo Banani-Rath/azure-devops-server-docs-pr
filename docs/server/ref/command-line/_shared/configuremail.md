@@ -27,11 +27,11 @@ Configure the server that runs Team Foundation Server (TFS) to use an existing S
 
 ### Required permissions
 
-To use the **ConfigureMail** command, you must be a member of the Team Foundation Administrators security group on the Team Foundation application-tier server. For more information, see [Permission reference for Team Foundation Server](/vsts/security/permissions)
+To use the **ConfigureMail** command, you must be a member of the Team Foundation Administrators security group on the Team Foundation application-tier server. For more information, see [Permission reference for Team Foundation Server](/azure/devops/security/permissions)
 
 ### Remarks
 
-You can also [use the administration console](/vsts/admin/setup-customize-alerts) to configure TFS to use an SMPT server.
+You can also [use the administration console](/tfs/server/admin/setup-customize-alerts) to configure TFS to use an SMPT server.
 
 ### Example
 

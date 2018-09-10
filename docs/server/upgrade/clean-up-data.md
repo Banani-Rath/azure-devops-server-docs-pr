@@ -37,7 +37,7 @@ If you have whole projects that are no longer needed, deleting them can potentia
 since this will remove all content for the project across all feature areas. There are two ways to delete a 
 project:
 
-1. From the [Team Foundation Server Administration Console](/vsts/accounts/delete-team-project#delete-team-proj).
+1. From the [Team Foundation Server Administration Console](/azure/devops/accounts/delete-team-project#delete-team-proj).
 2. Using the [TfsDeleteProject](https://msdn.microsoft.com/library/ms181482.aspx) tool that is included with Visual 
 Studio installations.
 
@@ -68,7 +68,7 @@ with the [TFS Power Tools](https://visualstudiogallery.msdn.microsoft.com/f017b1
 ## XAML Builds
 
 When builds in TFS are deleted, a subset of the information they produced is preserved in order to avoid losing 
-reporting data the next time the [warehouse is rebuilt](/vsts/report/admin/rebuild-data-warehouse-and-cube). Build 
+reporting data the next time the [warehouse is rebuilt](/azure/devops/report/admin/rebuild-data-warehouse-and-cube). Build 
 data can be physically deleted using the [destroy command](https://msdn.microsoft.com/library/ee794689.aspx) via 
 tfsbuild.exe.
 

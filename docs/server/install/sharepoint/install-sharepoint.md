@@ -14,7 +14,7 @@ ms.date: 09/09/2017
 # Manually Install SharePoint products for Team Foundation Server
 
 > [!NOTE]
-> TFS 2018 and later versions no longer support native integration with SharePoint products. If you're planning to upgrade to TFS 2018, read [About SharePoint integration](/vsts/report/sharepoint-dashboards/about-sharepoint-integration) to learn about the options available to you.
+> TFS 2018 and later versions no longer support native integration with SharePoint products. If you're planning to upgrade to TFS 2018, read [About SharePoint integration](/azure/devops/report/sharepoint-dashboards/about-sharepoint-integration) to learn about the options available to you.
 
 This procedure is for installing and configuring SharePoint Server 2013 on the same server as TFS and SQL Server.
 
@@ -303,6 +303,6 @@ With SharePoint Server 2013 installed, you’re ready to move to the topic on TF
 
 [Install Team Foundation Server](../install-2013/install-tfs.md) 
 
-[TFS upgrade requirements](/vsts/upgrade/upgrade-2013/upgrade-2013-requirements) 
+[TFS upgrade requirements](/tfs/server/upgrade/upgrade-2013/upgrade-2013-requirements) 
 
 [How to: Set up remote SharePoint Products for Team Foundation Server](setup-remote-sharepoint.md) 

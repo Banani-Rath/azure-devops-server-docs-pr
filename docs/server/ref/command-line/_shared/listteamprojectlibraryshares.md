@@ -12,7 +12,7 @@ To use the ListTeamProjectLibraryShares command, you must have the
 members of the TFS Administrators, Project Collection
 Administrators, Project Administrators, Project Contributors,
 and Project Readers groups have this permission. For more
-information, see [Permission reference for Team Foundation Server](/vsts/security/permissions).
+information, see [Permission reference for Team Foundation Server](/azure/devops/security/permissions).
 
 
     TFSLabConfig ListTeamProjectLibraryShares

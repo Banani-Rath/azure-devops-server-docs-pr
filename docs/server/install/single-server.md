@@ -38,7 +38,7 @@ consider a [dual server](../install/dual-server.md) or [multiple server](../inst
 	While the configuration wizard will install SQL Server Express for you, we don't recommend using SQL Server Express for anything but
 	personal or evaluation deployments of TFS. Paid copies of TFS come with a license to SQL Server Standard for use with TFS. The [Team Foundation Server pricing page](https://www.visualstudio.com/team-services/tfs-pricing) explains the details. If you use the license that's included with TFS, you can only use if for the TFS databases.
 
-0. Ensure that the account you plan to use to configure TFS is a member of the [SysAdmin server role in SQL Server](https://msdn.microsoft.com/en-us/library/ms188659.aspx). 
+0. Ensure that the account you plan to use to configure TFS is a member of the [SysAdmin server role in SQL Server](https://msdn.microsoft.com/library/ms188659.aspx). 
 
 > [!NOTE]
 > Installing TFS involves a complex set of operations that require a high degree of privilege - these include creating databases, 
@@ -52,7 +52,7 @@ consider a [dual server](../install/dual-server.md) or [multiple server](../inst
 
 0. You can download TFS from:
 	* [www.visualstudio.com/tfs/](https://www.visualstudio.com/tfs/) (the simplest method), 
-	* [MSDN Subscriber Downloads](https://msdn.microsoft.com/en-us/library/hh442898.aspx), 
+	* [MSDN Subscriber Downloads](https://msdn.microsoft.com/library/hh442898.aspx), 
 	* the [Volume Licensing Service Center](https://www.microsoft.com/Licensing/servicecenter/default.aspx), 
 	* or purchase a DVD through retail channels
 
@@ -79,8 +79,8 @@ With the *New Deployment - Basic* scenario, you will need to choose:
 
 - **Language**: Which language you would like to configure TFS for.
 - **SQL Server Instance**: Whether to install SQL Express or use an existing SQL Server instance.
-- **Application Tier**: Which website settings to use, including whether to use HTTP or HTTPS bindings. See [website settings](/vsts/security/websitesettings) for more information.
-- **Search**: Whether to install and configure Code Search features. See [configuring search](/vsts/project/search/administration#config-tfs) 
+- **Application Tier**: Which website settings to use, including whether to use HTTP or HTTPS bindings. See [website settings](/azure/devops/security/websitesettings) for more information.
+- **Search**: Whether to install and configure Code Search features. See [configuring search](/azure/devops/project/search/administration#config-tfs) 
 for more information.
 
 If you select the *New Deployment - Advanced* scenario, you will additionally need to choose:
@@ -97,5 +97,5 @@ In both cases, the wizard will run readiness checks to validate your environment
 
 ## Next Steps
 
-* [Create a project](/vsts/accounts/create-team-project.md?toc=/vsts/tfs-server/toc.json&bc=/vsts/tfs-server/breadcrumb/toc.json)
+* [Create a project](/azure/devops/accounts/create-team-project.md?toc=/azure/devops/tfs-server/toc.json&bc=/azure/devops/tfs-server/breadcrumb/toc.json)
 * [Upgrade TFS](../upgrade/get-started.md)

@@ -7,7 +7,7 @@ Team Foundation Server Proxy provides support for distributed teams to use versi
 By configuring Team Foundation Server Proxy, you can significantly reduce the bandwidth needed across wide area connections.
 In addition, you do not have to manage downloading and caching of version files; management of the files is transparent to the developer who is using the files.
 Meanwhile, any metadata exchanges and file uploads continue to appear in Team Foundation Server (TFS).
-If you use the VSTS to host your development project in the cloud,
+If you use the Azure DevOps Services to host your development project in the cloud,
 you can use the Proxy command to not only manage the cache for projects in the hosted collection, but also to manage some of the settings used by that service.
 
 For more information about installing Team Foundation Server Proxy and initial configuration of the proxy,
@@ -29,15 +29,15 @@ see <span sdata="link"> How to: Install Team Foundation Proxy and set up a remot
 			<td>
 				Adds the specified server or collection to the proxy list in the Proxy.config file.
 				You can run /add multiple times to include more collections or servers.
-				When using /add with a collection hosted on VSTS,
-				you will be prompted for your credentials on VSTS.
+				When using /add with a collection hosted on Azure DevOps Services,
+				you will be prompted for your credentials on Azure DevOps Services.
 			</td>
 		</tr>
 		<tr>
 			<td><strong>/change</strong></td>
 			<td>
-				Changes the credentials stored as the service account for VSTS.
-				The /change option is only used for VSTS; it should not be used for local deployments of TFS.
+				Changes the credentials stored as the service account for Azure DevOps Services.
+				The /change option is only used for Azure DevOps Services; it should not be used for local deployments of TFS.
 			</td>
 		</tr>
 		<tr>
@@ -47,9 +47,9 @@ see <span sdata="link"> How to: Install Team Foundation Proxy and set up a remot
 		<tr>
 			<td><strong>/account</strong></td>
 			<td>
-				Specifies the account used as the service account for the proxy in VSTS.
-				This option is only used for VSTS in conjunction with the /change option.<br/><br/>
-				The default service account used for VSTS is &quot;Account Service.&quot;
+				Specifies the account used as the service account for the proxy in Azure DevOps Services.
+				This option is only used for Azure DevOps Services in conjunction with the /change option.<br/><br/>
+				The default service account used for Azure DevOps Services is &quot;Account Service.&quot;
 			</td>
 		</tr>
 		<tr>
@@ -58,12 +58,12 @@ see <span sdata="link"> How to: Install Team Foundation Proxy and set up a remot
 		</tr>
 		<tr>
 			<td><strong>/Collection</strong>:TeamProjectCollectionURL</td>
-			<td>Specifies the URL of the project collection that is hosted on VSTS, in `AccountName.DomainName/CollectionName` format.</td>
+			<td>Specifies the URL of the project collection that is hosted on Azure DevOps Services, in `AccountName.DomainName/CollectionName` format.</td>
 		</tr>
 		<tr>
 			<td><strong>/account</strong>:AccountName</td>
 			<td>
-				Specifies the name of the account that is used as the service account for VSTS.
+				Specifies the name of the account that is used as the service account for Azure DevOps Services.
 				If the account name has spaces, the name must be enclosed within quotation marks (&quot;&quot;).
 				All special characters in account names must be specified in accordance with command-line syntax.
 			</td>
@@ -101,7 +101,7 @@ The following example shows how to add a TFS deployment named FABRIKAM to the pr
 
     TFSConfig Proxy /add /Server:http://www.fabrikam.com:8080/tfs 
 
-The following example shows how to add a project collection hosted on VSTS to the proxy list using a [Personal Access Token](/vsts/accounts/use-personal-access-tokens-to-authenticate) to authenticate. This token will be used only to register the proxy with the VSTS account - the default service account will still be used to run the proxy. This parameter was added in TFS 2018 Update 1 to support registering a Proxy with VSTS without requiring a login prompt.
+The following example shows how to add a project collection hosted on Azure DevOps Services to the proxy list using a [Personal Access Token](/azure/devops/accounts/use-personal-access-tokens-to-authenticate) to authenticate. This token will be used only to register the proxy with the Azure DevOps Services account - the default service account will still be used to run the proxy. This parameter was added in TFS 2018 Update 1 to support registering a Proxy with Azure DevOps Services without requiring a login prompt.
 
     TFSConfig Proxy /add /Collection:https://HelenaPetersen.tfs.visualstudio.com/PhoneSaver 
 
@@ -110,7 +110,7 @@ The following example shows how to add a project collection to the proxy list. T
     TFSConfig Proxy /add /Collection:https://HelenaPetersen.tfs.visualstudio.com/PhoneSaver
 		/PersonalAccessTokenFile:c:\PersonalAccessToken.txt
 
-The following example shows how to change the service account used by the proxy for the project collection hosted on VSTS. The collection is named PhoneSaver, the account name used for VSTS is HelenaPetersen.fabrikam.com, and the service account used by the proxy is being changed to "My Proxy Service Account". Because the account name contains spaces, quotation marks are used to enclose the name.
+The following example shows how to change the service account used by the proxy for the project collection hosted on Azure DevOps Services. The collection is named PhoneSaver, the account name used for Azure DevOps Services is HelenaPetersen.fabrikam.com, and the service account used by the proxy is being changed to "My Proxy Service Account". Because the account name contains spaces, quotation marks are used to enclose the name.
 
     TFSConfig Proxy /change /Collection:https://HelenaPetersen.tfs.visualstudio.com/PhoneSaver
 		/account:"My Proxy Service Account"

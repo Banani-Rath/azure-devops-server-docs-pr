@@ -68,6 +68,6 @@ For more information, see [Run the TFS Upgrade Wizard](../run-upgrade-wizard.md)
 
 ## Next Step: Set up a new build machine
 
-After you upgrade the application tier, you might want to install the new build service. For more information, see [Set up Team Foundation Build Service](https://msdn.microsoft.com/en-us/library/ee259687(v=vs.120).aspx).
+After you upgrade the application tier, you might want to install the new build service. For more information, see [Set up Team Foundation Build Service](https://msdn.microsoft.com/library/ee259687(v=vs.120).aspx).
 
 ![](../../install/_img/ic612464.png)

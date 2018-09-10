@@ -17,7 +17,7 @@ ms.technology: tfs-admin
 
 The advanced configuration for Team Foundation Server lets you customize most settings. Although you can run the advanced configuration on either a client or a server operating system, if you use a client, you won’t be able to add a portal or reporting to your deployment.
 
-![Installing on more than one server](/vsts/admin/_img/ic665322.png)
+![Installing on more than one server](/tfs/server/admin/_img/ic665322.png)
 
 If you use advanced on a client operating system, you don’t need any domain accounts. On a server, you must have at least one domain account, which you can use for all of the following identities:
 
@@ -40,11 +40,11 @@ You must be a member of the **Administrators** security group on the server on w
 
 1.  In the Team Foundation Server Configuration tool, start the advanced wizard and read the Welcome screen.
 
-    ![Choose Advanced](/vsts/admin/_img/ic676478.png)
+    ![Choose Advanced](/tfs/server/admin/_img/ic676478.png)
 
 2.  In **SQL Server Instance**, type the name of the server that is running SQL Server or the named instance that will host the configuration databases.
 
-    ![Specify a database server](/vsts/admin/_img/ic742581.png)
+    ![Specify a database server](/tfs/server/admin/_img/ic742581.png)
 
     You also have these options:
 
@@ -60,11 +60,11 @@ You must be a member of the **Administrators** security group on the server on w
 
     -   Test the connectivity to SQL Server.
 
-    ![Specify any optional database server details](/vsts/admin/_img/ic676480.png)
+    ![Specify any optional database server details](/tfs/server/admin/_img/ic676480.png)
 
 3.  Choose **Use a system account**. To use a domain or local account, choose **Use a user account**. User accounts require a password. To test the user account and password combination, choose **Test**.
 
-    ![Specify a system account](/vsts/admin/_img/ic742582.png)
+    ![Specify a system account](/tfs/server/admin/_img/ic742582.png)
 
     Network Service is the default value for the TFS service account.
 
@@ -73,62 +73,62 @@ You must be a member of the **Administrators** security group on the server on w
 
 4.  Choose **NTLM** as an **Authentication Method**. If you choose **Negotiate (Kerberos)**, Kerberos authentication is attempted first. If that attempt fails, NTLM authentication is used.
 
-    ![Specify authentaication](/vsts/admin/_img/ic676482.png)
+    ![Specify authentaication](/tfs/server/admin/_img/ic676482.png)
 
     NTLM is the default setting.
 
 5.  Accept the default **Port** number. Otherwise, enter a different one. This is the port number clients will use to connect to TFS.
 
-    ![Specify listener port](/vsts/admin/_img/ic742583.png)
+    ![Specify listener port](/tfs/server/admin/_img/ic742583.png)
 
     The default value for **Port** is **8080**.
 
 6.  Set up your file cache location. Make sure you have at least 50 Gb of free space. If you use a drive other than your Windows drive, TFS will perform better.
 
-    ![File cache folder](/vsts/admin/_img/ic752293.png)
+    ![File cache folder](/tfs/server/admin/_img/ic752293.png)
 
 7.  Accept the default virtual directory or specify something else.
 
-    ![Specify virtual directory](/vsts/admin/_img/ic677247.png)
+    ![Specify virtual directory](/tfs/server/admin/_img/ic677247.png)
 
     The default value for **Virtual Directory** is **tfs**.
 
 8.  Under **Web Site**, note the TFS Site URL, which is dynamically assembled based on your input in **Port** and **IIS Virtual Directory**. Developers will use this URL to connect to TFS.
 
-    ![Take note of the site URL.](/vsts/admin/_img/ic676485.png)
+    ![Take note of the site URL.](/tfs/server/admin/_img/ic676485.png)
 
     On a client operating system, you must skip to step 10. You can’t add a portal or reporting (steps 8 and 9) on a client operating system.
 
 9.  Choose **Configure Reporting for use with Team Foundation Server** to use reporting. Otherwise, clear the check box to skip it.
 
-    ![Choose to configure reporting](/vsts/admin/_img/ic742585.png)
+    ![Choose to configure reporting](/tfs/server/admin/_img/ic742585.png)
 
     1.  Type the name of the server that is running SQL Server Reporting Services in **Reporting Services Instance** and choose **Populate URLs.**
 
         The URLs for the report server and its management site appear in the drop-down lists for **Report Server URL** and **Report Manager URL**.
 
-        ![Choose Populate URLs](/vsts/admin/_img/ic742586.png)
+        ![Choose Populate URLs](/tfs/server/admin/_img/ic742586.png)
 
     2.  Make sure that the values displayed are the URLs that you want to use for TFS.
 
-        ![Double check you have the right URLs](/vsts/admin/_img/ic676488.png)
+        ![Double check you have the right URLs](/tfs/server/admin/_img/ic676488.png)
 
     3.  Type the name of the server that is running SQL Server Analysis Services in **SQL Analysis Services Instance**.
 
         To test the connectivity to SQL Server, choose **Test**.
 
-        ![Specify the instance of Analysis servies](/vsts/admin/_img/ic676780.png)
+        ![Specify the instance of Analysis servies](/tfs/server/admin/_img/ic676780.png)
 
     4.  Type the name and password of the report reader account. To test the user account and password combination, choose **Test**.
 
-        ![Specify the report reader](/vsts/admin/_img/ic742587.png)
+        ![Specify the report reader](/tfs/server/admin/_img/ic742587.png)
 
         > [!TIP]
         > If you specified a user account for the service account of TFS in step 3, you must select the **Use a different account than the Team Foundation Server service account for the report reader account** check box to use a different account.
 
 10. Choose **Configure SharePoint Products for use with Team Foundation Server** to use SharePoint. Otherwise, clear the check box to skip it.
 
-    ![Choose to configure SharePoint](/vsts/admin/_img/ic742588.png)
+    ![Choose to configure SharePoint](/tfs/server/admin/_img/ic742588.png)
 
     If you chose to configure SharePoint, then you have two choices—either install and configure SharePoint on this machine or specify a SharePoint location. Here are the details:
 
@@ -136,18 +136,18 @@ You must be a member of the **Administrators** security group on the server on w
 
         1.  Choose **Install and configure SharePoint on this machine**.
 
-            ![Choose to install SharePoint](/vsts/admin/_img/ic742589.png)
+            ![Choose to install SharePoint](/tfs/server/admin/_img/ic742589.png)
 
         2.  Choose the big **Install SharePoint Foundation 2013** button. When the install finishes, choose **Next**.
 
-            ![Choose the big button](/vsts/admin/_img/ic676784.png)
+            ![Choose the big button](/tfs/server/admin/_img/ic676784.png)
 
             > [!NOTE]
             > If the SharePoint installation requires a reboot, you might need to reenter some of the information you previously entered in this wizard.
 
         3.  Type a user account and password for the service account for SharePoint Foundation. If you specified a user account for the service account of TFS in step 3, you must select the **Use a different account than the Team Foundation Server service account for the SharePoint farm** check box to use a different account.
 
-            ![Use the report reader account](/vsts/admin/_img/ic742590.png)
+            ![Use the report reader account](/tfs/server/admin/_img/ic742590.png)
 
     -   Specify a SharePoint location
 
@@ -161,29 +161,29 @@ You must be a member of the **Administrators** security group on the server on w
 
     If you create a collection, accept the default values, or type a new name and description.
 
-    ![Create a new project collection](/vsts/admin/_img/ic742591.png)
+    ![Create a new project collection](/tfs/server/admin/_img/ic742591.png)
 
 12. On the **Review** page, review the settings, and choose **Next** to let the wizard validate your configuration.
 
-    ![Readiness checks validate your system](/vsts/admin/_img/ic742592.png)
+    ![Readiness checks validate your system](/tfs/server/admin/_img/ic742592.png)
 
     If you run into a problem, you can use the detailed results to identify the issue. If you can, fix the issue, and then choose the link to run the ready checks over again. If you resolved the problem, you’ll be able to configure TFS in the next step.
 
-    ![Use detailed results to troublshoot any problems](/vsts/admin/_img/ic676788.png)
+    ![Use detailed results to troublshoot any problems](/tfs/server/admin/_img/ic676788.png)
 
 13. Choose **Configure**.
 
     The wizard applies configuration settings. This process might take several minutes.
 
-    ![The wizard applies your configurations](/vsts/admin/_img/ic742593.png)
+    ![The wizard applies your configurations](/tfs/server/admin/_img/ic742593.png)
 
 14. At the success screen, choose **Next**. Review the results of the next success screen, including the connection URL for TFS and any details about the installation.
 
-    ![Take note of your connection URL](/vsts/admin/_img/ic742594.png)
+    ![Take note of your connection URL](/tfs/server/admin/_img/ic742594.png)
 
 15. Choose **Close**. In the TFS Configuration Center, note that TFS extensions for SharePoint have already been installed, if you installed TFS and SharePoint on the same server.
 
-    ![Configuration results](/vsts/admin/_img/ic677249.png)
+    ![Configuration results](/tfs/server/admin/_img/ic677249.png)
 
     After you close the TFS Configuration Center, the Team Foundation Server Administration Console appears.
 
@@ -191,4 +191,4 @@ You must be a member of the **Administrators** security group on the server on w
 
 [How to: Set up remote SharePoint Products for Team Foundation Server](../sharepoint/setup-remote-sharepoint.md)  
 
-[Set up Team Foundation Build Service](https://msdn.microsoft.com/en-us/library/ee259687(v=vs.120).aspx)
+[Set up Team Foundation Build Service](https://msdn.microsoft.com/library/ee259687(v=vs.120).aspx)

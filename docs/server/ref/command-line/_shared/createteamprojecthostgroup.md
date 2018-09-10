@@ -16,7 +16,7 @@ to a project.
 > You can automatically assign a host group to all the projects in a team
 > project collection when you assign the host group to the project
 > collection. See [TFSConfig Lab /HostGroup Commands](lab-hostgroup.md)
-> and [How to: Change the Host Groups for Your Project Collections](https://msdn.microsoft.com/en-us/library/dd386364(v=vs.120).aspx).
+> and [How to: Change the Host Groups for Your Project Collections](https://msdn.microsoft.com/library/dd386364(v=vs.120).aspx).
 
 **Required Permissions**
 
@@ -24,7 +24,7 @@ To use the **CreateTeamProjectHostGroup** command, you must have the
 **Manage Lab Locations** permission at the Project Collection Host
 Group level. By default, the members of the Team Foundation Server
 Administrators and Project Collection Administrators groups have this
-permission. For more information, see [Permission reference for Team Foundation Server](/vsts/security/permissions).
+permission. For more information, see [Permission reference for Team Foundation Server](/azure/devops/security/permissions).
 
 
     TFSLabConfig CreateTeamProjectHostGroup

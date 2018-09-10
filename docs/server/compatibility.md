@@ -1,6 +1,6 @@
 ---
 title: Compatibility and TFS versions
-description: Describes compatibility for VSTS and TFS -- operating systems, SQL Server, SharePoint, client versions, server versions, browsers
+description: Describes compatibility for Azure DevOps Services and TFS -- operating systems, SQL Server, SharePoint, client versions, server versions, browsers
 ms.prod: devops-server
 ms.technology: tfs-admin
 toc: show
@@ -28,7 +28,7 @@ Next, we describe the level of support that we guarantee with each client versio
 Keep in mind that additional functionality other than what is listed below might continue to work using older clients. In fact,
 it often does, but is outside the scope of what we test and support officially.
 
-Visual Studio/ Team Explorer version | TFS 2018, TFS 2017, and VSTS support notes                                | TFS 2015 support notes                                                    | TFS 2013 support notes                                                          | TFS 2012 support notes                                                 | TFS 2010 support notes
+Visual Studio/ Team Explorer version | TFS 2018, TFS 2017, and Azure DevOps Services support notes                                | TFS 2015 support notes                                                    | TFS 2013 support notes                                                          | TFS 2012 support notes                                                 | TFS 2010 support notes
 -------------------------------------|---------------------------------------------------------------------------|---------------------------------------------------------------------------|---------------------------------------------------------------------------------|------------------------------------------------------------------------|------------------------------------------------
 Visual Studio 2017                   | Full Support                                                              | High level of support                                                     | High level of support                                                           | High level of support                                                  | High level of support
 Visual Studio 2015                   | High level of support                                                     | Full support                                                              | High level of support                                                           | High level of support                                                  | High level of support
@@ -89,7 +89,7 @@ If you need support for an older version of Eclipse, Java, or an operating syste
 you may choose to use an older version of Team Explorer Everywhere that encompasses the range you need.
 Multiple versions of Team Explorer Everywhere can also be installed side-by-side if you are running multiple versions of Eclipse.
 
-Team Explorer Everywhere           | Eclipse version | VSTS, TFS 2012 - TFS 2018   | TFS 2010                    | TFS 2008                    | TFS 2005
+Team Explorer Everywhere           | Eclipse version | Azure DevOps Services, TFS 2012 - TFS 2018   | TFS 2010                    | TFS 2008                    | TFS 2005
 -----------------------------------|-----------------|-----------------------------|-----------------------------|-----------------------------|-----------------------------
 Team Explorer Everywhere 14.114.0+ | Eclipse 4.2-4.7 | ![Check](_img/check.png) | ![x](_img/x.png)         | ![x](_img/x.png)         | ![x](_img/x.png)
 Team Explorer Everywhere 2015      | Eclipse 3.5-4.3 | ![Check](_img/check.png) | ![Check](_img/check.png) | ![x](_img/x.png)         | ![x](_img/x.png)
@@ -101,21 +101,21 @@ Team Explorer Everywhere 2010      | Eclipse 3.0-3.5 | ![Check](_img/check.png) 
 <a name="supported-browsers"></a>
 ### Browsers
 
-You can use these browsers with VSTS 
+You can use these browsers with Azure DevOps Services 
 and to access TFS with the web client.
 
 Version                   | Edge        | Internet Explorer | Safari (Mac)   | Firefox     | Chrome
 --------------------------|-------------|-------------------|----------------|-------------|-------------
-VSTS, TFS 2018, TFS 2017  | most recent | 11 and later      | 9.1 and later  | most recent | most recent
+Azure DevOps Services, TFS 2018, TFS 2017  | most recent | 11 and later      | 9.1 and later  | most recent | most recent
 TFS 2015                  | most recent | 9 and later       | 5 and later    | most recent | most recent
 TFS 2013                  |             | 9 and later       | 5 and later    | most recent | most recent
 
 Edge, Firefox, and Chrome automatically update themselves, 
-so VSTS and TFS support the most recent version.
+so Azure DevOps Services and TFS support the most recent version.
 
 ### Office
 
-Office integration supports the following clients: [Excel](/vsts/work/backlogs/office/bulk-add-modify-work-items-excel), [Project](/vsts/work/backlogs/office/create-your-backlog-tasks-using-project), and [PowerPoint with Storyboarding](/vsts/work/backlogs/office/storyboard-your-ideas-using-powerpoint). 
+Office integration supports the following clients: [Excel](/azure/devops/work/backlogs/office/bulk-add-modify-work-items-excel), [Project](/azure/devops/work/backlogs/office/create-your-backlog-tasks-using-project), and [PowerPoint with Storyboarding](/azure/devops/work/backlogs/office/storyboard-your-ideas-using-powerpoint). 
 
 TFS version | Supported Office versions
 ------------|--------------------------
@@ -133,7 +133,7 @@ TFS 2010    | Office 2010<br/>Office 2007
 
 **TFS 2018 discontinues support for the Xaml build system.**
 
-We've built a brand new [scriptable build system](/vsts/build-release/overview) that's web based and cross-platform.
+We've built a brand new [scriptable build system](/azure/devops/build-release/overview) that's web based and cross-platform.
 
 You may want to use an older version of Build if you plan to continue using the Xaml build system, 
 if you are using Build servers against multiple versions of TFS, or if you need to leverage servers 

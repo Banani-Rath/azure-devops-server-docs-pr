@@ -293,7 +293,7 @@ After you configure administrators for both collections, either you or those adm
 
 ### To configure access for users to projects
 
--   For more information, see [Add users to projects or teams](/vsts/security/add-users-team-project).
+-   For more information, see [Add users to projects or teams](/azure/devops/security/add-users-team-project).
 
 <a name="q-and-a"></a>
 ## Q & A
@@ -398,8 +398,8 @@ Once you've completed the split, you must recreate project host groups. You must
 
 2.  Recreate the golden master virtual machines and templates in the new SCVMM and import virtual machines and templates into the project collection.
 
-    For more information, see [How to: Create and Store Virtual Machines and Templates Ready for Lab Management](https://msdn.microsoft.com/en-us/library/ee702479(v=vs.120).aspx).
+    For more information, see [How to: Create and Store Virtual Machines and Templates Ready for Lab Management](https://msdn.microsoft.com/library/ee702479(v=vs.120).aspx).
 
 3.  Recreate the environments for each project.
 
-    For more information, see [Creating an SCVMM Environment Using Stored Virtual Machines and Templates](https://msdn.microsoft.com/en-us/library/ee518915(v=vs.120).aspx).
+    For more information, see [Creating an SCVMM Environment Using Stored Virtual Machines and Templates](https://msdn.microsoft.com/library/ee518915(v=vs.120).aspx).

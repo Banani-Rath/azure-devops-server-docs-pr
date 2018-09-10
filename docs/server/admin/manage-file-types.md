@@ -37,7 +37,7 @@ As a Team Foundation administrator, you might want to specify that files of cert
 
 ## File Ecodings
 
-In addition to these basic file type properties, Team Foundation also tracks the file encoding for each file on the version control server. You can override the default encoding for a file from the version control Properties window opened from Source Control Explorer, or using the command line interface. For more information, see [Configure Version Control File Encoding](#config-file-encodings) and [Checkout and Edit Commands](/vsts/tfvc/checkout-or-edit-command).
+In addition to these basic file type properties, Team Foundation also tracks the file encoding for each file on the version control server. You can override the default encoding for a file from the version control Properties window opened from Source Control Explorer, or using the command line interface. For more information, see [Configure Version Control File Encoding](#config-file-encodings) and [Checkout and Edit Commands](/azure/devops/tfvc/checkout-or-edit-command).
 
 
 <a name="edit-file-type"></a>
@@ -70,14 +70,14 @@ To change a file type association in version control:
 <a name="config-file-encodings"></a>
 ## Configure Version Control File Encoding
 
-Team Foundation version control properties include general file and folder information and the file encoding type. The properties also list the pending check-in status, security information, and branching history. For more information, see [View Version Control File and Folder Properties](https://msdn.microsoft.com/en-us/library/ms245468(v=vs.110).aspx).
+Team Foundation version control properties include general file and folder information and the file encoding type. The properties also list the pending check-in status, security information, and branching history. For more information, see [View Version Control File and Folder Properties](https://msdn.microsoft.com/library/ms245468(v=vs.110).aspx).
 
 > [!NOTE]
 > Team Foundation version control properties are not viewed in Visual Studio's Properties Window. They are viewed in their own **Properties** dialog box, as described in the procedure below.
  
 **Required Permissions:**
 
-To perform these procedures, you must have the Read and the Check out permissions set to Allow. For more information, see [Team Foundation Server Permissions](/vsts/security/permissions).
+To perform these procedures, you must have the Read and the Check out permissions set to Allow. For more information, see [Team Foundation Server Permissions](/azure/devops/security/permissions).
 
 To configure version control file encoding:
 
@@ -109,7 +109,7 @@ File type definitions allow you to customize the way the version control system 
 
 **Required Permissions:**
 
-To add a file type association, you must have the **Edit server-level information** permission set to **Allow**. For more information, see [Team Foundation Server Permissions](/vsts/security/permissions).
+To add a file type association, you must have the **Edit server-level information** permission set to **Allow**. For more information, see [Team Foundation Server Permissions](/azure/devops/security/permissions).
 
 To add a file type association to version control:
 
@@ -136,7 +136,7 @@ File type definitions let you customize the way the version control system handl
 
 **Required Permissions:**
 
-To remove a file type association, you must have the **Edit server-level information** permission set to Allow. For more information, see [Team Foundation Server Permissions](/vsts/security/permissions).
+To remove a file type association, you must have the **Edit server-level information** permission set to Allow. For more information, see [Team Foundation Server Permissions](/azure/devops/security/permissions).
 
 To remove a file type associated with version control:
 

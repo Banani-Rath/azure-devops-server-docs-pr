@@ -42,7 +42,7 @@ You can use these procedures to configure Team Foundation Server Proxy.
 
 **Required permissions**: To follow this procedure, you must be a member of the **Administrators** security group on the server on which you are configuring Team Foundation Server Proxy. You must be a member of the Project Collection Administrators group on TFS. 
 
-For VSTS you either need to be a collection admin or have manage proxy permissions on the Proxy namespace. You can grant that using:
+For Azure DevOps Services you either need to be a collection admin or have manage proxy permissions on the Proxy namespace. You can grant that using:
 
 > [!NOTE]
 > You must have a proxy server at TFS 2017 Update 2 and newer to use the following command.
@@ -76,7 +76,7 @@ To configure Team Foundation Server Proxy by using Team Foundation Server Config
 3.  Choose **Browse**, and then choose the project collection to which you want this proxy server to connect. Choose **Next**.
 
 	>**Note:**  
-	>If your project collection is on VSTS, you're prompted to authenticate. Enter the Microsoft account you used to set up the service.
+	>If your project collection is on Azure DevOps Services, you're prompted to authenticate. Enter the Microsoft account you used to set up the service.
 
 4.  Under **Service Account**, choose **Use a system account** to use Network Service or **Use a user account** to use a domain or local account. If you are using a user account, you must type the password. To test the user account and password combination, choose **Test.**
 

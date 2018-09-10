@@ -233,11 +233,11 @@ After you restore the data, you must restart the services to return the server t
 
     **tf workspaces /collection:http://FabrikamPrime:8080/tfs/DefaultCollection**
 
-    For more information, see [Workspaces Command](/vsts/tfvc/workspaces-command).
+    For more information, see [Workspaces Command](/azure/devops/tfvc/workspaces-command).
 
 ## See Also
 
- [Permission reference for Team Foundation Server](/vsts/security/permissions) 
+ [Permission reference for Team Foundation Server](/azure/devops/security/permissions) 
 
  [Team Foundation Server architecture](../../architecture/architecture.md) 
 

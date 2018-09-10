@@ -47,7 +47,7 @@ In TFS 2015 Update 2 and later, it supports all of the same features as TFS.
 TFS Express licensing limits it to five active users, however. 
 
 You might also want to consider using a free
-[VSTS account](/vsts/accounts/create-account-msa-or-work-student)
+[Azure DevOps Services account](/azure/devops/accounts/create-account-msa-or-work-student)
 for personal use.
 Because it's in the cloud, you won't have to install SQL Server and TFS on your own hardware,
 and you won't need to do things like manage your own backups.

@@ -41,7 +41,7 @@ The SQL Server AlwaysOn Availability Group must be ready before you install TFS.
 If you’re installing TFS for the first time, use the Advanced configuration wizard, which gives you access to the **SQL AlwaysOn Availability Group** check box (pictured above). On this screen, enter the Availability Group Listener in the **SQL Server Instance** text box. TFS will create TFS\_Configuration and the DefaultCollection databases on the Primary replica of your AlwaysOn Availability Group. The databases for SharePoint will also be created, if you allow TFS to install SharePoint Foundation.
 
 > [!TIP]
-> You can also access the **SQL AlwaysOn Availability Group** check box by using the Application-Tier Only or Upgrade wizards. See [How to: Create a Team Foundation server farm (high availability)](../create-tfs-farm.md) or [TFS upgrade requirements](/vsts/upgrade/upgrade-2013/upgrade-2013-requirements).
+> You can also access the **SQL AlwaysOn Availability Group** check box by using the Application-Tier Only or Upgrade wizards. See [How to: Create a Team Foundation server farm (high availability)](../create-tfs-farm.md) or [TFS upgrade requirements](/tfs/server/upgrade/upgrade-2013/upgrade-2013-requirements).
 
 ###Three: add the new TFS databases to the AlwaysOn Availability Group
 

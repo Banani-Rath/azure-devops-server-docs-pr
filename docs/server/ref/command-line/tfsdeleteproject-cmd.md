@@ -18,7 +18,7 @@ ms.date: 08/04/2016
 You can remove a project from Team Foundation Server(TFS) when the project is no longer required by using TFSDeleteProject.
 In addition, if there are components that remain undeleted after an unsuccessful project creation, you can use TFSDeleteProject to remove them. 
 
-To delete a project from VSTS or from TFS using the admin console, see [Delete a project](/vsts/accounts/delete-team-project). 
+To delete a project from Azure DevOps Services or from TFS using the admin console, see [Delete a project](/azure/devops/accounts/delete-team-project). 
 
 > [!WARNING]
 > TFSDeleteProject permanently destroys the project, after which it cannot be recovered. You should backup all important project data before using TFSDeleteProject. 

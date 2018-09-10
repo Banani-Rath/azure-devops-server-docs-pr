@@ -70,7 +70,7 @@ so that TFS can get through the firewall to connect to the SQL Server database e
 
 0. You can download TFS from:
 	* [www.visualstudio.com/tfs/](https://www.visualstudio.com/tfs/) (the simplest method), 
-	* [MSDN Subscriber Downloads](https://msdn.microsoft.com/en-us/library/hh442898.aspx), 
+	* [MSDN Subscriber Downloads](https://msdn.microsoft.com/library/hh442898.aspx), 
 	* the [Volume Licensing Service Center](https://www.microsoft.com/Licensing/servicecenter/default.aspx), 
 	* or purchase a DVD through retail channels
 
@@ -96,8 +96,8 @@ This scenario is optimized for simplicity, using default options for most inputs
 
 When selecting a SQL Server instance in the wizard, be sure to point to the data tier you have already configured. With the New Deployment - Basic scenario, you will also need to choose:
 
-- **Application Tier**: Which website settings to use, including whether to use HTTP or HTTPS bindings. See [website settings](/vsts/security/websitesettings) for more information.
-- **Search**: Whether to install and configure Code Search features. See [configuring Search](/vsts/project/search/administration#config-tfs) for more information.
+- **Application Tier**: Which website settings to use, including whether to use HTTP or HTTPS bindings. See [website settings](/azure/devops/security/websitesettings) for more information.
+- **Search**: Whether to install and configure Code Search features. See [configuring Search](/azure/devops/project/search/administration#config-tfs) for more information.
 
 If you select the *New Deployment - Advanced* scenario, you will additionally need to choose:
 

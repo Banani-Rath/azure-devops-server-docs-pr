@@ -111,7 +111,7 @@ Install SQL Server in the new environment, prepare SQL Server for restoration of
 is operational. As an alternative, create an instance of SQL Server
 on a server that already has a matching version installed.
 
-For more information, see [Installing Team Foundation Components](/vsts/install/get-started).
+For more information, see [Installing Team Foundation Components](/tfs/server/install/get-started).
 
 <a name="StopServices"></a>
 ## Step 3: Stop Services that Team Foundation Server Uses
@@ -368,7 +368,7 @@ To redirect project sites to use the content database on the new data-tier serve
     it to use the content databases on the new server.
 
     For more information, see
-    [Redirect SharePoint Products to Use a New Content Database](https://msdn.microsoft.com/en-us/library/cc668750).
+    [Redirect SharePoint Products to Use a New Content Database](https://msdn.microsoft.com/library/cc668750).
 
 <a name="ChangeSQLRS"></a>
 ## Step 6: Change the Database in Reporting Services Configuration Manager
@@ -389,7 +389,7 @@ To redirect Reporting Services to connect to the new server:
 -   Log on to the server that hosts Reporting Services, and redirect it
     to connect to the databases on the new server.
 
-    For more information, see [Redirect Reporting Services to Connect to a Different Server](https://msdn.microsoft.com/en-us/library/cc668756).
+    For more information, see [Redirect Reporting Services to Connect to a Different Server](https://msdn.microsoft.com/library/cc668756).
 
 <a name="ConfigNewSQL"></a>
 ## Step 7: Prepare SQL Server for Team Foundation Server
@@ -694,7 +694,7 @@ To reconfigure reporting and Analysis Services:
     **GetProcessingStatus** service returns a value of
     **Idle** for all jobs.
 
-    For more information, see [Manually Process the Data Warehouse and Analysis Services Cube](/vsts/report/admin/manually-process-data-warehouse-and-cube) for Team Foundation Server.
+    For more information, see [Manually Process the Data Warehouse and Analysis Services Cube](/azure/devops/report/admin/manually-process-data-warehouse-and-cube) for Team Foundation Server.
 
 26. On the application-tier server, open Computer Management, and start
     the Visual Studio Team Foundation Background Job Agent.

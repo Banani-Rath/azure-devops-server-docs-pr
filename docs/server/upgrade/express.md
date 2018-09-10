@@ -40,13 +40,13 @@ taking backups.
 ## Do the upgrade
 
 The upgrade process itself for TFS Express is quite simple -
-just install [TFS Express 2015](https://www.visualstudio.com/en-us/downloads/download-visual-studio-vs)
+just install [TFS Express 2015](https://www.visualstudio.com/downloads/download-visual-studio-vs)
 where you have the older version of TFS installed.
 You will only need to make a couple of basic decisions, and when upgrading
 from TFS 2012 or TFS 2013 the settings from your previous deployment will be remembered for you.
 
 By default, the TFS 2015 Express upgrade will install and configure a build agent for the 
-[new TFS 2015 build system](/vsts/build-release/overview), and will set it up to start automatically
+[new TFS 2015 build system](/azure/devops/build-release/overview), and will set it up to start automatically
 so that you can start using it right away after your upgrade. If you do not want to use the 
 new build system, you can uncheck the box to turn the agent off.
 

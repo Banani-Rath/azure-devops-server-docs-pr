@@ -19,7 +19,7 @@ Your firewall controls network ports, but Team Foundation Server requires port a
 
 ## Firewalls
 
-If you are using Windows Firewall and it is configured to allow exceptions, the installation wizard for Team Foundation Server opens the ports that TFS requires. If Windows Firewall is configured not to allow exceptions, you should configure it to allow exceptions during the installation of Team Foundation Server. Otherwise, you will have to manually open the ports that TFS requires. For more information, see this page on the Microsoft website: [How to Configure Windows Firewall on a Single Computer](https://technet.microsoft.com/en-us/library/cc875811.aspx).
+If you are using Windows Firewall and it is configured to allow exceptions, the installation wizard for Team Foundation Server opens the ports that TFS requires. If Windows Firewall is configured not to allow exceptions, you should configure it to allow exceptions during the installation of Team Foundation Server. Otherwise, you will have to manually open the ports that TFS requires. For more information, see this page on the Microsoft website: [How to Configure Windows Firewall on a Single Computer](https://technet.microsoft.com/library/cc875811.aspx).
 
 If you are using some other firewall product, you should check its documentation to determine how to open the ports that TFS requires.
 
@@ -35,11 +35,11 @@ The following table specifies the TCP ports that SQL Server requires.
 |SQL Server Analysis Services|2383|
 |SQL Server Reporting Services|80|
 
-¹ SQL Server uses port 1433 for the default instance. For named instances, SQL Server uses a dynamic port that the operating system assigns. Use SQL Server Configuration Manger to determine the SQL Server port number for any named instances. For more information, see this page on the Microsoft website: [Configuring the Windows Firewall to Allow SQL Server Access](https://msdn.microsoft.com/en-us/library/cc646023.aspx).
+¹ SQL Server uses port 1433 for the default instance. For named instances, SQL Server uses a dynamic port that the operating system assigns. Use SQL Server Configuration Manger to determine the SQL Server port number for any named instances. For more information, see this page on the Microsoft website: [Configuring the Windows Firewall to Allow SQL Server Access](https://msdn.microsoft.com/library/cc646023.aspx).
 
 **Report Server Port Requirements**
 
-You must ensure that the report server contains an exception in Windows Firewall for Windows Management Instrumentation (WMI) if the report server is not on the server that is running Team Foundation Server. The instructions for completing this task differ based on the operating system that you are using. If you are using Windows Server 2003 or Windows Server 2003 R2, see the following page on the Microsoft website: [Connecting Through Windows Firewall](https://msdn.microsoft.com/en-us/library/aa389286(VS.85).aspx). If you are using Windows Server 2008, Windows Server 2008 R2, Windows Vista or Windows 7, see the following page on the Microsoft website: [Connecting to WMI Remotely Starting with Windows Vista](https://msdn.microsoft.com/en-us/library/aa822854(VS.85).aspx).
+You must ensure that the report server contains an exception in Windows Firewall for Windows Management Instrumentation (WMI) if the report server is not on the server that is running Team Foundation Server. The instructions for completing this task differ based on the operating system that you are using. If you are using Windows Server 2003 or Windows Server 2003 R2, see the following page on the Microsoft website: [Connecting Through Windows Firewall](https://msdn.microsoft.com/library/aa389286(VS.85).aspx). If you are using Windows Server 2008, Windows Server 2008 R2, Windows Vista or Windows 7, see the following page on the Microsoft website: [Connecting to WMI Remotely Starting with Windows Vista](https://msdn.microsoft.com/library/aa822854(VS.85).aspx).
 
 ## Required Ports for SharePoint Products
 
@@ -80,4 +80,4 @@ By default, Release Management Server uses the following TCP port:
 
 [How to: Install Team Foundation Proxy and set up a remote site](../install/install-proxy-setup-remote.md) 
 
-[Install Release Management for Visual Studio 2013](https://msdn.microsoft.com/en-us/library/dn593700%28v=vs.120%29.aspx) 
+[Install Release Management for Visual Studio 2013](https://msdn.microsoft.com/library/dn593700%28v=vs.120%29.aspx) 

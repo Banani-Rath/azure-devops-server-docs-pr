@@ -1,6 +1,6 @@
 ﻿---
 title: Requirements and compatibility | Team Foundation Server Setup, Upgrade and Administration
-description: Describes many kinds of requirements and compatibility for VSTS and TFS -- hardware, operating systems, SQL Server, client versions, server versions, browsers
+description: Describes many kinds of requirements and compatibility for Azure DevOps Services and TFS -- hardware, operating systems, SQL Server, client versions, server versions, browsers
 ms.prod: devops-server
 ms.technology: tfs-admin
 ms.assetid: 12652666-b74e-4fd8-aab1-d87cbba6b820
@@ -14,7 +14,7 @@ ms.date: 10/02/2017
 
 # Requirements and compatibility
 
-**VSTS** | **TFS 2018** | **TFS 2017** | **TFS 2015** | **TFS 2013**
+**Azure DevOps Services** | **TFS 2018** | **TFS 2017** | **TFS 2015** | **TFS 2013**
 
 <a name="operating-systems"></a>
 ## Operating systems
@@ -36,7 +36,7 @@ TFS 2012    | Windows Server 2012 R2 (Essentials, Standard, Datacenter)<br/>Wind
 TFS 2010    | Windows Server 2008 R2 (Standard, Enterprise, Datacenter)<br/>Windows Server 2008 (minimum SP2)<br/>Windows Server 2003 R2<br/>Windows Server 2003 (minimum SP2)
 
 The [server core](https://msdn.microsoft.com/library/dd184075.aspx) installation option is supported for TFS 2017 and TFS 2018, but not for earlier versions.
-[Windows Server, version 1709](https://docs.microsoft.com/windows-server/get-started/get-started-with-1709) is not supported. Eventually we do plan to support
+[Windows Server, version 1709](/windows-server/get-started/get-started-with-1709) is not supported. Eventually we do plan to support
 Windows Server releases from the Semi-Annual Channel. 
 
 ### Client operating systems
@@ -135,7 +135,7 @@ to addresses another (different) issue where SQL Server 2012 with SP1 might requ
 | --- | --- |
 | Required for TFS | Database Engine Services </br></br> Full-Text and Semantic Extractions for Search |
 Required for reporting | Reporting Services – Native </br> Analysis Services |
-| Collation settings | Must be accent sensitive </br> Must not be case sensitive </br> Must not be Binary </br> Must not be Binary - code point </br> For more information, see [SQL Server Collation Requirements](https://docs.microsoft.com/en-us/sql/relational-databases/collations/collation-and-unicode-support?view=sql-server-2017) |
+| Collation settings | Must be accent sensitive </br> Must not be case sensitive </br> Must not be Binary </br> Must not be Binary - code point </br> For more information, see [SQL Server Collation Requirements](/sql/relational-databases/collations/collation-and-unicode-support?view=sql-server-2017) |
 | Authentication | Windows authentication |
 | Service account | You can use a domain account or a built-in account. |
 
@@ -157,7 +157,7 @@ SQL Server 2012 offers a new high availability (HA) feature that requires a Team
 
 ### SQL Server editions
 
-TFS supports Express, Standard, and Enterprise [editions of SQL server](http://www.microsoft.com/en-us/server-cloud/products/sql-server-editions/).
+TFS supports Express, Standard, and Enterprise [editions of SQL server](http://www.microsoft.com/server-cloud/products/sql-server-editions/).
 The Express edition is only recommended for evaluation purposes, personal use, or for very small teams.
 We recommend Standard or Enterprise for all other scenarios.
 
@@ -225,7 +225,7 @@ agents on your TFS application tiers.
 
 If you plan to use Code Search, we typically recommend setting up a separate server for it. 
 For more details, see 
-[hardware requirements for Code Search](/vsts/project/search/administration#hardware-recommendations).
+[hardware requirements for Code Search](/azure/devops/project/search/administration#hardware-recommendations).
 
 If you plan to use reporting features, we recommend setting up a separate 
 server for your warehouse database and Analysis Services cube or using a 
@@ -391,14 +391,14 @@ Release Management Server and the Microsoft Deployment agent.
 | Component | Sample user logon name (1) | Requirements |
 | --- | --- | --- |
 | Release Management Server | **RMSERVER** | This is the identity used in Internet Information Service (IIS) for the application pool and the **Release Management Monitor** Windows service. </br> Default: Network Service |
-| Microsoft Deployment Agent | **DEPLOY** | This identity is used to configure the machines in your environment for release. Make sure the identity you use here has enough permission to do whatever tasks are required. For example, if you need to install your application on this machine as part of your release, add this identity to the local Windows Administrators security group. If this identity will need to access builds on the network, make sure it has access to the network drop location. For step-by-step procedure, see [Install deployment agent and set up machines for an environment](/vsts/build-release/archive/release/previous-version/install-release-management/install-deployment-agent). </br> Default: you are prompted for an account. |
+| Microsoft Deployment Agent | **DEPLOY** | This identity is used to configure the machines in your environment for release. Make sure the identity you use here has enough permission to do whatever tasks are required. For example, if you need to install your application on this machine as part of your release, add this identity to the local Windows Administrators security group. If this identity will need to access builds on the network, make sure it has access to the network drop location. For step-by-step procedure, see [Install deployment agent and set up machines for an environment](/azure/devops/build-release/archive/release/previous-version/install-release-management/install-deployment-agent). </br> Default: you are prompted for an account. |
 
 
 #### Connect Release Management to TFS account
 
 If you connect Release Management to TFS, you need an account in TFS to
 act as an intermediary account. For a step-by-step procedure, go here:
-[Connect Release Management to TFS](/vsts/build-release/archive/release/previous-version/install-release-management/connect-to-tfs)
+[Connect Release Management to TFS](/azure/devops/build-release/archive/release/previous-version/install-release-management/connect-to-tfs)
 
 
 | Component | Sample user logon name (1) | Requirements |
@@ -434,12 +434,12 @@ placeholder names for any accounts that you might create.
 
 **TFS 2017 discontinues support for Project Server.**
 
-Team Foundation Server doesn't require Project Server, but if you use Project Server, you must use a supported version.  TFS-Project Server integration [enables data to flow from work items in Team Foundation Server to tasks in enterprise project plans in Project Server](/vsts/work/tfs-ps-sync/synchronize-tfs-project-server). 
+Team Foundation Server doesn't require Project Server, but if you use Project Server, you must use a supported version.  TFS-Project Server integration [enables data to flow from work items in Team Foundation Server to tasks in enterprise project plans in Project Server](/azure/devops/work/tfs-ps-sync/synchronize-tfs-project-server). 
 
 TFS version | Supported Project Server versions | Supported Project versions
 ------------|---------------------------------- | ---------------------------
-TFS 2018    | Not supported. See [Synchronize TFS with Project Server](/vsts/work/tfs-ps-sync/sync-ps-tfs) for details. | Not supported. 
-TFS 2017    | Not supported. See [Synchronize TFS with Project Server](/vsts/work/tfs-ps-sync/sync-ps-tfs) for details. | Not supported. 
+TFS 2018    | Not supported. See [Synchronize TFS with Project Server](/azure/devops/work/tfs-ps-sync/sync-ps-tfs) for details. | Not supported. 
+TFS 2017    | Not supported. See [Synchronize TFS with Project Server](/azure/devops/work/tfs-ps-sync/sync-ps-tfs) for details. | Not supported. 
 TFS 2015    | Project Server 2010 with SP1<br/>Project Server 2013 | Project Professional 2007 with SP2 and [update](http://go.microsoft.com/fwlink/?LinkId=211633)<br/>Project Professional 2007 with SP3<br/>Project Professional 2010<br/>Project Professional 2013
 TFS 2013    | Project Server 2010 with SP1<br/>Project Server 2013 | Project Professional 2007 with SP2 and [update](http://go.microsoft.com/fwlink/?LinkId=211633)<br/>Project Professional 2007 with SP3<br/>Project Professional 2010<br/>Project Professional 2013
 TFS 2012    | Project Server 2007 with SP2<br/>Project Server 2007 with SP3<br/>Project Server 2010 with SP1<br/>Project Server 2013 | Project Professional 2007 with SP2 and [update](http://go.microsoft.com/fwlink/?LinkId=211633)<br/>Project Professional 2007 with SP3<br/>Project Professional 2010<br/>Project Professional 2013
@@ -451,7 +451,7 @@ To use Project Server with TFS, you must install Team Foundation Server Extensio
 
 NTLM is the recommended authentication. In SharePoint Server 2013, Microsoft deprecated Windows classic-authentication in favor of claims-based authentication. TFS 2012 supports both, but for claims-based authentication, the authentication provider must be NTLM. TFS 2012 supports only NTLM-based claims.
 
-If you upgrade to Project Server 2013 from a Project Server 2010 installation that has been added to TFS, you have to perform a few extra steps to maintain the connection between TFS and Project Server. For more information, see this topic: [Upgrade Microsoft Project Server 2010 to Microsoft Project Server 2013](/vsts/work/tfs-ps-sync/upgrade-ps-2010-to-ps-2013).
+If you upgrade to Project Server 2013 from a Project Server 2010 installation that has been added to TFS, you have to perform a few extra steps to maintain the connection between TFS and Project Server. For more information, see this topic: [Upgrade Microsoft Project Server 2010 to Microsoft Project Server 2013](/azure/devops/work/tfs-ps-sync/upgrade-ps-2010-to-ps-2013).
 
 ### Should you add Project Server to your current project portal site?
 

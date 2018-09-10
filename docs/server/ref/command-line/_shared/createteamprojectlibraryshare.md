@@ -15,7 +15,7 @@ assign multiple library shares to a project.
 > You can automatically assign a library share to all projects in a team
 > project collection by using the [TFSConfig Lab /LibraryShare Commands](../tfsconfig-cmd.md#lab-libraryshare)
 > and [How to: Change the Library Share for Your Project
-> Collections](https://msdn.microsoft.com/en-us/library/dd386363(v=vs.120).aspx).
+> Collections](https://msdn.microsoft.com/library/dd386363(v=vs.120).aspx).
 
 **Required Permissions:**
 
@@ -23,7 +23,7 @@ To use the **CreateTeamProjectLibraryShare** command, you must have
 **Manage Lab Locations** permission at the Project Collection
 Library Share level. By default, members of the Team Foundation Server
 Administrators and Project Collection Administrators groups have this
-permission. For more information, see [Permission reference for Team Foundation Server](/vsts/security/permissions).
+permission. For more information, see [Permission reference for Team Foundation Server](/azure/devops/security/permissions).
 
 
     TFSLabConfig CreateTeamProjectLibraryShare 

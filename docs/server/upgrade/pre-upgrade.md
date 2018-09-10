@@ -108,7 +108,7 @@ you can expect them to take at least twice as long to complete with the TfsPreUp
 
 The recommended procedure for running TfsPreUpgrade.exe is:
 
-1.	[Download TfsPreUpgrade.exe](http://www.microsoft.com/en-us/download/details.aspx?id=48263).
+1.	[Download TfsPreUpgrade.exe](http://www.microsoft.com/download/details.aspx?id=48263).
 	Note that the machine on which you install TfsPreUpgrade is not 
 	important so long as it can access the relevant SQL instance(s) - it comes zipped up with all of its dependencies. 
 2.	Unzip it to a local directory. 

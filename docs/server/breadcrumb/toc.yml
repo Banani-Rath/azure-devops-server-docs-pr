@@ -1,6 +1,6 @@
 - name: TFS
   tocHref: /tfs/
-  topicHref: /tfs/index#pivot=services
+  topicHref: /tfs/index
   items:
   - name: Team Foundation Server
     tocHref: /server

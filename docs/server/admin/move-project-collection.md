@@ -23,7 +23,7 @@ You can move a project collection from one deployment of Team Foundation Server 
 
 -   You want to expand your deployment of TFS by adding another instance of SQL Server to it, and you want to distribute existing collections between the instances.
 
--   You need to incrementally upgrade your deployment by detaching an individual project collection from a deployment of TFS running an earlier version, and then move it to a server running the current version of TFS. (One common reason for this is some teams might need to migrate to a newer version of TFS, while others must remain on an older version for tools or projects reasons.) In this scenario, you must also then upgrade each project within the collection by using the Configure Features wizard. For more information, see [Configure features after a TFS upgrade](/vsts/work/customize/configure-features-after-upgrade).
+-   You need to incrementally upgrade your deployment by detaching an individual project collection from a deployment of TFS running an earlier version, and then move it to a server running the current version of TFS. (One common reason for this is some teams might need to migrate to a newer version of TFS, while others must remain on an older version for tools or projects reasons.) In this scenario, you must also then upgrade each project within the collection by using the Configure Features wizard. For more information, see [Configure features after a TFS upgrade](/azure/devops/work/customize/configure-features-after-upgrade).
 
 The steps to move a collection will depend on the particular configuration of the deployment that hosted the collection and the deployment to which you move it. For example, if you move a collection to a new domain, you will need to add users from that domain to the appropriate groups at the collection level and the project level. Similarly, if you move a collection to a deployment of TFS that uses a different SharePoint Web application, you'll either need to move the site collection database that supports the collection to that SharePoint Web application, or you must add the SharePoint Web application that supports the collection to the deployment of TFS to which you have moved it.
 
@@ -48,6 +48,8 @@ Here's how to move an entire project collection. If you want to move part of a c
 -   My TFS deployment uses reporting. How do I move reports when I move a collection?
 
 -   How do I move a collection that uses SharePoint Products?
+
+-   How do I move a team project collection that includes deployment pools and/or deployment groups?
 
 -   How do I move a project collection that includes Lab Management?
 
@@ -190,7 +192,7 @@ After you configure administrators for the moved collection, either you or those
 
 ### To add users to projects
 
--   For information about this task, see [Add users to projects](/vsts/security/add-users-team-project).
+-   For information about this task, see [Add users to projects](/azure/devops/security/add-users-team-project).
 
 ### To add resources to moved projects
 
@@ -246,6 +248,16 @@ You'll also need to rebuild the warehouse and analysis services cube on the orig
 
 3.  In **Project Collections**, select the moved project collection, choose the SharePoint Products tab, and modify the settings to point to the site collection database.
 
+### Q: How do I move a team project collection that includes deployment pools and/or deployment groups?
+
+**A:** If you want to move the collection to another deployment, you must delete the deployment pools, deployment groups before you start the move, 
+and recreate the deployment groups along with the security permission after the move. Creating the deployment groups will auto-create the deployment pools. 
+Once the deployment groups are set up, you can register the agents with the new TFS URL against the deployment groups. You will have to update the release definitions to use the new deployment groups. 
+
+### To setup deployment groups after moving the collection
+
+Refer to  [Create Deployment Groups](https://docs.microsoft.com/vsts/build-release/concepts/definitions/release/deployment-groups/#create-a-deployment-group).
+
 ### Q: How do I move a project collection that includes Lab Management?
 
 **A:** If you moved the collection to a different domain or intend to use a different System Center Virtual Machine Manager, you must delete the virtual machines, templates, project host groups, and project library shares from the collection database before you start the move, and recreate them in Microsoft Test Manager after the move.
@@ -262,13 +274,13 @@ You'll also need to rebuild the warehouse and analysis services cube on the orig
 
 2.  Recreate the golden master virtual machines and templates in the new SCVMM and import virtual machines and templates into the project collection.
 
-    For more information, see [How to: Create and Store Virtual Machines and Templates Ready for Lab Management](https://msdn.microsoft.com/en-us/library/ee702479(v=vs.120).aspx).
+    For more information, see [How to: Create and Store Virtual Machines and Templates Ready for Lab Management](https://msdn.microsoft.com/library/ee702479(v=vs.120).aspx).
 
 3.  Recreate the environments for each project.
 
-    For more information, see [Creating an SCVMM Environment Using Stored Virtual Machines and Templates](https://msdn.microsoft.com/en-us/library/ee518915(v=vs.120).aspx).
+    For more information, see [Creating an SCVMM Environment Using Stored Virtual Machines and Templates](https://msdn.microsoft.com/library/ee518915(v=vs.120).aspx).
 
 
 ### Q: How do I restrict access to select functions in a project?
 
-**A:** Users who have permissions to access one project within a collection can view other projects within that collection, even if they don't have permissions to modify work items or perform other actions in that project. You can [Grant or restrict access to select features and functions](/vsts/security/restrict-access) from creating or modifying select artifacts, as well as restrict them from seeing projects, by specifically creating groups and configuring restrictions on those groups. 
+**A:** Users who have permissions to access one project within a collection can view other projects within that collection, even if they don't have permissions to modify work items or perform other actions in that project. You can [Grant or restrict access to select features and functions](/azure/devops/security/restrict-access) from creating or modifying select artifacts, as well as restrict them from seeing projects, by specifically creating groups and configuring restrictions on those groups. 

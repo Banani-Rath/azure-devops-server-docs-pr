@@ -1,9 +1,11 @@
 - name: "Team Foundation Server"
-  href: https://docs.microsoft.com/en-us/tfs/index#pivot=services
+  href: /tfs/server/index#pivot=services
 - name: Overview
   items:
   - name: What's new?
     href: whats-new.md
+  - name: What's Azure DevOps?
+    href: ../azure-devops-and-tfs.md
   - name: Requirements, setup, configuration
     href: requirements.md
   - name: Compatibility
@@ -52,7 +54,7 @@
     - name: Use always-on availability groups
       href: install/sql-server/use-always-on-groups.md
     - name: SQL Server Reporting Services reports
-      href: /vsts/report/sql-reports/reporting-services-reports?toc=/tfs/server/toc.json&bc=/tfs/server/breadcrumb/toc.json 
+      href: /azure/devops/report/sql-reports/reporting-services-reports?toc=/tfs/server/toc.json&bc=/tfs/server/breadcrumb/toc.json 
     - name: Add TFS service account to Report Server
       href: install/install-2013/add-tfs-svc-acct-report-svr.md 
 - name: Upgrade
@@ -135,7 +137,7 @@
       - name: Add TFS server administrators
         href: admin/add-administrator-tfs.md
       - name: Add users to projects
-        href: /vsts/security/add-users-team-project?toc=/tfs/toc.json&bc=/tfs/server/breadcrumb/toc.json 
+        href: /azure/devops/security/add-users-team-project?toc=/tfs/toc.json&bc=/tfs/server/breadcrumb/toc.json 
       - name: Change service account password
         href: admin/change-service-account-password.md
       - name: Change service account or password for SQL reporting
@@ -151,37 +153,37 @@
   - name: Security
     items:
     - name: About permissions and groups
-      href: /vsts/security/about-permissions?toc=/tfs/server/toc.json&bc=/tfs/server/breadcrumb/toc.json
+      href: /azure/devops/security/about-permissions?toc=/tfs/server/toc.json&bc=/tfs/server/breadcrumb/toc.json
     - name: About access levels
-      href: /vsts/security/access-levels?toc=/tfs/server/toc.json&bc=/tfs/server/breadcrumb/toc.json  
+      href: /azure/devops/security/access-levels?toc=/tfs/server/toc.json&bc=/tfs/server/breadcrumb/toc.json  
     - name: Change individual permissions
-      href: /vsts/security/change-individual-permissions?toc=/tfs/server/toc.json&bc=/tfs/server/breadcrumb/toc.json
+      href: /azure/devops/security/change-individual-permissions?toc=/tfs/server/toc.json&bc=/tfs/server/breadcrumb/toc.json
     - name: Change access levels
-      href: /vsts/security/change-access-levels?toc=/tfs/server/toc.json&bc=/tfs/server/breadcrumb/toc.json
+      href: /azure/devops/security/change-access-levels?toc=/tfs/server/toc.json&bc=/tfs/server/breadcrumb/toc.json
     - name: Grant or restrict permissions to select tasks (Security)
-      href: /vsts/security/restrict-access?toc=/tfs/server/toc.json&bc=/tfs/server/breadcrumb/toc.json 
+      href: /azure/devops/security/restrict-access?toc=/tfs/server/toc.json&bc=/tfs/server/breadcrumb/toc.json 
     - name: Set up secure sockets layer
       href: admin/setup-secure-sockets-layer.md
     - name: Change site and certificate settings
-      href: /vsts/security/websitesettings?toc=/tfs/server/toc.json&bc=/tfs/server/breadcrumb/toc.json 
+      href: /azure/devops/security/websitesettings?toc=/tfs/server/toc.json&bc=/tfs/server/breadcrumb/toc.json 
     - name: Security reference
       items:
       - name: Default permission and access assignments
-        href: /vsts/security/permissions-access?toc=/tfs/server/toc.json&bc=/tfs/server/breadcrumb/toc.json 
+        href: /azure/devops/security/permissions-access?toc=/tfs/server/toc.json&bc=/tfs/server/breadcrumb/toc.json 
       - name: Permission lookup guide 
-        href: /vsts/security/permissions-lookup-guide?toc=/tfs/server/toc.json&bc=/tfs/server/breadcrumb/toc.json  
+        href: /azure/devops/security/permissions-lookup-guide?toc=/tfs/server/toc.json&bc=/tfs/server/breadcrumb/toc.json  
       - name: Permissions and groups reference
-        href: /vsts/security/permissions?toc=/tfs/server/toc.json&bc=/tfs/server/breadcrumb/toc.json
+        href: /azure/devops/security/permissions?toc=/tfs/server/toc.json&bc=/tfs/server/breadcrumb/toc.json
       - name: About security roles
-        href: https://docs.microsoft.com/en-us/vsts/security/about-security-roles?toc=/tfs/toc.json
+        href: /azure/devops/security/about-security-roles?toc=/tfs/toc.json
       - name: Required ports
         href: architecture/required-ports.md
       - name: Security glossary
-        href: https://docs.microsoft.com/en-us/vsts/security/security-glossary?toc=/tfs/toc.json
+        href: /azure/devops/security/security-glossary?toc=/tfs/toc.json
 - name: Reference
   items:
   - name: REST APIs and permissions
-    href: https://docs.microsoft.com/en-us/rest/api/vsts/security/permissions?toc=/tfs/toc.json
+    href: /rest/api/vsts/security/permissions?toc=/tfs/toc.json
   - name: Service account dependencies
     href: admin/service-accounts-dependencies-tfs.md
   - name: Command-line tools
@@ -211,7 +213,7 @@
       - name: Move SharePoint to new hardware
         href: install/sharepoint/move-sharepoint-new-hardware.md
       - name: Share information using the project portal
-        href: /vsts/report/sharepoint-dashboards/share-information-using-the-project-portal?toc=/tfs/server/toc.json&bc=/tfs/server/breadcrumb/toc.json
+        href: /azure/devops/report/sharepoint-dashboards/share-information-using-the-project-portal?toc=/tfs/server/toc.json&bc=/tfs/server/breadcrumb/toc.json
     - name: Add SharePoint products to TFS
       href: admin/add-sharepoint-to-tfs.md
     - name: Modify or remove access between sharePoint web app and TFS
@@ -259,6 +261,6 @@
 - name: Resources
   items:
   - name: Security and Identity
-    href: https://docs.microsoft.com/en-us/vsts/security/
+    href: /azure/devops/security/
   - name: Notifications
-    href: https://docs.microsoft.com/en-us/vsts/notifications/
+    href: /azure/devops/notifications/
