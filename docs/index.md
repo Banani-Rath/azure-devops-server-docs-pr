@@ -149,7 +149,7 @@ featureFlags:
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="/azure/devops/pipelines/index">
+                                        <a href="/azure/devops/pipelines/overview?view=tfs-2018">
                                             <div class="cardSize">
                                                 <div class="cardPadding">
                                                     <div class="card">
