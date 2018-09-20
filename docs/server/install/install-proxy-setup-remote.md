@@ -33,7 +33,7 @@ To set this up, you install and configure the proxy server at the remote site, c
 <a name="config--proxy-with-config-tool"></a>
 ## Configure Team Foundation Server Proxy Using the Team Foundation Server Configuration Tool
 
-![](_img/ic588492.png)
+![Team Foundation Proxy](_img/ic588492.png)
 
 You can use these procedures to configure Team Foundation Server Proxy.
 

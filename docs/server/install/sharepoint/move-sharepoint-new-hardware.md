@@ -41,7 +41,7 @@ Run the TFS installation program from the product DVD and then use the **Configu
 
 1.  In the Team Foundation Server Configuration tool, choose **Configure Extensions for SharePoint Products** and then choose **Start Wizard**.
 
-	![](../../upgrade/_img/ic666063.png)
+	![Start Configure Extensions for SharePoint Products Wizard](../../upgrade/_img/ic666063.png)
 
     The Team Foundation Server SharePoint Extensions Configuration wizard appears.
 
@@ -126,4 +126,4 @@ You can use TFS custom backup and restore tools to manage your data. First youâ€
 
 For more information, see [Back up and restore data for TFS](/tfs/server/upgrade/upgrade-2013/backup-and-restore-data)
 
-![](../_img/ic612476.png)
+![Backup complete image](../_img/ic612476.png)

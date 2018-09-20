@@ -15,7 +15,7 @@ ms.technology: tfs-admin
 
 **TFS 2013**
 
-![](../_img/ic552206.png)
+![Install screen for TFS 2013](../_img/ic552206.png)
 
 You can configure Team Foundation Server to use the basic configuration, which enables you to use SQL Server Express. 
 

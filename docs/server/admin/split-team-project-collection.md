@@ -73,14 +73,14 @@ First detach the collection from the deployment of TFS on which it is running. D
 
     In this example, the administrator chooses "TestProjects."
 
-    ![](_img/ic738726.png)
+    ![Choose collection from list of collections](_img/ic738726.png)
 
 	> [!TIP]
 	> The default name for a project collection is &quot;DefaultCollection.&quot; If you are splitting this database, make sure to give the second collection a distinctly different name, because this is the default choice at connection.
 
 3.  On the **General** tab, choose **Stop Collection**.
 
-    ![](_img/ic738727.png)
+    ![Stop collection interface](_img/ic738727.png)
 
     The **Project Collection Status Reason** dialog box opens. The text you enter will be displayed to your users. Choose **Stop**, and wait for the collection to stop. When it is stopped, its status will show as **Offline**.
 
@@ -88,7 +88,7 @@ First detach the collection from the deployment of TFS on which it is running. D
 
     The **Detach Project Collection Wizard** opens.
 
-    ![](_img/ic738728.png)
+    ![Detach collection wizard](_img/ic738728.png)
 
 5.  (Optional) On the **Provide a servicing message for the project collection** page, in **Servicing Message**, provide a message for users who might try to connect to projects in this collection.
 
@@ -107,7 +107,7 @@ First detach the collection from the deployment of TFS on which it is running. D
 
 After you have detached the collection, you must back up its database before you can restore a copy to the server with a different name. That copy will become the database for the part of the original collection that you want to split into another collection. To perform this task, you must use the tools that are provided with SQL Server.
 
-![](_img/ic738721.png)
+![Back up database](_img/ic738721.png)
 ### To back up a collection database
 
 -   For information about how to manually back up and restore individual databases, see the following pages on the Microsoft Web site, and make sure to choose the version of SQL Server that matches your deployment: [Backing Up and Restoring Databases in SQL Server](http://go.microsoft.com/fwlink/?LinkId=115430) and [Create a backup schedule and plan](backup/config-backup-sched-plan.md).
@@ -131,7 +131,7 @@ When you split a collection, you must restore the backup of the collection datab
 
     The Restore Database window opens on the **General** page.
 
-    ![](_img/ic738729.png)
+    ![Restore database option from General pane](_img/ic738729.png)
 
 3.  In **Source**, make sure that the project collection database is chosen. In **Destination**, provide a name for the copy of the database. Keep the Tfs\_ prefix, but give it a distinct name after that prefix. Ideally that name will be the name of the split project collection. In **Restore plan**, make sure that the backup sets to restore are the ones you want to restore to. To make sure that these are valid sets, choose **Verify Backup Media** and then, in **Select a page**, choose **Options**.
 
@@ -161,7 +161,7 @@ After you have restored the database with a different name, you must reattach th
 
 4.  In the **Databases** list, choose the collection database that you want to attach.
 
-    ![](_img/ic738730.png)
+    ![Databases list](_img/ic738730.png)
 
 5.  On the **Enter the project collection information** page, provide a name for the collection in **Name** if one is not already present. Since this is the original collection, you can choose to leave the name the same as it was before. In **Description**, optionally provide a description of the collection.
 
@@ -177,7 +177,7 @@ After you have restored the database with a different name, you must reattach th
 
 11. The project collection appears in the list of collections in the administration console. **If the collection state is listed as** **Online**, **you must stop it before continuing.** Choose the collection from the list, and on the **General** tab, choose **Stop Collection**.
 
-    ![](_img/ic738731.png)
+    ![Stop collection image](_img/ic738731.png)
 
 <a name="attach-renamed-coll-db"></a>
 ## 2-c. Attach the renamed collection database
@@ -200,7 +200,7 @@ After you attach the original collection database, you must attach the renamed c
 
 5.  On the **Enter the project collection information** page, type a name for the renamed collection in **Name** that differs from the name of the original name of the collection. Ideally, this should match the name you gave the renamed database without the Tfs\_ prefix.
 
-    ![](_img/ic738732.png)
+    ![Attach team project name entry](_img/ic738732.png)
 
 6.  (Optional)In **Description**, type a description of the collection.
 
@@ -217,11 +217,11 @@ After you attach the original collection database, you must attach the renamed c
 
 11. The name of the collection appears in the list of collections in the administration console, and its status should display as **Offline**.
 
-    ![](_img/ic738732.png)
+    ![Attach team project name entry](_img/ic738732.png)
 
 12. To ensure that both collections have attached with unique IDs, in the administration console, go to Event Logs and open the log files for both collection attach operations. The GUIDs for CollectionProperties should **not** match.
 
-    ![](_img/ic740323.png)
+    ![Logs that include GUIDs for CollectionProperties](_img/ic740323.png)
 
     In the unlikely event that the CollectionProperties GUIDs do match, you must change the ID to a unique ID before continuing by running the TFSConfig [Collection Command](../ref/command-line/tfsconfig-cmd.md#collection) on the second collection with the /clone parameter..
 
@@ -244,7 +244,7 @@ Now that you have two copies of the collection attached to TFS, you must delete 
 	> [!TIP]
 	> You can select more than one project to delete at a time.
 
-    ![](_img/ic738734.png)
+    ![TFS Administration console for deleting projects](_img/ic738734.png)
 
 4.  Select the **Delete workspace data** check box, leave the **Delete external artifacts** check box cleared, and then choose **Delete**.
 
@@ -252,7 +252,7 @@ Now that you have two copies of the collection attached to TFS, you must delete 
 
 5.  When you have finished deleting the projects you do not want hosted in the original project collection, choose the renamed project collection from the list of collections. Then, on the Projects tab, delete the projects you do not want hosted on the new collection.
 
-    ![](_img/ic738735.png)
+    ![Projects in projects tab](_img/ic738735.png)
 
 6.  Repeat these steps until both collections contain a set of unique projects.
 
@@ -271,7 +271,7 @@ After you delete projects, you must restart both collections.
 
 4.  Repeat step 2 for the collection that you attached with a new name.
 
-    ![](_img/ic738736.png)
+    ![TFS Administration console](_img/ic738736.png)
 
 <a name="config-users-split-colls"></a>
 ## 3-a. Configure users and groups for the split collections
