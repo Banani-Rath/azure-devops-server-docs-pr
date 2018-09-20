@@ -34,7 +34,7 @@ through the upgrade wizard to upgrade your databases.
 
 	> Please note the following **TFS Upgrade Matrix** to see the proper steps to upgrade, based on what version you're upgrading from:
 
-	<div style="display:block; margin-left:auto; margin-right:auto; width:50%"><img src="../_img/tfs2018upgradematrix.png" /></div>
+	<div style="display:block; margin-left:auto; margin-right:auto; width:50%"><img alt="TFS 2018 Upgrade path matrix for all versions" src="../_img/tfs2018upgradematrix.png" /></div>
 
 4. **Configure new features**. Depending on what version you upgraded from, you may need to [configure each project](/azure/devops/work/customize/configure-features-after-upgrade) to gain access to some of the new features made available. You don't have to do this immediately, but those features aren't available in that project until they're configured. Depending on the project, you'll use some combination of the Configure Features wizard that appears on the Work page and some manual configuration.
 

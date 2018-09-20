@@ -34,7 +34,7 @@ You can create backups of the databases that TFS uses as a key aspect of protect
 
 Based on your deployment configuration, all the databases that require backing up might be on the same physical server, as in this example topology. This example does not include SharePoint Products or Reporting Services, so you do not have to back up any databases that are associated with reporting, analysis, or SharePoint Products.
 
-![](../_img/ic314731.png)
+![Simple TFS database structure](../_img/ic314731.png)
 
 As an alternative, the databases might be distributed across many servers and server farms. In this example topology, you must back up the following databases, which are scaled across six servers or server farms:
 
@@ -54,7 +54,7 @@ As an alternative, the databases might be distributed across many servers and se
 
 1 If your SharePoint databases are scaled across multiple servers, you cannot use the Scheduled Backups feature to back them up. You will have to manually configure backups for those databases, and ensure that those backups are synchronized with the backups for TFS databases. See [Manually back up Team Foundation Server](manually-backup-tfs.md) for more details.
 
-![](../_img/ic372332.png)
+![Complex TFS database structure](../_img/ic372332.png)
 
 In both of these examples, you do not have to back up any of the clients that connect to the server. However, you might need to manually clear the caches for Team Foundation Server on the client computers before they can reconnect to the restored deployment.
 
