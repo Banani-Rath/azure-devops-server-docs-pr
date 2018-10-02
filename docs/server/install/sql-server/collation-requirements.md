@@ -19,7 +19,7 @@ When you install SQL Server, you must consider two factors regarding collation s
 
 -   Requirements for Team Foundation Server 
 
--   All instances of SQL Server in your Team Foundation Server deployment must use the same settings
+-   All databases in all instances of SQL Server used by your Team Foundation Server deployment must have the same collation settings
 
 You can set collation settings for the Database Engine and SQL Server Analysis Services. Collation settings include character set, sort order, and other locale-specific settings, that are fundamental to the structure and function of SQL Server databases. You cannot change these settings after installation.
 
