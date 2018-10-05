@@ -41,7 +41,7 @@ through the upgrade wizard to upgrade your databases.
 
 ## Before you upgrade to TFS 2018
 
-As of TFS 2017.2, the [old work item form <Layout> tag has been deprecated](https://devblogs.microsoft.com/devops/2017/05/22/announcing-the-deprecation-of-the-old-work-item-form-in-tfs/) and is no longer supported in TFS 2018. 
+As of TFS 2017.2, the [old work item form <Layout> tag has been deprecated](https://blogs.msdn.microsoft.com/devops/2017/05/22/announcing-the-deprecation-of-the-old-work-item-form-in-tfs/) and is no longer supported in TFS 2018. 
 If you are upgrading your server and have a collection where the new work item form has not been enabled you will encounter the following severe warning during readiness checks:
 
 ```
@@ -49,7 +49,7 @@ If you are upgrading your server and have a collection where the new work item f
 item form WebLayout element and remove all custom controls. For additional information and recommended upgrade steps, see the Deployment Guide.
 ```
 
-We recommend that you review [handling a TFS 2018 upgrade from old form to new form](https://devblogs.microsoft.com/devops/2017/08/31/handling-a-tfs-2018-upgrade-from-old-form-to-new-form/) for further guidance.
+We recommend that you review [handling a TFS 2018 upgrade from old form to new form](https://blogs.msdn.microsoft.com/devops/2017/08/31/handling-a-tfs-2018-upgrade-from-old-form-to-new-form/) for further guidance.
 
 ## Before you upgrade to TFS 2017   
 
