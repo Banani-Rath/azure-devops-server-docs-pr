@@ -250,13 +250,16 @@ You'll also need to rebuild the warehouse and analysis services cube on the orig
 
 ### Q: How do I move a team project collection that includes deployment pools and/or deployment groups?
 
-**A:** If you want to move the collection to another deployment, you must delete the deployment pools, deployment groups before you start the move, 
-and recreate the deployment groups along with the security permission after the move. Creating the deployment groups will auto-create the deployment pools. 
-Once the deployment groups are set up, you can register the agents with the new TFS URL against the deployment groups. You will have to update the release definitions to use the new deployment groups. 
+**A:** When you move the collection to another deployment, for each deployment pool in the source having a deployment group in the detached collection,
+a new deployment pool will be automatically provisioned in the target instance. In case of Azure DevOps Server 2019 or later, the name of automatically provisioned deployment pool will be same as in the source instance. 
+In prior versions, the deployment pool name will be in the format <project name-deployment-group name>. 
+In case of conflicts, a random GUID will be appended to the deployment pool name. 
 
-### To setup deployment groups after moving the collection
+Once the move is completed,
+-   There is a possibility of multiple deployment pools being created. You can merge the duplicate pools using the TfsConfig command.
+For example, `TfsConfig.exe deploymentpool /migrateDeploymentGroups /fromPool:<Source Pool Name> /toPool:<Target Pool Name>`
 
-Refer to  [Create Deployment Groups](https://docs.microsoft.com/vsts/build-release/concepts/definitions/release/deployment-groups/#create-a-deployment-group).
+-   You need to reconfigure the agents with the new deployment pool. Here is a sample [deployment agent reconfiguration script]( https://github.com/Microsoft/devops-project-samples/tree/master/DeploymentAgentReconfigurationScripts) for your reference.
 
 ### Q: How do I move a project collection that includes Lab Management?
 
