@@ -14,16 +14,26 @@ ms.date: 09/14/2017
 
 # What's new for Team Foundation Server
 
-<b>TFS 2018 | TFS 2017 | TFS 2015</b>  
+**Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015**  
 
 You can use Visual Studio Team Foundation Server (TFS) to manage your product lifecycle, reduce risks, and improve team efficiency. Updates are made every few weeks to the cloud-hosted version, Azure DevOps Services . These updates are then rolled up and made available through quarterly updates to the on-premises TFS. To understand the differences between the hosted and on-premises versions, see [A tour of services provided with Azure DevOps Services and TFS](/azure/devops/user-guide/services).   
 
-To learn about  what's new with the cloud service offering, see [Azure DevOps Services Features update](https://www.visualstudio.com/news/releasenotes/tfs2018-relnotes).   
+To learn about  what's new with the cloud service offering, see [Azure DevOps Services Features update](https://www.visualstudio.com/news/releasenotes/tfs2018-relnotes).  
 
-## TFS 2018.2 RC1
+## Azure DevOps Server 2019 RC 1
+
+Azure DevOps Server 2019 RC 1 is a preview version of the lastest on-prem DevOps server product formerly known as Team Foundation Server. Learn more about this change by reading [TFS is now Azure DevOps Server 2019](tfs-is-now-azure-devops-server.md).
+
+View the release notes for [Azure DevOps Server 2019 RC1](/visualstudio/releasenotes/).
+
+## TFS 2018.3
+
+View the release notes for [Team Foundation Server 2018.3](/visualstudio/releasenotes/tfs2018-update3).
+
+## TFS 2018.2 
 
 >[!NOTE]  
->The links provided below open related sections within the [Team Foundation Server 2018.1 RC1](https://www.visualstudio.com/news/releasenotes/tfs2018-update2) release notes. 
+>The links provided below open related sections within the [Team Foundation Server 2018.2](https://www.visualstudio.com/news/releasenotes/tfs2018-update2) release notes. 
 
 ### [Code](/visualstudio/releasenotes/tfs2018-update2#code)
 

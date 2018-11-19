@@ -4,6 +4,8 @@
   items:
   - name: What's new?
     href: whats-new.md
+  - name: TFS is now Azure DevOps Server
+    href: tfs-is-now-azure-devops-server.md
   - name: What's Azure DevOps?
     href: ../azure-devops-and-tfs.md
   - name: Requirements, setup, configuration
