@@ -1,5 +1,5 @@
 ---
-title: Install and configure TFS
+title: Install and configure Azure DevOps Server or TFS
 description: Use the new install guide for Team Foundation Server to set up TFS on your server or servers
 ms.prod: devops-server
 ms.technology: tfs-admin
@@ -9,83 +9,58 @@ ms.manager: douge
 ms.author: elbatk
 author: elbatk
 ms.topic: conceptual
-ms.date: 08/04/2016
+ms.date: 11/12/2018
 ---
 
-# Install and configure TFS
+# Install and configure Azure DevOps Server or TFS
 
-**TFS 2017** | **TFS 2015**
+**Azure DevOps Server 2019 RC1** | **TFS 2018** |**TFS 2017** | **TFS 2015**
 
-You have several choices
-in how to deploy TFS, from putting everything on a single server all the way to using multiple 
-application tiers, multiple SQL instances, and a SharePoint farm. See our
-[hardware recommendations](../requirements.md#hardware-recommendations) for more detailed help 
-in determining the right type of deployment for your team. 
+You have several choices in how to deploy Azure DevOps Server 2019 RC1 or Team Foundation Server (TFS). You can install everything on a single server. Or, you can use multiple application tiers and SQL instances. For information about determining the right type of deployment for your team, see [Hardware recommendations](../requirements.md#hardware-recommendations). 
 
-* [Single server](single-server.md)    
-	A single server deployment is the easiest way to deploy TFS, with the 
-	application tier and data tier on the same machine.
+- [Single server](single-server.md)    
+	A single-server deployment is the easiest deployment, because the application tier and data tier are on the same machine.
 
-* [Dual server](dual-server.md)  
-	A dual server deployment, with separate application and data tiers, can 
-	provide better performance for larger teams or teams with heavier usage.
+- [Dual servers](dual-server.md)  
+	A dual-server deployment, with separate application and data tiers can provide better performance for larger teams and teams with heavier usage.
 
-* [Multiple server configuration](multiple-server.md)  
-	Multiple server deployments, which can involve multiple application 
-	and/or data tiers, can provide better performance for larger teams or 
-	teams with heavier usage. Using multiple servers can also improve high 
-	availability and disaster recovery capabilities.
+- [Multiple servers](multiple-server.md)  
+	This type of deployment, which involves multiple application and data tiers, often provides better performance for larger teams and teams with heavier usage. By using more than one server, you improve high availability and disaster recovery ability.
 
-## For evaluation or personal use
+## Installations for evaluation or personal use
 
-If you're setting up TFS for personal use or to evaluate the core features
-(version control, build and work item tracking),
-use [TFS Express](https://www.visualstudio.com/downloads/).
-It's free, it's simple to set up,
-and it can be installed on both client and server operating systems.
-In TFS 2015 Update 2 and later, it supports all of the same features as TFS. 
-TFS Express licensing limits it to five active users, however. 
+If you're setting up TFS for personal use or to evaluate it, use [TFS Express](https://www.visualstudio.com/downloads/). TFS Express is free, simple to set up, and installs on both client and server operating systems. TFS 2015 Update 2 and later supports all of the same features as TFS. TFS Express licensing limits it to five active users. 
 
-You might also want to consider using a free
-[Azure DevOps Services account](/azure/devops/accounts/create-account-msa-or-work-student)
-for personal use.
-Because it's in the cloud, you won't have to install SQL Server and TFS on your own hardware,
-and you won't need to do things like manage your own backups.
+Consider using a free [Azure DevOps Services organization](/azure/devops/accounts/create-account-msa-or-work-student) for personal use. Because Azure DevOps Services are cloud-based, you don't need to install them on your own hardware or manage your own backups.
 
-## The installation process
+## The deployment process
 
-No matter how you plan to deploy TFS, the process always involves three steps - 
-preparation, installation, and configuration. 
+No matter how you plan to deploy Azure DevOps Server or TFS, deployment involves three steps: preparation, installation, and configuration: 
 
-Preparation is the process of getting one or more servers prepared for TFS by 
-reviewing and following the system requirements. If in doubt, don't worry - the 
-configuration process runs a series of readiness checks to ensure your system
-meets the TFS requirements. 
+- Preparation: The installer prepares one or more servers for Azure DevOps Server or TFS by reviewing and following your system requirements. 
 
-Installation is the process of getting TFS bits on your server, and involves 
-running an installer obtained from VisualStudio.com, MSDN Subscriber Downloads, 
-the Volume Licensing Service Center, or physical media purchased through retail 
-channels.
+- Installation: The installer places executables on your server and runs an installer from VisualStudio.com or the Volume Licensing Service Center.
  
-When installation completes, it will launch the Team Foundation Server 
-Configuration Center. Configuration is the process of going through the 
-appropriate wizard to actually get TFS up and running. In TFS 2017, a unified 
-wizard is used for all TFS configurations - new installations, upgrades, and 
-application-tier only scenarios. Prior to TFS 2017, you would pick the 
-appropriate wizard for your scenario. Other wizards are available to configure
-proxies, SharePoint extensions, and so forth.
+- Configuration: In this step, you use the appropriate configuration wizard to get your installation up and running. When you run a configuration wizard, it runs a series of readiness checks. These checks make sure that your system meets the requirements and that your setting selections are likely to work. If there are issues, you'll be presented with one or more warnings or errors. When all the errors have been resolved, you then run the configuration to finish setting up your deployment. 
 
-![TEAM_FOUNDATION_SERVER_CONFIGURATION_CENTER](_shared/_img/configuration-center.png)
+    The configuration step varies by product:
 
-If you need to close the configuration center for any reason, you can always get 
-back to it by launching the installed Team Foundation Server Administration 
-Console and clicking the Configure Installed Features link from the Application 
-Tier node.
+    - Azure DevOps Server: When installation completes, the installer launches the Azure DevOps Server Configuration Center. A unified wizard supports all Azure DevOps Server configurations, such as new installations, upgrades, and application-tier-only scenarios. 
 
-![ADMINISTRATION_CONSOLE_APPLICATION_TIER_NODE](_shared/_img/configure-installed-features.png)
+        ![AZURE_DEVOPS_SERVER_CONFIGURATION_CENTER](_shared/_img/azure-devops-server-configuration-center.png)
 
-When you run a configuration wizard, it will run a series of readiness checks
-to ensure that your system meets the TFS requirements and that your setting selections
-look like they are going to work. If there are issues, you will be presented
-with one or more warnings or errors. When all the errors have been resolved,
-you can run your configuration to set up your TFS deployment. 
+        If you need to close the configuration center, you can return to it by launching the Azure DevOps Server Administration Console and selecting **Configure Installed Features** from the **Application Tier** node.
+
+        ![AZURE_DEVOPS_SERVER_ADMINISTRATION_CONSOLE_APPLICATION_TIER_NODE](_shared/_img/azure-devops-server-configure-installed-features.png)
+
+    - TFS: When installation completes, the installer launches the Team Foundation Server Configuration Center. For TFS 2017 and later, a unified wizard supports all TFS configurations, such as new installations, upgrades, and application-tier only scenarios. For TFS versions earlier than TFS 2017, you pick the appropriate wizard for your scenario. 
+
+        ![TEAM_FOUNDATION_SERVER_CONFIGURATION_CENTER](_shared/_img/configuration-center.png)
+
+        If you need to close the configuration center, you can return to it by launching the Team Foundation Server Administration Console and selecting **Configure Installed Features** from the **Application Tier** node.
+
+        ![TFS_ADMINISTRATION_CONSOLE_APPLICATION_TIER_NODE](_shared/_img/configure-installed-features.png)
+
+    
+
+    

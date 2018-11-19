@@ -1,6 +1,11 @@
 ---
+<<<<<<< HEAD
+title: TFS is now Azure DevOps Server | Azure DevOps Server 2019
+description: The newest version of Team Foundation Server (TFS) is Azure DevOps Server 2019
+=======
 title: TFS is now "Azure DevOps Server" | Azure DevOps Server 2019
 description: The newest version of Team Foundation Server (TFS) is "Azure DevOps Server 2019"
+>>>>>>> e85213ce8a81c1529c8202788217b6e0601dfb9a
 ms.prod: devops-server
 ms.technology: tfs-admin
 toc: show
@@ -13,6 +18,17 @@ ms.date: 11/19/2018
 
 # "Team Foundation Server" is now called "Azure DevOps Server"
 
+<<<<<<< HEAD
+On November 19, 2018, Microsoft released the first release candidate (RC) of Azure DevOps Server 2019. **Azure DevOps Server** is the new name for the on-premises DevOps server product previously called Team Foundation Server.
+
+This new release brings many of the newest features from the cloud-hosted [Azure DevOps Services](/azure/devops) (formerly [Visual Studio Team Services](/azure/devops/user-guide/what-happened-vsts)) into the on-premises server product.
+
+To learn more about Azure DevOps Server 2019 RC 1, see [What's new for Azure DevOps Server and Team Foundation Server](whats-new.md) and the [Azure DevOps Server 2019 RC 1 Release Notes](https://aka.ms/azuredevopsreleasenotes).
+
+To learn more about changes in the user experience, see [Web portal navigation](/azure/devops/project/navigation/index).
+
+To install a trial version of Azure DevOps Server 2019 RC 1, go to the [web installer](https://go.microsoft.com/fwlink/?linkid=2041268).
+=======
 On November 19 2018, Microsoft released the first release candidate (RC) of Azure DevOps Server 2019. "Azure DevOps Server" is the new name for the on-prem DevOps server product previously called "Team Foundation Server".
 
 This new release brings many of the newest features from the cloud-hosted [Azure DevOps Services](/azure/devops) (formerly [Visual Studio Team Services](/azure/devops/user-guide/what-happened-vsts)) into the on-prem server product.
@@ -23,3 +39,4 @@ There are some notable differences in the user experience between Azure DevOps S
 *
 *
 *
+>>>>>>> e85213ce8a81c1529c8202788217b6e0601dfb9a

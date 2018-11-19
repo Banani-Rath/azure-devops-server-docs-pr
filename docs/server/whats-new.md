@@ -1,6 +1,6 @@
 ---
-title: What's new for Team Foundation Server | TFS
-description: Your guide to new features that support DevOps - made available with Team Foundation Server 2015
+title: What's new for Azure DevOps Server and Team Foundation Server | TFS
+description: Your guide to new features that support DevOps - made available with Azure DevOps Server and Team Foundation Server
 ms.technology: tfs-admin
 ms.prod: devops-server
 ms.assetid: F72EC483-F195-4157-82AB-1EBEE87F7C10
@@ -8,17 +8,137 @@ ms.manager: douge
 ms.author: elbatk
 author: elbatk
 ms.topic: conceptual
-ms.date: 09/14/2017
+ms.date: 11/15/2018
 ---
 
 
-# What's new for Team Foundation Server
+# What's new for Azure DevOps Server and Team Foundation Server
 
+<<<<<<< HEAD
+<b>Azure DevOps Server 2019 RC1 | TFS 2018 | TFS 2017 | TFS 2015</b>  
+=======
 **Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015**  
+>>>>>>> e85213ce8a81c1529c8202788217b6e0601dfb9a
 
-You can use Visual Studio Team Foundation Server (TFS) to manage your product lifecycle, reduce risks, and improve team efficiency. Updates are made every few weeks to the cloud-hosted version, Azure DevOps Services . These updates are then rolled up and made available through quarterly updates to the on-premises TFS. To understand the differences between the hosted and on-premises versions, see [A tour of services provided with Azure DevOps Services and TFS](/azure/devops/user-guide/services).   
+You can use Azure DevOps Server and Visual Studio Team Foundation Server (TFS) to manage your product lifecycle, reduce risks, and improve team efficiency. Updates are made every few weeks to the cloud-hosted version, Azure DevOps Services. These updates are then rolled up and made available through quarterly updates to the on-premises Azure DevOps Server and TFS. To understand the differences between the hosted and on-premises versions, see [A tour of services provided with Azure DevOps Services and TFS](/azure/devops/user-guide/services).   
 
 To learn about  what's new with the cloud service offering, see [Azure DevOps Services Features update](https://www.visualstudio.com/news/releasenotes/tfs2018-relnotes).  
+<<<<<<< HEAD
+
+## Azure DevOps Server 2019 RC1
+
+>[!NOTE]  
+>The following links open related sections within the [Azure DevOps Server 2019 RC1](https://docs.microsoft.com/tfs/release-notes/azuredevops2019#summary-of-whats-new-in-azure-devops-server-2019-rc1) release notes. 
+
+### [General](https://docs.microsoft.com/tfs/release-notes/azuredevops2019#general)
+
+- New navigation experience
+- Support for Azure SQL Database
+- Process inheritance on new collections
+- Expanded search box
+- My work flyout
+
+### [Boards](https://docs.microsoft.com/tfs/release-notes/azuredevops2019#boards)
+
+- New Work Items hub
+- New Boards, Backlogs, and Sprints hubs
+- New Queries hub
+- Move work items to another project and change a work item type
+- Sprint planning features
+- New Directory pages
+- New View Options menu
+- Move work using suggested Areas and Iterations
+- Query work across the iteration schedule with +/- @CurrentIteration
+- Clarify query iteration schedules with the @CurrentIteration Team parameter
+- Query work in the Area Paths of a Team with the new @TeamAreas macro
+- Query for empty rich text fields
+- Easily find existing work items in linking and mention experiences
+- Open work items from search
+
+### [Repos](https://docs.microsoft.com/tfs/release-notes/azuredevops2019#repos)
+
+- Receive notifications when pull request policies are bypassed
+- Allow bypassing branch policies without giving up push protection
+- Quickly describe pull requests using commit messages
+- Create pull requests without a default team as reviewer
+- Standardize pull request descriptions using templates
+- Change the target branch of a pull request
+- Extension authors can query context about the current repo
+
+### [Pipelines](https://docs.microsoft.com/tfs/release-notes/azuredevops2019#pipelines)
+
+- Manage build pipelines using the new Builds page
+- Manage build and deployment completion emails better using improved formatting
+- Follow the new unified Azure Pipelines terminology
+- Manage release pipelines using the new Releases page
+- Visualize release progress
+- Chain related builds together using build completion triggers
+- Locally update your agent
+- New build status badge URL
+- Add custom build counters to your builds
+- Azure Policy compliance and security validations in Pipelines
+- Build on Linux/ARM and Windows 32-bit platforms
+- Improved experiences for Tests in Pipelines
+- Test traceability and release environments support in Test History
+- Review summarized test results
+- View test analytics in Pipelines
+- Simplify definitions with multiple agentless tasks
+- Progressively expose and phase deployments using release gates
+- Hold deployments until gates succeed consistently
+- Automatically deploy to new targets in a deployment group
+- Continuously deploy builds tagged by post-build processing
+- Streamline authentication from agent VMs in Azure to Azure Resource Manager
+- Set a variable at release time
+- Pass environment variables to tasks
+- Clone variable groups
+- Ignore a release gate for a deployment
+- Perform additional testing using a pull request release trigger
+- Create Azure service connection with service principal that authenticates with a certificate
+- Run from Package supported in Azure App Service deployments
+- Deploy Linux containers with the App Server Deploy task
+- The Xcode task supports newly released Xcode 10
+- Streamline deployment to Kubernetes using Helm
+- Control Helm version used in Release
+- Continuously deploy to Azure Database for MySQL
+- Use improved Windows remote PowerShell based tasks
+- Filter branches for GitHub Enterprise or external Git artifacts
+- Build applications written in Go
+- Run inline or file-based Python scripts in your pipeline
+- Leverage improved Xcode build and test output from xcpretty
+
+### [Test plans](https://docs.microsoft.com/tfs/release-notes/azuredevops2019#test-plans)
+
+- Azure Test Runner client to runs manual tests for desktop applications
+
+### [Artifacts](https://docs.microsoft.com/tfs/release-notes/azuredevops2019#artifacts)
+
+- Upstream sources
+- Follow packages
+- Change feed settings without having to manually save
+- Simplify authentication using the new cross-platform Credential Provider for NuGet
+- Compress symbols when publishing to a file share
+
+### [Wiki](https://docs.microsoft.com/tfs/release-notes/azuredevops2019#wiki)
+
+- Publish Markdown files from a Git repository as a Wiki
+- Link to headings within a page
+- Attach files and images in folders
+- Embed a video in wiki
+- Rename a wiki
+- Open page in new tab
+- Retain special characters in Wiki page titles
+- View broken links
+- Fix broken links when moving pages
+- Create table of contents for wiki pages
+- Surface metadata for wiki pages and code preview using YAML tags
+- Publish code as wiki with Contribute permissions
+
+### [Reporting](https://docs.microsoft.com/tfs/release-notes/azuredevops2019#reporting)
+
+- The Analytics marketplace extension for reporting is now available
+- Investigate build history through a new build dashboard widget
+=======
+>>>>>>> e85213ce8a81c1529c8202788217b6e0601dfb9a
 
 ## Azure DevOps Server 2019 RC 1
 
@@ -40,7 +160,7 @@ View the release notes for [Team Foundation Server 2018.3](/visualstudio/release
 * Get a permanent link to code
 * Recover a recently-deleted repository via API
 * SSH: Support additional ciphers/keys and deprecate outdated ciphers
-* Avoid overwrites and protect perfomance using repository settings
+* Avoid overwrites and protect performance using repository settings
 * Enhanced filter capability fr commits with more than 1000 files changes
 * Find lost commits due to a Force Push
 * Blame now has history
@@ -157,13 +277,13 @@ View the release notes for [Team Foundation Server 2018.3](/visualstudio/release
 >[!NOTE]  
 >The links provided below open related sections within the [Team Foundation Server 2018.1 RC1](https://www.visualstudio.com/news/releasenotes/tfs2018-update1) release notes. 
 
-### [GVFS caching support in the TFS proxy](/visualstudio/releasenotes/tfs2018-update1#gvfsproxy)
+### Summary of new features
 
-### [Access information pertinent to test cases in your automated tests when running in the CI/CD pipeline](/visualstudio/releasenotes/tfs2018-update1#testcontext)
+- [GVFS caching support in the TFS proxy](/visualstudio/releasenotes/tfs2018-update1#gvfsproxy)
+- [Access information pertinent to test cases in your automated tests when running in the CI/CD pipeline](/visualstudio/releasenotes/tfs2018-update1#testcontext)
+- [Automated tests that use TestCase as a data source can now be run using the VSTest task](/visualstudio/releasenotes/tfs2018-update1#testpipeline)
 
-### [Automated tests that use TestCase as a data source can now be run using the VSTest task](/visualstudio/releasenotes/tfs2018-update1#testpipeline)
-
-### [Numerous bug fixes](/visualstudio/releasenotes/tfs2018-update1#bug-fixes-in-this-release)
+### [Bug fixes](/visualstudio/releasenotes/tfs2018-update1#bug-fixes-in-this-release)
 
 #### Code
 * If a repository is deleted while Search is indexing it, the job fails with GitRepositoryNotFoundException.
@@ -272,10 +392,9 @@ View the release notes for [Team Foundation Server 2018.3](/visualstudio/release
 
 ### Collaborate feature improvements
 
-<ul>
-<li>[Project Wiki](/visualstudio/releasenotes/tfs2018-relnotes#-wiki)</li>
-<li>Create a Wiki page from a broken link</li>
-</ul>
+- [Project Wiki](/visualstudio/releasenotes/tfs2018-relnotes#-wiki)
+- Create a Wiki page from a broken link
+
 
 ### [Package management improvements](/visualstudio/releasenotes/tfs2018-relnotes#--package-management) 
 <ul>
@@ -293,8 +412,7 @@ View the release notes for [Team Foundation Server 2018.3](/visualstudio/release
 ### [Build & Release improvements](/visualstudio/releasenotes/tfs2018-relnotes#--build-and-release) 
 <ul>
 <li>Removing support for XAML Builds</li>
-<li>Export and import build definitions
-</li>
+<li>Export and import build definitions</li>
 <li>Deprecate a task in an extension</li>
 <li>Let contributed build sections control section visibility</li>
 <li>Variable group support</li>
@@ -316,7 +434,6 @@ View the release notes for [Team Foundation Server 2018.3](/visualstudio/release
 <li>Release status badge in Code hub</li>
 <li>Enhancements to Build definition menu when adding artifacts</li>
 <li>Revert your release definition to older version</li>
-
 </ul>
 
 
@@ -345,7 +462,7 @@ For known issues, see [Known issues](https://www.visualstudio.com/news/releaseno
 >[!NOTE]  
 >The links provided below open related sections within the [Team Foundation Server 2017 Update 2 RC1](https://www.visualstudio.com/news/releasenotes/tfs2017-update2) release notes. 
 
-### [Work item tracking improvements](https://www.docs.microsoft.com/visualstudio/releasenotes/tfs2017-update2#wit) 
+### [Work item tracking improvements](https://docs.microsoft.com/visualstudio/releasenotes/tfs2017-update2#wit) 
 <ul>
 <li>Work item type icons</li>
 <li>Delivery plans and field criteria</li>
@@ -353,7 +470,7 @@ For known issues, see [Known issues](https://www.visualstudio.com/news/releaseno
 <li>Work item search </li>
 </ul>
 
-### [Pull request improvements](https://www.docs.microsoft.com/visualstudio/releasenotes/tfs2017-update2#pr) 
+### [Pull request improvements](https://docs.microsoft.com/visualstudio/releasenotes/tfs2017-update2#pr) 
 <ul>
 <li>Improved CTAs for PR author and reviewers</li>
 <li>Actionable comments</li>
@@ -366,7 +483,7 @@ For known issues, see [Known issues](https://www.visualstudio.com/news/releaseno
 </ul>
 
 
-### [Version control improvements](https://www.docs.microsoft.com/visualstudio/releasenotes/tfs2017-update2#vc)
+### [Version control improvements](https://docs.microsoft.com/visualstudio/releasenotes/tfs2017-update2#vc)
 <ul>
 <li>New branch policies configuration experience</li>
 <li>New policy for no active comments</li>
@@ -381,15 +498,15 @@ For known issues, see [Known issues](https://www.visualstudio.com/news/releaseno
 <li>Git commit comments use the new discussion control</li>
 <li>New tree view control</li>
 </ul>
- 
-### [Package Management improvements](https://www.docs.microsoft.com/visualstudio/releasenotes/tfs2017-update2#pk)
-<ul>
-<li>Updated Package Management experience</li>
-<li>npm READMEs and download button</li>
-<li>NuGet Restore, Command, and Tool Installer build tasks</li>
-</ul>
 
-### [Build & Release improvements](https://www.docs.microsoft.com/visualstudio/releasenotes/tfs2017-update2#build) 
+### [Package Management improvements](https://docs.microsoft.com/visualstudio/releasenotes/tfs2017-update2#pk)
+
+- Updated Package Management experience
+- npm READMEs and download button
+- NuGet Restore, Command, and Tool Installer build tasks
+
+
+### [Build & Release improvements](https://docs.microsoft.com/visualstudio/releasenotes/tfs2017-update2#build) 
 <ul>
 <li>New build definition editor</li>
 <li>Template search</li>
@@ -423,13 +540,13 @@ For known issues, see [Known issues](https://www.visualstudio.com/news/releaseno
 </ul>
 
 
-### [Test improvements](https://www.docs.microsoft.com/visualstudio/releasenotes/tfs2017-update2#test) 
+### [Test improvements](https://docs.microsoft.com/visualstudio/releasenotes/tfs2017-update2#test) 
 <ul>
 <li>Run tests using agent phases</li>
 <li>On-demand triggering of automated tests</li>
 </ul>
 
-### [Administrative improvements](https://www.docs.microsoft.com/visualstudio/releasenotes/tfs2017-update2#admin) 
+### [Administrative improvements](https://docs.microsoft.com/visualstudio/releasenotes/tfs2017-update2#admin) 
 <ul>
 <li>Combined email recipients for notifications</li>
 <li>Out-of-the-box notifications</li>
@@ -450,36 +567,26 @@ For known issues, see [Known issues](https://www.visualstudio.com/news/releaseno
 >The links provided below open related sections within the [Team Foundation Server 2017 Update 1 RC2](https://www.visualstudio.com/news/releasenotes/tfs2017-update1) release notes. 
 
 ### Process template support
-<ul>
-<li>[Process Template Editor extension for Visual Studio 2017 has been released](https://www.visualstudio.com/news/releasenotes/tfs2017-update1#pte)</li>
-</ul>
-</div>
+- [Process Template Editor extension for Visual Studio 2017 has been released](https://www.visualstudio.com/news/releasenotes/tfs2017-update1#pte)
 
 ### Git improvements
-<ul>
-<li>[Branch policy improvements](https://www.visualstudio.com/news/releasenotes/tfs2017-update1#branchpolicy)</li>
-<li>[Markdown support for the Discussion control](https://www.visualstudio.com/news/releasenotes/tfs2017-update1#toolbar)</li>
-<li>[More granular permissions for administrating repositories](https://www.visualstudio.com//news/releasenotes/tfs2017-update1#repoadmin)</li>
-<li>[PR Comment Improvements](https://www.visualstudio.com/news/releasenotes/tfs2017-update1#prcomment)</li>
-<li>[View all PRs for a commit](https://www.visualstudio.com/news/releasenotes/tfs2017-update1#viewprs)</li>
-</ul>
+- [Branch policy improvements](https://www.visualstudio.com/news/releasenotes/tfs2017-update1#branchpolicy)
+- [Markdown support for the Discussion control](https://www.visualstudio.com/news/releasenotes/tfs2017-update1#toolbar)
+- [More granular permissions for administrating repositories](https://www.visualstudio.com//news/releasenotes/tfs2017-update1#repoadmin)
+- [PR Comment Improvements](https://www.visualstudio.com/news/releasenotes/tfs2017-update1#prcomment)
+- [View all PRs for a commit](https://www.visualstudio.com/news/releasenotes/tfs2017-update1#viewprs)
 
 ### Test, Build, and Release improvements 
-<ul>
-<li>[Run tests built using Visual Studio 2017](https://www.visualstudio.com/news/releasenotes/tfs2017-update1#runtestsfromvs)</li>
-<li>[Group variables and values to support multiple release definitions](https://www.visualstudio.com/news/releasenotes/tfs2017-update1#variablegroups)</li>
-</ul>
+- [Run tests built using Visual Studio 2017](https://www.visualstudio.com/news/releasenotes/tfs2017-update1#runtestsfromvs)
+- [Group variables and values to support multiple release definitions](https://www.visualstudio.com/news/releasenotes/tfs2017-update1#variablegroups)
 
 
 ## TFS 2017.1 RC1
 
 ### Personal, admin, and cross-project features 
-
-<ul>
-<li>[Personalized account home page](https://www.visualstudio.com/news/releasenotes/tfs2017-update1#personal)</li>
-<li>[Project description and activity page](https://www.visualstudio.com/news/releasenotes/tfs2017-update1#personal)</li>
-<li>[New notification settings experience](https://www.visualstudio.com/news/releasenotes/tfs2017-relnotes#admin)</li>
-</ul>
+- [Personalized account home page](https://www.visualstudio.com/news/releasenotes/tfs2017-update1#personal)
+- [Project description and activity page](https://www.visualstudio.com/news/releasenotes/tfs2017-update1#personal)
+- [New notification settings experience](https://www.visualstudio.com/news/releasenotes/tfs2017-relnotes#admin)
 
 
 ### [Git improvements](https://www.visualstudio.com/news/releasenotes/tfs2017-update1#vc)
@@ -506,7 +613,6 @@ For known issues, see [Known issues](https://www.visualstudio.com/news/releaseno
 <li>Repo favorites</li>
 <li>Markdown preview button</li>
 <li>Confirmation for deleting repos</li>
-
 </ul>
 
 
@@ -528,14 +634,10 @@ For known issues, see [Known issues](https://www.visualstudio.com/news/releaseno
 
 ### [Build improvements](https://www.visualstudio.com/news/releasenotes/tfs2017-update1#build) 
 <ul>
-<li>Rollback build definitions
-</li>
-<li>Disable the sync and checkout of sources in a build
-</li>
-<li>Git shallow close and git-lfs
-</li>
-<li>Task versioning for Build and Release definitions
-</li>
+<li>Rollback build definitions</li>
+<li>Disable the sync and checkout of sources in a build</li>
+<li>Git shallow close and git-lfs</li>
+<li>Task versioning for Build and Release definitions</li>
 </ul>
 
 
@@ -639,7 +741,7 @@ Download: [Team Foundation Server Update 4](https://go.microsoft.com/fwlink/?Lin
 
 To learn more about related downloads, see the [Downloads page](https://www.visualstudio.com/downloads/download-visual-studio-vs).
 
-To learn about what's new and the bug fixes made in this release, see the [Release notes for Team Foundation Server 2015 Update 4](https://www.docs.microsoft.com/visualstudio/releasenotes/tfs2015-update4-vs).   
+To learn about what's new and the bug fixes made in this release, see the [Release notes for Team Foundation Server 2015 Update 4](https://docs.microsoft.com/visualstudio/releasenotes/tfs2015-update4-vs).   
 
 
 ## TFS 2015 Update 3
@@ -739,10 +841,11 @@ To learn about what's new and the bug fixes made in this release, see the [Relea
 <li><a href="https://www.visualstudio.com/news/releasenotes/tfs2015-update1-vs#improvegit">Improved experience for empty Git repositories and cloning existing repositories</a></li>
 <li><a href="https://www.visualstudio.com/news/releasenotes/tfs2015-update1-vs#errorlist">Visual Studio error list filtering is governed by modified files</a></li>
 </ul>
- 
- 
+
+
 ### Agile & Reporting 
-<p><i>Backlogs</i></p>
+
+#### Backlogs
 <ul>
 <li><a href="https://www.visualstudio.com/news/releasenotes/tfs2015-update1-vs#dragitem">Drag any item to an iteration from anywhere</a></li>
 <li><a href="https://www.visualstudio.com/news/releasenotes/tfs2015-update1-vs#addpanel">Add panel on the iteration backlog</a></li>
@@ -750,7 +853,7 @@ To learn about what's new and the bug fixes made in this release, see the [Relea
 <li><a href="https://www.visualstudio.com/news/releasenotes/tfs2015-update1-vs#config">Configure settings directly from backlogs and boards</a></li>
 </ul>
 
-<p><i>Kanban</i></p>
+#### Kanban
 <ul>
 <li><a href="https://www.visualstudio.com/news/releasenotes/tfs2015-update1-vs#rename">Inline rename of columns and swimlanes</a></li>
 <li><a href="https://www.visualstudio.com/news/releasenotes/tfs2015-update1-vs#tagcolor">Tag coloring</a></li>
@@ -760,14 +863,15 @@ To learn about what's new and the bug fixes made in this release, see the [Relea
 <li><a href="https://www.visualstudio.com/news/releasenotes/tfs2015-update1-vs#cardcol">Card coloring (Kanban and task boards)</a></li>
 <li><a href="https://www.visualstudio.com/news/releasenotes/tfs2015-update1-vs#hide">Hide empty fields on cards</a></li>
 </ul>
-<p><i>Scrum</i></p>
+
+#### Scrum
 <ul>
 <li><a href="https://www.visualstudio.com/news/releasenotes/tfs2015-update1-vs#addremov">Add/remove users from capacity</a></li>
 <li><a href="https://www.visualstudio.com/news/releasenotes/tfs2015-update1-vs#multact">Multiple activities per team member (Capacity)</a></li>
 <li><a href="https://www.visualstudio.com/news/releasenotes/tfs2015-update1-vs#line">Line on the burndown indicates actual capacity</a></li>
 </ul>
 
-<p><i>Dashboards and queries</i></p>
+#### Dashboards and queries
 <ul>
 <li><a href="https://www.visualstudio.com/news/releasenotes/tfs2015-update1-vs#dashboards">Add multiple team dashboards, add widgets</a></li>
 <li><a href="https://www.visualstudio.com/news/releasenotes/tfs2015-update1-vs#querylimit">When creating a query, limit the values shown for Work Item Type</a></li>
@@ -775,19 +879,20 @@ To learn about what's new and the bug fixes made in this release, see the [Relea
  
 
 ### DevOps 
-<p><i>Build</i></p>
+
+#### Build
 <ul>
 <li><a href="https://www.visualstudio.com/news/releasenotes/tfs2015-update1-vs#imprvacc">Improved access control for build resources</a></li>
 <li><a href="https://www.visualstudio.com/news/releasenotes/tfs2015-update1-vs#imprvsci">Improved source control integration in Team Build</a></li>
 <li><a href="https://www.visualstudio.com/news/releasenotes/tfs2015-update1-vs#fixed">Fixed small usability issues in Build Explorer</a></li>
 <li><a href="https://www.visualstudio.com/news/releasenotes/tfs2015-update1-vs#xaml">XAML build parity progress</a></li>
-
 <li><a href="https://www.visualstudio.com/news/releasenotes/tfs2015-update1-vs#azurergp">Azure Resource Group deployment support in build workflow</a></li>
 <li><a href="https://www.visualstudio.com/news/releasenotes/tfs2015-update1-vs#cdazure">Continuous delivery: Provisioning of resources in Azure</a></li>
 <li><a href="https://www.visualstudio.com/news/releasenotes/tfs2015-update1-vs#sonarqube">SonarQube works for Java programs built with a Maven Build task</a></li>
 <li><a href="https://www.visualstudio.com/news/releasenotes/tfs2015-update1-vs#sonarbuild">SonarQube Analysis build tasks work with on-premises and hosted agents</a></li>
 </ul>
-<p><i>Test</i></p>
+
+#### Test
 <ul>
 <li><a href="https://www.visualstudio.com/news/releasenotes/tfs2015-update1-vs#mantest">Manual testing: Export test outcome</a></li>
 <li><a href="https://www.visualstudio.com/news/releasenotes/tfs2015-update1-vs#mtresults">Manual testing: Manual test step results and iterations for data driven tests</a></li>
@@ -808,48 +913,48 @@ To learn about what's new and the bug fixes made in this release, see the [Relea
 >[!NOTE]  
 >The links provided below open related sections within the [Team Foundation Server 2015 Update 1](https://www.visualstudio.com/news/releasenotes/tfs2015-rtm-vs) release notes. 
 
-###Source control 
+### Source control 
 <ul>
-<li><a href="https://www.docs.microsoft.com/visualstudio/releasenotes/tfs2015-rtm-vs#brpol">Branch policies </a></li>
-<li><a href="https://www.docs.microsoft.com/visualstudio/releasenotes/tfs2015-rtm-vs#gatebld">Branch policies - Gated build</a></li>
-<li><a href="https://www.docs.microsoft.com/visualstudio/releasenotes/tfs2015-rtm-vs#codepol">Branch policies - Code review</a></li>
-<li><a href="https://www.docs.microsoft.com/visualstudio/releasenotes/tfs2015-rtm-vs#branchist">Branch history (pushes &amp; pull requests)</a></li>
-<li><a href="https://www.docs.microsoft.com/visualstudio/releasenotes/tfs2015-rtm-vs#webhistgit">Web history view for Git projects</a></li>
-<li><a href="https://www.docs.microsoft.com/visualstudio/releasenotes/tfs2015-rtm-vs#quicked">Quick code editing</a></li>
-<li><a href="https://www.docs.microsoft.com/visualstudio/releasenotes/tfs2015-rtm-vs#histcon">History control</a></li>
-<li><a href="https://www.docs.microsoft.com/visualstudio/releasenotes/tfs2015-rtm-vs#vhist">View history on a folder</a></li>
-<li><a href="https://www.docs.microsoft.com/visualstudio/releasenotes/tfs2015-rtm-vs#mergperf">Improved merge performance</a></li>
+<li><a href="https://docs.microsoft.com/visualstudio/releasenotes/tfs2015-rtm-vs#brpol">Branch policies </a></li>
+<li><a href="https://docs.microsoft.com/visualstudio/releasenotes/tfs2015-rtm-vs#gatebld">Branch policies - Gated build</a></li>
+<li><a href="https://docs.microsoft.com/visualstudio/releasenotes/tfs2015-rtm-vs#codepol">Branch policies - Code review</a></li>
+<li><a href="https://docs.microsoft.com/visualstudio/releasenotes/tfs2015-rtm-vs#branchist">Branch history (pushes &amp; pull requests)</a></li>
+<li><a href="https://docs.microsoft.com/visualstudio/releasenotes/tfs2015-rtm-vs#webhistgit">Web history view for Git projects</a></li>
+<li><a href="https://docs.microsoft.com/visualstudio/releasenotes/tfs2015-rtm-vs#quicked">Quick code editing</a></li>
+<li><a href="https://docs.microsoft.com/visualstudio/releasenotes/tfs2015-rtm-vs#histcon">History control</a></li>
+<li><a href="https://docs.microsoft.com/visualstudio/releasenotes/tfs2015-rtm-vs#vhist">View history on a folder</a></li>
+<li><a href="https://docs.microsoft.com/visualstudio/releasenotes/tfs2015-rtm-vs#mergperf">Improved merge performance</a></li>
 </ul>
 
-###Agile & Reporting 
+### Agile & Reporting 
 <ul>
-<li><a href="https://www.docs.microsoft.com/visualstudio/releasenotes/tfs2015-rtm-vs#indentav">Identity control and avatars</a></li>
-<li><a href="https://www.docs.microsoft.com/visualstudio/releasenotes/tfs2015-rtm-vs#tbugs">Taskboard: Bugs on your backlogs and boards</a></li>
-<li><a href="https://www.docs.microsoft.com/visualstudio/releasenotes/tfs2015-rtm-vs#pbacklogup">Product backlog updates</a></li>
-<li><a href="https://www.docs.microsoft.com/visualstudio/releasenotes/tfs2015-rtm-vs#sprint">Sprint backlog and task board updates</a></li>
-<li><a href="https://www.docs.microsoft.com/visualstudio/releasenotes/tfs2015-rtm-vs#ccards">Customize and configure your cards</a></li>
-<li><a href="https://www.docs.microsoft.com/visualstudio/releasenotes/tfs2015-rtm-vs#kanban">Kanban board updates</a></li>
-<li><a href="https://www.docs.microsoft.com/visualstudio/releasenotes/tfs2015-rtm-vs#cfdcol">Turn off the first column on the CFD chart</a></li>
-<li><a href="https://www.docs.microsoft.com/visualstudio/releasenotes/tfs2015-rtm-vs#safe">SAFe support for Process Templates</a></li>
-<li><a href="https://www.docs.microsoft.com/visualstudio/releasenotes/tfs2015-rtm-vs#proctemp">Process Templates renamed</a></li>
-<li><a href="https://www.docs.microsoft.com/visualstudio/releasenotes/tfs2015-rtm-vs#curitoken">Current iteration query token</a></li>
-<li><a href="https://www.docs.microsoft.com/visualstudio/releasenotes/tfs2015-rtm-vs#qprog">Query progressive disclosure</a></li>
+<li><a href="https://docs.microsoft.com/visualstudio/releasenotes/tfs2015-rtm-vs#indentav">Identity control and avatars</a></li>
+<li><a href="https://docs.microsoft.com/visualstudio/releasenotes/tfs2015-rtm-vs#tbugs">Taskboard: Bugs on your backlogs and boards</a></li>
+<li><a href="https://docs.microsoft.com/visualstudio/releasenotes/tfs2015-rtm-vs#pbacklogup">Product backlog updates</a></li>
+<li><a href="https://docs.microsoft.com/visualstudio/releasenotes/tfs2015-rtm-vs#sprint">Sprint backlog and task board updates</a></li>
+<li><a href="https://docs.microsoft.com/visualstudio/releasenotes/tfs2015-rtm-vs#ccards">Customize and configure your cards</a></li>
+<li><a href="https://docs.microsoft.com/visualstudio/releasenotes/tfs2015-rtm-vs#kanban">Kanban board updates</a></li>
+<li><a href="https://docs.microsoft.com/visualstudio/releasenotes/tfs2015-rtm-vs#cfdcol">Turn off the first column on the CFD chart</a></li>
+<li><a href="https://docs.microsoft.com/visualstudio/releasenotes/tfs2015-rtm-vs#safe">SAFe support for Process Templates</a></li>
+<li><a href="https://docs.microsoft.com/visualstudio/releasenotes/tfs2015-rtm-vs#proctemp">Process Templates renamed</a></li>
+<li><a href="https://docs.microsoft.com/visualstudio/releasenotes/tfs2015-rtm-vs#curitoken">Current iteration query token</a></li>
+<li><a href="https://docs.microsoft.com/visualstudio/releasenotes/tfs2015-rtm-vs#qprog">Query progressive disclosure</a></li>
 </ul>
 
-###DevOps 
+### DevOps 
 <ul>
-<li><a href="https://www.docs.microsoft.com/visualstudio/releasenotes/tfs2015-rtm-vs#bldauto">Build automation system</a></li>
-<li><a href="https://www.docs.microsoft.com/visualstudio/releasenotes/tfs2015-rtm-vs#multitest">Assign multiple testers</a></li>
-<li><a href="https://www.docs.microsoft.com/visualstudio/releasenotes/tfs2015-rtm-vs#loadtest">Cloud-based load tests</a></li>
-<li><a href="https://www.docs.microsoft.com/visualstudio/releasenotes/tfs2015-rtm-vs#autotest">Automated testing</a></li>
+<li><a href="https://docs.microsoft.com/visualstudio/releasenotes/tfs2015-rtm-vs#bldauto">Build automation system</a></li>
+<li><a href="https://docs.microsoft.com/visualstudio/releasenotes/tfs2015-rtm-vs#multitest">Assign multiple testers</a></li>
+<li><a href="https://docs.microsoft.com/visualstudio/releasenotes/tfs2015-rtm-vs#loadtest">Cloud-based load tests</a></li>
+<li><a href="https://docs.microsoft.com/visualstudio/releasenotes/tfs2015-rtm-vs#autotest">Automated testing</a></li>
 </ul>
 
-###Administration, Marketplace, & Other 
+### Administration, Marketplace, & Other 
 <ul>
-<li><a href="https://www.docs.microsoft.com/visualstudio/releasenotes/tfs2015-rtm-vs#tpr">Project rename</a></li>
-<li><a href="https://www.docs.microsoft.com/visualstudio/releasenotes/tfs2015-rtm-vs#restapi">REST APIs</a></li>
-<li><a href="https://www.docs.microsoft.com/visualstudio/releasenotes/tfs2015-rtm-vs#svchook">Service hooks</a></li>
-<li><a href="https://www.docs.microsoft.com/visualstudio/releasenotes/tfs2015-rtm-vs#apichange">Change in API behavior</a></li>
+<li><a href="https://docs.microsoft.com/visualstudio/releasenotes/tfs2015-rtm-vs#tpr">Project rename</a></li>
+<li><a href="https://docs.microsoft.com/visualstudio/releasenotes/tfs2015-rtm-vs#restapi">REST APIs</a></li>
+<li><a href="https://docs.microsoft.com/visualstudio/releasenotes/tfs2015-rtm-vs#svchook">Service hooks</a></li>
+<li><a href="https://docs.microsoft.com/visualstudio/releasenotes/tfs2015-rtm-vs#apichange">Change in API behavior</a></li>
 <li><a href="https://msdn.microsoft.com/library/mt622451.aspx">Known issues and fixed bugs</a></li>
 </ul>
 
@@ -859,6 +964,6 @@ To learn about what's new and the bug fixes made in this release, see the [Relea
 You can download the latest version of TFS from the [Visual Studio download page](https://www.visualstudio.com/downloads/).
 
 
-###TFS Express  
+### TFS Express  
 
 Team Foundation Server 2015 Update 2 and later versions are free for up to five users, replacing TFS Express. Existing TFS Express users can run an upgrade to the Team Foundation Server 2015 Update 2 and continue to use it free for up to five users. For the sixth user and beyond, CALs must be used. See the [Team Foundation Server pricing page](https://www.visualstudio.com/team-services/tfs-pricing).

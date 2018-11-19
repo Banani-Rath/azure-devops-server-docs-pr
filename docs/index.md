@@ -1,7 +1,7 @@
 ---
-title: Visual Studio Team Foundation Server Documentation 
+title: Azure DevOps Server Documentation 
 titleSuffix: TFS
-description: Quickstarts and how-to guides to install, upgrade, and manage Team Foundation Server (TFS) 
+description: Quickstarts and how-to guides to install, upgrade, and manage Azure DevOps Server, formerly named Team Foundation Server (TFS). 
 layout: HubPage 
 hide_bc: true
 ms.topic: hub-page
@@ -15,11 +15,11 @@ featureFlags:
 - clicktale 
 ---
 
-
 <div id="main" class="v2">
     <div class="container">
-        <h1>Visual Studio Team Foundation Server Documentation</h1>
-        <p>Team Foundation Server, the on-premises version of <a href="/azure/devops/index">Azure DevOps</a>, provides integrated tools to support collaborative software development, including Git repositories, continuous integration and continuous deployment (CI/CD), and interactive Kanban boards.</p><br/>
+        <h1>Azure DevOps Server Documentation</h1>
+        <p>Azure DevOps Server, previously named Visual Studio Team Foundation Server, is the on-premises version of <a href="/azure/devops/index">Azure DevOps Services</a>. It provides integrated tools to support collaborative software development, including Git repositories, continuous integration and continuous deployment (CI/CD), and interactive Kanban boards.</p>
+        <p><i><a href="server/tfs-is-now-azure-devops-server.md">What happened to Team Foundation Server</a></i></p><br/>
         <ul class="pivots">
             <li>
                 <a href="#index"></a>
@@ -29,7 +29,7 @@ featureFlags:
                         <ul class="panelContent singlePanelContent" id="indexA" style="margin-top: 0px; display: flex; float: left; border: none;">
                             <li class="fullSpan">
                                 <a href="#start"> </a>
-                                <h2 style="float: left; display: flex;">Get started with Team Foundation Server</h2>
+                                <h2 style="float: left; display: flex;">Get started with Azure DevOps Server</h2>
                                 <ul id="index1" class="cardsF panelContent singlePanelContent cols cols4" style="float: left; display: flex!important;">
                                     <li>
                                         <a href="/azure/devops/user-guide/index">
@@ -42,8 +42,8 @@ featureFlags:
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
-                                                            <h3>Start using TFS</h3>
-                                                            <p>New to TFS? This user guide can help you get started. </p>
+                                                            <h3>Start using Azure DevOps Server or TFS</h3>
+                                                            <p>New to Azure DevOps Server or TFS? This user guide can help you get started. </p>
                                                         </div>
                                                     </div>
                                                 </div>

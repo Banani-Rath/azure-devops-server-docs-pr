@@ -1,6 +1,6 @@
 ---
-title: Install and configure TFS on a single server
-description: Install and set up Team Foundation Server (or TFS Express) on a single server using the basic configuration wizard
+title: Install and configure Azure DevOps Server or TFS on a single server
+description: Install and set up Azure DevOps Server, Team Foundation Server, or TFS Express on a single server by using the Server Configuration Wizard.
 ms.prod: devops-server
 ms.technology: tfs-admin
 ms.assetid: 36d82fcb-e849-41e1-a33f-68974c15fbd4
@@ -9,93 +9,80 @@ ms.manager: douge
 ms.author: elbatk
 author: elbatk
 ms.topic: conceptual
-ms.date: 11/28/2017
+ms.date: 11/12/2018
 ---
 
-# Install TFS on a single server
+# Install Azure DevOps Server or TFS on a single server
 
-**TFS 2018** | **TFS 2017** | **TFS 2015**
+**Azure DevOps Server 2019 RC1** | **TFS 2018** | **TFS 2017** | **TFS 2015**
 
-There are three different options for installing Team Foundation Server (TFS):
+There are three different options for installing Azure DevOps Server or Team Foundation Server (TFS):
 
-* Single server install (covered in this guide)
-* Dual server install
-* Multiple server install
+* Single-server install (covered in this guide)
+* Dual-server install
+* Multiple-server install
 
-The simplest way to set up TFS is to put everything on a single server. Make sure to review our [hardware recommendations](../requirements.md#hardware-recommendations) to confirm that this configuration seems appropriate for your team. If not, 
-consider a [dual server](../install/dual-server.md) or [multiple server](../install/multiple-server.md) configuration instead.
+The simplest way to set up Azure DevOps Server or TFS is to put everything on a single server. To confirm that this configuration is appropriate for your team, see the [hardware recommendations](../requirements.md#hardware-recommendations). If not, consider a [dual-server](../install/dual-server.md) or [multiple-server](../install/multiple-server.md) configuration instead.
 
-> If you're upgrading to TFS 2018 from another version, you may want to look at the [compatibility](../compatibility.md) and [release notes](../whats-new.md#tfs-2018-rc1).
+> [!NOTE]
+> If you're upgrading to TFS 2018 from another TFS version, see the [compatibility with TFS versions](../compatibility.md) and the [release notes](../whats-new.md#tfs-2018-rc1).
 
 ## Preparation
 
-0. Prepare a single computer that satisfies the [system requirements](../requirements.md) for TFS. 
+1. Prepare a single computer that satisfies the [system requirements](../requirements.md) for Azure DevOps Server or TFS. 
 
-0. If you do not plan to use SQL Express, set up an [appropriate version of SQL Server](../requirements.md#sql-server). When you set SQL Server up for TFS, install at least the database engine and full text search services.
+1. If you don't plan to use SQL Server Express, set up an [appropriate version of Microsoft SQL Server](../requirements.md#sql-server). When you set up SQL Server for Azure DevOps Server or TFS, install, at a minimum, the database engine and full-text search services.
 
-	![SQL_SERVER_FEATURES](_shared/_img/sql-features.png)
+	We recommend that you use SQL Server Express only for personal or evaluation deployments. Paid copies of Azure DevOps Server or TFS include a SQL Server Standard license. The [Azure DevOps Server pricing](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/) and [Team Foundation Server pricing](https://www.visualstudio.com/team-services/tfs-pricing) pages explain the details. If you use the included license, you can use it only for databases created with those products.
 
-	While the configuration wizard will install SQL Server Express for you, we don't recommend using SQL Server Express for anything but
-	personal or evaluation deployments of TFS. Paid copies of TFS come with a license to SQL Server Standard for use with TFS. The [Team Foundation Server pricing page](https://www.visualstudio.com/team-services/tfs-pricing) explains the details. If you use the license that's included with TFS, you can only use if for the TFS databases.
+1. The account you use for configuring the installation must be a member of the [sysadmin server role in SQL Server](https://msdn.microsoft.com/library/ms188659.aspx). 
 
-0. Ensure that the account you plan to use to configure TFS is a member of the [SysAdmin server role in SQL Server](https://msdn.microsoft.com/library/ms188659.aspx). 
-
-> [!NOTE]
-> Installing TFS involves a complex set of operations that require a high degree of privilege - these include creating databases, 
-> provisioning logins for service accounts, and more. Technically, all that is required is membership in the ServerAdmin role; 
-> ALTER ANY LOGIN, CREATE ANY DATABASE, and VIEW ANY DEFINITION server scoped permissions; and CONTROL permission on the master 
-> database. Membership in the SysAdmin server role will confer all of these memberships and permissions, and is therefore the easiest
-> way to ensure that TFS configuration will succeed. If necessary, these memberships and permissions can be revoked after TFS is 
-> installed.  
+    > [!NOTE]
+    > Installing Azure DevOps Server or TFS involves a complex set of operations that require a high degree of privilege. These operations include creating databases, provisioning logins for service accounts, and more. Technically, all that is required is membership in the serveradmin role; ALTER ANY LOGIN, CREATE ANY DATABASE, and VIEW ANY DEFINITION server-scoped permissions; and CONTROL permission on the master database. Membership in the sysadmin server role confers all of these memberships and permissions, and is therefore the easiest way to ensure that the configuration will succeed. If necessary, you can revoke these memberships and permissions after installation.  
 
 ## Installation
 
-0. You can download TFS from:
-	* [www.visualstudio.com/tfs/](https://www.visualstudio.com/tfs/) (the simplest method), 
-	* [MSDN Subscriber Downloads](https://msdn.microsoft.com/library/hh442898.aspx), 
-	* the [Volume Licensing Service Center](https://www.microsoft.com/Licensing/servicecenter/default.aspx), 
-	* or purchase a DVD through retail channels
+1. Download Azure DevOps Server or TFS through one of the following channels:
+	* [Visual Studio Downloads](https://visualstudio.microsoft.com/downloads/) (the simplest method) 
+	* [Visual Studio Dev Essentials](https://msdn.microsoft.com/library/hh442898.aspx)
+	* [Volume Licensing Service Center](https://www.microsoft.com/Licensing/servicecenter/default.aspx)
 
-0. Kick off the installation.
+1. Kick off the installation. 
 
-![TFS_INSTALLER](_shared/_img/installer.png)
-
-The installation process itself simply gets TFS bits onto your machine. At the end of this process, the installer will launch the TFS 
-Configuration Center. 
+     The installer places executables onto your machine and then launches the Server Configuration Center.
 
 ## Configuration
 
-Configure TFS using your selected scenario. The easiest way to set up Team Foundation Server on a single server is to use the Server 
-Configuration Wizard with the New Deployment - Basic scenario. 
+Configure Azure DevOps Server or TFS by using your selected scenario. The easiest way to set it up on a single server is to use the Server Configuration Wizard with the **New Deployment - Basic** scenario. 
 
 ![TFS_SERVER_CONFIGURATION_NEW_DEPLOYMENT_BASIC](_shared/_img/new-deployment-basic.png)
 
-> In previous versions of TFS, you would use the Basic Configuration Wizard.
+> [!NOTE]
+> For previous versions of TFS, use the Basic Configuration Wizard.
+>
 
-This scenario is optimized for simplicity, using default options for most inputs. If you want full control over all inputs, use the New 
-Deployment - Advanced scenario instead. 
+This scenario is optimized for simplicity, by using default options for most inputs. If you want full control over all inputs, use the **New Deployment - Advanced** scenario instead. 
 
-With the *New Deployment - Basic* scenario, you will need to choose:
+With the **New Deployment - Basic** scenario, choose the following settings:
 
-- **Language**: Which language you would like to configure TFS for.
-- **SQL Server Instance**: Whether to install SQL Express or use an existing SQL Server instance.
-- **Application Tier**: Which website settings to use, including whether to use HTTP or HTTPS bindings. See [website settings](/azure/devops/security/websitesettings) for more information.
-- **Search**: Whether to install and configure Code Search features. See [configuring search](/azure/devops/project/search/administration#config-tfs) 
-for more information.
+- **Language**: Select the language to use for configuring.
+- **SQL Server Instance**: Select whether to install SQL Server Express or use an existing SQL Server instance.
+- **Application Tier**: Select the website settings to use, including whether to use HTTP or HTTPS bindings. For more information, see [Web site settings](/azure/devops/security/websitesettings).
+- **Search**: Select whether to install and configure Code Search features or use an existing search service. For more information, see [Configure search](/azure/devops/project/search/administration#config-tfs).
 
-If you select the *New Deployment - Advanced* scenario, you will additionally need to choose:
+If you're using the **New Deployment - Advanced** scenario, choose the following additional settings.
+    
+![TFS_SERVER_CONFIGURATION_NEW_DEPLOYMENT_ADVANCED](_shared/_img/new-deployment-advanced.png)
 
-- The service account your various TFS deployment processes will run as. The default value used in the Basic scenario is `NT AUTHORITY\NETWORK SERVICE` in domain joined scenarios, and `LOCAL SERVICE` in workgroup scenarios.
-- Whether to enable SSH, along with the port it should listen on. The default value used in the Basic scenario is to configure SSH on port 22.
-- The location of the file cache used for frequently accessed TFS resources. The default value used in the Basic scenario is the path
-`TfsData\ApplicationTier\_fileCache` on the local drive which has the most free space.
-- Whether to configure Reporting features and SharePoint integration. The default behavior used in the Basic scenario is to not configure
-these features. Note that these options are not available on client operating systems.
-- Whether to create a project collection in which to store your projects, along with the name of that collection. The default behavior in the Basic scenario is to create a project collection named DefaultCollection.
+- **Account**: Select the service account your processes will run as. The default value used in the Basic scenario is `NT AUTHORITY\NETWORK SERVICE` in domain-joined scenarios, and `LOCAL SERVICE` in workgroup scenarios.
+- **Application Tier**: 
+    - Under **SSH Settings**, select whether to enable SSH and the port it should listen on. The default value used in the Basic scenario is to configure SSH on port 22.
+    - Under **File Cache Location**, select the location of the file cache used for frequently accessed resources. The default value used in the basic scenario is the path `TfsData\ApplicationTier\_fileCache` on the local drive, which has the most free space.
+- **Project Collection**: Select whether to create a project collection in which to store your projects and enter the name of that collection. The default behavior in the Basic scenario is to create a project collection named **DefaultCollection**.
 
-In both cases, the wizard will run readiness checks to validate your environment and your setting selections. If all goes well, the wizard will then let you configure your deployment. If there are errors, you will need to fix each of them and re-run the readiness checks before you can continue.
+After you've reviewed your selections and selected **Verify**, the wizard runs readiness checks to validate your environment and your setting selections. If it's successful, the wizard will then let you configure your deployment. Otherwise, fix any errors and rerun the readiness checks.
 
-## Next Steps
+## Next steps
 
-* [Create a project](/azure/devops/accounts/create-team-project.md?toc=/azure/devops/tfs-server/toc.json&bc=/azure/devops/tfs-server/breadcrumb/toc.json)
-* [Upgrade TFS](../upgrade/get-started.md)
+* [Create a project](https://docs.microsoft.com/azure/devops/organizations/projects/create-project).
+* [Upgrade your deployment](../upgrade/get-started.md).

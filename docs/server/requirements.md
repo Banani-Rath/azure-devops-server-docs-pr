@@ -1,6 +1,6 @@
 ﻿---
-title: Requirements and compatibility | Team Foundation Server Setup, Upgrade and Administration
-description: Describes many kinds of requirements and compatibility for Azure DevOps Services and TFS -- hardware, operating systems, SQL Server, client versions, server versions, browsers
+title: Requirements and compatibility | Azure DevOps Server and Team Foundation Server Setup, Upgrade and Administration
+description: Describes many kinds of requirements and compatibility for Azure DevOps Server and TFS -- hardware, operating systems, SQL Server, client versions, server versions, browsers
 ms.prod: devops-server
 ms.technology: tfs-admin
 ms.assetid: 12652666-b74e-4fd8-aab1-d87cbba6b820
@@ -9,25 +9,26 @@ ms.manager: douge
 ms.author: elbatk
 author: elbatk
 ms.topic: conceptual
-ms.date: 10/02/2017
+ms.date: 11/14/2017
 ---
 
 # Requirements and compatibility
 
-**Azure DevOps Services** | **TFS 2018** | **TFS 2017** | **TFS 2015** | **TFS 2013**
+**Azure DevOps Server 2019 RC1** | **TFS 2018** | **TFS 2017** | **TFS 2015** | **TFS 2013**
 
 <a name="operating-systems"></a>
 ## Operating systems
 
-TFS can be installed on a Windows server or client operating system.
-TFS 2017 and TFS 2018 only support 64-bit operating systems.
+Azure DevOps Server or TFS can be installed on a Windows server or client operating system.
+TFS 2017, TFS 2018, and Azure DevOps Server 2019 RC1 only support 64-bit operating systems.
 For earlier versions of TFS, you can use either the 32-bit or 64-bit operating systems when a 32-bit version is available. 
-We recommend using a server OS unless your TFS instance is for evaluation or personal use.
+We recommend using a server OS unless your Azure DevOps Server or TFS instance is for evaluation or personal use.
 
 ### Server operating systems
   
-TFS Version | Supported server operating systems
+Azure DevOps Server or TFS Version | Supported server operating systems
 ------------|--------------------------------
+Azure DevOps Server 2019 RC1    | Windows Server 2019<br/>Windows Server 2016<br/>Windows Server 2012 R2 (Essentials, Standard, Datacenter)<br/>Windows Server 2012 (Essentials, Standard, Datacenter)
 TFS 2018    | Windows Server 2016<br/>Windows Server 2012 R2 (Essentials, Standard, Datacenter)<br/>Windows Server 2012 (Essentials, Standard, Datacenter)
 TFS 2017    | Windows Server 2016<br/>Windows Server 2012 R2 (Essentials, Standard, Datacenter)<br/>Windows Server 2012 (Essentials, Standard, Datacenter)<br/>Windows Server 2008 R2 (minimum SP1) (Standard, Enterprise, Datacenter)
 TFS 2015    | Windows Server 2016<br/>Windows Server 2012 R2 (Essentials, Standard, Datacenter)<br/>Windows Server 2012 (Essentials, Standard, Datacenter)<br/>Windows Server 2008 R2 (minimum SP1) (Standard, Enterprise, Datacenter)
@@ -35,14 +36,16 @@ TFS 2013    | Windows Server 2012 R2 (Essentials, Standard, Datacenter)<br/>Wind
 TFS 2012    | Windows Server 2012 R2 (Essentials, Standard, Datacenter)<br/>Windows Server 2012 (Essentials, Standard, Datacenter)<br/>Windows Server 2008 R2 (Standard, Enterprise, Datacenter)<br/>Windows Server 2008 (minimum SP2)<br/>Windows Small Business Server 2011 (Standard, Essentials, Premium Add-On)<br/>Windows Home Server 2011
 TFS 2010    | Windows Server 2008 R2 (Standard, Enterprise, Datacenter)<br/>Windows Server 2008 (minimum SP2)<br/>Windows Server 2003 R2<br/>Windows Server 2003 (minimum SP2)
 
-The [server core](https://msdn.microsoft.com/library/dd184075.aspx) installation option is supported for TFS 2017 and TFS 2018, but not for earlier versions.
-[Windows Server, version 1709](/windows-server/get-started/get-started-with-1709) is not supported. Eventually we do plan to support
+The [server core](https://msdn.microsoft.com/library/dd184075.aspx) installation option is supported for TFS 2017, TFS 2018, 
+and Azure DevOps Server 2019 RC1, but not for earlier versions.
+[Windows Server, version 1709](/windows-server/get-started/get-started-with-1709) isn't supported. Eventually we do plan to support
 Windows Server releases from the Semi-Annual Channel. 
 
 ### Client operating systems
 
-TFS Version | Supported client operating systems
+Azure DevOps Server or TFS Version | Supported client operating systems
 ------------|--------------------------------
+Azure DevOps Server 2019 RC1    | Windows 10 (Professional, Enterprise) Version 1607 or greater
 TFS 2018    | Windows 10 (Professional, Enterprise) Version 1607 or greater
 TFS 2017    | Windows 10 (Home, Professional, Enterprise)<br/>Windows 8.1 (Basic, Professional, Enterprise)<br/>Windows 7 (minimum SP1) (Home Premium, Professional, Enterprise, Ultimate)
 TFS 2015    | Windows 10 (Home, Professional, Enterprise)<br/>Windows 8.1 (Basic, Professional, Enterprise)<br/>Windows 7 (minimum SP1) (Home Premium, Professional, Enterprise, Ultimate)
@@ -50,45 +53,54 @@ TFS 2013    | Windows 8.1 (Basic, Professional, Enterprise)<br/>Windows 7 (minim
 TFS 2012    | Windows 8.1 (Basic, Professional, Enterprise)<br/>Windows 7 (Home Premium, Professional, Enterprise, Ultimate)
 TFS 2010    | Windows 7 (Home Premium, Professional, Enterprise, Ultimate)<br/>Windows Vista SP2
 
-While TFS supports installation on client OSes, we don't recommend this except for evaluation purposes or personal use.
-TFS installations on client OSes don't support integration with SharePoint products or reporting.
-The TFS proxy can't be installed on client OSes. If you need to use any of these features, install TFS on a server OS. 
+While Azure DevOps Server and TFS support installation on client operating systems, we don't recommend this except for evaluation 
+purposes or personal use.
+Azure DevOps Server and TFS installations on client operating systems don't support integration with SharePoint products or reporting.
+The Azure DevOps Server or TFS proxy can't be installed on client operating systems. If you need to use any of these features, install 
+Azure DevOps Server or TFS on a server OS. 
 
 
 <a name="proxy-server"></a>
-## System requirements for Team Foundation Server Proxy
+## System requirements for Azure DevOps Server Proxy or Team Foundation Server Proxy
 
-The proxy feature is available only if you installed Team Foundation Server on a server operating system.
+The proxy feature is available only if you installed Azure DevOps Server or Team Foundation Server on a server operating system.
 
-Review these hardware recommendations to determine the optimal hardware to use for Team Foundation Server Proxy. Unlike operating system requirements, hardware recommendations for proxy are different than those for setting up the application tier of Team Foundation Server. The application tier of TFS requires more robust hardware than the proxy feature does.
+Review these hardware recommendations to determine the optimal hardware to use for Azure DevOps Server Proxy or 
+Team Foundation Server Proxy. Unlike operating system requirements, hardware recommendations for proxy are different than 
+those for setting up the application tier of Azure DevOps Server or Team Foundation Server. 
+The application tier of TFS requires more robust hardware than the proxy feature does.
 
-These recommendations are guidelines for Team Foundation Server Proxy. Recommended hardware is based on the size of the team that will use the proxy server. Usually this is the team in your remote office. The larger the team, the more robust your hardware must be.
+These recommendations are guidelines for Azure DevOps Server Proxy and Team Foundation Server Proxy. Recommended hardware is based 
+on the size of the team that will use the proxy server. Usually this is the team in your remote office. 
+The larger the team, the more robust your hardware must be.
 
-| **Remote team size** | **Hardware recommendations (CPU/RAM) for Team Foundation Server Proxy** |
+| **Remote team size** | **Hardware recommendations (CPU/RAM) for Azure DevOps Server Proxy or Team Foundation Server Proxy** |
 |---|---|
-| 450 or fewer users | 1 processor, 2.2 GHz CPU, 2 GB RAM |
-| Between 450 and 2,200 users | 2 processors, 2.0 GHz CPU, 2 GB RAM |
-| Between 2,200 and 3,600 users | 4 processors, 2.0 GHz CPU, 2 GB RAM |
+| 450 or fewer users | 1 processor, 2.2-GHz CPU, 2-GB RAM |
+| Between 450 and 2,200 users | 2 processors, 2.0-GHz CPU, 2-GB RAM |
+| Between 2,200 and 3,600 users | 4 processors, 2.0-GHz CPU, 2-GB RAM |
 
 			
 <a name="gvfs-proxy-server"></a>
 
 ### Additional requirements for GVFS proxy
-The Git Virtual File System (GVFS) proxy feature is I/O-heavy. In addition to the basic requirements for the Team Foundation Server Proxy, GVFS proxying requires a fast, large disk to operate efficiently on the repository. Recommended hardware is based on the size of the repository that the GVFS proxy will serve.
+The Git Virtual File System (GVFS) proxy feature is I/O-heavy. In addition to the basic requirements for the 
+Azure DevOps Server Proxy or Team Foundation Server Proxy, GVFS proxying requires a fast, large disk to operate 
+efficiently on the repository. Recommended hardware is based on the size of the repository that the GVFS proxy will serve.
 
 | **Hardware** | **Recommended value** |
 |---|---|
 | RAM | As large as the tip of a typical branch |
 | Disk space | Four times as large as the repository's entire size |
-| Disk hardware | SSD (Solid State Drive) |
+| Disk hardware | SSD (Solid-State Drive) |
 
-For example, assume a repository has 50GB at the tip of `master` and 200GB of history.
-We recommend 50GB of RAM and 800GB of SSD-based storage.
+For example, assume a repository has 50 GB at the tip of `master` and 200 GB of history.
+We recommend 50 GB of RAM and 800 GB of SSD-based storage.
 
 
 ## Virtualization
 
-Microsoft supports the virtualization of Team Foundation Server in supported virtualization environments.
+Microsoft supports the virtualization of Azure DevOps Server or Team Foundation Server in supported virtualization environments.
 For more information, see the following pages on the Microsoft website:
 
 * [Microsoft server software and supported virtualization environments](http://go.microsoft.com/fwlink/?LinkId=196061)
@@ -99,10 +111,11 @@ For more information, see the following pages on the Microsoft website:
 <a name="sql-server"></a>
 ## SQL Server
 
-Use one of the following versions of SQL Server for TFS:
+Use one of the following versions of SQL Server for Azure DevOps Server or TFS:
 
-TFS version        | Support SQL Server version
+Azure DevOps Server or TFS version        | Support SQL Server version
 -------------------|------------------------------------
+Azure DevOps Server 2019 RC1            | SQL Server 2017<br/>SQL Server 2016 (minimum SP1)
 TFS 2018           | SQL Server 2017<br/>SQL Server 2016 (minimum SP1)
 TFS 2017 Update 1  | SQL Server 2016 (minimum SP1)<br/>SQL Server 2014<br/>
 TFS 2017           | SQL Server 2016<br/>SQL Server 2014<br/>
@@ -113,12 +126,12 @@ TFS 2013           | SQL Server 2012 (minimum SP1)
 TFS 2012           | SQL Server 2012<br/>SQL Server 2008 R2
 TFS 2010           | SQL Server 2008 R2<br/>SQL Server 2008
 
-SQL Server on Linux is not supported.
+SQL Server on Linux isn't supported.
 
 If you're using SQL Server 2016, we require a Visual C++ runtime [update](http://support.microsoft.com/kb/3138367) to be installed. 
 
 SQL Server 2014 has increased hardware requirements compared with previous versions.
-Certain configurations might hurt TFS performance.
+Certain configurations might hurt Azure DevOps Server or TFS performance.
 For more information, read [TFS 2013 Update 2: performance considerations using SQL Server 2014](http://support.microsoft.com/kb/2953452).
 
 If you're using SQL Server 2012 with SP1,
@@ -127,7 +140,7 @@ on top of SP1 to address a critical SQL Server bug around resource consumption.
 This isn't a requirement because the bug only affects a small number of instances,
 but we wanted you to be aware of it.
 If you don't apply CU2, you should apply a SQL Server hotfix ([KB2793634](http://support.microsoft.com/kb/2793634))
-to addresses another (different) issue where SQL Server 2012 with SP1 might request an excessive amount of restarts.
+to address another (different) issue where SQL Server 2012 with SP1 might request an excessive number of restarts.
 
 ### TFS 2013 additional information
 
@@ -141,10 +154,10 @@ Required for reporting | Reporting Services – Native </br> Analysis Services |
 
 
 **Your limits on database read operations**  
-Microsoft does not support any read operations against the TFS databases that originate from queries, scripts, .dll files, and so on, not provided by Microsoft or its support teams. If Microsoft Support determines that those read operations prevent them from solving your problem, the entire database will be unsupported. To return the database to a supported state, all unsupported read operations must stop.
+Microsoft doesn't support any read operations against the TFS databases that originate from queries, scripts, .dll files, and so on, not provided by Microsoft or its support teams. If Microsoft Support determines that those read operations prevent them from solving your problem, the entire database will be unsupported. To return the database to a supported state, all unsupported read operations must stop.
 
 **SQL Server High Availability features Supported by Team Foundation Server**
-SQL Server 2012 offers a new high availability (HA) feature that requires a Team Foundation Server-specific configuration. For more information, see: [Use SQL Server 2012 Always On Availability Groups with Team Foundation Server](/install/sql-server/use-always-on-groups.md)
+SQL Server 2012 offers a new high availability (HA) feature that requires a Team Foundation Server-specific configuration. For more information, see: [Use SQL Server 2012 Always On Availability Groups with Team Foundation Server](./install/sql-server/use-always-on-groups.md).
 
 |SQL Server HA feature|TFS support|Requires TFS Configuration|
 |---|---|---|
@@ -157,21 +170,21 @@ SQL Server 2012 offers a new high availability (HA) feature that requires a Team
 
 ### SQL Server editions
 
-TFS supports Express, Standard, and Enterprise [editions of SQL server](http://www.microsoft.com/server-cloud/products/sql-server-editions/).
+Azure DevOps Server and TFS support Express, Standard, and Enterprise [editions of SQL server](https://www.microsoft.com/sql-server/sql-server-2017-editions).
 The Express edition is only recommended for evaluation purposes, personal use, or for very small teams.
 We recommend Standard or Enterprise for all other scenarios.
 
 <a name="hardware-recommendations"></a>
 ## Hardware recommendations
 
-Team Foundation Server can scale from an Express installation on a laptop 
+Azure DevOps Server and Team Foundation Server can scale from an Express installation on a laptop 
 used by a single person all the way up to a highly available deployment used 
 by thousands of people and comprising multiple application tiers behind a 
 load balancer, multiple SQL instances using SQL Always On, etc. The 
-following recommendations should apply to most TFS deployments, but your 
-requirements may vary depending on the usage of your team. For example, if 
+following recommendations should apply to most Azure DevOps Server and TFS deployments, but your 
+requirements can vary depending on the usage of your team. For example, if 
 you have particularly large Git repositories or Team Foundation Version 
-Control branches, you may need higher spec machines that what are listed 
+Control branches, you might need higher spec machines than what are listed 
 below. Note that all of the machines discussed below could be either 
 physical or virtual.
 
@@ -181,15 +194,15 @@ A single machine, with one dual-core processor, 4 GB of RAM, and a fast hard
 disk drive. This configuration should support up to 250 users of core source 
 control (TF VC or Git) and work item tracking functionality. Extensive use of 
 automated build, test, or release would likely cause performance issues. Use 
-of search or reporting features would not be recommended with this configuration.
+of search or reporting features wouldn't be recommended with this configuration.
 
 Scaling a single server up can enable it to handle a larger number of users; 
 increased use of automated build, test, or release; and/or use of search or 
 reporting features. For example, increasing RAM to 8 GB should enable
-a single server deployment to scale up to 500 users.
+a single-server deployment to scale up to 500 users.
 
 For evaluation or personal use, you can use a a basic configuration with as
-little as 1 GB of RAM, but clearly this would not be recommended for a 
+little as 1 GB of RAM, but clearly this wouldn't be recommended for a 
 production server used by more than one person.
 
 ### Multi Server deployments
@@ -202,15 +215,15 @@ For a team of more than 500 users, consider:
 
 - An application tier with one dual-core processor, 8 GB of memory, and a 
 fast hard disk drive.
-- A data tier with one quad-core processor, 8 GB of memory, and high
-performance storage such as an SSD.
+- A data tier with one quad-core processor, 8 GB of memory, and high-performance 
+storage such as an SSD.
 
 For a team of more than 2,000 users, consider:
 
 - An application tier with one quad-core processor, 16 GB or more of memory, 
 and a fast hard disk drive.
 - A data tier with two or more quad-core processors, 16 GB or more of memory, 
-and very high performance storage (SSD, high performance SAN, etc.).
+and very high performance storage (SSD, high-performance SAN, etc.).
 
 If you plan to extensively use build, test, or release automation, we 
 recommend using higher spec application and data tiers to avoid performance 
@@ -219,9 +232,15 @@ that is more in line with the recommendations for a team of 500-2,000 users. We 
 recommend that you keep an eye on your automated processes to ensure that 
 they are efficient – for example, retrieve data from source control 
 incrementally during builds whenever possible, rather than fully refreshing 
-on each build. NOTE: except for very small teams with extremely limited usage 
-of these features we do not recommend installing build, test, or release 
+on each build. 
+
+> [!NOTE]
+> Except for very small teams with extremely limited usage 
+of these features we don't recommend installing build, test, or release 
 agents on your TFS application tiers.
+>
+>
+
 
 If you plan to use Code Search, we typically recommend setting up a separate server for it. 
 For more details, see 
@@ -242,13 +261,15 @@ TFS DBs in an Always On availability group.
 ## SharePoint
 
 > [!IMPORTANT]  
-> TFS 2018 discontinues support for the TFS Extension for SharePoint. 
+> TFS 2018 and Azure DevOps Server 2019 RC1 don't support the TFS Extension for SharePoint. 
 > For more information, see **[Discontinue SharePoint integration: TFS 2017 and earlier versions](https://go.microsoft.com/fwlink/?linkid=852977).**
 
-SharePoint is a collaboration product is not a TFS requirement, but some teams find SharePoint integration useful. If you want to use SharePoint Products, you must use a supported version that has the TFS extension for SharePoint installed.
+SharePoint is a collaboration product and isn't a TFS requirement, but some teams find SharePoint integration useful. 
+If you want to use SharePoint Products, you must use a supported version that has the TFS extension for SharePoint installed.
 
 TFS version | Supported SharePoint versions
 ------------|------------------------------
+Azure DevOps Server 2019 RC1            | No longer supported
 TFS 2018    | No longer supported
 TFS 2017    | SharePoint 2013 (Foundation, Standard, Enterprise)<br/>SharePoint 2010 (Foundation, Standard, Enterprise)
 TFS 2015    | SharePoint 2013 (Foundation, Standard, Enterprise)<br/>SharePoint 2010 (Foundation, Standard, Enterprise)
@@ -256,9 +277,9 @@ TFS 2013    | SharePoint 2013 (Foundation, Standard, Enterprise)<br/>SharePoint 
 TFS 2012    | SharePoint 2013 (Foundation, Standard, Enterprise)<br/>SharePoint 2010 (Foundation, Standard, Enterprise)<br/>Office SharePoint Server 2007 (Standard, Enterprise)<br/>Windows SharePoint Services 3.0
 TFS 2010    | Office SharePoint Server 2007 (Standard, Enterprise)<br/>Windows SharePoint Services 3.0
 
-**Authentication**: NTLM is the recommended authentication provider.  Team Foundation Server Extensions for SharePoint Products does not support Basic authentication or anonymous authentication.  In SharePoint Server 2013, Microsoft deprecated Windows classic-authentication in favor of claims-based authentication. TFS supports both, but for claims-based authentication, the authentication provider must be NTLM. TFS will only support NTLM-based claims.
+**Authentication**: NTLM is the recommended authentication provider.  Team Foundation Server Extensions for SharePoint Products doesn't support Basic authentication or anonymous authentication.  In SharePoint Server 2013, Microsoft deprecated Windows classic-authentication in favor of claims-based authentication. TFS supports both, but for claims-based authentication, the authentication provider must be NTLM. TFS will only support NTLM-based claims.
 
-You can configure the TFS extension for SharePoint Products on your SharePoint server from the [TFS administration console](/ref/command-line/open-admin-console).
+You can configure the TFS extension for SharePoint Products on your SharePoint server from the [TFS administration console](./ref/command-line/open-admin-console.md).
 
 **Tip:**
 
@@ -285,7 +306,7 @@ Here are your main options:
 
 If you install SharePoint Products,
 you will need more robust hardware than what is listed in the previous table.
-For example, SharePoint Foundation 2013 requires a 64-bit 4 core CPU and a base minimum of 8 GB of system memory.
+For example, SharePoint Foundation 2013 requires a 64-bit 4-core CPU and a base minimum of 8 GB of system memory.
 If you install SharePoint 2013 on a server that is also running SQL Server,
 SharePoint recommends that you have 24 GB of system memory.
 
@@ -299,9 +320,13 @@ Go here for complete SharePoint hardware requirements:
 
 ## Active Directory
 
-You can install Team Foundation Server on more than one server if they are all joined to an Active Directory domain that is based on a functional level that TFS supports. You can install TFS on a single server that is joined to an Active Directory domain or that is a member of a workgroup.
+You can install Azure DevOps Server or Team Foundation Server on more than one server if they are all joined to an 
+Active Directory domain that is based on a functional level that they support. You can install Azure DevOps Server 
+or TFS on a single server that is joined to an Active Directory domain or that is a member of a workgroup.
 
-You cannot install TFS on servers that are joined to domains whose domain controllers are running Windows NT Server 4.0. The following table shows which functional levels for Active Directory domains TFS does not support:
+You can't install Azure DevOps Server or TFS on servers that are joined to domains whose domain controllers are running 
+Windows NT Server 4.0. The following table shows which functional levels for Active Directory domains 
+Azure DevOps Server and TFS don't support:
 
 | Functional levels for Active Directory domains | Supported |
 | --- | --- |
@@ -311,23 +336,22 @@ You cannot install TFS on servers that are joined to domains whose domain contro
 <a name="accounts"></a>
 ## Accounts
 
-You must use service accounts to install Team Foundation Server, Team
+You must use service accounts to install Azure DevOps Server or Team Foundation Server, Team
 Foundation Build, and Team Foundation Server Proxy. If you use
-reporting, you also need a report reader account when you install Team
+reporting, you also need a report reader account when you install Azure DevOps Server or Team
 Foundation Server. This topic describes the requirements for service
 accounts and the report reader account for installation.  For more
-information, see [Service Accounts and Dependencies in Team Foundation Server](/admin/service-accounts-dependencies-tfs).
+information, see [Service Accounts and Dependencies in Team Foundation Server](./admin/service-accounts-dependencies-tfs.md).
 
-Team Foundation Server requires multiple identities for installation,
+Azure DevOps Server and Team Foundation Server require multiple identities for installation,
 but you can use a single account for all the identities, as long as that
 account meets the requirements for all the identities for which you use
 it.
 
 > **Tip:**
-> Confused about accounts? New for this release is a tutorial available 
-> for Team Foundation Server installation that covers how to create 
+> Confused about accounts? A tutorial is available that covers how to create 
 > accounts and groups for a single server installation. For more 
-> information, see [Set up groups for use in TFS deployments.](/admin/setup-ad-groups) 
+> information, see [Set up groups for use in TFS deployments.](./admin/setup-ad-groups.md). 
 
 **Best practices for accounts:**
 
@@ -341,21 +365,21 @@ it.
 
 The report reader account is the identity that is used to gather
 information for reports. If you use reporting, you must specify a report
-reader account when you install Team Foundation Server.
+reader account when you install Azure DevOps Server or Team Foundation Server.
 
-If you install Team Foundation Server with the default options, the
+If you install Azure DevOps Server or Team Foundation Server with the default options, the
 report reader account is also used as the identity of the service
 account for SharePoint Foundation.
 
 | Feature | Sample user logon name (1) | Requirements |
 | --- | --- | --- |
-| Reporting | **TFSREPORTS** | You must specify a user account that has the Allow log on locally permission. </br> Default: You are prompted for this account. You cannot use a built-in account for the report reader account. |
+| Reporting | **AzureDevOpsServerReports** | You must specify a user account that has the Allow log on locally permission. </br> Default: You are prompted for this account. You can't use a built-in account for the report reader account. |
 
 
 ### Service accounts
 
-Team Foundation Server, Team Foundation Build and Team Foundation Server
-Proxy all require a service account. These service accounts become the
+Azure DevOps Server, Team Foundation Server, Team Foundation Build, and Team Foundation 
+Server Proxy all require a service account. These service accounts become the
 identity for the installed component. By default, every component uses a
 built-in account (such as Network Service) as its service account. You
 can change this account to a user account when you install the
@@ -363,24 +387,24 @@ component, but you must ensure that any user accounts that you use have
 the **Log on as a service** permission.
 
 > **Tip:**
-> Built-in accounts do not use passwords and already have the
+> Built-in accounts don't use passwords and already have the
 > **Log on as a service** permission, making them easier 
 > to manage, especially in a domain environment. 
 
-#### Service accounts for Team Foundation Server
+#### Service accounts for Azure DevOps Server or Team Foundation Server
 
-The service accounts in the following table are the identities for Team
-Foundation Server and its components.
+The service accounts in the following table are the identities for Azure DevOps Server 
+or Team Foundation Server and their components.
 
-The service account for Team Foundation Server is also used in
+The service account for Azure DevOps Server or Team Foundation Server is also used in
 Internet Information Services (IIS) as the identity of the application
-pool for Team Foundation Server.
+pool for Azure DevOps Server or Team Foundation Server.
 
 | Component | Sample user logon name (1) | Requirements |
 | --- | --- | --- |
-| Team Foundation Server | **TFSSERVICE** | You can specify a built-in account or a user account. If you specify a user account, it must have the **Log on as a service** permission. </br> You must not use the account that you use to install Team Foundation Server as the account for TFSSERVICE. For example, if you are logged in as domain\user1 when you install Team Foundation Server, do not use domain\user1 as the account for TFSSERVICE. </br> If your SharePoint site was not installed at the same time as Team Foundation Server, you must add TFSSERVICE to the Farm Administrators group for the SharePoint Central Administration site. For more information, see [Add the service account for Team Foundation Server to the Farm Administrators group](/install/sharepoint/setup-remote-sharepoint.md#tfs-svc-acct-to-farm-admin-group). </br> Default: Network Service |
+| Azure DevOps Server or Team Foundation Server | **AzureDevOpsService** | You can specify a built-in account or a user account. If you specify a user account, it must have the **Log on as a service** permission. </br> You must not use the account that you use to install Azure DevOps Server or Team Foundation Server as the account for AzureDevOpsService. For example, if you are logged in as domain\user1 when you install Azure DevOps Server or Team Foundation Server, don't use domain\user1 as the account for AzureDevOpsService. </br> If your SharePoint site wasn't installed at the same time as Team Foundation Server, you must add AzureDevOpsService to the Farm Administrators group for the SharePoint Central Administration site. For more information, see [Add the service account for Team Foundation Server to the Farm Administrators group](./install/sharepoint/setup-remote-sharepoint.md#tfs-svc-acct-to-farm-admin-group). </br> Default: Network Service |
 | Team Foundation Build | **TFSBUILD** | You can specify a built-in account or a user account. If you use a user account, it must have the **Log on as a service** permission. |
-| Team Foundation Server Proxy | **TFSPROXY** | You can specify a built-in account or a user account. If you use a user account, it must have the **Log on as a service** permission. |
+| Azure DevOps Server Proxy or Team Foundation Server Proxy | **AzureDevOpsServerProxy** | You can specify a built-in account or a user account. If you use a user account, it must have the **Log on as a service** permission. |
 
 
 #### Service accounts for Release Management for Visual Studio 2013
@@ -394,22 +418,21 @@ Release Management Server and the Microsoft Deployment agent.
 | Microsoft Deployment Agent | **DEPLOY** | This identity is used to configure the machines in your environment for release. Make sure the identity you use here has enough permission to do whatever tasks are required. For example, if you need to install your application on this machine as part of your release, add this identity to the local Windows Administrators security group. If this identity will need to access builds on the network, make sure it has access to the network drop location. For step-by-step procedure, see [Install deployment agent and set up machines for an environment](/azure/devops/build-release/archive/release/previous-version/install-release-management/install-deployment-agent). </br> Default: you are prompted for an account. |
 
 
-#### Connect Release Management to TFS account
+#### Connect Release Management to Azure DevOps Server or TFS account
 
-If you connect Release Management to TFS, you need an account in TFS to
-act as an intermediary account. For a step-by-step procedure, go here:
-[Connect Release Management to TFS](/azure/devops/build-release/archive/release/previous-version/install-release-management/connect-to-tfs)
+If you connect Release Management to Azure DevOps Server or TFS, you need an account to
+act as an intermediary account. For a step-by-step procedure, see 
+[Connect Release Management to TFS](/azure/devops/build-release/archive/release/previous-version/install-release-management/connect-to-tfs).
 
 
 | Component | Sample user logon name (1) | Requirements |
 | --- | --- | --- |
-| Release Management Server (connected to TFS) | **RMTFS** | A TFS user that is a member of the **Project Collection Administrators** ([minimal permissions that this account must have](http://blogs.msdn.com/b/visualstudioalm/archive/2013/12/19/how-to-configure-team-foundation-server-with-release-management.aspx)) group and has the **Make requests on behalf of others** permission set to allow in TFS. |
+| Release Management Server (connected to Azure DevOps Server or TFS) | **RMAzureDevOpsServer** | An Azure DevOps Server or TFS user that is a member of the **Project Collection Administrators** ([minimal permissions that this account must have](http://blogs.msdn.com/b/visualstudioalm/archive/2013/12/19/how-to-configure-team-foundation-server-with-release-management.aspx)) group and has the **Make requests on behalf of others** permission set to allow in TFS. |
 
 
 #### Service accounts for additional software
 
-The following table lists the service accounts that are the identities
-
+The following table lists the service accounts that are the identities 
 that are used to run Windows services for SharePoint Products and SQL
 Server.
 
@@ -419,12 +442,12 @@ application pool for the SharePoint Central Administration site.
 | Component | Sample user logon name (1) | Requirements |
 | --- | --- | --- |
 | SharePoint Products | **WSSSERVICE** | You must specify a user account. </br> Default: If you install Team Foundation Server with the default options, the account that you specified as the report reader account is also used for this account. |
-| SQL Server | **SQLSERVICE** | You can use a built-in system account or set up an account before you install SQL Server. Team Foundation Server has no requirements for this account. |
+| SQL Server | **SQLSERVICE** | You can use a built-in system account or set up an account before you install SQL Server. Azure DevOps Server and Team Foundation Server has no requirements for this account. |
 
 
-(1) To make it easier to discuss the different accounts that Team
-Foundation Server requires, this guide uses the placeholder names that
-are specified in the preceding tables. You do not have to use these
+(1) To make it easier to discuss the different accounts that Azure DevOps Server or 
+Team Foundation Server require, this guide uses the placeholder names that
+are specified in the preceding tables. You don't have to use these
 placeholder names for any accounts that you might create.
 
 
@@ -434,10 +457,12 @@ placeholder names for any accounts that you might create.
 
 **TFS 2017 discontinues support for Project Server.**
 
-Team Foundation Server doesn't require Project Server, but if you use Project Server, you must use a supported version.  TFS-Project Server integration [enables data to flow from work items in Team Foundation Server to tasks in enterprise project plans in Project Server](/azure/devops/work/tfs-ps-sync/synchronize-tfs-project-server). 
+Azure DevOps Server and Team Foundation Server don't require Project Server, but if you use Project Server, you must use a supported version.  
+TFS-Project Server integration [enables data to flow from work items in Team Foundation Server to tasks in enterprise project plans in Project Server](/azure/devops/work/tfs-ps-sync/synchronize-tfs-project-server). 
 
-TFS version | Supported Project Server versions | Supported Project versions
+Azure DevOps Server or TFS version | Supported Project Server versions | Supported Project versions
 ------------|---------------------------------- | ---------------------------
+Azure DevOps Server 2019 RC1    | Not supported. See [Synchronize TFS with Project Server](/azure/devops/work/tfs-ps-sync/sync-ps-tfs) for details. | Not supported. 
 TFS 2018    | Not supported. See [Synchronize TFS with Project Server](/azure/devops/work/tfs-ps-sync/sync-ps-tfs) for details. | Not supported. 
 TFS 2017    | Not supported. See [Synchronize TFS with Project Server](/azure/devops/work/tfs-ps-sync/sync-ps-tfs) for details. | Not supported. 
 TFS 2015    | Project Server 2010 with SP1<br/>Project Server 2013 | Project Professional 2007 with SP2 and [update](http://go.microsoft.com/fwlink/?LinkId=211633)<br/>Project Professional 2007 with SP3<br/>Project Professional 2010<br/>Project Professional 2013
@@ -451,7 +476,7 @@ To use Project Server with TFS, you must install Team Foundation Server Extensio
 
 NTLM is the recommended authentication. In SharePoint Server 2013, Microsoft deprecated Windows classic-authentication in favor of claims-based authentication. TFS 2012 supports both, but for claims-based authentication, the authentication provider must be NTLM. TFS 2012 supports only NTLM-based claims.
 
-If you upgrade to Project Server 2013 from a Project Server 2010 installation that has been added to TFS, you have to perform a few extra steps to maintain the connection between TFS and Project Server. For more information, see this topic: [Upgrade Microsoft Project Server 2010 to Microsoft Project Server 2013](/azure/devops/work/tfs-ps-sync/upgrade-ps-2010-to-ps-2013).
+If you upgrade to Project Server 2013 from a Project Server 2010 installation that has been added to TFS, you have to perform a few extra steps to maintain the connection between TFS and Project Server. For more information, see  [Upgrade Microsoft Project Server 2010 to Microsoft Project Server 2013](/azure/devops/work/tfs-ps-sync/upgrade-ps-2010-to-ps-2013).
 
 ### Should you add Project Server to your current project portal site?
 
@@ -477,8 +502,8 @@ We work with those teams to test the service pack before release.
 
 ### Build service hardware requirements
 
-The XAML build service has the same operating system requirements as TFS.
-It normally makes sense to run the build service on a machine separate from the TFS application tier.
+The XAML build service has the same operating system requirements as Azure DevOps Server and TFS.
+It normally makes sense to run the build service on a machine separate from the application tier.
 Hardware requirements for the build service are the same as the operating system on which it is running.
 However, you can optimize build service performance by tailoring the hardware specs
 of your build machine to the types of builds your team will use.
@@ -488,26 +513,35 @@ of your build machine to the types of builds your team will use.
 <a name="languages"></a>
 ## Natural Languages
 
-You can install TFS in various languages on supported operating systems in various languages. However, you cannot use every combination of localized operating system with TFS and you can't install multiple languages on a single TFS server. The language of the installation of SharePoint Products can also complicate your deployment. However, you can add an appropriate language pack to the server that is running SharePoint Products to meet requirements for Team Foundation Server.
+You can install Azure DevOps Server and TFS in various languages on supported operating systems in various languages. 
+However, you can't use every combination of localized operating system with Azure DevOps Server and TFS and you can't install 
+multiple languages on a single Azure DevOps Server or TFS server. The language of the installation of SharePoint Products can 
+also complicate your deployment. However, you can add an appropriate language pack to the server that is running SharePoint 
+Products to meet requirements for Team Foundation Server.
 
 The following table outlines the various language combinations that are supported:
 
-| Operating system | Team Foundation Server | Sharepoint Products |
+| Operating system | Azure DevOps Server or Team Foundation Server | Sharepoint Products |
 | --- | --- | --- |
 | English | English | English |
 | English | Language other than English | Language (or language pack) must match Team Foundation Server |
 | Language other than English | English | English (or English language pack added) |
 | Language other than English | Language must match the operating system | Language (or language pack added) to match Team Foundation Server |
 
-The following rules clarify the language requirements for installations of Team Foundation Server.
+The following rules clarify the language requirements for installations of Azure DevOps Server or Team Foundation Server.
 
--   If you are running an English language operating system, you can install any language version of Team Foundation Server. If you are not running an English language operating system, you must install the English version of Team Foundation Server or the version of Team Foundation Server that has been localized for the same language as the operating system.
+-   If you are running an English language operating system, you can install any language version of Azure DevOps Server 
+or Team Foundation Server. If you aren't running an English language operating system, you must install the English version 
+of Azure DevOps Server or Team Foundation Server or the version that has been localized for the same language as the operating system.
 
--   If you want to use SharePoint Products, it must match the language of the installation of Team Foundation Server, or you must install the language pack that matches the language of your installation of Team Foundation Server.
+-   If you want to use SharePoint Products, it must match the language of the installation of Team Foundation Server, 
+or you must install the language pack that matches the language of your installation of Team Foundation Server.
 
-For example, you can install a Japanese version of Team Foundation Server on an English or Japanese operating system but not on a German operating system. If you install a Japanese version of Team Foundation Server, you must also have either a Japanese version of SharePoint Products or the Japanese language pack for SharePoint Products on the server that is running SharePoint Products.
+For example, you can install a Japanese version of Team Foundation Server on an English or Japanese operating system but not on a 
+German operating system. If you install a Japanese version of Team Foundation Server, you must also have either a Japanese 
+version of SharePoint Products or the Japanese language pack for SharePoint Products on the server that is running SharePoint Products.
 
-The following components do not have additional language requirements that are specific to working with Team Foundation Server:
+The following components don't have additional language requirements that are specific to working with Azure DevOps Server or Team Foundation Server:
 
 -   Team Foundation Build Service
 
@@ -520,16 +554,16 @@ The following components do not have additional language requirements that are s
 Test controllers and agents have their own language requirements. For more information, see the following page on the Microsoft website: [Test Controller and Test Agent Requirements](https://msdn.microsoft.com/library/ff937706.aspx)
 
 
-## More information about TFS requirements for companion products:
+## More information about Azure DevOps Server or TFS requirements for companion products:
 
 SQL Server, SharePoint Products, and Project Server
 
-* [SQL Server requirements for Team Foundation Server](#sql-server)
+* [SQL Server requirements for Azure DevOps Server or Team Foundation Server](#sql-server)
  
-	Team Foundation Server requires SQL Server, but you have many options,
-	including an option to let Team Foundation Server install SQL Server Express for you.
+	Azure DevOps Server and Team Foundation Server require SQL Server, but you have many options,
+	including an option to let Azure DevOps Server or Team Foundation Server install SQL Server Express for you.
 
 * [SharePoint Products requirements for Team Foundation Server](requirements.md#sharepoint)  
 
-	Team Foundation Server doesn't require SharePoint Products.
+	Azure DevOps Server and Team Foundation Server don't require SharePoint Products.
 
