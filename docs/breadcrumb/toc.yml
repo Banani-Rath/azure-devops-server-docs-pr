@@ -1,7 +1,7 @@
-- name: TFS
+- name: Azure DevOps Server
   tocHref: /tfs/
   topicHref: /tfs/index
   items:
-  - name: Team Foundation Server
+  - name: Azure DevOps Server & TFS
     tocHref: /server
     topicHref: /server/index
