@@ -132,14 +132,6 @@ To learn about  what's new with the cloud service offering, see [Azure DevOps Se
 
 - The Analytics marketplace extension for reporting is now available
 - Investigate build history through a new build dashboard widget
-=======
->>>>>>> e85213ce8a81c1529c8202788217b6e0601dfb9a
-
-## Azure DevOps Server 2019 RC 1
-
-Azure DevOps Server 2019 RC 1 is a preview version of the lastest on-prem DevOps server product formerly known as Team Foundation Server. Learn more about this change by reading [TFS is now Azure DevOps Server 2019](tfs-is-now-azure-devops-server.md).
-
-View the release notes for [Azure DevOps Server 2019 RC1](/visualstudio/releasenotes/).
 
 ## TFS 2018.3
 
