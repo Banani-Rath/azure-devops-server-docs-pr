@@ -14,16 +14,11 @@ ms.date: 11/15/2018
 
 # What's new for Azure DevOps Server and Team Foundation Server
 
-<<<<<<< HEAD
-<b>Azure DevOps Server 2019 RC1 | TFS 2018 | TFS 2017 | TFS 2015</b>  
-=======
-**Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015**  
->>>>>>> e85213ce8a81c1529c8202788217b6e0601dfb9a
+**Azure DevOps Server 2019 RC1 | TFS 2018 | TFS 2017 | TFS 2015** 
 
 You can use Azure DevOps Server and Visual Studio Team Foundation Server (TFS) to manage your product lifecycle, reduce risks, and improve team efficiency. Updates are made every few weeks to the cloud-hosted version, Azure DevOps Services. These updates are then rolled up and made available through quarterly updates to the on-premises Azure DevOps Server and TFS. To understand the differences between the hosted and on-premises versions, see [A tour of services provided with Azure DevOps Services and TFS](/azure/devops/user-guide/services).   
 
 To learn about  what's new with the cloud service offering, see [Azure DevOps Services Features update](https://www.visualstudio.com/news/releasenotes/tfs2018-relnotes).  
-<<<<<<< HEAD
 
 ## Azure DevOps Server 2019 RC1
 
