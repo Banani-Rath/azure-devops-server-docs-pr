@@ -127,10 +127,6 @@ To get help for an individual command, use the **help** command and specify the 
 [!INCLUDE [OFFLINEDETACH](_shared/offlinedetach.md)]
 <hr/>
 
-## PrepareClone
-[!INCLUDE [PREPARECLONE](_shared/prepareclone.md)]
-<hr/>
-
 ## Proxy
 [!INCLUDE [PROXY](_shared/proxy.md)]
 <hr/>

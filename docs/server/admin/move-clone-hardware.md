@@ -176,6 +176,9 @@ If your deployment uses SharePoint Products, you've already installed the same v
 <a name="clone-option"></a>
 ## (Clone option) Reconfigure server IDs and remap databases
 
+> [!NOTE]
+> PrepareClone used to be recommended for use before standing up a new TFS deployment using a database backup already in production on another server. This command is no longer required, since we incorporated its functionality into the Pre-Production Upgrade and Clone scenarios in the configuration wizard.
+
 Perform the next set of steps on the new application-tier server if you intend to continue using the original TFS instance. These steps are necessary to avoid the risk of corruption of one or both deployments. If both servers are live, you could end up with corruption, particularly if they are pointing to the same SharePoint or reporting resources.
 
 1. Open a Command Prompt window as an administrator and change directories to Drive:\%programfiles%\TFS 12.0\Tools. Open a Command Prompt window and enter:
