@@ -1,4 +1,4 @@
-- name: "Team Foundation Server"
+- name: "Azure DevOps Server & TFS"
   href: /tfs/server/index#pivot=services
 - name: Overview
   items:
