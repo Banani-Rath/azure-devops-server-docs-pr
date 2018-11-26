@@ -138,21 +138,16 @@ TFS 2010    | Office 2010<br/>Office 2007
 
 ## TFS Build Compatibility
 
-**TFS 2018 discontinues support for the XAML build system.**
+We've built a brand new [scriptable build system](/vsts/build-release/overview) that's web based and cross-platform.
 
-We've built a brand new [scriptable build system](/azure/devops/build-release/overview) that's web based and cross-platform. 
-You can use an older version of Build if you:
-
-- Plan to continue using the XAML build system
-- Use Build servers against many different versions of TFS
-- Need to take advantage of servers in your TFS deployment that have older operating systems 
-
-TFS 2010 XAML Controllers support operating 
+You may want to use an older version of Build if you plan to continue using the XAML build system, 
+if you are using Build servers against multiple versions of TFS, or if you need to leverage servers 
+with older operating systems in your TFS deployment. TFS 2010 XAML Controllers support operating 
 systems as far back as Windows XP and Windows Server 2003.
 
 TFS Version | Supported Build versions
 ------------|--------------------------
-TFS 2018    | TFS 2018 Build Agent<br/>TFS 2017 Build Agent
+TFS 2018    | TFS 2018 Build Agent<br/>TFS 2017 Build Agent<br/>TFS 2015 XAML Controller<br/>TFS 2013 XAML Controller<br/>TFS 2010 XAML Controller<br/>Note: You must upgrade to TFS 2018.2 or newer to use XAML builds.
 TFS 2017    | TFS 2017 Build Agent<br/>TFS 2015 Build Agent<br/>TFS 2015 XAML Controller<br/>TFS 2013 XAML Controller<br/>TFS 2010 XAML Controller
 TFS 2015    | TFS 2015 Build Agent<br/>TFS 2015 XAML Controller<br/>TFS 2013 XAML Controller<br/>TFS 2010 XAML Controller
 TFS 2013    | TFS 2013 XAML Controller<br/>TFS 2012 XAML Controller<br/>TFS 2010 XAML Controller
