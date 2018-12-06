@@ -1,7 +1,6 @@
 ---
-title: Service accounts and dependencies in Team Foundation Server
+title: Service accounts and dependencies
 description: Service accounts and dependencies in Team Foundation Server
-ms.assetid: cf314289-96ef-4f70-9c2b-a130d7287442
 ms.topic: conceptual
 ms.manager: douge
 ms.author: elbatk

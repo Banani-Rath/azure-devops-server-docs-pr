@@ -1,7 +1,6 @@
 ---
 title: Restore a TFS deployment to new hardware
 description: Restore a TFS deployment to new hardware
-ms.assetid: 4601dd68-3b9e-4d29-aa71-432566d4e4bd
 ms.topic: conceptual
 ms.manager: douge
 ms.author: elbatk

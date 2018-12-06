@@ -1,7 +1,6 @@
 ---
 title: Ports required for installation of Team Foundation Server
 description: Ports required for installation of Team Foundation Server
-ms.assetid: d91e25a9-94d0-4767-a972-3755dea790a6
 ms.manager: douge
 ms.author: elbatk
 author: elbatk

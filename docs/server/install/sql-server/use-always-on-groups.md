@@ -1,7 +1,6 @@
 ---
 title: Use SQL Server Always-on Availability Groups with Team Foundation Server
 description: Use SQL Server Always-on Availability Groups with Team Foundation Server
-ms.assetid: ffbd4565-169c-4e00-82c3-981725cc9bdd
 ms.manager: douge
 ms.author: elbatk
 author: elbatk

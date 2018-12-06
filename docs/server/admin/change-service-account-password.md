@@ -1,7 +1,6 @@
 ---
-title: Change the service account or password for Team Foundation Server
+title: Change credentials for Team Foundation Server
 description: Change the service account or password for Team Foundation Server
-ms.assetid: 644edcbc-983e-4f86-a832-4461e635bec6
 ms.topic: conceptual
 ms.manager: douge
 ms.author: elbatk

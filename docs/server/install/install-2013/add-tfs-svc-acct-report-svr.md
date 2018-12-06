@@ -1,7 +1,6 @@
 ---
 title: Add the TFS service account to the report server
 description: Add the TFS service account to the report server
-ms.assetid: e0a41663-9426-48f1-8e4e-4d6708b25f88
 ms.manager: douge
 ms.author: elbatk
 author: elbatk

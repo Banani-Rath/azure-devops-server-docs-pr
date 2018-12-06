@@ -1,7 +1,6 @@
 ---
 title: Set up SQL Server for TFS
 description: Set up SQL Server for TFS
-ms.assetid: 28a1ad64-07b6-44d2-aa24-acbb0d2d8004
 ms.manager: douge
 ms.author: elbatk
 author: elbatk

@@ -1,7 +1,6 @@
 ---
-title: How to Install Team Foundation Proxy and set up a remote site
+title: How to Install Team Foundation Proxy
 description: How to Install Team Foundation Proxy and set up a remote site
-ms.assetid: 21880717-de0c-4ded-8e07-92312d7f5216
 ms.manager: douge
 ms.author: elbatk
 author: elbatk

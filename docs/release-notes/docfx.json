@@ -38,6 +38,7 @@
       "ms.author": "egeaney",
       "ms.manager": "douge",
       "ms.prod": "devops",
+      "titleSuffix": "Azure DevOps Server & TFS",
       "ms.version": "ALM",
       "MSHAttr.msprod": "ms.prod:devops",
       "ms.prodfamily": "ALM",

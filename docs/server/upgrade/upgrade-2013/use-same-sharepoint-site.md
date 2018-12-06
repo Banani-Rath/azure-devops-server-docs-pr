@@ -1,7 +1,6 @@
 ---
 title: Use the same SharePoint site for TFS that you have right now
 description: Use the same SharePoint site for TFS that you have right now
-ms.assetid: 562798b8-7010-4855-96e0-9d60b926a052
 ms.manager: douge
 ms.author: elbatk
 author: elbatk

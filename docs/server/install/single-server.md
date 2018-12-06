@@ -3,7 +3,6 @@ title: Install and configure Azure DevOps Server or TFS on a single server
 description: Install and set up Azure DevOps Server, Team Foundation Server, or TFS Express on a single server by using the Server Configuration Wizard.
 ms.prod: devops-server
 ms.technology: tfs-admin
-ms.assetid: 36d82fcb-e849-41e1-a33f-68974c15fbd4
 toc: show
 ms.manager: douge
 ms.author: elbatk

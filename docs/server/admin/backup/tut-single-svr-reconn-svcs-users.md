@@ -1,7 +1,6 @@
 ---
 title: Reconnect services and users
 description: Reconnect services and users
-ms.assetid: 088544b7-6a4f-4c7b-9e83-9b8520d26afb
 ms.topic: conceptual
 ms.manager: douge
 ms.author: elbatk

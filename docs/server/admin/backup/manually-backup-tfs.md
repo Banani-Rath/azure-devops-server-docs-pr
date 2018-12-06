@@ -1,7 +1,6 @@
 ---
 title: Manually back up Team Foundation Server
 description: Manually back up Team Foundation Server
-ms.assetid: a4d79122-7170-49ff-ad1b-d3e4f983bfd5
 ms.topic: conceptual
 ms.manager: douge
 ms.author: elbatk

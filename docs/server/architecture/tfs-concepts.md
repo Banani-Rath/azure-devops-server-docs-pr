@@ -1,7 +1,6 @@
 ---
 title: Team Foundation Server concepts
 description: Describes several concepts related to Team Foundation Server
-ms.assetid: cfe7f112-1f35-4df4-8bd3-8fc361db8248
 ms.manager: douge
 ms.author: elbatk
 author: elbatk

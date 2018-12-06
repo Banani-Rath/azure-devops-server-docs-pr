@@ -1,7 +1,6 @@
 ---
 title: Configure Team Foundation Server using the advanced configuration
 description: Configure Team Foundation Server using the advanced configuration
-ms.assetid: f4c1e81f-d792-4035-be2d-8e034da27b24
 ms.manager: douge
 ms.author: elbatk
 author: elbatk

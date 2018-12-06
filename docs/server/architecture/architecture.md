@@ -1,7 +1,6 @@
 ---
 title: Team Foundation Server Architecture
 description: Describes the overall architecture of Team Foundation Server
-ms.assetid: b6c250e9-6494-4dbd-8146-061e3b9c0f6b
 ms.manager: douge
 ms.author: elbatk
 author: elbatk

@@ -1,7 +1,6 @@
 ---
-title: Modify or Remove Access Between a SharePoint Web Application and TFS
+title: Modify or remove SharePoint web application access
 description: Modify or Remove Access Between a SharePoint Web Application and Team Foundation Server
-ms.assetid: 0ba027bb-bfb9-490e-9220-2fe98230ee40
 ms.topic: conceptual
 ms.manager: douge
 ms.author: elbatk
@@ -11,7 +10,7 @@ ms.prod: devops-server
 ms.technology: tfs-admin
 ---
 
-# Modify or Remove Access Between a SharePoint Web Application and Team Foundation Server
+# Modify or remove access between a SharePoint web application and Team Foundation Server
 
 **TFS 2017** | **TFS 2015** | **TFS 2013**
 

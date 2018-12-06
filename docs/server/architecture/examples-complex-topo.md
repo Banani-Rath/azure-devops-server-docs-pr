@@ -1,7 +1,6 @@
 ---
 title: Examples of Complex Topology for Team Foundation Server
 description: Examples of Complex Topology for Team Foundation Server
-ms.assetid: 91421828-00d3-44e2-8ebb-520622fa9b61
 ms.manager: douge
 ms.author: elbatk
 author: elbatk

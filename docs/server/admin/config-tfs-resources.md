@@ -1,7 +1,6 @@
 ---
-title: Configure and manage TFS resources
-description: Configure and manage TFS resources
-ms.assetid: 634a401e-a919-4dac-b964-51ece1bb43c0
+title: Configure and manage resources
+description: Configure and manage Team Foundation Server resources
 ms.topic: conceptual
 ms.manager: douge
 ms.author: elbatk

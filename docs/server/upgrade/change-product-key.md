@@ -1,7 +1,6 @@
 ---
-title: Locate or Change the Product Key for Team Foundation Server
-description: Locate or Change the Product Key for Team Foundation Server
-ms.assetid: 1a99fafa-aa5b-4488-944e-123110a2c547
+title: Locate or change the product key
+description: Locate or change the product key for Team Foundation Server
 ms.manager: douge
 ms.author: elbatk
 author: elbatk
@@ -11,7 +10,7 @@ ms.prod: devops-server
 ms.technology: tfs-admin
 ---
 
-# Locate or Change the Product Key for Team Foundation Server
+# Locate or change the product key for Team Foundation Server
 
 **TFS 2015** | **TFS 2013**
 

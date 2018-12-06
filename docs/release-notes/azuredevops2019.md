@@ -9,7 +9,6 @@ ms.date: 11/19/2018
 ms.topic: release-article
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-articles
-ms.assetid: f91f4fc0-2af3-4d11-be98-810a40b12e13
 hide_comments: true
 hideEdit: true
 ---

@@ -1,7 +1,6 @@
 ---
-title: Add SharePoint products to your Team Foundation Service deployment
-description: Add SharePoint products to your Team Foundation Service deployment
-ms.assetid: 3b5bb2e2-4142-4b9d-848e-b52ffafe9aa3
+title: Add SharePoint to your deployment
+description: Add SharePoint products to your Azure DevOps Server or Team Foundation Service deployment
 ms.prod: devops-server
 ms.technology: tfs-admin
 ms.topic: conceptual
@@ -11,7 +10,7 @@ author: elbatk
 ms.date: 09/09/2017
 ---
 
-# Add SharePoint products to your Team Foundation Service deployment
+# Add SharePoint products to your Azure DevOps Server and Team Foundation Service deployment
 
 > [!NOTE]
 > TFS 2018 and later versions no longer support native integration with SharePoint products. If you're planning to upgrade to TFS 2018, read [About SharePoint integration](/azure/devops/report/sharepoint-dashboards/about-sharepoint-integration) to learn about the options available to you.

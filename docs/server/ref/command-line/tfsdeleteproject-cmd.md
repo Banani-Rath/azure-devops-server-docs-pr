@@ -1,7 +1,6 @@
 ---
-title: Delete a project using TFSDeleteProject
+title: Delete a project
 description: Delete a project in TFS from the command-line using TFSDeleteProject
-ms.assetid: dc7efa4d-9c70-4b61-a910-8f1e66678866
 ms.prod: devops-server
 ms.technology: tfs-admin
 ms.manager: douge

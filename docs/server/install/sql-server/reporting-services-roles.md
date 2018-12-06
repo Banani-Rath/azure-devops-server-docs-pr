@@ -1,7 +1,6 @@
 ---
 title: SQL Server Reporting Services Roles
 description: SQL Server Reporting Services Roles
-ms.assetid: 4fa956ee-f01a-42b4-b34b-e6b1b784c953
 ms.manager: douge
 ms.author: elbatk
 author: elbatk

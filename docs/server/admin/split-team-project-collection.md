@@ -1,7 +1,6 @@
 ---
 title: Split a project collection
-description: Split a project collection
-ms.assetid: e64f32d4-fd48-4a50-81fe-24311f27b49e
+description: Split a project collection in Team Foundation Server (TFS)
 ms.topic: conceptual
 ms.manager: douge
 ms.author: elbatk
@@ -11,7 +10,7 @@ ms.prod: devops-server
 ms.technology: tfs-admin
 ---
 
-# Split a project collection
+# Split a project collection in Team Foundation Server (TFS)
 
 **TFS 2015** | **TFS 2013**
 

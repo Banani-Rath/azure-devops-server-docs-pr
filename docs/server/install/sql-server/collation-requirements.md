@@ -1,7 +1,6 @@
 ---
 title: SQL Server Collation Requirements for Team Foundation Server
 description: SQL Server Collation Requirements for Team Foundation Server
-ms.assetid: 193b1aa8-6682-490c-8a58-4b01cc657e4b
 ms.manager: douge
 ms.author: elbatk
 author: elbatk

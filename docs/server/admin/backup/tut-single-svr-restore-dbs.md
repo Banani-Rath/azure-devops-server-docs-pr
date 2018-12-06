@@ -1,7 +1,6 @@
 ---
 title: Restore the databases
 description: Restore the databases
-ms.assetid: c00bb8f7-bdb9-49c2-a291-79aab20d2701
 ms.topic: conceptual
 ms.manager: douge
 ms.author: elbatk

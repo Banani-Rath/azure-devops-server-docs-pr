@@ -1,7 +1,6 @@
 ---
-title: Set up groups for use in TFS deployments
+title: Set up deployment groups
 description: Set up groups for use in TFS deployments
-ms.assetid: fc3a37cc-bef3-475c-a177-92c843905c3d
 ms.topic: conceptual
 ms.manager: douge
 ms.author: elbatk
