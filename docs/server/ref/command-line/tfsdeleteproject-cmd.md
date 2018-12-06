@@ -1,5 +1,5 @@
 ---
-title: Delete a project using TFSDeleteProject
+title: Delete a project
 description: Delete a project in TFS from the command-line using TFSDeleteProject
 ms.prod: devops-server
 ms.technology: tfs-admin

@@ -1,5 +1,5 @@
 ---
-title: Upgrade your Azure DevOps Server or Team Foundation Server deployment 
+title: Upgrade your deployment
 description: Upgrade your instance of Azure DevOps Server or Team Foundation Server to the latest version
 ms.prod: devops-server
 ms.technology: tfs-admin

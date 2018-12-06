@@ -1,5 +1,5 @@
 ---
-title: Upgrading TFS Express On-premises
+title: Upgrade TFS Express on-premises
 description: Walkthrough of an Express upgrade
 ms.prod: devops-server
 ms.technology: tfs-admin

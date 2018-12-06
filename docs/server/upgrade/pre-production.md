@@ -1,5 +1,5 @@
 ---
-title: Pre-production upgrade On-premises
+title: Do a pre-production upgrade
 description: Do a dry run of your upgrade in pre-production to avoid surprises in production.
 ms.prod: devops-server
 ms.technology: tfs-admin

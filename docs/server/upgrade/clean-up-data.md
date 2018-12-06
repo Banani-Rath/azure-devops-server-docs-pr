@@ -1,6 +1,6 @@
 ---
-title: Clean up TFS Data
-description: Clean up stale data in your Team Foundation Server instance
+title: Clean up TFS data
+description: Clean up stale data in your Team Foundation Server (TFS) instance
 ms.prod: devops-server
 ms.technology: tfs-admin
 toc: show
@@ -11,7 +11,7 @@ ms.topic: conceptual
 ms.date: 08/04/2016
 ---
 
-# Cleaning up old data
+# Cleaning up old data in Team Foundation Server
 
 **TFS 2015** | **TFS 2013**
 

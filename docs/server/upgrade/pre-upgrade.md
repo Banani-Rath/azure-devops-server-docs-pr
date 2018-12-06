@@ -1,5 +1,5 @@
 ---
-title: TfsPreUpgrade On-premises
+title: Use TfsPreUpgrade 
 description: Use TfsPreUpgrade to reduce the time required to upgrade TFS 2013 to TFS 2015
 ms.prod: devops-server
 ms.technology: tfs-admin

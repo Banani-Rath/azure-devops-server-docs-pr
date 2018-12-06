@@ -1,5 +1,5 @@
 ---
-title: Walkthrough an upgrade scenario for Team Foundation Server (TFS)
+title: Upgrade Team Foundation Server 
 description: Walkthrough of a standard upgrade of a two server deployment from TFS 2012 to TFS 2015.
 ms.prod: devops-server
 ms.technology: tfs-admin
@@ -12,7 +12,7 @@ ms.date: 08/04/2016
 
 # Upgrade scenario walkthrough for Team Foundation Server
 
-**TFS 2017** | **TFS 2015** | **TFS 2013**
+**TFS 2015**
 
 This quickstart covers a typical Team Foundation Server (TFS) upgrade scenario to get a sense of what the high level steps discussed in the [overview](/azure/devops/accounts/account-management) might look like in a real world example.
 

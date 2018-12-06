@@ -1,5 +1,5 @@
 ---
-title: Compatibility with Azure DevOps Server and TFS versions
+title: Version compatibility
 description: Describes compatibility for Azure DevOps and TFS -- operating systems, SQL Server, SharePoint, client versions, server versions, browsers
 ms.prod: devops-server
 ms.technology: tfs-admin
