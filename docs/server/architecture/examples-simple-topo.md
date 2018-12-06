@@ -1,7 +1,6 @@
 ---
 title: Examples of simple Topology for Team Foundation Server
 description: Examples of simple Topology for Team Foundation Server
-ms.assetid: 435e67a7-79df-4029-b5c3-9bba515b6533
 ms.manager: douge
 ms.author: elbatk
 author: elbatk

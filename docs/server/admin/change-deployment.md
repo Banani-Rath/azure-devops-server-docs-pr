@@ -1,7 +1,6 @@
 ---
-title: Change your deployment configuration for Team Foundation Server
-description: Change your deployment configuration for Team Foundation Server
-ms.assetid: 9dfd7be8-b40e-401f-82fc-e3c3d8fdbd87
+title: Change your deployment configuration 
+description: Change your deployment configuration for Team Foundation Server (TFS)
 ms.topic: conceptual
 ms.manager: douge
 ms.author: elbatk

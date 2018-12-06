@@ -1,5 +1,5 @@
 ---
-title: Using Azure SQL Database with Azure DevOps Server
+title: Use Azure SQL Database
 description: Using Azure SQL Database with Azure DevOps Server
 ms.manager: douge
 ms.author: v-masebo

@@ -7,7 +7,6 @@ hide_bc: true
 ms.topic: hub-page
 ms.prod: devops-server
 ms.technology: tfs-admin
-ms.assetid: B13C10AF-4FBC-493A-869F-79BABD6D453A 
 ms.manager: douge 
 ms.author: elbatk 
 ms.date: 09/05/2018

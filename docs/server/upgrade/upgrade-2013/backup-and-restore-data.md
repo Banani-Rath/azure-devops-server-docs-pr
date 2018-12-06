@@ -1,7 +1,6 @@
 ---
 title: Back up and restore data for Team Foundation Server
 description: Back up and restore data for Team Foundation Server
-ms.assetid: da379f2e-79fc-440d-bc62-a5bf654c52e3
 ms.manager: douge
 ms.author: elbatk
 author: elbatk

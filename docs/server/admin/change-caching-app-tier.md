@@ -1,7 +1,6 @@
 ---
-title: Change cache settings for an application-tier server
+title: Cache settings for an app-tier server
 description: Change cache settings for an application-tier server
-ms.assetid: c9674fd0-badf-4820-8e7f-6bbea6dd1b2d
 ms.topic: conceptual
 ms.manager: douge
 ms.author: elbatk
@@ -11,7 +10,7 @@ ms.prod: devops-server
 ms.technology: tfs-admin
 ---
 
-# Change cache settings for an application-tier server
+# Change cache settings for an application-tier in TFS
 
 **TFS 2015** | **TFS 2013**
 

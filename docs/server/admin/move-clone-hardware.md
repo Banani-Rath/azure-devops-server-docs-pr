@@ -1,7 +1,6 @@
 ---
-title: Move Team Foundation Server from one hardware configuration to another
+title: Move across hardware configurations
 description: Move Team Foundation Server from one hardware configuration to another
-ms.assetid: b9af3864-d28a-42df-aa43-6b1f48b5adf0
 ms.topic: conceptual
 ms.manager: douge
 ms.author: elbatk

@@ -1,7 +1,6 @@
 ---
-title: Managing File Types for Team Foundation Server
-description: Managing File Types for Team Foundation Server
-ms.assetid: e88eaec2-9e63-4fa4-94e6-6c95bae963ce
+title: Managing file types
+description: Managing file types for Team Foundation Server
 ms.topic: conceptual
 ms.manager: douge
 ms.author: elbatk

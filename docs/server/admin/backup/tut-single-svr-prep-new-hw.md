@@ -1,7 +1,6 @@
 ---
 title: Prepare the new hardware
 description: Prepare the new hardware
-ms.assetid: 1fde1282-d853-4230-b06d-584f681ff7bb
 ms.topic: conceptual
 ms.manager: douge
 ms.author: elbatk

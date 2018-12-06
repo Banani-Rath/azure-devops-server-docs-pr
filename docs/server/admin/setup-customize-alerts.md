@@ -1,7 +1,6 @@
 ---
-title: Configure an SMTP server and customize email for alerts and feedback requests in TFS
+title: Configure an SMTP server
 description: Configure an SMTP server and customize email for alerts and feedback requests in TFS
-ms.assetid: f49fce23-2808-450b-a2de-7d5a83401d30
 ms.manager: douge
 ms.author: elbatk
 author: elbatk

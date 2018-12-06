@@ -1,7 +1,6 @@
 ---
 title: TFS upgrade requirements
 description: TFS upgrade requirements
-ms.assetid: b91d72fb-26ac-463e-ae8e-364922cd477f
 ms.manager: douge
 ms.author: elbatk
 author: elbatk

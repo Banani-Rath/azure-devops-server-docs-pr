@@ -1,7 +1,6 @@
 ---
 title: Install and configure Team Foundation Server
 description: Install and configure Team Foundation Server
-ms.assetid: ca535d08-9e52-4ef9-9f56-516c3549395f
 ms.topic: conceptual
 ms.manager: douge
 ms.author: elbatk

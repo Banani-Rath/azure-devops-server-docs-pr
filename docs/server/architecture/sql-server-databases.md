@@ -1,7 +1,6 @@
 ---
 title: Team Foundation Server Databases
 description: Team Foundation Server Databases
-ms.assetid: 44d3053c-044e-420d-8d18-3137605e4d8a
 ms.manager: douge
 ms.author: elbatk
 author: elbatk

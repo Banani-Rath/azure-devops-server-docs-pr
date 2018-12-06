@@ -1,7 +1,6 @@
 ---
-title: Manage project collections in Team Foundation Server
+title: Manage project collections
 description: Manage project collections in Team Foundation Server
-ms.assetid: 784e9934-ff35-4657-b4c6-6402d6374d1d
 ms.topic: conceptual
 ms.manager: douge
 ms.author: elbatk

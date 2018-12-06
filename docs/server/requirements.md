@@ -3,7 +3,6 @@ title: Requirements and compatibility | Azure DevOps Server and Team Foundation 
 description: Describes many kinds of requirements and compatibility for Azure DevOps Server and TFS -- hardware, operating systems, SQL Server, client versions, server versions, browsers
 ms.prod: devops-server
 ms.technology: tfs-admin
-ms.assetid: 12652666-b74e-4fd8-aab1-d87cbba6b820
 toc: show
 ms.manager: douge
 ms.author: elbatk

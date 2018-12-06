@@ -1,7 +1,6 @@
 ---
 title: Stop or start TFS services or application pools with TFSServiceControl command
 description: Start or stop TFS services from the command line using TFSServiceControl
-ms.assetid: 7a385e9d-b1b7-4a4a-8f7d-1ece14144432
 ms.prod: devops-server
 ms.technology: tfs-admin
 ms.manager: douge

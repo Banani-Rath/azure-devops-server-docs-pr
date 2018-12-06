@@ -1,9 +1,8 @@
 ---
-title: How to set up TFS in a dual server configuration
+title: Set up a dual server configuration
 description: How to set up Team Foundation Server in a dual server configuration using the full configuration wizard
 ms.prod: devops-server
 ms.technology: tfs-admin
-ms.assetid: 1364dc15-fbd7-4e05-afa4-39ea22a13e02
 toc: show
 ms.manager: douge
 ms.author: elbatk

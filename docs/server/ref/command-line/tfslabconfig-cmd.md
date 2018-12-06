@@ -1,7 +1,6 @@
 ---
-title: Configure Lab Management with TFSLabConfig for Team Foundation Server
+title: Configure Lab Management with TFSLabConfig
 description: Use TFSLabConfig to manage and configure the lab service provide by Visual Studio Lab Management.
-ms.assetid: 329cd673-d30b-4697-b1a9-ff160a5bff56
 ms.prod: devops-server
 ms.technology: tfs-admin
 ms.manager: douge

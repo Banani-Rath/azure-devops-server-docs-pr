@@ -1,6 +1,6 @@
 ---
-title: Add administrators to TFS  
-description: Add server, project collection, or project administrators 
+title: Add administrators
+description: Add server, project collection, or project administrators to Azure DevOps Server or Team Foundation Server
 ms.prod: devops-server
 ms.technology: tfs-admin
 ms.topic: conceptual
@@ -10,13 +10,13 @@ author: elbatk
 ms.date: 03/29/2017
 ---
 
-# Add server-level administrators to your TFS installation
+# Add server-level administrators to your Azure DevOps Server and TFS installation
 
 **TFS 2018** | **TFS 2017** | **TFS 2015** | **TFS 2013**
 
-Administrators in Azure DevOps Services and TFS exist at three levels: the team, the project, and the project collection.
+Administrators in Azure DevOps Services, Azure DevOps Server, and TFS exist at three levels: the team, the project, and the project collection.
 
-In TFS, there are also server-level administrators.
+In Azure DevOps Server and TFS, there are also server-level administrators.
 
 See adding administrators to [project collections or projects](/azure/devops/security/set-project-collection-level-permissions).
 

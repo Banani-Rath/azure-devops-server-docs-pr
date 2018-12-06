@@ -1,7 +1,6 @@
 ---
-title: Using the Azure DevOps and Team Foundation Server (TFS) docs
-description: 
-ms.assetid: ed578715-f4d2-4042-b797-5f97abde9973
+title: Viewing docs for your product version
+description: Understand how to view different versions of the Azure DevOps and TFS  docs
 ms.prod: devops-server
 ms.technology: tfs-admin
 ms.topic: conceptual
@@ -11,7 +10,7 @@ author: elbatk
 ms.date: 08/27/2017
 ---
 
-# Using the Azure DevOps Services, Azure DevOps Server, and Team Foundation Server (TFS) docs
+# Viewing different versions of the Azure DevOps Services, Azure DevOps Server, and Team Foundation Server (TFS) docs
 
 On **September 5th, 2018**, Visual Studio Team Services, the cloud-hosted set of developer collaboration and DevOps services, became **Azure DevOps Services**. On **November 19, 2018**, the latest version of Team Foundation Server (the on-premises server software for developer collaboration and DevOps services) had a Release Candidate as **Azure DevOps Server 2019 RC 1**.
 

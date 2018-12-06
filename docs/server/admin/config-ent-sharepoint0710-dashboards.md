@@ -1,7 +1,6 @@
 ---
-title: Configure the Enterprise Editions of SharePoint Server 2010 or Office SharePoint Server 2007 for Dashboard Compatibility with Team Foundation Server
+title: Configure SharePoint 2007 or 2010
 description: Configure the Enterprise Editions of SharePoint Server 2010 or Office SharePoint Server 2007 for Dashboard Compatibility with Team Foundation Server
-ms.assetid: a32b811c-00a6-4fe9-97f6-75a39900e6c9
 ms.topic: conceptual
 ms.manager: douge
 ms.author: elbatk
@@ -9,6 +8,7 @@ author: elbatk
 ms.date: 08/18/2016
 ms.prod: devops-server
 ms.technology: tfs-admin
+ms.custom: "retire"
 ---
 
 # Configure the Enterprise Editions of SharePoint Server 2010 or Office SharePoint Server 2007 for Dashboard Compatibility with Team Foundation Server

@@ -1,7 +1,6 @@
 ---
-title: Rebuild the client cache for Team Foundation Server
+title: Rebuild the client cache
 description: Rebuild the client cache for Team Foundation Server
-ms.assetid: ac682990-f57e-49a8-8a26-caf3b2de7575
 ms.topic: conceptual
 ms.manager: douge
 ms.author: elbatk

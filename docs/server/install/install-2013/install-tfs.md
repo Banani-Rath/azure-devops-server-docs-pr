@@ -1,7 +1,6 @@
 ---
 title: Install Team Foundation Server
 description: Install Team Foundation Server
-ms.assetid: 5bd14bb5-c5dd-4afb-b983-53df2b33caff
 ms.manager: douge
 ms.author: elbatk
 author: elbatk

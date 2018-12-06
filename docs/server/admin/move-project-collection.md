@@ -1,7 +1,6 @@
 ---
 title: Move a project collection
 description: Move a project collection
-ms.assetid: b5d79dcb-826e-4eb4-ab8e-de222d9b9974
 ms.topic: conceptual
 ms.manager: douge
 ms.author: elbatk

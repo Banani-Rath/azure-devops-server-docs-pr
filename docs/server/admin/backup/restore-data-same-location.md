@@ -1,7 +1,6 @@
 ---
 title: Restore data to the same location
 description: Restore data to the same location
-ms.assetid: 57881758-8f6e-4d36-afa7-75d6b50e3e48
 ms.topic: conceptual
 ms.manager: douge
 ms.author: elbatk
