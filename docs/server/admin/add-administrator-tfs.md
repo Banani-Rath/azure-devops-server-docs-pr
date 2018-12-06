@@ -1,7 +1,6 @@
 ---
-title: Add administrators TFS  
-description: Add server, project collection,  or project administrators 
-ms.assetid: ed578715-f4d2-4042-b797-5f97abde9973
+title: Add administrators to TFS  
+description: Add server, project collection, or project administrators 
 ms.prod: devops-server
 ms.technology: tfs-admin
 ms.topic: conceptual
@@ -11,12 +10,11 @@ author: elbatk
 ms.date: 03/29/2017
 ---
 
-# Add administrators to TFS
+# Add server-level administrators to your TFS installation
 
 **TFS 2018** | **TFS 2017** | **TFS 2015** | **TFS 2013**
 
-Administrators in Azure DevOps Services and TFS exist at three levels:
-the team, the project, and the project collection.
+Administrators in Azure DevOps Services and TFS exist at three levels: the team, the project, and the project collection.
 
 In TFS, there are also server-level administrators.
 
@@ -28,8 +26,7 @@ See adding administrators to [project collections or projects](/azure/devops/sec
 To perform system maintenance, schedule backups, add functionality, and do other tasks,
 TFS server administrators must be able to configure and control all aspects of TFS.
 As a result, TFS server administrators require administrative permissions
-in the software that TFS interoperates with,
-in addition to TFS itself.
+in the software that TFS interoperates with, in addition to TFS itself.
 
 You can quickly grant these permissions to administrators by adding them to the **Team Foundation Administrators**
 group in Team Foundation Server (TFS).
