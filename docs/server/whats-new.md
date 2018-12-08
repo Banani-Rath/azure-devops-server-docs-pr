@@ -947,7 +947,7 @@ To learn about what's new and the bug fixes made in this release, see the [Relea
 
 
 ## Related notes
-You can download the latest version of TFS from the [Visual Studio download page](https://www.visualstudio.com/downloads/).
+You can download the latest version of Azure DevOps Server from the [Visual Studio download page](https://www.visualstudio.com/downloads/).
 
 
 ### TFS Express  

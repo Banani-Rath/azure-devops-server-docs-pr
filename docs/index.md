@@ -88,18 +88,18 @@ featureFlags:
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="/azure/devops/project/navigation/index">
+                                        <a href="server/whats-new.md">
                                             <div class="cardSize">
                                                 <div class="cardPadding">
                                                     <div class="card">
                                                         <div class="cardImageOuter">
                                                             <div class="cardImage">
-                                                                <img src="https://docs.microsoft.com/media/common/i_portal.svg" alt="Web portal icon" />
+                                                                <img src="https://docs.microsoft.com/media/common/i_whats-new.svg" alt="what's new" />
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
-                                                            <h3>Web portal navigation</h3>
-                                                            <p>Learn how to work effectively within the web portal. </p>
+                                                            <h3>What's new</h3>
+                                                            <p>Learn about new features recently released. </p>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -198,6 +198,25 @@ featureFlags:
                                                         <div class="cardText">
                                                             <h3>Azure Test Plans (Test)</h3>
 															<p>Improve your overall code quality by using manual and exploratory testing services for your apps.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/azure/devops/project/navigation/index">
+                                            <div class="cardSize">
+                                                <div class="cardPadding">
+                                                    <div class="card">
+                                                        <div class="cardImageOuter">
+                                                            <div class="cardImage">
+                                                                <img src="https://docs.microsoft.com/media/common/i_portal.svg" alt="Web portal icon" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="cardText">
+                                                            <h3>Web portal navigation</h3>
+                                                            <p>Learn how to work effectively within the web portal. </p>
                                                         </div>
                                                     </div>
                                                 </div>
