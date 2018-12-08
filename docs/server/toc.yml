@@ -31,7 +31,7 @@
   - name: Background job agent
     href: architecture/background-job-agent.md
   - name: Service accounts
-    href:
+    href: admin/service-accounts-dependencies-tfs.md
 - name: Install
   items:
   - name: Install TFS
@@ -118,6 +118,10 @@
   items:
   - name: Admin
     items:
+    - name: Get started as an admin
+      href: /azure/devops/user-guide/project-admin-tutorial?toc=/tfs/toc.json&bc=/tfs/server/breadcrumb/toc.json 
+    - name: Configure and manage TFS resources
+      href: admin/config-tfs-resources.md
     - name: Configure and manage TFS resources
       href: admin/config-tfs-resources.md
     - name: Administration console
@@ -146,6 +150,27 @@
         href: admin/change-service-account-or-password-sql-reporting.md
       - name: Stop and start services, app pools, and websites
         href: admin/stop-start-stuff.md
+    - name: Add reports to a team project
+      href: /azure/devops/report/admin/add-reports-to-a-team-project?toc=/tfs/server/toc.json&bc=/tfs/server/breadcrumb/toc.json
+      items:
+      - name: Add a report server
+        href: /azure/devops/report/admin/add-a-report-server?toc=/tfs/server/toc.json&bc=/tfs/server/breadcrumb/toc.json
+      - name: Upload reports to a team project
+        href: /azure/devops/report/admin/upload-reports?toc=/tfs/server/toc.json&bc=/tfs/server/breadcrumb/toc.json
+      - name: Set permissions to view or create reports
+        href: /azure/devops/report/admin/grant-permissions-to-reports?toc=/tfs/server/toc.json&bc=/tfs/server/breadcrumb/toc.json
+      - name: Review team activities
+        href: /azure/devops/report/admin/review-team-activities-for-useful-reports?toc=/tfs/server/toc.json&bc=/tfs/server/breadcrumb/toc.json
+    - name: Manage data warehouse
+      items:
+      - name: Manage the data warehouse and cube
+        href: /azure/devops/report/admin/manage-reports-data-warehouse-cube?toc=/tfs/server/toc.json&bc=/tfs/server/breadcrumb/toc.json
+      - name: Manually process the data warehouse and cube
+        href: /azure/devops/report/admin/manually-process-data-warehouse-and-cube?toc=/tfs/server/toc.json&bc=/tfs/server/breadcrumb/toc.json
+      - name: Change a process control setting
+        href: /azure/devops/report/admin/change-a-process-control-setting?toc=/tfs/server/toc.json&bc=/tfs/server/breadcrumb/toc.json
+      - name: Rebuild the data warehouse and cube
+        href: /azure/devops/report/admin/rebuild-data-warehouse-and-cube?toc=/tfs/server/toc.json&bc=/tfs/server/breadcrumb/toc.json
     - name: Configure Lab Management for SCVMM environments
       href: admin/config-lab-scvmm-envs.md
     - name: Manage TFVC file types
@@ -177,17 +202,15 @@
       - name: Permissions and groups reference
         href: /azure/devops/security/permissions?toc=/tfs/server/toc.json&bc=/tfs/server/breadcrumb/toc.json
       - name: About security roles
-        href: /azure/devops/security/about-security-roles?toc=/tfs/toc.json
+        href: /azure/devops/security/about-security-roles?toc=/tfs/server/toc.json&bc=/tfs/server/breadcrumb/toc.json 
       - name: Required ports
         href: architecture/required-ports.md
       - name: Security glossary
-        href: /azure/devops/security/security-glossary?toc=/tfs/toc.json
+        href: /azure/devops/security/security-glossary?toc=/tfs/server/toc.json&bc=/tfs/server/breadcrumb/toc.json 
 - name: Reference
   items:
   - name: REST APIs and permissions
-    href: /rest/api/vsts/security/permissions?toc=/tfs/toc.json
-  - name: Service account dependencies
-    href: admin/service-accounts-dependencies-tfs.md
+    href: /rest/api/vsts/security/permissions?toc=/tfs/server/toc.json&bc=/tfs/server/breadcrumb/toc.json 
   - name: Command-line tools
     items:
     - name: TFSConfig

@@ -9,7 +9,7 @@ ms.prod: devops-server
 ms.technology: tfs-admin
 ms.manager: douge 
 ms.author: elbatk 
-ms.date: 09/05/2018
+ms.date: 12/07/2018
 featureFlags:
 - clicktale 
 ---
@@ -120,7 +120,7 @@ featureFlags:
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
-                                                            <h3>Code</h3>
+                                                            <h3>Azure Repos (Code)</h3>
 															<p>Use Git repositories, pull requests, and then integrate with CI/CD to build and deploy your apps.</p>
                                                         </div>
                                                     </div>
@@ -139,7 +139,7 @@ featureFlags:
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
-                                                            <h3>Plan and track work</h3>
+                                                            <h3>Azure Boards (Work)</h3>
 															<p>Plan and track your work using interactive, highly-customizable backlogs and boards.</p>
                                                         </div>
                                                     </div>
@@ -158,7 +158,7 @@ featureFlags:
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
-                                                            <h3>Build and Release</h3>
+                                                            <h3>Azure Pipelines (Build and Release)</h3>
 															<p>Manage CI/CD to deploy your code with high-performance pipelines that work with any language, platform, and cloud. </p>
                                                         </div>
                                                     </div>
@@ -177,7 +177,7 @@ featureFlags:
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
-                                                            <h3>Package management</h3>
+                                                            <h3>Azure Artifacts (Packages)</h3>
 															<p>Share code with others across your enterprise, and support CI/CD of your apps.</p>
                                                         </div>
                                                     </div>
@@ -196,7 +196,7 @@ featureFlags:
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
-                                                            <h3>Test</h3>
+                                                            <h3>Azure Test Plans (Test)</h3>
 															<p>Improve your overall code quality by using manual and exploratory testing services for your apps.</p>
                                                         </div>
                                                     </div>
@@ -228,18 +228,18 @@ featureFlags:
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="/azure/devops/project/wiki/index">
+                                        <a href="/azure/devops/report/index">
                                             <div class="cardSize">
                                                 <div class="cardPadding">
                                                     <div class="card">
                                                         <div class="cardImageOuter">
                                                             <div class="cardImage">
-                                                                <img src="https://docs.microsoft.com/media/common/i_reference.svg" alt="Wikis icon" />
+                                                                <img src="_img/index/i_analytics.svg" alt="Analytics views icon" />
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
-                                                            <h3>Wikis</h3>
-															<p>Share information with your team and stakeholders.</p>
+                                                            <h3>Analytics </h3>
+                                                            <p>Answer quantitative questions about projects using the Analytics Service.</p>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -266,18 +266,18 @@ featureFlags:
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="/azure/devops/notifications/index">
+                                        <a href="/azure/devops/project/wiki/index">
                                             <div class="cardSize">
                                                 <div class="cardPadding">
                                                     <div class="card">
                                                         <div class="cardImageOuter">
                                                             <div class="cardImage">
-                                                                <img src="https://docs.microsoft.com/media/common/i_alert.svg" alt="Notifications icon" />
+                                                                <img src="https://docs.microsoft.com/media/common/i_reference.svg" alt="Wikis icon" />
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
-                                                            <h3>Notifications</h3>
-															<p>Define which events generate alerts or post messages in third party tools.</p>
+                                                            <h3>Wikis</h3>
+															<p>Share information with your team and stakeholders.</p>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -289,7 +289,7 @@ featureFlags:
                                 <h2 style="float: left; display: flex;">Administrative tools</h2>
                                 <ul id="index4" class="cardsFTitle panelContent singlePanelContent cols cols4" style="float: left; display: flex!important;">
                                     <li>
-                                        <a href="server/index.md">
+                                        <a href="/tfs/server/index">
                                         <div class="cardSize">
                                             <div class="cardPadding">
                                                 <div class="card">
@@ -299,7 +299,7 @@ featureFlags:
                                                         </div>
                                                     </div>
                                                     <div class="cardText">
-                                                        <h3>TFS administration</h3>
+                                                        <h3>Server administration</h3>
                                                     </div>
                                                 </div>
                                             </div>
