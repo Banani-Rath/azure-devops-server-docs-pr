@@ -590,15 +590,6 @@ Continuous deployment triggers create a release on build completion. However, so
 > [!div class="mx-imgBorder"]
 ![build tag trigger](_img/133_08.png)
 
-### Streamline authentication from agent VMs in Azure to Azure Resource Manager
-
-There are multiple ways to run build and release agents. Running them yourself in Azure just got easier and more secure. Now you can configure Azure Virtual Machines (VM)-based agents with an Azure Managed Service Identity in Azure Active Directory (Azure AD). By giving the Azure VM an assigned identity, you can use its Service Principal information to grant the VM access to any Azure resource that supports Azure AD, such as Key Vault, instead of persisting credentials for the endpoint.
-
-For example, if your code needs to call Azure Resource Manager, then you would simply assign the VM’s Service Principal the appropriate role using Role-Based Access Control (RBAC) in Azure AD. See the [build and release agents](/azure/devops/pipelines/agents/agents) and [Azure Managed Service Identity](/azure/active-directory/managed-service-identity/overview) documentation for more information.
-
-> [!div class="mx-imgBorder"]
-![Add Azure Resource Manager Service Endpoint dialog](_img/135_09.png)
-
 ### Set a variable at release time
 
 In a release definition, you can now choose the variables you would like to set when you create the release.
