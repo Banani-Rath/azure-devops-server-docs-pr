@@ -107,12 +107,12 @@ Team Explorer Everywhere 2010      | Eclipse 3.0-3.5 | ![Check](_img/check.png) 
 <a name="supported-browsers"></a>
 ### Browsers
 
-You can use these browsers with Azure DevOps Server 2019 RC1 
-and to access TFS with the web client.
+You can use these browsers with Azure DevOps Services
+and to access Azure DevOps Server or TFS with the web client.
 
 Version                   | Edge        | Internet Explorer | Safari (Mac)   | Firefox     | Chrome
 --------------------------|-------------|-------------------|----------------|-------------|-------------
-Azure DevOps Server 2019 RC1, TFS 2018, TFS 2017  | most recent | 11 and later      | 9.1 and later  | most recent | most recent
+Azure DevOps Services, Azure DevOps Server 2019 RC1, TFS 2018, TFS 2017  | most recent | 11 and later      | 9.1 and later  | most recent | most recent
 TFS 2015                  | most recent | 9 and later       | 5 and later    | most recent | most recent
 TFS 2013                  |             | 9 and later       | 5 and later    | most recent | most recent
 
