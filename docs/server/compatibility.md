@@ -31,7 +31,7 @@ This table describes the level of support that we guarantee with each client ver
 Keep in mind that additional functionality other than what is listed below might continue to work using older clients. In fact,
 it often does, but is outside the scope of what we test and support officially.
 
-Visual Studio/ Team Explorer version | Azure DevOps Server 2019 RC1, TFS 2018, and TFS 2017 support notes                                | TFS 2015 support notes                                                    | TFS 2013 support notes                                                          | TFS 2012 support notes                                                 | TFS 2010 support notes
+Visual Studio/ Team Explorer version | Azure DevOps Server 2019 RC1, TFS 2018, TFS 2017, and Azure DevOps Services support notes                                | TFS 2015 support notes                                                    | TFS 2013 support notes                                                          | TFS 2012 support notes                                                 | TFS 2010 support notes
 -------------------------------------|---------------------------------------------------------------------------|---------------------------------------------------------------------------|---------------------------------------------------------------------------------|------------------------------------------------------------------------|------------------------------------------------
 Visual Studio 2017                   | Full Support                                                              | High level of support                                                     | High level of support                                                           | High level of support                                                  | High level of support
 Visual Studio 2015                   | High level of support                                                     | Full support                                                              | High level of support                                                           | High level of support                                                  | High level of support
@@ -95,7 +95,7 @@ If you need support for an older version of Eclipse, Java, or an operating syste
 you can choose to use an older version of Team Explorer Everywhere that encompasses the range you need.
 Multiple versions of Team Explorer Everywhere can also be installed side by side if you're running multiple versions of Eclipse.
 
-Team Explorer Everywhere           | Eclipse version | Azure DevOps Server 2019 RC1, TFS 2012 - TFS 2018   | TFS 2010                    | TFS 2008                    | TFS 2005
+Team Explorer Everywhere           | Eclipse version | Azure DevOps Services, Azure DevOps Server 2019 RC1, TFS 2012 - TFS 2018   | TFS 2010                    | TFS 2008                    | TFS 2005
 -----------------------------------|-----------------|-----------------------------|-----------------------------|-----------------------------|-----------------------------
 Team Explorer Everywhere 14.114.0+ | Eclipse 4.2-4.7 | ![Check](_img/check.png) | ![x](_img/x.png)         | ![x](_img/x.png)         | ![x](_img/x.png)
 Team Explorer Everywhere 2015      | Eclipse 3.5-4.3 | ![Check](_img/check.png) | ![Check](_img/check.png) | ![x](_img/x.png)         | ![x](_img/x.png)
