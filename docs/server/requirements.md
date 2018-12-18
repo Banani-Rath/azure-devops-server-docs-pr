@@ -82,10 +82,10 @@ The larger the team, the more robust your hardware must be.
 			
 <a name="gvfs-proxy-server"></a>
 
-### Additional requirements for GVFS proxy
-The Git Virtual File System (GVFS) proxy feature is I/O-heavy. In addition to the basic requirements for the 
-Azure DevOps Server Proxy or Team Foundation Server Proxy, GVFS proxying requires a fast, large disk to operate 
-efficiently on the repository. Recommended hardware is based on the size of the repository that the GVFS proxy will serve.
+### Additional requirements for VFS for Git proxy
+The Virtual File System (VFS) for Git proxy feature is I/O-heavy. In addition to the basic requirements for the 
+Azure DevOps Server Proxy or Team Foundation Server Proxy, VFS for Git proxying requires a fast, large disk to operate 
+efficiently on the repository. Recommended hardware is based on the size of the repository that the VFS for Git proxy will serve.
 
 | **Hardware** | **Recommended value** |
 |---|---|
