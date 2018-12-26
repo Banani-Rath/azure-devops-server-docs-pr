@@ -68,6 +68,7 @@ Upgrading to Azure DevOps Server is only supported from Team Foundation Server 2
     ```tsql
     CREATE USER [VMName] FROM EXTERNAL PROVIDER
     ALTER ROLE [db_owner] ADD MEMBER [VMName]
+    ALTER USER [VMName] WITH DEFAULT_SCHEMA=dbo
     ```
 
 ### Configure Azure DevOps Server
