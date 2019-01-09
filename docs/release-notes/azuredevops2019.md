@@ -741,7 +741,6 @@ ATR requires a one-time download and install of the runner. Select **Run for des
 Azure DevOps Server 2019 brings substantial updates to the upstream sources available on your Azure Artifacts feeds:
 
 * You can add [nuget.org](http://nuget.org/) upstream sources to existing feeds created in previous TFS releases. Look for the banner above your feed's packages for more information, including behavior changes you should be aware of before upgrading.
-* You can add arbitrary public feeds (e.g. a MyGet feed) as **npm** upstream sources.
 * You can add other Azure DevOps Server feeds as upstream sources to your feed, which means you can use NuGet and npm packages from those feeds through your feed.
 
 We've also introduced a new role in Azure Artifacts: "Collaborator". A Collaborator can save packages from an upstream source, but cannot publish packages packages directly into the feed (e.g. by using nuget publish). This enables you to restrict package publish to a trusted user or the build system while allowing your engineers to use new packages from your upstream sources.
