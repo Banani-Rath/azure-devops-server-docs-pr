@@ -1,5 +1,6 @@
 ---
-title: TFS is now Azure DevOps Server | Azure DevOps Server 2019
+title: TFS is now Azure DevOps Server
+titlesuffix: Azure DevOps Server & TFS
 description: The newest version of Team Foundation Server (TFS) is Azure DevOps Server 2019
 ms.prod: devops-server
 ms.technology: tfs-admin
@@ -11,9 +12,9 @@ ms.topic: conceptual
 ms.date: 11/19/2018
 ---
 
-# "Team Foundation Server" is now called "Azure DevOps Server"
+# Team Foundation Server (TFS) is now Azure DevOps Server
 
-On November 19, 2018, Microsoft released the first release candidate (RC) of Azure DevOps Server 2019. **Azure DevOps Server** is the new name for the on-premises DevOps server product previously called Team Foundation Server.
+On November 19, 2018, Microsoft released the first release candidate (RC) of Azure DevOps Server 2019. **Azure DevOps Server** is the new name for the on-premises DevOps server product previously called Team Foundation Server. For more information about this change, see [Introducing Azure DevOps Server](https://azure.microsoft.com/en-us/blog/introducing-azure-devops-server-2019-rc1/).
 
 This new release brings many of the newest features from the cloud-hosted [Azure DevOps Services](/azure/devops) (formerly [Visual Studio Team Services](/azure/devops/user-guide/what-happened-vsts)) into the on-premises server product.
 
