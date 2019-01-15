@@ -18,7 +18,7 @@ featureFlags:
     <div class="container">
         <h1>Azure DevOps Server Documentation</h1>
         <p>Azure DevOps Server, previously named Visual Studio Team Foundation Server, is the on-premises version of <a href="/azure/devops/index">Azure DevOps Services</a>. It provides integrated tools to support collaborative software development, including Git repositories, continuous integration and continuous deployment (CI/CD), and interactive Kanban boards.</p>
-        <p><i><a href="server/tfs-is-now-azure-devops-server.md">What happened to Team Foundation Server</a></i></p><br/>
+        <p><i><a href="server/tfs-is-now-azure-devops-server.md">Team Foundation Server is now called Azure DevOps Server</a></i></p><br/>
         <ul class="pivots">
             <li>
                 <a href="#index"></a>
