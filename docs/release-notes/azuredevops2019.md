@@ -34,6 +34,18 @@ To learn more about Azure DevOps Server 2019, see the [Azure DevOps Server Requi
 Direct upgrade to Azure DevOps Server is supported from Team Foundation Server 2012 and newer. If your TFS deployment is on TFS 2010 or earlier, you need to perform some interim steps before upgrading to Azure DevOps Server 2019. Please see the <a href="https://docs.microsoft.com/tfs/server/install/get-started?view=vsts" target="blank">Install page</a> for more information. 
 
 ****
+## **RC2 Release Date: January 22, 2019**
+
+## Summary of What's New in Azure DevOps Server 2019 RC2
+
+We have added the following features to RC2:
+
+* [Link GitHub Enterprise commits and pull requests to Azure Boards work items](#link-github-enterprise-commits-and-pull-requests-to-azure-boards-work-items)
+* [Configure builds using YAML](#configure-builds-using-yaml)
+* [Card annotations include bugs and custom work item types](#card-annotations-include-bugs-and-custom-work-item-types)
+* [Draft pull requests](#draft-pull-requests)
+* [Improved branch picker](#improved-branch-picker)
+* [Changes to Artifacts and Release Management Deployment Pipeline Licensing](#changes-to-artifacts-and-release-management-deployment-pipeline-licensing)
 
 ## **RC1 Release Date: November 19, 2018**
 
@@ -84,6 +96,10 @@ We are introducing a new navigation to modernize the user experience. This new n
 > [!div class="mx-imgBorder"]
 ![New nav](_img/azdev_03.png)
 
+### Changes to Artifacts and Release Management Deployment Pipeline Licensing
+
+Based on user feedback, we are making two key changes to our licenses with Azure DevOps Server 2019. First, customers will no longer need to purchase the Artifact extension to use Artifacts. An Artifacts license use will now be included in the Basic License. All users that have a Basic License assigned to them will now be able to use Artifacts. Second, customers will no longer be required to purchase Release Management Deployment Pipelines. Just like Build Pipelines, Release Management Deployment Pipelines are now included with Azure DevOps Server 2019.  
+
 ### Support for Azure SQL Database
 
 In order to simplify the experience of running Azure DevOps 2019 in Azure, we've enabled support for Azure SQL Database (General Purpose S3 and above). This will allow you to leverage extensive [backup features](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-automated-backups) and [scaling options](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-service-tiers) to suit your needs while reducing the administrative overhead of running the service. Note that your Host VM must be located in the same Azure region as your database in order to keep latency low.
@@ -133,6 +149,31 @@ Here you can see the last pivot, which is everything you've favorited. This incl
 ![My work flyout favorites](_img/azdev_10.png)
 
 ## Boards
+
+### Link GitHub Enterprise commits and pull requests to Azure Boards work items
+
+Teams that use GitHub Enterprise for code and want rich project management capabilities can now integrate their repositories with Azure Boards. By [connecting GitHub and Azure Boards](https://aka.ms/azureboardsgithub), you can get all of the features like backlogs, boards, sprint planning tools, multiple work item types and still have a workflow that integrates with developer workflows in GitHub.
+
+Linking commits and pull requests to work items is easy. Mention the work item using the following syntax:​
+
+```
+AB#{work item ID}
+```
+
+Mention a work item in a commit message, pull request title, or pull request description, and Azure Boards will create a link to that artifact. For example, consider a commit message like this:​
+
+```
+Adds support for deleting connections. Fixes AB#20.
+```
+
+This will create a link from the work item #20 to the commit in GitHub, which will appear in the work item's Development section.  ​
+​
+> [!div class="mx-imgBorder"]
+![Badge](_img/144_03.png)
+
+If the words "fix", "fixes", or "fixed" precede the work item mention (as shown above), the work item will be moved to the completed state when the commit is merged to the default branch.
+
+Teams that are using Azure Pipelines to build code in GitHub will also see the work items linked to their GitHub commits in the build summary.
 
 ### New Work Items hub
 
@@ -204,6 +245,25 @@ The new hubs, including **Backlogs**, **Boards**, and **Sprints**, have a new **
 
 Read more about these exciting updates, new Team profile pane, and Favorites on our [DevOps blog](https://blogs.msdn.microsoft.com/devops/2018/06/22/new-work-hubs/).
 
+### Card annotations include bugs and custom work item types
+
+Card annotations are loved for their intuitive check list view and interaction. Previously, card annotations were limited to default backlog level types and did not support Bugs or custom types. With new release, we have removed the restriction on work item types and added ability to show Bugs and any custom work item type as a card annotation.
+
+Board settings for card annotations were expanded to include all work item types available for that backlog level.
+
+> [!div class="mx-imgBorder"]
+![Annotation settings](_img/azdev_14.png)
+
+When annotations for work item is enabled, counts for that work item type is included on the card as a separate check list.
+
+> [!div class="mx-imgBorder"]
+![Annotation work item](_img/azdev_15.png)
+
+Quick creation of enabled work item types is also available via card context menu.
+
+> [!div class="mx-imgBorder"]
+![Annotation quick create](_img/azdev_16.png)
+
 ### Move work using suggested Areas and Iterations
 
 It can be common to work in the same area or iteration and repeatedly browse through the hierarchies when moving work items around. The **Area** and **Iteration** path controls now include a list of recently used values as **Suggestions**, giving you quick access to set and move on.
@@ -250,6 +310,24 @@ When you want to link two existing work items together, you can now easily find 
 Previously, a work item couldn't be opened from the search results page if the work item preview pane was turned off. This would make it difficult to dig into your search results. Now you can click on the work item title to open the work items in a modal window. This feature was prioritized from [UserVoice](https://visualstudio.uservoice.com/forums/330519-azure-devops-formerly-visual-studio-team-services/suggestions/33988486-open-item-from-search).
 
 ## Repos
+
+### Draft pull requests
+
+In order to prevent pull requests from being completed before they're ready and to make it easy to create work in progress that may not involve everyone, we now support draft pull requests.
+
+Draft pull requests can be created by selecting **Create as draft** from the **Create** button drop down when creating a pull request.
+
+> [!div class="mx-imgBorder"]
+![Create PR draft](_img/143_02.png)
+
+Once you have created a draft pull request, you will see a badge indicating its status next to the title. 
+
+### Improved branch picker
+
+Most of the experiences in **Azure Repos** require you to select a repo and then a branch in that repo. To improve this experience for organizations with large number of branches, we are rolling out a new branch picker. The picker now allows you to select your favorite branches or quickly search for a branch.
+
+> [!div class="mx-imgBorder"]
+![Branch picker](_img/143_04.png)
 
 ### Receive notifications when pull request policies are bypassed
 
@@ -429,6 +507,15 @@ Results from test execution are also surfaced for each environment. Clicking on 
 ![Release test results](_img/135_03c.png)
 
 Existing extensions work in this new view, plus there are new extensibility points to allow extensions develops to surface even more information for an environment. See the [contributions and extensions](https://docs.microsoft.com/en-us/azure/devops/pipelines/preview/new-release-summary?view=vsts#contribution-points-and-extensions) documentation for more information.
+
+### Configure builds using YAML
+
+YAML-based build pipelines are available in your Azure DevOps Server. Automate your continuous integration pipeline using a YAML file checked into your repository. A complete reference for the YAML schema can be found [here](https://docs.microsoft.com/en-us/azure/devops/pipelines/yaml-schema?view=vsts&tabs=schema).
+
+To support YAML-based build pipelines more seamlessly, we changed the default behavior for all new resources that you create (e.g., service connections, variable groups, agent pools, and secure files) to be usable in all pipeline of that project. If you want tighter control on your resources, you can disable the default authorization model (see figure below). When you do so, someone with permissions to use the resource must explicitly save the pipeline in the web editor after a resource reference is added to the YAML file.
+
+> [!div class="mx-imgBorder"]
+![YAML](_img/azdev_17.png)
 
 ### Chain related builds together using build completion triggers
 
