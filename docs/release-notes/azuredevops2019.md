@@ -5,7 +5,7 @@ keywords: azure devops
 author: egeaney
 ms.author: egeaney
 manager: egeaney
-ms.date: 11/19/2018
+ms.date: 01/22/2019
 ms.topic: release-article
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-articles
