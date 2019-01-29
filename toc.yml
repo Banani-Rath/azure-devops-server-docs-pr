@@ -39,6 +39,8 @@
       href: install/dual-server.md
     - name: Install on multiple servers
       href: install/multiple-server.md
+    - name: Configure with Azure SQL and VMs
+      href: install/install-azure-sql.md
   - name: Install TFS proxy for a remote site
     href: install/install-proxy-setup-remote.md
   - name: Install SQL Server
