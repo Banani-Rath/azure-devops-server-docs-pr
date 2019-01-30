@@ -1,7 +1,7 @@
 ---
 title: Azure DevOps Server Documentation 
-titleSuffix: TFS
-description: Quickstarts and how-to guides to install, upgrade, and manage Azure DevOps Server, formerly named Team Foundation Server (TFS). 
+titleSuffix: Azure DevOps & TFS
+description: Quickstarts and how-to guides to install, upgrade, and manage Azure DevOps Server, previously named Team Foundation Server (TFS). 
 layout: HubPage 
 hide_bc: true
 ms.topic: hub-page
@@ -9,7 +9,7 @@ ms.prod: devops-server
 ms.technology: tfs-admin
 ms.manager: douge 
 ms.author: elbatk 
-ms.date: 12/07/2018
+ms.date: 01/30/2019
 featureFlags:
 - clicktale 
 ---
@@ -17,7 +17,7 @@ featureFlags:
 <div id="main" class="v2">
     <div class="container">
         <h1>Azure DevOps Server Documentation</h1>
-        <p>Azure DevOps Server, previously named Visual Studio Team Foundation Server, is the on-premises version of <a href="/azure/devops/index">Azure DevOps Services</a>. It provides integrated tools to support collaborative software development, including Git repositories, continuous integration and continuous deployment (CI/CD), and interactive Kanban boards.</p>
+        <p>Azure DevOps Server, previously named Visual Studio Team Foundation Server, is the on-premises version of <a href="/azure/devops/index">Azure DevOps Services</a>. Azure DevOps Server provides integrated tools to support collaborative software development, including Git repositories, continuous integration and continuous deployment (CI/CD), and interactive Kanban boards.</p>
         <p><i><a href="server/tfs-is-now-azure-devops-server.md">Team Foundation Server is now called Azure DevOps Server</a></i></p><br/>
         <ul class="pivots">
             <li>
@@ -42,7 +42,7 @@ featureFlags:
                                                         </div>
                                                         <div class="cardText">
                                                             <h3>Start using Azure DevOps Server or TFS</h3>
-                                                            <p>New to Azure DevOps Server or TFS? This user guide can help you get started. </p>
+                                                            <p>New to Azure DevOps Server or TFS? This user guide can help you get started.</p>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -60,8 +60,8 @@ featureFlags:
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
-                                                            <h3>Install guide</h3>
-                                                            <p>Discover the different installation types and which is best for you.</p>
+                                                            <h3>Installation guide</h3>
+                                                            <p>Discover the different installation types, and learn which is best for you.</p>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -99,7 +99,7 @@ featureFlags:
                                                         </div>
                                                         <div class="cardText">
                                                             <h3>What's new</h3>
-                                                            <p>Learn about new features recently released. </p>
+                                                            <p>Learn about new features that were recently released.</p>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -121,7 +121,7 @@ featureFlags:
                                                         </div>
                                                         <div class="cardText">
                                                             <h3>Azure Repos (Code)</h3>
-															<p>Use Git repositories, pull requests, and then integrate with CI/CD to build and deploy your apps.</p>
+															<p>Use Git repositories and pull requests, and then integrate with CI/CD to build and deploy your apps.</p>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -140,7 +140,7 @@ featureFlags:
                                                         </div>
                                                         <div class="cardText">
                                                             <h3>Azure Boards (Work)</h3>
-															<p>Plan and track your work using interactive, highly-customizable backlogs and boards.</p>
+															<p>Plan and track your work by using interactive, highly customizable backlogs and boards.</p>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -159,7 +159,7 @@ featureFlags:
                                                         </div>
                                                         <div class="cardText">
                                                             <h3>Azure Pipelines (Build and Release)</h3>
-															<p>Manage CI/CD to deploy your code with high-performance pipelines that work with any language, platform, and cloud. </p>
+															<p>Manage CI/CD to deploy your code by using high-performance pipelines that work with any language, platform, and cloud.</p>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -178,7 +178,7 @@ featureFlags:
                                                         </div>
                                                         <div class="cardText">
                                                             <h3>Azure Artifacts (Packages)</h3>
-															<p>Share code with others across your enterprise, and support CI/CD of your apps.</p>
+															<p>Share code across your enterprise and support CI/CD for your apps.</p>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -216,7 +216,7 @@ featureFlags:
                                                         </div>
                                                         <div class="cardText">
                                                             <h3>Web portal navigation</h3>
-                                                            <p>Learn how to work effectively within the web portal. </p>
+                                                            <p>Learn how to work effectively in the web portal.</p>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -239,7 +239,7 @@ featureFlags:
                                                         </div>
                                                         <div class="cardText">
                                                             <h3>Dashboards</h3>
-															<p>Monitor progress and trends to support improvement of team processes.</p>
+															<p>Monitor progress and trends to support improvement for team processes.</p>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -257,8 +257,8 @@ featureFlags:
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
-                                                            <h3>Analytics </h3>
-                                                            <p>Answer quantitative questions about projects using the Analytics Service.</p>
+                                                            <h3>Analytics</h3>
+                                                            <p>Answer quantitative questions about projects by using Azure DevOps Analytics Service.</p>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -272,11 +272,11 @@ featureFlags:
                                                     <div class="card">
                                                         <div class="cardImageOuter">
                                                             <div class="cardImage">
-                                                                <img src="_img/index/sql-server-reporting.svg" alt="SQL Server Reporting icon" />
+                                                                <img src="_img/index/sql-server-reporting.svg" alt="SQL Server reporting icon" />
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
-                                                            <h3>SQL Server Reporting</h3>
+                                                            <h3>SQL Server reporting</h3>
 															<p>Use out-of-the-box reports or define custom reports.</p>
                                                         </div>
                                                     </div>
@@ -350,11 +350,11 @@ featureFlags:
                                                 <div class="card">
                                                     <div class="cardImageOuter">
                                                         <div class="cardImage">
-                                                            <img src="https://docs.microsoft.com/media/common/i_security-management.svg" alt="Security & identity icon" />
+                                                            <img src="https://docs.microsoft.com/media/common/i_security-management.svg" alt="Security and identity icon" />
                                                         </div>
                                                     </div>
                                                     <div class="cardText">
-                                                        <h3>Security &amp; identity</h3>
+                                                        <h3>Security and identity</h3>
                                                     </div>
                                                 </div>
                                             </div>
@@ -372,7 +372,7 @@ featureFlags:
                                                         </div>
                                                     </div>
                                                     <div class="cardText">
-                                                        <h3>Project &amp; collection settings</h3>
+                                                        <h3>Project and collection settings</h3>
                                                     </div>
                                                 </div>
                                             </div>
@@ -404,11 +404,11 @@ featureFlags:
                                                 <div class="card">
                                                     <div class="cardImageOuter">
                                                         <div class="cardImage">
-                                                            <img src="https://docs.microsoft.com/media/common/i_configure-teams.svg" alt="Scale & configure teams icon" />
+                                                            <img src="https://docs.microsoft.com/media/common/i_configure-teams.svg" alt="Scale and configure teams icon" />
                                                         </div>
                                                     </div>
                                                     <div class="cardText">
-                                                        <h3>Scale &amp; configure teams</h3>
+                                                        <h3>Scale and configure teams</h3>
                                                     </div>
                                                 </div>
                                             </div>
