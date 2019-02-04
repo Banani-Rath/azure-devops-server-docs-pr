@@ -5,7 +5,7 @@ keywords: azure devops
 author: egeaney
 ms.author: egeaney
 manager: egeaney
-ms.date: 01/22/2019
+ms.date: 02/04/2019
 ms.topic: release-article
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-articles
@@ -43,7 +43,6 @@ We have added the following features to RC2:
 * [Link GitHub Enterprise commits and pull requests to Azure Boards work items](#link-github-enterprise-commits-and-pull-requests-to-azure-boards-work-items)
 * [Configure builds using YAML](#configure-builds-using-yaml)
 * [Card annotations include bugs and custom work item types](#card-annotations-include-bugs-and-custom-work-item-types)
-* [Draft pull requests](#draft-pull-requests)
 * [Improved branch picker](#improved-branch-picker)
 * [Changes to Artifacts and Release Management Deployment Pipeline Licensing](#changes-to-artifacts-and-release-management-deployment-pipeline-licensing)
 
@@ -310,17 +309,6 @@ When you want to link two existing work items together, you can now easily find 
 Previously, a work item couldn't be opened from the search results page if the work item preview pane was turned off. This would make it difficult to dig into your search results. Now you can click on the work item title to open the work items in a modal window. This feature was prioritized from [UserVoice](https://visualstudio.uservoice.com/forums/330519-azure-devops-formerly-visual-studio-team-services/suggestions/33988486-open-item-from-search).
 
 ## Repos
-
-### Draft pull requests
-
-In order to prevent pull requests from being completed before they're ready and to make it easy to create work in progress that may not involve everyone, we now support draft pull requests.
-
-Draft pull requests can be created by selecting **Create as draft** from the **Create** button drop down when creating a pull request.
-
-> [!div class="mx-imgBorder"]
-![Create PR draft](_img/143_02.png)
-
-Once you have created a draft pull request, you will see a badge indicating its status next to the title. 
 
 ### Improved branch picker
 
