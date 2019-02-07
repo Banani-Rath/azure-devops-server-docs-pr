@@ -48,15 +48,13 @@ To support full-text search queries, the collation settings of the SQL Server da
 
 To learn more, see one of the following topics:
 
--   [Full-Text Search (SQL Server)](http://go.microsoft.com/fwlink/?LinkId=247533)
+-   [sys.fulltext\_languages (Transact-SQL)](https://docs.microsoft.com/en-us/sql/relational-databases/system-catalog-views/sys-fulltext-languages-transact-sql?view=sql-server-2017)
 
--   [sys.fulltext\_languages (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=247534)
+-   [ALTER FULLTEXT INDEX (Transact-SQL)](https://docs.microsoft.com/en-us/sql/t-sql/statements/alter-fulltext-index-transact-sql?view=sql-server-2017)
 
--   [ALTER FULLTEXT INDEX (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=247535)
+-   [SQL Server 2008 Full-Text Search: Internals and Enhancements](https://docs.microsoft.com/en-us/previous-versions/sql/sql-server-2008/cc721269(v=sql.100))
 
--   [SQL Server 2008 Full-Text Search: Internals and Enhancements](http://go.microsoft.com/fwlink/?LinkId=247533)
-
--   [Query Fields, Operators, Values, and Variables](http://go.microsoft.com/fwlink/?LinkId=248569)
+-   [Query Fields, Operators, Values, and Variables](https://docs.microsoft.com/en-us/sql/t-sql/language-elements/language-elements-transact-sql?view=sql-server-2017)
 
 ## See Also
 
