@@ -44,8 +44,8 @@ Upgrading to Azure DevOps Server is only supported from Team Foundation Server 2
 
 1. If you're setting up a new Azure DevOps Server instance, you need to create two Azure SQL Databases:
 
-    - Tfs_Configuration
-    - Tfs_Collection
+    - AzureDevOps_Configuration
+    - AzureDevOps_Collection
 
     > [!NOTE]
     > If you're using existing databases to either upgrade a new version of Azure DevOps Server or to migrate an up-to-date instance of Azure DevOps Server to Azure SQL Database, you can skip this step.
@@ -81,6 +81,6 @@ That’s it! You now have an Azure DevOps Server instance running on Azure SQL.
 
 ## See also
 
-[Install Azure DevOps Server](/tfs/server/install-2013/install-tfs)
+[Install Azure DevOps Server](/tfs/server/install/install-2013/install-tfs)
 
 [Manually install SQL Server for Azure DevOps Server](/tfs/server/install/sql-server/install-sql-server)

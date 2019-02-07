@@ -124,7 +124,7 @@ As part of moving the collection, you must restore, copy, or otherwise move the 
 -   [Copy Databases with Backup and Restore](http://go.microsoft.com/fwlink/?LinkId=267145)
 
 <a name="attach-coll"></a>
-## 5. Attach the collection
+## 4. Attach the collection
 
 After you restore the collection database, you can attach the collection to the deployment of TFS to which you want to move it. If the deployment you're moving to uses reporting, a reporting folder and default reports will be built for the collection you're attaching as part of the process.
 
@@ -170,7 +170,7 @@ After you restore the collection database, you can attach the collection to the 
 14. (Optional) Modify or remove the Web application from the list of Web applications. For more information, see [Modify or Remove Access Between a SharePoint Web Application and Team Foundation Server](modify-remove-access-shareport-tfs.md).
 
 <a name="config-moved-team-coll"></a>
-## 6. Configure the moved project collection
+## 5. Configure the moved project collection
 
 You can skip this procedure if you moved the collection in the same domain, intend to use the same Web application that previously supported the collection, **and** you want to allow access for the administrators of that collection to this deployment of TFS.
 
@@ -183,7 +183,7 @@ After you have moved a collection, you must update the Web application and permi
     For information about this task, see [Modify a Project Collection](manage-team-project-collections.md) and [Set administrator permissions for project collections](add-administrator-tfs.md).
 
 <a name="config-projs"></a>
-## Configure projects
+## 6. Configure projects
 
 You can skip this procedure if you moved the collection in the same domain and you want to allow access for the users of projects in that collection to this deployment of TFS.
 
