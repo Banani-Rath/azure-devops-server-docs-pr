@@ -19,6 +19,18 @@ You can use Azure DevOps Server and Visual Studio Team Foundation Server (TFS) t
 
 To learn about  what's new with the cloud service offering, see [Azure DevOps Services Features update](https://www.visualstudio.com/news/releasenotes/tfs2018-relnotes).  
 
+## Azure DevOps Server 2019 RC2
+
+### Summary of What's New in Azure DevOps Server 2019 RC2
+
+We have added the following features to RC2:
+
+* [Link GitHub Enterprise commits and pull requests to Azure Boards work items](#link-github-enterprise-commits-and-pull-requests-to-azure-boards-work-items)
+* [Configure builds using YAML](#configure-builds-using-yaml)
+* [Card annotations include bugs and custom work item types](#card-annotations-include-bugs-and-custom-work-item-types)
+* [Improved branch picker](#improved-branch-picker)
+* [Changes to Artifacts and Release Management Deployment Pipeline Licensing](#changes-to-artifacts-and-release-management-deployment-pipeline-licensing)
+
 ## Azure DevOps Server 2019 RC1
 
 >[!NOTE]  
