@@ -51,7 +51,7 @@ As an alternative, the databases might be distributed across many servers and se
 
 -   the database that is located on the server that is running Analysis Services
 
-1 If your SharePoint databases are scaled across multiple servers, you cannot use the Scheduled Backups feature to back them up. You will have to manually configure backups for those databases, and ensure that those backups are synchronized with the backups for TFS databases. See [Manually back up Team Foundation Server](manually-backup-tfs.md) for more details.
+If your SharePoint databases are scaled across multiple servers, you cannot use the Scheduled Backups feature to back them up. You will have to manually configure backups for those databases, and ensure that those backups are synchronized with the backups for TFS databases. See [Manually back up Team Foundation Server](manually-backup-tfs.md) for more details.
 
 ![Complex TFS database structure](../_img/ic372332.png)
 
@@ -109,7 +109,7 @@ Understanding the types of backups available can help you determine the best opt
 
 **Full data backups (databases)**   A full database backup is necessary for the recoverability of your deployment. A full backup includes part of the transaction log so that you can recover the full backup. Full backups are self-contained in that they represent the entire database as it existed when you backed it up. For more information, see the following page on the Microsoft Web site: [Full Database Backups](http://go.microsoft.com/fwlink/?LinkId=115462).
 
-**Differential data backups (databases)   **A differential database backup records only the data that has changed since the last full database backup, which is called the differential base. Differential database backups are smaller and faster than full database backups. This option saves backup time at the cost of increased complexity. For large databases, differential backups can occur at shorter intervals than database backups, which reduces the work-loss exposure. For more information, see the following page on the Microsoft Web site: [Differential Database Backups](http://go.microsoft.com/fwlink/?LinkId=158819).
+**Differential data backups (databases)** A differential database backup records only the data that has changed since the last full database backup, which is called the differential base. Differential database backups are smaller and faster than full database backups. This option saves backup time at the cost of increased complexity. For large databases, differential backups can occur at shorter intervals than database backups, which reduces the work-loss exposure. For more information, see the following page on the Microsoft Web site: [Differential Database Backups](http://go.microsoft.com/fwlink/?LinkId=158819).
 
 You should also back up your transaction logs regularly. These backups are necessary for recovering data when you use the full database backup model. If you back up transaction logs, you can recover the database to the point of failure or to another specific point in time.
 
