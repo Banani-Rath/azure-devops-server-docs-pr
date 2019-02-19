@@ -2,8 +2,8 @@
 title: Setting up HTTPS
 description: Setting up HTTPS with Secure Sockets Layer (SSL) for Team Foundation Server
 ms.topic: conceptual
-ms.manager: douge
-ms.author: elbatk
+ms.manager: jillfra
+ms.author: aaronha
 author: elbatk
 ms.date: 08/31/2016
 ms.prod: devops-server
@@ -21,56 +21,37 @@ Before you choose a configuration, review the advantages and disadvantages descr
 ## In this topic
 
 -   **Conceptual information**
-
     -   [Advantages of Supporting HTTPS with SSL in Addition to HTTP](#advantages-supporting-tfs-ssl)
-
     -   [Advantages of Requiring HTTPS with SSL for All Connections](#advantages-requiring-https)
-
     -   [Disadvantages of Supporting or Requiring HTTPS with SSL](#disadvantages-supporting-https)
-
     -   [Prerequisites](#prereqs)
-
     -   [Assumptions](#assumptions)
 
 -   **Server configuration**
-
     -   [Obtaining a Certificate](#obtaining-certificate)
-
     -   [Requesting, installing, and configuring websites with a certificate](#request-install-config-websites)
-
     -   [Configuring Your Firewall](#config-firewall)
-
     -   [Configuring SQL Server Reporting Services](#config-sql-svr-reporting)
-
-    -   [Configuring HTTPS for TFS](#config-https)
+   -   [Configuring HTTPS for TFS](#config-https)
 
 -   **Optional configuration tasks**
-
     -   [Testing Access to Your Deployment (Optional)](#test-access-to-deployment)
-
     -   [Configuring Your Deployment to Require HTTPS with SSL (Optional)](#config-deply-require-https)
 
 -   **Build configuration**
-
     -   [Installing the Certificate on Build Servers](#installing-certificats-build-svrs)
-
     -   [Updating the Build Configuration](#updating-build-configs)
 
 -   **Release Management configuration**
-
     -   [Release Management and TFS](#release-mgt-tfs)
-
     -   [Configure Release Management Server to use HTTPS](#config-release-mgt-server)
-
     -   [Making all the Release Management connections with HTTPS](#making-release-mgt-conn)
 
 -   **Client configuration**
-
-    1.  [Configuring Client Computers](#config-client-computers)
+    -  [Configuring Client Computers](#config-client-computers)
 
 -   **Git repository configuration**
-
-    1.  [Configuring Git for certificates](#config-git)
+    -  [Configuring Git for certificates](#config-git)
 
 <a name="advantages-supporting-tfs-ssl"></a>
 ## Advantages of Supporting HTTPS with SSL in Addition to HTTP

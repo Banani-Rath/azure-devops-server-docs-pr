@@ -1,4 +1,4 @@
-# Team Foundation Server (TFS) administration
+# Administration
 
 Team Foundation Server, the on-premises version of <a href="/azure/devops/index">Azure DevOps</a>, provides integrated tools to support collaborative software development, including Git repositories, continuous integration and continuous deployment (CI/CD), and interactive Kanban boards.
 

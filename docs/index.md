@@ -7,8 +7,8 @@ hide_bc: true
 ms.topic: hub-page
 ms.prod: devops-server
 ms.technology: tfs-admin
-ms.manager: douge 
-ms.author: elbatk 
+ms.manager: jillfra 
+ms.author: aaronha 
 ms.date: 01/30/2019
 featureFlags:
 - clicktale 

@@ -5,8 +5,8 @@ description: The newest version of Team Foundation Server (TFS) is Azure DevOps 
 ms.prod: devops-server
 ms.technology: tfs-admin
 toc: show
-ms.manager: douge
-ms.author: douge
+ms.manager: jillfra
+ms.author: kaelli
 author: douge
 ms.topic: conceptual
 ms.date: 11/19/2018

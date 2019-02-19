@@ -3,8 +3,8 @@ title: Open admin console
 description: Open Team Foundation Server administration console
 ms.prod: devops-server
 ms.technology: tfs-admin
-ms.manager: douge
-ms.author: elbatk
+ms.manager: jillfra
+ms.author: aaronha
 author: elbatk
 ms.topic: conceptual
 ms.date: 09/26/2016

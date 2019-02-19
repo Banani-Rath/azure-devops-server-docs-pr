@@ -1,8 +1,8 @@
 ---
 title: Install Team Foundation Server
 description: Install Team Foundation Server
-ms.manager: douge
-ms.author: elbatk
+ms.manager: jillfra
+ms.author: aaronha
 author: elbatk
 ms.topic: conceptual
 ms.date: 09/01/2016

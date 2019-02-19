@@ -2,8 +2,8 @@
 title: Rebuild the client cache
 description: Rebuild the client cache for Team Foundation Server
 ms.topic: conceptual
-ms.manager: douge
-ms.author: elbatk
+ms.manager: jillfra
+ms.author: aaronha
 author: elbatk
 ms.date: 08/18/2016
 ms.prod: devops-server

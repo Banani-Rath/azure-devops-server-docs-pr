@@ -1,8 +1,8 @@
 ---
 title: Team Foundation Server Databases
 description: Team Foundation Server Databases
-ms.manager: douge
-ms.author: elbatk
+ms.manager: jillfra
+ms.author: aaronha
 author: elbatk
 ms.topic: conceptual
 ms.date: 01/13/2017

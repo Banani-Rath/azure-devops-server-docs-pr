@@ -3,8 +3,8 @@ title: Change groups and permissions with TFSSecurity
 description: Change groups and permissions in Azure DevOps Services and TFS from the command-line using TFSSecurity
 ms.prod: devops-server
 ms.technology: tfs-admin
-ms.manager: douge
-ms.author: elbatk
+ms.manager: jillfra
+ms.author: aaronha
 author: elbatk
 ms.topic: conceptual
 ms.date: 02/12/2018

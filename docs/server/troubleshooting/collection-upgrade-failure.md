@@ -4,8 +4,8 @@ description: What to do when upgrading one or more Team Foundation Server (TFS) 
 ms.prod: devops-server
 ms.technology: tfs-admin
 toc: show
-ms.manager: douge
-ms.author: elbatk
+ms.manager: jillfra
+ms.author: aaronha
 author: elbatk
 ms.topic: conceptual
 ms.date: 11/08/2017

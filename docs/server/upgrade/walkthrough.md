@@ -3,8 +3,8 @@ title: Upgrade Team Foundation Server
 description: Walkthrough of a standard upgrade of a two server deployment from TFS 2012 to TFS 2015.
 ms.prod: devops-server
 ms.technology: tfs-admin
-ms.manager: douge
-ms.author: elbatk
+ms.manager: jillfra
+ms.author: aaronha
 author: elbatk
 ms.topic: conceptual
 ms.date: 08/04/2016

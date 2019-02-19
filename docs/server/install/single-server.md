@@ -4,8 +4,8 @@ description: Install and set up Azure DevOps Server, Team Foundation Server, or 
 ms.prod: devops-server
 ms.technology: tfs-admin
 toc: show
-ms.manager: douge
-ms.author: elbatk
+ms.manager: jillfra
+ms.author: aaronha
 author: elbatk
 ms.topic: conceptual
 ms.date: 11/12/2018
@@ -66,7 +66,7 @@ With the **New Deployment - Basic** scenario, choose the following settings:
 
 - **Language**: Select the language to use for configuring.
 - **SQL Server Instance**: Select whether to install SQL Server Express or use an existing SQL Server instance.
-- **Application Tier**: Select the website settings to use, including whether to use HTTP or HTTPS bindings. For more information, see [Web site settings](/azure/devops/security/websitesettings).
+- **Application Tier**: Select the website settings to use, including whether to use HTTP or HTTPS bindings. For more information, see [Web site settings](../admin/websitesettings.md).
 - **Search**: Select whether to install and configure Code Search features or use an existing search service. For more information, see [Configure search](/azure/devops/project/search/administration#config-tfs).
 
 If you're using the **New Deployment - Advanced** scenario, choose the following additional settings.

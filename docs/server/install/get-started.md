@@ -4,8 +4,8 @@ description: Use the new install guide for Team Foundation Server to set up TFS 
 ms.prod: devops-server
 ms.technology: tfs-admin
 toc: show
-ms.manager: douge
-ms.author: elbatk
+ms.manager: jillfra
+ms.author: aaronha
 author: elbatk
 ms.topic: conceptual
 ms.date: 11/12/2018

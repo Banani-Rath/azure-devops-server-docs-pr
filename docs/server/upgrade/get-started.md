@@ -4,8 +4,8 @@ description: Upgrade your instance of Azure DevOps Server or Team Foundation Ser
 ms.prod: devops-server
 ms.technology: tfs-admin
 toc: show
-ms.manager: douge
-ms.author: elbatk
+ms.manager: jillfra
+ms.author: aaronha
 author: elbatk
 ms.topic: conceptual
 ms.date: 11/06/2018

@@ -1,8 +1,8 @@
 ---
 title: Run the TFS Upgrade Wizard
 description: Run the TFS Upgrade Wizard
-ms.manager: douge
-ms.author: elbatk
+ms.manager: jillfra
+ms.author: aaronha
 author: elbatk
 ms.topic: conceptual
 ms.date: 09/01/2016

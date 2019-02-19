@@ -2,8 +2,8 @@
 title: Cache settings for an app-tier server
 description: Change cache settings for an application-tier server in Team Foundation Server
 ms.topic: conceptual
-ms.manager: douge
-ms.author: elbatk
+ms.manager: jillfra
+ms.author: aaronha
 author: elbatk
 ms.date: 08/18/2016
 ms.prod: devops-server

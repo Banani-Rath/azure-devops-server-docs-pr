@@ -2,8 +2,8 @@
 title: Restore Lab Management components
 description: Restore Lab Management components
 ms.topic: conceptual
-ms.manager: douge
-ms.author: elbatk
+ms.manager: jillfra
+ms.author: aaronha
 author: elbatk
 ms.date: 08/31/2016
 ms.prod: devops-server

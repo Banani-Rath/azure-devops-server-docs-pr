@@ -1,8 +1,8 @@
 ---
 title: Configure Team Foundation Server using the advanced configuration
 description: Configure Team Foundation Server using the advanced configuration
-ms.manager: douge
-ms.author: elbatk
+ms.manager: jillfra
+ms.author: aaronha
 author: elbatk
 ms.topic: conceptual
 ms.date: 09/01/2016

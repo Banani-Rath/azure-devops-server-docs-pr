@@ -1,8 +1,8 @@
 ---
 title: TFS application tier will use the same hardware
 description: TFS application tier will use the same hardware
-ms.manager: douge
-ms.author: elbatk
+ms.manager: jillfra
+ms.author: aaronha
 author: elbatk
 ms.topic: conceptual
 ms.date: 09/01/2016

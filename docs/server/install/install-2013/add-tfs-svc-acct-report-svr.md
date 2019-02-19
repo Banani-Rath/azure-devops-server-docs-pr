@@ -1,8 +1,8 @@
 ---
 title: Add the TFS service account to the report server
 description: Add the TFS service account to the report server
-ms.manager: douge
-ms.author: elbatk
+ms.manager: jillfra
+ms.author: aaronha
 author: elbatk
 ms.topic: conceptual
 ms.date: 09/01/2016

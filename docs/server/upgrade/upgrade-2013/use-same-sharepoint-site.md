@@ -1,8 +1,8 @@
 ---
 title: Use the same SharePoint site for TFS that you have right now
 description: Use the same SharePoint site for TFS that you have right now
-ms.manager: douge
-ms.author: elbatk
+ms.manager: jillfra
+ms.author: aaronha
 author: elbatk
 ms.topic: conceptual
 ms.date: 09/01/2016

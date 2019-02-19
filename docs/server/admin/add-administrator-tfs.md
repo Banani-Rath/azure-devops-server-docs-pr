@@ -4,8 +4,8 @@ description: Add server, project collection, or project administrators to Azure 
 ms.prod: devops-server
 ms.technology: tfs-admin
 ms.topic: conceptual
-ms.manager: douge
-ms.author: elbatk
+ms.manager: jillfra
+ms.author: aaronha
 author: elbatk
 ms.date: 03/29/2017
 ---

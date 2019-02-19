@@ -1,19 +1,19 @@
-﻿---
-title: Requirements and compatibility | Azure DevOps Server and Team Foundation Server setup, upgrade, and administration
-description: This article describes many kinds of requirements and compatibility for Azure DevOps Server and TFS, including hardware, operating systems, SQL Server, client versions, server versions, and browsers.
+---
+title: Requirements for setup, upgrade, and administration
+titleSuffix: Azure DevOps Server & TFS  
+description: Describes the requirements to install Azure DevOps Server and TFS, including hardware, operating systems, SQL Server.
 ms.prod: devops-server
 ms.technology: tfs-admin
 toc: show
-ms.manager: douge
-ms.author: elbatk
-author: elbatk
+ms.manager: jillfra
+ms.author: aaronha
 ms.topic: conceptual
-ms.date: 11/14/2018
+ms.date: 02/20/2019
 ---
 
 # Requirements and compatibility
 
-**Azure DevOps Server 2019 RC1** | **TFS 2018** | **TFS 2017** | **TFS 2015** | **TFS 2013**
+[!INCLUDE [temp](_shared/version-tfs-all-versions.md)]
 
 ## <a name="operating-systems"></a> Operating systems
 

@@ -1,8 +1,8 @@
 ---
 title: Team Foundation Server Architecture
 description: Describes the overall architecture of Team Foundation Server
-ms.manager: douge
-ms.author: elbatk
+ms.manager: jillfra
+ms.author: aaronha
 author: elbatk
 ms.topic: conceptual
 ms.date: 08/16/2016

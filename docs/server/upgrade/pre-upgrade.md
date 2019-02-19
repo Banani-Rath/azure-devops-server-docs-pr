@@ -3,8 +3,8 @@ title: Use TfsPreUpgrade
 description: Use TfsPreUpgrade to reduce the time required to upgrade TFS 2013 to TFS 2015
 ms.prod: devops-server
 ms.technology: tfs-admin
-ms.manager: douge
-ms.author: elbatk
+ms.manager: jillfra
+ms.author: aaronha
 author: elbatk
 ms.topic: conceptual
 ms.date: 08/04/2016

@@ -1,8 +1,8 @@
 ---
 title: Create a server farm
 description: How to create a Team Foundation server farm (high availability)
-ms.manager: douge
-ms.author: elbatk
+ms.manager: jillfra
+ms.author: aaronha
 author: elbatk
 ms.topic: conceptual
 ms.date: 09/01/2016

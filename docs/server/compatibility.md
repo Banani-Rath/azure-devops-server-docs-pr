@@ -4,8 +4,8 @@ description: Describes compatibility for Azure DevOps and TFS -- operating syste
 ms.prod: devops-server
 ms.technology: tfs-admin
 toc: show
-ms.manager: douge
-ms.author: elbatk
+ms.manager: jillfra
+ms.author: aaronha
 author: elbatk
 ms.topic: conceptual
 ms.date: 11/07/2018

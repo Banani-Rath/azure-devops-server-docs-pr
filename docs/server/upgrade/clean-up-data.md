@@ -4,8 +4,8 @@ description: Clean up stale data in your Team Foundation Server (TFS) instance
 ms.prod: devops-server
 ms.technology: tfs-admin
 toc: show
-ms.manager: douge
-ms.author: elbatk
+ms.manager: jillfra
+ms.author: aaronha
 author: elbatk
 ms.topic: conceptual
 ms.date: 08/04/2016

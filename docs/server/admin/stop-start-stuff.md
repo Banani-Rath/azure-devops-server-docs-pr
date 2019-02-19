@@ -2,8 +2,8 @@
 title: Stop and start services, application pools, and websites
 description: Stop and start services, application pools, and websites
 ms.topic: conceptual
-ms.manager: douge
-ms.author: elbatk
+ms.manager: jillfra
+ms.author: aaronha
 author: elbatk
 ms.date: 09/01/2016
 ms.prod: devops-server

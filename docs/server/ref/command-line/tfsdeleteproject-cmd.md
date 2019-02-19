@@ -3,8 +3,8 @@ title: Delete a project
 description: Delete a project in TFS from the command-line using TFSDeleteProject
 ms.prod: devops-server
 ms.technology: tfs-admin
-ms.manager: douge
-ms.author: elbatk
+ms.manager: jillfra
+ms.author: aaronha
 author: elbatk
 ms.topic: conceptual
 ms.date: 08/04/2016

@@ -1,8 +1,8 @@
 ---
 title: Manually install SQL Server for Azure DevOps Server 
 description: Manually install SQL Server for Azure DevOps Server or Team Foundation Server
-ms.manager: douge
-ms.author: elbatk
+ms.manager: jillfra
+ms.author: aaronha
 author: elbatk
 ms.topic: conceptual
 ms.date: 11/01/2018

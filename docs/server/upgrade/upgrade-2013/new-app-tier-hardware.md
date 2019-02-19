@@ -1,8 +1,8 @@
 ---
 title: TFS Application Tier will use different hardware than it’s using right now
 description: TFS Application Tier will use different hardware than it’s using right now
-ms.manager: douge
-ms.author: elbatk
+ms.manager: jillfra
+ms.author: aaronha
 author: elbatk
 ms.topic: conceptual
 ms.date: 09/01/2016

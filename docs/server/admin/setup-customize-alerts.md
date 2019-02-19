@@ -1,8 +1,8 @@
 ---
 title: Configure an SMTP server
 description: Configure an SMTP server and customize email for alerts and feedback requests in TFS
-ms.manager: douge
-ms.author: elbatk
+ms.manager: jillfra
+ms.author: aaronha
 author: elbatk
 ms.date: 09/01/2016
 ms.prod: devops-server

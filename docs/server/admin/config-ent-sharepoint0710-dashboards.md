@@ -2,8 +2,8 @@
 title: Configure SharePoint 2007 or 2010
 description: Configure the Enterprise Editions of SharePoint Server 2010 or Office SharePoint Server 2007 for Dashboard Compatibility with Team Foundation Server
 ms.topic: conceptual
-ms.manager: douge
-ms.author: elbatk
+ms.manager: jillfra
+ms.author: aaronha
 author: elbatk
 ms.date: 08/18/2016
 ms.prod: devops-server

@@ -3,8 +3,8 @@ title: Manually Install SharePoint products for Team Foundation Server
 description: Manually Install SharePoint products for Team Foundation Server
 ms.prod: devops-server
 ms.technology: tfs-admin
-ms.manager: douge
-ms.author: elbatk
+ms.manager: jillfra
+ms.author: aaronha
 author: elbatk
 ms.topic: conceptual
 ms.date: 09/09/2017

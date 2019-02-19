@@ -3,8 +3,8 @@ title: Configure Lab Management
 description: Use TFSLabConfig to manage and configure the lab service provide by Visual Studio Lab Management.
 ms.prod: devops-server
 ms.technology: tfs-admin
-ms.manager: douge
-ms.author: elbatk
+ms.manager: jillfra
+ms.author: aaronha
 author: elbatk
 ms.topic: conceptual
 ms.date: 08/04/2016

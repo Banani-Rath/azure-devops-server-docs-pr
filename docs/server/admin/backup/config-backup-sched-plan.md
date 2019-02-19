@@ -5,8 +5,8 @@ ms.prod: devops-server
 ms.technology: tfs-admin
 toc: show
 ms.topic: conceptual
-ms.manager: douge
-ms.author: elbatk
+ms.manager: jillfra
+ms.author: aaronha
 author: elbatk
 ms.date: 10/19/2017
 ---

@@ -1,8 +1,8 @@
 ---
 title: Locate or change the product key
 description: Locate or change the product key for Team Foundation Server
-ms.manager: douge
-ms.author: elbatk
+ms.manager: jillfra
+ms.author: aaronha
 author: elbatk
 ms.topic: conceptual
 ms.date: 08/18/2016

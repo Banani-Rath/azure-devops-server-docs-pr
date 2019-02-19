@@ -4,8 +4,8 @@ description: Understand how to view different versions of the Azure DevOps and T
 ms.prod: devops-server
 ms.technology: tfs-admin
 ms.topic: conceptual
-ms.manager: douge
-ms.author: douge
+ms.manager: jillfra
+ms.author: kaelli
 author: elbatk
 ms.date: 08/27/2017
 ---

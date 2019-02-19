@@ -1,8 +1,8 @@
 ---
 title: Examples of simple Topology for Team Foundation Server
 description: Examples of simple Topology for Team Foundation Server
-ms.manager: douge
-ms.author: elbatk
+ms.manager: jillfra
+ms.author: aaronha
 author: elbatk
 ms.topic: conceptual
 ms.date: 08/16/2016

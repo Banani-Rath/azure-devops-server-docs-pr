@@ -3,8 +3,8 @@ title: What's new for Azure DevOps Server and Team Foundation Server | TFS
 description: Your guide to new features that support DevOps - made available with Azure DevOps Server and Team Foundation Server
 ms.technology: tfs-admin
 ms.prod: devops-server
-ms.manager: douge
-ms.author: elbatk
+ms.manager: jillfra
+ms.author: aaronha
 author: elbatk
 ms.topic: conceptual
 ms.date: 11/15/2018

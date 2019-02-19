@@ -2,37 +2,31 @@
 title: Service accounts and dependencies
 description: Service accounts and dependencies in Team Foundation Server
 ms.topic: conceptual
-ms.manager: douge
-ms.author: elbatk
+ms.manager: jillfra
+ms.author: aaronha
 author: elbatk
 ms.date: 09/01/2016
 ms.prod: devops-server
 ms.technology: tfs-admin
 ---
 
-# Service accounts and dependencies in Team Foundation Server
+# Service accounts and dependencies
 
-**TFS 2018** | **TFS 2017** | **TFS 2015** | **TFS 2013**
+[!INCLUDE [temp](../_shared/version-tfs-all-versions.md)]
 
 You can better manage Visual Studio Team Foundation Server (TFS) if you understand the services and several service accounts that every deployment of TFS includes and on which every deployment depends. Depending on how you have installed and configured TFS, these services and service accounts might all run on one computer, or they might run on many computers. This changes certain aspects of managing your deployment. For example, if the server-side components of your deployment run on more than one computer, you must ensure that the service accounts your deployment uses have the access and permissions they require to function correctly.
 
-Team Foundation Server has services and service accounts that run on the following computers in a deployment:
-
--   any server that hosts one or more databases for Team Foundation Server
-
--   any server that hosts components of the application tier for Team Foundation
-
--   any computer that is running Team Foundation Server Proxy
-
--   any build computer
-
--   any test machine
-
--   any computer that is running one or more components of Visual Studio Lab Management
+Team Foundation Server has services and service accounts that run on the following computers in a deployment:  
+-   any server that hosts one or more databases for Team Foundation Server  
+-   any server that hosts components of the application tier for Team Foundation  
+-   any computer that is running Team Foundation Server Proxy  
+-   any build computer  
+-   any test machine  
+-   any computer that is running one or more components of Visual Studio Lab Management  
 
 You can install and deploy different features of TFS in various ways. The distribution of features in your deployment determines what services and service accounts run on which physical computers. In addition, you might need to manage the service accounts for software programs that are configured to work with TFS, such as the service accounts for SharePoint Products and SQL Server.
 
-## Service Accounts for Team Foundation Server
+## Service accounts  
 
 Although TFS uses several service accounts, you can use the same domain or workgroup account for most or all of them. For example, you can use the same domain account "Contoso\\Example" as both the service account for Team Foundation Server (*TFSService*) and the data sources account for SQL Server Reporting Services (*TFSReports*). However, different service accounts can require different permission levels. For example, *TFSService* must have the **Log on as a service** permission, and *TFSReports* must have the **Allow log on locally** permission. If you use the same account "Contoso\\Example" for both, you must grant both of these permissions to it. In addition, *TFSService* requires significantly more permissions to operate correctly than those that *TFSReports* requires, as the table later in this topic shows. For security purposes, you should consider using separate accounts for these two service accounts.
 
@@ -98,12 +92,11 @@ For more information about service accounts for SQL Server, see the following pa
 
 ### Q: Do service accounts require a license?
 
-**A:** No. Service accounts don’t require a separate license.
+**A:** No. Service accounts don't require a separate license.
 
 ### Q: How do I change the password or account for a service account?
 
-**A:** See the following topics:
+## Related articles
 
-* [Change the service account or password for SQL Server Reporting Services](change-service-account-or-password-sql-reporting.md) 
-
-* [Change the service account or password for Team Foundation Server](change-service-account-password.md)
+* [Change the service account or password for SQL Server Reporting Services](change-service-account-or-password-sql-reporting.md)  
+* [Change the service account or password for Azure DevOps](change-service-account-password.md)  

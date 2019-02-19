@@ -2,8 +2,8 @@
 title: Change credentials for Team Foundation Server
 description: Change the service account or password for Team Foundation Server
 ms.topic: conceptual
-ms.manager: douge
-ms.author: elbatk
+ms.manager: jillfra
+ms.author: aaronha
 author: elbatk
 ms.date: 09/01/2016
 ms.prod: devops-server

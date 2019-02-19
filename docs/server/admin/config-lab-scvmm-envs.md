@@ -2,8 +2,8 @@
 title: Configure Lab Management 
 description: Configure Lab Management for SCVMM environments and Team Foundation Server
 ms.topic: conceptual
-ms.manager: douge
-ms.author: elbatk
+ms.manager: jillfra
+ms.author: aaronha
 author: elbatk
 ms.date: 08/18/2016
 ms.prod: devops-server
