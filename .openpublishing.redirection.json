@@ -397,83 +397,83 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "docs/server//troubleshooting/collection-upgrade-failure.md",
-      "redirect_url": "/azure/devops/troubleshooting/collection-upgrade-failure",
+      "source_path": "docs/server/troubleshooting/collection-upgrade-failure.md",
+      "redirect_url": "/azure/devops/server/troubleshooting/collection-upgrade-failure",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/server/upgrade/change-product-key.md",
-      "redirect_url": "/azure/devops/upgrade/change-product-key",
+      "redirect_url": "/azure/devops/server/upgrade/change-product-key",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/server/upgrade/clean-up-data.md",
-      "redirect_url": "/azure/devops/upgrade/clean-up-data",
+      "redirect_url": "/azure/devops/server/upgrade/clean-up-data",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/server/upgrade/express.md",
-      "redirect_url": "/azure/devops/upgrade/express",
+      "redirect_url": "/azure/devops/server/upgrade/express",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/server/upgrade/get-started.md",
-      "redirect_url": "/azure/devops/upgrade/get-started",
+      "redirect_url": "/azure/devops/server/upgrade/get-started",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/server/upgrade/pre-production.md",
-      "redirect_url": "/azure/devops/upgrade/pre-production",
+      "redirect_url": "/azure/devops/server/upgrade/pre-production",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/server/upgrade/pre-upgrade.md",
-      "redirect_url": "/azure/devops/upgrade/pre-upgrade",
+      "redirect_url": "/azure/devops/server/upgrade/pre-upgrade",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/server/upgrade/run-upgrade-wizard.md",
-      "redirect_url": "/azure/devops/upgrade/run-upgrade-wizard",
+      "redirect_url": "/azure/devops/server/upgrade/run-upgrade-wizard",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/server/upgrade/tfs-2005-to-2015.md",
-      "redirect_url": "/azure/devops/upgrade/tfs-2005-to-2015",
+      "redirect_url": "/azure/devops/server/upgrade/tfs-2005-to-2015",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/server/upgrade/walkthrough.md",
-      "redirect_url": "/azure/devops/upgrade/walkthrough",
+      "redirect_url": "/azure/devops/server/upgrade/walkthrough",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/server/upgrade/upgrade-2013/backup-and-restore-data.md",
-      "redirect_url": "/azure/devops/upgrade/upgrade-2013/backup-and-restore-data",
+      "redirect_url": "/azure/devops/server/upgrade/upgrade-2013/backup-and-restore-data",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/server/upgrade/upgrade-2013/new-app-tier-hardware.md",
-      "redirect_url": "/azure/devops/upgrade/upgrade-2013/new-app-tier-hardware",
+      "redirect_url": "/azure/devops/server/upgrade/upgrade-2013/new-app-tier-hardware",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/server/upgrade/upgrade-2013/same-app-tier-hardware.md",
-      "redirect_url": "/azure/devops/upgrade/upgrade-2013/same-app-tier-hardware",
+      "redirect_url": "/azure/devops/server/upgrade/upgrade-2013/same-app-tier-hardware",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/server/upgrade/upgrade-2013/setup-sql-server.md",
-      "redirect_url": "/azure/devops/upgrade/upgrade-2013/setup-sql-server",
+      "redirect_url": "/azure/devops/server/upgrade/upgrade-2013/setup-sql-server",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/server/upgrade/upgrade-2013/upgrade-2013-requirements.md",
-      "redirect_url": "/azure/devops/upgrade/upgrade-2013/upgrade-2013-requirements",
+      "redirect_url": "/azure/devops/server/upgrade/upgrade-2013/upgrade-2013-requirements",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/server/upgrade/upgrade-2013/use-same-sharepoint-site.md",
-      "redirect_url": "/azure/devops/upgrade/upgrade-2013/use-same-sharepoint-site",
+      "redirect_url": "/azure/devops/server/upgrade/upgrade-2013/use-same-sharepoint-site",
       "redirect_document_id": false
     }
   ]
