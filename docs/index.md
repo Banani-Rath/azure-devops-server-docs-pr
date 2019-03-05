@@ -14,11 +14,14 @@ featureFlags:
 - clicktale 
 ---
 
+
+<!--- NEEDS UPDATE, add migration guide, and ??? ---> 
+
 <div id="main" class="v2">
     <div class="container">
         <h1>Azure DevOps Server Documentation</h1>
         <p>Azure DevOps Server, previously named Visual Studio Team Foundation Server, is the on-premises version of <a href="/azure/devops/index">Azure DevOps Services</a>. Azure DevOps Server provides integrated tools to support collaborative software development, including Git repositories, continuous integration and continuous deployment (CI/CD), and interactive Kanban boards.</p>
-        <p><i><a href="server/tfs-is-now-azure-devops-server.md">Team Foundation Server is now called Azure DevOps Server</a></i></p><br/>
+        <p><i><a href="tfs-is-now-azure-devops-server.md">Team Foundation Server is now called Azure DevOps Server</a></i></p><br/>
         <ul class="pivots">
             <li>
                 <a href="#index"></a>
@@ -50,7 +53,7 @@ featureFlags:
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="server/install/get-started.md">
+                                        <a href="install/get-started.md">
                                         <div class="cardSize">
                                                 <div class="cardPadding">
                                                     <div class="card">
@@ -69,7 +72,7 @@ featureFlags:
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="server/upgrade/get-started.md">
+                                        <a href="upgrade/get-started.md">
                                             <div class="cardSize">
                                                 <div class="cardPadding">
                                                     <div class="card">
@@ -88,7 +91,7 @@ featureFlags:
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="server/whats-new.md">
+                                        <a href="whats-new.md">
                                             <div class="cardSize">
                                                 <div class="cardPadding">
                                                     <div class="card">
@@ -308,7 +311,7 @@ featureFlags:
                                 <h2 style="float: left; display: flex;">Administrative tools</h2>
                                 <ul id="index4" class="cardsFTitle panelContent singlePanelContent cols cols4" style="float: left; display: flex!important;">
                                     <li>
-                                        <a href="/tfs/server/index">
+                                        <a href="/tfs/admin/admin-quick-ref">
                                         <div class="cardSize">
                                             <div class="cardPadding">
                                                 <div class="card">

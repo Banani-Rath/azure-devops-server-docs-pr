@@ -1,7 +1,7 @@
 - name: Azure DevOps Server
-  tocHref: /tfs/
-  topicHref: /tfs/index
+  tocHref: /azure/devops/server/
+  topicHref: /azure/devops/server/index
   items:
-  - name: Azure DevOps Server & TFS
-    tocHref: /server
-    topicHref: /server/index
+  - name: Administration
+    tocHref: /azure/devops/server/
+    topicHref: /azure/devops/server/admin/admin-quick-ref

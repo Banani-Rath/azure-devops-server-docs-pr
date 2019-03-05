@@ -6,7 +6,9 @@
       "build_output_subfolder": "tfs-docs",
       "locale": "en-us",
       "monikers": [],
-      "moniker_ranges": [],
+      "moniker_ranges": [
+        "azure-devops || >= tfs-2013 <= tfs-2018 || >= azure-devops-2019"
+      ],
       "open_to_public_contributors": false,
       "type_mapping": {
         "Conceptual": "Content",
@@ -18,8 +20,7 @@
     }
   ],
   "notification_subscribers": [
-    "douge@microsoft.com",
-    "elbatk@microsoft.com",
+    "kaelli@microsoft.com",
     "egeaney@microsoft.com"
   ],
   "branches_to_filter": [],

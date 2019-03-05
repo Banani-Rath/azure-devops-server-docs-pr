@@ -33,10 +33,10 @@
     "globalMetadata": {
       "uhfHeaderId": "MSDocsHeader-AzureDevOps",
       "ms.topic": "article",
-      "ms.technology": "tfs-release-notes",
+      "ms.technology": "vs-devops-articles",
       "author": "erindormier",
       "ms.author": "egeaney",
-      "ms.manager": "douge",
+      "ms.manager": "jillfra",
       "ms.prod": "devops",
       "titleSuffix": "Azure DevOps Server & TFS",
       "ms.version": "ALM",

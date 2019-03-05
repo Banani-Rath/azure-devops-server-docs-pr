@@ -1,0 +1,296 @@
+- name: Administration
+  href: server/index.md
+- name: Overview
+  expanded: true
+  items:
+  - name: What's new?
+    href: whats-new.md
+  - name: TFS is now Azure DevOps Server
+    href: tfs-is-now-azure-devops-server.md
+  - name: What is Azure DevOps?
+    href: azure-devops-and-tfs.md
+  - name: Quick reference
+    href: admin/admin-quick-ref.md
+- name: Requirements & compatibility
+  items:
+  - name: Requirements 
+    href: requirements.md
+  - name: Client compatibility
+    href: compatibility.md
+    displayname: Browser support, Visual Studio, Office, Team Explorer, Team Explorer Everywhere, build agents, build controllers, Excel, Project, PowerPoint  
+  - name: Service account requirements
+    href: account-requirements.md
+  - name: Application service dependencies
+    href: admin/app-dependencies.md
+- name: Architecture & key concepts 
+  items:
+  - name: Components, terms, and key concepts
+    href: architecture/key-concepts.md
+  - name: About permissions and groups
+    href: /azure/devops/security/about-permissions?toc=/azure/devops/server/toc.json&bc=/azure/devops/server/breadcrumb/toc.json
+  - name: About access levels
+    href: /azure/devops/security/access-levels?toc=/azure/devops/server/toc.json&bc=/azure/devops/server/breadcrumb/toc.json  
+  - name: Architecture overview
+    href: architecture/architecture.md
+    items:
+    - name: Examples of simple topology
+      href: architecture/examples-simple-topo.md
+    - name: Examples of moderate topology
+      href: architecture/examples-moderate-topo.md
+    - name: Examples of complex topology
+      href: architecture/examples-complex-topo.md
+  - name: SQL Server databases
+    href: architecture/sql-server-databases.md
+  - name: Service accounts & dependencies
+    href: admin/service-accounts-dependencies.md
+  - name: Background job agent
+    href: architecture/background-job-agent.md
+- name: Install
+  items:
+  - name: Install get started 
+    href: install/get-started.md
+  - name: Install on a single server
+    href: install/single-server.md
+  - name: Install on two servers
+    href: install/dual-server.md
+  - name: Install on multiple servers
+    href: install/multiple-server.md
+  - name: Configure with Azure SQL and VMs
+    href: install/install-azure-sql.md
+  - name: Install TFS proxy for a remote site
+    href: install/install-proxy-setup-remote.md
+  - name: Install SQL Server
+    items:
+    - name: Install SQL Server
+      href: install/sql-server/install-sql-server.md
+    - name: Collation requirements
+      href: install/sql-server/collation-requirements.md
+    - name: Reporting services roles
+      href: install/sql-server/reporting-services-roles.md
+    - name: Use always-on availability groups
+      href: install/sql-server/use-always-on-groups.md
+    - name: SQL Server Reporting Services reports
+      href: /azure/devops/report/sql-reports/reporting-services-reports?toc=/azure/devops/server/toc.json&bc=/azure/devops/server/breadcrumb/toc.json 
+    - name: Add service account to Report Server
+      href: install/sql-server/add-tfs-svc-acct-report-svr.md
+  - name: TFS 2013
+    href: install/install-2013/install-tfs.md
+    items:
+    - name: Basic configuration
+      href: install/install-2013/config-tfs-basic.md
+    - name: Standard configuration
+      href: install/install-2013/config-tfs-standard.md
+    - name: Advanced configuration
+      href: install/install-2013/config-tfs-advanced.md
+    - name: Create high-availability farm
+      href: install/create-tfs-farm.md
+  - name: Manage SharePoint integration
+    href: admin/add-sharepoint-to-tfs.md
+    items:
+    - name: Install on same server
+      href: install/sharepoint/install-sharepoint.md
+    - name: Install on different server
+      href: install/sharepoint/setup-remote-sharepoint.md
+    - name: Configure SharePoint integration 
+      href: admin/config-ent-sharepoint0710-dashboards.md
+    - name: Configure enterprise app definition
+      href: install/sharepoint/config-enterprise-app-def.md
+    - name: Verify SharePoint
+      href: install/sharepoint/verify-sharepoint.md
+    - name: Move SharePoint to new hardware
+      href: install/sharepoint/move-sharepoint-new-hardware.md
+    - name: Modify or remove access of SharePoint web apps 
+      href: admin/modify-remove-access-sharepoint.md
+- name: Upgrade
+  items:
+  - name: Upgrade get started 
+    href: upgrade/get-started.md
+  - name: Clean up data
+    href: upgrade/clean-up-data.md
+  - name: Pre-upgrade
+    href: upgrade/pre-upgrade.md
+  - name: Pre-production
+    href: upgrade/pre-production.md
+  - name: Walkthrough
+    href: upgrade/walkthrough.md
+  - name: Upgrade TFS Express
+    href: upgrade/express.md
+  - name: Locate or change TFS product key
+    href: upgrade/change-product-key.md
+  - name: Upgrade TFS 2013
+    href: upgrade/upgrade-2013/upgrade-2013-requirements.md
+    items:
+    - name: Use new app tier hardware
+      href: upgrade/upgrade-2013/new-app-tier-hardware.md
+    - name: Use same app tier hardware
+      href: upgrade/upgrade-2013/same-app-tier-hardware.md
+    - name: Set up SQL Server
+      href: upgrade/upgrade-2013/setup-sql-server.md
+    - name: Use same SharePoint site
+      href: upgrade/upgrade-2013/use-same-sharepoint-site.md
+    - name: Back up & restore data
+      href: upgrade/upgrade-2013/backup-and-restore-data.md
+    - name: Run upgrade wizard
+      href: upgrade/run-upgrade-wizard.md
+  - name: Upgrade from TFS 2005
+    href: upgrade/tfs-2005-to-2015.md
+- name: Manage servers
+  items:
+  - name: Get started as an admin
+    href: /azure/devops/user-guide/project-admin-tutorial?toc=/tfs/toc.json&bc=/azure/devops/server/breadcrumb/toc.json&view=azure-devops-2019 
+    displayname: Azure DevOps Administration Console 
+  - name: Add server administrators
+    href: admin/add-administrator.md
+  - name: Open the administration console 
+    href: admin/open-admin-console.md
+  - name: Manage services and applications
+    items:
+    - name: Configure an SMTP server
+      href: admin/setup-customize-alerts.md
+    - name: Configure the project portal
+      href: /azure/devops/report/sharepoint-dashboards/share-information-using-the-project-portal?toc=/azure/devops/server/toc.json&bc=/azure/devops/server/breadcrumb/toc.json
+    - name: Change service account password
+      href: admin/change-service-account-password.md
+    - name: Stop and start services, app pools, and websites
+      href: admin/stop-start-services-pools.md
+    - name: Manage TFVC file types
+      href: admin/manage-file-types.md
+    - name: Change app tier caching
+      href: admin/change-caching-app-tier.md
+  - name: Back up & restore
+    items:
+    - name: Back up & restore get started
+      href: admin/backup/back-up-restore.md
+    - name: Configure a backup schedule
+      href: admin/backup/config-backup-sched-plan.md
+    - name: Databases and deployment topologies
+      href: admin/backup/backup-db-architecture.md
+    - name: Manually back up
+      href: admin/backup/manually-backup-tfs.md
+    - name: Refresh data caches on clients
+      href: admin/backup/refresh-data-caches.md
+    - name: Restore app tier server (data is elsewhere)
+      href: admin/backup/restore-application-tier-server.md
+    - name: Restore data on same server
+      href: admin/backup/restore-data-same-location.md
+    - name: Restore data different server than current
+      href: admin/backup/restore-data-different-instance.md
+    - name: Restore a single server to new hardware (basic)
+      items:
+      - name: Move or clone to new hardware
+        href: admin/move-clone-hardware.md
+      - name: Rebuild the client cache
+        href: admin/rebuild-client-cache.md
+      - name: Move severs between network domains
+        href: admin/move-across-domains.md
+    - name: Restore a deployment to new hardware (advanced)
+      href: admin/backup/tut-single-svr-home.md
+      items:
+      - name: 1-Prepare new hardware
+        href: admin/backup/tut-single-svr-prep-new-hw.md
+      - name: 2-Restore databases
+        href: admin/backup/tut-single-svr-restore-dbs.md
+      - name: 3-Install and configure TFS
+        href: admin/backup/tut-single-svr-install-config-tfs.md
+      - name: 4-Reconnect services and users
+        href: admin/backup/tut-single-svr-reconn-svcs-users.md
+  - name: Manage project collections
+    items:
+    - name: Add & delete project collections
+      href: admin/manage-project-collections.md
+    - name: Move project collection
+      href: admin/move-project-collection.md
+    - name: Split project collection
+      href: admin/split-team-project-collection.md
+  - name: Add reports to a team project
+    href: /azure/devops/report/admin/add-reports-to-a-team-project?toc=/azure/devops/server/toc.json&bc=/azure/devops/server/breadcrumb/toc.json
+    items:
+    - name: Add a report server
+      href: /azure/devops/report/admin/add-a-report-server?toc=/azure/devops/server/toc.json&bc=/azure/devops/server/breadcrumb/toc.json
+    - name: Upload reports to a team project
+      href: /azure/devops/report/admin/upload-reports?toc=/azure/devops/server/toc.json&bc=/azure/devops/server/breadcrumb/toc.json
+    - name: Set report permissions
+      href: /azure/devops/report/admin/grant-permissions-to-reports?toc=/azure/devops/server/toc.json&bc=/azure/devops/server/breadcrumb/toc.json
+    - name: Review team activities
+      href: /azure/devops/report/admin/review-team-activities-for-useful-reports?toc=/azure/devops/server/toc.json&bc=/azure/devops/server/breadcrumb/toc.json
+  - name: Manage reporting data warehouse
+    items:
+    - name: Manage the data warehouse and cube
+      href: /azure/devops/report/admin/manage-reports-data-warehouse-cube?toc=/azure/devops/server/toc.json&bc=/azure/devops/server/breadcrumb/toc.json
+    - name: Manually process the data warehouse and cube
+      href: /azure/devops/report/admin/manually-process-data-warehouse-and-cube?toc=/azure/devops/server/toc.json&bc=/azure/devops/server/breadcrumb/toc.json
+    - name: Change a process control setting
+      href: /azure/devops/report/admin/change-a-process-control-setting?toc=/azure/devops/server/toc.json&bc=/azure/devops/server/breadcrumb/toc.json
+    - name: Rebuild the data warehouse and cube
+      href: /azure/devops/report/admin/rebuild-data-warehouse-and-cube?toc=/azure/devops/server/toc.json&bc=/azure/devops/server/breadcrumb/toc.json
+    - name: Change SQL reporting service credentials
+      href: admin/change-service-account-or-password-sql-reporting.md
+  - name: Configure Lab Management for SCVMM environments
+    href: admin/config-lab-scvmm-envs.md
+    items:
+    - name: Restore Lab Management components
+      href: admin/backup/restore-lab-management-components.md
+    - name: TFSLabConfig
+      href: command-line/tfslabconfig-cmd.md
+- name: Permissions & security
+  items:
+  - name: Set up AD groups for users
+    href: admin/setup-ad-groups.md
+  - name: Change access levels
+    href: /azure/devops/security/change-access-levels?toc=/azure/devops/server/toc.json&bc=/azure/devops/server/breadcrumb/toc.json
+  - name: Add users to projects
+    href: /azure/devops/security/add-users-team-project?toc=/tfs/toc.json&bc=/azure/devops/server/breadcrumb/toc.json 
+  - name: Change individual permissions
+    href: /azure/devops/security/change-individual-permissions?toc=/azure/devops/server/toc.json&bc=/azure/devops/server/breadcrumb/toc.json
+  - name: Grant or restrict permissions
+    href: /azure/devops/security/restrict-access?toc=/azure/devops/server/toc.json&bc=/azure/devops/server/breadcrumb/toc.json 
+  - name: Set up secure sockets layer
+    href: admin/setup-secure-sockets-layer.md
+  - name: Change site and certificate settings
+    href: admin/websitesettings.md
+- name: Reference
+  items:
+  - name: Command-line tools
+    items:
+    - name: TFSConfig
+      href: command-line/tfsconfig-cmd.md
+    - name: TFSSecurity
+      href: command-line/tfssecurity-cmd.md
+    - name: TFSDeleteProject
+      href: command-line/tfsdeleteproject-cmd.md
+    - name: TFSServiceControl
+      href: command-line/tfsservicecontrol-cmd.md
+  - name: Security reference
+    items:
+    - name: Default permissions and access
+      href: /azure/devops/security/permissions-access?toc=/azure/devops/server/toc.json&bc=/azure/devops/server/breadcrumb/toc.json 
+    - name: Permissions lookup guide 
+      href: /azure/devops/security/permissions-lookup-guide?toc=/azure/devops/server/toc.json&bc=/azure/devops/server/breadcrumb/toc.json  
+    - name: Permissions and groups reference
+      href: /azure/devops/security/permissions?toc=/azure/devops/server/toc.json&bc=/azure/devops/server/breadcrumb/toc.json
+    - name: About security roles
+      href: /azure/devops/security/about-security-roles?toc=/azure/devops/server/toc.json&bc=/azure/devops/server/breadcrumb/toc.json 
+    - name: Required ports
+      href: architecture/required-ports.md
+    - name: Security glossary
+      href: /azure/devops/security/security-glossary?toc=/azure/devops/server/toc.json&bc=/azure/devops/server/breadcrumb/toc.json 
+  - name: REST APIs and permissions
+    href: /rest/api/vsts/security/permissions?toc=/azure/devops/server/toc.json&bc=/azure/devops/server/breadcrumb/toc.json
+- name: Troubleshooting
+  items:
+  - name: FAQs
+    href: faq.md
+  - name: Collection upgrade failures
+    href: troubleshooting/collection-upgrade-failure.md
+- name: Resources
+  items:
+  - name: Azure Pipelines
+    href: /azure/devops/pipelines/
+  - name: Azure Repos
+    href: /azure/devops/repos/
+  - name: Azure Boards
+    href: /azure/devops/boards/
+  - name: Security and Identity
+    href: /azure/devops/security/
+  - name: Notifications
+    href: /azure/devops/notifications/

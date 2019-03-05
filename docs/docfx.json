@@ -6,6 +6,7 @@
           "**/*.md",
           "**/*.yml"
         ],
+        "group": "all",
         "exclude": [
           "**/obj/**",
           "**/includes/**",
@@ -27,6 +28,7 @@
           "**/*.mp4",
           "**/*.svg"
         ],
+        "group": "all",
         "exclude": [
           "**/obj/**",
           "**/includes/**",
@@ -42,9 +44,9 @@
       "ms.topic": "conceptual",
       "breadcrumb_path": "~/breadcrumb/toc.yml",
       "extendBreadcrumb": true,
-      "searchScope": ["Azure DevOps", "Azure DevOps Services", "Azure DevOps Server", "TFS", "Team Foundation Server"],
-      "author": "erickson-doug",
-      "ms.author": "douge",
+      "searchScope": ["Azure DevOps", "Azure DevOps Server", "TFS", "Team Foundation Server"],
+      "author": "aaronhallberg",
+      "ms.author": "jillfra",
       "ms.date": "11/19/2018",
       "ms.prod": "devops-server",
       "ms.technology": "tfs-admin",
@@ -59,6 +61,11 @@
     "fileMetadata": {},
     "template": [],
     "dest": "tfs-docs",
-    "markdownEngineName": "markdig"
+    "groups": {
+      "all": {
+        "dest": "all",
+        "moniker_range": "azure-devops || >= tfs-2013 <= tfs-2018 || >= azure-devops-2019"
+      }
+    }
   }
 }

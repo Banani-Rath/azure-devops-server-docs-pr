@@ -6,17 +6,22 @@ ms.technology: tfs-admin
 ms.topic: conceptual
 ms.manager: jillfra
 ms.author: kaelli
-author: elbatk
-ms.date: 08/27/2017
+author: aaronhallberg
+ms.date: 03/05/2019
 ---
 
 # Viewing different versions of the Azure DevOps Services, Azure DevOps Server, and Team Foundation Server (TFS) docs
+
+[!INCLUDE [temp](_shared/version-tfs-all-versions.md)]
+
+
+<!--- NEEDS UPDATE --> 
 
 On **September 5th, 2018**, Visual Studio Team Services, the cloud-hosted set of developer collaboration and DevOps services, became **Azure DevOps Services**. On **November 19, 2018**, the latest version of Team Foundation Server (the on-premises server software for developer collaboration and DevOps services) had a Release Candidate as **Azure DevOps Server 2019 RC 1**.
 
 Many of the featured services in VSTS are now offered as standalone ones in both Azure DevOps Services and Azure DevOps Server RC 1:
 
-|VSTS/TFS feature        |Azure DevOps service |
+|VSTS/TFS feature        |Azure DevOps  |
 |------------------------|---------------------|
 |Code (Git and TFVC))    | Azure Repos         |
 |Work                    | Azure Boards        |
@@ -28,7 +33,7 @@ Many of the featured services in VSTS are now offered as standalone ones in both
 
 Most TFS and Azure DevOps Server 2019 documentation is embedded in the Azure DevOps Services documentation. You can toggle to it by selecting the version selector dropdown in the upper-left of a documentation page.
 
-![Documentation version selector](server/_img/version-selector.png)
+![Documentation version selector](_shared/_img/version-selector.png)
 
 For assistance in understanding these changes in navigation and UI, read [Navigation basics](/azure/devops/project/navigation/index).
 
