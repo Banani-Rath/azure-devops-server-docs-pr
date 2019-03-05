@@ -5,7 +5,7 @@ keywords: azure devops
 author: egeaney
 ms.author: egeaney
 manager: egeaney
-ms.date: 02/04/2019
+ms.date: 03/05/2019
 ms.topic: release-article
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-articles
@@ -33,10 +33,15 @@ To learn more about Azure DevOps Server 2019, see [Azure DevOps Server Requireme
 
 Direct upgrade to Azure DevOps Server is supported from Team Foundation Server 2012 and newer. If your TFS deployment is on TFS 2010 or earlier, you need to perform some interim steps before upgrading to Azure DevOps Server 2019. Please see the <a href="https://docs.microsoft.com/tfs/server/install/get-started?view=vsts" target="blank">Install page</a> for more information. 
 
+## **Azure DevOps Server 2019 Release Date: March 5, 2019**
+
+> [!NOTE]
+> The Data Migration Tool will be available for Azure DevOps Server 2019 about three weeks after this release. You can see our list of currently supported versions for import [here](https://docs.microsoft.com/en-us/azure/devops/articles/migration-overview?view=vsts#supported-tfs-versions-for-import).
+
 ****
 ## **RC2 Release Date: January 22, 2019**
 
-## Summary of What's New in Azure DevOps Server 2019 RC2
+### Summary of What's New in Azure DevOps Server 2019 RC2
 
 We have added the following features to RC2:
 
@@ -46,9 +51,10 @@ We have added the following features to RC2:
 * [Improved branch picker](#improved-branch-picker)
 * [Changes to Artifacts and Release Management Deployment Pipeline Licensing](#changes-to-artifacts-and-release-management-deployment-pipeline-licensing)
 
+****
 ## **RC1 Release Date: November 19, 2018**
 
-## Summary of What's New in Azure DevOps Server 2019 RC1
+### Summary of What's New in Azure DevOps Server 2019 RC1
 
 Azure DevOps Server 2019 introduces a new navigation experience and many new features. Some of the highlights include:
 
@@ -101,7 +107,7 @@ Based on user feedback, we are making two key changes to our licenses with Azure
 
 ### Support for Azure SQL Database
 
-In order to simplify the experience of running Azure DevOps 2019 in Azure, we've enabled support for Azure SQL Database (General Purpose S3 and above). This will allow you to leverage extensive [backup features](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-automated-backups) and [scaling options](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-service-tiers) to suit your needs while reducing the administrative overhead of running the service. Note that your Host VM must be located in the same Azure region as your database in order to keep latency low.
+In order to simplify the experience of running Azure DevOps 2019 in Azure, we've enabled support for Azure SQL Database (General Purpose S3 and above). This will allow you to leverage extensive [backup features](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-automated-backups) and [scaling options](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-service-tiers) to suit your needs while reducing the administrative overhead of running the service. Note that your Host VM must be located in the same Azure region as your database in order to keep latency low. See the [documentation](https://docs.microsoft.com/en-us/tfs/server/install/install-azure-sql) for more information.
 
 ### We will be removing the client object model and SOAP APIs in future versions
 
@@ -487,6 +493,13 @@ You can click into the logs to enter a focused view.
 > [!div class="mx-imgBorder"]
 ![Release log details](_img/135_03d.png)
 
+#### Impact of upgrading to Azure DevOps Server 2019 on tasks: Windows Machine File Copy and PoweShell on Target Machine
+Machine groups under Test Hub was [deprecated](https://devblogs.microsoft.com/devops/release-management-planning-update-2016-h2/) in TFS 2017 RTM. With Azure DevOps Server 2019,
+the Machine groups service is no longer available. This will impact the users of 'Windows Machine File Copy' task version 1.* and 'PowerShell on Target Machines' task version 1.*. For your pipelines to continue working,
+- You have to switch to 'Windows Machine File Copy' task version 2.* and provide the full fqdn for the target machine instead of just the machine name.
+- And switch to  'Powershell on Target Machine' task version 2.* or later and provide the full fqdn of the machine or machine name followed by the Windows Remote Management ports (http/https). For example, targetMachine:5985 or targetMachine:5986
+ 
+
 #### Test results and extensibility
 
 Results from test execution are also surfaced for each environment. Clicking on the test results opens a view containing test details including results from other extensions that contribute to the process.
@@ -797,11 +810,11 @@ A new [Python Script](/azure/devops/pipelines/tasks#utility) task simplifies run
 
 ## Test Plans
 
-### Azure Test Runner client to runs manual tests for desktop applications
+### Test Runner (Azure Test Plans) client to runs manual tests for desktop applications
 
-You can now use the Azure Test Runner (ATR) client to run manual tests for desktop applications. This will help you move from Microsoft Test Manager to Azure Test Plans. Please refer to our guidance [here](https://docs.microsoft.com/en-us/azure/devops/test/mtm/guidance-mtm-usage?view=vsts). Using the ATR client, you can run your manual tests and record the test results for each test step. You also have data collection capabilities such as screenshot, image action log, and audio video recording. If you find an issue when testing, use Test Runner to create a bug with test steps, screenshots, and comments automatically included in the bug.
+You can now use the Test Runner (Azure Test Plans) client to run manual tests for desktop applications. This will help you move from Microsoft Test Manager to Azure Test Plans. Please refer to our guidance [here](https://docs.microsoft.com/en-us/azure/devops/test/mtm/guidance-mtm-usage?view=vsts). Using the Test Runner client, you can run your manual tests and record the test results for each test step. You also have data collection capabilities such as screenshot, image action log, and audio video recording. If you find an issue when testing, use Test Runner to create a bug with test steps, screenshots, and comments automatically included in the bug.
 
-ATR requires a one-time download and install of the runner. Select **Run for desktop application** as shown below. 
+Test Runner (Azure Test Plans) requires a one-time download and install of the runner. Select **Run for desktop application** as shown below. 
 
 > [!div class="mx-imgBorder"]
 ![Azure Test Runner](_img/142_01.png)

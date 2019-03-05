@@ -33,6 +33,12 @@ Use the Microsoft File Checksum Integrity Verifier tool to compute the SHA hashe
 
 | Language |  SHA-256 Hash |                                      
 | ------------------------------- | -----------------------------------------
+|Multiple Languages | 0471363A7277E0D2E5C7A407D3F64BE3AEE64CAA43FC98D75D373C6C87D7BF45
+
+####  Azure DevOps Server 2019 RC2
+
+| Language |  SHA-256 Hash |                                      
+| ------------------------------- | -----------------------------------------
 |Multiple Languages | AA22CF3871A776CB2E934DCF1CF9427EDB7214B8FF37913157296DCFB7A85184
 
 ####  Azure DevOps Server 2019 RC1
