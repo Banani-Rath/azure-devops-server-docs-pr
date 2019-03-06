@@ -9,6 +9,8 @@ ms.topic: conceptual
 ms.date: 09/01/2016
 ms.prod: devops-server
 ms.technology: tfs-admin
+monikerRange: 'tfs-2013'
+ms.custom: "retire"
 ---
 
 # How to create a server farm, Azure DevOps on-premises
@@ -48,8 +50,8 @@ Use the steps in this checklist to add an application tier to an existing deploy
 
 | | Task | Detailed instructions |
 | --- | --- | --- |
-| [Step 1](_img/ic646324.png) | **Check for supported hardware and software**. Verify that the operating system and hardware meet requirements for Team Foundation Server. | [System requirements for Team Foundation Server](../requirements.md) |
-| [Step 2](_img/ic646325.png) | **Set up Team Foundation Server**. Install Team Foundation Server and run the Application-Tier Only Configuration wizard. | [Run Team Foundation Server installation](install-2013/install-tfs.md#installer) </br> [Configure TFS using the application-tier-only configuration wizard](#config-tfs-app-tier-wiz) |
+| ![Step 1](_img/ic646324.png) | **Check for supported hardware and software**. Verify that the operating system and hardware meet requirements for Team Foundation Server. | [System requirements for Team Foundation Server](../requirements.md) |
+| ![Step 2](_img/ic646325.png) | **Set up Team Foundation Server**. Install Team Foundation Server and run the Application-Tier Only Configuration wizard. | [Run Team Foundation Server installation](install-2013/install-tfs.md#installer) </br> [Configure TFS using the application-tier-only configuration wizard](#config-tfs-app-tier-wiz) |
 
 <a name="config-tfs-app-tier-wiz"></a>
 ## Configure TFS using the application-tier-only configuration wizard

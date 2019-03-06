@@ -1,7 +1,7 @@
 ---
 title: Troubleshoot server administration
 titleSuffix: Azure DevOps Server & TFS  
-description: Learn the answers to frequently asked questions (FAQs), about server administration
+description: Learn the answers to frequently asked questions (FAQs) about server administration
 ms.topic: conceptual
 ms.manager: jillfra
 ms.author: aaronha

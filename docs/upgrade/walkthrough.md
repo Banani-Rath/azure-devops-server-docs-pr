@@ -8,13 +8,13 @@ ms.manager: jillfra
 ms.author: aaronha
 author: aaronhallberg
 ms.topic: conceptual
-monikerRange: '<= tfs-2017'
+monikerRange: '>= tfs-2015'
 ms.date: 08/04/2016
 ---
 
 # Upgrade scenario walkthrough for Team Foundation Server
 
-[!INCLUDE [temp](../_shared/version-tfs-2013-2017.md)]
+[!INCLUDE [temp](../_shared/version-tfs-2015-earlier.md)]
 
 This quickstart covers a typical Team Foundation Server (TFS) upgrade scenario to get a sense of what the high level steps discussed in the [overview](/azure/devops/accounts/account-management) might look like in a real world example.
 

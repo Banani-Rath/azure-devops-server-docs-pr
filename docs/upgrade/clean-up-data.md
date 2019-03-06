@@ -9,13 +9,13 @@ ms.manager: jillfra
 ms.author: aaronha
 author: aaronhallberg
 ms.topic: conceptual
-monikerRange: '<= tfs-2017'
+monikerRange: '>= tfs-2015'
 ms.date: 08/04/2016
 ---
 
 # Cleaning up old data in Team Foundation Server
 
-[!INCLUDE [temp](../_shared/version-tfs-2013-2017.md)]
+[!INCLUDE [temp](../_shared/version-tfs-2015-earlier.md)]
 
 Over time, Team Foundation Server instances can build up very large volumes of data - files, builds, work items, etc. 
 For the most part this is a very good thing - a big part of the value of many devops

@@ -16,8 +16,6 @@ ms.date: 03/05/2019
 
 [!INCLUDE [temp](../_shared/version-tfs-all-versions.md)]
 
-<!--- STILL NEEDS WORK, see how to use existing content, check with Aaron on matrix of on-prem and cloud support --> 
-
 You configure and manage Azure DevOps Server, previously named Team Foundation Server (TFS), and additional
 resources to support your teams. These resources include the
 application-tier and data-tier server(s), project collections which
@@ -35,7 +33,6 @@ information on TFS components and architecture, see [Architecture overview](../a
 
 
 ## Add or remove resources
-
 
 ::: moniker range=">= tfs-2018"
 

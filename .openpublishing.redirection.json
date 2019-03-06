@@ -397,6 +397,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "docs/server/admin/configure-tfs-resources.md",
+      "redirect_url": "/azure/devops/server/admin/admin-quick-ref",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "docs/server/troubleshooting/collection-upgrade-failure.md",
       "redirect_url": "/azure/devops/server/troubleshooting/collection-upgrade-failure",
       "redirect_document_id": false
