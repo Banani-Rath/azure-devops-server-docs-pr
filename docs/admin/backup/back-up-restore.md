@@ -15,31 +15,75 @@ ms.date: 03/05/2019
 
 [!INCLUDE [temp](../../_shared/version-tfs-all-versions.md)]
 
-If you don't regularly back up Team Foundation Server (TFS) databases, you increase the risk of losing productivity or data because of equipment failure or other unexpected events. Fortunately, the Scheduled Backups Wizard makes it easy to back up your TFS databases, which are part of the TFS data-tier and stored in SQL Server. All of the information required for restoring a TFS deployment is stored in those databases. Consequently, you do not have to worry about backing up Team Foundation client computers or application-tier servers.
+If you don't regularly back up the databases for your Azure DevOps Server, previously named Team Foundation Server (TFS), you increase the risk of losing productivity or data because of equipment failure or other unexpected events. Fortunately, the **Scheduled Backups Wizard** makes it easy to back up your databases, which are part of the Azure DevOps data-tier and stored in SQL Server. All of the information required for restoring an Azure DevOps deployment is stored in those databases. Consequently, you do not have to worry about backing up Azure DevOps client computers or application-tier servers.
+
+::: moniker range=">= azure-devops-2019"
+
+![Choose a preconfigured or custom schedule](_img/backup/schedule-backups-wizard-schedules.png)  
+
+::: moniker-end
+
+::: moniker range="<= tfs-2018"
 
 ![Choose a preconfigured or custom schedule](../_img/ic665036.png)  
+::: moniker-end
 
-For an overview of TFS databases, see [Understand backing up Team Foundation Server](backup-db-architecture.md). The following topics provide detail procedures for backing up and restoring TFS databases.
+For an overview of Azure DevOps databases, see [Understand backing up Azure DevOps](backup-db-architecture.md). The following articles provide detail procedures for backing up and restoring Azure DevOps databases.
 
-| | broad steps |
-| --- | --- |
-| ![Back up and restore your TFS deployment](../_img/ic677919.png) | **Back up your data** </br>[Create a backup schedule and plan](config-backup-sched-plan.md) </br> [Manually back up Team Foundation Server](manually-backup-tfs.md) |
-| ![Learn how to restore TFS](../_img/ic689362.png) | **Restore databases from backup** </br> [Restore a deployment to new hardware](tut-single-svr-home.md) </br> | [Restore data to the same location](restore-data-same-location.md) |
-| ![Manage user access to your deployment](../_img/ic687421.png) | **Recover from a hardware failure on the application tier** </br> [Restore an application-tier server](restore-application-tier-server.md) </br> [Refresh the data caches on client computers](refresh-data-caches.md) | 
-| ![Configure and manage Lab Management](../_img/ic677921.png) | **Back up and restore Lab Management** </br> [Restore Lab Management components](restore-lab-management-components.md) |
+::: moniker range=">= azure-devops-2019"
+
+>  [!div class="mx-tdCol2BreakAll"]
+> | Task | Procedures |
+> | --- | --- |
+> |**Back up your data** |<ul><li>[Create a backup schedule and plan](config-backup-sched-plan.md)</li><li>[Manually back up Azure DevOps Server](manually-backup-tfs.md)</li></ul> |
+> | **Restore databases from backup**|<ul><li>[Restore a deployment to new hardware](tut-single-svr-home.md)</li><li>[Restore data to the same location](restore-data-same-location.md)</li></ul>  |
+> | **Recover from a hardware failure on the application tier** |<ul><li>[Restore an application-tier server](restore-application-tier-server.md)</li><li>[Refresh the data caches on client computers](refresh-data-caches.md)</li></ul>  | 
+
+::: moniker-end
+
+
+::: moniker range=">= tfs-2017 <= tfs-2018"
+
+>  [!div class="mx-tdCol2BreakAll"]
+> | Task | Procedures |
+> | --- | --- |
+> |**Back up your data** |<ul><li>[Create a backup schedule and plan](config-backup-sched-plan.md)</li><li>[Manually back up TFS](manually-backup-tfs.md)</li></ul> |
+> | **Restore databases from backup**|<ul><li>[Restore a deployment to new hardware](tut-single-svr-home.md)</li><li>[Restore data to the same location](restore-data-same-location.md)</li></ul>  |
+> | **Recover from a hardware failure on the application tier** |<ul><li>[Restore an application-tier server](restore-application-tier-server.md)</li><li>[Refresh the data caches on client computers](refresh-data-caches.md)</li></ul>  | 
+
+
+::: moniker-end
+
+::: moniker range="<= tfs-2015"
+
+>  [!div class="mx-tdCol2BreakAll"]
+> | Task | Procedures |
+> | --- | --- |
+> |**Back up your data** |- [Create a backup schedule and plan](config-backup-sched-plan.md)<br/>- [Manually back up Team Foundation Server](manually-backup-tfs.md) |
+> | **Restore databases from backup**|- [Restore a deployment to new hardware](tut-single-svr-home.md)<br/>- [Restore data to the same location](restore-data-same-location.md) |
+> | **Recover from a hardware failure on the application tier** |- [Restore an application-tier server](restore-application-tier-server.md)<br/>- [Refresh the data caches on client computers](refresh-data-caches.md) | 
+> | **Back up and restore Lab Management** | <br/>- [Restore Lab Management components](restore-lab-management-components.md) |
+
+::: moniker-end
 
 <a name="same-server" />
 
 ## Restore data same server
 You can restore data from a backup to the same server and instance of SQL Server for Team Foundation from which that data was backed up. For example, you might want to restore a corrupted set of databases to the last known good state.
 
-> **TFS 2013 Tip:**  
+::: moniker range="tfs-2013"
+> [!TIP]
 > If your original deployment used the Enterprise or Datacenter editions of SQL Server, and you want to restore databases to a server running Standard edition, you must use a backup set that was made with SQL Server compression disabled. Unless you disable data compression, you will not be able to successfully restore Enterprise or Datacenter edition databases to a server running Standard edition. To turn off compression, follow the steps in the [Microsoft Knowledge Base article](http://go.microsoft.com/fwlink/?LinkId=253758).
+
+::: moniker-end
 
 If you want to restore data to another server or another instance of SQL Server, see [Restore a deployment to new hardware](tut-single-svr-home.md). 
 
-> **Note:**  
+
+::: moniker range="<= tfs-2017"
+> [!NOTE]   
 > If you use SharePoint Products in your deployment, when you restore data, you do not have to restore the websites that are automatically generated based on the data for each project. The data for the project portals is contained in the databases that you restore.
+::: moniker-end
 
 The steps to restore data to the same server or servers vary based on how Team Foundation Server is installed and configured. For simplicity, the procedures in this topic are structured for a moderately complex deployment of Team Foundation Server, as the following illustration shows:
 
@@ -47,15 +91,11 @@ The steps to restore data to the same server or servers vary based on how Team F
 
 If your topology does not exactly match this example, you might have to adjust the steps in this procedure to follow it successfully. For example, if you have a deployment where all components are installed on a single physical server, you would perform all procedures on that server. If databases for project collections are deployed on more than one server, you must perform the steps to restore each collection database on the appropriate server. For more information about which components might be deployed on each server, see the following topics:
 
--    [Understand TFS databases, deployment topologies, and backup](backup-db-architecture.md) 
-
--    [Team Foundation Server architecture](../../architecture/architecture.md) 
-
--    [Examples of Simple Topology](../../architecture/examples-simple-topo.md) 
-
--    [Examples of Moderate Topology](../../architecture/examples-moderate-topo.md) 
-
--    [Examples of Complex Topology](../../architecture/examples-complex-topo.md) 
+- [Understand TFS databases, deployment topologies, and backup](backup-db-architecture.md) 
+- [Team Foundation Server architecture](../../architecture/architecture.md)
+- [Examples of Simple Topology](../../architecture/examples-simple-topo.md)
+- [Examples of Moderate Topology](../../architecture/examples-moderate-topo.md) 
+- [Examples of Complex Topology](../../architecture/examples-complex-topo.md) 
 
 <a name="diff-server" />
 
@@ -78,15 +118,17 @@ hardware fails, see [Restore a single server deployment to new hardware](tut-sin
 SharePoint Products, you must perform additional steps to back up and
 restore its databases, as detailed in the procedures in this topic.
 
+<!--- QUESTION: THIS APPEARS TO NO LONGER BE AVAILABLE 
 > [!NOTE]   
-> 
-> You can automate some procedures in this topic by using wizards in the
+> You can automate some procedures in this articles by using wizards provided with in the
 > September 2010 release of power tools for Team Foundation Server. These
 > wizards help simplify the process for backing up and restoring your
 > deployment. However, they do not help back up or restore Visual Studio
 > Lab Management, and you should not use them to back up or restore the
 > databases for SharePoint Products or Microsoft Project Server. For more
-> information, see the following page on the Microsoft website: [Team Foundation Server Power Tools September 2010](http://go.microsoft.com/fwlink/?LinkId=202027).                  
+> information, see the following page on the Microsoft website: [Team Foundation Server Power Tools September 2010](http://go.microsoft.com/fwlink/?LinkId=202027).      
+
+-->            
 
 The steps that you must perform to restore data to different servers or
 instances vary, based on how Team Foundation Server is installed and
@@ -113,13 +155,9 @@ information about which components might be deployed on each server, see
 the following topics:
 
 -   [Understanding Backing Up Team Foundation Server](backup-db-architecture.md)
-
 -   [Team Foundation Server Architecture](../../architecture/architecture.md)
-
 -   [Examples of Simple Topology](../../architecture/examples-simple-topo.md)
-
 -   [Examples of Moderate Topology](../../architecture/examples-moderate-topo.md)
-
 -   [Examples of Complex Topology](../../architecture/examples-complex-topo.md)
 
 ## Q & A
@@ -148,6 +186,3 @@ the following topics:
 
 **A:** No. Unless you are following the procedure for [manually backing up the databases](manually-backup-tfs.md), modifying any TFS database can invalidate your support agreement. It can cause data loss, make it impossible to upgrade or patch TFS, or cause other severe problems.
 
-**Q: Can't I just tweak the databases manually?**
-
-**A:** No. Unless you are following the procedure for [manually backing up the databases](manually-backup-tfs.md), modifying any TFS database can invalidate your support agreement. It can cause data loss, make it impossible to upgrade or patch TFS, or cause other severe problems.

@@ -13,13 +13,13 @@ author: KathrynEE
 ms.date: 08/08/2016
 ---
 
-# Web site settings and security for TFS
+# Web site settings and security for Azure DevOps on-premises
 
 [!INCLUDE [version-tfs-2013-2017](../_shared/version-tfs-2013-2017.md)]
 
 ## Background
 
-For many releases, the default web site settings for Team Foundation Server have been:
+For many releases, the default web site settings for Azure DevOps Server, previously named Team Foundation Server (TFS), have been:
  
 * A single HTTP binding for the TFS web site on port 8080, with no host name or IP address specified.
 * A public URL (previously referred to as the Notification URL) of the form http://machine-name:8080/tfs. 

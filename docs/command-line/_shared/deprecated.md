@@ -181,7 +181,7 @@ The diagnose command was deprecated in TFS 2013. Earlier versions are available 
 - [TFS 2010](https://msdn.microsoft.com/library/ff407076%28v=vs.100%29.aspx)
 
 If you need assistance with diagnosing potential mismatches between software updates on your application-tier and data-tier servers for Team Foundation Server (TFS),
-contact [Microsoft Support](https://support.microsoft.com/ContactUs).
+contact [Developer Community support](https://developercommunity.visualstudio.com/spaces/21/index.html).
 
 <a id="updates"></a>
 ### Updates

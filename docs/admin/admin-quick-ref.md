@@ -52,8 +52,10 @@ Many tasks are performed from the Azure DevOps Server Administration Console. Th
 <h3>Server configuration </h3>
 <ul>
 <li>[Change cache settings for an application-tier server](change-caching-app-tier.md)</li>
+<li>[Change SSH Settings](websitesettings.md)</li>
 <li>[Configure an SMTP server](setup-customize-alerts.md)</li>
 <li>[Customize email for alerts and feedback requests](setup-customize-alerts.md)</li>
+<li>[View or change the Public URL](open-admin-console.md#public-url)</li>
 </ul>
 
 <h3>Server maintenance </h3>
