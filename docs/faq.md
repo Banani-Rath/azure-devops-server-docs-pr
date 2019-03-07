@@ -9,7 +9,7 @@ author: aaronhallberg
 ms.prod: devops-server
 ms.technology: tfs-admin
 monikerRange: '>= tfs-2013'
-ms.date: 03/05/2019
+ms.date: 03/06/2019
 --- 
 
 # Troubleshoot server administration
@@ -49,7 +49,7 @@ To learn more, see [Service accounts and dependencies](admin/service-accounts-de
 
 **A:** You can [move Azure DevOps Server to a new server](admin/move-clone-hardware.md)
 or add [additional application-tier servers](admin/backup/restore-application-tier-server.md). You can 
-also [Move Azure DevOps Server  from one environment to another](admin/move-across-domains.md).
+also [Move Azure DevOps Server from one environment to another](admin/move-across-domains.md).
 
 ## Q: How do I monitor my deployment?
 
@@ -129,10 +129,19 @@ only two circumstances where you should ever consider modification:
     Azure DevOps databases. In that case, you should only modify the databases as
     described [here](./admin/backup/manually-backup-tfs.md).
 
-##Q: What other resources are available?
+## Q: What other resources are available?
 
 **A:** The following resources and tools are available:
 
+**Azure DevOps Server:**
+
+- You can post questions or search for answers in our [Developer Community page](https://developercommunity.visualstudio.com/content/problem/post.html?space=21)
+- [Azure DevOps Server support](https://aka.ms/AzureDevOpsServersupport)
+
+**Azure DevOps Services:**
+
 - You can post questions or search for answers in our [Developer Community page](https://developercommunity.visualstudio.com/content/problem/post.html?space=21)
 - [Azure DevOps Blog](http://go.microsoft.com/fwlink/?LinkId=254496)
-- [Azure DevOps support](https://azure.microsoft.com/en-us/support/devops/)
+- [Azure DevOps Services support](https://azure.microsoft.com/en-us/support/devops/)
+
+
