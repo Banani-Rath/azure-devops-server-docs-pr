@@ -130,7 +130,7 @@ You can back up a server by using the **Scheduled Backups** features available, 
 
 ### Types of backups
 
-Understanding the types of backups available can help you determine the best options for backing up your deployment. For example, if you are working with a large deployment and want to protect against data loss while efficiently using limited storage resources, you can configure differential backups as well as full data backups. If you are using SQL Server ALwaysOn, you can take backups of your secondary database. You can also try using backup compression or splitting backups across multiple files. Here are brief descriptions of your backup options:
+Understanding the types of backups available can help you determine the best options for backing up your deployment. For example, if you are working with a large deployment and want to protect against data loss while efficiently using limited storage resources, you can configure differential backups as well as full data backups. If you are using SQL Server AlwaysOn, you can take backups of your secondary database. You can also try using backup compression or splitting backups across multiple files. Here are brief descriptions of your backup options:
 
 ### Full data backups (databases)
 A full database backup is necessary for the recoverability of your deployment. A full backup includes part of the transaction log so that you can recover the full backup. Full backups are self-contained in that they represent the entire database as it existed when you backed it up. For more information, see the following page on the Microsoft Web site: [Full Database Backups](http://go.microsoft.com/fwlink/?LinkId=115462).

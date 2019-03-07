@@ -6,10 +6,10 @@ Use the **ListTeamProjectCollectionLibraryShares** command to list the
 library shares that have been assigned to a project collection and
 that you have read access to. Library shares are created in System
 Center Virtual Machine Manager (SCVMM). and are assigned to a team
-project collection by using the [TFSConfig Lab /LibraryShare Commands](lab-libraryshare.md). 
+project collection by using the [TFSConfig Lab /LibraryShare Commands](/azure/devops/server/command-line/tfslabconfig-cmd##lab-libraryshare). 
 Project collection library shares can be added to a project by
 using the **CreateTeamProjectLibraryShare** command. For more
-information, see [TFSLabConfig CreateTeamProjectLibraryShare Command](createteamprojectlibraryshare.md).
+information, see [TFSLabConfig CreateTeamProjectLibraryShare Command](/azure/devops/server/command-line/tfslabconfig-cmd#createteamprojectlibraryshare).
 
 **Required Permissions:**
 
