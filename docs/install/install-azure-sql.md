@@ -21,7 +21,7 @@ Use the steps in this article to configure Azure DevOps Server with [Azure SQL D
 ## Requirements
 
 - Azure SQL Database can only be used with Azure DevOps Server 2019 and later versions.  
-- Azure SQL Database can only be used with Azure DevOps Server when you also use Azure Virtual Machines.  
+- Azure SQL Database can only be used with Azure DevOps Server when you also use Azure Virtual Machines that are domain joined.  
 
 	> [!NOTE]
 	> The primary reason for this restriction is that connectivity between Azure DevOps Server and Azure SQL Database is accomplished by using [Managed Service Identity](/azure/active-directory/managed-identities-azure-resources/overview). Using Managed Service Identity avoids the need to use SQL authentication and store usernames and passwords, which presents a security risk.
@@ -46,8 +46,8 @@ Upgrading to Azure DevOps Server is supported only from Team Foundation Server 2
 
 1. To set up a new Azure DevOps Server instance, create two Azure SQL databases:
 
-    - Tfs_Configuration  
-    - Tfs_Collection  
+    - AzureDevOps_Configuration  
+    - AzureDevOps_Collection  
 
     > [!NOTE]
     > You can skip this step if you use existing databases to either:
