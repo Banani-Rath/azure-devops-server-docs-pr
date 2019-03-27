@@ -220,6 +220,7 @@ If you do use Lab Management, follow the steps provided in [**To configure Lab M
 
 	After the wizard finishes, choose **Close**.
 
+<a id="detach-delete" />
 ## Detach or delete a project collection
 
 You detach a project collection when you want to perform a

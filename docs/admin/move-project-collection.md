@@ -41,9 +41,14 @@ Before you move a collection, you must first detach it from the deployment of TF
 
 1.  Open the administration console for Team Foundation on the server that hosts the collection that you want to move, and in **Project Collections**, highlight the collection that you want to move.
 
-2.  On the **General** tab, choose **Detach Collection**.
+2.  On the **General** tab, choose **Detach Collection**.  
 
-    ![On the General tab, select then detach](_img/ic738718.png)
+	::: moniker range=">= azure-devops-2019"
+	![Detach project collections](_img/manage-pc/detach-tpc.png)
+	::: moniker-end 
+	::: moniker range="<= tfs-2018"
+	![On the General tab, select then detach](_img/ic738718.png)
+	::: moniker-end  
 
     The **Detach Project Collection Wizard** opens.
 
@@ -106,7 +111,12 @@ After you restore the collection database, you can attach the collection to the 
 
 2.  Choose **Project Collections**, and then choose **Attach Collection**.
 
-    ![Use the TFS administration console](_img/ic738723.png)
+	::: moniker range=">= azure-devops-2019"  
+	![Azure DevOps Server Administration console, Team Project Collections](_img/move-hw/attach-collection.png)  
+	::: moniker-end  
+	::: moniker range="<= tfs-2018"
+	![TFS Administration console, Team Project Collections](_img/ic738723.png)
+	::: moniker-end  
 
     The **Attach Project Collection Wizard** opens.
 
@@ -202,6 +212,9 @@ You'll also need to rebuild the warehouse and analysis services cube on the orig
     > [!NOTE]
     > The warehouses will finish rebuilding and the data will finish repopulating after the Start Rebuild action completes. Depending on the size of your deployment and the amount of data, the entire process might take several hours to complete.
 
+::: moniker range="<= tfs-2017"
+
+
 ### Q: How do I move a collection that uses SharePoint Products?
 
 **A:** To move a project collection that uses a SharePoint Web application, you must move both the project collection itself and the SharePoint site collection that supports the project collection. The site collection must be moved to the Web application that will support the project collection in the new deployment. Specifically, you must [back up the site collection database](https://technet.microsoft.com/library/ee748617(v=office.15).aspx) and then [move the site collection database](https://technet.microsoft.com/library/cc825328(v=office.15).aspx). Once you've done that and attached the moved project collection to its destination TFS, you'll need to repair the connection between that TFS and its SharePoint web application to ensure that the attached collection connects properly to the moved site collection. You’ll also need to make sure that the SharePoint tab for the project collection points to that site collection database.
@@ -217,6 +230,8 @@ You'll also need to rebuild the warehouse and analysis services cube on the orig
 2.  Choose **Repair Connection**, and in the **Repair the connection to a SharePoint Web Application** dialog box, choose **Repair**.
 
 3.  In **Project Collections**, select the moved project collection, choose the SharePoint Products tab, and modify the settings to point to the site collection database.
+
+::: moniker-end
 
 ### Q: How do I move a team project collection that includes deployment pools and/or deployment groups?
 

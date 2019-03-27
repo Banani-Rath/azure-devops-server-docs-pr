@@ -57,7 +57,7 @@
     href: install/multiple-server.md
   - name: Configure with Azure SQL and VMs
     href: install/install-azure-sql.md
-  - name: Install TFS proxy for a remote site
+  - name: Install a proxy server for a remote site
     href: install/install-proxy-setup-remote.md
   - name: Install SQL Server
     items:
@@ -113,9 +113,9 @@
     href: upgrade/pre-production.md
   - name: Walkthrough
     href: upgrade/walkthrough.md
-  - name: Upgrade TFS Express
+  - name: Upgrade an express edition
     href: upgrade/express.md
-  - name: Locate or change TFS product key
+  - name: Locate or change a product key
     href: upgrade/change-product-key.md
   - name: Upgrade TFS 2013
     href: upgrade/upgrade-2013/upgrade-2013-requirements.md
@@ -190,7 +190,7 @@
         href: admin/backup/tut-single-svr-prep-new-hw.md
       - name: 2-Restore databases
         href: admin/backup/tut-single-svr-restore-dbs.md
-      - name: 3-Install and configure TFS
+      - name: 3-Install and configure 
         href: admin/backup/tut-single-svr-install-config-tfs.md
       - name: 4-Reconnect services and users
         href: admin/backup/tut-single-svr-reconn-svcs-users.md
