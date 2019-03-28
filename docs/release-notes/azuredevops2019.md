@@ -573,7 +573,7 @@ Additionally, we have added Azure Policy Release definition template. This will 
 
 ### Build on Linux/ARM and Windows 32-bit platforms
 
-The Azure Pipelines [open source, cross-platform agent](#https://github.com/Microsoft/azure-pipelines-agent) has always been supported on 64-bit (x64) Windows, macOS, and Linux. With this release, we’re introducing two new supported platforms: [Linux/ARM and Windows/32-bit](#https://github.com/Microsoft/azure-pipelines-agent/releases/tag/v2.141.0). These new platforms give you the ability to build on less-common, but no less important, platforms such as the Raspberry Pi, a Linux/ARM machine.
+The Azure Pipelines [open source, cross-platform agent](https://github.com/Microsoft/azure-pipelines-agent) has always been supported on 64-bit (x64) Windows, macOS, and Linux. With this release, we’re introducing two new supported platforms: [Linux/ARM and Windows/32-bit](https://github.com/Microsoft/azure-pipelines-agent/releases/tag/v2.141.0). These new platforms give you the ability to build on less-common, but no less important, platforms such as the Raspberry Pi, a Linux/ARM machine.
 
 ### Improved experiences for Tests in Pipelines
 

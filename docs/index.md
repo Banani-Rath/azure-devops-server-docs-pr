@@ -30,7 +30,7 @@ featureFlags:
                         <a class="singlePanelNavItem selected" style="display: none" href="#indexA" data-linktype="self-bookmark"></a>
                         <ul class="panelContent singlePanelContent" id="indexA" style="margin-top: 0px; display: flex; float: left; border: none;">
                             <li class="fullSpan">
-                                <a href="#start"> </a>
+                                <a href="#index1"> </a>
                                 <h2 style="float: left; display: flex;">Get started with Azure DevOps Server</h2>
                                 <ul id="index1" class="cardsF panelContent singlePanelContent cols cols4" style="float: left; display: flex!important;">
                                     <li>
