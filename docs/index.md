@@ -228,27 +228,8 @@ featureFlags:
                                     </li>
                                 </ul>
                                 <a href="#index3"></a>
-                                <h2 style="float: left; display: flex;">Analytics and social tools</h2>
+                                <h2 style="float: left; display: flex;">Reporting and social tools</h2>
                                 <ul id="index3" class="cardsF panelContent singlePanelContent cols cols4" style="float: left; display: flex!important;">
-                                    <li>
-                                        <a href="/azure/devops/report/dashboards/index">
-                                            <div class="cardSize">
-                                                <div class="cardPadding">
-                                                    <div class="card">
-                                                        <div class="cardImageOuter">
-                                                            <div class="cardImage">
-                                                                <img src="https://docs.microsoft.com/media/common/i_dashboard.svg" alt="Dashboards icon" />
-                                                            </div>
-                                                        </div>
-                                                        <div class="cardText">
-                                                            <h3>Dashboards</h3>
-															<p>Monitor progress and trends to support improvement for team processes.</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </li>
                                     <li>
                                         <a href="/azure/devops/report/index">
                                             <div class="cardSize">
@@ -260,27 +241,8 @@ featureFlags:
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
-                                                            <h3>Analytics</h3>
-                                                            <p>Answer quantitative questions about projects by using Azure DevOps Analytics Service.</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="/azure/devops/report/sql-reports/index">
-                                            <div class="cardSize">
-                                                <div class="cardPadding">
-                                                    <div class="card">
-                                                        <div class="cardImageOuter">
-                                                            <div class="cardImage">
-                                                                <img src="_img/index/sql-server-reporting.svg" alt="SQL Server reporting icon" />
-                                                            </div>
-                                                        </div>
-                                                        <div class="cardText">
-                                                            <h3>SQL Server reporting</h3>
-															<p>Use out-of-the-box reports or define custom reports.</p>
+                                                            <h3>Reporting</h3>
+                                                            <p>Make data driven decisions and deliver value to your customers faster using dashboards, charts, and reports.</p>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -300,6 +262,25 @@ featureFlags:
                                                         <div class="cardText">
                                                             <h3>Wikis</h3>
 															<p>Share information with your team and stakeholders.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/azure/devops/notifications/index">
+                                            <div class="cardSize">
+                                                <div class="cardPadding">
+                                                    <div class="card">
+                                                        <div class="cardImageOuter">
+                                                            <div class="cardImage">
+                                                                 <img src="https://docs.microsoft.com/media/common/i_alert.svg" alt="Alert icon" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="cardText">
+                                                            <h3>Notifications</h3>
+                                                            <p>Subscribe to events such as code changes, build completions, or changes to work items.</p>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -430,24 +411,6 @@ featureFlags:
                                                     </div>
                                                     <div class="cardText">
                                                         <h3>SQL Server Reporting administration</h3>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="/azure/devops/notifications/index">
-                                        <div class="cardSize">
-                                            <div class="cardPadding">
-                                                <div class="card">
-                                                    <div class="cardImageOuter">
-                                                        <div class="cardImage">
-                                                            <img src="https://docs.microsoft.com/media/common/i_alert.svg" alt="Notifications icon" />
-                                                        </div>
-                                                    </div>
-                                                    <div class="cardText">
-                                                        <h3>Manage notifications</h3>
                                                     </div>
                                                 </div>
                                             </div>
