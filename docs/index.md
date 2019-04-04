@@ -9,7 +9,7 @@ ms.prod: devops-server
 ms.technology: tfs-admin
 ms.manager: jillfra 
 ms.author: aaronha 
-ms.date: 01/30/2019
+ms.date: 04/05/2019 
 featureFlags:
 - clicktale 
 ---
@@ -24,8 +24,8 @@ featureFlags:
         <p><i><a href="tfs-is-now-azure-devops-server.md">Team Foundation Server is now called Azure DevOps Server</a></i></p><br/>
         <ul class="pivots">
             <li>
-                <a href="#index"></a>
-                <ul id="index">
+                <a href="#start"></a>
+                <ul id="start">
                     <li class="panelItem" data-index="0">
                         <a class="singlePanelNavItem selected" style="display: none" href="#indexA" data-linktype="self-bookmark"></a>
                         <ul class="panelContent singlePanelContent" id="indexA" style="margin-top: 0px; display: flex; float: left; border: none;">

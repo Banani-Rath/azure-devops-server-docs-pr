@@ -189,13 +189,12 @@ For more information, see the following articles:
 <a name="sql-server"></a> 
 ## Azure SQL Database and SQL Server
 
-Azure DevOps on-premise deployments require some version of SQL Server. Azure DevOps Server supports Express, Standard, and Enterprise [SQL Server editions](https://www.microsoft.com/sql-server/sql-server-2017-editions). The Express edition is recommended only for evaluation purposes, personal use, or for very small teams. We recommend the SQL Server Standard or Enterprise versions for all other scenarios.
+Azure DevOps on-premises deployments require some version of SQL Server. Azure DevOps Server supports Express, Standard, and Enterprise [SQL Server editions](https://www.microsoft.com/sql-server/sql-server-2017-editions). The Express edition is recommended only for evaluation purposes, personal use, or for very small teams. We recommend the SQL Server Standard or Enterprise versions for all other scenarios.
 
 For production deployments, use one of the following versions of SQL Server.
 
-> [!div class="mx-tdCol2BreakAll"]  
-> |Azure DevOps version | Supported SQL Server version
-> |-------------------|------------------------------------
+> |Azure DevOps version | Supported SQL Server version |
+> |-------------------|------------------------------------|
 > |Azure DevOps Server 2019 | Azure SQL Database<br/>SQL Server 2017<br/>SQL Server 2016 (minimum SP1) |
 > |TFS 2018 | SQL Server 2017<br/>SQL Server 2016 (minimum SP1) |
 > |TFS 2017 Update 1 | SQL Server 2016 (minimum SP1)<br/>SQL Server 2014 |
@@ -207,8 +206,8 @@ For production deployments, use one of the following versions of SQL Server.
 > |TFS 2012 | SQL Server 2012<br/>SQL Server 2008 R2 |
 > |TFS 2010 | SQL Server 2008 R2<br/>SQL Server 2008 |
 
-> [!NOTE]   
-> SQL Server on Linux  isn't supported. 
+> [!NOTE]
+> SQL Server on Linux isn't supported. 
 
 ### Additional version notes
 
@@ -252,6 +251,7 @@ You can install Azure DevOps in various languages on supported operating systems
 
 ::: moniker range="<= tfs-2017"
 You can install Azure DevOps in various languages on supported operating systems. However, you can't use any combination of localized operating system with Azure DevOps Server and TFS. Also, you can't install multiple languages on a single Azure DevOps Server or TFS server. The language of the SharePoint Products installation can also complicate your deployment. However, you can add an appropriate language pack to the server that's running SharePoint Products to meet requirements for Team Foundation Server.
+::: moniker-end
 
 
 
