@@ -33,6 +33,23 @@ To learn more about Azure DevOps Server 2019, see [Azure DevOps Server Requireme
 
 Direct upgrade to Azure DevOps Server is supported from Team Foundation Server 2012 and newer. If your TFS deployment is on TFS 2010 or earlier, you need to perform some interim steps before upgrading to Azure DevOps Server 2019. Please see the <a href="https://docs.microsoft.com/tfs/server/install/get-started?view=vsts" target="blank">Install page</a> for more information. 
 
+****
+
+## **Azure DevOps Server 2019 Patch 1 Release Date: April 9, 2019**
+
+We have released a [security patch](https://aka.ms/azdev2019patch) for Azure DevOps Server 2019 that fixes the following bugs:
+* **[CVE-2019-0857](https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2019-0857)**: Spoofing vulnerability in the Wiki
+* **[CVE-2019-0866](https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2019-0866)**: Remote code execution vulnerability in Pipelines
+* **[CVE-2019-0867](https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2019-0867)**: Cross site scripting (XSS) vulnerability in Pipelines
+* **[CVE-2019-0868](https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2019-0868)**: Cross site scripting (XSS) vulnerability in Pipelines
+* **[CVE-2019-0869](https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2019-0869)**: HTML injection vulnerability in Pipelines
+* **[CVE-2019-0870](https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2019-0870)**: Cross site scripting (XSS) vulnerability in Pipelines
+* **[CVE-2019-0871](https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2019-0871)**: Cross site scripting (XSS) vulnerability in Pipelines
+* **[CVE-2019-0874](https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2019-0874)**: Cross site scripting (XSS) vulnerability in Pipelines
+* **[CVE-2019-0875](https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2019-0875)**: Elevation of privilege vulnerability in Boards
+
+****
+
 ## **Azure DevOps Server 2019 Release Date: March 5, 2019**
 
 > [!NOTE]
