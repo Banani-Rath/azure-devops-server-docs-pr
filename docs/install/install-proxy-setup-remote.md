@@ -14,7 +14,7 @@ ms.date: 03/05/2019
 
 # How to install Team Foundation Proxy and set up a remote site
 
-[!INCLUDE [temp](../_shared/version-tfs-all-versions.md)]
+[!INCLUDE [temp](../_shared/version-azure-devops-all-versions.md)]
 
 ![Team Foundation Proxy](_img/ic588492.png)  
  
@@ -150,13 +150,13 @@ To configure Team Explorer to use Team Foundation Server Proxy:
 
 ### Q: Does any version of TFS Proxy have cache cleanup improvements to support disks larger than 1 TB?
 
-**A**: Yes. TFS Proxy 2012 and TFS Proxy 2013 have cache cleanup improvements to support large disks.
+**A**: Yes. TFS Proxy 2012, TFS Proxy 2013 and later versions have cache cleanup improvements to support large disks.
 
 ### Q: Does TFS Proxy 2013 have corruption detection logic?
 
-**A**: Yes. If a cached file becomes corrupted on a disk after it was stored, TFS Proxy 2013 has logic to detect the corruption.
+**A**: Yes. If a cached file becomes corrupted on a disk after it was stored, TFS Proxy 2013 and later versions has logic to detect the corruption.
 
-### Q: Does TFS Proxy 2013 fully support caching against VisualStudio.com?
+### Q: Does TFS Proxy fully support caching against dev.azure.com?
 
 **A**: Yes.
 
