@@ -9,7 +9,7 @@ ms.prod: devops-server
 ms.technology: tfs-admin
 ms.manager: jillfra 
 ms.author: aaronha 
-ms.date: 04/05/2019 
+ms.date: 04/10/2019 
 featureFlags:
 - clicktale 
 ---
@@ -220,6 +220,25 @@ featureFlags:
                                                         <div class="cardText">
                                                             <h3>Web portal navigation</h3>
                                                             <p>Learn how to work effectively in the web portal.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/azure/devops/migrate/index">
+                                            <div class="cardSize">
+                                                <div class="cardPadding">
+                                                    <div class="card">
+                                                        <div class="cardImageOuter">
+                                                            <div class="cardImage">
+                                                                <img src="https://docs.microsoft.com/media/common/i_deploy.svg" alt="Deploy icon" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="cardText">
+                                                            <h3>Migrate and Import</h3>
+                                                            <p>Migrate from an on-premises deployment to the Azure DevOps Services.</p>
                                                         </div>
                                                     </div>
                                                 </div>
