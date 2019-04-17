@@ -126,9 +126,9 @@ Based on user feedback, we are making two key changes to our licenses with Azure
 
 In order to simplify the experience of running Azure DevOps 2019 in Azure, we've enabled support for Azure SQL Database (General Purpose S3 and above). This will allow you to leverage extensive [backup features](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-automated-backups) and [scaling options](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-service-tiers) to suit your needs while reducing the administrative overhead of running the service. Note that your Host VM must be located in the same Azure region as your database in order to keep latency low. See the [documentation](https://docs.microsoft.com/en-us/tfs/server/install/install-azure-sql) for more information.
 
-### We will be removing the client object model and SOAP APIs in future versions
+### Work item & test client object model SOAP APIs in future versions
 
-Although Azure DevOps Server 2019 continues to support the work item tracking SOAP API and the client object model, it will be removed in the next major version of Azure DevOps Server. You can find more information in [our documentation](https://aka.ms/witclientom).
+Azure DevOps Server 2019 continues to support the work item tracking SOAP API and the client object model. However, it will be marked as deprecated in future versions of Azure DevOps Server. You can find more information in [our documentation](https://aka.ms/witclientom).
 
 ### Process inheritance on new collections
 
