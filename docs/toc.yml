@@ -8,7 +8,7 @@
   - name: TFS is now Azure DevOps Server
     href: tfs-is-now-azure-devops-server.md
   - name: What is Azure DevOps?
-    href: azure-devops-and-tfs.md
+    href: /azure/devops/user-guide/what-is-azure-devops?toc=/azure/devops/server/toc.json&bc=/azure/devops/server/breadcrumb/toc.json
   - name: Quick reference
     href: admin/admin-quick-ref.md
 - name: Requirements & compatibility

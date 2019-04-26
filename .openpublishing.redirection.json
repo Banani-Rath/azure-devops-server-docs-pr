@@ -480,6 +480,11 @@
       "source_path": "docs/server/upgrade/upgrade-2013/use-same-sharepoint-site.md",
       "redirect_url": "/azure/devops/server/upgrade/upgrade-2013/use-same-sharepoint-site",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/azure-devops-and-tfs.md",
+      "redirect_url": "/azure/devops/what-is-azure-devops",
+      "redirect_document_id": false
     }
   ]
 }
