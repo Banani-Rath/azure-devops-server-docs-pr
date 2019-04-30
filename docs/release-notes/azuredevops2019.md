@@ -5,7 +5,7 @@ keywords: azure devops
 author: egeaney
 ms.author: egeaney
 manager: egeaney
-ms.date: 04/09/2019
+ms.date: 04/30/2019
 ms.topic: release-article
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-articles
@@ -31,7 +31,63 @@ In this article, you will find information regarding the newest release for Azur
 
 To learn more about Azure DevOps Server 2019, see [Azure DevOps Server Requirements](https://go.microsoft.com/fwlink/?LinkId=809018 "Azure DevOps Server Requirements"). Visit the <a href="https://visualstudio.microsoft.com/downloads" target="blank">visualstudio.com/downloads</a> page to download Team Foundation Server products. 
 
-Direct upgrade to Azure DevOps Server is supported from Team Foundation Server 2012 and newer. If your TFS deployment is on TFS 2010 or earlier, you need to perform some interim steps before upgrading to Azure DevOps Server 2019. Please see the <a href="https://docs.microsoft.com/tfs/server/install/get-started?view=vsts" target="blank">Install page</a> for more information. 
+Direct upgrade to Azure DevOps Server is supported from Team Foundation Server 2012 and newer. If your TFS deployment is on TFS 2010 or earlier, you need to perform some interim steps before upgrading to Azure DevOps Server 2019. Please see the <a href="https://docs.microsoft.com/tfs/server/install/get-started" target="blank">Install page</a> for more information. 
+
+****
+
+## **Azure DevOps Server 2019.0.1 RC Release Date: April 30, 2019**
+
+[Azure DevOps Server 2019.0.1](https://go.microsoft.com/fwlink/?linkid=2089023) is a roll up of bug fixes. It includes all fixes in the Azure DevOps Server 2019 patches previously released. You can directly install Azure DevOps Server 2019.0.1 or upgrade from Azure DevOps Server 2019 or Team Foundation Server 2012 or newer.
+
+This release includes fixes for the following bugs:
+
+### Azure Boards
+
+* "The field criteria for this plan has an error." when configuring a Plan. Reported through [Developer Community](https://developercommunity.visualstudio.com/content/problem/438145/impossible-to-configure-a-plan-so-i-can-see-featur.html).
+* apiwitcontroller.executequery throws an exception when a query has the same column multiple times.
+* In the client object model using the vso.work_full oauth scope, WorkItemServer.DownloadFile() fails.
+* Copying an embedded image from a work item field to another work item field in a different project may create a broken image.
+
+### Azure Repos
+
+* "TF401019: GitRepositoryNotFoundException".
+
+### Azure Pipelines
+
+* The **Test Analytics Tab** has a star (*) that indicates preview, even though this feature is not in preview.
+* On the **Releases** tab, the action to manage security is now shown to all the users irrespective of whether they can change the permissions or not.
+* On the Releases landing pages, the start draft release action was creating a new release, but now it starts the draft release.
+
+### Azure Test Plans
+
+* The 1 hour filter on the TestRuns and TestResults CompletedDate are too granular.
+* In the **Test Case** work item type, the type, "Test Case", should not be localized.
+* Test cases do not show up in MTM or a browser.
+* "Validating stage: You do not have permission to trigger releases on the associated release pipeline" error when running automated tests from a Test Plan. Reported through [Developer Community](https://developercommunity.visualstudio.com/content/problem/476664/permissions-to-execute-automated-tests-from-test-p.html).
+* Using the [delete test case API](https://docs.microsoft.com/en-us/rest/api/vsts/test/test%20cases/delete?view=vsts-rest-5.0), test cases can be deleted from other projects. Reported through [Developer Community](https://developercommunity.visualstudio.com/content/problem/352447/delete-test-case-through-api-removes-test-cases-fr.html).
+* Clicking on a work item link in Test Runner opens the work item URL inside Test Runner instead of the default browser.
+* Test case status is not getting updated for users that sign out of Test Runner.
+* User name and email address do not show in the user dropdown in Test Runner.
+
+### Azure Artifacts
+
+* **Move Up** and **Move Down** are not localized in Upstreams.
+
+### Analytics
+
+* Analytics reports may show incomplete data because the model is marked as "ready" before it is actually complete.
+* The velocity, burndown and burnup widgets display different planned work for users on different time zones.
+
+### Administration
+
+* Additional logging added to Collection upgrade to help debug issues.
+* When TfsConfig offlineDetach fails, the error message is not actionable.
+* TfsJobAgent service crashes.
+* The Search extension does not get installed after configuration is complete.
+* The Administration Console becomes unresponsive when the configuration DB is corrupted.
+* Service Hooks may not correctly process notifications.
+* Code Search indexing does not start after configuring Search.
+* There are unlocalized strings on search pages results.
 
 ****
 
