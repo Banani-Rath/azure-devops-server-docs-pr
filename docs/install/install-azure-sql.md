@@ -36,7 +36,7 @@ Upgrading to Azure DevOps Server is supported only from Team Foundation Server 2
 
 ## Set up Azure SQL Database
 
-1. Configure a managed identity on your virtual machines. We recommend system-managed identities, but user-assigned managed identities also are supported.
+1. Configure a managed identity on your virtual machines. We only support system-managed identities at this time.
 
     You can run configuration by using all standard mechanisms, including the:
 
@@ -47,7 +47,7 @@ Upgrading to Azure DevOps Server is supported only from Team Foundation Server 2
 1. To set up a new Azure DevOps Server instance, create two Azure SQL databases:
 
     - AzureDevOps_Configuration  
-    - AzureDevOps_Collection  
+    - AzureDevOps_DefaultCollection  
 
     > [!NOTE]
     > You can skip this step if you use existing databases to either:
@@ -72,6 +72,7 @@ Upgrading to Azure DevOps Server is supported only from Team Foundation Server 2
     ```tsql
     CREATE USER [VMName] FROM EXTERNAL PROVIDER
     ALTER ROLE [db_owner] ADD MEMBER [VMName]
+    ALTER USER [VMName] WITH DEFAULT_SCHEMA=dbo
     ```
 
 ### Configure Azure DevOps Server
