@@ -1,6 +1,11 @@
 {
   "redirections": [
     {
+      "source_path": "docs/index.md",
+      "redirect_url": "/azure/devops/index",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "docs/server/account-requirements.md",
       "redirect_url": "/azure/devops/server/whats-new",
       "redirect_document_id": false

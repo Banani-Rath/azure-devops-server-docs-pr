@@ -1,5 +1,5 @@
 - name: Administration
-  href: server/index.md
+  href: server/index.md?toc=/azure/devops/server/toc.json&bc=/azure/devops/server/breadcrumb/toc.json
 - name: Overview
   expanded: true
   items:
@@ -138,11 +138,11 @@
   items:
   - name: Get started as an admin
     href: /azure/devops/user-guide/project-admin-tutorial?toc=/tfs/toc.json&bc=/azure/devops/server/breadcrumb/toc.json&view=azure-devops-2019 
-    displayname: Azure DevOps Administration Console 
   - name: Add server administrators
     href: admin/add-administrator.md
   - name: Open the administration console 
     href: admin/open-admin-console.md
+    displayname: Azure DevOps Administration Console 
   - name: Manage services and applications
     items:
     - name: Configure an SMTP server
@@ -290,7 +290,7 @@
     href: /azure/devops/repos/
   - name: Azure Boards
     href: /azure/devops/boards/
-  - name: Security and Identity
+  - name: Permissions, Security, & Identity
     href: /azure/devops/security/
   - name: Notifications
     href: /azure/devops/notifications/
