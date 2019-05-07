@@ -67,7 +67,7 @@ If you choose On-premises XML process model for new project collections, you hav
 So, you'll want to consider your work tracking customization and reporting requirements as you move forward with new project collections. To learn more about these choices, see the following articles:
 
 - [Inheritance process model](/azure/devops/organizations/settings/work/inheritance-process-model)  
-- [On-premises process model](/azure/devops/organizations/reference/on-premises-xml-process-model)  
+- [On-premises process model](/azure/devops/reference/on-premises-xml-process-model?view=azure-devops-2019)  
 - [Analytics service](/azure/devops/report/analytics/what-is-analytics)
 - [SQL Reporting Services](/azure/devops/report/sql-reports/reporting-services-reports) 
 
