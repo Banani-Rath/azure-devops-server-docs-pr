@@ -5,7 +5,7 @@ keywords: azure devops
 author: egeaney
 ms.author: egeaney
 manager: egeaney
-ms.date: 04/30/2019
+ms.date: 05/14/2019
 ms.topic: release-article
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-articles
@@ -32,6 +32,15 @@ In this article, you will find information regarding the newest release for Azur
 To learn more about Azure DevOps Server 2019, see [Azure DevOps Server Requirements](https://go.microsoft.com/fwlink/?LinkId=809018 "Azure DevOps Server Requirements"). Visit the <a href="https://visualstudio.microsoft.com/downloads" target="blank">visualstudio.com/downloads</a> page to download Team Foundation Server products. 
 
 Direct upgrade to Azure DevOps Server is supported from Team Foundation Server 2012 and newer. If your TFS deployment is on TFS 2010 or earlier, you need to perform some interim steps before upgrading to Azure DevOps Server 2019. Please see the <a href="https://docs.microsoft.com/tfs/server/install/get-started" target="blank">Install page</a> for more information. 
+
+****
+
+## **Azure DevOps Server 2019 Patch 2 Release Date: May 14, 2019**
+
+We have released a [security patch](https://aka.ms/azdev2019patch) for Azure DevOps Server 2019 that fixes the following bugs:
+* **[CVE-2019-0872](https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2019-0872)**: Cross site scripting (XSS) vulnerability in the Test Plans
+* **[CVE-2019-0971](https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2019-0971)**: Information disclosure vulnerability in the Repos API
+* **[CVE-2019-0979](https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2019-0979)**: Cross site scripting (XSS) vulnerability in the User hub
 
 ****
 
