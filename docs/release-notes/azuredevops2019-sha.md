@@ -29,6 +29,12 @@ Use the Microsoft File Checksum Integrity Verifier tool to compute the SHA hashe
 
 ### SHA Hashes for Azure DevOps Server 2019 Products
 
+####  Azure DevOps Server 2019.0.1 RTW
+
+| Language |  SHA-256 Hash |                                      
+| ------------------------------- | -----------------------------------------
+|Multiple Languages | 094DE256F381CE935AE22994C694235D6806A57002BBCC29C41E9C3521504159
+
 ####  Azure DevOps Server 2019.0.1 RC
 
 | Language |  SHA-256 Hash |                                      

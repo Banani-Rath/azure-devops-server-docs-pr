@@ -5,7 +5,7 @@ keywords: azure devops
 author: egeaney
 ms.author: egeaney
 manager: egeaney
-ms.date: 05/14/2019
+ms.date: 05/21/2019
 ms.topic: release-article
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-articles
@@ -25,9 +25,9 @@ hideEdit: true
 
 ****
 
-In this article, you will find information regarding the newest release for Azure DevOps Server 2019. Click the button to download.
+In this article, you will find information regarding the newest release for Azure DevOps Server 2019. Click the button to download our latest update, Azure DevOps Server 2019.0.1.
 
-<a href="https://go.microsoft.com/fwlink/?linkid=2041267" target="blank"><img src="_img/Download_button_azdev2019.png" alt="Download the latest version of Azure DevOps Server 2019"></a>
+<a href="https://go.microsoft.com/fwlink/?LinkId=2089023" target="blank"><img src="_img/Download_button_azdev2019.png" alt="Download the latest version of Azure DevOps Server 2019"></a>
 
 To learn more about Azure DevOps Server 2019, see [Azure DevOps Server Requirements](https://go.microsoft.com/fwlink/?LinkId=809018 "Azure DevOps Server Requirements"). Visit the <a href="https://visualstudio.microsoft.com/downloads" target="blank">visualstudio.com/downloads</a> page to download Team Foundation Server products. 
 
@@ -35,18 +35,12 @@ Direct upgrade to Azure DevOps Server is supported from Team Foundation Server 2
 
 ****
 
-## **Azure DevOps Server 2019 Patch 2 Release Date: May 14, 2019**
-
-We have released a [security patch](https://aka.ms/azdev2019patch) for Azure DevOps Server 2019 that fixes the following bugs:
-* **[CVE-2019-0872](https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2019-0872)**: Cross site scripting (XSS) vulnerability in the Test Plans
-* **[CVE-2019-0971](https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2019-0971)**: Information disclosure vulnerability in the Repos API
-* **[CVE-2019-0979](https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2019-0979)**: Cross site scripting (XSS) vulnerability in the User hub
-
-****
-
-## **Azure DevOps Server 2019.0.1 RC Release Date: April 30, 2019**
+## **Azure DevOps Server 2019.0.1 Release Date: May 21, 2019**
 
 [Azure DevOps Server 2019.0.1](https://go.microsoft.com/fwlink/?linkid=2089023) is a roll up of bug fixes. It includes all fixes in the Azure DevOps Server 2019 patches previously released. You can directly install Azure DevOps Server 2019.0.1 or upgrade from Azure DevOps Server 2019 or Team Foundation Server 2012 or newer.
+
+> [!NOTE]
+> The Data Migration Tool will be available for Azure DevOps Server 2019.0.1 about three weeks after this release. You can see our list of currently supported versions for import [here](https://docs.microsoft.com/en-us/azure/devops/migrate/migration-overview#supported-azure-devops-server-versions-for-import).
 
 This release includes fixes for the following bugs:
 
@@ -86,6 +80,11 @@ This release includes fixes for the following bugs:
 
 * Analytics reports may show incomplete data because the model is marked as "ready" before it is actually complete.
 * The velocity, burndown and burnup widgets display different planned work for users on different time zones.
+* A hold may be placed on Analytics data ingestion while doing maintenance which can cause stale reports.
+
+### General
+
+* Left navigation items get squeezed on IE when there is not enough space.
 
 ### Administration
 
@@ -97,6 +96,24 @@ This release includes fixes for the following bugs:
 * Service Hooks may not correctly process notifications.
 * Code Search indexing does not start after configuring Search.
 * There are unlocalized strings on search pages results.
+
+This release includes the following update:
+
+### Support for Visual Studio 2019 (VS2019) in Visual Studio Test task
+
+We've added support for Visual Studio 2019 to the Visual Studio Test task in pipelines. To run tests using the test platform for Visual Studio 2019, select the **Latest** or **Visual Studio 2019** options from the Test platform version dropdown.
+
+> [!div class="mx-imgBorder"]
+![Badge](_img/150_05.png "Support for Visual Studio 2019 (VS2019) in Visual Studio Test task")
+
+****
+
+## **Azure DevOps Server 2019 Patch 2 Release Date: May 14, 2019**
+
+We have released a [security patch](https://aka.ms/azdev2019patch) for Azure DevOps Server 2019 that fixes the following bugs:
+* **[CVE-2019-0872](https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2019-0872)**: Cross site scripting (XSS) vulnerability in the Test Plans
+* **[CVE-2019-0971](https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2019-0971)**: Information disclosure vulnerability in the Repos API
+* **[CVE-2019-0979](https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2019-0979)**: Cross site scripting (XSS) vulnerability in the User hub
 
 ****
 
