@@ -1,38 +1,38 @@
 ---
 title: Cache settings for an app-tier server
-titleSuffix: Azure DevOps Server & TFS 
-description: Change cache settings for an application-tier server in Team Foundation Server
+titleSuffix: Azure DevOps Server
+description: Change cache settings for an application-tier server in Azure DevOps Server
 ms.topic: conceptual
 ms.manager: jillfra
 ms.author: aaronha
 author: aaronhallberg
-ms.date: 08/18/2016
+ms.date: 04/25/2019
 ms.prod: devops-server
 ms.technology: tfs-admin
 ---
 
-# Change cache settings for an application-tier for Azure DevOps on-premises  
+# Change cache settings for an application-tier server
 
 [!INCLUDE [temp](../_shared/version-tfs-all-versions.md)]
 
-You can help increase or balance performance in your deployment of Team Foundation Server (TFS) by changing the settings of the cache for files that are under version control on the application-tier server. By default, this cache is enabled so that users can download files more quickly from the cache instead of directly from the database. As an administrator, you can change the settings of this cache any time after installation.
+You can help increase or balance performance in your deployment of Azure DevOps Server by changing the settings of the cache for files that are under version control on the application-tier server. By default, this cache is enabled so that users can download files quickly from the cache, rather than directly from the database. As an administrator, you can change the settings of this cache any time.
 
-You can change the following settings:  
--   [Specify a different cache root folder.](#specify-diff-cache-root)  
--   [Change the limit at which old files are removed from the cache.](#change-limit-old-files)
+-   [Specify a different cache root folder](#specify-diff-cache-root)  
+-   [Change the limit at which old files are removed from the cache](#change-limit-old-files)
 
-You can perform these tasks by editing the web.config file for version control, which is located in the installation directory on the application-tier server.
+You can do these tasks by editing the *web.config* file for version control, which is located in the installation directory on the application-tier server.
 
 > [!NOTE]
-> By default, the installation directory for the application tier is *%programfiles%\*TFS 12.0\Application Tier\Web Services.
+> By default, the installation directory for the application tier is *%programfiles%*\Azure DevOps Server 2019\Application Tier\Web Services.
 
 ## Prerequisites  
-To perform these procedures, you must be a member of the **Administrators** security group on the application-tier server for Team Foundation.
 
-For more information, see the [Microsoft website](http://go.microsoft.com/fwlink/?LinkId=111235).
+To perform these procedures, you must be a member of the **Administrators** security group on the application-tier server for Azure DevOps.
+
+For more information, see [User Account Control](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc772207(v=ws.10)).
 
 <a name="specify-diff-cache-root"></a>
-## To specify a different cache root folder
+## Specify a different cache root folder
 
 1.  On the application-tier server, create a cache folder.
 
@@ -40,28 +40,28 @@ For more information, see the [Microsoft website](http://go.microsoft.com/fwlink
 
     *d:\\temp\\cacheroot*
 
-    >**Security Note:**  
-    >The cache folder stores sensitive information that is not encrypted. Therefore, you should make sure that only the service account of the application tier (*TFSService*) has **Modify** permissions to this folder.
+    > [!IMPORTANT]
+    > The cache folder stores sensitive information that is not encrypted. Therefore, you should make sure that only the service account of the application tier (*TFSService*) has **Modify** permissions to this folder.
 
-2.  Open the shortcut menu for the folder, and then choose **Properties**.
+2.  Open the shortcut menu for the folder, and then select **Properties**.
 
     The **Properties** dialog box for the folder opens.
 
-3.  On the **Security** tab, choose **Edit**.
+3.  On the **Security** tab, select **Edit**.
 
     The **Permissions** dialog box opens.
 
-4.  Choose **Add**.
+4.  Select **Add**.
 
     The **Select Users, Computers, or Groups** dialog box opens.
 
-5.  Add the local group **TFS\_APPTIER\_SERVICE\_WPG**, and then choose **OK**.
+5.  Add the local group **TFS\_APPTIER\_SERVICE\_WPG**, and then select **OK**.
 
-6.  Select the **Modify** check box, clear all other check boxes, and then choose **OK**.
+6.  Select the **Modify** check box, clear all other check boxes, and then select **OK**.
 
-7.  In Windows Explorer (or File Explorer), browse to *%programfiles%\\*TFS 2013\\Application Tier\\Web Services.
+7.  In Windows Explorer (or File Explorer), browse to *%programfiles%*\\Azure DevOps Server 2019\\Application Tier\\Web Services.
 
-8.  Open the web.config file in a text or XML editor, and then locate the `\<appSettings\>` section.
+8.  Open the *web.config* file in a text or XML editor, and then locate the `<appSettings>` section.
 
 9.  Add a line to the `appSettings` section to point to the folder that you just created:
 
@@ -71,29 +71,29 @@ For more information, see the [Microsoft website](http://go.microsoft.com/fwlink
 
         <add key="dataDirectory" value="d:\temp\cacheroot" />
 
-10. Save and close the web.config file.
+10. Save and close the *web.config* file.
 
     > [!NOTE]
     > To maximize performance, copy the files from the old cache folder to the new cache folder.
 
-11. Open a Command Prompt window, type **iisreset**, and then press ENTER.
+11. Open a Command Prompt window, enter **iisreset**, and then press ENTER.
 
 12. Delete the old cache root folder.
 
     > [!NOTE]
-	> By default, the cache root folder is located at *%programfiles%*\TFS 12.0\Version Control Proxy\Web Services\VersionControlProxy\Data.
+    > By default, the cache root folder is located at *%programfiles%*\Azure DevOps Server 2019\Version Control Proxy\Web Services\VersionControlProxy\Data.
 
 
-## Changing limits for removing files from the cache
+## Change limits for removing files from the cache
 
-You can change the maximum limit on the amount of storage space that the application-tier server can use for caching files. When this limit is reached, a cleanup routine makes room for newly requested files by deleting those files that have not been accessed in the longest time.
+You can change the maximum limit on the amount of storage space that the application-tier server can use for caching files. When this limit is reached, a cleanup routine makes room for newly requested files by deleting the files with the oldest access times.
 
 <a name="change-limit-old-files"></a>
-### To change the limit at which old files are removed from the cache
+### Change the limit at which old files are removed from the cache
 
-1.  On the application-tier server, open Windows Explorer (or File Explorer), and browse to *\\%programfiles%\\*TFS 12.0\\Application Tier\\Web Services.
+1.  On the application-tier server, open Windows Explorer (or File Explorer), and browse to *\\%programfiles%*\\Azure DevOps Server 2019\\Application Tier\\Web Services.
 
-2.  Open the web.config file in a text or XML editor, and then locate the `\<appSettings\>` element.
+2.  Open the *web.config* file in a text or XML editor, and then locate the `\<appSettings\>` element.
 
 3.  Add one of the following elements:
 
@@ -110,26 +110,26 @@ You can change the maximum limit on the amount of storage space that the applica
             <add key="FixedSizeBasedPolicy" value="500" />
 
         > [!NOTE]
-		> If both the `FixedSizeBasedPolicy` and `PercentageBasedPolicy` elements are specified, the value of the `FixedSizeBasedPolicy` element is used, and the value of the `PercentageBasedPolicy` element is ignored.
+		> If both the `FixedSizeBasedPolicy` and `PercentageBasedPolicy` elements are specified, the value of the `FixedSizeBasedPolicy` element is used instead of the value of the `PercentageBasedPolicy` element.
 
-4.  Save and close the web.config file.
+4.  Save and close the *web.config* file.
 
-5.  Open a Command Prompt window, type **iisreset**, and then press ENTER.
+5.  Open a Command Prompt window, enter **iisreset**, and then press ENTER.
 
-### To change the amount of cache to free when removing old files
+### Change the amount of cache to free when removing old files
 
-1.  On the application-tier server, open Windows Explorer (or File Explorer), and browse to *%programfiles%\\*TFS 12.0\\Application Tier\\Web Services\\.
+1.  On the application-tier server, open Windows Explorer (or File Explorer), and browse to *%programfiles%*\\Azure DevOps Server 2019\\Application Tier\\Web Services\\.
 
-2.  Open the web.config file in a text or XML editor, locate the `\<appSettings\>` element, and then add the `CacheDeletionPercent` element.
+2.  Open the *web.config* file in a text or XML editor, locate the `<appSettings>` element, and then add the `CacheDeletionPercent` element.
 
     For example, the following line specifies to free 50% of the cache when removing old files:
 
         <add key="CacheDeletionPercent" value="50" />
 
-3.  Save and close the web.config file.
+3.  Save and close the *web.config* file.
 
-4.  Open a Command Prompt window, type **iisreset**, and then press ENTER.
+4.  Open a Command Prompt window, enter **iisreset**, and then press ENTER.
 
-## Related articles
+## Related article
 
- [Service accounts and dependencies in Team Foundation Server](service-accounts-dependencies.md) 
+- [Service accounts and dependencies in Azure DevOps Server](service-accounts-dependencies.md) 
