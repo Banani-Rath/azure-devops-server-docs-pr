@@ -18,6 +18,7 @@ ms.date: 03/05/2019
 You can help protect your deployment from data loss by creating a regular schedule of backups for the databases that Azure DevOps Server, previously named Visual Studio Team Foundation Server (TFS), depends on. To restore your Azure DevOps deployment in its entirety, you must first back up all Azure DevOps databases. 
 
 ::: moniker range=">= tfs-2018"
+
 If your deployment includes SQL Server Reporting Services, you must also back up the databases that  Azure DevOps uses within those components. To prevent synchronization errors or data mismatch errors, you must synchronize all backups to the same time stamp. The easiest way to ensure successful synchronization is by using marked transactions. By routinely marking related transactions in every database, you establish a series of common recovery points in the databases. For step-by-step guidance for backing up a single-server deployment that uses uses reporting, see [Create a backup schedule and plan](config-backup-sched-plan.md).
 
 ::: moniker-end
@@ -102,6 +103,7 @@ The following list provides additional detail about what you must back up, depen
 -   **Encryption key for the report server**   The report server has an encryption key that you must back up. This key safeguards sensitive information that is stored in the database for the report server. You can manually back up this key by using either the Reporting Services Configuration tool or a command-line tool.  
 
 ::: moniker range="<= tfs-2017"  
+
 -   **Databases for SharePoint Products** If your deployment uses SharePoint Products to host project portals, you must back up several databases. These databases include the administration database for each SharePoint Web application that your deployment uses and the site collection databases that host project portals. Ideally, your deployment has been configured to use a separate site collection for each project collection in your deployment. Just as project collections can be backed up and restored as a unit in Team Foundation Server, site collections can be backed up and restored in SharePoint Products. If one or more collections in your deployment are using sites or sub-sites instead of site collections as their root site, you might not be able to fully back up and restore the collections. For more information, see [Organize your server with project collections](../manage-project-collections.md).
 
 	> [!NOTE]  
@@ -133,14 +135,17 @@ You can back up a server by using the **Scheduled Backups** features available, 
 Understanding the types of backups available can help you determine the best options for backing up your deployment. For example, if you are working with a large deployment and want to protect against data loss while efficiently using limited storage resources, you can configure differential backups as well as full data backups. If you are using SQL Server AlwaysOn, you can take backups of your secondary database. You can also try using backup compression or splitting backups across multiple files. Here are brief descriptions of your backup options:
 
 ### Full data backups (databases)
+
 A full database backup is necessary for the recoverability of your deployment. A full backup includes part of the transaction log so that you can recover the full backup. Full backups are self-contained in that they represent the entire database as it existed when you backed it up. For more information, see the following page on the Microsoft Web site: [Full Database Backups](http://go.microsoft.com/fwlink/?LinkId=115462).
 
 ### Differential data backups (databases)
+
 A differential database backup records only the data that has changed since the last full database backup, which is called the differential base. Differential database backups are smaller and faster than full database backups. This option saves backup time at the cost of increased complexity. For large databases, differential backups can occur at shorter intervals than database backups, which reduces the work-loss exposure. For more information, see the following page on the Microsoft Web site: [Differential Database Backups](http://go.microsoft.com/fwlink/?LinkId=158819).
 
 You should also back up your transaction logs regularly. These backups are necessary for recovering data when you use the full database backup model. If you back up transaction logs, you can recover the database to the point of failure or to another specific point in time.
 
 ### Transaction log backups
+
 The transaction log is a serial record of all modifications that have occurred in a database in addition to the transaction that performed each modification. The transaction log records the start of each transaction, the changes to the data, and, if necessary, enough information to undo the modifications made during that transaction. The log grows continuously as logged operations occur in the database.
 
 By backing up transaction logs, you can recover the database to an earlier point in time. For example, you can restore the database to a point before unwanted data was entered or to a point of failure. Besides database backups, transaction log backups must be part of your recovery strategy. For more information, see the following page on the Microsoft Web site: [Transaction Log Backups (SQL Server)](/sql/relational-databases/backup-restore/transaction-log-backups-sql-server).
@@ -184,6 +189,7 @@ If you do not customize the names of your databases, you can use the following t
 | VirtualManagerDB | The administration database for SCVMM contains the information that you view in the SCVMM Administrator Console, such as virtual machines, virtual machine hosts, virtual machine library servers, and their properties. </br> **Note**: If SCVMM is installed on a separate server from Team Foundation Server, this database might not be present on the data-tier server for Team Foundation. In that case, you must configure, back up, and restore it separately from Team Foundation Server. However, you should use marked transactions and synchronize the maintenance of the databases to avoid synchronization errors. |
 
 ::: moniker range="<= tfs-2017"
+
 ### SharePoint Products default database names
 
 | Database | Description |

@@ -30,6 +30,7 @@ In addition to these requirements, review the following articles as well:
 
 
 <a name="hardware-recommendations"></a> 
+
 ## Hardware recommendations 
 
 Azure DevOps on-premises can scale from an Express installation on a laptop that's used by a single person to a highly available deployment that's used by thousands of people. It can support high-use scenarios that have multiple application tiers behind a load balancer and multiple SQL instances that use SQL Always On. 
@@ -54,6 +55,7 @@ The following scenarios might require a multiple-server deployment:
 - Extensive use of automated build, test, or release
 - Using Code Search
 - Using reporting features
+
 ::: moniker-end
 
 ::: moniker range="<= tfs-2017"
@@ -63,6 +65,7 @@ The following scenarios might require a multiple-server deployment:
 - Using Code Search
 - Using reporting features
 - Using SharePoint integration
+
 ::: moniker-end
 
 For a team of more than 500 users, consider the following setup:
@@ -98,9 +101,10 @@ The XAML build service has the same operating system requirements as Azure DevOp
 
 <!-- QUESTION: For more information, see System requirements for Team Foundation Build Service  -->
 
-<a name="operating-systems"></a> 
+
 ## Operating systems
 
+<a name="operating-systems"></a> 
 The following operating systems are supported for the indicated versions of Azure DevOps Server and Team Foundation Server (TFS).
 
 ### Server or client installation
@@ -147,6 +151,7 @@ Although you can install Azure DevOps Server on client operating systems, we don
 If you need to use any of these features, install Azure DevOps Server on a server operating system.
 
 <a name="proxy-server"></a> 
+
 ## Proxy server requirements
 
 The proxy feature is available when you install Azure DevOps Server or TFS on a server operating system.
@@ -187,6 +192,7 @@ For more information, see the following articles:
 * [Server virtualization](http://go.microsoft.com/fwlink/?LinkId=196072) (officially supported products)
 
 <a name="sql-server"></a> 
+
 ## Azure SQL Database and SQL Server
 
 Azure DevOps on-premises deployments require some version of SQL Server. Azure DevOps Server supports Express, Standard, and Enterprise [SQL Server editions](https://www.microsoft.com/sql-server/sql-server-2017-editions). The Express edition is recommended only for evaluation purposes, personal use, or for very small teams. We recommend the SQL Server Standard or Enterprise versions for all other scenarios.
@@ -198,8 +204,8 @@ For production deployments, use one of the following versions of SQL Server.
 > |Azure DevOps Server 2019 | Azure SQL Database<br/>SQL Server 2017<br/>SQL Server 2016 (minimum SP1) |
 > |TFS 2018 | SQL Server 2017<br/>SQL Server 2016 (minimum SP1) |
 > |TFS 2017 Update 1 | SQL Server 2016 (minimum SP1)<br/>SQL Server 2014 |
-> |TFS 2017 | SQL Server 2016<br/>SQL Server 2014 |
-> |TFS 2015 Update 3 | SQL Server 2016<br/>SQL Server 2014<br/>SQL Server 2012 (minimum SP1) |
+> |TFS 2017 | SQL Server 2016 (recommend SP1)<br/>SQL Server 2014<br/>
+> |TFS 2015 Update 3  | SQL Server 2016 (recommend SP1)<br/>SQL Server 2014<br/>SQL Server 2012 (minimum SP1) |
 > |TFS 2015 | SQL Server 2014<br/>SQL Server 2012 (minimum SP1) |
 > |TFS 2013 Update 2  | SQL Server 2014<br/>SQL Server 2012 (minimum SP1) |
 > |TFS 2013 | SQL Server 2012 (minimum SP1) |
@@ -245,12 +251,15 @@ However, when Microsoft supports a major version, we always support the latest s
 ## <a name="languages"></a> Natural languages
 
 ::: moniker range=">= tfs-2018"
+
 You can install Azure DevOps in various languages on supported operating systems. However, you can't use any combination of localized operating system with Azure DevOps Server and TFS. Also, you can't install multiple languages on a single Azure DevOps Server or TFS server. 
 
 ::: moniker-end
 
 ::: moniker range="<= tfs-2017"
+
 You can install Azure DevOps in various languages on supported operating systems. However, you can't use any combination of localized operating system with Azure DevOps Server and TFS. Also, you can't install multiple languages on a single Azure DevOps Server or TFS server. The language of the SharePoint Products installation can also complicate your deployment. However, you can add an appropriate language pack to the server that's running SharePoint Products to meet requirements for Team Foundation Server.
+
 ::: moniker-end
 
 
@@ -281,11 +290,11 @@ The following rules clarify the language requirements for Azure DevOps Server an
 	For example, you can install a Japanese version of Team Foundation Server on an English or Japanese operating system but not on a German operating system. If you install a Japanese version of Team Foundation Server, you must also have either a Japanese version of SharePoint Products or the Japanese language pack for SharePoint Products installed on the server that's running SharePoint Products.
 ::: moniker-end
 
-
 Test controllers and agents have their own language requirements. For more information, see [Test controller and test agent requirements](/visualstudio/test/test-controller-and-test-agent-requirements-for-load-testing).
 
 ::: moniker range="<= tfs-2018"
 <a name="sharepoint"></a> 
+
 ## SharePoint
 
 TFS 2018 and Azure DevOps Server no longer support integration with Office SharePoint and the TFS Extension for SharePoint. For information about TFS integration with SharePoint, see [TFS-SharePoint version compatibility](/azure/devops/report/sharepoint-dashboards/about-sharepoint-integration?#compat).
@@ -294,6 +303,7 @@ TFS 2018 and Azure DevOps Server no longer support integration with Office Share
 
 ::: moniker range="<= tfs-2017"
 <a name="project-server"></a> 
+
 ## Project Server
 
 TFS 2017 and later versions no longer support native integration with Office Project Server. For information about TFS integration with Project Server, see [TFS-Project Server version compatibility](/azure/devops/reference/tfs-ps-sync/system-and-setup-requirements?view=vsts#tfs-project-server-version-compability).
@@ -301,6 +311,7 @@ TFS 2017 and later versions no longer support native integration with Office Pro
 ::: moniker-end
 
 ## Related articles
+
 - [Client and on-premises build compatibility](compatibility.md)
 - [Service account requirements](account-requirements.md)
 - [Architecture overview](./architecture/architecture.md)

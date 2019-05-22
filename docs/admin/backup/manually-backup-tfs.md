@@ -37,6 +37,7 @@ You must be a member of all the following groups:
 -   The **Farm Administrators** group in SharePoint Foundation, or an account with the permissions required to back up the farm.
 
 <a name="reporting-encyption-key"></a>
+
 ## Backup reporting services encryption key
 
 If your deployment uses SQL Server Reporting Services, you must back up not only the databases but also the encryption key.
@@ -98,6 +99,7 @@ Back up the encryption key by using the Reporting Services Configuration tool:
 
 
 <a name="identify-dbs"></a>
+
 ## Identify databases
 
 Before you begin, you should take the time to identify all the databases you will need to back up if you would ever have to fully restore your deployment. This includes databases for SharePoint Foundation and SQL Server Reporting Services. These might be on the same server, or you might have databases distributed across multiple servers. For a complete table and description of TFS databases, including the default names for the databases, see [Understand TFS databases, deployment topologies, and backup](backup-db-architecture.md).
@@ -122,6 +124,7 @@ Before you begin, you should take the time to identify all the databases you wil
         > Unlike the other databases in the deployment, the databases used by SharePoint Foundation should not be manually backed up using the tools in SQL Server. Follow the separate procedure &quot;[Create a Back Up Plan for SharePoint Foundation](#create-backup-plan-sharepoint)&quot; later in this topic for backing up these databases.
 
 <a name="create-tables"></a>
+
 ## Create tables in databases
 
 To make sure that all databases are restored to the same point, you can create a table in each database to mark transactions. You can use the Query function in SQL Server Management Studio to create an appropriate table in each database.
@@ -171,6 +174,7 @@ To make sure that all databases are restored to the same point, you can create a
     -   ReportServerTempDB
 
 <a name="create-stored-proc-for-marking"></a>
+
 ## Create a stored procedure for marking tables
 
 After the tables have been created in each database that you want to back up, you must create a procedure for marking the tables.
@@ -206,6 +210,7 @@ After the tables have been created in each database that you want to back up, yo
 	> Make sure that you select the name of the database you want to create the stored procedure for from the **Available Database** list in Object Explorer before you create the procedure. Otherwise when you run the script the command will display an error that the stored procedure was already exists.
 
 <a name="create-stored-proc-mark-all-tables"></a>
+
 ## Create a stored procedure for marking all tables at once
 
 To make sure that all databases are marked, you can create a procedure that will run all the procedures that you just created for marking the tables. Unlike the previous procedures, this procedure runs only in the configuration database.
@@ -240,6 +245,7 @@ To make sure that all databases are marked, you can create a procedure that will
 5.  (Optional) Save the procedure.
 
 <a name="create-stored-proc-auto-mark"></a>
+
 ## Create a stored procedure to automatically mark tables
 
 When you have a procedure that will run all stored procedures for table marking, you must create a procedure that will mark all tables with the same transaction marker. You will use this marker to restore all databases to the same point.
@@ -263,6 +269,7 @@ When you have a procedure that will run all stored procedures for table marking,
 5.  Save the procedure.
 
 <a name="create-sched-job-to-run-proc"></a>
+
 ## Create a scheduled job to run the table-marking procedure
 
 Now that you have created and stored all the procedures that you need, you must schedule the table-marking procedure to run just before the scheduled backups of the databases. You should schedule this job to run approximately one minute before the maintenance plan for the databases runs.
@@ -303,6 +310,7 @@ Now that you have created and stored all the procedures that you need, you must 
 13. In **New Job**, choose **OK** to finish creating the scheduled job.
 
 <a name="create-maintenance-plan-full-backups"></a>
+
 ## Create a maintenance plan for full backups
 
 After you create a scheduled job for marking the databases, you can use the Maintenance Plan Wizard to schedule full backups of all of the databases that your deployment of TFS uses.
@@ -349,6 +357,7 @@ After you create a scheduled job for marking the databases, you can use the Main
     SQL Server creates the maintenance plan and backs up the databases that you specified based on the frequency that you specified.
 
 <a name="create-maintenance-plan-diff-backups"></a>
+
 ## Create a maintenance plan for differential backups
 
 You can use the Maintenance Plan Wizard to schedule differential backups for all databases that your deployment of TFS uses.
@@ -396,6 +405,7 @@ You can use the Maintenance Plan Wizard to schedule differential backups for all
     SQL Server creates the maintenance plan and backs up the databases that you specified based on the frequency that you specified.
 
 <a name="create-maintenance-plan-transaction-log-backup"></a>
+
 ## Create a maintenance plan for transaction logs
 
 You can use the Maintenance Plan Wizard to schedule transaction log backups for all databases that your deployment of TFS uses.
@@ -452,6 +462,7 @@ You can use the Maintenance Plan Wizard to schedule transaction log backups for 
     SQL Server creates the maintenance plan and backs up the transaction logs for the databases that you specified based on the frequency that you specified.
 
 <a name="backup-encryption-key-for-reporting"></a>
+
 ## Back up the encryption key for reporting services
 
 You must back up the encryption key for Reporting Services as part of backing up your system. Without this encryption key, you will not be able to restore the reporting data. For a single-server deployment of TFS, you can back up the encryption key for SQL Server Reporting Services by using the Reporting Services Configuration tool. You could also choose to use the **RSKEYMGMT** command-line tool, but the configuration tool is simpler. For more information about **RSKEYMGMT**, see the following page on the Microsoft website: [RSKEYMGMT Utility](http://go.microsoft.com/fwlink/?LinkId=160686).
@@ -475,7 +486,9 @@ You must back up the encryption key for Reporting Services as part of backing up
 6.  In **Confirm Password**, specify the password for the file again, and then choose **OK**.
 
 ::: moniker range="<= tfs-2017"
+
 <a name="create-backup-plan-sharepoint"></a>
+
 ## Create a backup plan for SharePoint Foundation
 
 Unlike Team Foundation Server, which uses the scheduling tools in SQL Server Management Studio, there is no built-in scheduling system for backups in SharePoint Foundation, and SharePoint specifically recommends against any scripting that marks or alters its databases. To schedule backups so that they occur at the same time as the backups for TFS, SharePoint Foundation guidance recommends that you create a backup script by using Windows PowerShell, and then use Windows Task Scheduler to run the backup script at the same time as your scheduled backups of TFS databases. This will help you keep your database backups in sync.
@@ -554,6 +567,7 @@ To schedule your backups, you must use Windows Task Scheduler. In addition, you 
 ::: moniker range="<= tfs-2015"
 
 <a name="backup-additional-lab-mgt"></a>
+
 ## Back up additional lab management components
 
 If you use Visual Studio Lab Management in your TFS deployment, you must also back up each machine and component that Lab Management uses. The hosts for the virtual machines and the SCVMM library servers are separate physical computers that are not backed up by default. You must specifically include them when you plan your backup and restoration strategies. The following table summarizes what you should back up whenever you back up Team Foundation Server.

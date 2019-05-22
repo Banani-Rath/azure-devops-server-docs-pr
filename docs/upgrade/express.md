@@ -44,6 +44,7 @@ where you have the older version installed.
 You will only need to make a couple of basic decisions. The installation remembers the settings from your previous installation.
 
 ::: moniker range="tfs-2015"
+
 By default, the TFS 2015 Express upgrade will install and configure a build agent for the 
 [new TFS 2015 build system](/azure/devops/build-release/overview), and will set it up to start automatically
 so that you can start using it right away after your upgrade. If you do not want to use the 

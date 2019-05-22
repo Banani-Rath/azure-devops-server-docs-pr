@@ -35,6 +35,7 @@ The **Authentication** command changes the network authentication protocol that 
 </table>
 
 ### Required permissions
+
 To use the **Authentication** command, you must be a member of the Team Foundation Administrators security group 
 and a local administrator on the application-tier server or proxy server, depending on the value of the **siteType**
 option. 
@@ -45,7 +46,7 @@ The **Authentication** command is used by an administrator who wants to change t
 The administrator runs this command from the application tier to update those websites that require a change in their network authentication protocol.
 The command changes the **NTAuthenticationProviders** property in the IIS metabase.
 
->Before you use the <strong>Authentication</strong> command to change the authentication protocol, you can run the command with the <strong>/viewAll</strong> option to see what the existing settings are.
+> Before you use the <strong>Authentication</strong> command to change the authentication protocol, you can run the command with the <strong>/viewAll</strong> option to see what the existing settings are.
 
 ### Example
 

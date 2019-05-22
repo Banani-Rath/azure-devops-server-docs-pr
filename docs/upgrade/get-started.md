@@ -36,12 +36,14 @@ The general process you use to upgrade an existing deployment of Azure DevOps Se
 - **Configure new features**. <!--- QUESTION: what needs to be said here for 2019? -->
 
 	::: moniker range="azure-devops-2019"
-    You might need to manually configure some work tracking options by updating XML definition files.
+
+	You might need to manually configure some work tracking options by updating XML definition files.
 
 	::: moniker-end
 
 	::: moniker range="<= tfs-2018"
-    You might need to [configure each project](/azure/devops/work/customize/configure-features-after-upgrade) to gain access to new features that were made available. You don't have to make all configurations immediately, but some features aren't available until they're configured. Based on your project, use the Configure Features wizard to make changes or make changes manually by updating XML definition files.
+
+	You might need to [configure each project](/azure/devops/work/customize/configure-features-after-upgrade) to gain access to new features that were made available. You don't have to make all configurations immediately, but some features aren't available until they're configured. Based on your project, use the Configure Features wizard to make changes or make changes manually by updating XML definition files.
 
 	::: moniker-end
 

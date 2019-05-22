@@ -22,7 +22,7 @@ ms.date: 08/08/2016
 For many releases, the default web site settings for Azure DevOps Server, previously named Team Foundation Server (TFS), have been:
  
 * A single HTTP binding for the TFS web site on port 8080, with no host name or IP address specified.
-* A public URL (previously referred to as the Notification URL) of the form http://machine-name:8080/tfs. 
+* A public URL (previously referred to as the Notification URL) of the form `http://machine-name:8080/tfs`. 
  
 The primary benefit of these settings is that they are very simple to set up and convenient for end users in most scenarios. In particular:
  

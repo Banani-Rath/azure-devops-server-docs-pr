@@ -26,6 +26,7 @@ your Azure DevOps on-premises deployment, previously named Visual Studio Team Fo
 [!INCLUDE [temp](_shared/tools-location.md)]
 
 ## Requirements 
+
 For many commands to operate correctly, **TFSConfig** will need to be able to connect to the various servers
 and services which are part of your TFS deployment, and the user running **TFSConfig** will need to have administrative
 permissions for these same servers and services. Requirements for specific commands will be called out below.
@@ -39,6 +40,7 @@ See [Administrative task quick reference](../admin/admin-quick-ref.md).
 
 
 ### List commands and get help
+
 To display a full list of **TFSConfig** commands, use the **help** command:
 
 	TFSConfig help
@@ -52,15 +54,21 @@ To get help for an individual command, use the **help** command and specify the 
 <hr/>
 
 ## AddProjectReports
+
 [!INCLUDE [ADDPROJECTREPORTS](_shared/addProjectReports.md)]
+
 <hr/>
 
 ## Authentication
+
 [!INCLUDE [AUTHENTICATION](_shared/authentication.md)]
+
 <hr/>
 
 ## Certificates
+
 [!INCLUDE [CERTIFICATES](_shared/certificates.md)]
+
 <hr/>
 
 ## ChangeServerID

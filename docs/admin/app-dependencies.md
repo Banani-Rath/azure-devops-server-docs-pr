@@ -60,6 +60,7 @@ your deployment.
 ::: moniker-end
 
 ## Core service functions
+
 When you create a project, you automatically gain access to the
 following functions:
 
@@ -81,6 +82,7 @@ following functions:
     these and other clients that connect to TFS, see [Which tools and clients connect to Azure DevOps](/azure/devops/user-guide/tools).
 
 ## Required resources to support additional services
+
 The following table indicates the additional servers and functionality
 that you must configure for your team to have access to the
 corresponding feature. You can add resources before or after you have

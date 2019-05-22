@@ -65,6 +65,7 @@ The service account for Azure DevOps Server or Team Foundation Server is also us
 1. To make it easier to discuss the different accounts that Azure DevOps on-premises requires, this article uses example placeholder names. You don't have to use these placeholder names for any accounts that you might create.
 
 ::: moniker range="<= tfs-2017"
+
 ## Service accounts for Release Management for Visual Studio 2013
 
 > [!NOTE]   
@@ -97,6 +98,7 @@ If you connect Release Management to Azure DevOps Server or TFS, you need an acc
 
 
 ## SQL Server service account
+
 The SQL Server service account is an identity that runs Windows services for SQL Server. In the following example, **SQLSERVICE** is a placeholder name. 
 
 | Sample user logon name | Requirements |
@@ -117,6 +119,7 @@ If you install Azure DevOps Server or Team Foundation Server with the default op
 
 
 ::: moniker range="<= tfs-2018"
+
 ## SharePoint service account
 
 [!INCLUDE [temp](_shared/about-sharepoint-deprecation.md)] 
