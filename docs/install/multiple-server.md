@@ -31,15 +31,15 @@ and you can ensure high availability by using SQL Server AlwaysOn Availability G
 ### Data tier
 
 0. Set up your SQL Server deployment using a [supported version of SQL Server](../requirements.md#sql-server).
-Your deployment can be a single instance of SQL Server or an [AlwaysOn Availability Group](/sql/database-engine/availability-groups/windows/getting-started-with-always-on-availability-groups-sql-server).
+   Your deployment can be a single instance of SQL Server or an [AlwaysOn Availability Group](/sql/database-engine/availability-groups/windows/getting-started-with-always-on-availability-groups-sql-server).
 
 	When you set up SQL Server, install the database engine and the full text search services.
 
 	![SQL_SERVER_FEATURES](_shared/_img/sql-features.png)
 
-0. Configure the firewall on each of the servers
-to [allow access to the SQL Server database engine](/sql/database-engine/configure-windows/configure-a-windows-firewall-for-database-engine-access)
-so that the Azure DevOps application-tier servers can get through the firewall to connect to the SQL Server database engine.
+1. Configure the firewall on each of the servers
+   to [allow access to the SQL Server database engine](/sql/database-engine/configure-windows/configure-a-windows-firewall-for-database-engine-access)
+   so that the Azure DevOps application-tier servers can get through the firewall to connect to the SQL Server database engine.
 
 ### Reporting
 
@@ -54,15 +54,15 @@ If you're going to enable reporting, prepare the data tier servers for that.
 	You can install Analysis Services on the server or AlwaysOn Availability Group where you installed the database engine,
 	or you can install it on a separate SQL Server instance or a separate AlwaysOn Availability Group.
 
-0. Configure the firewall on each of the Analysis Services servers
-to [allow access to Analysis Services](https://msdn.microsoft.com/library/ms174937.aspx).
+1. Configure the firewall on each of the Analysis Services servers
+   to [allow access to Analysis Services](https://msdn.microsoft.com/library/ms174937.aspx).
 
-0. Install and configure SQL Server Reporting Services.
+2. Install and configure SQL Server Reporting Services.
 
 	You can install Reporting Services on the server or AlwaysOn Availability Group where you installed the database engine or Analysis Services,
 	or you can install it on a separate SQL Server instance or a separate AlwaysOn Availability Group.
 
-0. Configure the firewall on each of the Reporting Services servers to [allow access to Reporting Services](/sql/reporting-services/report-server/configure-a-firewall-for-report-server-access).
+3. Configure the firewall on each of the Reporting Services servers to [allow access to Reporting Services](/sql/reporting-services/report-server/configure-a-firewall-for-report-server-access).
 
 ## Install Azure DevOps on application tier servers
 
@@ -76,13 +76,13 @@ Install Azure DevOps Server on multiple application tier servers.
 
 2. [!INCLUDE [download-azure-devops-server](../_shared/download-azure-devops-server.md)] 
 
-3.  Choose **Start Wizard** to run the application-tier only configuration wizard.
+3. Choose **Start Wizard** to run the application-tier only configuration wizard.
 
-	![Start Wizard](_img/install-single-server/configuration-center-start-wizard.png)  
+   ![Start Wizard](_img/install-single-server/configuration-center-start-wizard.png)  
 
 4. Choose the **New Deployment - Advanced** option. For details, see [Configure using the Advanced option](single-server.md#configure-advanced). 
 
-0. On the database page, point to the SQL Server instance on the data tier and test the connection.  
+5. On the database page, point to the SQL Server instance on the data tier and test the connection.  
 	::: moniker range=">= azure-devops-2019"
 	![Advanced>Database](_img/advanced/advanced-db-5.png) 
 	::: moniker-end 
@@ -94,12 +94,12 @@ Install Azure DevOps Server on multiple application tier servers.
 0. On the Account page, specify the service account to use.   
 
 	![Advanced>Account](_img/advanced/advanced-account-6.png) 
-::: moniker-end 
-::: moniker range=">tfs-2015 <=tfs-2018"
-0. On the Account page, specify the service account and authentication method.  
+   ::: moniker-end 
+   ::: moniker range=">tfs-2015 <=tfs-2018"
+1. On the Account page, specify the service account and authentication method.  
 
 	![Service account page in the full configuration wizard](_img/service-account-and-authentication.png)
-::: moniker-end 
+   ::: moniker-end 
 
 	By default, Azure DevOps services will run as a network service in a domain
 	or as local system in a workgroup.
@@ -119,7 +119,7 @@ Install Azure DevOps Server on multiple application tier servers.
 	![Configure reporting checkbox](_img/configure-reporting.png)  
 	::: moniker-end 
 
-0. Enter the name of the server where you installed SQL Server Reporting Services. Then, choose **Populate URLs**. 
+1. Enter the name of the server where you installed SQL Server Reporting Services. Then, choose **Populate URLs**. 
 
 	::: moniker range=">= azure-devops-2019"
 	![Advanced>Reporting](_img/advanced/advanced-reporting-9b.png) 
@@ -128,9 +128,9 @@ Install Azure DevOps Server on multiple application tier servers.
 	![Reporting services page in the full configuration wizard](_img/reporting-service-instance.png)
 	::: moniker-end 	
 
-0. Set the account that will be assigned the Reports Reader role in the Analysis Services instance
-and test that the account and password can be authenticated.
-Reports use this account when they access the Analysis Services database.  
+2. Set the account that will be assigned the Reports Reader role in the Analysis Services instance
+   and test that the account and password can be authenticated.
+   Reports use this account when they access the Analysis Services database.  
 
 	::: moniker range=">= azure-devops-2019"
 	![Advanced>Report Reader Account](_img/advanced/advanced-reporting-9d.png)  
@@ -143,11 +143,11 @@ Reports use this account when they access the Analysis Services database.
 
 0. [!INCLUDE [install-sql-server-client-tools-connectivity](../_shared/install-sql-server-client-tools-connectivity.md)]
 
-0. [!INCLUDE [download-azure-devops-server](../_shared/download-azure-devops-server.md)]
+1. [!INCLUDE [download-azure-devops-server](../_shared/download-azure-devops-server.md)]
 
-0. On the database page, point to the SQL Server instance that is the primary replica in the AlwaysOn Availability Group
-where you installed the database engine,
-and list the available databases.
+2. On the database page, point to the SQL Server instance that is the primary replica in the AlwaysOn Availability Group
+   where you installed the database engine,
+   and list the available databases.
 	::: moniker range=">= azure-devops-2019"
 	![Advanced>Database](_img/advanced/advanced-db-5.png) 
 	::: moniker-end 
@@ -160,13 +160,13 @@ and list the available databases.
 0. On the **Account** page, specify the service account to use.   
 
 	![Advanced>Account](_img/advanced/advanced-account-6.png) 
-::: moniker-end 
+   ::: moniker-end 
 
 ::: moniker range=">tfs-2015 <=tfs-2018"
 0. On the **Account** page, specify the service account and authentication method.  
 
 	![Service account page in the full configuration wizard](_img/service-account-and-authentication.png)
-::: moniker-end 
+   ::: moniker-end 
 
 
 ## AlwaysOn Availability Group

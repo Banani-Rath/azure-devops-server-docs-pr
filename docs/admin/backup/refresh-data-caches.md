@@ -39,16 +39,16 @@ To update the cache for tracking work items, invoke the **StampWorkitemCache** w
 
 To refresh the cache for tracking work items on client computers:
 
-1.  On the new server, open Internet Explorer.
+1. On the new server, open Internet Explorer.
 
-2.  In the Address bar, enter the following address to connect to the **ClientService** web service:
+2. In the Address bar, enter the following address to connect to the **ClientService** web service:
 
-    **http://***PublicURL/VirtualDirectory***:8080/WorkItemTracking/v3.0/ClientService.asmx**
+   **http://**<em>PublicURL/VirtualDirectory</em>**:8080/WorkItemTracking/v3.0/ClientService.asmx**
 
-	> [!NOTE]  
-	> Even if you are logged on with administrative credentials, you may need to start Internet Explorer as an administrator, and you may be prompted for your credentials.
+   > [!NOTE]  
+   > Even if you are logged on with administrative credentials, you may need to start Internet Explorer as an administrator, and you may be prompted for your credentials.
 
-3.  Select **StampWorkitemCache**, and then choose **Invoke**. The **StampWorkitemCache** method returns no data.
+3. Select **StampWorkitemCache**, and then choose **Invoke**. The **StampWorkitemCache** method returns no data.
 
 ## Refresh the version control cache
 
@@ -56,17 +56,17 @@ To refresh the version control cache, each user runs the **tf workspaces** comma
 
 To refresh the version control cache on client computers:
 
-1.  On the client computer, open a Command Prompt window with administrative permissions, and change directories to *Drive*:\\Program Files (x86)\\Microsoft Visual Studio 12.0\\Common7\\IDE.
+1. On the client computer, open a Command Prompt window with administrative permissions, and change directories to *Drive*:\\Program Files (x86)\\Microsoft Visual Studio 12.0\\Common7\\IDE.
 
-2.  At the command prompt, enter the following command, including the URL of the collection, which includes the server name and the port number of the new server:
+2. At the command prompt, enter the following command, including the URL of the collection, which includes the server name and the port number of the new server:
 
-    **tf workspaces /collection:http://***ServerName:Port/VirtualDirectoryName/CollectionName*
+   **tf workspaces /collection:http://**<em>ServerName:Port/VirtualDirectoryName/CollectionName</em>
 
-    In the example deployment, a developer needs to refresh the version control cache for a project that is a member of the DefaultCollection collection, which is hosted in the FabrikamPrime deployment of Azure DevOps Server:
+   In the example deployment, a developer needs to refresh the version control cache for a project that is a member of the DefaultCollection collection, which is hosted in the FabrikamPrime deployment of Azure DevOps Server:
 
-    **tf workspaces /collection:http://FabrikamPrime:8080/tfs/DefaultCollection**
+   **tf workspaces /collection:<http://FabrikamPrime:8080/tfs/DefaultCollection>**
 
-    For more information, see [Workspaces command](/azure/devops/tfvc/workspaces-command).
+   For more information, see [Workspaces command](/azure/devops/tfvc/workspaces-command).
 
 
 ## Related articles

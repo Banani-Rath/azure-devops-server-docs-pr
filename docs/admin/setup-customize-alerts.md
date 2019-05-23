@@ -29,45 +29,45 @@ For feedback requests and alerts to work, you must configure an SMTP server for 
 
 ## Configure an SMTP server 
 
-1.  If you aren't an Azure DevOps administrator, [get added as one now](add-administrator.md).
+1. If you aren't an Azure DevOps administrator, [get added as one now](add-administrator.md).
 
-2.  Open the Azure DevOps Server Administration Console from the **Start** menu. Or, at a command prompt, type **TFSMgmt.exe**. For details, see [Open administration console](open-admin-console.md). 
+2. Open the Azure DevOps Server Administration Console from the **Start** menu. Or, at a command prompt, type **TFSMgmt.exe**. For details, see [Open administration console](open-admin-console.md). 
 
-3.  Choose **Alert Settings**.
+3. Choose **Alert Settings**.
 
-	::: moniker range=">= azure-devops-2019"  
-	![Open email alerts for the application tier](_img/app-tier/alert-settings.png)  
-	::: moniker-end  
-	::: moniker range="<= tfs-2018"  
-    ![Open email alerts for the application tier](_img/ic724655.png)
-	::: moniker-end  
+   ::: moniker range=">= azure-devops-2019"  
+   ![Open email alerts for the application tier](_img/app-tier/alert-settings.png)  
+   ::: moniker-end  
+   ::: moniker range="<= tfs-2018"  
+   ![Open email alerts for the application tier](_img/ic724655.png)
+   ::: moniker-end  
 
-4.  Enable email alerts and specify the SMTP Server and the email address to use for sending emails.
+4. Enable email alerts and specify the SMTP Server and the email address to use for sending emails.
 
-	::: moniker range=">= azure-devops-2019"  
-	![Enable and configure SMTP server](_img/app-tier/alert-settings-dialog.png)  
-	::: moniker-end  
-	::: moniker range="<= tfs-2018"  
-    ![Enable and configure SMTP server](_img/ic724656.png)
-	::: moniker-end  
+   ::: moniker range=">= azure-devops-2019"  
+   ![Enable and configure SMTP server](_img/app-tier/alert-settings-dialog.png)  
+   ::: moniker-end  
+   ::: moniker range="<= tfs-2018"  
+   ![Enable and configure SMTP server](_img/ic724656.png)
+   ::: moniker-end  
 
-    If your deployment is configured to use SSL, then select the second checkbox and enter a certificate. See also [Setting up HTTPS with Secure Sockets Layer (SSL)](setup-secure-sockets-layer.md).
+   If your deployment is configured to use SSL, then select the second checkbox and enter a certificate. See also [Setting up HTTPS with Secure Sockets Layer (SSL)](setup-secure-sockets-layer.md).
 
-	> [!TIP]     
-	>- Make sure your firewall is configured to allow communications between Azure DevOps and your SMTP server.  
-	>- Your SMTP server must be configured to allow anonymous senders to send email, or you must have previously created an account specifically to use as the email account for alerts. If you specify the Azure DevOps service account (*TFSService*), this account must be a domain account with permission to send email.  
-	>- If you used a system account (such as Network Service) as the Azure DevOps service account, leave the User and Password fields blank for the advanced configuration, and make sure that your SMTP server is configured to allow anonymous users to send mail. Alternately, specify an email-enabled domain account to use as the email account for alerts. If you do not, email notifications will not be sent. 
+   > [!TIP]     
+   >- Make sure your firewall is configured to allow communications between Azure DevOps and your SMTP server.  
+   >- Your SMTP server must be configured to allow anonymous senders to send email, or you must have previously created an account specifically to use as the email account for alerts. If you specify the Azure DevOps service account (*TFSService*), this account must be a domain account with permission to send email.  
+   >- If you used a system account (such as Network Service) as the Azure DevOps service account, leave the User and Password fields blank for the advanced configuration, and make sure that your SMTP server is configured to allow anonymous users to send mail. Alternately, specify an email-enabled domain account to use as the email account for alerts. If you do not, email notifications will not be sent. 
 
-5.  To verify your configuration, [open your personal notifications](/azure/devops/notifications/howto-manage-personal-notifications). You might need to refresh your browser to see this option if you just recently enabled an SMTP server.
+5. To verify your configuration, [open your personal notifications](/azure/devops/notifications/howto-manage-personal-notifications). You might need to refresh your browser to see this option if you just recently enabled an SMTP server.
 
-	::: moniker range=">= azure-devops-2019"
-	![Open personal notification settings](_img/config-smtp/open-notification-settings.png)  
-	::: moniker-end
-	::: moniker range="<= tfs-2018"
-    ![Open individual alerts](_img/ic726730.png)
-	::: moniker-end
+   ::: moniker range=">= azure-devops-2019"
+   ![Open personal notification settings](_img/config-smtp/open-notification-settings.png)  
+   ::: moniker-end
+   ::: moniker range="<= tfs-2018"
+   ![Open individual alerts](_img/ic726730.png)
+   ::: moniker-end
 
-	Create an alert and then perform an action that will trigger the alert. 
+   Create an alert and then perform an action that will trigger the alert. 
 
 
 ## Customize the format for email alerts
@@ -107,24 +107,24 @@ The event service uses the .xsl and the plaintextXsl files to transform the XML 
 
 ### To modify the alert format for work item changes
 
-1.  On your application-tier server, open the folder for the version you're running, for example: 
+1. On your application-tier server, open the folder for the version you're running, for example: 
 
-	::: moniker range=">= azure-devops-2019"  
-	*Drive*:\\%programfiles%\Azure DevOps Server 2019\Application Tier\TFSJobAgent\Transforms\1033  
-	::: moniker-end  
+   ::: moniker range=">= azure-devops-2019"  
+   *Drive*:\\%programfiles%\Azure DevOps Server 2019\Application Tier\TFSJobAgent\Transforms\1033  
+   ::: moniker-end  
 
-	::: moniker range="<= tfs-2018"  
-	*Drive*:\\%programfiles%\Team Foundation Server 2018\Application Tier\TFSJobAgent\Transforms\1033  
-	::: moniker-end  
+   ::: moniker range="<= tfs-2018"  
+   *Drive*:\\%programfiles%\Team Foundation Server 2018\Application Tier\TFSJobAgent\Transforms\1033  
+   ::: moniker-end  
 
-2.  Open WorkItemChangedEvent.xsl in Notepad or other text editor.
+2. Open WorkItemChangedEvent.xsl in Notepad or other text editor.
 
-3.  Edit the file to show the message that you want in the notification email.
+3. Edit the file to show the message that you want in the notification email.
 
-    > [!NOTE]
-    > You should make similar changes to the WorkItemChangedEvent.plaintextXsl for any users who have requested plaintext messages.
+   > [!NOTE]
+   > You should make similar changes to the WorkItemChangedEvent.plaintextXsl for any users who have requested plaintext messages.
     
-4.  Save the WorkItemChangedEvent.xsl file.
+4. Save the WorkItemChangedEvent.xsl file.
 
 
 ## Related articles

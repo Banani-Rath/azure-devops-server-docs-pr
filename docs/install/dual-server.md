@@ -35,10 +35,10 @@ If you're upgrading from an earlier version, learn more about [compatibility](..
 	[Team Foundation Server pricing page](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fvisualstudio.microsoft.com%2Fwp-content%2Fuploads%2F2017%2F11%2FVisual-Studio-2017-Licensing-Whitepaper-November-2017.pdf&data=02%7C01%7CChrystal.Comley%40microsoft.com%7Cef8e9223d359472b3d8108d69c43d4e8%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636868212482594484&sdata=w6SSW6EovOGxuIpoX5Jc5RV%2BlwqakTJTNHSuLPFPTwQ%3D&reserved=0)) explains the details. If you use the license that's included with Azure DevOps Server, you can only use it for the Azure DevOps Server databases.
 
 3. Configure the firewall on your data tier to [allow access to the SQL Server database engine](https://msdn.microsoft.com/library/ms175043.aspx)
-so that Azure DevOps Server can get through the firewall to connect to the SQL Server database engine from the application tier.
+   so that Azure DevOps Server can get through the firewall to connect to the SQL Server database engine from the application tier.
 
 4. Ensure that the account you plan to use to configure Azure DevOps Server is a member of the 
-[SysAdmin server role in SQL Server](https://msdn.microsoft.com/library/ms188659.aspx). 
+   [SysAdmin server role in SQL Server](https://msdn.microsoft.com/library/ms188659.aspx). 
 
 	> Installing Azure DevOps Server involves a complex set of operations that require a high degree of privilege - these include creating databases, 
 	> provisioning logins for service accounts, and more. Technically, all that is required is membership in the ServerAdmin role; 

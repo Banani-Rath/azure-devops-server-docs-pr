@@ -437,30 +437,30 @@ TFS\_Configuration.
 
 To redirect Azure DevOps Server to remote databases:
 
-1.  Log on to the application-tier server for Azure DevOps, open a
-    Command Prompt window, and change directories to
-    *Drive*:\\%programfiles%\\Azure DevOps Server 2019\\Tools.
+1. Log on to the application-tier server for Azure DevOps, open a
+   Command Prompt window, and change directories to
+   *Drive*:\\%programfiles%\\Azure DevOps Server 2019\\Tools.
 
-2.  Enter the following command, where
-    *ServerName* is the name of the instance of
-    SQL Server that hosts the configuration database for Azure DevOps Server,
-    *TFS\_Configuration* is the name of the
-    restored configuration database for Azure DevOps Server, and
-    *ServerName2* is the name of the server
-    that hosts the remote collection. You can have as many ServerName
-    parameters as you have servers that are configured in
-    your deployment. You can specify *ServerName* in either *ServerName* or
-    *ServerName*\\*InstanceName* format. You must specify the
-    instance name if you are not using the default instance:
+2. Enter the following command, where
+   *ServerName* is the name of the instance of
+   SQL Server that hosts the configuration database for Azure DevOps Server,
+   *TFS\_Configuration* is the name of the
+   restored configuration database for Azure DevOps Server, and
+   *ServerName2* is the name of the server
+   that hosts the remote collection. You can have as many ServerName
+   parameters as you have servers that are configured in
+   your deployment. You can specify *ServerName* in either *ServerName* or
+   *ServerName*\\*InstanceName* format. You must specify the
+   instance name if you are not using the default instance:
 
-    **TFSConfig RemapDBs /DatabaseName:** *ServerName***;** *TFS\_Configuration* **/SQLInstances:**
-    *ServerName,ServerName2* **/AnalysisInstance:** *ServerName2* **/AnalysisDatabaseName:**
-    *DatabaseName*
+   **TFSConfig RemapDBs /DatabaseName:** <em>ServerName</em>**;** *TFS\_Configuration* **/SQLInstances:**
+   *ServerName,ServerName2* **/AnalysisInstance:** *ServerName2* **/AnalysisDatabaseName:**
+   *DatabaseName*
 
-    > [!NOTE]
-    > In **/SQLInstances**, you must specify all instances, separated by
-    > commas, of SQL Server that host databases for Azure DevOps Server.
-    > For more information, see [RemapDBs command](../../command-line/tfsconfig-cmd.md#remapdbs).
+   > [!NOTE]
+   > In **/SQLInstances**, you must specify all instances, separated by
+   > commas, of SQL Server that host databases for Azure DevOps Server.
+   > For more information, see [RemapDBs command](../../command-line/tfsconfig-cmd.md#remapdbs).
 
 <a name="UpdateNetworkService"></a>
 ## Step 10: Update all service accounts

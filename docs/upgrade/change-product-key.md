@@ -34,11 +34,11 @@ To perform these procedures, you must be a member of the Administrators security
 
 2. Expand the name of the server, and review the information in Product ID, License Type, and License Expires.
 
-  The number that appears in Product ID is your product key.
+   The number that appears in Product ID is your product key.
 
 3. (Optional) If you must change or update your product key, choose Update License.
 
-  The Team Foundation Server License window opens.
+   The Team Foundation Server License window opens.
 
 4. Type the product key, and then choose Activate.
 

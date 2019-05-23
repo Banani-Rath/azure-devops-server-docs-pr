@@ -33,68 +33,68 @@ The following table provides links to the [Azure DevOps Server 2019](/azure/devo
 <td width="50%"> 
 <h3>General</h3>
 <ul>
-<li>[New web portal navigation](/azure/devops/server/release-notes/azuredevops2019#new-navigation-experience)</li>
-<li>[Expanded search box](/azure/devops/server/release-notes/azuredevops2019#expanded-search-box)</li>
-<li>[My work flyout](/azure/devops/server/release-notes/azuredevops2019#my-work-flyout)</li>
-<li>[Azure SQL Database support](/azure/devops/server/release-notes/azuredevops2019#support-for-azure-sql-database)</li>
+<li><a href="/azure/devops/server/release-notes/azuredevops2019#new-navigation-experience" data-raw-source="[New web portal navigation](/azure/devops/server/release-notes/azuredevops2019#new-navigation-experience)">New web portal navigation</a></li>
+<li><a href="/azure/devops/server/release-notes/azuredevops2019#expanded-search-box" data-raw-source="[Expanded search box](/azure/devops/server/release-notes/azuredevops2019#expanded-search-box)">Expanded search box</a></li>
+<li><a href="/azure/devops/server/release-notes/azuredevops2019#my-work-flyout" data-raw-source="[My work flyout](/azure/devops/server/release-notes/azuredevops2019#my-work-flyout)">My work flyout</a></li>
+<li><a href="/azure/devops/server/release-notes/azuredevops2019#support-for-azure-sql-database" data-raw-source="[Azure SQL Database support](/azure/devops/server/release-notes/azuredevops2019#support-for-azure-sql-database)">Azure SQL Database support</a></li>
 </ul>
 <h4>Wiki</h4>
 <ul>
-<li>[Publish from a Git repository](/azure/devops/server/release-notes/azuredevops2019#publish-markdown-files-from-a-git-repository-as-a-wiki)</li> 
-<li>[Link to headings within a page](/azure/devops/server/release-notes/azuredevops2019#link-to-headings-within-a-page)</li> 
-<li>[Attach files and images in folders](/azure/devops/server/release-notes/azuredevops2019#attach-files-and-images-in-folders)</li> 
-<li>[Embed a video ](/azure/devops/server/release-notes/azuredevops2019#embed-a-video-in-wiki)</li> 
-<li>[Rename a wiki](/azure/devops/server/release-notes/azuredevops2019#rename-a-wiki)</li> 
-<li>[Page titles can have special characters](/azure/devops/server/release-notes/azuredevops2019#retain-special-characters-in-wiki-page-titles)</li>
+<li><a href="/azure/devops/server/release-notes/azuredevops2019#publish-markdown-files-from-a-git-repository-as-a-wiki" data-raw-source="[Publish from a Git repository](/azure/devops/server/release-notes/azuredevops2019#publish-markdown-files-from-a-git-repository-as-a-wiki)">Publish from a Git repository</a></li> 
+<li><a href="/azure/devops/server/release-notes/azuredevops2019#link-to-headings-within-a-page" data-raw-source="[Link to headings within a page](/azure/devops/server/release-notes/azuredevops2019#link-to-headings-within-a-page)">Link to headings within a page</a></li> 
+<li><a href="/azure/devops/server/release-notes/azuredevops2019#attach-files-and-images-in-folders" data-raw-source="[Attach files and images in folders](/azure/devops/server/release-notes/azuredevops2019#attach-files-and-images-in-folders)">Attach files and images in folders</a></li> 
+<li><a href="/azure/devops/server/release-notes/azuredevops2019#embed-a-video-in-wiki" data-raw-source="[Embed a video ](/azure/devops/server/release-notes/azuredevops2019#embed-a-video-in-wiki)">Embed a video </a></li> 
+<li><a href="/azure/devops/server/release-notes/azuredevops2019#rename-a-wiki" data-raw-source="[Rename a wiki](/azure/devops/server/release-notes/azuredevops2019#rename-a-wiki)">Rename a wiki</a></li> 
+<li><a href="/azure/devops/server/release-notes/azuredevops2019#retain-special-characters-in-wiki-page-titles" data-raw-source="[Page titles can have special characters](/azure/devops/server/release-notes/azuredevops2019#retain-special-characters-in-wiki-page-titles)">Page titles can have special characters</a></li>
 <br/>
-<li>[Open page in new tab](/azure/devops/server/release-notes/azuredevops2019#open-page-in-new-tab)</li> 
-<li>[View broken links](/azure/devops/server/release-notes/azuredevops2019#view-broken-links)</li> 
-<li>[Fix broken links when moving pages](/azure/devops/server/release-notes/azuredevops2019#fix-broken-links-when-moving-pages)</li> 
-<li>[Create table of contents for wiki pages](/azure/devops/server/release-notes/azuredevops2019#create-table-of-contents-for-wiki-pages)</li> 
-<li>[Use YAML tags to surface metadata for wiki and code preview](/azure/devops/server/release-notes/azuredevops2019#surface-metadata-for-wiki-pages-and-code-preview-using-yaml-tags)</li> 
-<li>[Publish code as wiki](/azure/devops/server/release-notes/azuredevops2019#publish-code-as-wiki-with-contribute-permissions)</li> 
+<li><a href="/azure/devops/server/release-notes/azuredevops2019#open-page-in-new-tab" data-raw-source="[Open page in new tab](/azure/devops/server/release-notes/azuredevops2019#open-page-in-new-tab)">Open page in new tab</a></li> 
+<li><a href="/azure/devops/server/release-notes/azuredevops2019#view-broken-links" data-raw-source="[View broken links](/azure/devops/server/release-notes/azuredevops2019#view-broken-links)">View broken links</a></li> 
+<li><a href="/azure/devops/server/release-notes/azuredevops2019#fix-broken-links-when-moving-pages" data-raw-source="[Fix broken links when moving pages](/azure/devops/server/release-notes/azuredevops2019#fix-broken-links-when-moving-pages)">Fix broken links when moving pages</a></li> 
+<li><a href="/azure/devops/server/release-notes/azuredevops2019#create-table-of-contents-for-wiki-pages" data-raw-source="[Create table of contents for wiki pages](/azure/devops/server/release-notes/azuredevops2019#create-table-of-contents-for-wiki-pages)">Create table of contents for wiki pages</a></li> 
+<li><a href="/azure/devops/server/release-notes/azuredevops2019#surface-metadata-for-wiki-pages-and-code-preview-using-yaml-tags" data-raw-source="[Use YAML tags to surface metadata for wiki and code preview](/azure/devops/server/release-notes/azuredevops2019#surface-metadata-for-wiki-pages-and-code-preview-using-yaml-tags)">Use YAML tags to surface metadata for wiki and code preview</a></li> 
+<li><a href="/azure/devops/server/release-notes/azuredevops2019#publish-code-as-wiki-with-contribute-permissions" data-raw-source="[Publish code as wiki](/azure/devops/server/release-notes/azuredevops2019#publish-code-as-wiki-with-contribute-permissions)">Publish code as wiki</a></li> 
 </ul>
 
 <h4>Reporting</h4>
 <ul>
-<li>[Analytics marketplace extension support](/azure/devops/server/release-notes/azuredevops2019#the-analytics-marketplace-extension-for-reporting-is-now-available)</li> 
-<li>[Build history dashboard widget](/azure/devops/server/release-notes/azuredevops2019#investigate-build-history-through-a-new-build-dashboard-widget)</li> 
+<li><a href="/azure/devops/server/release-notes/azuredevops2019#the-analytics-marketplace-extension-for-reporting-is-now-available" data-raw-source="[Analytics marketplace extension support](/azure/devops/server/release-notes/azuredevops2019#the-analytics-marketplace-extension-for-reporting-is-now-available)">Analytics marketplace extension support</a></li> 
+<li><a href="/azure/devops/server/release-notes/azuredevops2019#investigate-build-history-through-a-new-build-dashboard-widget" data-raw-source="[Build history dashboard widget](/azure/devops/server/release-notes/azuredevops2019#investigate-build-history-through-a-new-build-dashboard-widget)">Build history dashboard widget</a></li> 
 </ul>
 
 
 <h3>Azure Boards</h3>
 <ul>
-<li>[Link GitHub Enterprise commits and PRs to Azure Boards work items](/azure/devops/server/release-notes/azuredevops2019#link-github-enterprise-commits-and-pull-requests-to-azure-boards-work-items)</li>
-<li>[Process inheritance supports new collections](/azure/devops/server/release-notes/azuredevops2019#process-inheritance-on-new-collections)</li>
-<li>[New Work Items hub](/azure/devops/server/release-notes/azuredevops2019#new-work-items-hub)</li>
-<li>[New Boards, Backlogs, and Sprints hubs](/azure/devops/server/release-notes/azuredevops2019#new-boards-backlogs-and-sprints-hubs)</li>
-<li>[New Queries hub](/azure/devops/server/release-notes/azuredevops2019#new-queries-hub)</li>
-<li>[Move work items to another project](/azure/devops/server/release-notes/azuredevops2019#move-work-items-to-another-project-and-change-a-work-item-type)</li>
-<li>[Change a work item type](/azure/devops/server/release-notes/azuredevops2019#move-work-items-to-another-project-and-change-a-work-item-type)</li>
+<li><a href="/azure/devops/server/release-notes/azuredevops2019#link-github-enterprise-commits-and-pull-requests-to-azure-boards-work-items" data-raw-source="[Link GitHub Enterprise commits and PRs to Azure Boards work items](/azure/devops/server/release-notes/azuredevops2019#link-github-enterprise-commits-and-pull-requests-to-azure-boards-work-items)">Link GitHub Enterprise commits and PRs to Azure Boards work items</a></li>
+<li><a href="/azure/devops/server/release-notes/azuredevops2019#process-inheritance-on-new-collections" data-raw-source="[Process inheritance supports new collections](/azure/devops/server/release-notes/azuredevops2019#process-inheritance-on-new-collections)">Process inheritance supports new collections</a></li>
+<li><a href="/azure/devops/server/release-notes/azuredevops2019#new-work-items-hub" data-raw-source="[New Work Items hub](/azure/devops/server/release-notes/azuredevops2019#new-work-items-hub)">New Work Items hub</a></li>
+<li><a href="/azure/devops/server/release-notes/azuredevops2019#new-boards-backlogs-and-sprints-hubs" data-raw-source="[New Boards, Backlogs, and Sprints hubs](/azure/devops/server/release-notes/azuredevops2019#new-boards-backlogs-and-sprints-hubs)">New Boards, Backlogs, and Sprints hubs</a></li>
+<li><a href="/azure/devops/server/release-notes/azuredevops2019#new-queries-hub" data-raw-source="[New Queries hub](/azure/devops/server/release-notes/azuredevops2019#new-queries-hub)">New Queries hub</a></li>
+<li><a href="/azure/devops/server/release-notes/azuredevops2019#move-work-items-to-another-project-and-change-a-work-item-type" data-raw-source="[Move work items to another project](/azure/devops/server/release-notes/azuredevops2019#move-work-items-to-another-project-and-change-a-work-item-type)">Move work items to another project</a></li>
+<li><a href="/azure/devops/server/release-notes/azuredevops2019#move-work-items-to-another-project-and-change-a-work-item-type" data-raw-source="[Change a work item type](/azure/devops/server/release-notes/azuredevops2019#move-work-items-to-another-project-and-change-a-work-item-type)">Change a work item type</a></li>
 <br/>
-<li>[Sprint planning features](/azure/devops/server/release-notes/azuredevops2019#sprint-planning-features)</li>
-<li>[New directory pages](/azure/devops/server/release-notes/azuredevops2019#new-directory-pages)</li>
-<li>[New View options menu](/azure/devops/server/release-notes/azuredevops2019#new-view-options-menu)</li>
-<li>[Suggested Areas and Iterations](/azure/devops/server/release-notes/azuredevops2019#move-work-using-suggested-areas-and-iterations)</li>
-<li>[Query work with +/- @CurrentIteration](/azure/devops/server/release-notes/azuredevops2019#query-work-across-the-iteration-schedule-with---)</li>
-<li>[Clarify query iteration with the @CurrentIteration Team parameter](/azure/devops/server/release-notes/azuredevops2019#clarify-query-iteration-schedules-with-the--team-parameter)</li>
-<li>[Query work for a team with the @TeamAreas macro](/azure/devops/server/release-notes/azuredevops2019#query-work-in-the-area-paths-of-a-team-with-the-new--macro)</li>
-<li>[Query for empty rich text fields](/azure/devops/server/release-notes/azuredevops2019#query-for-empty-rich-text-fields)</li>
-<li>[Find existing work items in linking and mention experiences](/azure/devops/server/release-notes/azuredevops2019#easily-find-existing-work-items-in-linking-and-mention-experiences)</li>
-<li>[Open work items from search](/azure/devops/server/release-notes/azuredevops2019#open-work-items-from-search)</li>
-<li>[Card annotations include bugs and custom work item types](/azure/devops/server/release-notes/azuredevops2019#card-annotations-include-bugs-and-custom-work-item-types)</li>
+<li><a href="/azure/devops/server/release-notes/azuredevops2019#sprint-planning-features" data-raw-source="[Sprint planning features](/azure/devops/server/release-notes/azuredevops2019#sprint-planning-features)">Sprint planning features</a></li>
+<li><a href="/azure/devops/server/release-notes/azuredevops2019#new-directory-pages" data-raw-source="[New directory pages](/azure/devops/server/release-notes/azuredevops2019#new-directory-pages)">New directory pages</a></li>
+<li><a href="/azure/devops/server/release-notes/azuredevops2019#new-view-options-menu" data-raw-source="[New View options menu](/azure/devops/server/release-notes/azuredevops2019#new-view-options-menu)">New View options menu</a></li>
+<li><a href="/azure/devops/server/release-notes/azuredevops2019#move-work-using-suggested-areas-and-iterations" data-raw-source="[Suggested Areas and Iterations](/azure/devops/server/release-notes/azuredevops2019#move-work-using-suggested-areas-and-iterations)">Suggested Areas and Iterations</a></li>
+<li><a href="/azure/devops/server/release-notes/azuredevops2019#query-work-across-the-iteration-schedule-with---" data-raw-source="[Query work with +/- @CurrentIteration](/azure/devops/server/release-notes/azuredevops2019#query-work-across-the-iteration-schedule-with---)">Query work with +/- @CurrentIteration</a></li>
+<li><a href="/azure/devops/server/release-notes/azuredevops2019#clarify-query-iteration-schedules-with-the--team-parameter" data-raw-source="[Clarify query iteration with the @CurrentIteration Team parameter](/azure/devops/server/release-notes/azuredevops2019#clarify-query-iteration-schedules-with-the--team-parameter)">Clarify query iteration with the @CurrentIteration Team parameter</a></li>
+<li><a href="/azure/devops/server/release-notes/azuredevops2019#query-work-in-the-area-paths-of-a-team-with-the-new--macro" data-raw-source="[Query work for a team with the @TeamAreas macro](/azure/devops/server/release-notes/azuredevops2019#query-work-in-the-area-paths-of-a-team-with-the-new--macro)">Query work for a team with the @TeamAreas macro</a></li>
+<li><a href="/azure/devops/server/release-notes/azuredevops2019#query-for-empty-rich-text-fields" data-raw-source="[Query for empty rich text fields](/azure/devops/server/release-notes/azuredevops2019#query-for-empty-rich-text-fields)">Query for empty rich text fields</a></li>
+<li><a href="/azure/devops/server/release-notes/azuredevops2019#easily-find-existing-work-items-in-linking-and-mention-experiences" data-raw-source="[Find existing work items in linking and mention experiences](/azure/devops/server/release-notes/azuredevops2019#easily-find-existing-work-items-in-linking-and-mention-experiences)">Find existing work items in linking and mention experiences</a></li>
+<li><a href="/azure/devops/server/release-notes/azuredevops2019#open-work-items-from-search" data-raw-source="[Open work items from search](/azure/devops/server/release-notes/azuredevops2019#open-work-items-from-search)">Open work items from search</a></li>
+<li><a href="/azure/devops/server/release-notes/azuredevops2019#card-annotations-include-bugs-and-custom-work-item-types" data-raw-source="[Card annotations include bugs and custom work item types](/azure/devops/server/release-notes/azuredevops2019#card-annotations-include-bugs-and-custom-work-item-types)">Card annotations include bugs and custom work item types</a></li>
 </ul>
 
 <h3>Azure Repos</h3>
 <ul>
-<li>[Improved branch picker](/azure/devops/server/release-notes/azuredevops2019#improved-branch-picker)</li>
-<li>[Bypassed pull request policies generate notifications](/azure/devops/server/release-notes/azuredevops2019#receive-notifications-when-pull-request-policies-are-bypassed)</li>
-<li>[Allow bypassing branch policies maintaining push protection](/azure/devops/server/release-notes/azuredevops2019#allow-bypassing-branch-policies-without-giving-up-push-protection)</li>
-<li>[Quickly describe pull requests using commit messages](/azure/devops/server/release-notes/azuredevops2019#quickly-describe-pull-requests-using-commit-messages)</li>
-<li>[Create pull requests without a default team as reviewer](/azure/devops/server/release-notes/azuredevops2019#create-pull-requests-without-a-default-team-as-reviewer)</li>
-<li>[Use templates to standardize pull request descriptions](/azure/devops/server/release-notes/azuredevops2019#standardize-pull-request-descriptions-using-templates)</li>
-<li>[Change the target branch of a pull request](/azure/devops/server/release-notes/azuredevops2019#change-the-target-branch-of-a-pull-request)</li>
-<li>[Extension authors can query context about the current repo](/azure/devops/server/release-notes/azuredevops2019#extension-authors-can-query-context-about-the-current-repo)</li>
+<li><a href="/azure/devops/server/release-notes/azuredevops2019#improved-branch-picker" data-raw-source="[Improved branch picker](/azure/devops/server/release-notes/azuredevops2019#improved-branch-picker)">Improved branch picker</a></li>
+<li><a href="/azure/devops/server/release-notes/azuredevops2019#receive-notifications-when-pull-request-policies-are-bypassed" data-raw-source="[Bypassed pull request policies generate notifications](/azure/devops/server/release-notes/azuredevops2019#receive-notifications-when-pull-request-policies-are-bypassed)">Bypassed pull request policies generate notifications</a></li>
+<li><a href="/azure/devops/server/release-notes/azuredevops2019#allow-bypassing-branch-policies-without-giving-up-push-protection" data-raw-source="[Allow bypassing branch policies maintaining push protection](/azure/devops/server/release-notes/azuredevops2019#allow-bypassing-branch-policies-without-giving-up-push-protection)">Allow bypassing branch policies maintaining push protection</a></li>
+<li><a href="/azure/devops/server/release-notes/azuredevops2019#quickly-describe-pull-requests-using-commit-messages" data-raw-source="[Quickly describe pull requests using commit messages](/azure/devops/server/release-notes/azuredevops2019#quickly-describe-pull-requests-using-commit-messages)">Quickly describe pull requests using commit messages</a></li>
+<li><a href="/azure/devops/server/release-notes/azuredevops2019#create-pull-requests-without-a-default-team-as-reviewer" data-raw-source="[Create pull requests without a default team as reviewer](/azure/devops/server/release-notes/azuredevops2019#create-pull-requests-without-a-default-team-as-reviewer)">Create pull requests without a default team as reviewer</a></li>
+<li><a href="/azure/devops/server/release-notes/azuredevops2019#standardize-pull-request-descriptions-using-templates" data-raw-source="[Use templates to standardize pull request descriptions](/azure/devops/server/release-notes/azuredevops2019#standardize-pull-request-descriptions-using-templates)">Use templates to standardize pull request descriptions</a></li>
+<li><a href="/azure/devops/server/release-notes/azuredevops2019#change-the-target-branch-of-a-pull-request" data-raw-source="[Change the target branch of a pull request](/azure/devops/server/release-notes/azuredevops2019#change-the-target-branch-of-a-pull-request)">Change the target branch of a pull request</a></li>
+<li><a href="/azure/devops/server/release-notes/azuredevops2019#extension-authors-can-query-context-about-the-current-repo" data-raw-source="[Extension authors can query context about the current repo](/azure/devops/server/release-notes/azuredevops2019#extension-authors-can-query-context-about-the-current-repo)">Extension authors can query context about the current repo</a></li>
 </ul>
 
 
@@ -102,68 +102,66 @@ The following table provides links to the [Azure DevOps Server 2019](/azure/devo
 <td width="50%"> 
 <h3>Azure Pipelines</h3>
 <ul>
-<li>[Improved experiences for Tests in Pipelines](/azure/devops/server/release-notes/azuredevops2019#improved-experiences-for-tests-in-pipelines)</li>
-<li>[Simplify definitions with multiple agentless tasks](/azure/devops/server/release-notes/azuredevops2019#simplify-definitions-with-multiple-agentless-tasks)</li>
-<li>[Pass environment variables to tasks](/azure/devops/server/release-notes/azuredevops2019#pass-environment-variables-to-tasks)</li>
-<li>[Clone variable groups](/azure/devops/server/release-notes/azuredevops2019#clone-variable-groups)</li>
-<li>[Manage build and deployment completion emails better using improved formatting](/azure/devops/server/release-notes/azuredevops2019#)</li>
-<li>[Run inline or file-based Python scripts in your pipeline](/azure/devops/server/release-notes/azuredevops2019#run-inline-or-file-based-python-scripts-in-your-pipeline)</li>
-<li>[Leverage improved Xcode build and test output from xcpretty](/azure/devops/server/release-notes/azuredevops2019#leverage-improved-xcode-build-and-test-output-from-xcpretty)</li>
-<li>[Locally update your agent](/azure/devops/server/release-notes/azuredevops2019#locally-update-your-agent)</li>
-<li>[Use improved Windows remote PowerShell based tasks](/azure/devops/server/release-notes/azuredevops2019#use-improved-windows-remote-powershell-based-tasks)</li>
-<li>[Follow the new unified Azure Pipelines terminology](/azure/devops/server/release-notes/azuredevops2019#)</li>
-<li>[Azure Policy compliance and security validations in Pipelines](/azure/devops/server/release-notes/azuredevops2019#azure-policy-compliance-and-security-validations-in-pipelines)</li>
-<li>[Changes to Artifacts and Release Management Deployment Pipeline Licensing](/azure/devops/server/release-notes/azuredevops2019#changes-to-artifacts-and-release-management-deployment-pipeline-licensing)</li>
+<li><a href="/azure/devops/server/release-notes/azuredevops2019#improved-experiences-for-tests-in-pipelines" data-raw-source="[Improved experiences for Tests in Pipelines](/azure/devops/server/release-notes/azuredevops2019#improved-experiences-for-tests-in-pipelines)">Improved experiences for Tests in Pipelines</a></li>
+<li><a href="/azure/devops/server/release-notes/azuredevops2019#simplify-definitions-with-multiple-agentless-tasks" data-raw-source="[Simplify definitions with multiple agentless tasks](/azure/devops/server/release-notes/azuredevops2019#simplify-definitions-with-multiple-agentless-tasks)">Simplify definitions with multiple agentless tasks</a></li>
+<li><a href="/azure/devops/server/release-notes/azuredevops2019#pass-environment-variables-to-tasks" data-raw-source="[Pass environment variables to tasks](/azure/devops/server/release-notes/azuredevops2019#pass-environment-variables-to-tasks)">Pass environment variables to tasks</a></li>
+<li><a href="/azure/devops/server/release-notes/azuredevops2019#clone-variable-groups" data-raw-source="[Clone variable groups](/azure/devops/server/release-notes/azuredevops2019#clone-variable-groups)">Clone variable groups</a></li>
+<li><a href="/azure/devops/server/release-notes/azuredevops2019#" data-raw-source="[Manage build and deployment completion emails better using improved formatting](/azure/devops/server/release-notes/azuredevops2019#)">Manage build and deployment completion emails better using improved formatting</a></li>
+<li><a href="/azure/devops/server/release-notes/azuredevops2019#run-inline-or-file-based-python-scripts-in-your-pipeline" data-raw-source="[Run inline or file-based Python scripts in your pipeline](/azure/devops/server/release-notes/azuredevops2019#run-inline-or-file-based-python-scripts-in-your-pipeline)">Run inline or file-based Python scripts in your pipeline</a></li>
+<li><a href="/azure/devops/server/release-notes/azuredevops2019#leverage-improved-xcode-build-and-test-output-from-xcpretty" data-raw-source="[Leverage improved Xcode build and test output from xcpretty](/azure/devops/server/release-notes/azuredevops2019#leverage-improved-xcode-build-and-test-output-from-xcpretty)">Leverage improved Xcode build and test output from xcpretty</a></li>
+<li><a href="/azure/devops/server/release-notes/azuredevops2019#locally-update-your-agent" data-raw-source="[Locally update your agent](/azure/devops/server/release-notes/azuredevops2019#locally-update-your-agent)">Locally update your agent</a></li>
+<li><a href="/azure/devops/server/release-notes/azuredevops2019#use-improved-windows-remote-powershell-based-tasks" data-raw-source="[Use improved Windows remote PowerShell based tasks](/azure/devops/server/release-notes/azuredevops2019#use-improved-windows-remote-powershell-based-tasks)">Use improved Windows remote PowerShell based tasks</a></li>
+<li><a href="/azure/devops/server/release-notes/azuredevops2019#" data-raw-source="[Follow the new unified Azure Pipelines terminology](/azure/devops/server/release-notes/azuredevops2019#)">Follow the new unified Azure Pipelines terminology</a></li>
+<li><a href="/azure/devops/server/release-notes/azuredevops2019#azure-policy-compliance-and-security-validations-in-pipelines" data-raw-source="[Azure Policy compliance and security validations in Pipelines](/azure/devops/server/release-notes/azuredevops2019#azure-policy-compliance-and-security-validations-in-pipelines)">Azure Policy compliance and security validations in Pipelines</a></li>
+<li><a href="/azure/devops/server/release-notes/azuredevops2019#changes-to-artifacts-and-release-management-deployment-pipeline-licensing" data-raw-source="[Changes to Artifacts and Release Management Deployment Pipeline Licensing](/azure/devops/server/release-notes/azuredevops2019#changes-to-artifacts-and-release-management-deployment-pipeline-licensing)">Changes to Artifacts and Release Management Deployment Pipeline Licensing</a></li>
 </ul>
 
 <h4>Builds</h4>
 <ul>
-<li>[Configure builds using YAML](/azure/devops/server/release-notes/azuredevops2019#configure-builds-using-yaml)</li>
-<li>[Manage build pipelines using the new Builds page](/azure/devops/server/release-notes/azuredevops2019#manage-build-pipelines-using-the-new-builds-page)</li>
-<li>[Chain related builds together using build completion triggers](/azure/devops/server/release-notes/azuredevops2019#chain-related-builds-together-using-build-completion-triggers)</li>
-<li>[Locally update your agent](/azure/devops/server/release-notes/azuredevops2019#locally-update-your-agent)</li> 
-<li>[New build status badge URL](/azure/devops/server/release-notes/azuredevops2019#new-build-status-badge-url)</li>  
-<li>[Add custom build counters to your builds](/azure/devops/server/release-notes/azuredevops2019#add-custom-build-counters-to-your-builds)</li>  
-<li>[Build on Linux/ARM and Windows 32-bit platforms](/azure/devops/server/release-notes/azuredevops2019#build-on-linuxarm-and-windows-32-bit-platforms)</li>
+<li><a href="/azure/devops/server/release-notes/azuredevops2019#configure-builds-using-yaml" data-raw-source="[Configure builds using YAML](/azure/devops/server/release-notes/azuredevops2019#configure-builds-using-yaml)">Configure builds using YAML</a></li>
+<li><a href="/azure/devops/server/release-notes/azuredevops2019#manage-build-pipelines-using-the-new-builds-page" data-raw-source="[Manage build pipelines using the new Builds page](/azure/devops/server/release-notes/azuredevops2019#manage-build-pipelines-using-the-new-builds-page)">Manage build pipelines using the new Builds page</a></li>
+<li><a href="/azure/devops/server/release-notes/azuredevops2019#chain-related-builds-together-using-build-completion-triggers" data-raw-source="[Chain related builds together using build completion triggers](/azure/devops/server/release-notes/azuredevops2019#chain-related-builds-together-using-build-completion-triggers)">Chain related builds together using build completion triggers</a></li>
+<li><a href="/azure/devops/server/release-notes/azuredevops2019#locally-update-your-agent" data-raw-source="[Locally update your agent](/azure/devops/server/release-notes/azuredevops2019#locally-update-your-agent)">Locally update your agent</a></li> 
+<li><a href="/azure/devops/server/release-notes/azuredevops2019#new-build-status-badge-url" data-raw-source="[New build status badge URL](/azure/devops/server/release-notes/azuredevops2019#new-build-status-badge-url)">New build status badge URL</a></li><br/><li><a href="/azure/devops/server/release-notes/azuredevops2019#add-custom-build-counters-to-your-builds" data-raw-source="[Add custom build counters to your builds](/azure/devops/server/release-notes/azuredevops2019#add-custom-build-counters-to-your-builds)">Add custom build counters to your builds</a></li><br/><li><a href="/azure/devops/server/release-notes/azuredevops2019#build-on-linuxarm-and-windows-32-bit-platforms" data-raw-source="[Build on Linux/ARM and Windows 32-bit platforms](/azure/devops/server/release-notes/azuredevops2019#build-on-linuxarm-and-windows-32-bit-platforms)">Build on Linux/ARM and Windows 32-bit platforms</a></li>
 </ul>
-<li>[Build applications written in Go](/azure/devops/server/release-notes/azuredevops2019#build-applications-written-in-go)</li>
+<li><a href="/azure/devops/server/release-notes/azuredevops2019#build-applications-written-in-go" data-raw-source="[Build applications written in Go](/azure/devops/server/release-notes/azuredevops2019#build-applications-written-in-go)">Build applications written in Go</a></li>
 
 
 <h4>Releases</h4>
 <ul>
-<li>[Manage release pipelines using the new Releases page](/azure/devops/server/release-notes/azuredevops2019#manage-release-pipelines-using-the-new-releases-page)</li>
-<li>[Visualize release progress](/azure/devops/server/release-notes/azuredevops2019#visualize-release-progress)</li>
-<li>[Progressively expose and phase deployments using release gates](/azure/devops/server/release-notes/azuredevops2019#progressively-expose-and-phase-deployments-using-release-gates)</li>
-<li>[Automatically deploy to new targets in a deployment group](/azure/devops/server/release-notes/azuredevops2019#automatically-deploy-to-new-targets-in-a-deployment-group)</li>
-<li>[Continuously deploy builds tagged by post-build processing](/azure/devops/server/release-notes/azuredevops2019#continuously-deploy-builds-tagged-by-post-build-processing)</li>
-<li>[Continuously deploy to Azure Database for MySQL](/azure/devops/server/release-notes/azuredevops2019#continuously-deploy-to-azure-database-for-mysql)</li>
-<li>[Deploy Linux containers with the App Server Deploy task](/azure/devops/server/release-notes/azuredevops2019#deploy-linux-containers-with-the-app-server-deploy-task)</li>
-<li>[Filter branches for GitHub Enterprise or external Git artifacts](/azure/devops/server/release-notes/azuredevops2019#filter-branches-for-github-enterprise-or-external-git-artifacts)</li>
-<li>[Hold deployments until gates succeed consistently](/azure/devops/server/release-notes/azuredevops2019#hold-deployments-until-gates-succeed-consistently)</li>
-<li>[Ignore a release gate for a deployment](/azure/devops/server/release-notes/azuredevops2019#ignore-a-release-gate-for-a-deployment)</li>
-<li>[Perform additional testing using a pull request release trigger](/azure/devops/server/release-notes/azuredevops2019#perform-additional-testing-using-a-pull-request-release-trigger)</li>
-<li>[Create Azure service connection with service principal that authenticates with a certificate](/azure/devops/server/release-notes/azuredevops2019#create-azure-service-connection-with-service-principal-that-authenticates-with-a-certificate)</li>
-<li>[Run from Package supported in Azure App Service deployments](/azure/devops/server/release-notes/azuredevops2019#run-from-package-supported-in-azure-app-service-deployments)</li>
-<li>[The Xcode task supports newly released Xcode 10](/azure/devops/server/release-notes/azuredevops2019#the-xcode-task-supports-newly-released-xcode-10)</li>
-<li>[Streamline deployment to Kubernetes using Helm](/azure/devops/server/release-notes/azuredevops2019#streamline-deployment-to-kubernetes-using-helm)</li>
-<li>[Control Helm version used in Release](/azure/devops/server/release-notes/azuredevops2019#control-helm-version-used-in-release)</li>
-<li>[Set a variable at release time](/azure/devops/server/release-notes/azuredevops2019#set-a-variable-at-release-time)</li>
+<li><a href="/azure/devops/server/release-notes/azuredevops2019#manage-release-pipelines-using-the-new-releases-page" data-raw-source="[Manage release pipelines using the new Releases page](/azure/devops/server/release-notes/azuredevops2019#manage-release-pipelines-using-the-new-releases-page)">Manage release pipelines using the new Releases page</a></li>
+<li><a href="/azure/devops/server/release-notes/azuredevops2019#visualize-release-progress" data-raw-source="[Visualize release progress](/azure/devops/server/release-notes/azuredevops2019#visualize-release-progress)">Visualize release progress</a></li>
+<li><a href="/azure/devops/server/release-notes/azuredevops2019#progressively-expose-and-phase-deployments-using-release-gates" data-raw-source="[Progressively expose and phase deployments using release gates](/azure/devops/server/release-notes/azuredevops2019#progressively-expose-and-phase-deployments-using-release-gates)">Progressively expose and phase deployments using release gates</a></li>
+<li><a href="/azure/devops/server/release-notes/azuredevops2019#automatically-deploy-to-new-targets-in-a-deployment-group" data-raw-source="[Automatically deploy to new targets in a deployment group](/azure/devops/server/release-notes/azuredevops2019#automatically-deploy-to-new-targets-in-a-deployment-group)">Automatically deploy to new targets in a deployment group</a></li>
+<li><a href="/azure/devops/server/release-notes/azuredevops2019#continuously-deploy-builds-tagged-by-post-build-processing" data-raw-source="[Continuously deploy builds tagged by post-build processing](/azure/devops/server/release-notes/azuredevops2019#continuously-deploy-builds-tagged-by-post-build-processing)">Continuously deploy builds tagged by post-build processing</a></li>
+<li><a href="/azure/devops/server/release-notes/azuredevops2019#continuously-deploy-to-azure-database-for-mysql" data-raw-source="[Continuously deploy to Azure Database for MySQL](/azure/devops/server/release-notes/azuredevops2019#continuously-deploy-to-azure-database-for-mysql)">Continuously deploy to Azure Database for MySQL</a></li>
+<li><a href="/azure/devops/server/release-notes/azuredevops2019#deploy-linux-containers-with-the-app-server-deploy-task" data-raw-source="[Deploy Linux containers with the App Server Deploy task](/azure/devops/server/release-notes/azuredevops2019#deploy-linux-containers-with-the-app-server-deploy-task)">Deploy Linux containers with the App Server Deploy task</a></li>
+<li><a href="/azure/devops/server/release-notes/azuredevops2019#filter-branches-for-github-enterprise-or-external-git-artifacts" data-raw-source="[Filter branches for GitHub Enterprise or external Git artifacts](/azure/devops/server/release-notes/azuredevops2019#filter-branches-for-github-enterprise-or-external-git-artifacts)">Filter branches for GitHub Enterprise or external Git artifacts</a></li>
+<li><a href="/azure/devops/server/release-notes/azuredevops2019#hold-deployments-until-gates-succeed-consistently" data-raw-source="[Hold deployments until gates succeed consistently](/azure/devops/server/release-notes/azuredevops2019#hold-deployments-until-gates-succeed-consistently)">Hold deployments until gates succeed consistently</a></li>
+<li><a href="/azure/devops/server/release-notes/azuredevops2019#ignore-a-release-gate-for-a-deployment" data-raw-source="[Ignore a release gate for a deployment](/azure/devops/server/release-notes/azuredevops2019#ignore-a-release-gate-for-a-deployment)">Ignore a release gate for a deployment</a></li>
+<li><a href="/azure/devops/server/release-notes/azuredevops2019#perform-additional-testing-using-a-pull-request-release-trigger" data-raw-source="[Perform additional testing using a pull request release trigger](/azure/devops/server/release-notes/azuredevops2019#perform-additional-testing-using-a-pull-request-release-trigger)">Perform additional testing using a pull request release trigger</a></li>
+<li><a href="/azure/devops/server/release-notes/azuredevops2019#create-azure-service-connection-with-service-principal-that-authenticates-with-a-certificate" data-raw-source="[Create Azure service connection with service principal that authenticates with a certificate](/azure/devops/server/release-notes/azuredevops2019#create-azure-service-connection-with-service-principal-that-authenticates-with-a-certificate)">Create Azure service connection with service principal that authenticates with a certificate</a></li>
+<li><a href="/azure/devops/server/release-notes/azuredevops2019#run-from-package-supported-in-azure-app-service-deployments" data-raw-source="[Run from Package supported in Azure App Service deployments](/azure/devops/server/release-notes/azuredevops2019#run-from-package-supported-in-azure-app-service-deployments)">Run from Package supported in Azure App Service deployments</a></li>
+<li><a href="/azure/devops/server/release-notes/azuredevops2019#the-xcode-task-supports-newly-released-xcode-10" data-raw-source="[The Xcode task supports newly released Xcode 10](/azure/devops/server/release-notes/azuredevops2019#the-xcode-task-supports-newly-released-xcode-10)">The Xcode task supports newly released Xcode 10</a></li>
+<li><a href="/azure/devops/server/release-notes/azuredevops2019#streamline-deployment-to-kubernetes-using-helm" data-raw-source="[Streamline deployment to Kubernetes using Helm](/azure/devops/server/release-notes/azuredevops2019#streamline-deployment-to-kubernetes-using-helm)">Streamline deployment to Kubernetes using Helm</a></li>
+<li><a href="/azure/devops/server/release-notes/azuredevops2019#control-helm-version-used-in-release" data-raw-source="[Control Helm version used in Release](/azure/devops/server/release-notes/azuredevops2019#control-helm-version-used-in-release)">Control Helm version used in Release</a></li>
+<li><a href="/azure/devops/server/release-notes/azuredevops2019#set-a-variable-at-release-time" data-raw-source="[Set a variable at release time](/azure/devops/server/release-notes/azuredevops2019#set-a-variable-at-release-time)">Set a variable at release time</a></li>
 
 </ul>
 
 <h3>Azure Test Plans</h3>
 <ul>
-<li>[Test Runner (Azure Test Plans) client can run manual tests for desktop applications](/azure/devops/server/release-notes/azuredevops2019#)</li> 
+<li><a href="/azure/devops/server/release-notes/azuredevops2019#" data-raw-source="[Test Runner (Azure Test Plans) client can run manual tests for desktop applications](/azure/devops/server/release-notes/azuredevops2019#)">Test Runner (Azure Test Plans) client can run manual tests for desktop applications</a></li> 
 </ul>
 
 <h3>Azure Artifacts</h3>
 <ul>
-<li>[Upstream sources](/azure/devops/server/release-notes/azuredevops2019#upstream-sources)</li>
-<li>[Follow packages](/azure/devops/server/release-notes/azuredevops2019#follow-packages)</li> 
-<li>[Change feed settings without having to manually save](/azure/devops/server/release-notes/azuredevops2019#change-feed-settings-without-having-to-manually-save)</li> 
-<li>[Simplify authentication using the new cross-platform Credential Provider for NuGet](/azure/devops/server/release-notes/azuredevops2019#simplify-authentication-using-the-new-cross-platform-credential-provider-for-nuget)</li> 
-<li>[Compress symbols when publishing to a file share](/azure/devops/server/release-notes/azuredevops2019#compress-symbols-when-publishing-to-a-file-share)</li> 
-<li>[Changes to Artifacts and Release Management Deployment Pipeline Licensing](/azure/devops/server/release-notes/azuredevops2019#changes-to-artifacts-and-release-management-deployment-pipeline-licensing)</li>
+<li><a href="/azure/devops/server/release-notes/azuredevops2019#upstream-sources" data-raw-source="[Upstream sources](/azure/devops/server/release-notes/azuredevops2019#upstream-sources)">Upstream sources</a></li>
+<li><a href="/azure/devops/server/release-notes/azuredevops2019#follow-packages" data-raw-source="[Follow packages](/azure/devops/server/release-notes/azuredevops2019#follow-packages)">Follow packages</a></li> 
+<li><a href="/azure/devops/server/release-notes/azuredevops2019#change-feed-settings-without-having-to-manually-save" data-raw-source="[Change feed settings without having to manually save](/azure/devops/server/release-notes/azuredevops2019#change-feed-settings-without-having-to-manually-save)">Change feed settings without having to manually save</a></li> 
+<li><a href="/azure/devops/server/release-notes/azuredevops2019#simplify-authentication-using-the-new-cross-platform-credential-provider-for-nuget" data-raw-source="[Simplify authentication using the new cross-platform Credential Provider for NuGet](/azure/devops/server/release-notes/azuredevops2019#simplify-authentication-using-the-new-cross-platform-credential-provider-for-nuget)">Simplify authentication using the new cross-platform Credential Provider for NuGet</a></li> 
+<li><a href="/azure/devops/server/release-notes/azuredevops2019#compress-symbols-when-publishing-to-a-file-share" data-raw-source="[Compress symbols when publishing to a file share](/azure/devops/server/release-notes/azuredevops2019#compress-symbols-when-publishing-to-a-file-share)">Compress symbols when publishing to a file share</a></li> 
+<li><a href="/azure/devops/server/release-notes/azuredevops2019#changes-to-artifacts-and-release-management-deployment-pipeline-licensing" data-raw-source="[Changes to Artifacts and Release Management Deployment Pipeline Licensing](/azure/devops/server/release-notes/azuredevops2019#changes-to-artifacts-and-release-management-deployment-pipeline-licensing)">Changes to Artifacts and Release Management Deployment Pipeline Licensing</a></li>
 </ul>
 </td>
 </tr>
@@ -679,7 +677,7 @@ For known issues, see [Known issues](/visualstudio/releasenotes/tfs2018-relnotes
 <li>Delete test artifacts</li>
 <li>Favorites for Test Plans</li>
 <li>Test Impact Analysis for managed automated tests</li>
-<li>Firefox support for Test & Feedback extension</li>
+<li>Firefox support for Test &amp; Feedback extension</li>
 </ul>
 
 
@@ -895,7 +893,7 @@ Team Foundation Server 2015 Update 2 and later versions are free for up to five 
 <li><a href="/visualstudio/releasenotes/tfs2015-update1-vs#dashboards">Add multiple team dashboards, add widgets</a></li>
 <li><a href="/visualstudio/releasenotes/tfs2015-update1-vs#querylimit">When creating a query, limit the values shown for Work Item Type</a></li>
 </ul>
- 
+
 
 #### Build
 <ul>
@@ -1008,7 +1006,7 @@ TFS 2018: Deprecated the following features:
 - [Automated testing](/visualstudio/releasenotes/tfs2018-relnotes#a-idtest-a-testing)
 - [FS extension for SharePoint](https://go.microsoft.com/fwlink/?linkid=852977)
 - [Team Rooms](/visualstudio/releasenotes/tfs2018-relnotes#a-idtr-a-discontinuing-team-rooms)
-	Several good solutions are available that integrate well with Azure DevOps that support notifications and chat, such as [Microsoft Teams](https://marketplace.visualstudio.com/items?itemName=ms-vsts.vss-services-teams) and [Slack](/azure/devops/collaborate/slack). 
+    Several good solutions are available that integrate well with Azure DevOps that support notifications and chat, such as [Microsoft Teams](https://marketplace.visualstudio.com/items?itemName=ms-vsts.vss-services-teams) and [Slack](/azure/devops/collaborate/slack). 
 
 ### TFS 2017
 - **Lab Management**: Going forward, native Build and Release management tools replace the previous Lab Management tools. To learn more, see [Use Build and Release Management instead of Lab Management for automated testing](/azure/devops/test/lab-management/use-build-or-rm-instead-of-lab-management). 

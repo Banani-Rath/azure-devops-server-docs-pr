@@ -39,155 +39,159 @@ you create a project, you specify the collection which will store its data.
 
 ## View information or configure existing project
 
-1.  If you haven't been added as an Azure DevOps Server administrator, [get added now](add-administrator.md).
+1. If you haven't been added as an Azure DevOps Server administrator, [get added now](add-administrator.md).
 
-    You must be a member of the local Administrators group on the server
-    where you want to open the console, and either a member of the Azure DevOps Server or Team
-    Foundation Administrators group, or your **Edit
-    Server-Level Information** permission must be set to **Allow**.
+   You must be a member of the local Administrators group on the server
+   where you want to open the console, and either a member of the Azure DevOps Server or Team
+   Foundation Administrators group, or your **Edit
+   Server-Level Information** permission must be set to **Allow**.
 
-2.  Sign in to the application-tier server, [open the Administration Console](open-admin-console.md), and open the **Team Project Collections** node. 
+2. Sign in to the application-tier server, [open the Administration Console](open-admin-console.md), and open the **Team Project Collections** node. 
 
-	::: moniker range=">= azure-devops-2019"  
-	![View project collections](_img/manage-pc/open-tpc-node.png)
-	::: moniker-end  
-	::: moniker range="<= tfs-2018"
-    ![View project collections](_img/view-proj-collections.png)
-	::: moniker-end
+   ::: moniker range=">= azure-devops-2019"  
+   ![View project collections](_img/manage-pc/open-tpc-node.png)
+   ::: moniker-end  
+   ::: moniker range="<= tfs-2018"
+   ![View project collections](_img/view-proj-collections.png)
+   ::: moniker-end
 
-3.  Highlight the name of a collection and review the information
-    provided from the various tabs. Some tabs only appear if the
-    corresponding application has been configured.
+3. Highlight the name of a collection and review the information
+   provided from the various tabs. Some tabs only appear if the
+   corresponding application has been configured.
 
-    You can perform the following tasks from the corresponding tab.
+   You can perform the following tasks from the corresponding tab.
 
-    | Tab | Tasks |
-    | --- | --- |
-    | **General** | <ul><li> **Start Collection** or **Stop Collection**: Start or stop a collection. Projects become unavailable when you stop a collection. You typically stop a collection to support maintenance operations, such as moving or splitting a collection. </li><li> If the collection is started, only **Stop Collection** appears. If the collection is stopped, only *Start Collection** appears. Starting or stopping a collection can take several minutes to complete. You might need to choose **Refresh** to display the change in state. </li><li> **Edit settings**: Edit the collection's description or configuration. </li><li> **Group Membership**: Add or remove users or groups as members of a collection. To learn more, see [Set administrator permissions for project collections](/azure/devops/security/set-project-collection-level-permissions). </li><li> **Administer Security**: Manage the  permissions of a collection group. To learn more, see [Permissions and groups reference](/azure/devops/security/permissions). </li></ul> |
-    | **Status** | View an activity log or rerun a job. |
-    | **Projects** | <ul><li> View the projects defined for a collection and [Delete a project](/azure/devops/accounts/delete-team-project). </li><li> To learn more about projects, see [Create a project](/azure/devops/accounts/create-team-project). </li></ul> |
-    | **Reports Folder** | <ul><li> Configure the report server for use by the collection. </li><li>  When you edit the default folder location, the operation will fail if you type the path of a folder that does not exist on the server and you do not have permission to create a folder on that server. You must specify an existing folder if you do not have permissions to create folders on that server. </li><li> To remove the default location for report subfolders, choose **Clear Configuration**.  </li><li> Removing the configuration removes the reporting functionality for all existing and future projects in the collection.  </li><li> This tab only appears when you've [added a report server to Azure DevOps](/azure/devops/report/admin/add-a-report-server). </li></ul> |  
-	::: moniker range="<= tfs-2017"  
-	For TFS-2017 and earlier versions, the SharePoint Site tab provides information about SharePoint Products integration with TFS.
 
-    | Tab | Tasks |  
-    | --- | --- |  
-    | **SharePoint Site** | <ul><li> View, configure, or remove the default root location for where project portals are created. The **Create New Team  Project Wizard** creates project portals at this location. </li><li> If the **SharePoint Web Application** list is empty, the application-tier hasn't been configured with any applications. </li><li> This tab only appears when you've configured the application-tier with SharePoint Products. See [Add SharePoint products to your deployment](add-sharepoint-to-tfs.md). </li></ul> |  
-	::: moniker-end  
+   |        Tab         |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              Tasks                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+   |--------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+   |    **General**     | <ul><li> <strong>Start Collection</strong> or <strong>Stop Collection</strong>: Start or stop a collection. Projects become unavailable when you stop a collection. You typically stop a collection to support maintenance operations, such as moving or splitting a collection. </li><li> If the collection is started, only <strong>Stop Collection</strong> appears. If the collection is stopped, only <em>Start Collection</em>\* appears. Starting or stopping a collection can take several minutes to complete. You might need to choose <strong>Refresh</strong> to display the change in state. </li><li> <strong>Edit settings</strong>: Edit the collection's description or configuration. </li><li> <strong>Group Membership</strong>: Add or remove users or groups as members of a collection. To learn more, see [Set administrator permissions for project collections](/azure/devops/security/set-project-collection-level-permissions). </li><li> <strong>Administer Security</strong>: Manage the  permissions of a collection group. To learn more, see [Permissions and groups reference](/azure/devops/security/permissions). </li></ul> |
+   |     **Status**     |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               View an activity log or rerun a job.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+   |    **Projects**    |                                                                                                                                                                                                                                                                                                                                                                                                                                                          <ul><li> View the projects defined for a collection and [Delete a project](/azure/devops/accounts/delete-team-project). </li><li> To learn more about projects, see [Create a project](/azure/devops/accounts/create-team-project). </li></ul>                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+   | **Reports Folder** |                                                                                                                                                                                     <ul><li> Configure the report server for use by the collection. </li><li>  When you edit the default folder location, the operation will fail if you type the path of a folder that does not exist on the server and you do not have permission to create a folder on that server. You must specify an existing folder if you do not have permissions to create folders on that server. </li><li> To remove the default location for report subfolders, choose <strong>Clear Configuration</strong>.  </li><li> Removing the configuration removes the reporting functionality for all existing and future projects in the collection.  </li><li> This tab only appears when you've [added a report server to Azure DevOps](/azure/devops/report/admin/add-a-report-server). </li></ul>                                                                                                                                                                                      |
+
+   ::: moniker range="<= tfs-2017"  
+   For TFS-2017 and earlier versions, the SharePoint Site tab provides information about SharePoint Products integration with TFS.
+
+
+   |         Tab         |                                                                                                                                                                                                                                                                      Tasks                                                                                                                                                                                                                                                                      |
+   |---------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+   | **SharePoint Site** | <ul><li> View, configure, or remove the default root location for where project portals are created. The <strong>Create New Team  Project Wizard</strong> creates project portals at this location. </li><li> If the <strong>SharePoint Web Application</strong> list is empty, the application-tier hasn't been configured with any applications. </li><li> This tab only appears when you've configured the application-tier with SharePoint Products. See [Add SharePoint products to your deployment](add-sharepoint-to-tfs.md). </li></ul> |
+
+   ::: moniker-end  
 
 
 ## Create a project collection
 
 Before creating a project collection, jump to this [section to learn more about the pros and cons of creating multiple project collections](#pros_cons).
 
-1.  If you haven't been added as an administrator, [get added now](add-administrator.md).
+1. If you haven't been added as an administrator, [get added now](add-administrator.md).
 
-    You must be a member of the local Administrators group on the server
-    where you want to open the console, and either a member of the Team
-    Foundation Administrators group or your **Edit Server-Level Information** permission must be set to **Allow**.
+   You must be a member of the local Administrators group on the server
+   where you want to open the console, and either a member of the Team
+   Foundation Administrators group or your **Edit Server-Level Information** permission must be set to **Allow**.
 
-2.  From the administration console, open the **Team
-    Project Collections** page and choose **Create Collection**.
+2. From the administration console, open the **Team
+   Project Collections** page and choose **Create Collection**.
 
-	::: moniker range=">= azure-devops-2019"  
-	![Create a project collections](_img/manage-pc/create-collection.png)  
-	::: moniker-end  
-	::: moniker range="<= tfs-2018"  
-    ![Create a project collection](_img/create-team-proj.png)
-	::: moniker-end  
+   ::: moniker range=">= azure-devops-2019"  
+   ![Create a project collections](_img/manage-pc/create-collection.png)  
+   ::: moniker-end  
+   ::: moniker range="<= tfs-2018"  
+   ![Create a project collection](_img/create-team-proj.png)
+   ::: moniker-end  
 
-3.  Follow the guidance provided by the **Create Team
-    Project Collection** wizard.
+3. Follow the guidance provided by the **Create Team
+   Project Collection** wizard.
 
-    For the **Name**, specify a unique name with
-    no more than 64 characters (the shorter the better), and don't
-    specify slashes, or other special characters listed in [Naming restrictions](/azure/devops/collaborate/naming-restrictions).
+   For the **Name**, specify a unique name with
+   no more than 64 characters (the shorter the better), and don't
+   specify slashes, or other special characters listed in [Naming restrictions](/azure/devops/collaborate/naming-restrictions).
 
-	::: moniker range=">= azure-devops-2019"  
-	![Create a project collections](_img/manage-pc/name-collection-choose-inheritance.png)  
+   ::: moniker range=">= azure-devops-2019"  
+   ![Create a project collections](_img/manage-pc/name-collection-choose-inheritance.png)  
 
-	Choose **Inheritance** if you want to use the user interface to customize work tracking. Note that this choice relies on the Analytics Service to support your reporting needs.
+   Choose **Inheritance** if you want to use the user interface to customize work tracking. Note that this choice relies on the Analytics Service to support your reporting needs.
 
-	Choose **XML** if you want to use XML definition files to customize work tracking.   
-	::: moniker-end  
+   Choose **XML** if you want to use XML definition files to customize work tracking.   
+   ::: moniker-end  
 
-    The wizard supports configuration of the following resources. Some
-    resources can only be configured if the application-tier server that
-    hosts the collection has been previously configured to support the
-    corresponding application.  
+   The wizard supports configuration of the following resources. Some
+   resources can only be configured if the application-tier server that
+   hosts the collection has been previously configured to support the
+   corresponding application.  
 
 ### Data Tier or SQL Server instance 
 
 0. Specify the 
-	name of the Azure DevOps data-tier server. If you want to use a named 
-	instance to host the database for this project collection, 
-	you must also specify the name of the instance as in the following example:
+    name of the Azure DevOps data-tier server. If you want to use a named 
+    instance to host the database for this project collection, 
+    you must also specify the name of the instance as in the following example:
 
-	*ServerName* **\\** *InstanceName*
+    *ServerName* **\\** *InstanceName*
 
-0. Choose **Create a new database for this 
-collection** if you want to create a database for 
-the collection. This option requires that the service account used by 
-the Visual Studio Team Foundation Background Job Agent 
-has permissions to create a database on the instance of SQL Server. 
+1. Choose **Create a new database for this 
+   collection** if you want to create a database for 
+   the collection. This option requires that the service account used by 
+   the Visual Studio Team Foundation Background Job Agent 
+   has permissions to create a database on the instance of SQL Server. 
 
-	Or, choose **Use this existing database** 
-	if you want to use a database that already exists, and specify 
-	the name of the database. This option requires 
-	that an empty database exists on the named SQL Server instance 
-	and you have write permissions.  
+    Or, choose **Use this existing database** 
+    if you want to use a database that already exists, and specify 
+    the name of the database. This option requires 
+    that an empty database exists on the named SQL Server instance 
+    and you have write permissions.  
 
 ::: moniker range="<= tfs-2017"  
 
-###SharePoint web application   
+### SharePoint web application   
 
 0. **SharePoint web application** appears if 
-	you have configured the application-tier with a SharePoint web 
-	application, otherwise it is disabled. To configure it later, 
-	see [Add SharePoint products to your deployment](add-sharepoint-to-tfs.md).  
+    you have configured the application-tier with a SharePoint web 
+    application, otherwise it is disabled. To configure it later, 
+    see [Add SharePoint products to your deployment](add-sharepoint-to-tfs.md).  
 
-0. Choose **Next** if you want to use the 
-	default option to create a site collection. Choose this option 
-	unless your business infrastructure requires that you use an 
-	existing site collection. This option will create a SharePoint 
-	site collection with the name of the collection used as the name 
-	of the sub-site of the root site that is configured in the SharePoint web application.
+1. Choose **Next** if you want to use the 
+    default option to create a site collection. Choose this option 
+    unless your business infrastructure requires that you use an 
+    existing site collection. This option will create a SharePoint 
+    site collection with the name of the collection used as the name 
+    of the sub-site of the root site that is configured in the SharePoint web application.
 
-	This option requires the Azure DevOps service account to be a member of 
-	the Farm Administrators group. If it isn't, you can't create 
-	a site collection.
+    This option requires the Azure DevOps service account to be a member of 
+    the Farm Administrators group. If it isn't, you can't create 
+    a site collection.
 
-0. Or, to use an existing site collection that a member of the Farm 
-Administrators group created for you, expand **Advanced configuration**, choose **Specify a path to an existing SharePoint 
-site**, and specify the relative path of the site 
-collection that was created for you.
+2. Or, to use an existing site collection that a member of the Farm 
+   Administrators group created for you, expand **Advanced configuration**, choose **Specify a path to an existing SharePoint 
+   site**, and specify the relative path of the site 
+   collection that was created for you.
 
-	Choose **Verify Path**, and if the path 
-	is correct, choose **Next**.  
+    Choose **Verify Path**, and if the path 
+    is correct, choose **Next**.  
 
 ::: moniker-end  
 
 ### SQL Server Reporting Services
 
 1. **Reports** appears if you have 
-	configured the application-tier to use SQL Server Reporting 
-	Services, otherwise it is disabled. To configure it later, see [Add a report server](/azure/devops/report/admin/add-a-report-server).
+    configured the application-tier to use SQL Server Reporting 
+    Services, otherwise it is disabled. To configure it later, see [Add a report server](/azure/devops/report/admin/add-a-report-server).
 
 2. Review the information for the server and the folder that will 
-	host reports, and choose **Next**. This 
-	option requires your user account to have permissions to create 
-	a folder on the server that is running Reporting Services.
+    host reports, and choose **Next**. This 
+    option requires your user account to have permissions to create 
+    a folder on the server that is running Reporting Services.
 
-	Unless security restrictions in your business infrastructure 
-	prevent the automatic creation of a folder as part of the 
-	wizard, you should use the default option to create a folder.
+    Unless security restrictions in your business infrastructure 
+    prevent the automatic creation of a folder as part of the 
+    wizard, you should use the default option to create a folder.
 
 0. If you must use a folder that an administrator created for you 
-	on the server that is running Reporting Services, expand **Advanced configuration**, choose **Specify a path to an existing folder**, and 
-	specify the relative path of the folder that has been created 
-	for you.
+    on the server that is running Reporting Services, expand **Advanced configuration**, choose **Specify a path to an existing folder**, and 
+    specify the relative path of the folder that has been created 
+    for you.
 
-	Choose **Verify Path**, and if the path is correct, choose **Next**.  
+    Choose **Verify Path**, and if the path is correct, choose **Next**.  
 
 ::: moniker range="<= tfs-2015"  
 **Lab Management**  
@@ -205,20 +209,20 @@ If you do use Lab Management, follow the steps provided in [**To configure Lab M
 
 0. In **Readiness Checks**, review the status of the checks.
 
-	A blue underlined **Error** indicator 
-	appears next to any configuration that contains an error. You 
-	can choose the indicator for a detailed message about 
-	the problem. You must address all errors before you can continue.
+    A blue underlined **Error** indicator 
+    appears next to any configuration that contains an error. You 
+    can choose the indicator for a detailed message about 
+    the problem. You must address all errors before you can continue.
 
-	After all readiness checks have passed, choose **Create**.
+    After all readiness checks have passed, choose **Create**.
 
-0. The process of creating a project collection starts.  
+1. The process of creating a project collection starts.  
 
-	::: moniker range=">= azure-devops-2019"
-	![Create a project collections](_img/manage-pc/complete-create-tpc.png)  
-	::: moniker-end  
+    ::: moniker range=">= azure-devops-2019"
+    ![Create a project collections](_img/manage-pc/complete-create-tpc.png)  
+    ::: moniker-end  
 
-	After the wizard finishes, choose **Close**.
+    After the wizard finishes, choose **Close**.
 
 <a id="detach-delete" />
 ## Detach or delete a project collection
@@ -236,33 +240,33 @@ the deleted collection.
 
 ### Detach the collection 
 
-1.  From the administration console, highlight the name of the
-    collection that you want to delete, and then choose **Detach Collection**.
+1. From the administration console, highlight the name of the
+   collection that you want to delete, and then choose **Detach Collection**.
 
-	::: moniker range=">= azure-devops-2019"
-	![Detach project collections](_img/manage-pc/detach-tpc.png)
-	::: moniker-end
-	::: moniker range="<= tfs-2018"
-    ![Detach a project collection](_img/detach-collection.png)
-	::: moniker-end
+   ::: moniker range=">= azure-devops-2019"
+   ![Detach project collections](_img/manage-pc/detach-tpc.png)
+   ::: moniker-end
+   ::: moniker range="<= tfs-2018"
+   ![Detach a project collection](_img/detach-collection.png)
+   ::: moniker-end
 
-2.  Follow the guidance provided by the **Detach Team
-    Project Collection Wizard**.
+2. Follow the guidance provided by the **Detach Team
+   Project Collection Wizard**.
 
-    (Optional) On the **Provide a servicing message
-    for the project collection** page, in **Servicing Message**, specify a message for users
-    who might try to connect to projects in this collection.
+   (Optional) On the **Provide a servicing message
+   for the project collection** page, in **Servicing Message**, specify a message for users
+   who might try to connect to projects in this collection.
 
-3.  When all the readiness checks have completed successfully, choose
-    **Detach**.
+3. When all the readiness checks have completed successfully, choose
+   **Detach**.
 
-    On the **Monitor the project collection
-    detach progress** page, when all processes have completed,
-    choose **Next**.
+   On the **Monitor the project collection
+   detach progress** page, when all processes have completed,
+   choose **Next**.
 
-4.  (Optional) On the **Review supplemental
-    information for this project collection** page, note the
-    location of the log file.
+4. (Optional) On the **Review supplemental
+   information for this project collection** page, note the
+   location of the log file.
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -386,27 +390,27 @@ is that you increase the complexity of your Azure DevOps deployment.
 **A:** Each project belongs to a collection.
 In addition, the following objects are managed at the collection level:
 
--   **Source control (TFVC)**: [File types](manage-file-types.md)
-    and [enabling/disabling asynchronous checkout in server workspaces](/azure/devops/tfvc/decide-between-using-local-server-workspace).
+- **Source control (TFVC)**: [File types](manage-file-types.md)
+  and [enabling/disabling asynchronous checkout in server workspaces](/azure/devops/tfvc/decide-between-using-local-server-workspace).
 
--   **Work item tracking**: [Processes and process templates](/azure/devops/boards/work-items/guidance/manage-process-templates),
-    [work item types](/azure/devops/reference/add-modify-wit),
-    [link types](/azure/devops/reference/xml/define-custom-link-types),
-    [work item fields](/azure/devops/reference/add-modify-field),
-    [global lists](/azure/devops/reference/xml/define-global-lists),
-    and [global workflow](/azure/devops/reference/xml/global-workflow-xml-element-reference.
+- **Work item tracking**: [Processes and process templates](/azure/devops/boards/work-items/guidance/manage-process-templates),
+  [work item types](/azure/devops/reference/add-modify-wit),
+  [link types](/azure/devops/reference/xml/define-custom-link-types),
+  [work item fields](/azure/devops/reference/add-modify-field),
+  [global lists](/azure/devops/reference/xml/define-global-lists),
+  and [global workflow](/azure/devops/reference/xml/global-workflow-xml-element-reference.
 
-    All fields defined for all projects defined within a collection
-    are managed or configured for a collection. You can define no more
-    than 1,024 work item fields in the same project collection, and
-    you can set no more than 1,024 fields to be reportable in all team
-    project collections.
+  All fields defined for all projects defined within a collection
+  are managed or configured for a collection. You can define no more
+  than 1,024 work item fields in the same project collection, and
+  you can set no more than 1,024 fields to be reportable in all team
+  project collections.
 
--   **Dev-Test-Ops**: 
- -   TFS 2015: [Agent queues](/azure/devops/pipelines/agents/pools-queues)
- -   TFS 2013: [XAML build controllers](/previous-versions/visualstudio/visual-studio-2013/dd793166(v=vs.120))
+- **Dev-Test-Ops**: 
+  -   TFS 2015: [Agent queues](/azure/devops/pipelines/agents/pools-queues)
+  -   TFS 2013: [XAML build controllers](/previous-versions/visualstudio/visual-studio-2013/dd793166(v=vs.120))
 
--   **Security**: [Collection-level groups and permissions](/azure/devops/organizations/security/permissions).
+- **Security**: [Collection-level groups and permissions](/azure/devops/organizations/security/permissions).
 
 ### Q: How does data stored for different team collections support reporting?
 

@@ -20,7 +20,7 @@ You might use this command when restoring the configuration database to new hard
 			<td>
 				Required. Specifies the name of the server that is running SQL Server and the name of the instance
 				if you want to use an instance other than the default instance.
-				If you specify an instance, you must use the format: `ServerName\InstanceName`.
+                If you specify an instance, you must use the format: <code>ServerName\InstanceName</code>.
 			</td>
 		</tr>
 		<tr>

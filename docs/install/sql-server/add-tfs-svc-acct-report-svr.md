@@ -42,7 +42,7 @@ To add the service account for Azure DevOps Server to the Content Manager group 
 
 3. Select **Report Manager URL**, and then select the link to the report manager website. 
 
-  The report manager website for the report server opens in a web browser window.
+   The report manager website for the report server opens in a web browser window.
 
 4. In the report manager website, select the **Properties** tab, and then select **New Role Assignment**.
 

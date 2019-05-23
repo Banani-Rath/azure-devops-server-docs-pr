@@ -44,19 +44,19 @@ Upgrading to Azure DevOps Server is supported only from Team Foundation Server 2
     - [Azure CLI](/azure/active-directory/managed-identities-azure-resources/qs-configure-cli-windows-vm)
     - [Azure Resource Manager templates](/azure/active-directory/managed-identities-azure-resources/qs-configure-template-windows-vm)
 
-1. To set up a new Azure DevOps Server instance, create two Azure SQL databases:
+2. To set up a new Azure DevOps Server instance, create two Azure SQL databases:
 
-    - AzureDevOps_Configuration  
-    - AzureDevOps_DefaultCollection  
+   - AzureDevOps_Configuration  
+   - AzureDevOps_DefaultCollection  
 
-    > [!NOTE]
-    > You can skip this step if you use existing databases to either:
-    >- Upgrade a new version of Azure DevOps Server.
-    >- Migrate an up-to-date instance of Azure DevOps Server to Azure SQL Database.
+     > [!NOTE]
+     > You can skip this step if you use existing databases to either:
+     >- Upgrade a new version of Azure DevOps Server.
+     >- Migrate an up-to-date instance of Azure DevOps Server to Azure SQL Database.
 
-1. Configure [Azure Active Directory authentication](/azure/sql-database/sql-database-aad-authentication) for your Azure SQL Database server. Make yourself the Active Directory administrator on the server. You need administrator permissions on the database to complete the remaining configuration steps. You can change this permission later.
+3. Configure [Azure Active Directory authentication](/azure/sql-database/sql-database-aad-authentication) for your Azure SQL Database server. Make yourself the Active Directory administrator on the server. You need administrator permissions on the database to complete the remaining configuration steps. You can change this permission later.
 
-1. Enable your managed identity, or identities if you use multiple servers, to sign in to your Azure SQL database and give it the appropriate permissions. Connect to the database server by using **SQL Server Management Studio**. Connect by using an Azure Active Directory user with **Active Directory** authentication. You can't manipulate Azure Active Directory users if you sign in to Azure SQL Database under SQL authentication.
+4. Enable your managed identity, or identities if you use multiple servers, to sign in to your Azure SQL database and give it the appropriate permissions. Connect to the database server by using **SQL Server Management Studio**. Connect by using an Azure Active Directory user with **Active Directory** authentication. You can't manipulate Azure Active Directory users if you sign in to Azure SQL Database under SQL authentication.
 
     a. Run the following T-SQL command on the `master` database:
 

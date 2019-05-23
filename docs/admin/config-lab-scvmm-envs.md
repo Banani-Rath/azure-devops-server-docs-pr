@@ -81,9 +81,9 @@ the *HyperVHost* machine, the *VmmMachine* and the *LibraryMachine* all on the s
 
 *HyperVHost*
 
-  * Processor -- 64-bit with hardware virtualization enabled
+* Processor -- 64-bit with hardware virtualization enabled
   
-  * Supported OS -- Windows Server 2012 R2 operating system with Hyper-V 64-bit, Standard, Enterprise and Datacenter Editions.
+* Supported OS -- Windows Server 2012 R2 operating system with Hyper-V 64-bit, Standard, Enterprise and Datacenter Editions.
   
   VMM Server 2012 R2 operating system with Hyper-V 64-bit, Standard, Enterprise and Datacenter Editions.
   
@@ -97,15 +97,15 @@ the *HyperVHost* machine, the *VmmMachine* and the *LibraryMachine* all on the s
 
   Hyper-V Server 2008 R2 operating system.
   
-  * RAM (min/recommended) --  4GB / 8GB 
+* RAM (min/recommended) --  4GB / 8GB 
   
-  * Hard disk (min/recommended) -- 100GB / 200GB 
+* Hard disk (min/recommended) -- 100GB / 200GB 
 
 *VmmMachine*
 
-  * Processor -- 64-bit
+* Processor -- 64-bit
   
-  * Supported OS -- Windows Server 2012 R2 operating system with Hyper-V 64-bit, Standard, Enterprise and Datacenter Editions.
+* Supported OS -- Windows Server 2012 R2 operating system with Hyper-V 64-bit, Standard, Enterprise and Datacenter Editions.
 
   VMM Server 2012 R2 operating system with Hyper-V 64-bit, Standard, Enterprise and Datacenter Editions.
 
@@ -115,15 +115,15 @@ the *HyperVHost* machine, the *VmmMachine* and the *LibraryMachine* all on the s
 
   Windows Server 2008 operating system Standard, Enterprise, and Datacenter Editions with Service Pack 2.
   
-  * RAM (min/recommended) --  2GB / 4GB 
+* RAM (min/recommended) --  2GB / 4GB 
   
-  * Hard disk -- 200GB 
+* Hard disk -- 200GB 
 
 *LibraryMachine*
 
-  * Processor -- 64-bit 
+* Processor -- 64-bit 
   
-  * Supported OS -- Windows Server 2012 R2 operating system with Hyper-V 64-bit, Standard, Enterprise and Datacenter Editions.
+* Supported OS -- Windows Server 2012 R2 operating system with Hyper-V 64-bit, Standard, Enterprise and Datacenter Editions.
 
   VMM Server 2012 R2 operating system with Hyper-V 64-bit, Standard, Enterprise and Datacenter Editions.
 
@@ -131,9 +131,9 @@ the *HyperVHost* machine, the *VmmMachine* and the *LibraryMachine* all on the s
 
   Windows Server 2008 R2 operating system 64-bit Standard, Enterprise, and Datacenter Editions.
   
-  * RAM (min/recommended) --  4GB / 8GB 
+* RAM (min/recommended) --  4GB / 8GB 
   
-  * Hard disk (min/recommended) -- 200GB / 500GB 
+* Hard disk (min/recommended) -- 200GB / 500GB 
 
 *TfsMachine*
 
@@ -577,100 +577,100 @@ a host group, and optionally add more library shares.
 
 To configure SCVMM:
 
-  1.  Open Virtual Machine Manager Administrator Console.
+1. Open Virtual Machine Manager Administrator Console.
 
-      1.  Choose **Start**, **All
-          programs**, **Microsoft System
-          Center**, **Virtual Machine Manager 2008
-          R2**, and then **Virtual Machine Manager
-          Administrator Console**.
+   1.  Choose **Start**, **All
+       programs**, **Microsoft System
+       Center**, **Virtual Machine Manager 2008
+       R2**, and then **Virtual Machine Manager
+       Administrator Console**.
 
-      2.  On the **Connect to Server** dialog box,
-          enter ```localhost:<port number>```or
-          ```<the name of the SCVMM Server>:<port number>```, and then choose
-          **Connect**.
+   2.  On the **Connect to Server** dialog box,
+       enter ```localhost:<port number>```or
+       ```<the name of the SCVMM Server>:<port number>```, and then choose
+       **Connect**.
 
-          > [!NOTE]
-          > If you receive an error message that states that you cannot connect
-          > because the service is not running, run services.msc and verify that
-          > Virtual Machine Manager Service is running.
+       > [!NOTE]
+       > If you receive an error message that states that you cannot connect
+       > because the service is not running, run services.msc and verify that
+       > Virtual Machine Manager Service is running.
 
-  2.  To add the *HyperVHost* machines to a
-      host group in SCVMM, in the **Actions** pane
-      choose **Add host**. Choose 
-      **Next** in all except the following pages of the
-      wizard:
+2. To add the *HyperVHost* machines to a
+   host group in SCVMM, in the **Actions** pane
+   choose **Add host**. Choose 
+   **Next** in all except the following pages of the
+   wizard:
 
-      1.  On **Select Host Location** wizard page
-          of the **Add Hosts** wizard, enter the
-          credentials of an administrator for the Hyper-V host.
+   1.  On **Select Host Location** wizard page
+       of the **Add Hosts** wizard, enter the
+       credentials of an administrator for the Hyper-V host.
 
-      2.  On the **Select Host Servers** wizard
-          page, enter the computer name of the host that you are adding to
-          SCVMM,for example, 
-          *HyperVHost*,and then choose 
-          **Add**.
+   2.  On the **Select Host Servers** wizard
+       page, enter the computer name of the host that you are adding to
+       SCVMM,for example, 
+       *HyperVHost*,and then choose 
+       **Add**.
 
-      3.  On the **Summary** wizard page, choose
-          **Add Hosts**.
+   3.  On the **Summary** wizard page, choose
+       **Add Hosts**.
 
-          > [!NOTE]
-          > We recommend that you configure a separate host group for each team
-          > project collection. For example, if you plan to configure Lab Management
-          > in two project collections in Team Foundation Server, you can create two
-          > host groups in System Center Virtual Machine Manager.
+       > [!NOTE]
+       > We recommend that you configure a separate host group for each team
+       > project collection. For example, if you plan to configure Lab Management
+       > in two project collections in Team Foundation Server, you can create two
+       > host groups in System Center Virtual Machine Manager.
 
-  3.  (Optional) By default, SCVMM configures the machine on which it is
-      installed to act as a library server. It also sets up a default
-      library share on the machine. You can add more library servers or
-      shares to improve the performance.
+3. (Optional) By default, SCVMM configures the machine on which it is
+   installed to act as a library server. It also sets up a default
+   library share on the machine. You can add more library servers or
+   shares to improve the performance.
 
-      1.  To add a new library server to SCVMM, choose 
-          **Add library server** in the 
-          **Actions** pane on the right side and follow
-          the instructions in the wizard.
+   1.  To add a new library server to SCVMM, choose 
+       **Add library server** in the 
+       **Actions** pane on the right side and follow
+       the instructions in the wizard.
 
-      2.  To add a new library share to SCVMM, first create a Windows file
-          share on a library server. Then select the library server on the
-          **Library** tab of SCVMM Administrator
-          Console and choose **Add library shares**
-          under the **Actions** pane on the
-          right side.
+   2.  To add a new library share to SCVMM, first create a Windows file
+       share on a library server. Then select the library server on the
+       **Library** tab of SCVMM Administrator
+       Console and choose **Add library shares**
+       under the **Actions** pane on the
+       right side.
 
-          > [!NOTE]
-          > We recommend that you configure a separate library share for each team
-          > project collection.
+       > [!NOTE]
+       > We recommend that you configure a separate library share for each team
+       > project collection.
 
-      3.  On each SCVMM library server, install the update described on
-          this [Microsoft
-          website](http://go.microsoft.com/fwlink/?LinkId=186068). This
-          update supports the network isolation capability of
-          SCVMM environments.
+   3.  On each SCVMM library server, install the update described on
+       this [Microsoft
+       website](http://go.microsoft.com/fwlink/?LinkId=186068). This
+       update supports the network isolation capability of
+       SCVMM environments.
 
-  4.  To ensure that virtual machines start quickly and that the host
-      service and any network agents do not timeout, set the minimum
-      amount of memory that the *HyperVHost**
-      machine will always have in reserve. The default memory reserves on
-      the host machine are often too low to accommodate the longer startup
-      time required for virtual machines.
+4. To ensure that virtual machines start quickly and that the host
+   service and any network agents do not timeout, set the minimum
+   amount of memory that the *HyperVHost**
+   machine will always have in reserve. The default memory reserves on
+   the host machine are often too low to accommodate the longer startup
+   time required for virtual machines.
 
-      1.  In the SCVMM Administrator Console, choose 
-          **Go**, **Hosts**.
+   1. In the SCVMM Administrator Console, choose 
+      **Go**, **Hosts**.
 
-      2.  In the center **All Hosts** pane, open
-          the shortcut menu for the name of the host machine, and then
-          choose **Properties**.
+   2. In the center **All Hosts** pane, open
+      the shortcut menu for the name of the host machine, and then
+      choose **Properties**.
 
-      3.  In the **Host Group Properties for **
-          *host machine* dialog, choose the
-          **Reserves** tab.
+   3. In the <strong>Host Group Properties for **
+      *host machine* dialog, choose the
+      **Reserves</strong> tab.
 
-      4.  In the **Memory** edit box, enter or
-          select ```1024```, and then choose 
-          **OK**. For more information about the minimum
-          required memory for Hyper-V hosts, see this [Hyper-V system requirements page](/windows-server/virtualization/hyper-v/system-requirements-for-hyper-v-on-windows).
+   4. In the **Memory** edit box, enter or
+      select ```1024```, and then choose 
+      **OK**. For more information about the minimum
+      required memory for Hyper-V hosts, see this [Hyper-V system requirements page](/windows-server/virtualization/hyper-v/system-requirements-for-hyper-v-on-windows).
 
-      5.  Repeat steps b through d for each host.
+   5. Repeat steps b through d for each host.
 
 > [!IMPORTANT]
 > If you have two SCVMM servers that are both configured to be used by Lab
@@ -867,126 +867,126 @@ Foundation Server.
 
 To configure Lab Management for Team Foundation Server:
 
-  1.  On *TfsMachine*, choose 
-      **Start**, **All programs**,
-      **Microsoft Visual Studio Team Foundation
-      Server**, and then choose **Team Foundation
-      Server Administration Console**.
+1. On *TfsMachine*, choose 
+   **Start**, **All programs**,
+   **Microsoft Visual Studio Team Foundation
+   Server**, and then choose **Team Foundation
+   Server Administration Console**.
 
-      > [!NOTE]
-      > You must log on to *TfsMachine* as *domain(\\*tfsadmin*.
+   > [!NOTE]
+   > You must log on to *TfsMachine* as <em>domain(\\</em>tfsadmin*.
 
-  2.  In the Administration Console, in the 
-      **Application Tier** node, choose 
-      **Lab Management**.
+2. In the Administration Console, in the 
+   **Application Tier** node, choose 
+   **Lab Management**.
 
-  3.  Choose **Configure**.
+3. Choose **Configure**.
 
-      The **Lab Management Settings** dialog
-      box appears.
+   The **Lab Management Settings** dialog
+   box appears.
 
-  4.  On the **Virtual Machine Manager** tab, in
-      **VMM Server Name**, type the name of 
-      *VmmMachine*, the server that is running
-      Virtual Machine Manager and that you will use to manage the
-      virtual machines.
+4. On the **Virtual Machine Manager** tab, in
+   **VMM Server Name**, type the name of 
+   *VmmMachine*, the server that is running
+   Virtual Machine Manager and that you will use to manage the
+   virtual machines.
 
-  5.  Choose **Test **to determine whether Team
-      Foundation Server can communicate with the SCVMM server.
+5. Choose **Test **to determine whether Team
+   Foundation Server can communicate with the SCVMM server.
 
-      1.  If Team Foundation Server service account does not have the
-          appropriate permissions on the specified SCVMM, a dialog box
-          prompts you for a user name and password.
+   1.  If Team Foundation Server service account does not have the
+       appropriate permissions on the specified SCVMM, a dialog box
+       prompts you for a user name and password.
 
-      2.  Specify the credentials of an existing member of SCVMM
-          Administrators Role. By using this user name and password, the
-          Team Foundation Server service account will be added to the
-          SCVMM Administrator Role.
+   2.  Specify the credentials of an existing member of SCVMM
+       Administrators Role. By using this user name and password, the
+       Team Foundation Server service account will be added to the
+       SCVMM Administrator Role.
 
-      If Team Foundation Server cannot contact the SCVMM server, a red x
-      and an error message is displayed. For more information about how to
-      troubleshoot installation issues, see [Troubleshooting Lab
-      Management](https://msdn.microsoft.com/library/ee853230(v=vs.120).aspx).
+   If Team Foundation Server cannot contact the SCVMM server, a red x
+   and an error message is displayed. For more information about how to
+   troubleshoot installation issues, see [Troubleshooting Lab
+   Management](https://msdn.microsoft.com/library/ee853230(v=vs.120).aspx).
 
-  6.  You can use network isolation in Visual Studio Lab Management to
-      enable multiple copies of a lab environment to run at the same time
-      without causing network conflicts, such as conflicts in computer
-      names and Domain Name System (DNS) registration. For more
-      information about network isolation, see [Creating and using
-      a network isolated
-      environment](https://msdn.microsoft.com/library/ee518924(v=vs.120).aspx).
-      On the **Network Isolation** tab, follow
-      these steps:
+6. You can use network isolation in Visual Studio Lab Management to
+   enable multiple copies of a lab environment to run at the same time
+   without causing network conflicts, such as conflicts in computer
+   names and Domain Name System (DNS) registration. For more
+   information about network isolation, see [Creating and using
+   a network isolated
+   environment](https://msdn.microsoft.com/library/ee518924(v=vs.120).aspx).
+   On the **Network Isolation** tab, follow
+   these steps:
 
-      1.  In **IP Block**, type the range of
-          Internet Protocol (IP) addresses to be assigned to the virtual
-          machines in an environment when an isolated network is created.
+   1.  In **IP Block**, type the range of
+       Internet Protocol (IP) addresses to be assigned to the virtual
+       machines in an environment when an isolated network is created.
 
-          You must type the IP Block using Classless Inter-Domain
-          Routing (CIDR) notation. The CIDR notation is constructed from
-          the IP address, the forward slash (/), and the prefix size. For
-          example, 192.168.0.0/24.
+       You must type the IP Block using Classless Inter-Domain
+       Routing (CIDR) notation. The CIDR notation is constructed from
+       the IP address, the forward slash (/), and the prefix size. For
+       example, 192.168.0.0/24.
 
-          The addresses that you specify are used only for internal
-          routing among virtual machines and are not exposed beyond the
-          boundaries of an environment. Therefore, you can specify any
-          address range that is not used within your public network. In
-          most cases, you can use the default range of 192.168.23.0/24.
+       The addresses that you specify are used only for internal
+       routing among virtual machines and are not exposed beyond the
+       boundaries of an environment. Therefore, you can specify any
+       address range that is not used within your public network. In
+       most cases, you can use the default range of 192.168.23.0/24.
 
-      2.  In **DNS Suffix**, type the suffix of the
-          domain name to be assigned to the environment when an isolated
-          network is created.
+   2.  In **DNS Suffix**, type the suffix of the
+       domain name to be assigned to the environment when an isolated
+       network is created.
 
-          Team Foundation Server uses the suffix that you entered when it
-          registers a unique external name with DNS for each virtual
-          machine in a network-isolated environment. The DNS alias record
-          makes it possible for machines and other objects outside the
-          isolated network to communicate with machines inside the
-          isolated network. Because Team Foundation Server goes into the
-          DNS zone to register the alias record, the service account under
-          which Team Foundation runs must have permissions to add or
-          delete alias records in the specified DNS zone.
+       Team Foundation Server uses the suffix that you entered when it
+       registers a unique external name with DNS for each virtual
+       machine in a network-isolated environment. The DNS alias record
+       makes it possible for machines and other objects outside the
+       isolated network to communicate with machines inside the
+       isolated network. Because Team Foundation Server goes into the
+       DNS zone to register the alias record, the service account under
+       which Team Foundation runs must have permissions to add or
+       delete alias records in the specified DNS zone.
 
-          If your Team Foundation Server deployment has more than one
-          application tier and each application tier runs under a
-          different service account, then each application-tier service
-          account must have permission to edit the DNS alias records
-          created by the other application tiers.
+       If your Team Foundation Server deployment has more than one
+       application tier and each application tier runs under a
+       different service account, then each application-tier service
+       account must have permission to edit the DNS alias records
+       created by the other application tiers.
 
-          Choose **Test **to determine whether Team
-          Foundation Server can use the suffix.
+       Choose **Test **to determine whether Team
+       Foundation Server can use the suffix.
 
-          If the suffix is valid, a green check mark appears. Choose 
-          **OK**.
+       If the suffix is valid, a green check mark appears. Choose 
+       **OK**.
 
-          If the suffix is not valid, a red x and an error message appear.
-          You must fix the error before you can continue.
+       If the suffix is not valid, a red x and an error message appear.
+       You must fix the error before you can continue.
 
-  7.  If your deployment of Team Foundation Server has more than one
-      application-tier machine, repeat the following steps on each of the
-      other application-tier machines:
+7. If your deployment of Team Foundation Server has more than one
+   application-tier machine, repeat the following steps on each of the
+   other application-tier machines:
 
-      1.  In the Team Foundation Administration Console, choose the 
-          **Application Tier** node, choose 
-          **Lab Management,** and then choose 
-          **Reconfigure**.
+   1.  In the Team Foundation Administration Console, choose the 
+       **Application Tier** node, choose 
+       **Lab Management,** and then choose 
+       **Reconfigure**.
 
-          The **Lab Management Settings** dialog
-          box appears.
+       The **Lab Management Settings** dialog
+       box appears.
 
-      2.  Choose the **Virtual Machine Manager**
-          tab, and then choose **Test** to
-          determine whether the application tier can communicate
-          with SCVMM.
+   2.  Choose the **Virtual Machine Manager**
+       tab, and then choose **Test** to
+       determine whether the application tier can communicate
+       with SCVMM.
 
-          If the Team Foundation Server service account does not have the
-          correct permissions on the specified SCVMM, a dialog box is
-          displayed prompting you for a user name and password. Type the
-          credentials of an existing member of SCVMM Administrators role.
-          When you type this user name and password and choose 
-          **OK**, the Team Foundation Server service
-          account of this application tier will be added to the SCVMM
-          Administrator role.
+       If the Team Foundation Server service account does not have the
+       correct permissions on the specified SCVMM, a dialog box is
+       displayed prompting you for a user name and password. Type the
+       credentials of an existing member of SCVMM Administrators role.
+       When you type this user name and password and choose 
+       **OK**, the Team Foundation Server service
+       account of this application tier will be added to the SCVMM
+       Administrator role.
 
 ## Configure Lab Management for Each Project Collection
 

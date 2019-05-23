@@ -15,7 +15,7 @@ ms.date: 03/05/2019
 
 [!INCLUDE [temp](../../_shared/version-tfs-all-versions.md)]
 
-If you don't regularly back up the databases for your Azure DevOps Server, previously named Team Foundation Server (TFS), you increase the risk of losing productivity or data because of equipment failure or other unexpected events. Fortunately, the **Scheduled Backups Wizard** makes it easy to back up your databases, which are part of the Azure DevOps data-tier and stored in SQL Server. All of the information required for restoring an Azure DevOps deployment is stored in those databases. Consequently, you do not have to worry about backing up Azure DevOps client computers or application-tier servers.
+If you don't regularly back up the databases for your Azure DevOps Server, previously named Team Foundation Server (TFS), you increase the risk of losing productivity or data because of equipment failure or other unexpected events. Fortunately, the **Scheduled Backups Wizard** makes it easy to back up your databases, which are part of the Azure DevOps data-tier and stored in SQL Server. All of the information required for restoring an Azure DevOps deployment is stored in those databases. Consequently, you do not have to worry about backing up Azure DevOps client computers or application-tier servers.
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -33,6 +33,7 @@ For an overview of Azure DevOps databases, see [Understand backing up Azure DevO
 ::: moniker range=">= azure-devops-2019"
 
 >  [!div class="mx-tdCol2BreakAll"]
+> 
 > | Task | Procedures |
 > | --- | --- |
 > |**Back up your data** |<ul><li>[Create a backup schedule and plan](config-backup-sched-plan.md)</li><li>[Manually back up Azure DevOps Server](manually-backup-tfs.md)</li></ul> |
@@ -45,6 +46,7 @@ For an overview of Azure DevOps databases, see [Understand backing up Azure DevO
 ::: moniker range=">= tfs-2017 <= tfs-2018"
 
 >  [!div class="mx-tdCol2BreakAll"]
+> 
 > | Task | Procedures |
 > | --- | --- |
 > |**Back up your data** |<ul><li>[Create a backup schedule and plan](config-backup-sched-plan.md)</li><li>[Manually back up TFS](manually-backup-tfs.md)</li></ul> |
@@ -57,6 +59,7 @@ For an overview of Azure DevOps databases, see [Understand backing up Azure DevO
 ::: moniker range="<= tfs-2015"
 
 >  [!div class="mx-tdCol2BreakAll"]
+> 
 > | Task | Procedures |
 > | --- | --- |
 > |**Back up your data** |- [Create a backup schedule and plan](config-backup-sched-plan.md)<br/>- [Manually back up Team Foundation Server](manually-backup-tfs.md) |
@@ -69,7 +72,7 @@ For an overview of Azure DevOps databases, see [Understand backing up Azure DevO
 <a name="same-server" />
 
 ## Restore data same server
-You can restore data from a backup to the same server and instance of SQL Server for Team Foundation from which that data was backed up. For example, you might want to restore a corrupted set of databases to the last known good state.
+You can restore data from a backup to the same server and instance of SQL Server for Team Foundation from which that data was backed up. For example, you might want to restore a corrupted set of databases to the last known good state.
 
 ::: moniker range="tfs-2013"
 > [!TIP]
@@ -77,7 +80,7 @@ You can restore data from a backup to the same server and instance of SQL Server
 
 ::: moniker-end
 
-If you want to restore data to another server or another instance of SQL Server, see [Restore a deployment to new hardware](tut-single-svr-home.md). 
+If you want to restore data to another server or another instance of SQL Server, see [Restore a deployment to new hardware](tut-single-svr-home.md). 
 
 
 ::: moniker range="<= tfs-2017"

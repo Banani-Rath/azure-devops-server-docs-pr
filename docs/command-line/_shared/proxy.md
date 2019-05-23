@@ -58,7 +58,7 @@ see <span sdata="link"> How to: Install Team Foundation Proxy and set up a remot
 		</tr>
 		<tr>
 			<td><strong>/Collection</strong>:TeamProjectCollectionURL</td>
-			<td>Specifies the URL of the project collection that is hosted on Azure DevOps Services, in `AccountName.DomainName/CollectionName` format.</td>
+            <td>Specifies the URL of the project collection that is hosted on Azure DevOps Services, in <code>AccountName.DomainName/CollectionName</code> format.</td>
 		</tr>
 		<tr>
 			<td><strong>/account</strong>:AccountName</td>
@@ -70,7 +70,7 @@ see <span sdata="link"> How to: Install Team Foundation Proxy and set up a remot
 		</tr>
 		<tr>
 			<td><strong>/account</strong>:ServerURL</td>
-			<td>Specifies the URL of a TFS deployment, in `ServerURL:Port/tfs` format.</td>
+            <td>Specifies the URL of a TFS deployment, in <code>ServerURL:Port/tfs</code> format.</td>
 		</tr>
 		<tr>
 			<td><strong>/PersonalAccessTokenFile</strong>:PathToFileWithPAT</td>
@@ -80,7 +80,7 @@ see <span sdata="link"> How to: Install Team Foundation Proxy and set up a remot
 			<td><strong>/inputs</strong>:Key1=Value1;Key2=Value2;...</td>
 			<td>
 				Optional. Specifies additional settings and values to use while configuring the proxy.<br/><br/>
-				For example, values for "GvfsProjectName" and "GvfsRepositoryName" can be used to configure a Git repository for use with <a href="https://gvfs.io">Git Virtual File System</a> (GVFS)
+                For example, values for &quot;GvfsProjectName&quot; and &quot;GvfsRepositoryName&quot; can be used to configure a Git repository for use with <a href="https://gvfs.io">Git Virtual File System</a> (GVFS)
 				(Added in TFS 2018 Update 1)
 			</td>
 		</tr>

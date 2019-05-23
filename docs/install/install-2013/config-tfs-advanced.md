@@ -49,19 +49,19 @@ You must be a member of the **Administrators** security group on the server on w
 	![Specify a database server](../../admin/_img/ic742581.png)
 
 	You also have these options:
-    -   Select **This instance is a SQL AlwaysOn Availability Group** to specify that the SQL Server instance is an Availability Group Listener (AGL) and its availability group will host the TFS databases created during set up. See [Use SQL Server 2012 Always On Availability Groups with Team Foundation Server](../sql-server/use-always-on-groups.md).
+   - Select **This instance is a SQL AlwaysOn Availability Group** to specify that the SQL Server instance is an Availability Group Listener (AGL) and its availability group will host the TFS databases created during set up. See [Use SQL Server 2012 Always On Availability Groups with Team Foundation Server](../sql-server/use-always-on-groups.md).
 
-    -   In **Server Database Label**, type a label string, which is then embedded into all three of the default database names.
+   - In **Server Database Label**, type a label string, which is then embedded into all three of the default database names.
 
-        This technique enables you to use a single instance of SQL Server to host multiple configuration databases.
+     This technique enables you to use a single instance of SQL Server to host multiple configuration databases.
 
-    -   Select the **Use pre-existing empty database(s) **check box, and then specify databases that are hosted on the server that is named in **SQL Server Instance**.
+   - Select the <strong>Use pre-existing empty database(s) **check box, and then specify databases that are hosted on the server that is named in **SQL Server Instance</strong>.
 
-        You must create names for these databases by using the default naming structure, with or without a label. You can find the default naming structure under **Team Foundation Server Databases**.
+     You must create names for these databases by using the default naming structure, with or without a label. You can find the default naming structure under **Team Foundation Server Databases**.
 
-    -   Test the connectivity to SQL Server.
+   - Test the connectivity to SQL Server.
 
-    ![Specify any optional database server details](../../admin/_img/ic676480.png)
+     ![Specify any optional database server details](../../admin/_img/ic676480.png)
 
 3. Choose **Use a system account**. To use a domain or local account, choose **Use a user account**. User accounts require a password. To test the user account and password combination, choose **Test**.
 
@@ -72,33 +72,33 @@ You must be a member of the **Administrators** security group on the server on w
 	> [!TIP]
 	> If your report server and SharePoint servers are not installed on the same server as TFS, you should add the account you use here to the Farm Administrators group (for SharePoint) and the content manager group on the report server. If you’re installing TFS on the same server as the report server and SharePoint, this account is added to these groups automatically.
 
-4.  Choose **NTLM** as an **Authentication Method**. If you choose **Negotiate (Kerberos)**, Kerberos authentication is attempted first. If that attempt fails, NTLM authentication is used.
+4. Choose **NTLM** as an **Authentication Method**. If you choose **Negotiate (Kerberos)**, Kerberos authentication is attempted first. If that attempt fails, NTLM authentication is used.
 
-    ![Specify authentaication](../../admin/_img/ic676482.png)
+   ![Specify authentaication](../../admin/_img/ic676482.png)
 
-    NTLM is the default setting.
+   NTLM is the default setting.
 
-5.  Accept the default **Port** number. Otherwise, enter a different one. This is the port number clients will use to connect to TFS.
+5. Accept the default **Port** number. Otherwise, enter a different one. This is the port number clients will use to connect to TFS.
 
-    ![Specify listener port](../../admin/_img/ic742583.png)
+   ![Specify listener port](../../admin/_img/ic742583.png)
 
-    The default value for **Port** is **8080**.
+   The default value for **Port** is **8080**.
 
-6.  Set up your file cache location. Make sure you have at least 50 Gb of free space. If you use a drive other than your Windows drive, TFS will perform better.
+6. Set up your file cache location. Make sure you have at least 50 Gb of free space. If you use a drive other than your Windows drive, TFS will perform better.
 
-    ![File cache folder](../../admin/_img/ic752293.png)
+   ![File cache folder](../../admin/_img/ic752293.png)
 
-7.  Accept the default virtual directory or specify something else.
+7. Accept the default virtual directory or specify something else.
 
-    ![Specify virtual directory](../../admin/_img/ic677247.png)
+   ![Specify virtual directory](../../admin/_img/ic677247.png)
 
-    The default value for **Virtual Directory** is **tfs**.
+   The default value for **Virtual Directory** is **tfs**.
 
-8.  Under **Web Site**, note the TFS Site URL, which is dynamically assembled based on your input in **Port** and **IIS Virtual Directory**. Developers will use this URL to connect to TFS.
+8. Under **Web Site**, note the TFS Site URL, which is dynamically assembled based on your input in **Port** and **IIS Virtual Directory**. Developers will use this URL to connect to TFS.
 
-    ![Take note of the site URL.](../../admin/_img/ic676485.png)
+   ![Take note of the site URL.](../../admin/_img/ic676485.png)
 
-    On a client operating system, you must skip to step 10. You can’t add a portal or reporting (steps 8 and 9) on a client operating system.
+   On a client operating system, you must skip to step 10. You can’t add a portal or reporting (steps 8 and 9) on a client operating system.
 
 9. Choose **Configure Reporting for use with Team Foundation Server** to use reporting. Otherwise, clear the check box to skip it.
 
@@ -135,28 +135,28 @@ You must be a member of the **Administrators** security group on the server on w
 
 	- Install and configure SharePoint on this machine
 
-		0. Choose **Install and configure SharePoint on this machine**.
+      1. Choose **Install and configure SharePoint on this machine**.
 
-			![Choose to install SharePoint](../../admin/_img/ic742589.png)
+          ![Choose to install SharePoint](../../admin/_img/ic742589.png)
 
-		0. Choose the big **Install SharePoint Foundation 2013** button. When the install finishes, choose **Next**.
+      2. Choose the big **Install SharePoint Foundation 2013** button. When the install finishes, choose **Next**.
 
-			![Choose the big button](../../admin/_img/ic676784.png)
+          ![Choose the big button](../../admin/_img/ic676784.png)
 
-			> [!NOTE]
-			> If the SharePoint installation requires a reboot, you might need to reenter some of the information you previously entered in this wizard.
+          > [!NOTE]
+          > If the SharePoint installation requires a reboot, you might need to reenter some of the information you previously entered in this wizard.
 
-		0. Type a user account and password for the service account for SharePoint Foundation. If you specified a user account for the service account of TFS in step 3, you must select the **Use a different account than the Team Foundation Server service account for the SharePoint farm** check box to use a different account.
+      3. Type a user account and password for the service account for SharePoint Foundation. If you specified a user account for the service account of TFS in step 3, you must select the **Use a different account than the Team Foundation Server service account for the SharePoint farm** check box to use a different account.
 
-			![Use the report reader account](../../admin/_img/ic742590.png)
+          ![Use the report reader account](../../admin/_img/ic742590.png)
 
 	- Specify a SharePoint location
 
-		0. Choose **Specify a SharePoint location** and then choose **Next**.
+      1. Choose **Specify a SharePoint location** and then choose **Next**.
 
-		0. In **Site URL**, type the URL for the SharePoint web app.
+      2. In **Site URL**, type the URL for the SharePoint web app.
 
-		0. In **Administration URL**, type the URL for the SharePoint Central Administration site. To test connectivity to each of these URLs, choose **Test**.
+      3. In **Administration URL**, type the URL for the SharePoint Central Administration site. To test connectivity to each of these URLs, choose **Test**.
 
 11. Select the **Create a new project collection** check box to create a collection, or clear that check box to skip that step.
 

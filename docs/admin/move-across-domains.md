@@ -115,24 +115,24 @@ If you are changing the environment to one where there is no trust with your pre
 
 Skip this procedure if you are not using SharePoint Products in your deployment, if you're new environment has a two-way trust to the old environment, or if no errors for your SharePoint Web application appear in the administration console for Team Foundation.
 
-1.  On every server that is part of the SharePoint farm that supports your deployment of Team Foundation Server, open a Command Prompt window with administrative permissions, and change directories to %programfiles%\\Common Files\\Microsoft Shared\\Web Server Extensions\\15\\BIN.
+1. On every server that is part of the SharePoint farm that supports your deployment of Team Foundation Server, open a Command Prompt window with administrative permissions, and change directories to %programfiles%\\Common Files\\Microsoft Shared\\Web Server Extensions\\15\\BIN.
 
-2.  Type the following command, where *Key* is the encryption key you want to use in your deployment of SharePoint Products:
+2. Type the following command, where *Key* is the encryption key you want to use in your deployment of SharePoint Products:
 
-    **stsadm.exe -o setapppassword -password** *Key*
+   **stsadm.exe -o setapppassword -password** *Key*
 
-    > [!NOTE]
-    > This key is an encryption string that is used to encrypt the password for the account that is used to access the forest or domain. The encryption string must be the same for every server in the farm, but a unique string should be used for each farm.
+   > [!NOTE]
+   > This key is an encryption string that is used to encrypt the password for the account that is used to access the forest or domain. The encryption string must be the same for every server in the farm, but a unique string should be used for each farm.
 
-3.  Type the following command, where *domain:DNSName* is the target forest or domain and its DNS name, *user,password* is the username and password for an account that has access to the target forest or domain, and *WebApp* is the name of the Web application that supports your deployment of Team Foundation Server:
+3. Type the following command, where *domain:DNSName* is the target forest or domain and its DNS name, *user,password* is the username and password for an account that has access to the target forest or domain, and *WebApp* is the name of the Web application that supports your deployment of Team Foundation Server:
 
-    **stsadm.exe -o setproperty -pn peoplepicker-searchadforests -pv** *domain:DnsName***,***user***,***password* **-url http://***WebApp*
+   **stsadm.exe -o setproperty -pn peoplepicker-searchadforests -pv** <em>domain:DnsName</em>**,**<em>user</em>**,**<em>password</em> **-url http://**<em>WebApp</em>
 
-4.  Type the following command, where *URL* is the URL for a site collection that supports a project collection, *Port* is the port number that is assigned to that site collection, and *UserName* is the user name of the account that will act as the owner for that site collection:
+4. Type the following command, where *URL* is the URL for a site collection that supports a project collection, *Port* is the port number that is assigned to that site collection, and *UserName* is the user name of the account that will act as the owner for that site collection:
 
-    **stsadm.exe -o siteowner -url http://** *URL* **:** *Port* **-ownerlogin** *UserName*
+   **stsadm.exe -o siteowner -url http://** *URL* **:** *Port* **-ownerlogin** *UserName*
 
-5.  Repeat the previous step for each site collection that your deployment of Team Foundation Server uses.
+5. Repeat the previous step for each site collection that your deployment of Team Foundation Server uses.
 
 <a name="move-tfs-user-svc-accts"></a>
 ## Move user accounts and service accounts

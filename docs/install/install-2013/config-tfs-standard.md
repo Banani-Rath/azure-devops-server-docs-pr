@@ -49,21 +49,21 @@ You must be a member of the **Administrators** security group on the server that
 > [!NOTE]
 > If the SharePoint installation requires a reboot, you might need to reenter some of the information you previously entered in this wizard.
 
-6.  After Team Foundation Server installs SharePoint Foundation, choose **Next**.
+6. After Team Foundation Server installs SharePoint Foundation, choose **Next**.
 
-7.  Review the information, and then choose **Next**.
+7. Review the information, and then choose **Next**.
 
-    The wizard validates your configuration.
+   The wizard validates your configuration.
 
-    If you run into a problem, you can use the detailed results to identify the issue. If you can, fix the issue, and then choose the link to run the ready checks over again. If you resolved the problem, you’ll be able to configure TFS in the next step.
+   If you run into a problem, you can use the detailed results to identify the issue. If you can, fix the issue, and then choose the link to run the ready checks over again. If you resolved the problem, you’ll be able to configure TFS in the next step.
 
-8.  Choose **Configure**.
+8. Choose **Configure**.
 
-    The wizard applies configuration settings.
+   The wizard applies configuration settings.
 
-9.  Choose **Next**, **Close**, **Close**.
+9. Choose **Next**, **Close**, **Close**.
 
-    The Team Foundation Server Administration Console appears.
+   The Team Foundation Server Administration Console appears.
 
 ## Related articles
 

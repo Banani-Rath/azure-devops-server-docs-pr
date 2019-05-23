@@ -67,7 +67,7 @@ However, you cannot use the **Collection** command to create a project collectio
 					<li>
 						<strong>ServerName</strong>: Specifies the name of the server that hosts the configuration database for TFS,
 						and the name of the instance if you want to use an instance other than the default instance.
-						If you specify an instance, you must use the format: `ServerName\InstanceName`.
+                        If you specify an instance, you must use the format: <code>ServerName\InstanceName</code>.
 					</li>
 					<li>
 						<strong>DatabaseName</strong>: Specifies the name of the configuration database. By default, the name of this database is TFS_ConfigurationDB.

@@ -124,26 +124,26 @@ When you use the TFSDeleteProject command-line tool, it first deletes project da
 In the first phase, TFSDeleteProject automatically performs the following steps to remove project data: 
 
 0. TFSDeleteProject creates an inventory of all the components that are candidates for deletion.
-This includes components that integrate with Test Manager, Team Foundation Build, and Team Foundation version control. 
+   This includes components that integrate with Test Manager, Team Foundation Build, and Team Foundation version control. 
 
-0. TFSDeleteProject deletes the component that displays the project node in Team Explorer. 
+1. TFSDeleteProject deletes the component that displays the project node in Team Explorer. 
 
-0. TFSDeleteProject flags the version control information for deletion, but does not immediately delete this information.
-The information includes all version control branches in the specified project, but no other branches outside of the project. 
+2. TFSDeleteProject flags the version control information for deletion, but does not immediately delete this information.
+   The information includes all version control branches in the specified project, but no other branches outside of the project. 
 
 	- If a parent branch and a child branch are both in the project, TFSDeleteProject flags both for deletion. 
 	- If parent and child branches are in different projects, TFSDeleteProject flags only the specified branch.
 	- If another project is a branch from the specified project, TFSDeleteProject flags only the specified project.
 	When the specified project is deleted, the branch project becomes an orphan. 
 
-0. TFSDeleteProject immediately deletes build data, including information and core data, build definitions,
-build agents, and test results associated with the project. The tool does not delete build drop locations.
-You do not need to delete the build drop location of an old project before creating a project that uses the same build drop location.
+3. TFSDeleteProject immediately deletes build data, including information and core data, build definitions,
+   build agents, and test results associated with the project. The tool does not delete build drop locations.
+   You do not need to delete the build drop location of an old project before creating a project that uses the same build drop location.
 
 	If the specified project contains a large amount of build data, the deletion might not finish within the timeout period.
 	To work around this problem, see Increase the Time-Out Period, and then run TFSDeleteProject again. 
 
-0. TFSDeleteProject immediately deletes work items and work item fields that belong to the specified project, and it deletes all non-shared metadata. 
+4. TFSDeleteProject immediately deletes work items and work item fields that belong to the specified project, and it deletes all non-shared metadata. 
 
 	If the specified project contains a large amount of work item data, the deletion might not finish within the timeout period.
 	To solve this problem, see Increase the Time-Out Period, and then run TFSDeleteProject again.
@@ -197,20 +197,20 @@ in Team Explorer and that its project portal Web site and reports folders no lon
 
 0. Open Team Explorer and verify that the project does not appear as a project node. 
 
-0. Open Internet Explorer and type the URL of the project portal Web site. Verify that the site no longer exists. 
+1. Open Internet Explorer and type the URL of the project portal Web site. Verify that the site no longer exists. 
 
-0. In Internet Explorer, in the Address box, type the URL of the Reporting Services Web site using one of the following URL formats:
+2. In Internet Explorer, in the Address box, type the URL of the Reporting Services Web site using one of the following URL formats:
 
 	- ```http://ReportingServices/Reports```
 	- ```http://ReportingServices/Reports_TFSInstance```
 
-0. In Report Manager, choose Show Details.
+3. In Report Manager, choose Show Details.
 
-0. Verify that the folder for the deleted project no longer appears.
-Choose the root folder TfsReports, and then choose the folder named for the project collection.
-There should no longer be a folder with the name of the deleted project.
+4. Verify that the folder for the deleted project no longer appears.
+   Choose the root folder TfsReports, and then choose the folder named for the project collection.
+   There should no longer be a folder with the name of the deleted project.
 
-0. If either the reports or the Web site remain, see the next procedure. 
+5. If either the reports or the Web site remain, see the next procedure. 
 
 ## Remove Remaining Components After Partial Project Deletion  
 
@@ -218,23 +218,23 @@ If the project portal Web site and reports folder remain after you delete a proj
 
 0. Log on to the server that hosts Reporting Services for the project that you deleted. 
 
-0. Open Internet Explorer, and in the Address box type the URL of the Reporting Services Web site using one of the following URL formats:
+1. Open Internet Explorer, and in the Address box type the URL of the Reporting Services Web site using one of the following URL formats:
 
 	- ```http://localhost/Reports```
 	- ```http://localhost/Reports_TFSInstance```
 
-0. In Report Manager, choose Show Details.
+2. In Report Manager, choose Show Details.
 
-0. Choose the root folder TfsReports, and then choose the folder named for the project collection. 
+3. Choose the root folder TfsReports, and then choose the folder named for the project collection. 
 
-0. Select the check box for the project that was deleted.
+4. Select the check box for the project that was deleted.
 
-0. Choose Delete. 
+5. Choose Delete. 
 
-0. Choose OK to confirm that you want to delete the reports folder for the project.
+6. Choose OK to confirm that you want to delete the reports folder for the project.
 
-0. To remove the project portal Web site of a deleted project, see the following page on the Microsoft Web site:
-[How to: Create, Edit, and Delete Windows SharePoint Services Sites](http://go.microsoft.com/fwlink/?LinkId=131660).
+7. To remove the project portal Web site of a deleted project, see the following page on the Microsoft Web site:
+   [How to: Create, Edit, and Delete Windows SharePoint Services Sites](http://go.microsoft.com/fwlink/?LinkId=131660).
 
 
 ## Increase the Time-Out Period  
@@ -260,31 +260,31 @@ To complete these procedures, you must be a Windows Administrator on the applica
 
 0. Log on to the application-tier server. 
 
-0. Choose Start, Run, type regedit, and then choose OK.
+1. Choose Start, Run, type regedit, and then choose OK.
 
-0. In the browser pane, expand HKEY_ LOCAL_MACHINE:
+2. In the browser pane, expand HKEY_ LOCAL_MACHINE:
 
 	- If the server runs a 32-bit operating system,
 	expand: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\11.0\TeamFoundation\RequestSettings. 
 	- If the server runs a 64-bit operating system,
 	expand: HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432\Microsoft\VisualStudio\11.0\TeamFoundation\RequestSettings. 
 
-0. If the TeamFoundation\RequestSettings key does not exist, follow these steps to create it: 
+3. If the TeamFoundation\RequestSettings key does not exist, follow these steps to create it: 
 
-	0. Open the context menu for TeamFoundation, point to New, and choose Key.
-	0. Name the key RequestSettings.
-	0. Open the context menu for RequestSettings, point to New, and choose DWORD Value.
-	0. Name the new value DefaultTimeout.
+   1. Open the context menu for TeamFoundation, point to New, and choose Key.
+   2. Name the key RequestSettings.
+   3. Open the context menu for RequestSettings, point to New, and choose DWORD Value.
+   4. Name the new value DefaultTimeout.
 
-0. Open the context menu for DefaultTimeout and choose Modify. 
+4. Open the context menu for DefaultTimeout and choose Modify. 
 
-0. In Value Data, type the time-out period in milliseconds, and then choose Decimal. 
+5. In Value Data, type the time-out period in milliseconds, and then choose Decimal. 
 
 	For example, to increase the time-out period to 30 minutes, type 1800000. To change the time-out period back to 10 minutes, type 600000.
 
-0. Choose OK.
+6. Choose OK.
 
-0. On the File menu, choose Exit.
+7. On the File menu, choose Exit.
 
 ## Example
 

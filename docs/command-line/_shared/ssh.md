@@ -6,49 +6,48 @@ ms.topic: include
 
 You can use the **ssh** command to regenerate the SSH server host key, get the server key fingerprint or enable/disable the SSH service on TFS deployment.
 
-	TFSConfig SSH {/RegenerateKey | /GetKeyFingerprint | /Enable | /Disable} 
+    TFSConfig SSH {/RegenerateKey | /GetKeyFingerprint | /Enable | /Disable} 
 
 ### Parameters
 
 <table>
-	<thead>
-		<tr>
-			<th>Option</th>
-			<th>Description</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td><strong>/RegenerateKey</strong></td>
-			<td>
-				Required if <strong>/GetKeyFingerprint</strong> or <strong>/Enable</strong> or <strong>/Disable</strong> is not used.
-				Generates SSH server host key and updates it in the database. The command will replace the old key, if there is any, for the current TFS deployment. 				
-			</td>
-		</tr>
-		<tr>
-			<td><strong>/GetKeyFingerprint</strong></td>
-			<td>
-				Required if <strong>/RegenerateKey</strong> or <strong>/Enable</strong> or <strong>/Disable</strong> is not used.
-				Specifies the SSH server host key fingerprint from the current TFS deployment. 
-			</td>
-		</tr>
-		<tr>
-			<td><strong>/Enable</strong></td>
-			<td>
-				Required if <strong>/RegenerateKey</strong> or <strong>/GetKeyFingerprint</strong> or <strong>/Enable</strong> is not used.
-				Enables SSH service for the current TFS deployment.<br /><br />
-				<strong>Tip:</strong> The SSH service is installed when Application Tier is configured. The <strong>/Enable</strong> option will only enable SSH service by starting it on all the Application Tier nodes. 
-			</td>
-		</tr>
-		<tr>
-			<td><strong>/Disable</strong></td>
-			<td>
-				Required if <strong>/RegenerateKey</strong> or <strong>/GetKeyFingerprint</strong> or <strong>/Disable</strong> is not used.
-				Disables SSH service for the current TFS deployment.<br /><br />
-				<strong>Tip:</strong> The SSH service is uninstalled when Applciation Tier is configured. The <strong>/Disable</strong> option will only disable SSH service by stopping it on all the Application Tier nodes.
-			</td>
-		</tr>
-	</tbody>
+    <thead>
+        <tr>
+            <th>Option</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>/RegenerateKey</strong></td>
+            <td>
+                Required if <strong>/GetKeyFingerprint</strong> or <strong>/Enable</strong> or <strong>/Disable</strong> is not used.
+                Generates SSH server host key and updates it in the database. The command will replace the old key, if there is any, for the current TFS deployment.<br/>            </td>
+        </tr>
+        <tr>
+            <td><strong>/GetKeyFingerprint</strong></td>
+            <td>
+                Required if <strong>/RegenerateKey</strong> or <strong>/Enable</strong> or <strong>/Disable</strong> is not used.
+                Specifies the SSH server host key fingerprint from the current TFS deployment. 
+            </td>
+        </tr>
+        <tr>
+            <td><strong>/Enable</strong></td>
+            <td>
+                Required if <strong>/RegenerateKey</strong> or <strong>/GetKeyFingerprint</strong> or <strong>/Enable</strong> is not used.
+                Enables SSH service for the current TFS deployment.<br /><br />
+                <strong>Tip:</strong> The SSH service is installed when Application Tier is configured. The <strong>/Enable</strong> option will only enable SSH service by starting it on all the Application Tier nodes. 
+            </td>
+        </tr>
+        <tr>
+            <td><strong>/Disable</strong></td>
+            <td>
+                Required if <strong>/RegenerateKey</strong> or <strong>/GetKeyFingerprint</strong> or <strong>/Disable</strong> is not used.
+                Disables SSH service for the current TFS deployment.<br /><br />
+                <strong>Tip:</strong> The SSH service is uninstalled when Applciation Tier is configured. The <strong>/Disable</strong> option will only disable SSH service by stopping it on all the Application Tier nodes.
+            </td>
+        </tr>
+    </tbody>
 </table>
 
 ### Required permissions

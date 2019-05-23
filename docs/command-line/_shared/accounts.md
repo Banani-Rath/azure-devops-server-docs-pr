@@ -77,10 +77,10 @@ You can also use this command to change the ownership of the TFS databases.
 			<td><strong>/AccountType:</strong> { AdminConsole | ApplicationTier | ReportingDataSource | Proxy }</td>
 			<td>
 				<ul>
-					<li>**AdminConsole**: the group of users who have the minimum permissions that are required to open and use the administration console for Team Foundation (AdminConsole)</li>
-					<li>**ApplicationTier**: the service account that is used for Team Foundation Server (TFSService)</li>
-					<li>**ReportingDataSource**: the data sources account for Reporting Services (TFSReports)</li>
-					<li>**Proxy**: the service account for Team Foundation Server Proxy (TFSProxy)</li>
+                    <li><strong>AdminConsole</strong>: the group of users who have the minimum permissions that are required to open and use the administration console for Team Foundation (AdminConsole)</li>
+                    <li><strong>ApplicationTier</strong>: the service account that is used for Team Foundation Server (TFSService)</li>
+                    <li><strong>ReportingDataSource</strong>: the data sources account for Reporting Services (TFSReports)</li>
+                    <li><strong>Proxy</strong>: the service account for Team Foundation Server Proxy (TFSProxy)</li>
 				</ul>
 				<p>The default value is ApplicationTier.</p>
 			</td>

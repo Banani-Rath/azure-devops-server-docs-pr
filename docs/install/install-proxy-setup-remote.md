@@ -132,19 +132,19 @@ To configure Team Explorer to use Azure DevOps Proxy Server:
 
 0. Launch Visual Studio.
 
-0. On the **Tools** menu, select **Options**.
+1. On the **Tools** menu, select **Options**.
 
-0. In the **Options** dialog box, expand **Source Control**, and then select **Plug-in Selection**. 
+2. In the **Options** dialog box, expand **Source Control**, and then select **Plug-in Selection**. 
 
-0. For **Current source control plug-in**, ensure the value is **Visual Studio Team Foundation Server**.
+3. For **Current source control plug-in**, ensure the value is **Visual Studio Team Foundation Server**.
 
-0. Under **Source Control**, select **Visual Studio Team Foundation Server**.
+4. Under **Source Control**, select **Visual Studio Team Foundation Server**.
 
-0. Select the **Use proxy server for file downloads** check box.
+5. Select the **Use proxy server for file downloads** check box.
 
-0. In the **Proxy server name** box, enter the name of the server running Azure DevOps Proxy Server.
+6. In the **Proxy server name** box, enter the name of the server running Azure DevOps Proxy Server.
 
-0. In the **Port** box, enter the listener port for Azure DevOps Proxy Server. By default, Azure DevOps Proxy Server listens for client requests on port 8081.
+7. In the **Port** box, enter the listener port for Azure DevOps Proxy Server. By default, Azure DevOps Proxy Server listens for client requests on port 8081.
 
 
 

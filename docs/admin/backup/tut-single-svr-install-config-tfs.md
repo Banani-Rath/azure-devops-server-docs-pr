@@ -23,7 +23,7 @@ will learn how to configure SharePoint Foundation, reporting, and
 analysis services to work with the new server.
 
 Use this topic to:
- 
+ 
 * Install Team Foundation Server and the Extensions for SharePoint Products
 * Configure SharePoint Foundation 
 * Configure reporting and Analysis Services  
@@ -114,28 +114,28 @@ deployment uses.
 
 To configure the settings for SharePoint web applications:
 
-1.  Open the administration console for Team Foundation.
+1. Open the administration console for Team Foundation.
 
-2.  In the navigation bar, choose **SharePoint Web
-    Applications**.
+2. In the navigation bar, choose **SharePoint Web
+   Applications**.
 
-3.  In the **SharePoint Web Applications** list,
-    highlight the web application used by the original deployment, and
-    then choose **Change**.
+3. In the **SharePoint Web Applications** list,
+   highlight the web application used by the original deployment, and
+   then choose **Change**.
 
    > **Tip**:
    > By default, the web application should appear automatically in the listf web applications. If it does not, choose **Add**, and then add it manually.
  
 
-4.  The SharePoint Web Application Settings window opens. In **Web Application URL** and 
-    **Central Administration URL**, review the
-    settings, and if necessary, specify or change the values to reflect
-    the URLs on the new server.
+4. The SharePoint Web Application Settings window opens. In **Web Application URL** and 
+   **Central Administration URL**, review the
+   settings, and if necessary, specify or change the values to reflect
+   the URLs on the new server.
 
-5.  When you are satisfied with the settings, choose **OK**.
+5. When you are satisfied with the settings, choose **OK**.
 
-    For more information about how to configure SharePoint web
-    applications as part of your deployment, see [Add SharePoint products to your deployment](../add-sharepoint-to-tfs.md).
+   For more information about how to configure SharePoint web
+   applications as part of your deployment, see [Add SharePoint products to your deployment](../add-sharepoint-to-tfs.md).
 
 <a name="RestoreWarehouse"></a>
 ## Configure reporting and Analysis Services

@@ -30,23 +30,23 @@ Although you would not typically use this command in daily operations, you might
 	</thead>
 	<tbody>
 		<tr>
-			<td>**/SQLInstance**: ServerName</td>
-			<td>Required. Specifies the name of the server that is running SQL Server and the name of the instance if you want to use an instance other than the default instance. If you specify an instance, you must use the format: `ServerName\InstanceName`</td>
+            <td><strong>/SQLInstance</strong>: ServerName</td>
+            <td>Required. Specifies the name of the server that is running SQL Server and the name of the instance if you want to use an instance other than the default instance. If you specify an instance, you must use the format: <code>ServerName\InstanceName</code></td>
 		</tr>
 		<tr>
-			<td>**/DatabaseName**: DatabaseName</td>
+            <td><strong>/DatabaseName</strong>: DatabaseName</td>
 			<td>Required. Specifies the name of the configuration database for TFS. By default, the name of this database is TFS_ConfigurationDB.</td>
 		</tr>
 		<tr>
-			<td>**/ProjectCollectionsOnly**</td>
+            <td><strong>/ProjectCollectionsOnly</strong></td>
 			<td>Specifies that only the GUIDs for collections will be changed.</td>
 		</tr>
 		<tr>
-			<td>**/ConfigDBOnly**</td>
+            <td><strong>/ConfigDBOnly</strong></td>
 			<td>Specifies that only the GUID for the configuration database will be changed.</td>
 		</tr>
 		<tr>
-			<td>**/usesqlalwayson**</td>
+            <td><strong>/usesqlalwayson</strong></td>
 			<td>Specifies that the databases are part of an AlwaysOn Availability Group in SQL Server. If configured, this option sets MultiSubnetFailover in the connection string.<br /><br />For more information, see <a href="http://msdn.microsoft.com/library/hh510230.aspx">AlwaysOn Availability Groups (SQL Server)</a>.</td>
 		</tr>
 	</tbody>

@@ -93,7 +93,7 @@ TFS uses, if TFS is configured to use SharePoint.
 
 ## Q and A
 
-###Q: Where can I learn more about backups?
+### Q: Where can I learn more about backups?
 
 **A:** You can learn more about the kinds of
 backups available in [Understand backing up Team Foundation Server](backup-db-architecture.md)

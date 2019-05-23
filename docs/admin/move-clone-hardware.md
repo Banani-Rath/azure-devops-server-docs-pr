@@ -228,17 +228,17 @@ Perform the next set of steps on the new application-tier server if you intend t
 
 You must update the service account for Team Foundation Server (TFSService) and the data sources account (TFSReports). Even if these accounts have not changed, you must update the information to help ensure that the identity and the format of the accounts are appropriate for the new server.
 
-1.  Open a Command Prompt window as an administrator and change directories to *Drive*:\\%programfiles%\\TFS 12.0\\Tools.
+1. Open a Command Prompt window as an administrator and change directories to *Drive*:\\%programfiles%\\TFS 12.0\\Tools.
 
-2.  At the command prompt, type the following command to add the service account for Team Foundation, where *DatabaseName* is the name of the configuration database (by default, TFS\_Configuration):
+2. At the command prompt, type the following command to add the service account for Team Foundation, where *DatabaseName* is the name of the configuration database (by default, TFS\_Configuration):
 
-    **TfsConfig Accounts /add /AccountType:ApplicationTier /account:** *AccountName* **/SQLInstance:** *ServerName* **/DatabaseName:** *DatabaseName*
+   **TfsConfig Accounts /add /AccountType:ApplicationTier /account:** *AccountName* **/SQLInstance:** *ServerName* **/DatabaseName:** *DatabaseName*
 
-3.  At the command prompt, type the following command to add the data sources account:
+3. At the command prompt, type the following command to add the data sources account:
 
-    **TfsConfig Accounts /add /AccountType:ReportingDataSource /account:** *AccountName* **/SQLInstance:***ServerName* **/DatabaseName:***DatabaseName*
+   **TfsConfig Accounts /add /AccountType:ReportingDataSource /account:** *AccountName* **/SQLInstance:**<em>ServerName</em> **/DatabaseName:**<em>DatabaseName</em>
 
-    For more information, see [Accounts Command](../command-line/tfsconfig-cmd.md#accounts).
+   For more information, see [Accounts Command](../command-line/tfsconfig-cmd.md#accounts).
 
 
 

@@ -29,46 +29,46 @@ If you're using SQL Server 2012 with SP1, we recommend you also apply [cumulativ
 ## Prerequisites  
 You must be a member of the **Administrators** security group on Windows Server.
 
-1.  Insert the installation DVD for a supported version of SQL Server and launch setup.exe.
+1. Insert the installation DVD for a supported version of SQL Server and launch setup.exe.
 
-2.  On the **SQL Server Installation Center** page, choose **Installation**, and then choose **New installation or add features to an existing installation**.
+2. On the **SQL Server Installation Center** page, choose **Installation**, and then choose **New installation or add features to an existing installation**.
 
-    ![New installation of SQL Server](../../install/sql-server/_img/ic665094.png)
+   ![New installation of SQL Server](../../install/sql-server/_img/ic665094.png)
 
-3.  On the **Setup Support Rules** page, choose **OK**.
+3. On the **Setup Support Rules** page, choose **OK**.
 
-4.  On the **Product Key** page, type your product key or specify a free edition.
+4. On the **Product Key** page, type your product key or specify a free edition.
 
-5.  On the **License Terms** page, accept the license agreement.
+5. On the **License Terms** page, accept the license agreement.
 
-6.  On the **Setup** **Support Rules** page, choose **Next**.
+6. On the **Setup** **Support Rules** page, choose **Next**.
 
-    ![Windows Firewall warning](../../install/sql-server/_img/ic688130.png)
+   ![Windows Firewall warning](../../install/sql-server/_img/ic688130.png)
 
-    > [!TIP]
-    > A Windows Firewall warning might appear, but you can safely ignore this warning. TFS automatically adds an exception for Windows Firewall during upgrade in this topology.
+   > [!TIP]
+   > A Windows Firewall warning might appear, but you can safely ignore this warning. TFS automatically adds an exception for Windows Firewall during upgrade in this topology.
 
-7.  On the **Setup Role** page, choose **SQL Server Feature Installation**.
+7. On the **Setup Role** page, choose **SQL Server Feature Installation**.
 
-    ![Setup role](../../install/sql-server/_img/ic665096.png)
+   ![Setup role](../../install/sql-server/_img/ic665096.png)
 
-8.  On the **Feature Selection** page, select the following check boxes:
+8. On the **Feature Selection** page, select the following check boxes:
 
-    -   Database Engine Services (required)  
-    -   Full-Text and Semantic Extractions for Search (required)  
-    -   Analysis Services (required for reporting)  
-    -   Reporting Services � Native (required for reporting)  
-    -   Management Tools - Basic (not pictured)
+   -   Database Engine Services (required)  
+   -   Full-Text and Semantic Extractions for Search (required)  
+   -   Analysis Services (required for reporting)  
+   -   Reporting Services � Native (required for reporting)  
+   -   Management Tools - Basic (not pictured)
 
-    ![Feature Selection](../../install/sql-server/_img/ic665097.png)
+   ![Feature Selection](../../install/sql-server/_img/ic665097.png)
 
-9.  On the **Installation Rules** page, choose **Next**.
+9. On the **Installation Rules** page, choose **Next**.
 
 10. On the **Instance Configuration** page, choose **Default instance**. If you choose **Named instance**, type the name of the instance..
 
     ![Instance configuration](../../install/sql-server/_img/ic665098.png)
 
-11. On the **Disk Space Requirements **page, choose **Next**.
+11. On the <strong>Disk Space Requirements **page, choose **Next</strong>.
 
 12. On the **Server Configuration** page, accept the defaults.
 

@@ -21,38 +21,38 @@ Before you choose a configuration, review the advantages and disadvantages descr
 
 ## In this topic
 
--   **Conceptual information**
-    -   [Advantages of Supporting HTTPS with SSL in Addition to HTTP](#advantages-supporting-tfs-ssl)
-    -   [Advantages of Requiring HTTPS with SSL for All Connections](#advantages-requiring-https)
-    -   [Disadvantages of Supporting or Requiring HTTPS with SSL](#disadvantages-supporting-https)
-    -   [Prerequisites](#prereqs)
-    -   [Assumptions](#assumptions)
+- **Conceptual information**
+  -   [Advantages of Supporting HTTPS with SSL in Addition to HTTP](#advantages-supporting-tfs-ssl)
+  -   [Advantages of Requiring HTTPS with SSL for All Connections](#advantages-requiring-https)
+  -   [Disadvantages of Supporting or Requiring HTTPS with SSL](#disadvantages-supporting-https)
+  -   [Prerequisites](#prereqs)
+  -   [Assumptions](#assumptions)
 
--   **Server configuration**
-    -   [Obtaining a Certificate](#obtaining-certificate)
-    -   [Requesting, installing, and configuring websites with a certificate](#request-install-config-websites)
-    -   [Configuring Your Firewall](#config-firewall)
-    -   [Configuring SQL Server Reporting Services](#config-sql-svr-reporting)
-   -   [Configuring HTTPS for TFS](#config-https)
+- **Server configuration**
+  -   [Obtaining a Certificate](#obtaining-certificate)
+  -   [Requesting, installing, and configuring websites with a certificate](#request-install-config-websites)
+  -   [Configuring Your Firewall](#config-firewall)
+  -   [Configuring SQL Server Reporting Services](#config-sql-svr-reporting)
+  -   [Configuring HTTPS for TFS](#config-https)
 
--   **Optional configuration tasks**
-    -   [Testing Access to Your Deployment (Optional)](#test-access-to-deployment)
-    -   [Configuring Your Deployment to Require HTTPS with SSL (Optional)](#config-deply-require-https)
+- **Optional configuration tasks**
+  -   [Testing Access to Your Deployment (Optional)](#test-access-to-deployment)
+  -   [Configuring Your Deployment to Require HTTPS with SSL (Optional)](#config-deply-require-https)
 
--   **Build configuration**
-    -   [Installing the Certificate on Build Servers](#installing-certificats-build-svrs)
-    -   [Updating the Build Configuration](#updating-build-configs)
+- **Build configuration**
+  -   [Installing the Certificate on Build Servers](#installing-certificats-build-svrs)
+  -   [Updating the Build Configuration](#updating-build-configs)
 
--   **Release Management configuration**
-    -   [Release Management and TFS](#release-mgt-tfs)
-    -   [Configure Release Management Server to use HTTPS](#config-release-mgt-server)
-    -   [Making all the Release Management connections with HTTPS](#making-release-mgt-conn)
+- **Release Management configuration**
+  -   [Release Management and TFS](#release-mgt-tfs)
+  -   [Configure Release Management Server to use HTTPS](#config-release-mgt-server)
+  -   [Making all the Release Management connections with HTTPS](#making-release-mgt-conn)
 
--   **Client configuration**
-    -  [Configuring Client Computers](#config-client-computers)
+- **Client configuration**
+  -  [Configuring Client Computers](#config-client-computers)
 
--   **Git repository configuration**
-    -  [Configuring Git for certificates](#config-git)
+- **Git repository configuration**
+  -  [Configuring Git for certificates](#config-git)
 
 <a name="advantages-supporting-tfs-ssl"></a>
 ## Advantages of Supporting HTTPS with SSL in Addition to HTTP
@@ -124,19 +124,19 @@ To perform the procedures in this topic, you must first meet the following requi
 
 ## Prerequisites
 
- * You need to be an administrator to configure all the components of your deployment for HTTPS and SSL. If you work in a distributed deployment where different people have administrative permissions for individual components, such as SharePoint, you'll need to coordinate with those people to complete configuration.
+* You need to be an administrator to configure all the components of your deployment for HTTPS and SSL. If you work in a distributed deployment where different people have administrative permissions for individual components, such as SharePoint, you'll need to coordinate with those people to complete configuration.
 
- * Specifically, you must belong to the **Team Foundation Administrators** group, and you must belong to the **Administrators** group on the application-tier, data-tier, and TFS Proxy server or servers for Team Foundation. 
+* Specifically, you must belong to the **Team Foundation Administrators** group, and you must belong to the **Administrators** group on the application-tier, data-tier, and TFS Proxy server or servers for Team Foundation. 
 
- * To configure a build server, you must belong to the **Administrators** group on that server. 
+* To configure a build server, you must belong to the **Administrators** group on that server. 
  
- * To configure Release Management, you must belong to the **Administrators** group on the server that hosts Release Management Server and be a member of the **Release Manager** role in Release Management. 
+* To configure Release Management, you must belong to the **Administrators** group on the server that hosts Release Management Server and be a member of the **Release Manager** role in Release Management. 
  
- * If your deployment uses SharePoint Products, you must belong to the **Administrators** group on the server that hosts SharePoint Central Administration. You must also belong to the **Farm Administrators** group. 
+* If your deployment uses SharePoint Products, you must belong to the **Administrators** group on the server that hosts SharePoint Central Administration. You must also belong to the **Farm Administrators** group. 
  
- * If your deployment uses reporting, you must be a member of an administrative security group or have equivalent permissions individually set for configuring reporting services. 
+* If your deployment uses reporting, you must be a member of an administrative security group or have equivalent permissions individually set for configuring reporting services. 
  
- For more information about permissions, see [Permission reference for Team Foundation Server](/azure/devops/security/permissions).
+  For more information about permissions, see [Permission reference for Team Foundation Server](/azure/devops/security/permissions).
 
 <a name="assumptions"></a>
 ## Assumptions
@@ -186,53 +186,53 @@ In addition, the client computers in your deployment will need to be enrolled in
 
 ¹ Clients and servers are called out separately here, but that’s just a convention of this document. Any computer running the deployment agent needs the certificate installed.
 
-1.  Open **Internet Information Services (IIS) Manager**.
+1. Open **Internet Information Services (IIS) Manager**.
 
-2.  Expand your server, navigate to **Server Certificates**, and create and complete your certificate request.
+2. Expand your server, navigate to **Server Certificates**, and create and complete your certificate request.
 
-    ![Open IIS Manager and request a certificate](_img/ic728993.png)
+   ![Open IIS Manager and request a certificate](_img/ic728993.png)
 
-    ![Create a request, then complete it](_img/ic712598.png)
+   ![Create a request, then complete it](_img/ic712598.png)
 
-    For more information, see [Configuring Server Certificates in IIS](http://go.microsoft.com/fwlink/?LinkId=201844).
+   For more information, see [Configuring Server Certificates in IIS](http://go.microsoft.com/fwlink/?LinkId=201844).
 
-3.  Import the certificate.
+3. Import the certificate.
 
-4.  Now you need to configure each website that will require this certificate with the appropriate settings, (with the exception of the Release Management website, which you will configure later). Specifically, you'll need to do this for each of the following websites:
+4. Now you need to configure each website that will require this certificate with the appropriate settings, (with the exception of the Release Management website, which you will configure later). Specifically, you'll need to do this for each of the following websites:
 
-    -   Default Website
+   -   Default Website
 
-    -   Team Foundation Server
+   -   Team Foundation Server
 
-    -   TFS Proxy (if your deployment uses it)
+   -   TFS Proxy (if your deployment uses it)
 
-    -   SharePoint Central Administration (if your deployment uses SharePoint)
+   -   SharePoint Central Administration (if your deployment uses SharePoint)
 
-    On each server that hosts a website that you want to configure, open **Internet Information Services (IIS) Manager**.
+   On each server that hosts a website that you want to configure, open **Internet Information Services (IIS) Manager**.
 
-5.  Expand *ComputerName*, expand **Sites**, open the submenu for the website that you want to configure (for example, Team Foundation Server), and then choose **Bindings** from the Actions pane.
+5. Expand *ComputerName*, expand **Sites**, open the submenu for the website that you want to configure (for example, Team Foundation Server), and then choose **Bindings** from the Actions pane.
 
-    ![You must configure bindings for all sites](_img/ic712599.png)
+   ![You must configure bindings for all sites](_img/ic712599.png)
 
-6.  In **Site Bindings**, choose **Add**.
+6. In **Site Bindings**, choose **Add**.
 
-    The **Add Site Binding** dialog box appears.
+   The **Add Site Binding** dialog box appears.
 
-7.  In the **Type** list, choose **https**.
+7. In the **Type** list, choose **https**.
 
-    In **Port**, type a different port number.
+   In **Port**, type a different port number.
 
-    > [!IMPORTANT]
-    > The default port number for SSL connections is 443, but you must assign a unique port number for each of the following sites: Default Website, Team Foundation Server, TFS Proxy (if your deployment uses it), and SharePoint Central Administration (if your deployment uses SharePoint).</p>
-    <p>You should record the SSL port number for each website that you configure. You will need to specify these numbers in the administration console for Team Foundation.
+   > [!IMPORTANT]
+   > The default port number for SSL connections is 443, but you must assign a unique port number for each of the following sites: Default Website, Team Foundation Server, TFS Proxy (if your deployment uses it), and SharePoint Central Administration (if your deployment uses SharePoint).</p>
+   > <p>You should record the SSL port number for each website that you configure. You will need to specify these numbers in the administration console for Team Foundation.
 
-    In **SSL Certificate**, choose the certificate that you imported, and then choose **OK** and close the Bindings page.
+   In **SSL Certificate**, choose the certificate that you imported, and then choose **OK** and close the Bindings page.
 
-    ![Make sure to choose a unique port number](_img/ic720089.png)
+   ![Make sure to choose a unique port number](_img/ic720089.png)
 
-8.  On the **Home** page for the website that you are configuring, open the **Features** view.
+8. On the **Home** page for the website that you are configuring, open the **Features** view.
 
-9.  Under **IIS**, choose **Authentication**.
+9. Under **IIS**, choose **Authentication**.
 
 10. Choose an authentication method that you want to configure, open its submenu, and then enable, disable, or perform additional configuration on the method, as best meets your security needs. For example, if you wanted to disable anonymous authentication, you would choose the Anonymous Authentication method and the choose Disable from the Actions menu.
 
@@ -263,33 +263,33 @@ Follow these steps to configure your TFS deployment with the HTTPS ports and val
 
 ### To reconfigure Team Foundation Server to use or require HTTPS
 
-1.  Open the administration console for Team Foundation and browse to the application tier node.
+1. Open the administration console for Team Foundation and browse to the application tier node.
 
-2.  In **Application Tier Summary**, choose **Change URLs**.
+2. In **Application Tier Summary**, choose **Change URLs**.
 
-    The **Change URLs** window opens.
+   The **Change URLs** window opens.
 
-3.  In **Notification URL**, type the HTTPS URL that you configured for the Team Foundation Server website in IIS.
+3. In **Notification URL**, type the HTTPS URL that you configured for the Team Foundation Server website in IIS.
 
-    For example, you might have configured the website to use port 444. In this case, you type https://*ServerName*:444/tfs. Make sure that you use the fully qualified domain name of the server instead of localhost.
+   For example, you might have configured the website to use port 444. In this case, you type https://<em>ServerName</em>:444/tfs. Make sure that you use the fully qualified domain name of the server instead of localhost.
 
-    ![Specify HTTPS, server, and port in the address](_img/ic712602.png)
+   ![Specify HTTPS, server, and port in the address](_img/ic712602.png)
 
-4.  Choose **Test**. Don't choose **OK** if the test doesn't pass. Go back and make sure that you entered the correct URL and port information, that all firewalls are configured to allow traffic on those ports, and that the site is available and running in IIS Manager.
+4. Choose **Test**. Don't choose **OK** if the test doesn't pass. Go back and make sure that you entered the correct URL and port information, that all firewalls are configured to allow traffic on those ports, and that the site is available and running in IIS Manager.
 
-5.  To require HTTPS, choose **Use** in **Server URL**, and then type the HTTPS URL that you configured for the Team Foundation Server website.
+5. To require HTTPS, choose **Use** in **Server URL**, and then type the HTTPS URL that you configured for the Team Foundation Server website.
 
-    Make sure that you use the fully qualified domain name of the server instead of localhost.
+   Make sure that you use the fully qualified domain name of the server instead of localhost.
 
-6.  Choose **Test**, and then choose **OK** if the test passes.
+6. Choose **Test**, and then choose **OK** if the test passes.
 
-7.  If your deployment uses SharePoint Products, choose **SharePoint Web Applications** in the administration console. Otherwise, skip the next six steps.
+7. If your deployment uses SharePoint Products, choose **SharePoint Web Applications** in the administration console. Otherwise, skip the next six steps.
 
-8.  In **SharePoint Web Applications**, in the **Name** list, choose a web application, and then choose **Change**.
+8. In **SharePoint Web Applications**, in the **Name** list, choose a web application, and then choose **Change**.
 
-    The **SharePoint Web Application Settings** page opens.
+   The **SharePoint Web Application Settings** page opens.
 
-9.  In **Web Application URL**, change the URL to the HTTPS value for the application.
+9. In **Web Application URL**, change the URL to the HTTPS value for the application.
 
 10. In **Central Administration URL**, change the URL to the HTTPS value for the Central Administration website.
 

@@ -19,7 +19,7 @@ This topic, the fourth part of the Restore a Single-Server tutorial, teaches you
 
 Use this topic to:
 
- 
+ 
 * Start project collections and verify permissions
 * Refresh the version control cache on client computers and reconnect to TFS
 
@@ -84,15 +84,15 @@ To refresh the version control cache, each user must run the **tf workspaces** c
 
 To refresh the version control cache on client computers:
 
-1.  On the client computer, open a Command Prompt window with administrative permissions, and change directories to *Drive*:\\Program Files (x86)\\Microsoft Visual Studio 12.0\\Common7\\IDE.
+1. On the client computer, open a Command Prompt window with administrative permissions, and change directories to *Drive*:\\Program Files (x86)\\Microsoft Visual Studio 12.0\\Common7\\IDE.
 
-2.  At the command prompt, enter the following command, including the URL of the collection, which includes the server name and the port number of the new server:
+2. At the command prompt, enter the following command, including the URL of the collection, which includes the server name and the port number of the new server:
 
-    **tf workspaces /collection:http://** *ServerName:Port/VirtualDirectoryName/CollectionName*
+   **tf workspaces /collection:http://** *ServerName:Port/VirtualDirectoryName/CollectionName*
 
-    For example, to refresh the version control cache for a project that is a member of the DefaultCollection collection, which is hosted in the FabrikamPrime deployment of Team Foundation Server, type the following string:
+   For example, to refresh the version control cache for a project that is a member of the DefaultCollection collection, which is hosted in the FabrikamPrime deployment of Team Foundation Server, type the following string:
 
-    **tf workspaces /collection:http://FabrikamPrime:8080/tfs/DefaultCollection**
+   **tf workspaces /collection:<http://FabrikamPrime:8080/tfs/DefaultCollection>**
 
-    For more information, see [Workspaces Command](/azure/devops/tfvc/workspace-command).
+   For more information, see [Workspaces Command](/azure/devops/tfvc/workspace-command).
 

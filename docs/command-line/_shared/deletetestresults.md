@@ -32,7 +32,7 @@ reduce the time taken when migrating test results to a new schema.
       <td>
         The name of the server that hosts the database for which test results are being deleted or previewed,
         and the name of the instance if an instance other than the default is used.
-        If you specify an instance, you must use the format: `ServerName\InstanceName`
+        If you specify an instance, you must use the format: <code>ServerName\InstanceName</code>
       </td>
     </tr>
     <tr>
@@ -41,7 +41,7 @@ reduce the time taken when migrating test results to a new schema.
     </tr>
     <tr>
       <td><strong>/type</strong></td>
-      <td>Optional. The type of test results to delete. Valid values are **automated**, **manual**, and **all**.</td>
+      <td>Optional. The type of test results to delete. Valid values are <strong>automated</strong>, <strong>manual</strong>, and <strong>all</strong>.</td>
     </tr>
     <tr>
       <td><strong>/preview</strong></td>

@@ -189,6 +189,6 @@ The other side effects which are not reverted are not impactful and are listed h
 would have been made by an upgrade to TFS 2015 in any case, and should not have any impact on the functioning of your server
 or on its eventual upgrade.
  
-1.	Any corruptions found and fixed in TFS version control data will not be reverted.
-2.	A column added to tbl_Version by the corruption detection and fixup script will not be removed.
-3.      Tables for which compression is enabled will not have it disabled again. 
+1. Any corruptions found and fixed in TFS version control data will not be reverted.
+2. A column added to tbl_Version by the corruption detection and fixup script will not be removed.
+3. Tables for which compression is enabled will not have it disabled again. 

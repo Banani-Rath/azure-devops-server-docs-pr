@@ -63,13 +63,13 @@ To change the password of *TFSService*, you must log on to the application-tier 
 
 **Use the TFSConfig utility to change the password**
 
-1.  On the application-tier server, open a Command Prompt window and change directories to the directory that contains the **TFSConfig** utility.
+1. On the application-tier server, open a Command Prompt window and change directories to the directory that contains the **TFSConfig** utility.
 
-    By default, this utility is located in *Drive*:\\Program Files\\TFS 12.0\\Tools.
+   By default, this utility is located in *Drive*:\\Program Files\\TFS 12.0\\Tools.
 
-2.  At the command line, enter **TFSConfig Accounts /UpdatePassword /accountType:ApplicationTier /account:***AccountName* **/password:***NewPassword*, and then press ENTER.
+2. At the command line, enter **TFSConfig Accounts /UpdatePassword /accountType:ApplicationTier /account:**<em>AccountName</em> **/password:**<em>NewPassword</em>, and then press ENTER.
 
-3.  You must specify both the name of the service account (*AccountName*) and the password of the account (*NewPassword*).
+3. You must specify both the name of the service account (*AccountName*) and the password of the account (*NewPassword*).
 
 ## Assign a different account as the service account
 
@@ -114,13 +114,13 @@ For more information, see [Add the Log on as a service right to an account](/pre
 
 **Use the TFSConfig utility to change the service account**
 
-1.  On the application-tier server, open a Command Prompt window and change directories to the directory that contains the **TFSConfig** utility.
+1. On the application-tier server, open a Command Prompt window and change directories to the directory that contains the **TFSConfig** utility.
 
-    By default, this utility is located in *Drive*:\\Program Files\\TFS 12.0\\Tools.
+   By default, this utility is located in *Drive*:\\Program Files\\TFS 12.0\\Tools.
 
-2.  At the command line, enter **TFSConfig Accounts /change /accountType:ApplicationTier /account:***AccountName* **/password:***NewPassword*, and then press ENTER.
+2. At the command line, enter **TFSConfig Accounts /change /accountType:ApplicationTier /account:**<em>AccountName</em> **/password:**<em>NewPassword</em>, and then press ENTER.
 
-    For more information, see [Accounts command](../command-line/tfsconfig-cmd.md#accounts).
+   For more information, see [Accounts command](../command-line/tfsconfig-cmd.md#accounts).
 
 ## Related articles
 

@@ -83,7 +83,7 @@ To open the administration console from the Windows **Start** menu on a server t
 
 > [!NOTE]
 > If the console doesn't appear as a menu option, you might not have permission to open it. You can try to open it at a command prompt, but you might not be able to access some or all of the administration console's functionality.
- 
+
 The administration console opens. You might have to wait briefly for all the information to populate throughout the nodes of the console.
 
 
@@ -95,30 +95,30 @@ The administration console opens. You might have to wait briefly for all the inf
 ::: moniker range=">= azure-devops-2019"
 1. On a server that is running one or more Azure DevOps components, open a Command Prompt window running as an administrator, and change directories to the tools directory for Team Foundation Server.
 
-	By default, the tools directory is located in `Drive:\Program Files\Azure DevOps Server <version>\Tools`.
+    By default, the tools directory is located in `Drive:\Program Files\Azure DevOps Server <version>\Tools`.
 
-	For example, for Azure DevOps Server 2019 the directory is: 
+    For example, for Azure DevOps Server 2019 the directory is: 
 
-	`Drive:\Program Files\Azure DevOps Server 2019\Tools` 
+    `Drive:\Program Files\Azure DevOps Server 2019\Tools` 
 
 2. Type **TFSMgmt.exe** and press ENTER.
 
-	The administration console opens. You might have to wait briefly for all the information to populate throughout the nodes of the administration console.
+    The administration console opens. You might have to wait briefly for all the information to populate throughout the nodes of the administration console.
 
 ::: moniker-end
 
 ::: moniker range="<= tfs-2018"
 1. On a server that is running one or more Azure DevOps components, open a Command Prompt window running as an administrator, and change directories to the tools directory for Team Foundation Server.
 
-	By default, the tools directory is located in `Drive:\Program Files\TFS <version>\Tools`.
+    By default, the tools directory is located in `Drive:\Program Files\TFS <version>\Tools`.
 
-	For example, for TFS 2018 the directory is: 
+    For example, for TFS 2018 the directory is: 
 
-	`Drive:\Program Files\TFS 2018\Tools` 
+    `Drive:\Program Files\TFS 2018\Tools` 
 
 2. Type **TFSMgmt.exe** and press ENTER.
 
-	The administration console opens. You might have to wait briefly for all the information to populate throughout the nodes of the administration console.
+    The administration console opens. You might have to wait briefly for all the information to populate throughout the nodes of the administration console.
 
 ::: moniker-end
 
@@ -130,51 +130,50 @@ To determine what updates have been installed, you can open the
 administration console or view the version number of
 a particular file.
 
-1.  Open the administration console and choose **Application Tier** and review the version numbers
-    listed for the application-tier and data-tier.  
+1. Open the administration console and choose **Application Tier** and review the version numbers
+   listed for the application-tier and data-tier.  
 
-	::: moniker range=">= azure-devops-2019"  
-	![View installed updates](_img/app-tier/view-version-info.png)  
-	::: moniker-end  
-	::: moniker range="<= tfs-2018"  
-    ![View installed updates](_img/app-tier-version-numbers.png)  
-	::: moniker-end  
+   ::: moniker range=">= azure-devops-2019"  
+   ![View installed updates](_img/app-tier/view-version-info.png)  
+   ::: moniker-end  
+   ::: moniker range="<= tfs-2018"  
+   ![View installed updates](_img/app-tier-version-numbers.png)  
+   ::: moniker-end  
 
-2.  To learn when the software was installed, choose **Installed Updates**.
+2. To learn when the software was installed, choose **Installed Updates**.
 
 If the administration console provides isn't available, for example
 during an Azure DevOps upgrade, you can view the file version number of the **Microsoft.TeamFoundation.Admin.dll** file.  
 
 ::: moniker range=">= azure-devops-2019"   
-1.  Open Windows Explorer (or File Explorer), and browse to `Drive:\Program Files\Azure DevOps Server 2019\Tools`  
-::: moniker-end  
-::: moniker range="<= tfs-2018"  
-1.  Open Windows Explorer (or File Explorer), and browse to `Drive:\Program Files\\Microsoft Team Foundation Server 2018\Tools`  
-::: moniker-end  
+1. Open Windows Explorer (or File Explorer), and browse to `Drive:\Program Files\Azure DevOps Server 2019\Tools`  
+   ::: moniker-end  
+   ::: moniker range="<= tfs-2018"  
+2. Open Windows Explorer (or File Explorer), and browse to `Drive:\Program Files\\Microsoft Team Foundation Server 2018\Tools`  
+   ::: moniker-end  
 
-2.  Expand the sub-menu for **Microsoft.TeamFoundation.Admin.dll**, and then
-    choose **Properties**.
+3. Expand the sub-menu for **Microsoft.TeamFoundation.Admin.dll**, and then
+   choose **Properties**.
 
-3.  Choose the **Details** tab, and review the
-    information under **File Version**.
+4. Choose the **Details** tab, and review the
+   information under **File Version**.
 
 <a id="public-url" />
 ## View or change the Public URL
-Prior to changing the Public URL, review [Web site settings and security for Azure DevOps on-premises](websitesettings.md). 
- 
-> [!IMPORTANT]  
-> Changing the Public URL impacts your end users. While we recommend converting from HTTP to HTTPS bindings, Visual Studio client connections will need to be re-established and old bookmarks will no longer resolve. Coordinate changes of this sort with your users to avoid significant disruption.
+Prior to changing the Public URL, review <a href="websitesettings.md" data-raw-source="[Web site settings and security for Azure DevOps on-premises](websitesettings.md)">Web site settings and security for Azure DevOps on-premises</a>. 
+
+&gt; [!IMPORTANT]<br/>&gt; Changing the Public URL impacts your end users. While we recommend converting from HTTP to HTTPS bindings, Visual Studio client connections will need to be re-established and old bookmarks will no longer resolve. Coordinate changes of this sort with your users to avoid significant disruption.
 
 0. From the **Azure DevOps Administration Console**>**Application Tier** node. The Public URL is listed under the **Application Tier Summary** section. 
-	> [!div class="mx-imgBorder"]  
-	> ![Azure DevOps Server Administration Console, Application Tier, Change Public URL](_img/app-tier/find-public-url.png)  
+    > [!div class="mx-imgBorder"]  
+    > ![Azure DevOps Server Administration Console, Application Tier, Change Public URL](_img/app-tier/find-public-url.png)  
 
-0. Choose **Change Public URL**. 
+1. Choose **Change Public URL**. 
 
-	> [!div class="mx-imgBorder"]  
-	> ![Change Public URL dialog](_img/app-tier/public-url-dialog.png)  
+    > [!div class="mx-imgBorder"]  
+    > ![Change Public URL dialog](_img/app-tier/public-url-dialog.png)  
 
-	Change the URL and choose **Test** to verify.
+    Change the URL and choose **Test** to verify.
 
 
 ## Q & A
@@ -191,4 +190,3 @@ Prior to changing the Public URL, review [Web site settings and security for Azu
 
 - [Administrative tasks quick reference](admin-quick-ref.md)
 - 
- 

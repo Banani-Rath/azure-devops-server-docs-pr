@@ -43,7 +43,7 @@ you could end up with corrupted databases.
 			<td>
 				Specifies the name of the server that you want to map as a server that hosts one or more databases for TFS.
 				If an instance other than the default instance hosts a database, you must also specify the name of the instance.
-				Use this format: ServerName <strong>\</strong> InstanceName.
+                Use this format: ServerName <strong>&lt;/strong&gt; InstanceName.
 			</td>
 		</tr>
 		<tr>

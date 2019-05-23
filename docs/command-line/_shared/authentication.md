@@ -22,8 +22,8 @@ The **Authentication** command changes the network authentication protocol that 
 			<td><strong>/provider</strong>: { NTLM | Negotiate }</td>
 			<td>Specifies the authentication provider you want to configure for the website.
 				<ul>
-					<li>**NTLM**: Use the NTML authentication protocol</li>
-					<li>**Negotiate**: Use the Negotiate (Kerberos) authentication protocol</li>
+                    <li><strong>NTLM</strong>: Use the NTML authentication protocol</li>
+                    <li><strong>Negotiate</strong>: Use the Negotiate (Kerberos) authentication protocol</li>
 				</ul>
 			</td>
 		</tr>

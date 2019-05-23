@@ -49,16 +49,16 @@ Required permissions: To follow this procedure, you must be a member of the Wind
 
 To add the service account for Team Foundation Server to the Farm Administrators group 
 
-  1. In a web browser, open the SharePoint Central Administration site. 
+1. In a web browser, open the SharePoint Central Administration site. 
 
-  2. Under Security, choose **Manage the farm administrators group**.
+2. Under Security, choose **Manage the farm administrators group**.
 
-  3. Choose **New**.
+3. Choose **New**.
 
-  4. In the **Users/Groups** box, enter the name of the service account for TFS and choose Share. 
+4. In the **Users/Groups** box, enter the name of the service account for TFS and choose Share. 
 
-  > [!TIP]
-  > If you have to manually add a server name followed by the $ symbol, the search utility might not find it, but you will still be able to choose **Share**.
+   > [!TIP]
+   > If you have to manually add a server name followed by the $ symbol, the search utility might not find it, but you will still be able to choose **Share**.
 
 
 

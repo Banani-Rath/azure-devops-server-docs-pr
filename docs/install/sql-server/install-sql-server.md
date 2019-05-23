@@ -46,59 +46,59 @@ You must be a member of the Windows Administrators security group before you run
 
 1. Download and install a supported version of SQL Server from the [SQL Server Download Center](https://www.microsoft.com/sql-server/sql-server-downloads).
 
-1. On the **SQL Server Installation Center** page, select **Installation**. Then select **New SQL Server stand-alone installation or add features to an existing installation**.
+2. On the **SQL Server Installation Center** page, select **Installation**. Then select **New SQL Server stand-alone installation or add features to an existing installation**.
 
     ![New installation of SQL Server](_img/ic665094.png)
 
-    1. On the **Product Key** page, enter your product key or specify a free edition. Select **Next**.
+   1. On the **Product Key** page, enter your product key or specify a free edition. Select **Next**.
 
-    1. On the **License Terms** page, accept the license agreement. Select **Next**.
+   2. On the **License Terms** page, accept the license agreement. Select **Next**.
 
-    1. On the **Install Rules** page, select **Next**.
+   3. On the **Install Rules** page, select **Next**.
 
-        ![Windows Firewall warning](_img/ic688130.png)
+       ![Windows Firewall warning](_img/ic688130.png)
 
-        > [!TIP]
-        > A Windows Firewall warning might appear. You can safely ignore this warning if you plan to also install Azure DevOps Server on this server. The Azure DevOps Server installation automatically adds this exception to the Windows Firewall. If you install Azure DevOps Server on another server, [open a port for SQL Server in Windows Firewall on this server](http://elhajj.wordpress.com/2013/02/25/workaround-error-tf255049-punching-a-hole-through-windows-firewall/).
-        >
-        > For more information, see [Ports required for installation of Azure DevOps Server](../../architecture/required-ports.md).
+       > [!TIP]
+       > A Windows Firewall warning might appear. You can safely ignore this warning if you plan to also install Azure DevOps Server on this server. The Azure DevOps Server installation automatically adds this exception to the Windows Firewall. If you install Azure DevOps Server on another server, [open a port for SQL Server in Windows Firewall on this server](http://elhajj.wordpress.com/2013/02/25/workaround-error-tf255049-punching-a-hole-through-windows-firewall/).
+       >
+       > For more information, see [Ports required for installation of Azure DevOps Server](../../architecture/required-ports.md).
 
-    1. On the **Feature Selection** page, select the check boxes for one or more of the following components based on the topology you intend to use:
+   4. On the **Feature Selection** page, select the check boxes for one or more of the following components based on the topology you intend to use:
 
-        - **Database Engine Services** is required.
-        - **Full-Text and Semantic Extractions for Search** is required.
-        - **Analysis Services** is for reporting only.
-        - **Client Tools Connectivity** is used only if no other SQL Server components are installed on the server that runs Azure DevOps Server.
+      - **Database Engine Services** is required.
+      - **Full-Text and Semantic Extractions for Search** is required.
+      - **Analysis Services** is for reporting only.
+      - **Client Tools Connectivity** is used only if no other SQL Server components are installed on the server that runs Azure DevOps Server.
 
         > [!NOTE]
         > In previous versions of SQL Server, you installed the Management Tools (SQL Server Management Studio) and Reporting Services by selecting them on the **Features Selection** page. In SQL Server 2017, they're installed separately. For more information, see [Install SQL Server Management Studio](#install-sql-server-management-studio) and [Install and configure SQL Server Reporting Services](#install-and-configure-sql-server-reporting-services).
 
-    1. On the **Instance Configuration** page, select **Default instance**. If you select **Named instance**, enter the name of the instance.
+   5. On the **Instance Configuration** page, select **Default instance**. If you select **Named instance**, enter the name of the instance.
 
-    1. On the **Server Configuration** page, accept the defaults or enter the name of a domain account. Use *NT AUTHORITY\\NETWORK SERVICE* in the **Account Name** for every service. If you specify a domain account, enter its password in **Password**. If you use *NT AUTHORITY\\NETWORK SERVICE*, leave **Password** blank.
+   6. On the **Server Configuration** page, accept the defaults or enter the name of a domain account. Use *NT AUTHORITY\\NETWORK SERVICE* in the **Account Name** for every service. If you specify a domain account, enter its password in **Password**. If you use *NT AUTHORITY\\NETWORK SERVICE*, leave **Password** blank.
 
-        ![Server configuration](_img/ic665099.png)
+       ![Server configuration](_img/ic665099.png)
 
-    1. In the **Startup Type** column, verify that **Automatic** appears for all services that you can edit. Select **Next**.
+   7. In the **Startup Type** column, verify that **Automatic** appears for all services that you can edit. Select **Next**.
 
-        ![Server configuration (details)](_img/ic665100.png)
+       ![Server configuration (details)](_img/ic665100.png)
 
-        > [!NOTE]
-        > Are you using a non-English version of SQL Server? The default collation settings for U.S. English meet the requirements for Azure DevOps Server. You also can set the collation settings for the Database Engine on this page. For more information, see [SQL Server collation requirements for Azure DevOps Server](collation-requirements.md).
+       > [!NOTE]
+       > Are you using a non-English version of SQL Server? The default collation settings for U.S. English meet the requirements for Azure DevOps Server. You also can set the collation settings for the Database Engine on this page. For more information, see [SQL Server collation requirements for Azure DevOps Server](collation-requirements.md).
 
-    1. If you previously selected the **Database Engine Services** check box, on the **Database Engine Configuration** page, select **Windows authentication mode**. Then select **Add Current User**. Otherwise, skip to the next step.
+   8. If you previously selected the **Database Engine Services** check box, on the **Database Engine Configuration** page, select **Windows authentication mode**. Then select **Add Current User**. Otherwise, skip to the next step.
 
-        ![Database Engine configuration](_img/ic665101.png)
+       ![Database Engine configuration](_img/ic665101.png)
 
-    1. If you previously selected the **Analysis Services** check box, on the **Analysis Services Configuration** page, select **Add Current User**. Otherwise, skip to the next step.
+   9. If you previously selected the **Analysis Services** check box, on the **Analysis Services Configuration** page, select **Add Current User**. Otherwise, skip to the next step.
 
-        ![Analysis Services configuration](_img/ic665102.png)
+       ![Analysis Services configuration](_img/ic665102.png)
 
-    1. On the **Ready to Install** page, review the list of components to be installed. Then select **Install**.
+   10. On the **Ready to Install** page, review the list of components to be installed. Then select **Install**.
 
         ![Complete](_img/ic662712.png)
 
-    1. Select **Close** after the installation finishes.
+   11. Select **Close** after the installation finishes.
 
 ## Install and configure SQL Server Reporting Services
 

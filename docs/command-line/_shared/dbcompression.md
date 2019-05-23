@@ -29,7 +29,7 @@ You use the **DBCompression** command to enable or disable database page compres
 			<td>
 				Specifies the name of the server that hosts the database for which page compression is being enabled or disabled,
 				and the name of the instance if an instance other than the default is used.
-				If you specify an instance, you must use the format: `ServerName\InstanceName`
+                If you specify an instance, you must use the format: <code>ServerName\InstanceName</code>
 			</td>
 		</tr>
 		<tr>

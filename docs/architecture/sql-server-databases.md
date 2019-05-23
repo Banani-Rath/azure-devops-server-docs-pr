@@ -53,7 +53,7 @@ When you configure user and group permissions and group membership in Azure DevO
 In addition to configuring role membership and permissions in Reporting Services, you must also manage the report reader account that Azure DevOps Server uses to communicate with the report server. This account is frequently referred to as the data sources account for Reporting Services, or *TFSREPORTS*. Like the service account for Azure DevOps Server, the report reader account must be a member of a workgroup or domain that is trusted by every computer that connects to Azure DevOps Server. For more information, see [Accounts required for installation of Azure DevOps Server](../account-requirements.md).
 
 > [!TIP]
-> Even when you are logged on with administrative credentials, you might have trouble accessing Report Manager or the http://*localhost*/Reports sites unless you add these sites as Trusted Sites in Internet Explorer or start Internet Explorer as an administrator. To start Internet Explorer as an administrator, choose **Start**, enter **Internet Explorer**, right-click on the result, and then choose **Run as administrator**.
+> Even when you are logged on with administrative credentials, you might have trouble accessing Report Manager or the http://<em>localhost</em>/Reports sites unless you add these sites as Trusted Sites in Internet Explorer or start Internet Explorer as an administrator. To start Internet Explorer as an administrator, choose **Start**, enter **Internet Explorer**, right-click on the result, and then choose **Run as administrator**.
 
 ## Related articles
 

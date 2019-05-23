@@ -129,41 +129,41 @@ You can rebuild the data warehouse instead of restoring the TFS_Warehouse and TF
 
 ### Rebuild the warehouse
 
-1.  On the server that is running the application-tier services for Azure DevOps, open a Command Prompt window, and change directories to *Drive*:\\%programfiles%\\Azure DevOps Server 2019\\Tools.
+1. On the server that is running the application-tier services for Azure DevOps, open a Command Prompt window, and change directories to *Drive*:\\%programfiles%\\Azure DevOps Server 2019\\Tools.
 
-2.  Enter the following command:
+2. Enter the following command:
 
-     **TFSConfig rebuildwarehouse /all /ReportingDataSourcePassword:**  *Password*
+    **TFSConfig rebuildwarehouse /all /ReportingDataSourcePassword:**  *Password*
 
-    where *Password* is the password for the data sources account for Reporting Services (TFSReports).
+   where *Password* is the password for the data sources account for Reporting Services (TFSReports).
 
-3.  Wait until the command completes.
+3. Wait until the command completes.
 
-4.  On the report server, open Internet Explorer and enter the following string in the Address bar:
+4. On the report server, open Internet Explorer and enter the following string in the Address bar:
 
-    **http://localhost:8080/***VirtualDirectory***/TeamFoundation/Administration/v3.0/WarehouseControlService.asmx**
+   **<http://localhost:8080/>**<em>VirtualDirectory</em>**/TeamFoundation/Administration/v3.0/WarehouseControlService.asmx**
 
-    For *VirtualDirectory*, enter the virtual directory for Internet Information Services (IIS) that was specified when Azure DevOps Server was installed. By default, this directory is named **tfs**.
+   For *VirtualDirectory*, enter the virtual directory for Internet Information Services (IIS) that was specified when Azure DevOps Server was installed. By default, this directory is named **tfs**.
 
-    The **WarehouseControlWebService** page opens.
+   The **WarehouseControlWebService** page opens.
 
-    > [!NOTE]  
-    > The Microsoft Azure DevOps Server Application Pool must be running for the Warehouse Control web service to be available.
+   > [!NOTE]  
+   > The Microsoft Azure DevOps Server Application Pool must be running for the Warehouse Control web service to be available.
 
-5.  Select **GetProcessingStatus**, and then select **Invoke**.
+5. Select **GetProcessingStatus**, and then select **Invoke**.
 
-    > [!IMPORTANT]
-    > The service should return a value of **Idle** for all jobs, which indicates that the cube is not being processed. If a different value is returned, repeat this step until **Idle** is returned for all jobs.
+   > [!IMPORTANT]
+   > The service should return a value of **Idle** for all jobs, which indicates that the cube is not being processed. If a different value is returned, repeat this step until **Idle** is returned for all jobs.
 
-6.  On the **WarehouseControlWebService** page, select **ProcessAnalysisDatabase**, and then select **Invoke**.
+6. On the **WarehouseControlWebService** page, select **ProcessAnalysisDatabase**, and then select **Invoke**.
 
-    A browser window opens. The service returns **True** when it successfully starts to process the cube and **False** if it is not successful or if the cube is currently being processed.
+   A browser window opens. The service returns **True** when it successfully starts to process the cube and **False** if it is not successful or if the cube is currently being processed.
 
-7.  To determine when the cube has been processed, return to the **WarehouseControlWebService** page, select **GetProcessingStatus**, and then select **Invoke**.
+7. To determine when the cube has been processed, return to the **WarehouseControlWebService** page, select **GetProcessingStatus**, and then select **Invoke**.
 
-    Processing is complete when the **GetProcessingStatus** service returns a value of **Idle** for all jobs.
+   Processing is complete when the **GetProcessingStatus** service returns a value of **Idle** for all jobs.
 
-8.  On the application-tier server for Azure DevOps, open **Computer Management**, and start the Visual Studio Team Foundation Background Job Service.
+8. On the application-tier server for Azure DevOps, open **Computer Management**, and start the Visual Studio Team Foundation Background Job Service.
 
 <a name="clear-data-cache-on-servers"></a>
 ## Step 6: Clear the data cache on application-tier servers
@@ -214,17 +214,17 @@ For more information, see [TFSServiceControl command](../../command-line/tfsserv
 
 ### Refresh the version control cache on client computers
 
-1.  On the client computer, open a Command Prompt window with administrative permissions, and change directories to *Drive*:\\Program Files (x86)\\Microsoft Visual Studio 12.0\\Common7\\IDE.
+1. On the client computer, open a Command Prompt window with administrative permissions, and change directories to *Drive*:\\Program Files (x86)\\Microsoft Visual Studio 12.0\\Common7\\IDE.
 
-2.  At the command prompt, enter the following command, including the URL of the collection, which includes the server name and the port number of the new server:
+2. At the command prompt, enter the following command, including the URL of the collection, which includes the server name and the port number of the new server:
 
-    **tf workspaces /collection:http://***ServerName:Port/VirtualDirectoryName/CollectionName*
+   **tf workspaces /collection:http://**<em>ServerName:Port/VirtualDirectoryName/CollectionName</em>
 
-    In the example deployment, a developer needs to refresh the version control cache for a project that is a member of the DefaultCollection collection, which is hosted in the FabrikamPrime deployment of Azure DevOps Server:
+   In the example deployment, a developer needs to refresh the version control cache for a project that is a member of the DefaultCollection collection, which is hosted in the FabrikamPrime deployment of Azure DevOps Server:
 
-    **tf workspaces /collection:http://FabrikamPrime:8080/tfs/DefaultCollection**
+   **tf workspaces /collection:<http://FabrikamPrime:8080/tfs/DefaultCollection>**
 
-    For more information, see [Workspaces command](/azure/devops/tfvc/workspaces-command).
+   For more information, see [Workspaces command](/azure/devops/tfvc/workspaces-command).
 
 ## Related articles
 

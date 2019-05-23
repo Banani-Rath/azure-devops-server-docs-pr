@@ -67,38 +67,38 @@ Your Team Foundation Server deployment must use a domain account for its service
 
 To configure Team Foundation Server by using the application-tier only option:
 
-  1. Choose **Application-Tier Only Configuration**, and then choose **Start Wizard**.
+1. Choose **Application-Tier Only Configuration**, and then choose **Start Wizard**.
 
-  The **Team Foundation Server Application-Tier Only** wizard appears.
+   The **Team Foundation Server Application-Tier Only** wizard appears.
 
-  2. Read the Welcome screen, and then choose Next.
+2. Read the Welcome screen, and then choose Next.
 
-  3. In **SQL Server Instance**, type the instance of SQL Server that hosts the configuration database for the installation of TFS for which you want to add an application-tier server, and then choose **List Available Databases**.
+3. In **SQL Server Instance**, type the instance of SQL Server that hosts the configuration database for the installation of TFS for which you want to add an application-tier server, and then choose **List Available Databases**.
 
-  The wizard lists all the databases on that instance of SQL Server.
+   The wizard lists all the databases on that instance of SQL Server.
 
-  4. Choose a database, and then choose **Next**.
+4. Choose a database, and then choose **Next**.
 
-  The wizard displays the application-tier settings for this server.
+   The wizard displays the application-tier settings for this server.
 
-  5. In the list, choose the account you want to use. Enter the password for the service account. To test the user account and password combination, you can optionally choose **Test**.
+5. In the list, choose the account you want to use. Enter the password for the service account. To test the user account and password combination, you can optionally choose **Test**.
 
-    > [!NOTE]
-    > Make sure that the service account you specify has been added to the Farm Administrators group for the SharePoint Central Administration site. For more information, see [Add the service account for Team Foundation Server to the Farm Administrators group](sharepoint/setup-remote-sharepoint.md#tfs-svc-acct-to-farm-admin-group).
+   > [!NOTE]
+   > Make sure that the service account you specify has been added to the Farm Administrators group for the SharePoint Central Administration site. For more information, see [Add the service account for Team Foundation Server to the Farm Administrators group](sharepoint/setup-remote-sharepoint.md#tfs-svc-acct-to-farm-admin-group).
 
-  6. Under **Authentication Method**, choose **NTLM** to use NTLM authentication or **Negotiate (Kerberos)** to first attempt Kerberos authentication, the more secure option. If that fails, fall back to NTLM. Choose **Next**.
+6. Under **Authentication Method**, choose **NTLM** to use NTLM authentication or **Negotiate (Kerberos)** to first attempt Kerberos authentication, the more secure option. If that fails, fall back to NTLM. Choose **Next**.
 
-  NTLM is the default value.
+   NTLM is the default value.
 
-  7. On the Review page, review the settings, and then choose **Next**.
+7. On the Review page, review the settings, and then choose **Next**.
 
-  8. Choose Configure to apply the configuration settings.
+8. Choose Configure to apply the configuration settings.
 
-  The wizard applies configuration settings. 
+   The wizard applies configuration settings. 
 
-  9. Choose **Next**, **Close**, **Close**.
+9. Choose **Next**, **Close**, **Close**.
 
-  The Team Foundation Server Administration Console appears.
+   The Team Foundation Server Administration Console appears.
 
 > [!TIP]
 > If you want to connect to an NLB cluster from a client that is running on one of the application-tier servers in the cluster, you should connect using localhost as the name of the server, instead of the Domain Name System (DNS) name for the load balancer. By default, Internet Information Services (IIS) prevents you from connecting to an NLB cluster from any server in the cluster, unless you use localhost as the name of the cluster.

@@ -43,34 +43,34 @@ Before you move a collection, first detach it from the deployment of Azure DevOp
 > [!NOTE]
 >  Detaching a collection prevents users from accessing any projects in that collection.
 
-1.  Open the administration console for Azure DevOps on the server that hosts the collection to move, and in **Project Collections**, highlight that collection.
+1. Open the administration console for Azure DevOps on the server that hosts the collection to move, and in **Project Collections**, highlight that collection.
 
-2.  On the **General** tab, select **Detach Collection**.  
+2. On the **General** tab, select **Detach Collection**.  
 
-	::: moniker range=">= azure-devops-2019"
-	![Detach project collections](_img/manage-pc/detach-tpc.png)
-	::: moniker-end 
-	::: moniker range="<= tfs-2018"
-	![On the General tab, select then detach](_img/ic738718.png)
-	::: moniker-end  
+   ::: moniker range=">= azure-devops-2019"
+   ![Detach project collections](_img/manage-pc/detach-tpc.png)
+   ::: moniker-end 
+   ::: moniker range="<= tfs-2018"
+   ![On the General tab, select then detach](_img/ic738718.png)
+   ::: moniker-end  
 
-    The **Detach Project Collection Wizard** opens.
+   The **Detach Project Collection Wizard** opens.
 
-3.  (Optional) On the **Provide a servicing message for the project collection** page, in **Servicing Message**, provide a message for users who may try to connect to projects in this collection.
+3. (Optional) On the **Provide a servicing message for the project collection** page, in **Servicing Message**, provide a message for users who may try to connect to projects in this collection.
 
-4.  Select **Next**.
+4. Select **Next**.
 
-5.  On the **Review settings that will be used to detach project collection** page, review the details.
+5. On the **Review settings that will be used to detach project collection** page, review the details.
 
-6.  To change any settings, select **Previous**. If they appear to be correct, select **Verify**.
+6. To change any settings, select **Previous**. If they appear to be correct, select **Verify**.
 
-7.  When all the readiness checks have completed successfully, select **Detach**.
+7. When all the readiness checks have completed successfully, select **Detach**.
 
-8.  On the **Monitor the project collection detach progress** page, when all processes have completed, select **Next**.
+8. On the **Monitor the project collection detach progress** page, when all processes have completed, select **Next**.
 
-    ![The wizard shows you progress](_img/ic738719.png)
+   ![The wizard shows you progress](_img/ic738719.png)
 
-9.  (Optional) On the **Review supplemental information for this project collection** page, either select or note the location of the log file.
+9. (Optional) On the **Review supplemental information for this project collection** page, either select or note the location of the log file.
 
 10. Select **Close**.
 
@@ -110,34 +110,34 @@ After you restore the collection database, you can attach the collection to the 
 > [!NOTE]
 > Warnings will appear when you attach the collection if your deployment uses SharePoint Products and the service account for Azure DevOps Server is not a member of the Farm Administrators group, or if your deployment uses reporting and you've already created a reporting folder and path that is identical to the previous deployment's folder and path. This is expected behavior, and you can proceed.
 
-1.  Open the administration console for Azure DevOps on the server that hosts the application tier for the deployment to which you're moving the collection.
+1. Open the administration console for Azure DevOps on the server that hosts the application tier for the deployment to which you're moving the collection.
 
-2.  Select **Project Collections**, and then select **Attach Collection**.
+2. Select **Project Collections**, and then select **Attach Collection**.
 
-	::: moniker range=">= azure-devops-2019"  
-	![Azure DevOps Server Administration console, Team Project Collections](_img/move-hw/attach-collection.png)  
-	::: moniker-end  
-	::: moniker range="<= tfs-2018"
-	![TFS Administration console, Team Project Collections](_img/ic738723.png)
-	::: moniker-end  
+   ::: moniker range=">= azure-devops-2019"  
+   ![Azure DevOps Server Administration console, Team Project Collections](_img/move-hw/attach-collection.png)  
+   ::: moniker-end  
+   ::: moniker range="<= tfs-2018"
+   ![TFS Administration console, Team Project Collections](_img/ic738723.png)
+   ::: moniker-end  
 
-    The **Attach Project Collection Wizard** opens.
+   The **Attach Project Collection Wizard** opens.
 
-3.  On the **Select the project collection database to attach** page, in **SQL Server Instance**, provide the name of the server and the instance that hosts the collection database, if it is not already listed.
+3. On the **Select the project collection database to attach** page, in **SQL Server Instance**, provide the name of the server and the instance that hosts the collection database, if it is not already listed.
 
-    ![Make sure the SQL Server instance is correct](_img/ic738724.png)
+   ![Make sure the SQL Server instance is correct](_img/ic738724.png)
 
-4.  In the **Databases** list, select the collection database to attach, and then select **Next**.
+4. In the **Databases** list, select the collection database to attach, and then select **Next**.
 
-5.  On the **Enter the project collection information** page, provide a name for the collection in **Name** if one is not already present.
+5. On the **Enter the project collection information** page, provide a name for the collection in **Name** if one is not already present.
 
-6.  (Optional) In **Description**, provide a description of the collection.
+6. (Optional) In **Description**, provide a description of the collection.
 
-7.  Select **Next**.
+7. Select **Next**.
 
-8.  On the **Review settings that will be used to attach the project collection** page, review the information.
+8. On the **Review settings that will be used to attach the project collection** page, review the information.
 
-9.  To change any settings, select **Previous**. If all the settings are correct, select **Verify**.
+9. To change any settings, select **Previous**. If all the settings are correct, select **Verify**.
 
 10. When all the readiness checks have completed successfully, select **Attach**.
 

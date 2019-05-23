@@ -44,28 +44,28 @@ in the software that TFS inter-operates with, in addition to TFS itself.
 You can quickly grant these permissions to administrators by adding them to the **Team Foundation Administrators**
 group in Team Foundation Server (TFS).
 
-1.  On the application-tier server, add the user to the local Administrators group.
+1. On the application-tier server, add the user to the local Administrators group.
 
-    ![Follow instructions for your operating system](_img/add-administrator/windows-groups.png)
+   ![Follow instructions for your operating system](_img/add-administrator/windows-groups.png)
 
-2.  In the TFS administration console and add the user to the set of users who can run the administration console.
+2. In the TFS administration console and add the user to the set of users who can run the administration console.
 
-    ![Click or tab, then input username](_img/add-administrator/admin-console.png)
+   ![Click or tab, then input username](_img/add-administrator/admin-console.png)
 
-    If you're running a standard single-server deployment,
-	or a multi-server deployment without SharePoint or reporting, that's it!
-	However, if you have multiple application tiers,
-	you'll need to repeat these two steps on every application tier server.
+   If you're running a standard single-server deployment,
+   or a multi-server deployment without SharePoint or reporting, that's it!
+   However, if you have multiple application tiers,
+   you'll need to repeat these two steps on every application tier server.
 
-	::: moniker range="<= azure-devops-2019"
-	And if you have reporting or other servers integrated with your Azure DevOps deployment,
-	you might need to manually add administrative users to those products separately. 
-	::: moniker-end
+   ::: moniker range="<= azure-devops-2019"
+   And if you have reporting or other servers integrated with your Azure DevOps deployment,
+   you might need to manually add administrative users to those products separately. 
+   ::: moniker-end
 
-	::: moniker range="<= tfs-2017"
-	And if you have SharePoint or reporting on other servers,
-	you might need to manually add administrative users to those products separately. 
-	::: moniker-end
+   ::: moniker range="<= tfs-2017"
+   And if you have SharePoint or reporting on other servers,
+   you might need to manually add administrative users to those products separately. 
+   ::: moniker-end
 
 ## Related articles 
 

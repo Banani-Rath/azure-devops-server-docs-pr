@@ -87,7 +87,7 @@ If you need to close the Configuration Center, you can return to it. Start the T
 
 
 <a id="basic-advanced" /> 
-::: moniker range=">= azure-devops-2019"
+::: moniker range=&quot;&gt;= azure-devops-2019&quot;
 ## Configuration options: Basic, Advanced and Azure 
 
 The Server Configuration Wizard supports two main configuration options: **Basic**,  **Advanced**, and **Azure**.
