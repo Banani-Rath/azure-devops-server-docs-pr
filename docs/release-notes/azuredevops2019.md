@@ -110,7 +110,7 @@ We've added support for Visual Studio 2019 to the Visual Studio Test task in pip
 
 ## **Azure DevOps Server 2019 Patch 2 Release Date: May 14, 2019**
 
-We have released a [security patch](https://aka.ms/azdev2019patch) for Azure DevOps Server 2019 that fixes the following bugs:
+We have released a [security patch](https://aka.ms/azdev2019patch) for Azure DevOps Server 2019 that fixes the following bugs. Please see the [blog post](https://devblogs.microsoft.com/devops/may-security-release-patches-available-for-azure-devops-server-2019-tfs-2018-3-2-tfs-2018-1-2-tfs-2017-3-1-and-tfs-2015-4-2/) for more information.
 * **[CVE-2019-0872](https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2019-0872)**: Cross site scripting (XSS) vulnerability in the Test Plans
 * **[CVE-2019-0971](https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2019-0971)**: Information disclosure vulnerability in the Repos API
 * **[CVE-2019-0979](https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2019-0979)**: Cross site scripting (XSS) vulnerability in the User hub
@@ -119,7 +119,7 @@ We have released a [security patch](https://aka.ms/azdev2019patch) for Azure Dev
 
 ## **Azure DevOps Server 2019 Patch 1 Release Date: April 9, 2019**
 
-We have released a [security patch](https://aka.ms/azdev2019patch) for Azure DevOps Server 2019 that fixes the following bugs:
+We have released a [security patch](https://aka.ms/azdev2019patch) for Azure DevOps Server 2019 that fixes the following bugs. Please see the [blog post](https://devblogs.microsoft.com/devops/april-security-release-patches-available-for-azure-devops-server-2019-tfs-2018-3-2-tfs-2018-1-2-tfs-2017-3-1-and-the-release-of-tfs-2015-4-2/) for more information.
 * **[CVE-2019-0857](https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2019-0857)**: Spoofing vulnerability in the Wiki
 * **[CVE-2019-0866](https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2019-0866)**: Remote code execution vulnerability in Pipelines
 * **[CVE-2019-0867](https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2019-0867)**: Cross site scripting (XSS) vulnerability in Pipelines
