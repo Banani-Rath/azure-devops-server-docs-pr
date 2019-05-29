@@ -1,12 +1,12 @@
 ---
 title: Setting up HTTPS
-titleSuffix: Azure DevOps Server & TFS 
+titleSuffix: Azure DevOps Server
 description: Setting up HTTPS with Secure Sockets Layer (SSL) Azure DevOps on-premises
 ms.topic: conceptual
 ms.manager: jillfra
 ms.author: aaronha
 author: aaronhallberg
-ms.date: 08/31/2016
+ms.date: 05/24/2019
 ms.prod: devops-server
 ms.technology: tfs-admin
 ---
@@ -15,7 +15,7 @@ ms.technology: tfs-admin
 
 [!INCLUDE [temp](../_shared/version-tfs-all-versions.md)]
 
-You can strengthen the security of your deployment of Visual Studio Team Foundation Server (TFS) by configuring it to use Hypertext Transfer Protocol Secure (HTTPS) with Secure Sockets Layer (SSL). You can choose either to require this protocol, which maximizes the security of your deployment, or you can choose to support HTTPS with SSL in addition to the default protocol, HTTP. If you use Release Management for Visual Studio 2013, you can also configure that to use HTTPS with SSL, although you cannot configure it to support both HTTP and HTTPS with SSL.
+You can strengthen the security of your deployment of Azure DevOps Server by configuring it to use Hypertext Transfer Protocol Secure (HTTPS) with Secure Sockets Layer (SSL). You can choose either to require this protocol, which maximizes the security of your deployment, or you can choose to support HTTPS with SSL in addition to the default protocol, HTTP. If you use Release Management for Visual Studio 2013, you can also configure that to use HTTPS with SSL, although you cannot configure it to support both HTTP and HTTPS with SSL.
 
 Before you choose a configuration, review the advantages and disadvantages described here. After you identify the configuration that best meets the security needs of your organization, follow the steps in this topic to configure your deployment.
 
@@ -33,7 +33,7 @@ Before you choose a configuration, review the advantages and disadvantages descr
   -   [Requesting, installing, and configuring websites with a certificate](#request-install-config-websites)
   -   [Configuring Your Firewall](#config-firewall)
   -   [Configuring SQL Server Reporting Services](#config-sql-svr-reporting)
-  -   [Configuring HTTPS for TFS](#config-https)
+  -   [Configuring HTTPS for Azure DevOps Server](#config-https)
 
 - **Optional configuration tasks**
   -   [Testing Access to Your Deployment (Optional)](#test-access-to-deployment)
@@ -44,7 +44,7 @@ Before you choose a configuration, review the advantages and disadvantages descr
   -   [Updating the Build Configuration](#updating-build-configs)
 
 - **Release Management configuration**
-  -   [Release Management and TFS](#release-mgt-tfs)
+  -   [Release Management and Azure DevOps Server](#release-mgt-tfs)
   -   [Configure Release Management Server to use HTTPS](#config-release-mgt-server)
   -   [Making all the Release Management connections with HTTPS](#making-release-mgt-conn)
 
@@ -57,11 +57,11 @@ Before you choose a configuration, review the advantages and disadvantages descr
 <a name="advantages-supporting-tfs-ssl"></a>
 ## Advantages of Supporting HTTPS with SSL in Addition to HTTP
 
-If you configure your deployment of TFS to support both protocols, users whose computers have been configured for HTTPS with SSL will connect by using that protocol, which makes your deployment more secure. In addition, users whose computers are configured for HTTP only can still connect to your deployment. Although you should not deploy this configuration over public networks, you can gain the following advantages by continuing to support HTTP connections in a controlled network environment:
+If you configure your deployment of Azure DevOps Server to support both protocols, users whose computers have been configured for HTTPS with SSL will connect by using that protocol, which makes your deployment more secure. In addition, users whose computers are configured for HTTP only can still connect to your deployment. Although you should not deploy this configuration over public networks, you can gain the following advantages by continuing to support HTTP connections in a controlled network environment:
 
 -   You can increase the security of your deployment over time by configuring client computers for HTTPS with SSL as your schedule permits. If you take a phased approach, you do not need to upgrade all computers at the same time, and users whose computers have not yet been upgraded can still connect to the deployment.
 
--   You can more easily configure and maintain Team Foundation Server.
+-   You can more easily configure and maintain Azure DevOps Server.
 
 -   Calls from one Web service to another are faster over HTTP than over HTTPS with SSL. Therefore, you can continue to support HTTP connections from client computers for which the performance requirements outweigh the security risks.
 
@@ -70,14 +70,14 @@ If you configure your deployment of TFS to support both protocols, users whose c
 
 If you require HTTPS with SSL for all connections, you gain the following advantages:
 
--   All web connections between the application tier, the data tier, and the client tier for Team Foundation are more secure because they require certificates.
+-   All web connections between the application tier, the data tier, and the client tier for Azure DevOps are more secure because they require certificates.
 
 -   You can control access more easily by configuring certificates to expire when a project phase is expected to end.
 
 <a name="disadvantages-supporting-https"></a>
 ## Disadvantages of Supporting or Requiring HTTPS with SSL
 
-Before you configure TFS to support or require HTTPS with SSL, you should consider the following disadvantages:
+Before you configure Azure DevOps Server to support or require HTTPS with SSL, you should consider the following disadvantages:
 
 -   You might complicate ongoing administration tasks. For example, you might have to reconfigure your deployment to stop supporting HTTPS with SSL before you can apply service packs or other updates.
 
@@ -85,21 +85,21 @@ Before you configure TFS to support or require HTTPS with SSL, you should consid
 
 -   You must spend significant time setting up and testing either of these configurations, and troubleshooting your deployment will become more difficult.
 
--   If you continue to support both protocols, external connections might not be encrypted if the application tier for Team Foundation is not appropriately secured.
+-   If you continue to support both protocols, external connections might not be encrypted if the application tier for Azure DevOps is not appropriately secured.
 
 -   If you require HTTPS with SSL, your deployment's performance will be slower.
 
 ## Configuring Your Deployment to Support or Require HTTPS with SSL
 
-The procedures in this topic describe one process for requesting, issuing, and assigning certificates that are required for SSL connections in TFS. If you are using different software than what this topic describes, you might need to perform different steps. To support external connections to your TFS deployment, you must also enable Basic authentication, Digest authentication, or both in Internet Information Services (IIS).
+The procedures in this topic describe one process for requesting, issuing, and assigning certificates that are required for SSL connections in Azure DevOps Server. If you are using different software than what this topic describes, you might need to perform different steps. To support external connections to your Azure DevOps Server deployment, you must also enable Basic authentication, Digest authentication, or both in Internet Information Services (IIS).
 
 By following the procedures in this topic, you will accomplish the following tasks:
 
-1.  Obtain certificates for your deployment of Team Foundation Server and the websites that it uses.
+1.  Obtain certificates for your deployment of Azure DevOps Server and the websites that it uses.
 
 2.  Install and assign the certificates.
 
-3.  Configure Team Foundation Server.
+3.  Configure Azure DevOps Server.
 
 4.  Configure Team Foundation Build.
 
@@ -112,9 +112,9 @@ By following the procedures in this topic, you will accomplish the following tas
 
 To perform the procedures in this topic, you must first meet the following requirements:
 
--   The logical components in the data and application tiers of Team Foundation must be installed, although in the case of TFS itself, not necessarily configured. These tiers include IIS, SQL Server, and any additional components you might have integrated, such as SharePoint Products, Team Foundation Build, Release Management and SQL Server Reporting Services.
+-   The logical components in the data and application tiers of Azure DevOps must be installed, although in the case of Azure DevOps Server itself, not necessarily configured. These tiers include IIS, SQL Server, and any additional components you might have integrated, such as SharePoint Products, Team Foundation Build, Release Management and SQL Server Reporting Services.
 
-    The procedures in this topic refer to the server or servers that are running the logical components in the application tier for Team Foundation and the data tier for Team Foundation. The application and data tiers might be running on the same server or multiple servers, as described in [Team Foundation Server install guide](../install/get-started.md).
+    The procedures in this topic refer to the server or servers that are running the logical components in the application and data tiers for Azure DevOps. The application and data tiers might be running on the same server or multiple servers, as described in [Azure DevOps Server install guide](../install/get-started.md).
 
 -   You must have a certification authority (CA) from which you can issue certificates, or have subscribed to a third-party certifying authority with a trusted chain. This topic assumes that you are using Certificate Services as your CA, but you can use any CA that you have configured for your deployment, or certificates from a trusted third-party certification authority. If you do not have a certification authority, you can install Certificate Services and configure one. For more information, see the one of the following sets of documentation on the Microsoft website:
 
@@ -126,7 +126,7 @@ To perform the procedures in this topic, you must first meet the following requi
 
 * You need to be an administrator to configure all the components of your deployment for HTTPS and SSL. If you work in a distributed deployment where different people have administrative permissions for individual components, such as SharePoint, you'll need to coordinate with those people to complete configuration.
 
-* Specifically, you must belong to the **Team Foundation Administrators** group, and you must belong to the **Administrators** group on the application-tier, data-tier, and TFS Proxy server or servers for Team Foundation. 
+* Specifically, you must belong to the **Team Foundation Administrators** group, and you must belong to the **Administrators** group on the application-tier, data-tier, and Azure DevOps Proxy Server or servers for Team Foundation. 
 
 * To configure a build server, you must belong to the **Administrators** group on that server. 
  
@@ -136,7 +136,7 @@ To perform the procedures in this topic, you must first meet the following requi
  
 * If your deployment uses reporting, you must be a member of an administrative security group or have equivalent permissions individually set for configuring reporting services. 
  
-  For more information about permissions, see [Permission reference for Team Foundation Server](/azure/devops/security/permissions).
+  For more information about permissions, see [Permission reference for Azure DevOps Server](/azure/devops/security/permissions).
 
 <a name="assumptions"></a>
 ## Assumptions
@@ -154,7 +154,7 @@ The procedures in this topic assume that the following conditions are true:
 <a name="obtaining-certificate"></a>
 ## Obtaining a certificate
 
-Before you configure TFS to use HTTPS with SSL, you must obtain and install a server certificate for the servers in your deployment. To obtain a server certificate, you must install and configure your own certification authority, or you must use a certification authority from an external organization that you trust (third-party certificates).
+Before you configure Azure DevOps Server to use HTTPS with SSL, you must obtain and install a server certificate for the servers in your deployment. To obtain a server certificate, you must install and configure your own certification authority, or you must use a certification authority from an external organization that you trust (third-party certificates).
 
 For more information about how to install a certification authority, see the following topics on the Microsoft website:
 
@@ -169,7 +169,7 @@ After you enlist in a certification authority, you must either request a certifi
 
 -   Each application-tier server.
 
--   Each server that is running Team Foundation Server Proxy, if any are configured for your deployment.
+-   Each server that is running Azure DevOps Proxy Server, if any are configured for your deployment.
 
 -   Each server that is running Team Foundation Build Service as either a build controller or a build agent, if any are configured for your deployment.
 
@@ -202,15 +202,15 @@ In addition, the client computers in your deployment will need to be enrolled in
 
    -   Default Website
 
-   -   Team Foundation Server
+   -   Azure DevOps Server
 
-   -   TFS Proxy (if your deployment uses it)
+   -   Azure DevOps Server Proxy (if your deployment uses it)
 
    -   SharePoint Central Administration (if your deployment uses SharePoint)
 
    On each server that hosts a website that you want to configure, open **Internet Information Services (IIS) Manager**.
 
-5. Expand *ComputerName*, expand **Sites**, open the submenu for the website that you want to configure (for example, Team Foundation Server), and then choose **Bindings** from the Actions pane.
+5. Expand *ComputerName*, expand **Sites**, open the submenu for the website that you want to configure (for example, Azure DevOps Server), and then choose **Bindings** from the Actions pane.
 
    ![You must configure bindings for all sites](_img/ic712599.png)
 
@@ -223,8 +223,8 @@ In addition, the client computers in your deployment will need to be enrolled in
    In **Port**, type a different port number.
 
    > [!IMPORTANT]
-   > The default port number for SSL connections is 443, but you must assign a unique port number for each of the following sites: Default Website, Team Foundation Server, TFS Proxy (if your deployment uses it), and SharePoint Central Administration (if your deployment uses SharePoint).</p>
-   > <p>You should record the SSL port number for each website that you configure. You will need to specify these numbers in the administration console for Team Foundation.
+   > The default port number for SSL connections is 443, but you must assign a unique port number for each of the following sites: Default Website, Azure DevOps Server, Azure DevOps Server Proxy (if your deployment uses it), and SharePoint Central Administration (if your deployment uses SharePoint).</p>
+   > <p>You should record the SSL port number for each website that you configure. You will need to specify these numbers in the administration console for Azure DevOps.
 
    In **SSL Certificate**, choose the certificate that you imported, and then choose **OK** and close the Bindings page.
 
@@ -246,30 +246,30 @@ In addition, the client computers in your deployment will need to be enrolled in
 You must configure your firewall to allow traffic through the SSL ports that you just specified in IIS. For more information, see the documentation for your firewall.
 
 > [!IMPORTANT]
-> Make sure to test traffic on the ports you specified from another computer. If you cannot access the default website or Team Web Access, double-check the port settings you specified for these websites in IIS, and make sure that the firewall is configured appropriately to allow traffic on those ports.
+> Make sure to test traffic on the ports you specified from another computer. If you cannot access the default website or web portal, double-check the port settings you specified for these websites in IIS, and make sure that the firewall is configured appropriately to allow traffic on those ports.
 
 <a name="config-sql-svr-reporting"></a>
 ## Configure SQL Server Reporting Services
 
-If your deployment uses reporting, you must configure SQL Server Reporting Services to support HTTPS with SSL and to use the port that you specified in IIS for Team Foundation Server. Otherwise, the report server will not function correctly for your deployment. For more information, see [Configuring a Report Server for Secure Sockets Layer (SSL) Connections](https://technet.microsoft.com/library/ms345223(v=sql.110).aspx).
+If your deployment uses reporting, you must configure SQL Server Reporting Services to support HTTPS with SSL and to use the port that you specified in IIS for Azure DevOps Server. Otherwise, the report server will not function correctly for your deployment. For more information, see [Configuring a Report Server for Secure Sockets Layer (SSL) Connections](https://technet.microsoft.com/library/ms345223(v=sql.110).aspx).
 
 > [!TIP]
 > If your deployment does not use reporting, you can skip this procedure.
 
 <a name="config-https"></a>
-## Configuring HTTPS for TFS
+## Configuring HTTPS for Azure DevOps Server
 
-Follow these steps to configure your TFS deployment with the HTTPS ports and values that you configured in IIS for the default and Team Foundation Server websites.
+Follow these steps to configure your Azure DevOps Server deployment with the HTTPS ports and values that you configured in IIS for the default and Azure DevOps Server websites.
 
-### To reconfigure Team Foundation Server to use or require HTTPS
+### To reconfigure Azure DevOps Server to use or require HTTPS
 
-1. Open the administration console for Team Foundation and browse to the application tier node.
+1. Open the administration console for Azure DevOps and browse to the application tier node.
 
 2. In **Application Tier Summary**, choose **Change URLs**.
 
    The **Change URLs** window opens.
 
-3. In **Notification URL**, type the HTTPS URL that you configured for the Team Foundation Server website in IIS.
+3. In **Notification URL**, type the HTTPS URL that you configured for the Azure DevOps Server website in IIS.
 
    For example, you might have configured the website to use port 444. In this case, you type https://<em>ServerName</em>:444/tfs. Make sure that you use the fully qualified domain name of the server instead of localhost.
 
@@ -277,7 +277,7 @@ Follow these steps to configure your TFS deployment with the HTTPS ports and val
 
 4. Choose **Test**. Don't choose **OK** if the test doesn't pass. Go back and make sure that you entered the correct URL and port information, that all firewalls are configured to allow traffic on those ports, and that the site is available and running in IIS Manager.
 
-5. To require HTTPS, choose **Use** in **Server URL**, and then type the HTTPS URL that you configured for the Team Foundation Server website.
+5. To require HTTPS, choose **Use** in **Server URL**, and then type the HTTPS URL that you configured for the Azure DevOps Server website.
 
    Make sure that you use the fully qualified domain name of the server instead of localhost.
 
@@ -318,14 +318,14 @@ You should test whether your changes are functioning as you expect. This step is
 
 1.  On a computer that does not host the application tier, open a web browser and navigate to a team home page.
 
-2.  Verify whether you can access your teams and projects from Team Web Access, including the administration pages.
+2.  Verify whether you can access your teams and projects from the web portal, including the administration pages.
 
-3.  If you cannot access your deployment through Team Web Access, review the steps that you just completed, and make sure that you have made all configuration changes correctly.
+3.  If you cannot access your deployment through the web portal, review the steps that you just completed, and make sure that you have made all configuration changes correctly.
 
 <a name="config-deply-require-https"></a>
 ## Configuring Your Deployment to Require HTTPS with SSL (Optional)
 
-You can require all connections to the TFS application tier to use HTTPS with SSL. This additional security is optional but recommended.
+You can require all connections to the Azure DevOps Server application tier to use HTTPS with SSL. This additional security is optional but recommended.
 
 ### To require SSL connections
 
@@ -391,11 +391,11 @@ To configure Team Foundation Build for SSL connections, you must configure the b
 9.  In the **Build Service Properties** dialog box, choose **Start**.
 
 <a name="release-mgt-tfs"></a>
-## Release Management and TFS
+## Release Management and Azure DevOps Server
 
-You can deploy Release Management with HTTPS completely separate from TFS, regardless of the protocol you’re using for TFS, or if you’re using TFS at all. However you decide to deploy Release Management, the instructions for creating a secure deployment for Release Management are very similar to what’s set down here for TFS. The big difference is the procedure for binding the HTTPS protocol to the Release Management website, which is covered below.
+You can deploy Release Management with HTTPS completely separate from Azure DevOps Server, regardless of the protocol you’re using for Azure DevOps Server, or if you’re using Azure DevOps Server at all. However you decide to deploy Release Management, the instructions for creating a secure deployment for Release Management are very similar to what’s set down here for Azure DevOps Server. The big difference is the procedure for binding the HTTPS protocol to the Release Management website, which is covered below.
 
-To deploy Release Management with HTTPS, use the task list below. If you’re configuring Release Management with TFS, skip over any tasks you might have already completed for TFS configuration.
+To deploy Release Management with HTTPS, use the task list below. If you’re configuring Release Management with Azure DevOps Server, skip over any tasks you might have already completed for Azure DevOps Server configuration.
 
 1.  Obtain a certificate. For more information, see [Obtaining a Certificate](#obtaining-certificate).
 
@@ -447,9 +447,9 @@ Release Management supports either the HTTPS or HTTP protocol but not both proto
 <a name="making-release-mgt-conn"></a>
 ### Making all the Release Management connections with HTTPS
 
-Once the certificates have been installed on all the computers running Release Management Client and Microsoft Deployment Agent, you can connect the computers to the Release Management Server over SSL. If TFS is running HTTPS with SSL, you must configure the TFS connection to use HTTPS.
+Once the certificates have been installed on all the computers running Release Management Client and Microsoft Deployment Agent, you can connect the computers to the Release Management Server over SSL. If Azure DevOps Server is running HTTPS with SSL, you must configure the Azure DevOps Server connection to use HTTPS.
 
-Setting up a TFS connection for the first time? There are some additional steps and some account permission requirements. For more information, see [Connect Release Management to TFS](/azure/devops/build-release/archive/release/previous-version/install-release-management/connect-to-tfs)
+Setting up a Azure DevOps Server connection for the first time? There are some additional steps and some account permission requirements. For more information, see [Connect Release Management to Azure DevOps Server](/azure/devops/build-release/archive/release/previous-version/install-release-management/connect-to-tfs)
 
 ### Connect Release Management Client to Release Management Server using HTTPS
 
@@ -474,7 +474,7 @@ Setting up a TFS connection for the first time? There are some additional steps 
 
 ![Connect agent using HTTPS/SSL](_img/ic726728.png)
 
-### Connect Release Management Server to TFS using HTTPS
+### Connect Release Management Server to Azure DevOps Server using HTTPS
 
 1.  Launch the Release Management Client.
 
@@ -482,15 +482,15 @@ Setting up a TFS connection for the first time? There are some additional steps 
 
 3.  Change the protocol of the connection to HTTPS, update the port (if necessary) and choose **Verify**.
 
-![Connect to TFS using HTTPS/SSL](_img/ic728936.png)
+![Connect to Azure DevOps Server using HTTPS/SSL](_img/ic728936.png)
 
 <a name="config-client-computers"></a>
 ## Configuring Client Computers
 
-On every client computer from which users access Team Foundation, you must install the certificate locally and clear the client cache for any user who has accessed Team Foundation from that computer. Otherwise, users will not be able to connect to Team Foundation from that computer. For more information, see [Manage Trusted Root Certificates](http://go.microsoft.com/fwlink/?LinkId=164939).
+On every client computer from which users access Azure DevOps, you must install the certificate locally and clear the client cache for any user who has accessed Azure DevOps from that computer. Otherwise, users will not be able to connect to Azure DevOps from that computer. For more information, see [Manage Trusted Root Certificates](http://go.microsoft.com/fwlink/?LinkId=164939).
 
 > [!IMPORTANT]
-> Do not follow this procedure for computers that are running both Team Foundation Server and one or more clients of Team Foundation.
+> Do not follow this procedure for computers that are running both Azure DevOps Server and one or more clients of Azure DevOps.
 
 ### To install the certificate on a client computer
 
@@ -515,18 +515,18 @@ On every client computer from which users access Team Foundation, you must insta
 6.  Repeat these steps for the account of every user who has accessed Team Foundation from that computer.
 
     > [!NOTE]
-    > You might want to distribute instructions for clearing the cache to all of your Team Foundation users so that they can clear the caches for themselves.
+    > You might want to distribute instructions for clearing the cache to all of your Azure DevOps users so that they can clear the caches for themselves.
 
 ### To connect client computers to the reconfigured deployment
 
--   In Visual Studio, connect to Team Foundation Server by using the new HTTPS URL.
+-   In Visual Studio, connect to Azure DevOps Server by using the new HTTPS URL.
 
-    For more information, see [Connect to projects in Team Foundation Server](/azure/devops/user-guide/connect-team-projects).
+    For more information, see [Connect to projects in Azure DevOps Server](/azure/devops/user-guide/connect-team-projects).
 
 <a name="config-git"></a>
 ## Configuring Git
 
-By default, projects that use Git for version control will fail to validate the SSL certificate you have configured for TFS. This is because unlike TFS and Visual Studio, Git does not recognize the Windows certificate store. Instead, it uses OpenSSL for its certificate store. In order to use a Git repository for projects configured with SSL, you'll need to configure Git with the certificate at the root of the certification chain for your TFS 2013 deployment. This is a client configuration task that only applies to Git repository projects.
+By default, projects that use Git for version control will fail to validate the SSL certificate you have configured for Azure DevOps Server. This is because unlike Azure DevOps Server and Visual Studio, Git does not recognize the Windows certificate store. Instead, it uses OpenSSL for its certificate store. In order to use a Git repository for projects configured with SSL, you'll need to configure Git with the certificate at the root of the certification chain for your TFS 2013 deployment. This is a client configuration task that only applies to Git repository projects.
 
 For more information about how Git network operations work in Visual Studio 2013, see this [blog post](http://blogs.msdn.com/b/phkelley/archive/2013/10/20/git-network-operations-in-visual-studio-2013.aspx).
 
@@ -539,7 +539,7 @@ For more information about how Git network operations work in Visual Studio 2013
 
 -   Make sure that the required certificate has been installed and configured on the computer, as per above.
 
--   In your supported web browser, extract the TFS root certificate as a base64-encoded X.509 CER/PEM file.
+-   In your supported web browser, extract the Azure DevOps Server root certificate as a base64-encoded X.509 CER/PEM file.
 
 -   Create a private copy of the Git root certificate store and add that to your private user copy of the store.
 

@@ -1,12 +1,12 @@
 ---
 title: Set up deployment groups
-titleSuffix: Azure DevOps Server & TFS 
+titleSuffix: Azure DevOps Server
 description: Set up groups for use in Azure DevOps on-premises
 ms.topic: conceptual
 ms.manager: jillfra
 ms.author: aaronha
 author: aaronhallberg
-ms.date: 09/01/2016
+ms.date: 05/24/2019
 ms.prod: devops-server
 ms.technology: tfs-admin
 ---
@@ -15,20 +15,20 @@ ms.technology: tfs-admin
 
 [!INCLUDE [temp](../_shared/version-tfs-all-versions.md)]
 
-Managing users in TFS is much easier if you create Windows or Active Directory groups for them, particularly if your deployment includes SharePoint Foundation and SQL Server Reporting Services.
+Managing users in Azure DevOps Server is much easier if you create Windows or Active Directory groups for them, particularly if your deployment includes SharePoint Foundation and SQL Server Reporting Services.
 
-## Users, groups, and permissions in Team Foundation Server deployments
+## Users, groups, and permissions in Azure DevOps Server deployments
 
-Team Foundation Server, SharePoint Products, and SQL Server Reporting Services all maintain their own information about groups, users, and permissions. To make managing users and permissions across these programs simpler, you can create groups of users with similar access requirements in the deployment, give those groups appropriate access in the different software programs, and then just add or remove users from a group as needed. This is much easier than maintaining individual users or groups of users separately in three separate programs.
+Azure DevOps Server, SharePoint Products, and SQL Server Reporting Services all maintain their own information about groups, users, and permissions. To make managing users and permissions across these programs simpler, you can create groups of users with similar access requirements in the deployment, give those groups appropriate access in the different software programs, and then just add or remove users from a group as needed. This is much easier than maintaining individual users or groups of users separately in three separate programs.
 
 If your server is in an Active Directory domain, one option is to create specific Active Directory groups to manage your users, like a group of developers and testers for all projects in the project collection, or a group of users who can create and administer projects in the collection. Similarly, you can create an Active Directory account for services that can't be configured to use the Network Service system account as the service account. To do so, create an Active Directory account for SharePoint Foundation and as the read-access data source account for reports in SQL Server Reporting Services.
 
 > [!IMPORTANT]
-> If you decide to use Active Directory groups in TFS, consider creating specific ones whose purpose is dedicated to user management in TFS. Using previously existing groups that were created for another purpose, particularly if they are managed by others who are not familiar with TFS, can lead to unexpected user consequences when membership changes to support some other function.
+> If you decide to use Active Directory groups in Azure DevOps Server, consider creating specific ones whose purpose is dedicated to user management in Azure DevOps Server. Using previously existing groups that were created for another purpose, particularly if they are managed by others who are not familiar with Azure DevOps Server, can lead to unexpected user consequences when membership changes to support some other function.
 
-The default choice during installation is to use the Network Service system account as the service account for Team Foundation Server and SQL Server. If you want to use a specific account as the service account for security purposes or other reasons, such as a scaled-out deployment, you can. You might also want to create a specific Active Directory account to use as the service account for SharePoint Foundation and as the data source reader account for SQL Server Reporting Services.
+The default choice during installation is to use the Network Service system account as the service account for Azure DevOps Server and SQL Server. If you want to use a specific account as the service account for security purposes or other reasons, such as a scaled-out deployment, you can. You might also want to create a specific Active Directory account to use as the service account for SharePoint Foundation and as the data source reader account for SQL Server Reporting Services.
 
-If your server is in an Active Directory domain but you don't have permissions to create Active Directory groups or accounts, or if you're installing your server in a workgroup instead of a domain, you can create and use local groups to manage users across SQL Server, SharePoint Foundation, and Team Foundation Server. Similarly, you can create a local account to use as the service account. However, keep in mind that local groups and accounts are not as robust as domain groups and accounts. For example, in the event of a server failure, you would need to recreate the groups and accounts from scratch on the new server. If you use Active Directory groups and accounts, the groups and accounts will be preserved even if the server hosting Team Foundation Server fails.
+If your server is in an Active Directory domain but you don't have permissions to create Active Directory groups or accounts, or if you're installing your server in a workgroup instead of a domain, you can create and use local groups to manage users across SQL Server, SharePoint Foundation, and Azure DevOps Server. Similarly, you can create a local account to use as the service account. However, keep in mind that local groups and accounts are not as robust as domain groups and accounts. For example, in the event of a server failure, you would need to recreate the groups and accounts from scratch on the new server. If you use Active Directory groups and accounts, the groups and accounts will be preserved even if the server hosting Azure DevOps Server fails.
 
 For example, after reviewing business requirements for the new deployment and the security requirements with the project managers, you might decide to create three groups to manage the majority of users in the deployment:
 
@@ -62,7 +62,7 @@ Later on, as the deployment expands, you might decide to create other groups.
 
 ## Q & A
 
-**Q: Can I use groups to restrict access to projects or features in TFS?**
+**Q: Can I use groups to restrict access to projects or features in Azure DevOps Server?**
 
 **A:** Yes, you can. You can create specific groups for [granting or restricting access to select features, functions, and projects](/azure/devops/security/restrict-access), for [managing access levels](/azure/devops/security/change-access-levels), and other purposes.
 
