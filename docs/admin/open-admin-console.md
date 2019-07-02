@@ -159,12 +159,16 @@ during an Azure DevOps upgrade, you can view the file version number of the **Mi
    information under **File Version**.
 
 <a id="public-url" />
+
 ## View or change the Public URL
+
 Prior to changing the Public URL, review <a href="websitesettings.md" data-raw-source="[Web site settings and security for Azure DevOps on-premises](websitesettings.md)">Web site settings and security for Azure DevOps on-premises</a>. 
 
-&gt; [!IMPORTANT]<br/>&gt; Changing the Public URL impacts your end users. While we recommend converting from HTTP to HTTPS bindings, Visual Studio client connections will need to be re-established and old bookmarks will no longer resolve. Coordinate changes of this sort with your users to avoid significant disruption.
+> [!IMPORTANT]
+> Changing the Public URL impacts your end users. While we recommend converting from HTTP to HTTPS bindings, Visual Studio client connections will need to be re-established and old bookmarks will no longer resolve. Coordinate changes of this sort with your users to avoid significant disruption.
 
-0. From the **Azure DevOps Administration Console**>**Application Tier** node. The Public URL is listed under the **Application Tier Summary** section. 
+1. From the **Azure DevOps Administration Console**>**Application Tier** node. The Public URL is listed under the **Application Tier Summary** section. 
+
     > [!div class="mx-imgBorder"]  
     > ![Azure DevOps Server Administration Console, Application Tier, Change Public URL](_img/app-tier/find-public-url.png)  
 
@@ -188,5 +192,5 @@ Prior to changing the Public URL, review <a href="websitesettings.md" data-raw-s
 
 ## Related articles
 
+- [Add server-level administrators ](add-administrator.md)
 - [Administrative tasks quick reference](admin-quick-ref.md)
-- 
