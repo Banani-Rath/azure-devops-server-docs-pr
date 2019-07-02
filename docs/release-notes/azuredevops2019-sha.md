@@ -5,7 +5,7 @@ keywords: azuredevops
 author: egeaney
 ms.author: egeaney
 manager: jeffbe
-ms.date: 11/19/2018
+ms.date: 07/02/2019
 ms.topic: release-article, localize
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-articles
@@ -28,6 +28,12 @@ Use the Microsoft File Checksum Integrity Verifier tool to compute the SHA hashe
 ****
 
 ### SHA Hashes for Azure DevOps Server 2019 Products
+
+####  Azure DevOps Server 2019 Update 1 RC1
+
+| Language |  SHA-256 Hash |                                      
+| ------------------------------- | -----------------------------------------
+|Multiple Languages | 792B0EE98E36D77F56C7739B1CE68A173D027CA1D7440F5C08E43203216FC562
 
 ####  Azure DevOps Server 2019.0.1 RTW
 
