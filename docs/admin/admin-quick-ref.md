@@ -9,7 +9,7 @@ author: aaronhallberg
 ms.prod: devops-server
 ms.technology: tfs-admin
 monikerRange: '>= tfs-2013'
-ms.date: 03/05/2019
+ms.date: 05/31/2019
 --- 
 
 # Administrative tasks quick reference 
@@ -129,6 +129,10 @@ Before you add a a project or project collection, review the information provide
 </td>
 
 <td width="50%">
+<h3>Analytics (valid for Azure DevOps Server 2019)</h3>
+<ul>
+<li><a href="/azure/devops/report/dashboards/analytics-extension">Enable or install Analytics</a></li>
+</ul>
 <h3>Extensions</h3>
 <ul>
 <li><a href="/azure/devops/marketplace/install-extension?toc=/azure/devops/server/toc.json&amp;bc=/azure/devops/server/breadcrumb/toc.json" data-raw-source="[Install and manage Marketplace extensions](/azure/devops/marketplace/install-extension?toc=/azure/devops/server/toc.json&amp;bc=/azure/devops/server/breadcrumb/toc.json)">Install and manage Marketplace extensions</a></li>
