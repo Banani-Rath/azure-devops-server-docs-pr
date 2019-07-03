@@ -61,6 +61,7 @@ Azure DevOps Server 2019 introduces many new features. Some of the highlights in
 
 You can also jump to individual sections to see the new features:
 
+* [General](#general)
 * [Boards](#boards)
 * [Repos](#repos)
 * [Pipelines](#pipelines)
@@ -70,6 +71,15 @@ You can also jump to individual sections to see the new features:
 * [Reporting](#reporting)
 
 ****
+
+## General
+
+### Dark Theme
+
+The dark theme has been a popular feature on Azure DevOps Services and it is now available in Azure DevOps Server. You can turn on dark theme by selecting **Theme** from the menu underneath your avatar in the top right of every page.
+
+> [!div class="mx-imgBorder"]
+> ![Dark theme](_img/142_08.png)
 
 ## Boards
 
@@ -826,6 +836,38 @@ Now, you can create richer content in wiki using HTML tags. Check out what you c
 
    > [!NOTE]
    > This tag is not supported in Edge and Internet Explorer browsers.
+
+### Improved table creation and editing
+
+Until now, creating and editing tables in a wiki was difficult. We've made changes to make it easier for you to add and manage tables in your wiki. 
+
+1. Create a table from grid
+
+    You no longer have to remember the markdown table syntax. Now you can create a markdown table easily by selecting from a 15 X 15 grid. Just select the required number of columns and rows to insert a table with a single click.
+
+   > [!div class="mx-imgBorder"]
+   > ![Badge](_img/152_03.png)
+
+    This feature has been prioritized based on the following suggestion tickets:
+
+   * [Table view for wiki](https://developercommunity.visualstudio.com/content/idea/365781/table-view-for-wiki.html)
+   * [Make it simple to insert tables in wiki](https://developercommunity.visualstudio.com/content/idea/366218/make-it-simple-to-insert-tables-in-wiki-it-is-ridi-1.html)
+
+2. Better table readability
+
+    You can now toggle **word wrap** for your editor to have better readability of your tables. Disabling word wrap adds a scroll bar which lets you see the content of large tables easier.
+
+   > [!div class="mx-imgBorder"]
+   > ![Badge](_img/152_04.png)
+
+3. Autoformating markdown tables
+
+    You no longer have to add spaces to align your markdown columns. With the **Format tables** button, your markdown tables are automatically formatted by adding spaces to the cells to align the columns. If you have large tables, use it with **disable word wrap** to make the tables easier to read.​
+
+   > [!div class="mx-imgBorder"]
+   > ![Badge](_img/152_05.png "Wiki page")
+
+    You can also use the **Ctrl + Shift + F** shortcut to format your tables.
 
 ## Reporting
 
