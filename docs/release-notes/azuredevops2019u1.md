@@ -194,6 +194,22 @@ When reviewing the Kanban board yourself or as a team, you often have questions 
 
 ## Repos
 
+### Draft pull requests
+
+In order to prevent pull requests from being completed before they're ready and to make it easy to create work in progress that may not involve everyone, we now support draft pull requests.
+
+Draft pull requests can be created by selecting **Create as draft** from the **Create** button drop down when creating a pull request.
+
+> [!div class="mx-imgBorder"]
+> ![Create PR draft](_img/143_02.png)
+
+Once you have created a draft pull request, you will see a badge indicating its status next to the title. 
+
+> [!div class="mx-imgBorder"]
+> ![Badge](_img/143_03.png)
+
+Draft pull requests do not include reviewers or run builds by default but allow you to manually add reviewers and run builds. To promote the pull request to a normal pull request, simply click the **Publish** button from the pull request detail page.
+
 ### Rerun expired build for auto-complete pull requests
 
 Azure Repos will now automatically queue expired builds that have been triggered by a pull request policy. This applies to pull requests that have passed all other policies and are set to auto-complete.
