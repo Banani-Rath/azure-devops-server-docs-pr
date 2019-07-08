@@ -1,7 +1,7 @@
 ---
 title: Configure a backup schedule and plan  
-titleSuffix: Azure DevOps Server & TFS
-description: Configure a backup schedule and plan for Azure DevOps Server or Team Foundation Server
+titleSuffix: Azure DevOps Server
+description: Configure a backup schedule and plan for Azure DevOps Server
 ms.prod: devops-server
 ms.technology: tfs-admin
 toc: show
@@ -10,34 +10,32 @@ ms.manager: jillfra
 ms.author: aaronha
 author: aaronhallberg
 monikerRange: '>= tfs-2013'
-ms.date: 03/05/2019
+ms.date: 05/24/2019
 ---
 
-# Configure a backup schedule and plan for Team Foundation Server
+# Configure a backup schedule and plan
 
 [!INCLUDE [temp](../../_shared/version-tfs-all-versions.md)]
 
-If you administer systems, you're probably already familiar with all the
-reasons why a good backup set is crucial. No one wants to be the
-administrator of a server that goes down without a complete set of
-backups in place. Fortunately, you can back up data for your Azure DevOps on-premises deployment by using the
+You can back up data for your Azure DevOps Server deployment by using the
 Scheduled Backups tool in the administration console. If you regularly
 back up [these databases](backup-db-architecture.md), you reduce the risk of losing productivity or
 data because of equipment failure or other unexpected events. 
 
 ::: moniker range="<= tfs-2017"
+
 Unlike
 previous methods, this tool also backs up the SharePoint databases that
-TFS uses, if TFS is configured to use SharePoint.
+Azure DevOps Server uses, if Azure DevOps Server is configured to use SharePoint.
+
 ::: moniker-end
 
 > [!Important]
 > If you are using the Enterprise or Datacenter edition of SQL Server and
 > you want to restore the collection and configuration databases to a
 > Standard edition of SQL Server, then before you make the backup, you
-> must turn off SQL Server compression by following the steps in the
+> must turn off SQL Server compression by following the steps in this
 > [Microsoft Knowledge Base article](http://go.microsoft.com/fwlink/?LinkId=253758).
-
 
 ## Create a backup
 
@@ -51,12 +49,12 @@ TFS uses, if TFS is configured to use SharePoint.
     that you want to back up, and Full Control on the network share,
     folder, or storage device where the backups will be kept.
 
-2.  Open the Azure DevOps Server Administration Console, choose the **Scheduled Backups** page, and launch the wizard for
+2.  Open the Azure DevOps Server Administration Console, select the **Scheduled Backups** page, and launch the wizard for
     creating a backup schedule.
 
     ![The Schedule Backups node in the console](../_img/console-sched-backup.png)
 
-3.  Backups must be stored on a network-accessible location, and both the account that configures the scheduled backup and the Azure DevOps service TFS must have Full Control for that location. You can
+3.  Backups must be stored on a network-accessible location, and both the account that configures the scheduled backup and the Azure DevOps Server must have Full Control for that location. You can
     also choose how long a backup set will be kept and the file
     extensions used for backup types.
 
@@ -79,14 +77,16 @@ TFS uses, if TFS is configured to use SharePoint.
     ![The wizard confirms success](../_img/sched-backup-wiz-confirm.png)
 
 7.  Once you've configured the scheduled backups, you can allow them
-    to run as scheduled. You can also choose to take an immediate
+    to run as scheduled. 
+
+    You can also take an immediate
     backup, which will back up your data right away while leaving your
     plan in place. This is particularly recommended if your scheduled
     backups will not occur for a significant amount of time, or if you
     do not already have a recent backup available.
 
 > [!Note]
-> If another administrator chooses to take an immediate backup, that 
+> For another administrator to take an immediate backup, that 
 > administrator must also have Full Control on the location where the
 > backups are saved.                                                 
 
@@ -96,7 +96,7 @@ TFS uses, if TFS is configured to use SharePoint.
 ### Q: Where can I learn more about backups?
 
 **A:** You can learn more about the kinds of
-backups available in [Understand backing up Team Foundation Server](backup-db-architecture.md)
+backups available in [Understand backing up Azure DevOps Server](backup-db-architecture.md).
 
 ### Q: I don't want to use the Scheduled Backups tool. Are there other methods for backing up the system?
 
