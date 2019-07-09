@@ -37,7 +37,7 @@ Direct upgrade to Azure DevOps Server is supported from Team Foundation Server 2
 
 ## **Azure DevOps Server 2019.0.1 Patch 1 Release Date: July 9, 2019**
 
-We have released a [security patch](https://aka.ms/azdev2019.0.1patch) for Azure DevOps Server 2019.0.1 that fixes the following bugs. Please see the [blog post]https://devblogs.microsoft.com/devops/june-security-release-patches-available-for-azure-devops-server-and-team-foundation-server/) for more information.
+We have released a [security patch](https://aka.ms/azdev2019.0.1patch) for Azure DevOps Server 2019.0.1 that fixes the following bugs. Please see the [blog post]https://devblogs.microsoft.com/devops/july-security-release-patches-available-for-azure-devops-server-and-team-foundation-server/) for more information.
 * **[CVE-2019-1072](https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2019-1072)**: Remote code execution vulnerability in work item tracking
 * **[CVE-2019-1076](https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2019-1076)**: Cross site scripting (XSS) vulnerability in pull requests
 
