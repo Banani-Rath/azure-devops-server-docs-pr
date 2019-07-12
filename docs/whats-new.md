@@ -19,7 +19,7 @@ ms.date: 03/05/2019
 
 You can use Azure DevOps Server, previously named Visual Studio Team Foundation Server (TFS), to manage your product lifecycle, reduce risks, and improve team efficiency. Updates are made every few weeks to the cloud-hosted version, Azure DevOps Services. These updates are then rolled up and made available through quarterly updates to the on-premises Azure DevOps Server and TFS. To understand the differences between the hosted and on-premises versions, see [A tour of services provided with Azure DevOps Services and TFS](/azure/devops/user-guide/services).
 
-To learn about what's new with the cloud service offering, see [Azure DevOps Services features update](/visualstudio/releasenotes/tfs2018-relnotes). 
+To learn about what's new with the cloud service offering, see [Azure DevOps Services features update](https://aka.ms/azuredevops/releasenotes). 
 
 You can download the latest version of Azure DevOps Server from the [Visual Studio download page](https://www.visualstudio.com/downloads/).
 
