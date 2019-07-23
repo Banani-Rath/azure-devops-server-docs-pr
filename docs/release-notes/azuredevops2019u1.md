@@ -5,7 +5,7 @@ keywords: azure devops
 author: egeaney
 ms.author: egeaney
 manager: egeaney
-ms.date: 07/02/2019
+ms.date: 07/23/2019
 ms.topic: release-article
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-articles
@@ -32,6 +32,9 @@ In this article, you will find information regarding the newest release for Azur
 To learn more, see [Azure DevOps Server Requirements](https://go.microsoft.com/fwlink/?LinkId=809018 "Azure DevOps Server Requirements"). Visit the <a href="https://visualstudio.microsoft.com/downloads" target="blank">visualstudio.com/downloads</a> page to download Team Foundation Server products. 
 
 Direct upgrade to Azure DevOps Server 2019 Update 1 is supported from Azure DevOps Server 2019 or Team Foundation Server 2012 and newer. If your TFS deployment is on TFS 2010 or earlier, you need to perform some interim steps before upgrading to Azure DevOps Server 2019 Update 1. Please see the <a href="https://docs.microsoft.com/tfs/server/install/get-started" target="blank">Install page</a> for more information. 
+
+****
+## **RC2 Release Date: July 23, 2019**
 
 ****
 
