@@ -5,7 +5,7 @@ keywords: azure devops
 author: egeaney
 ms.author: egeaney
 manager: egeaney
-ms.date: 07/23/2019
+ms.date: 07/24/2019
 ms.topic: release-article
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-articles
@@ -35,6 +35,8 @@ Direct upgrade to Azure DevOps Server 2019 Update 1 is supported from Azure DevO
 
 ****
 ## **RC2 Release Date: July 23, 2019**
+
+RC2 includes several bug fixes since RC1 and is the final planned prerelease.
 
 ****
 
