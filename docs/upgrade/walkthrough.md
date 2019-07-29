@@ -8,7 +8,7 @@ ms.manager: jillfra
 ms.author: aaronha
 author: aaronhallberg
 ms.topic: conceptual
-monikerRange: '>= tfs-2015'
+monikerRange: '<= tfs-2015'
 ms.date: 08/04/2016
 ---
 
