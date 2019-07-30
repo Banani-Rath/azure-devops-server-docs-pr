@@ -31,7 +31,9 @@ You have several choices in how to deploy Azure DevOps Server 2019, previously n
 	Chooose this type of deployment, which involves multiple application and data tiers, to provide better performance for very large teams and teams with very heavy usage. By using more than one server, you improve high availability and disaster recovery ability.
 
 ::: moniker range=">= azure-devops-2019"
+
 <a id="reporting-choices" />
+
 ## Reporting configuration choices
 
 Azure DevOps Server supports the Analytics Service which can be used in place of SQL Server Reporting Services or along side it. However, if you plan to use the Inheritance process model to customize work tracking, you can only use the Analytics Service for reporting, the project collection must not be configured to support reporting. 
@@ -74,6 +76,7 @@ If you need to close the Configuration Center, you can return to it. Start the A
 ::: moniker-end
 
 ::: moniker range=">= tfs-2015 <= tfs-2018"
+
 <!--- **TFS** -->
 When installation finishes, the installer starts the Team Foundation Server Configuration Center. For TFS 2017 and later versions, a unified wizard supports all TFS configurations, such as new installations, upgrades, and application-tier-only scenarios. For TFS 2015 and earlier versions, select the appropriate wizard for your scenario. 
 
@@ -88,6 +91,7 @@ If you need to close the Configuration Center, you can return to it. Start the T
 
 <a id="basic-advanced" /> 
 ::: moniker range=&quot;&gt;= azure-devops-2019&quot;
+
 ## Configuration options: Basic, Advanced and Azure 
 
 The Server Configuration Wizard supports two main configuration options: **Basic**,  **Advanced**, and **Azure**.
@@ -96,26 +100,35 @@ The Server Configuration Wizard supports two main configuration options: **Basic
 ::: moniker range=">= tfs-2015 <= tfs-2018"
 
 ## Configuration options: Basic and Advanced
+
 The Server Configuration Wizard supports two main configuration options: **Basic** and **Advanced**.
 ::: moniker-end
 
 ### Basic
+
 Choose **Basic** when you want to configure the application-tier server and install and configure the **Search** extension, or configure some other third party search feature. Installing and configuring Search supports Code, Work Item and Wiki search features. To learn more, see [Configure search](/azure/devops/project/search/administration#config-tfs).
 
 ### Advanced
+
 ::: moniker range=">= tfs-2018"
+
 Choose **Advanced** when you want to configure your deployment to support SQL Server Analysis Services and SQL Server Reporting Services, in addition to the features configured with the **Basic** option. 
+
 ::: moniker-end
 
 ::: moniker range=">= tfs-2015 <= tfs-2017"
+
 Choose **Advanced** when you want to configure your deployment to support these additional features, in addition to the features configured with the **Basic** option: 
 - SQL Server Analysis Services
 - SQL Server Reporting Services
 - SharePoint integration 
+
 ::: moniker-end
 
 ::: moniker range=">= azure-devops-2019"
+
 ### Azure 
+
 Choose **Azure** when you have installed Azure DevOps Server on an Azure Virtual Machine and want to configure it using Azure SQL Database. For details, see [Use Azure SQL Database with Azure DevOps Server](install-azure-sql.md). 
 
 <!--- QUESTION: Any restrictions on reporting with this option? -->

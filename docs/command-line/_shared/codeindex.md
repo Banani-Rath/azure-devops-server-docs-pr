@@ -2,9 +2,107 @@
 ms.topic: include
 ---
 
+::: moniker range="azure-devops-2019"
+
+Use the **codeIndex** command to manage code indexing on Azure DevOps Server.
+For example, you might want to reset the index to fix CodeLens information, or turn off indexing to investigate server performance issues.
+
+```
+TfsConfig codeIndex /indexingStatus | /setIndexing:[on|off|keepupOnly] |
+	/ignoreList:[ add | remove | removeAll | view ] <serverPath> |
+	/listLargeFiles [/fileCount:FileCount] [/minSize:MinSize] |
+	/reindexAll | 
+    /destroyCodeIndex [/noPrompt] |
+	/temporaryDataSizeLimit:[ view | <SizeInGBs> | disable ] |
+	/indexHistoryPeriod:[ view | all | <NumberOfMonths> ] [/collectionName:<collectionName> | /collectionId:<collectionId>]
+```
+
+|Option|Description|
+|---|---|
+|indexingStatus|Show the status and configuration of the code indexing service.|
+|setIndexing|<strong>on</strong>: Start indexing all changesets.<br/><strong>off</strong>: Stop indexing all changesets.<br/><strong>keepupOnly</strong>: Stop indexing previously created changesets and start indexing new changesets only.|
+|ignoreList|Specifies a list of code files and their paths that you don't want indexed.<br/><br/><strong>add</strong>: Add the file that you don't want indexed to the ignored file list.<br/><strong>remove</strong>: Remove the file that you want indexed from the ignored file list.<br/><strong>removeAll</strong>: Clear the ignored file list and start indexing all files.<br/><strong>view</strong>: See all the files that aren't being indexed.<br/><strong>ServerPath</strong>: Specifies the path to a code file.<br/><br/>You can use the wildcard character (*) at the start, end, or both ends of the server path.|
+|listLargeFiles|Shows the specified number of files that exceeds the specified size in KB. You can then use the <strong>/ignoreList</strong> option to exclude these files from indexing.<br/><br/>For this, you'll need <a href="http://go.microsoft.com/fwlink/?LinkId=506638" target="_blank">Team Foundation Server 2013 with Update 3</a>.|
+|reindexAll|Clear previously indexed data and restart indexing.|
+|destroyCodeIndex|Delete the code index and remove all indexed data. Does not require confirmation if you use the <strong>/noPrompt</strong> option.|
+|temporaryDataSizeLimit|Control how much temporary data that CodeLens creates when processing changesets. The default limit is 6 GB (2 GB in Update 5).<br/><br/><strong>view</strong>: Show the current size limit.<br/><strong>SizeInGBs</strong>: Change the size limit.<br/>disable</strong>: Remove the size limit.<br/><br/>This limit is checked before CodeLens processes a new changeset. If temporary data exceeds this limit, CodeLens will pause processing past changesets, not new ones. CodeLens will restart processing after the data is cleaned up and falls below this limit. Cleanup runs automatically once a day. This means temporary data might exceed this limit until cleanup starts running.<br/><br/>For this, you'll need <a href="http://go.microsoft.com/fwlink/?LinkId=517392" target="_blank">Team Foundation Server 2013 with Update 4</a>.|
+|indexHistoryPeriod|Control how long to index your change history. This affects how much history CodeLens shows you. The default limit is 12 months. This means CodeLens shows your change history from the last 12 months only.<br/><br/><strong>view</strong>: Show the current number of months.<br/><strong>all</strong>: Index all change history.<br/><strong>NumberOfMonths</strong>: Change the number of months used to index change history.<br/><br/>For this, you'll need <a href="http://go.microsoft.com/fwlink/?LinkId=517392" target="_blank">Team Foundation Server 2013 with Update 4</a>.|
+|collectionName|Specifies the name of the project collection on which to run the <strong>CodeIndex</strong> command. Required if you don't use <strong>/CollectionId</strong>.|
+|collectionId|Specifies the identification number of the project collection on which to run the <strong>CodeIndex</strong> command. Required if you don't use <strong>/CollectionName</strong>|
+
+### Prerequisites
+
+To use the **codeIndex** command, you must be a member of the Azure DevOps Administrators security group. See Permission reference for Azure DevOps Server.
+
+### Examples
+
+To see the code indexing status and configuration:
+
+```
+TfsConfig codeIndex /indexingStatus /collectionName:"Fabrikam Web Site"
+```
+
+To start indexing all changesets:
+
+```
+TfsConfig codeIndex /setIndexing:on /collectionName:"Fabrikam Web Site"
+```
+
+To stop indexing previously created changesets and start indexing new changesets only:
+
+```
+TfsConfig codeIndex /setIndexing:keepupOnly /collectionName:"Fabrikam Web Site"
+```
+
+To find up to 50 files that are larger than 10 KB:
+
+```
+TfsConfig codeIndex /listLargeFiles /fileCount:50 /minSize:10 /collectionName:"Fabrikam Web Site"
+```
+
+To exclude a specific file from indexing and add it to the ignored file list:
+
+```
+TfsConfig codeIndex /ignoreList:add "$/Fabrikam Web Site/Catalog.cs" /collectionName:"Fabrikam Web Site"
+```
+
+To see all the files that aren't indexed:
+
+```
+TfsConfig codeIndex /ignoreList:view
+```
+
+To clear previously indexed data and restart indexing:
+
+```
+TfsConfig codeIndex /reindexAll /collectionName:"Fabrikam Web Site"
+```
+
+To save all changeset history:
+
+```
+TfsConfig codeIndex /indexHistoryPeriod:all /collectionName:"Fabrikam Web Site"
+```
+
+To remove the size limit on CodeLens temporary data and continue indexing regardless of temporary data size:
+
+```
+TfsConfig codeIndex /temporaryDataSizeLimit:disable /collectionName:"Fabrikam Web Site"
+```
+
+To delete the code index with confirmation:
+
+```
+TfsConfig codeIndex /destroyCodeIndex /collectionName:"Fabrikam Web Site"
+```
+
+::: moniker-end
+
+::: moniker range="<= tfs-2018"
+
 >**Command availability:** TFS 2015 and TFS 2013
 
-Use the CodeIndex command to manage code indexing on Team Foundation Server.
+Use the CodeIndex command to manage code indexing on Azure DevOps Server.
 For example, you might want to reset the index to fix CodeLens information, or turn off indexing to investigate server performance issues.
 
 	TFSConfig CodeIndex /indexingStatus | /setIndexing:[ on | off | keepupOnly ] |
@@ -192,9 +290,9 @@ For example, you might want to reset the index to fix CodeLens information, or t
 </tr>
 </table>
 
-### Required permissions
+### Prerequisites
 
-To use the CodeIndex command, you must be a member of the Team Foundation Administrators security group. See Permission reference for Team Foundation Server.
+To use the CodeIndex command, you must be a member of the Team Foundation Administrators security group. See Permission reference for Azure DevOps Server.
 
 ### Examples
 
@@ -237,3 +335,5 @@ To remove the size limit on CodeLens temporary data and continue indexing regard
 To delete the code index with confirmation:
 
 	TFSConfig CodeIndex /destroyCodeIndex /collectionName:"Fabrikam Web Site"
+
+::: moniker-end

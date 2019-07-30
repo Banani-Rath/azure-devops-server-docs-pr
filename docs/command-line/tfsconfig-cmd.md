@@ -1,14 +1,15 @@
 ---
 title: Configure with TFSConfig
-titleSuffix: Azure DevOps Server & TFS  
-description: Use TFSConfig to manage the configuration of your TFS server from the command-line.
+titleSuffix: Azure DevOps Server
+description: Use TFSConfig to manage the configuration of your Azure DevOps Server from the command-line.
 ms.prod: devops-server
 ms.technology: tfs-admin
 ms.manager: jillfra
 ms.author: aaronha
 author: aaronhallberg
 ms.topic: conceptual
-ms.date: 08/04/2016
+ms.date: 05/30/2019
+monikerRange: '< azure-devops'
 ---
 
 # Use TFSConfig to manage Azure DevOps on-premises  
@@ -18,14 +19,15 @@ ms.date: 08/04/2016
 > For TFS 2010 and earlier versions, a few of these commands are available in the **TFSAdminUtils** command-line tool.
 
 The **TFSConfig** command-line tool can be used to perform a variety of administrative actions for
-your Azure DevOps on-premises deployment, previously named Visual Studio Team Foundation Server (TFS). 
+your Azure DevOps on-premises deployment.
 
-**TFSConfig** can be run from any machine on which Azure DevOps Server or TFS has been installed. 
+**TFSConfig** can be run from any machine on which Azure DevOps Server has been installed.
 
+<!--- QUESTION: Note there are two github feedback comments yet not resolved. -->
 
 [!INCLUDE [temp](_shared/tools-location.md)]
 
-## Requirements 
+## Prerequisites
 
 For many commands to operate correctly, **TFSConfig** will need to be able to connect to the various servers
 and services which are part of your TFS deployment, and the user running **TFSConfig** will need to have administrative
@@ -35,19 +37,22 @@ Many **TFSConfig** command must be run from an elevated Command Prompt, even if 
 credentials. To open an elevated Command Prompt, click Start, right-click Command Prompt, and then click Run as 
 Administrator. For more information, see: [User Account Control](http://go.microsoft.com/fwlink/?LinkId=111235).
 
-You can also perform administrative actions interactively using the administration console for TFS. 
+You can also perform administrative actions interactively using the administration console for Azure DevOps Server. 
 See [Administrative task quick reference](../admin/admin-quick-ref.md).
-
 
 ### List commands and get help
 
 To display a full list of **TFSConfig** commands, use the **help** command:
 
-	TFSConfig help
+```
+TFSConfig help
+```
 
 To get help for an individual command, use the **help** command and specify the name of the command with which you want help. For example, to get help for the **accounts** command:
 
-	TFSConfig help accounts
+```
+TFSConfig help accounts
+```
 
 ## Accounts
 [!INCLUDE [ACCOUNTS](_shared/accounts.md)]
@@ -98,6 +103,10 @@ To get help for an individual command, use the **help** command and specify the 
 
 ## DeleteTestResults
 [!INCLUDE [DELETETESTRESULTS](_shared/deletetestresults.md)]
+<hr/>
+
+## DeploymentPool
+[!INCLUDE [DEPLOYMENTPOOL](_shared/deploymentPool.md)]
 <hr/>
 
 ## Identities
@@ -160,8 +169,16 @@ To get help for an individual command, use the **help** command and specify the 
 [!INCLUDE [SETUP](_shared/setup.md)]
 <hr/>
 
+## TCM
+[!INCLUDE [TCM](_shared/tcm.md)]
+<hr/>
+
 ## Unattend
 [!INCLUDE [UNATTEND](_shared/unattend.md)]
+<hr/>
+
+## ZipLogs
+[!INCLUDE [ZIPLOGS](_shared/ziplogs.md)]
 <hr/>
 
 ## Deprecated commands

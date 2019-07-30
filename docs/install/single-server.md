@@ -24,7 +24,7 @@ The simplest way to set up Azure DevOps Server is to put everything on a single 
 
 If you're upgrading from an earlier version, learn more about [compatibility](../compatibility.md), [release notes](../whats-new.md), and [getting started with your upgrade](../upgrade/get-started.md).
 
-## Preparation and prerequisites
+## Prerequisites
 
 1. Prepare a single computer that satisfies the [system requirements](../requirements.md).
 
@@ -63,6 +63,7 @@ If you're upgrading from an earlier version, learn more about [compatibility](..
 	![Start Wizard](_img/install-single-server/configuration-center-start-wizard.png) 
 
 <a id="configure-basic" /> 
+
 ## Configure using the Basic option
 
 This section walks you through configuring your Azure DevOps Server using the Basic option. The Basic option is optimized for simplicity by using default options for most inputs. If you want full control over all inputs, choose the [**New Deployment - Advanced** option](#configure-advanced) instead. 
@@ -155,6 +156,7 @@ After you review your selections and select **Verify**, the wizard runs readines
 -->
 
 <a id="configure-advanced" /> 
+
 ## Configure using the Advanced option
 
 This section walks you through configuring your Azure DevOps Server using the Advanced option. For a review of Basic and Advanced options, see [Install and configure Azure DevOps, Basic and Advanced configuration options](get-started.md#basic-advanced).

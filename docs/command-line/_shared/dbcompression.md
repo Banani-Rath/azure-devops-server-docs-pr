@@ -2,10 +2,53 @@
 ms.topic: include
 ---
 
->**Command availability:** TFS 2015 and TFS 2013
-> For earlier versions of TFS, see [https://support.microsoft.com/kb/2712111](https://support.microsoft.com/kb/2712111)
+::: moniker range="azure-devops-2019"
 
-You use the **DBCompression** command to enable or disable database page compression for the databases used by your TFS deployment.
+You use the **dbCompression** command to enable or disable database page compression for the databases used by your Azure DevOps Server deployment.
+
+```
+TfsConfig dbCompression /pageCompression:[enable|disable]
+	/sqlInstance:<serverName>
+	/databaseName:<databaseName>
+	[/rebuildNow [/offline]]
+```
+
+|Option|Description|
+|---|---|
+|pageCompression|Specifies whether you are enabling or disabling page compression for the given SQL instance and database.</td>
+|sqlInstance|Specifies the name of the server that hosts the database for which page compression is being enabled or disabled, and the name of the instance if an instance other than the default is used. If you specify an instance, you must use the format: `ServerName\InstanceName`
+|databaseName|Specifies the name of the database for which page compression is being enabled or disabled.|
+|rebuildNow|Optional. Specifies whether database indexes should be rebuilt (and compressed or decompressed as necessary) immediately. If not used, indexes will be rebuilt by a background job which runs weekly.</td>
+|offline|Optional. Used only in combination with <strong>/rebuildNow</strong>. If <strong>/offline</strong> is not specified, indexes will be rebuilt online. If <strong>/offline</strong> is specified, indexes will be rebuilt offline. This will block other operations, but may be faster than an online index rebuild.|
+
+### Prerequisites
+
+To use the **dbCompression** command, you must be a member of the sysadmin role for the specified SQL Server instance.
+
+### Remarks
+
+You would typically use the **dbCompression** command if you were moving a database from a SQL instance which supported compression to one which did not.
+In this case, you would need to disable compression and decompress all indexes before you could successfully move the databases.
+Similarly, if you were moving a database back to a SQL instance which supported compression you might wish to re-enable compression in order to save space.
+
+This command only changes whether Azure DevOps Server prefers to use database page compression or not - your databases must still be hosted in a SQL instance whose edition supports compression.
+See [Features Supported by the Editions of SQL Server](https://msdn.microsoft.com/library/cc645993.aspx) for more information.
+
+### Example
+
+The following example shows how to enable page compression immediately, with indexes rebuilt online, for a database named `TFS_DefaultCollection` on a SQL instance running on a server named `ContosoMain` on the named instance `TeamDatabases`.
+
+```
+TfsConfig dbCompression /pageCompression:enable /sqlInstance:ContosoMain\TeamDatabases /databaseName:TFS_DefaultCollection /rebuildNow
+```
+
+::: moniker-end
+
+::: moniker range="<= tfs-2018"
+
+> For TFS 2012 and earlier versions, see [https://support.microsoft.com/kb/2712111](https://support.microsoft.com/kb/2712111).
+
+You use the **DBCompression** command to enable or disable database page compression for the databases used by your Azure DevOps Server deployment.
 
 	TFSConfig dbCompression /pageCompression:{enable|disable}
 		/sqlInstance:ServerName
@@ -47,7 +90,7 @@ You use the **DBCompression** command to enable or disable database page compres
 	</tbody>
 </table>
 
-### Required permissions
+### Prerequisites
 
 To use the **DBCompression** command, you must be a member of the sysadmin role for the specified SQL Server instance.
 
@@ -57,7 +100,7 @@ You would typically use the **DBCompression** command if you were moving a datab
 In this case, you would need to disable compression and decompress all indexes before you could successfully move the databases.
 Similarly, if you were moving a database back to a SQL instance which supported compression you might wish to re-enable compression in order to save space. 
 
-This command only changes whether TFS prefers to use database page compression or not - your databases must still be hosted in a SQL instance whose edition supports compression.
+This command only changes whether Azure DevOps Server prefers to use database page compression or not - your databases must still be hosted in a SQL instance whose edition supports compression.
 See [Features Supported by the Editions of SQL Server](https://msdn.microsoft.com/library/cc645993.aspx) for more information.
 
 ### Example
@@ -65,3 +108,5 @@ See [Features Supported by the Editions of SQL Server](https://msdn.microsoft.co
 The following example shows how to enable page compression immediately, with indexes rebuilt online, for a database named TFS\_DefaultCollection on a SQL instance running on a server named "ContosoMain" on the named instance "TeamDatabases".
 
 	TFSConfig dbCompression /pageCompression:enable /sqlInstance:ContosoMain\TeamDatabases /databaseName:TFS_DefaultCollection /rebuildNow
+
+::: moniker-end

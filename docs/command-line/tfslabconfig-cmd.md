@@ -14,10 +14,10 @@ ms.date: 08/04/2016
 
 # Use TFSLabConfig to configure Visual Studio Lab Management
 
-[!INCLUDE [temp](../_shared/version-tfs-2013-2017.md)]
+[!INCLUDE [temp](../_shared/version-tfs-2013-2015.md)]
 
 > [!IMPORTANT]  
-> TFS 2017 and later versions no longer support Visual Studio Lab Management. This article applies to TFS 2015 and TFS 2013. 
+> TFS 2017 and later versions no longer support Visual Studio Lab Management. This article applies to TFS 2015 and TFS 2013.
 
 Team Foundation Server includes a command-line tool to help you configure and manage the lab service provide by Visual Studio Lab Management.
 
@@ -29,10 +29,7 @@ The **TFSLabConfig** command-line tool is located in Drive:\Program Files\TFS <v
 
 It is also located in Drive:\Program Files\Microsoft Visual Studio &lt;version&gt;\Common7\IDE on the client machine where Microsoft Test Manager is installed.
 
-**Required Permissions:**
-
-To use TFSLabConfig, you must have the appropriate permissions for the operation that you want to perform. The required permissions are described for each command in the command reference topic.
-
+To use TFSLabConfig, you must have the appropriate permissions for the operation that you want to perform. The **Prerequisites** are described for each command in the command reference topic.
 
 ## CreateTeamProjectHostGroup
 [!INCLUDE [CreateTeamProjectHostGroup](_shared/CreateTeamProjectHostGroup.md)]
@@ -60,7 +57,7 @@ To use TFSLabConfig, you must have the appropriate permissions for the operation
 ## ListTeamProjectLibraryShares 
 [!INCLUDE [ListTeamProjectLibraryShares](_shared/listteamprojectlibraryshares.md)]
 
-## Permissions
+## Prerequisites
 [!INCLUDE [Permissions](_shared/permissions.md)]
 <hr/>
 

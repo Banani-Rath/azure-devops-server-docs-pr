@@ -1,22 +1,21 @@
 ---
 title: Change groups and permissions with TFSSecurity
-titleSuffix: Azure DevOps Server & TFS  
-description: Change groups and permissions in Azure DevOps Services and TFS from the command-line using TFSSecurity
+titleSuffix: Azure DevOps Server 
+description: Change groups and permissions in Azure DevOps Services from the command-line using TFSSecurity
 ms.prod: devops-server
 ms.technology: tfs-admin
 ms.manager: jillfra
 ms.author: aaronha
 author: aaronhallberg
 ms.topic: conceptual
-monikerRange: '>= tfs-2013'
-ms.date: 03/05/2019
+monikerRange: '<= azure-devops'
+ms.date: 05/30/2019
 --- 
 
 # Use TFSSecurity to manage groups and permissions for Azure DevOps 
 
 [!INCLUDE [temp](../_shared/version-azure-devops-all-versions.md)]
 
-<!--- QUESTION: Note there are two github feedback comments yet not resolved. -->
 
 You can use the **TFSSecurity** command-line tool to create, modify, and delete groups and users in Azure DevOps Server, previously named Visual Studio Team Foundation Server (TFS), and additionally modify permissions for groups and users. For information about how to perform these tasks in the user interface, see [Add users or groups to a project](/azure/devops/organizations/security/add-users-team-project).
 
@@ -29,45 +28,47 @@ You can use the **TFSSecurity** command-line tool to create, modify, and delete 
 
 
 ## Use with Azure DevOps Services
-The **TFSSecurity** command-line tool can be used with Azure DevOps Services as well. To use it for Azure DevOps Services, use the same commands as documented, but replace the *CollectionURL* with your *AccountURL* (*ServerURL* is not applicable with Azure DevOps Services). 
 
-<!--- QUESTION: To support this feature, they must install Azure DevOps Server Express ? --> 
+The **TFSSecurity** command-line tool can be used with Azure DevOps Services as well. To use it for Azure DevOps Services, use the same commands as documented, but replace the *CollectionURL* with your *AccountURL* (*ServerURL* is not applicable with Azure DevOps Services). To access the **TFSSecurity** command, you must [install Azure DevOps Server Express](../upgrade/express.md). 
+
+
 
 ### Example:
+
 ```
 tfssecurity /a+ Namespace Token Action Identity (ALLOW | DENY)[/collection:AccountURL]
 ```
 
 While **TFSSecurity** is supported, we recommend using our [Security REST API](/rest/api/vsts/security/) when working with security groups and permissions in Azure DevOps Services as our APIs are updated faster and more often.
 
-## Permissions
+## Permissions 
 
 <a id="aplus"></a>
+
 ### /a+: Add permissions
+
 Use **/a+** to add permissions for a user or a group in a server-level, collection-level, or project-level group. To add users to groups from the user interface, see [Manage users or groups](https://msdn.microsoft.com/library/30493f4c-d3e6-42f0-bca2-2ad749246944).
 
 ```
 tfssecurity /a+ Namespace Token Action Identity (ALLOW | DENY)[/collection:CollectionURL] [/server:ServerURL]
 ```
 
-### Required permissions
+#### Prerequisites
 
 To use the **/a+** command, you must have the View collection-level information or the View instance-level information permission set to Allow, depending on whether you are using the **/collection** or **/server** parameter, respectively. If you are changing permissions for a project, you must also have the Edit project-level information permission for the project set to Allow. For more information, see [Permission reference for Team Foundation Server](/azure/devops/security/permissions).
 
-## Parameters
+#### Parameters
 
 | Argument | Description |
 | --- | --- |
 | Namespace | The namespace that contains the group to which you want to add permissions for a user or group. You can also use the **tfssecurity /a** command to view a list of namespaces at the server, collection, and project level. |
-| Token | The name or GUID of the object on which you want to add permissions.<br> [!NOTE] Tokens vary depending on the namespace you specify. Some namespaces do not have tokens that apply for this command. |
-| Action | The name of the permission for which you are granting or denying access. For a list of valid IDs, see <a href="https://msdn.microsoft.com/library/39997de5-b7fb-4777-b779-07de0543abe6">Permission reference for Team Foundation Server</a>, or use the **tfssecurity /a** command to view a list of valid actions for a namespace that you specify. |
 | Identity | The identity of the user or the group. For more information about identity specifiers, see [TFSSecurity Identity and Output Specifiers](#specifiers).<br><ul><li>**ALLOW**<br>The group or user can perform the operation that the Action specifies.</li><li>**DENY**<br>The group or user cannot perform the operation that the Action specifies.</li></ul> |
 | **/collection** :CollectionURL | Required if **/server** is not used. Specifies the URL of a project collection in the following format: **http://** ServerName **:** Port **/** VirtualDirectoryName **/** CollectionName |
 | **/server** :ServerURL | Required if **/collection** is not used. Specifies the URL of an application-tier server in the following format: **http://** ServerName **:** Port **/** VirtualDirectoryName |
 
 #### Remarks
 
-Run this command on an application-tier server for Team Foundation.
+Run this command on an application-tier server for Azure DevOps.
 
 Access control entries are security mechanisms that determine which operations a user, group, service, or computer is authorized to perform.
 
@@ -187,12 +188,14 @@ Sample output:
     Done.
 
 <a id="aminus"></a>
+
 ### /a-: Remove a user or a group from membership in a group
+
 Use the **/a-** command to remove a user or a group from membership in a server-level, collection-level, or project-level group. To add users to groups from the user interface, see [Manage users or groups](https://msdn.microsoft.com/library/30493f4c-d3e6-42f0-bca2-2ad749246944).
 
 	tfssecurity /a- Namespace Token Action Identity (ALLOW | DENY) [/collection:CollectionURL] [/server:ServerURI]
 
-#### Required Permissions
+#### Prerequisites
 
 To use the **/a-** command, you must have the View collection-level information or the View instance-level information permission set to Allow, depending on whether you are using the **/collection** or **/server** parameter, respectively. If you are changing permissions for a project, you must also have the Edit project-level information permission for the project set to Allow.
 
@@ -201,15 +204,13 @@ To use the **/a-** command, you must have the View collection-level information 
 | Argument | Description |
 | --- | --- |
 | Namespace | The namespace that contains the group to which you want to remove permissions for a user or group. You can also use the **tfssecurity /a** command to view a list of namespaces at the server, collection, and project level. |
-| Token | The name or GUID of the object on which you want to set permissions.<br> [!NOTE] Tokens vary depending on the namespace you specify. Some namespaces do not have tokens that apply for this command. |
-| Action | The name of the permission for which you are granting or denying access. For a list of valid IDs, see <a href="https://msdn.microsoft.com/library/39997de5-b7fb-4777-b779-07de0543abe6">Permission reference for Team Foundation Server</a>, or use the **tfssecurity /a** command to view a list of valid actions for a namespace that you specify. |
 | Identity | The identity of the user or the group. For more information about identity specifiers, see [TFSSecurity Identity and Output Specifiers](#specifiers).<br><ul><li>**ALLOW**<br>The group or user can perform the operation that the Action specifies.</li><li>**DENY**<br>The group or user cannot perform the operation that the Action specifies.</li></ul> |
 | **/collection** :CollectionURL | Required if **/server** is not used. Specifies the URL of a project collection in the following format: **http://** ServerName **:** Port **/** VirtualDirectoryName **/** CollectionName |
 | **/server** :ServerURL | Required if **/collection** is not used. Specifies the URL of an application-tier server in the following format: **http://** ServerName **:** Port **/** VirtualDirectoryName |
 
 #### Remarks
 
-Run this command on an application-tier server for Team Foundation.
+Run this command on an application-tier server for Azure DevOps.
 
 Access control entries are security mechanisms that determine which operations a user, group, service, or computer is authorized to perform on a computer or server.
 
@@ -321,31 +322,31 @@ Sample output:
     Done.
 
 <a id="acl"></a>
+
 ### /acl: Display the access control list
 
 Use **/acl** to display the access control list that applies to a particular object.
 
 	tfssecurity /acl Namespace Token [/collection:CollectionURL] [/server:ServerURL]
 
-#### Required permissions
+#### Prerequisites
 
 To use the **/acl** command, you must have the **View collection-level information**
 or the **View instance-level information** permission set to **Allow**,
 depending on whether you are using the **/collection** or **/server** parameter, respectively.
-For more information, see [Permission reference for Team Foundation Server](/azure/devops/security/permissions).
+For more information, see [Permission reference for Azure DevOps Server](/azure/devops/security/permissions).
 
 #### Parameters
 
 | Argument | Description |
 | --- | --- |
 | Namespace | The namespace that contains the group to which you want to view permissions for a user or group. |
-| Token | The name or GUID of the object on which you want to view permissions.<br> [!NOTE] Tokens vary depending on the namespace you specify. Some namespaces do not have tokens that apply for this command. |
 | **/collection** :CollectionURL | Required if **/server** is not used. Specifies the URL of a project collection in the following format: **http://** ServerName **:** Port **/** VirtualDirectoryName **/** CollectionName |
 | **/server** :ServerURL | Required if **/collection** is not used. Specifies the URL of an application-tier server in the following format: **http://** ServerName **:** Port **/** VirtualDirectoryName |
 
 #### Remarks  
 
-Run this command on an application-tier server for Team Foundation.
+Run this command on an application-tier server for Azure DevOps.
 
 Access control entries are security mechanisms that determine which operations a user, group, service, or computer is authorized to perform on a computer or server.
 
@@ -384,12 +385,14 @@ Sample output:
 ## Groups
 
 <a id="g"></a>
+
 ### /g: List the groups
-Use **/g** to list the groups in a project, in a project collection, or across Team Foundation Server.
+
+Use **/g** to list the groups in a project, in a project collection, or across Azure DevOps Server.
 
 	tfssecurity /g [scope] [/collection:CollectionURL] [/server:ServerURL]
 
-#### Required Permissions
+#### Prerequisites
 
 To use the **/g** command, you must have the View collection-level information or the View instance-level information permission set to Allow, depending on whether you are using the **/collection** or **/server** parameter, respectively. To use the /g command within the scope of a single project, you must have the View project-level information permissions set to Allow. For more information, see [Permission reference for Team Foundation Server](https://msdn.microsoft.com/library/39997de5-b7fb-4777-b779-07de0543abe6).
 
@@ -403,7 +406,7 @@ To use the **/g** command, you must have the View collection-level information o
 
 #### Remarks
 
-Run this command on an application-tier server for Team Foundation.
+Run this command on an application-tier server for Azure DevOps.
 
 The **/g** command of the **TFSSecurity** command-line utility displays information about every group within the selected scope. This scope can be the project collection (**/server**) or the application-tier server (**/instance**). If used with the scope of a project, it will display information only about the groups associated with that project.
 
@@ -414,14 +417,16 @@ The following example displays information for all the groups within a project c
     tfssecurity /g /collection:CollectionURL
 
 <a id="gplus"></a>
+
 ### /g+: Add a user or another group to an existing group
+
 Use **/g+** to add a user or another group to an existing group.
 
 	tfssecurity /g+ groupIdentity memberIdentity [/collection:CollectionURL] [/server:ServerURL]
 
-#### Required Permissions
+#### Prerequisites
 
-To use the **/g+** command, you must have the View collection-level information and Edit collection-level information or the View instance-level information and Edit instance-level information permissions set to Allow, depending on whether you are using the /collection or /server parameter, respectively. For more information, see [Permission reference for Team Foundation Server](https://msdn.microsoft.com/library/39997de5-b7fb-4777-b779-07de0543abe6).
+To use the **/g+** command, you must have the View collection-level information and Edit collection-level information or the View instance-level information and Edit instance-level information permissions set to Allow, depending on whether you are using the /collection or /server parameter, respectively. For more information, see [Permission reference for Azure DevOps Server](https://msdn.microsoft.com/library/39997de5-b7fb-4777-b779-07de0543abe6).
 
 #### Parameters
 
@@ -434,7 +439,7 @@ To use the **/g+** command, you must have the View collection-level information 
 
 #### Remarks
 
-Run this command on an application-tier server for Team Foundation.
+Run this command on an application-tier server for Azure DevOps.
 
 You can also add users and groups to an existing group using Team Explorer. For more information, see [Add Users to a Collection-Level Group](https://msdn.microsoft.com/library/65e3df75-0700-47d2-9877-5a16e3065d22).
 
@@ -483,15 +488,16 @@ Sample output:
     Done.
 
 <a id="gminus"></a>
+
 ### /g-: Remove a user or group
 
 Use **/g-** to remove a user or a user group from an existing group.
 
 	tfssecurity /g- groupIdentity memberIdentity [/collection:CollectionURL] [/server:ServerURL]
 
-#### Required Permissions
+#### Prerequisites
 
-To use the **/g-** command, you must have the View collection-level information and Edit collection-level information or the View instance-level information and Edit instance-level information permissions set to Allow, depending on whether you are using the **/collection** or **/server** parameter, respectively. For more information, see [Permission reference for Team Foundation Server](https://msdn.microsoft.com/library/39997de5-b7fb-4777-b779-07de0543abe6).
+To use the **/g-** command, you must have the View collection-level information and Edit collection-level information or the View instance-level information and Edit instance-level information permissions set to Allow, depending on whether you are using the **/collection** or **/server** parameter, respectively. For more information, see [Permission reference for Azure DevOps Server](https://msdn.microsoft.com/library/39997de5-b7fb-4777-b779-07de0543abe6).
 
 #### Parameters
 
@@ -504,9 +510,9 @@ To use the **/g-** command, you must have the View collection-level information 
 
 #### Remarks
 
-Run this command on an application-tier server for Team Foundation.
+Run this command on an application-tier server for Azure DevOps.
 
-You can also add users and groups to an existing group using Team Explorer. For more information, see [Remove Users from a Project Group](https://msdn.microsoft.com/library/a4af4029-0202-4b56-8053-40b3a8c0f175), [Remove Users from a Default Group](https://msdn.microsoft.com/library/4e495381-f55a-480e-b7a0-da221ad0ae1a) or [Remove Users from a Collection-Level Group](https://msdn.microsoft.com/library/1c4b2566-3381-4d7a-ba50-e4633abf617d).
+You can also add users and groups to an existing group using Team Explorer. For more information, see [Remove users from a project group](/azure/devops/organizations/security/add-users-team-project) or [Set permissions at the project- or collection-level](/azure/devops/organizations/security/set-project-collection-level-permissions).
 
 #### Examples
 
@@ -552,14 +558,16 @@ Sample output:
     Done.
 
 <a id="gc"></a>
+
 ### /gc: Create a project-level group
+
 Use **/gc** at a command prompt to create a project-level group. To create a project-level group from the user interface, see <span sdata="link"> Manage users or groups </span>.
 
 	tfssecurity /gc Scope GroupName [GroupDescription] [/collection:CollectionURL]
 
-#### Required Permissions
+#### Prerequisites
 
-To use the **/gc** command, you must have the Edit Project-Level Information permission for that project set to Allow. For more information, see <span sdata="link"> Permission reference for Team Foundation Server </span>.
+To use the **/gc** command, you must have the Edit Project-Level Information permission for that project set to Allow. For more information, see <span sdata="link"> Permission reference for Azure DevOps Server </span>.
 
 #### Parameters
 
@@ -572,7 +580,7 @@ To use the **/gc** command, you must have the Edit Project-Level Information per
 
 #### Remarks
 
-Run this command on an application-tier server for Team Foundation.
+Run this command on an application-tier server for Azure DevOps.
 
 A project-level group is a security group for your project. You can use project groups to grant read, write, and administrative permissions that meet the security requirements of your organization.
 
@@ -594,14 +602,16 @@ After you run the command, you can verify the group in Team Explorer. Right-clic
 		"This group is for team members who test our code" /collection:CollectionURL
 
 <a id="gcg"></a>
+
 ### /gcg: Create a server or collection-level group
+
 Use the **/gcg** command to create a server-level or collection-level group. To create a server-level or collection-level group from the user interface, see [Manage users or groups](https://msdn.microsoft.com/library/30493f4c-d3e6-42f0-bca2-2ad749246944).
 
 	tfssecurity /gcg GroupName [GroupDescription] [/collection:CollectionURL] [/server:ServerURL]
 
-#### Required Permissions
+#### Prerequisites
 
-To use the **/gcg** command, you must have the Edit project-level information permission for that project set to Allow. For more information, see [Permission reference for Team Foundation Server](https://msdn.microsoft.com/library/39997de5-b7fb-4777-b779-07de0543abe6).
+To use the **/gcg** command, you must have the Edit project-level information permission for that project set to Allow. For more information, see [Permission reference for Azure DevOps Server](https://msdn.microsoft.com/library/39997de5-b7fb-4777-b779-07de0543abe6).
 
 #### Parameters
 
@@ -614,9 +624,9 @@ To use the **/gcg** command, you must have the Edit project-level information pe
 
 #### Remarks
 
-Run this command on an application-tier server for Team Foundation.
+Run this command on an application-tier server for Azure DevOps.
 
-Server-level groups are created directly on the application tier and apply to all project collections. Collection-level are created at the project collection level. They apply to that collection and have implications for all projects within the collection. In contrast, project groups apply to a specific project within a collection but not any other projects in that collection. You can assign permissions to server-level groups so that members of those groups can perform tasks in Team Foundation Server (TFS) itself, such as creating project collections. You can assign permissions to collection-level groups so that members of those groups can perform tasks across a project collection, such as administering users.
+Server-level groups are created directly on the application tier and apply to all project collections. Collection-level are created at the project collection level. They apply to that collection and have implications for all projects within the collection. In contrast, project groups apply to a specific project within a collection but not any other projects in that collection. You can assign permissions to server-level groups so that members of those groups can perform tasks in Azure DevOps Server itself, such as creating project collections. You can assign permissions to collection-level groups so that members of those groups can perform tasks across a project collection, such as administering users.
 
 > [!NOTE]
 > You can use the <b>/gcg</b> command to create groups, but you cannot use it to add any users to the groups or assign any permissions. For information about how to change the membership of a group, see [/g+: Add a user or another group to an existing group](#gplus) and [/g-: Remove a user or group](#gminus). For information about how to change the permissions for the group, see [/a+: Add permissions](#aplus) and [/a-: Remove a user or a group from membership in a group](#aminus).
@@ -635,14 +645,16 @@ The following example creates a server-level group that is named "Datum Auditors
     tfssecurity /gcg "Datum Auditors" "A. Datum Corporation Auditors" /server:ServerURL
 
 <a id="gd"></a>
+
 ### /gd: Delete a server or collection-level group
+
 Use **/gd** to delete a server-level or collection-level group.
 
 	tfssecurity /gd groupIdentity [/collection:CollectionURL] [/server:ServerURL]
 
-#### Required Permissions
+#### Prerequisites
 
-To use the **/gd** command, you must have the View collection-level information and Edit collection-level information or the View instance-level information and Edit instance-level information permissions set to Allow, depending on whether you are using the **/collection** or **/server** parameter, respectively. For more information, see [Permission reference for Team Foundation Server](https://msdn.microsoft.com/library/39997de5-b7fb-4777-b779-07de0543abe6).
+To use the **/gd** command, you must have the View collection-level information and Edit collection-level information or the View instance-level information and Edit instance-level information permissions set to Allow, depending on whether you are using the **/collection** or **/server** parameter, respectively. For more information, see [Permission reference for Azure DevOps Server](https://msdn.microsoft.com/library/39997de5-b7fb-4777-b779-07de0543abe6).
 
 #### Parameters
 
@@ -654,7 +666,7 @@ To use the **/gd** command, you must have the View collection-level information 
 
 #### Remarks
 
-Run this command on an application-tier server for Team Foundation.
+Run this command on an application-tier server for Azure DevOps.
 
 You can also remove groups on Team Explorer. For more information, see [Remove a Collection-Level Group](https://msdn.microsoft.com/library/68582caf-aa57-47a0-924a-6de7f541c246) and [Remove a Project Group](https://msdn.microsoft.com/library/dfb686ca-5a8b-4da9-bd00-6d68ae85f9fa).
 
@@ -668,14 +680,16 @@ The following example deletes a group from the project collection. The group is 
     tfssecurity /gd S-1-5-21-2127521184-1604012920-1887927527-588340 /collection:CollectionURL
 
 <a id="gud"></a>
+
 ### /gud: Change the description for a server or collection-level group
+
 Use **/gud** to change the description for a server-level or collection-level group.
 
 	tfssecurity /gud GroupIdentity GroupDescription [/collection:CollectionURL] [/server:ServerURL]
 
-#### Required Permissions
+#### Prerequisites
 
-To use the **/gud** command, you must have the Edit project-level information permission set to Allow. For more information, see [Permission reference for Team Foundation Server](https://msdn.microsoft.com/library/39997de5-b7fb-4777-b779-07de0543abe6).
+To use the **/gud** command, you must have the Edit project-level information permission set to Allow. For more information, see [Permission reference for Azure DevOps Server](https://msdn.microsoft.com/library/39997de5-b7fb-4777-b779-07de0543abe6).
 
 #### Parameters
 
@@ -688,7 +702,7 @@ To use the **/gud** command, you must have the Edit project-level information pe
 
 #### Remarks
 
-Run this command on an application-tier server for Team Foundation.
+Run this command on an application-tier server for Azure DevOps.
 
 #### Example
 
@@ -700,14 +714,16 @@ The following example associates the description "The members of this group test
     tfssecurity /gud "Datum Testers" "The members of this group test the code for this project" /collection:CollectionURL
 
 <a id="gun"></a>
+
 ### /gun: Rename a group
+
 Use **/gun** to rename a server-level or collection-level group.
 
 	tfssecurity /gun GroupIdentity GroupName [/collection:CollectionURL] [/server:ServerURL]
 
-#### Required Permissions
+#### Prerequisites
 
-To use the **/gun** command, you must have the View collection-level information and Edit collection-level information or the View instance-level information and Edit instance-level information permissions set to Allow, depending on whether you are using the **/collection** or **/server** parameter, respectively. For more information, see [Permission reference for Team Foundation Server](https://msdn.microsoft.com/library/39997de5-b7fb-4777-b779-07de0543abe6)>.
+To use the **/gun** command, you must have the View collection-level information and Edit collection-level information or the View instance-level information and Edit instance-level information permissions set to Allow, depending on whether you are using the **/collection** or **/server** parameter, respectively. For more information, see [Permission reference for Azure DevOps Server](https://msdn.microsoft.com/library/39997de5-b7fb-4777-b779-07de0543abe6)>.
 
 #### Parameters
 
@@ -720,7 +736,7 @@ To use the **/gun** command, you must have the View collection-level information
 
 #### Remarks
 
-Run this command on an application-tier server for Team Foundation.
+Run this command on an application-tier server for Azure DevOps.
 
 #### Example
 
@@ -734,14 +750,16 @@ The following example renames the collection-level group "A. Datum Corporation T
 ## Identities and membership
 
 <a id="i"></a>
+
 ### /i: Display identity information for a specified group
-Use **/i** to display identity information for a specified group in a deployment of Team Foundation Server.
+
+Use **/i** to display identity information for a specified group in a deployment of Azure DevOps Server.
 
 	tfssecurity /i Identity [/collection:CollectionURL] [/server:ServerURL]
 
-#### Required Permissions
+#### Prerequisites
 
-To use the **/i** command, you must have the View collection-level information or the View instance -level information permission set to Allow, depending on whether you are using the /collection or /server parameter, respectively. For more information, see <[Permission reference for Team Foundation Server](https://msdn.microsoft.com/library/39997de5-b7fb-4777-b779-07de0543abe6).
+To use the **/i** command, you must have the View collection-level information or the View instance -level information permission set to Allow, depending on whether you are using the /collection or /server parameter, respectively. For more information, see [Permission reference for Azure DevOps Server](https://msdn.microsoft.com/library/39997de5-b7fb-4777-b779-07de0543abe6).
 
 #### Parameters
 
@@ -753,7 +771,7 @@ To use the **/i** command, you must have the View collection-level information o
 
 #### Remarks
 
-Run this command on an application-tier server for Team Foundation.
+Run this command on an application-tier server for Azure DevOps.
 
 The **/i** command of the **TFSSecurity** command-line utility displays information about each group within the project collection (/server) or the application-tier server (/instance). It does not display any membership information.
 
@@ -817,14 +835,16 @@ Sample output:
       Description: Members of this application group can perform all operations in the project.
 
 <a id="im"></a>
+
 ### /im: Display information about identities that compose direct membership
+
 Use **/im** to display information about the identities that compose the direct membership of a group that you specify.
 
 	tfssecurity /im Identity [/collection:CollectionURL] [/server:ServerURL]
 
-#### Required Permissions
+#### Prerequisites
 
-To use the **/im** command, you must have the View collection-level information or the View instance-level information permission set to Allow, depending on whether you are using the /collection or /server parameter, respectively. For more information, see [Permission reference for Team Foundation Server](https://msdn.microsoft.com/library/39997de5-b7fb-4777-b779-07de0543abe6).
+To use the **/im** command, you must have the View collection-level information or the View instance-level information permission set to Allow, depending on whether you are using the /collection or /server parameter, respectively. For more information, see [Permission reference for Azure DevOps Server](https://msdn.microsoft.com/library/39997de5-b7fb-4777-b779-07de0543abe6).
 
 #### Parameters
 
@@ -836,7 +856,7 @@ To use the **/im** command, you must have the View collection-level information 
 
 #### Remarks
 
-Run this command on an application-tier server for Team Foundation.
+Run this command on an application-tier server for Azure DevOps.
 
 The **/im** command of **TFSSecurity** displays the direct members of the specified group only. This list includes other groups that are members of the specified group. However, the actual members of the member groups are not listed.
 
@@ -932,14 +952,16 @@ Sample output:
     Done.
 
 <a id="imx"></a>
+
 ### /imx: Display information about the identities that the expanded membership
+
 Use **/imx** to display information about the identities that compose the expanded membership of a specified group.
 
 	tfssecurity /imx Identity [/collection:CollectionURL] [/server:ServerURL]
 
-#### Required Permissions
+#### Prerequisites
 
-To use the **/imx** command, you must have the View collection-level information or the View instance-level information permission set to Allow, depending on whether you are using the **/collection** or **/server** parameter, respectively. For more information, see [Permission reference for Team Foundation Server](https://msdn.microsoft.com/library/39997de5-b7fb-4777-b779-07de0543abe6).
+To use the **/imx** command, you must have the View collection-level information or the View instance-level information permission set to Allow, depending on whether you are using the **/collection** or **/server** parameter, respectively. For more information, see [Permission reference for Azure DevOps Server](https://msdn.microsoft.com/library/39997de5-b7fb-4777-b779-07de0543abe6).
 
 #### Parameters
 
@@ -951,7 +973,7 @@ To use the **/imx** command, you must have the View collection-level information
 
 #### Remarks
 
-Run this command on an application-tier server for Team Foundation.
+Run this command on an application-tier server for Azure DevOps.
 
 The **/imx** command of **TFSSecurity** displays the expanded members of the specified group only. This list includes not only other groups that are members of the specified group but also the members of the member groups.
 
@@ -1060,14 +1082,16 @@ Sample output:
 For more information about the output specifiers, such as [G] and [U], see [TFSSecurity Identity and Output Specifiers](#specifiers).
 
 <a id="m"></a>
+
 ### /m: Check explicit and implicit group membership
+
 Use **/m** to check explicit and implicit group membership information for a specified group or user.
 
 	tfssecurity /m GroupIdentity [MemberIdentity] [/collection:CollectionURL] [/server:ServerURL]
 
-#### Required Permissions
+#### Prerequisites
 
-To use the **/m** command, you must be a member of the Team Foundation Administrators security group. For more information, see [Permission reference for Team Foundation Server](https://msdn.microsoft.com/library/39997de5-b7fb-4777-b779-07de0543abe6).
+To use the **/m** command, you must be a member of the Team Foundation Administrators security group. For more information, see [Permission reference for Azure DevOps Server](https://msdn.microsoft.com/library/39997de5-b7fb-4777-b779-07de0543abe6).
 
 > [!NOTE]
 > Even if you are logged on with administrative credentials, you must open an elevated Command Prompt to perform this function.
@@ -1115,9 +1139,11 @@ Sample output:
     Done.
 
 <a id="permissions"></a>
+
 ## Permission namespaces and actions
 
 <a id="server-level-permissions"></a>
+
 ### Server level
 
 |Permission|Namespace|Action|
@@ -1133,6 +1159,7 @@ Sample output:
 |[Publish extensions](/azure/devops/extend/publish/overview)| Publisher| **For TFS 2017 or earlier**:<br />Create<br/>Publish<br />Write<br /><br />**For TFS 2017**:<br />CreatePublisher<br />PublishExtension<br />UpdateExtension<br />DeleteExtensions<br />|
 
 <a id="collection-level-permissions"></a>
+
 ### Collection level
 
 |Permission|Namespace|Action|
@@ -1161,6 +1188,7 @@ Sample output:
 |Can unsubscribe from an event subscription. |EventSubscription|UNSUBSCRIBE|
 
 <a id="team-project-level-permissions"></a>
+
 ### Project level
 
 |Permission|Namespace|Action|
@@ -1179,6 +1207,7 @@ Sample output:
 |[View test runs](/azure/devops/security/permissions#view-test-runs-permission)|Project|VIEW_TEST_RESULTS|
 
 <a id="build-permissions"></a>
+
 ### Build
 
 |Permission|Namespace|Action|
@@ -1200,6 +1229,7 @@ Sample output:
 |[View builds](/azure/devops/security/permissions#view-builds-permission)|Build|ViewBuilds|
 
 <a id="work-item-query-permissions"></a>
+
 ### Work item query
 
 |Permission|Namespace|Action|
@@ -1210,6 +1240,7 @@ Sample output:
 |[Read](/azure/devops/security/permissions#workitemqueryfolders-read-permission)|WorkItemQueryFolders|READ|
 
 <a id="tagging-permissions"></a>
+
 ### Tagging
 
 |Permission|Namespace|Action|
@@ -1221,6 +1252,7 @@ Sample output:
 
 
 <a id="area-permissions"></a>
+
 ### Area
 
 |Permission|Namespace|Action|
@@ -1235,6 +1267,7 @@ Sample output:
 |[View work items in this node](/azure/devops/security/permissions#area-view-work-items-in-this-node-permission)|CSS|WORK_ITEM_READ|
 
 <a id="iteration-permissions"></a>
+
 ### Iteration
 
 |Permission|Namespace|Action|
@@ -1245,6 +1278,7 @@ Sample output:
 |[View permissions for this node](/azure/devops/security/permissions#iteration-view-permissions-for-this-node-permission)|Iteration|GENERIC_WRITE|
 
 <a id="tfvc-permissions"></a>
+
 ### TFVC
 
 |Permission|Namespace|Action|
@@ -1264,6 +1298,7 @@ Sample output:
 |[Unlock other users'-changes](/azure/devops/security/permissions#unlock-other-users-changes-permission)|VersionControlItems|UnlockOther|
 
 <a id="git-repo-permissions"></a>
+
 ### Git repository
 
 TFS 2017 Update 1 and later
@@ -1298,6 +1333,7 @@ TFS 2017 RTM and earlier
 |[Tag Creation](/azure/devops/security/git-permissions-before-2017#git-tag-creation-permission)|GitRepositories|CreateTag|
 
 <a id="specifiers"></a>
+
 ## Identity specifiers
 
 You can reference an identity by using one of the notations in the following table.
@@ -1321,7 +1357,7 @@ The following markers are used to identify types of identities and ACEs in outpu
 |---|---|
 |**U**|Windows user.|
 |**G**|Windows group.|
-|**A**|Team Foundation Server (TFS) application group.|
+|**A**|Azure DevOps Server application group.|
 |**a \[** A **\]**|Administrative application group.|
 |**s \[** A **\]**|Service account application group.|
 |**X**|Identity is not valid.|
