@@ -1,12 +1,12 @@
 ---
 title: Move across environments
-titleSuffix: Azure DevOps Server & TFS 
-description: Move Team Foundation Server from one environment to another
+titleSuffix: Azure DevOps Server
+description: Move Azure DevOps Server from one environment to another
 ms.topic: conceptual
 ms.manager: jillfra
 ms.author: aaronha
 author: aaronhallberg
-ms.date: 08/31/2016
+ms.date: 05/29/2019
 ms.prod: devops-server
 ms.technology: tfs-admin
 ---
@@ -15,41 +15,42 @@ ms.technology: tfs-admin
 
 [!INCLUDE [temp](../_shared/version-tfs-all-versions.md)]
 
-The most common environment-based move scenario is changing the domain of the TFS deployment, whether it's a domain name change or going from a workgroup to a domain.
+The most common environment-based move scenario is changing the domain of the Azure DevOps Server deployment, whether it's a domain name change or going from a workgroup to a domain.
 
 > [!IMPORTANT]
-> In some situations you might want to change the domain of a TFS deployment as well as its hardware. Changing the hardware is a restoration-based move, and you should never combine the two move types. First complete the [hardware move](move-clone-hardware.md), and then change the environment.
+> In some situations you might want to change the domain of a Azure DevOps Server deployment as well as its hardware. Changing the hardware is a restoration-based move, and you should never combine the two move types. First complete the [hardware move](move-clone-hardware.md), and then change the environment.
 > 
-> Additionally, changing identities in TFS as part of an environmental move is the aspect that most often causes conflicts or problems. The [Identities Command](../command-line/tfsconfig-cmd.md#identities) is a powerful tool, but it has certain limitations. Read up about it as part of planning your move. To help ensure a successful move, make sure that you understand the following requirements:
-> * Once a user account is present in TFS, it cannot be removed or have another account mapped to it. For example, if you are moving DomainA/UserA to DomainB/UserB, the Identities command would only work to migrate the user if DomainB/UserB is not already present in TFS.
-> * Because the members of the local Administrators group are automatically added to TFS, make sure to remove any accounts that you want migrated from that group before you change the domain or environment.
+> Additionally, changing identities in Azure DevOps Server as part of an environmental move is the aspect that most often causes conflicts or problems. The [Identities Command](../command-line/tfsconfig-cmd.md#identities) is a powerful tool, but it has certain limitations. Read up about it as part of planning your move. To help ensure a successful move, make sure that you understand the following requirements:
+> * Once a user account is present in Azure DevOps Server, it cannot be removed or have another account mapped to it. For example, if you are moving DomainA/UserA to DomainB/UserB, the Identities command would only work to migrate the user if DomainB/UserB is not already present in Azure DevOps Server.
+> * Because the members of the local Administrators group are automatically added to Azure DevOps Server, make sure to remove any accounts that you want migrated from that group before you change the domain or environment.
 >
-> For further background information, [go here](http://blogs.msdn.com/b/vasu_sankaran/archive/2010/06/07/identity-change-in-tfs-2010.aspx) for a detailed description of how identity changes in TFS work, including limitations of the tool.
+> For further background information, [go here](http://blogs.msdn.com/b/vasu_sankaran/archive/2010/06/07/identity-change-in-tfs-2010.aspx) for a detailed description of how identity changes in Azure DevOps Server work, including limitations of the tool.
 
 
-We'll walk through the steps to change the environment of your TFS deployment in the following sections:
+We'll walk through the steps to change the environment of your Azure DevOps Server deployment in the following sections:
 
 1.  [Check permissions and accounts](#check-permissions-accts)  
-2.  [Stop TFS services](#stop-tfs-svcs)  
+2.  [Stop Azure DevOps Server services](#stop-tfs-svcs)  
 3.  [Back Up Data](#backup-dbs)  
-4.  [Join TFS to its new domain](#join-tfs-to-domain)  
+4.  [Join Azure DevOps Server to its new domain](#join-tfs-to-domain)  
 5.  [Configure SharePoint Products for the new environment](#config-sharept-products)  
-6.  [Move TFS user and service accounts](#move-tfs-user-svc-accts)  
+6.  [Move Azure DevOps Server user and service accounts](#move-tfs-user-svc-accts)  
 7.  [Configure Reporting and Analysis Services](#config-reporting-analysis-svcs)  
-8.  [Restart TFS services](#restart-tfs-svcs)
+8.  [Restart Azure DevOps Server services](#restart-tfs-svcs)
 
 <a name="check-permissions-accts"></a>
+
 ## Check permissions and accounts
 
-In order to successfully change the environment for TFS, you'll need to be an administrator on the local computer as well as for TFS and all of the software on which your deployment depends: SQL Server, reporting, SharePoint Products (if your deployment uses reporting or SharePoint), and any other software with which your deployment interoperates, such as Project Server. However, all members of the local Administrators group are automatically included in TFS, which can cause problems when trying to migrate accounts. Therefore, you should use an account that you do not intend to migrate as part of the environmental move. You might consider adding a special administrative account just for the move, and using that account to perform the migration.
+In order to successfully change the environment for Azure DevOps Server, you'll need to be an administrator on the local computer as well as for Azure DevOps Server and all of the software on which your deployment depends: SQL Server, reporting, SharePoint Products (if your deployment uses reporting or SharePoint), and any other software with which your deployment interoperates, such as Project Server. However, all members of the local Administrators group are automatically included in Azure DevOps Server, which can cause problems when trying to migrate accounts. Therefore, you should use an account that you do not intend to migrate as part of the environmental move. You might consider adding a special administrative account just for the move, and using that account to perform the migration.
 
 ### To verify administrator-level permissions
 
 -   Make sure the account you're using is a member of the following groups:  
     -   Servers: Administrators (local Administrators group or equivalent)  
-    -   TFS: Team Foundation Administrators and Admin Console Users  
+    -   Azure DevOps Server: Team Foundation Administrators and Admin Console Users  
     -   SQL Server: sysadmin  
-    -   SharePoint Products: Farm Administrators (if your TFS deployment integrates with SharePoint Products)
+    -   SharePoint Products: Farm Administrators (if your Azure DevOps Server deployment integrates with SharePoint Products)
 
 If you aren't a member of one or more of these groups, [get permissions now](add-administrator.md).
 
@@ -59,20 +60,21 @@ Now that you're sure you're using an account that has all the permissions needed
 
 -   Open the local Administrators group and remove any accounts that you wish to migrate to the new environment. Repeat this step for any other groups that might be affected.
 
-Now check the list of identities in the current TFS environment and look for any potential problems with groups or individual user accounts that might exist in the new environment.
+Now check the list of identities in the current Azure DevOps Server environment and look for any potential problems with groups or individual user accounts that might exist in the new environment.
 
 > [!TIP]
 > Consider creating a table or migration map of identities to be moved as part of the environmental move, including details of which accounts might not be able to be migrated automatically.
 
 ### Check identities
 
-1.  On the application-tier server for Team Foundation, open a Command Prompt window with administrative permissions, navigate to *%ProgramFiles%***\\Microsoft Visual Studio 12.0 Team Foundation Server\\Tools**, and run the following command to view the identities currently in the system:
+1.  On the application-tier server for Azure DevOps, open a Command Prompt window with administrative permissions, navigate to *%ProgramFiles%***\\Microsoft Visual Studio 12.0 Team Foundation Server\\Tools**, and run the following command to view the identities currently in the system:
 
         TFSConfig Identities
 
-2.  A list of identities will display. Check these users and groups to ensure that there are no potential duplicates or problems with identities in the environment to which you'll move TFS, and take steps to mitigate any potential conflicts.
+2.  A list of identities will display. Check these users and groups to ensure that there are no potential duplicates or problems with identities in the environment to which you'll move Azure DevOps Server, and take steps to mitigate any potential conflicts.
 
 <a name="stop-tfs-svcs"></a>
+
 ## Stop services
 
 Stopping the services helps ensure that users cannot make changes to work items or check in source code to the original deployment during or after the move process.
@@ -84,9 +86,10 @@ Stopping the services helps ensure that users cannot make changes to work items 
      **TFSServiceControl quiesce** 
 
 <a name="backup-dbs"></a>
+
 ## Back up the databases and the SQL Server Reporting Services encryption key
 
-1.  Open the administration console for TFS and on the **Scheduled Backups** page, take a full backup. The backup will back up everything you configured for backup in your backup plan, but it will do so immediately, not according to the time scheduled in the plan. If your deployment uses reporting, you can back up the encryption key as part of this backup set.
+1.  Open the administration console for Azure DevOps Server and on the **Scheduled Backups** page, take a full backup. The backup will back up everything you configured for backup in your backup plan, but it will do so immediately, not according to the time scheduled in the plan. If your deployment uses reporting, you can back up the encryption key as part of this backup set.
 
     ![You can close the window while the job completes](_img/ic688711.png)
 
@@ -109,13 +112,14 @@ Stopping the services helps ensure that users cannot make changes to work items 
 	> After you restart the computer, a warning might appear that services or drivers could not be started. Continue with the next procedure.
 
 <a name="config-sharept-products"></a>
+
 ## Configure SharePoint Products for the new environment
 
 If you are changing the environment to one where there is no trust with your previous environment, you might need to configure SharePoint Products before it will operate correctly. Information about users imported from directory services is available on SharePoint sites from the People Picker Web control. Site administrators and other users use the People Picker to select people and groups when assigning permissions. When information about users is located on multiple forests or on a forest without a trust relationship for all users, additional steps might be necessary to ensure that all people and groups are available from this Web control.
 
-Skip this procedure if you are not using SharePoint Products in your deployment, if you're new environment has a two-way trust to the old environment, or if no errors for your SharePoint Web application appear in the administration console for Team Foundation.
+Skip this procedure if you are not using SharePoint Products in your deployment, if you're new environment has a two-way trust to the old environment, or if no errors for your SharePoint Web application appear in the administration console for Azure DevOps.
 
-1. On every server that is part of the SharePoint farm that supports your deployment of Team Foundation Server, open a Command Prompt window with administrative permissions, and change directories to %programfiles%\\Common Files\\Microsoft Shared\\Web Server Extensions\\15\\BIN.
+1. On every server that is part of the SharePoint farm that supports your deployment of Azure DevOps Server, open a Command Prompt window with administrative permissions, and change directories to %programfiles%\\Common Files\\Microsoft Shared\\Web Server Extensions\\15\\BIN.
 
 2. Type the following command, where *Key* is the encryption key you want to use in your deployment of SharePoint Products:
 
@@ -124,7 +128,7 @@ Skip this procedure if you are not using SharePoint Products in your deployment
    > [!NOTE]
    > This key is an encryption string that is used to encrypt the password for the account that is used to access the forest or domain. The encryption string must be the same for every server in the farm, but a unique string should be used for each farm.
 
-3. Type the following command, where *domain:DNSName* is the target forest or domain and its DNS name, *user,password* is the username and password for an account that has access to the target forest or domain, and *WebApp* is the name of the Web application that supports your deployment of Team Foundation Server:
+3. Type the following command, where *domain:DNSName* is the target forest or domain and its DNS name, *user,password* is the username and password for an account that has access to the target forest or domain, and *WebApp* is the name of the Web application that supports your deployment of Azure DevOps Server:
 
    **stsadm.exe -o setproperty -pn peoplepicker-searchadforests -pv** <em>domain:DnsName</em>**,**<em>user</em>**,**<em>password</em> **-url http://**<em>WebApp</em>
 
@@ -132,16 +136,17 @@ Skip this procedure if you are not using SharePoint Products in your deployment
 
    **stsadm.exe -o siteowner -url http://** *URL* **:** *Port* **-ownerlogin** *UserName*
 
-5. Repeat the previous step for each site collection that your deployment of Team Foundation Server uses.
+5. Repeat the previous step for each site collection that your deployment of Azure DevOps Server uses.
 
 <a name="move-tfs-user-svc-accts"></a>
+
 ## Move user accounts and service accounts
 
-As mentioned at the beginning of this topic, moving accounts is when you're most likely to encounter difficulties, particularly if you haven't carefully planned for user migration. The **TFSConfig Identities** command cannot migrate any account to an account that already exists in TFS.
+As mentioned at the beginning of this topic, moving accounts is when you're most likely to encounter difficulties, particularly if you haven't carefully planned for user migration. The **TFSConfig Identities** command cannot migrate any account to an account that already exists in Azure DevOps Server.
 
 If account names are the same in both domains, and the only difference is the domain name, then you can use the batch mode of TFSConfig Identities to change all the identities at once. Otherwise you must change identities individually and specify a different target account name, as detailed below.
 
-1.  On the application-tier server for Team Foundation, open a Command Prompt window with administrative permissions, navigate to *%ProgramFiles%***\\Microsoft Visual Studio 12.0 Team Foundation Server\\Tools**, and run the following command to change the service IDs (SIDs) for the service account to the new domain:
+1.  On the application-tier server for Azure DevOps, open a Command Prompt window with administrative permissions, navigate to *%ProgramFiles%***\\Microsoft Visual Studio 12.0 Team Foundation Server\\Tools**, and run the following command to change the service IDs (SIDs) for the service account to the new domain:
 
         TFSConfig identities /change /fromdomain:OldComputerorDomainName /todomain:NewDomainName /account:OldTFSServiceAccount /toaccount:NewTFSServiceAccount
 
@@ -166,23 +171,24 @@ If account names are the same in both domains, and the only difference is the do
 
         TFSConfig Accounts /change /AccountType:ReportingDataSource /account:AccountName /password:Password
 
-6.  If your deployment uses Team Foundation Server Proxy, run the following command to update the service account used for the proxy:
+6.  If your deployment uses Azure DevOps Proxy Server, run the following command to update the service account used for the proxy:
 
         TFSConfig Accounts /change /AccountType:Proxy /account:AccountName /password:Password
 
     > [!NOTE]
-    > If you are moving to a non-trusted domain, you might also need to manually add users and groups to teams, projects, collections, and Team Foundation Server itself. For more information, see [Add users to projects](/azure/devops/security/add-users-team-project), [Set administrator permissions for project collections](add-administrator.md), and [Set administrator permissions for Team Foundation Server](add-administrator.md).
+    > If you are moving to a non-trusted domain, you might also need to manually add users and groups to teams, projects, collections, and Azure DevOps Server itself. For more information, see [Add users to projects](/azure/devops/security/add-users-team-project), [Set administrator permissions for project collections](add-administrator.md), and [Set administrator permissions for Azure DevOps Server](add-administrator.md).
 
 7.  If your deployment is integrated with Project Server, you might need to perform additional steps to configure the service accounts with the permissions required for operation. For more information, see [Assign permissions to support TFS-Project Server integration](https://msdn.microsoft.com/library/gg412653) and [ConfigureTFS-Project Server integration](https://msdn.microsoft.com/library/gg412647).
 
 <a name="config-reporting-analysis-svcs"></a>
+
 ## Configure Reporting and Analysis Services
 
 You can skip this procedure if you are not using reporting as part of your deployment.
 
-If you renamed a report server as part of this type of move, you must redirect Team Foundation Server to the report server at its new location. You must also restart the warehouse and manually rebuild the database for Analysis Services.
+If you renamed a report server as part of this type of move, you must redirect Azure DevOps Server to the report server at its new location. You must also restart the warehouse and manually rebuild the database for Analysis Services.
 
-1.  Open the administration console for Team Foundation, go to the Reporting node, and edit the settings.
+1.  Open the administration console for Azure DevOps, go to the Reporting node, and edit the settings.
 
     ![Reports still point to the old server](_img/ic682727.png)
 
@@ -198,14 +204,15 @@ If you renamed a report server as part of this type of move, you must redirect T
 
 If the network share name or storage device changed with the domain name change, you'll need to update the scheduled backup plan to point to those renamed resources.
 
--   In the administration console, go to the Scheduled Backups node and reconfigure the scheduled backups to back up the TFS databases on the new server. For more information, see [Create a backup schedule and plan](backup/config-backup-sched-plan.md).
+-   In the administration console, go to the Scheduled Backups node and reconfigure the scheduled backups to back up the Azure DevOps Server databases on the new server. For more information, see [Create a backup schedule and plan](backup/config-backup-sched-plan.md).
 
 <a name="restart-tfs-svcs"></a>
-## Restart TFS services
 
-Now that you've updated TFS with all the information for the new environment, restart the services.
+## Restart services
 
-1.  On the TFS application-tier computer, open a Command Prompt window with administrative permissions and change directories to *Drive*:\\%programfiles%\\TFS 12.0\\Tools.
+Now that you've updated Azure DevOps Server with all the information for the new environment, restart the services.
+
+1.  On the Azure DevOps Server application-tier computer, open a Command Prompt window with administrative permissions and change directories to *Drive*:\\%programfiles%\\TFS 12.0\\Tools.
 
 2.  Type the following [TFSServiceControl](../command-line/tfsservicecontrol-cmd.md) command:
 
