@@ -53,7 +53,7 @@ The general process you use to upgrade an existing deployment of Azure DevOps Se
 For previous versions of Azure DevOps on-premises servers, the following upgrade matrix shows the proper steps to upgrade based on the version you upgrade from:
 
 <!--- Image needs update --> 
-![TFS 2018 Upgrade path matrix for all versions](../_img/Upgrade-matrix-2019.png)
+![TFS 2019 Upgrade path matrix for all versions](../_img/Upgrade-matrix-2019.png)
 
 ## Before you upgrade to Azure DevOps Server 2019 <!---NEW SECTION --> 
 
