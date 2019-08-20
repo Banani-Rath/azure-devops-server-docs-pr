@@ -50,9 +50,9 @@ RC2 includes several bug fixes since RC1 and is the final planned prerelease.
 
 ## **RC1 Release Date: July 2, 2019**
 
-### Summary of What's New in Azure DevOps Server 2019 Update 1 RC1
+### Summary of What's New in Azure DevOps Server 2019 Update 1
 
-Azure DevOps Server 2019 introduces many new features. Some of the highlights include:
+Azure DevOps Server 2019 Update 1 introduces many new features. Some of the highlights include:
 
 * [New Basic process](#new-basic-process)
 * [Query for work relative to the start of the day, week, month, or year](#query-for-work-relative-to-the-start-of-the-day-week-month-or-year)
