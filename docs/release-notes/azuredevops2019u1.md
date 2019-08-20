@@ -5,7 +5,7 @@ keywords: azure devops
 author: egeaney
 ms.author: egeaney
 manager: egeaney
-ms.date: 07/24/2019
+ms.date: 08/20/2019
 ms.topic: release-article
 ms.prod: vs-devops-alm
 ms.technology: vs-devops-articles
@@ -34,6 +34,14 @@ To learn more, see [Azure DevOps Server Requirements](https://go.microsoft.com/f
 Direct upgrade to Azure DevOps Server 2019 Update 1 is supported from Azure DevOps Server 2019 or Team Foundation Server 2012 and newer. If your TFS deployment is on TFS 2010 or earlier, you need to perform some interim steps before upgrading to Azure DevOps Server 2019 Update 1. Please see the <a href="https://docs.microsoft.com/tfs/server/install/get-started" target="blank">Install page</a> for more information. 
 
 ****
+
+## **Azure DevOps Server 2019 Update 1 Release Date: August 20, 2019**
+
+> [!NOTE]
+> The Data Migration Tool will be available for Azure DevOps Server 2019 Update 1 about three weeks after this release. You can see our list of currently supported versions for import [here](https://docs.microsoft.com/en-us/azure/devops/articles/migration-overview?#supported-tfs-versions-for-import).
+
+****
+
 ## **RC2 Release Date: July 23, 2019**
 
 RC2 includes several bug fixes since RC1 and is the final planned prerelease.
