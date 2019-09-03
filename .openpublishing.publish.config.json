@@ -1,9 +1,9 @@
 {
   "docsets_to_publish": [
     {
-      "docset_name": "tfs-docs",
+      "docset_name": "azure-devops-server-docs",
       "build_source_folder": "docs",
-      "build_output_subfolder": "tfs-docs",
+      "build_output_subfolder": "azure-devops-server-docs",
       "locale": "en-us",
       "monikers": [],
       "moniker_ranges": [
